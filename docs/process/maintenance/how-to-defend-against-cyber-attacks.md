@@ -105,7 +105,7 @@ connection_throttle_limit: 3
 
 使用插件直接对抗超大规模的网络攻击是不太现实的。
 
-如果正在遭受这种攻击，最合理的办法是提升服务器带宽或使用专门针对于此类攻击的代理 ([点这里](/docs/maintenance/how-to-defend-against-cyber-attacks.md#使用第三方Minecraft代理))。
+如果正在遭受这种攻击，最合理的办法是提升服务器带宽或使用专门针对于此类攻击的代理 ([点这里](/docs/process/maintenance/how-to-defend-against-cyber-attacks.md#使用第三方-minecraft-代理))。
 
 :::
 
@@ -133,7 +133,7 @@ connection_throttle_limit: 3
 
 但不太好的地方就是免费用户是没有办法使用国内节点的，所以国内访问会较慢。
 
-#### 使用第三方Minecraft代理
+#### 使用第三方 Minecraft 代理
 
 例如 TCPShield 和 Infinity-Filter。
 
