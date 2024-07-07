@@ -77,4 +77,4 @@ servers:
 
 ## 加入
 
-见 [加入服务器](/docs/advance/cross-server/join-server.md)
+见 [加入服务器](/docs-java/advance/cross-server/join-server.md)
