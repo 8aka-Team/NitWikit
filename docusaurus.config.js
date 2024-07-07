@@ -66,6 +66,32 @@ const config = {
       }),
     ],
   ],
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'docs-java',
+        path: 'docs-java',
+        routeBasePath: 'Java版',
+        sidebarPath: require.resolve('./sidebars.js'),
+        editCurrentVersion: true,
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'docs-bedrock',
+        path: 'docs-bedrock',
+        routeBasePath: '基岩版',
+        sidebarPath: require.resolve('./sidebars.js'),
+        editCurrentVersion: true,
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+      },
+    ],
+  ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -79,8 +105,8 @@ const config = {
       },
       image: 'img/docusaurus-social-card.jpg',
       metadata: [
-        {name: '开服教程', content: '一群笨蛋们写的 Minecraft 开服教程'},
-        {name: 'MC教程' , content: '一群笨蛋们写的 Minecraft 开服教程'},
+        { name: '开服教程', content: '一群笨蛋们写的 Minecraft 开服教程' },
+        { name: 'MC教程', content: '一群笨蛋们写的 Minecraft 开服教程' },
       ],
       navbar: {
         title: 'NitWikit',
@@ -95,6 +121,20 @@ const config = {
             docId: 'intro',
             position: 'left',
             label: '开始',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'tutorialSidebar',
+            position: 'left',
+            label: 'Java版',
+            docsPluginId: 'docs-java'
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'tutorialSidebar',
+            position: 'left',
+            label: '基岩版',
+            docsPluginId: 'docs-bedrock'
           },
           // 搜索框
           {
@@ -170,7 +210,7 @@ const config = {
         indexBlog: false,
         docsRouteBasePath: "/"
       },
-    ],'@docusaurus/theme-mermaid'
+    ], '@docusaurus/theme-mermaid'
   ],
 };
 
