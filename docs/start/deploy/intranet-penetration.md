@@ -15,7 +15,7 @@ sidebar_position: 5
 
 ~~因为rz用户比较多，你甚至能用某人用不用樱花来定性判断这人有没有技术~~
 
-Linux自建frp参见[此页面]()
+Linux自建frp参见[此页面](/advance/Linux/frp)
 
 
 ## 可能的问题?
