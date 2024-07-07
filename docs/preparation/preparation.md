@@ -1,6 +1,6 @@
 ---
 title: 准备工作
-slug: /preparation
+slug: /Java/preparation
 sidebar_position: 1
 ---
 
