@@ -1,7 +1,7 @@
 ---
 title: 建设阶段
 slug: /process
-sidebar_position: 12
+sidebar_position: 4
 ---
 
 # 建设阶段

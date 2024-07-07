@@ -1,7 +1,7 @@
 ---
 title: 插件管理
 slug: /PluginMagagement
-sidebar_position: 5
+sidebar_position: 4
 ---
 
 # 插件管理
