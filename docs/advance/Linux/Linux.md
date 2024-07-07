@@ -1,7 +1,7 @@
 ---
 title: Linux 开服
 slug: /Sundry/Advance/Linux
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # Linux 开服

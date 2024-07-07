@@ -1,6 +1,6 @@
 ---
 title: 配置
-slug: /Sundry/Advance/configure
+slug: /docs/database/configure
 sidebar_position: 2
 ---
 

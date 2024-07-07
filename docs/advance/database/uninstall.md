@@ -1,6 +1,6 @@
 ---
 title: 卸载
-slug: /Sundry/Advance/uninstall
+slug: /docs/database/uninstall
 sidebar_position: 4
 ---
 
