@@ -1,6 +1,6 @@
 ---
 title: 什么是世界？
-sidebar_position: 4
+sidebar_position: 2
 ---
 
 # 什么是世界？
