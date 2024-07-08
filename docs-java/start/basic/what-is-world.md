@@ -1,23 +1,23 @@
 ---
 title: 什么是世界？
-sidebar_position: 7
+sidebar_position: 2
 ---
 
 # 什么是世界？
 
 Minecraft 的几乎一切行为都是建立在 "世界" 上，而世界中的方块、实体等文件都存储在了根目录的对应文件夹下。
 
-Minecraft 原版目前有三个世界，分别是主世界**world**（world），地狱**DIM-1**（world_nether），末地**DIM1**（world_the_end）。
+Minecraft 原版目前有三个世界，分别是主世界 **world**（world），地狱 **DIM-1** （world_nether），末地 **DIM1** （world_the_end）。
 
-每个世界的方块都按照 X 和 Z 每 16 * 16 为区块（**Chunk**）。其中每 32 * 32 个区块就会成为一组存储进一个独立的区域文件（Region）。
+每个世界的方块都按照 **X** 和 **Z** 每 *16 * 16* 为区块（**Chunk**）。其中每 *32 * 32* 个区块就会成为一组存储进一个独立的区域文件（**Region**）。
 
 在这里以主世界为例，说明世界是怎样保存的。
 
 文件夹:
 
-1. **advancements/** ：储存玩家的成就，每个玩家对应一个UUID；
+1. **advancements/** ：储存玩家的成就，每个玩家对应一个 **UUID** ；
 
-2. **data/** ：**idcounts.dat**和**map_xxx.dat**储存的是玩家合成的地图有关的数据。
+2. **data/** ：**idcounts.dat**和**map_xxx.dat** 储存的是玩家合成的地图有关的数据。
 
 3. **datapacks/** ：储存世界所使用的数据包（一般 Bukkit 系服务器有一个 Bukkit 文件夹）；
 
@@ -31,7 +31,7 @@ Minecraft 原版目前有三个世界，分别是主世界**world**（world）�
 
 8. **stats/** ：储存玩家在此世界游玩时的统计信息（如击杀了 xx 只鸡、使用了 xx 次工作台）。
 
-9. **如果还有其他文件夹一般为插件储存用的文件夹，如 `itemsadder` 文件夹是插件 ItemsAdders 创建的用于保存世界中自定义物品的文件夹**
+9. **如果还有其他文件夹一般为插件储存用的文件夹，如 `itemsadder` 文件夹是插件 `ItemsAdders` 创建的用于保存世界中自定义物品的文件夹**
 
 文件：
 
@@ -41,10 +41,10 @@ Minecraft 原版目前有三个世界，分别是主世界**world**（world）�
 
 3. **session.lock** ：用于储存最后执行的程序修改这一文件以及访问的权限。
 
-4. **/data/raids_end.dat**：储存世界内正在进行的袭击的信息。
+4. **/data/raids_end.dat** ：储存世界内正在进行的袭击的信息。
 
-5. **/data/random_sequences.dat**	：存储战利品表使用的随机序列数据。
+5. **/data/random_sequences.dat** ：存储战利品表使用的随机序列数据。
 
-6. **paper-world.yml**（只存在于 Paper 服务器中）：记录世界特有的 Paper 设置
+6. **paper-world.yml**（只存在于 **Paper** 服务器中）：记录世界特有的 **Paper** 设置
 
 其他世界的文件夹大同小异。
