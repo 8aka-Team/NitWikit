@@ -90,7 +90,7 @@ sidebar_position: 4
 - potionextended
 - potionupgraded
 - strict
-- inhand<:hand>
+- inhand
 - inslot
 - nbtstrings        // nbt
 - nbtints
