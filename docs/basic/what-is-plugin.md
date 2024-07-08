@@ -1,6 +1,6 @@
 ---
 title: 什么是插件？
-sidebar_position: 5
+sidebar_position: 3
 ---
 
 # 什么是插件？
