@@ -8,31 +8,31 @@ sidebar_position: 1
 我们先来简单看一眼 Purpur 的文件夹结构：
 
 ```c
-├─assets // 储存 Minecraft 音效贴图等重要文件，不要乱动
-├─cache // 缓存文件夹，一般放置 Minecraft 原版服务器 ，对于 Purpur fork 服务器一般会有 spark
-├─config // Paper fork 服务器特有的配置文件，用于放置 Paper 的配置文件
-├─crash-reports // 存放服务器崩溃的完整报告
-├─libraries // 存放服务器及部分插件的依赖库
-├─logs // 存放服务端日志的文件夹
-├─plugins // 存放插件的文件夹
-├─versions // 存放对应版本需要的依赖 jar
-├─world // 主世界文件夹
-│  ├─advancements
-│  ├─data
-│  ├─datapacks
+├─assets            // 储存 Minecraft 音效贴图等重要文件，不要乱动
+├─cache             // 缓存文件夹，一般放置 Minecraft 原版服务器
+├─config            // Paper fork 服务器特有的配置文件，用于放置 Paper 的配置文件
+├─crash-reports     // 存放服务器崩溃的完整报告
+├─libraries         // 存放服务器及部分插件的依赖库
+├─logs              // 存放服务端日志的文件夹
+├─plugins           // 存放插件的文件夹
+├─versions          // 存放对应版本需要的依赖 jar
+├─world             // 主世界文件夹
+│  ├─advancements   // 成就文件夹
+│  ├─data           // 世界数据文件夹
+│  ├─datapacks      // 数据包
 │  │  └─bukkit
-│  ├─entities
-│  ├─playerdata
-│  ├─poi
-│  ├─region
-│  └─stats
-├─world_nether //地狱世界文件夹
+│  ├─entities       // 实体数据
+│  ├─playerdata     // 玩家数据
+│  ├─poi            // 兴趣点数据
+│  ├─region         // 区块数据
+│  └─stats          // 统计信息
+├─world_nether      // 地狱世界文件夹
 │    └─DIM-1
-│       ├─data
+│       ├─data      // 末地
 │       ├─entities
 │       ├─poi
 │       └─region
-└─world_the_end //末地世界文件夹
+└─world_the_end     // 末地世界文件夹
     └─DIM1
         ├─data
         ├─entities
@@ -40,11 +40,11 @@ sidebar_position: 1
         └─region
 ```
 
-对于类似 Catserver 的混合服务器，文件夹结构是类似的，基本就多了 mods 文件夹，少了 Bukkit 的下游服务器特有的配置（如 purpur.yml 等）。
+对于类似 Catserver 的混合服务器，文件夹结构是类似的，基本就多了 mods 文件夹，少了 Bukkit 的下游服务器特有的配置（如 `purpur.yml` 等）。
 
 :::info
 
-对于世界文件夹的详细说明，请前往[世界文件架构](/docs/start/basic/what-is-world.md)
+对于世界文件夹的详细说明，请前往 **[世界文件架构](what-is-world.md)**
 
 :::
 
@@ -84,7 +84,7 @@ sidebar_position: 1
 
 - `purpur.jar`
 
-你可以改名叫任何名字（只要以 jar 结尾，且在启动脚本中对应修改）
+你可以改名叫任何名字（只要以 `.jar` 结尾，且在启动脚本中对应修改）
 
 - `purpur.yml`
 
