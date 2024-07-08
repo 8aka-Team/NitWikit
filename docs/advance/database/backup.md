@@ -1,6 +1,6 @@
 ---
 title: 备份
-slug: /Sundry/Advance/backup
+slug: /docs/database/backup
 sidebar_position: 3
 ---
 

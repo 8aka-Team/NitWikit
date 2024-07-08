@@ -1,7 +1,7 @@
 ---
 title: 服务器维护
 slug: /maintenance
-sidebar_position: 13
+sidebar_position: 5
 ---
 
 # 服务器维护

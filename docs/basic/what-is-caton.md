@@ -1,6 +1,6 @@
 ---
 title: 什么是卡顿？
-sidebar_position: 3
+sidebar_position: 2
 ---
 
 # 什么是卡顿？
@@ -35,13 +35,13 @@ Minecraft 服务器卡顿的底层逻辑是什么？
 
 :::warning
 
-此处只是最简单的理解，要对卡顿有更深层的理解请查看TODO:多线程
+此处只是最简单的理解，要对卡顿有更深层的理解请查看 TODO:多线程
 
 :::
 
 ### TPS
 
-TPS（Ticks Per Second）(每秒 Tick 数）正常应为 20 ，即服务器每秒钟进行 20 次更新，确保红石、生物 AI 等按照正常工作。
+TPS（Ticks Per Second）(每秒 Tick 数) 正常应为 20 ，即服务器每秒钟进行 20 次更新，确保红石、生物 AI 等按照正常工作。
 
 :::warning
 
@@ -69,7 +69,7 @@ MSPT（Milliseconds Per Tick）(就是每进行一次 Tick 所花费的毫秒数
 
 ## 网络延迟
 
-在Minecraft中，网络延迟（通常表示为 Ping）是玩家连接到服务器时数据传输所花费的时间。
+在 Minecraft 中，网络延迟（通常表示为 Ping）是玩家连接到服务器时数据传输所花费的时间。
 
 Ping 值的高低直接影响了玩家在游戏中的体验，特别是在需要快速反应和精确操作的场合。
 

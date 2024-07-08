@@ -12,10 +12,11 @@ sidebar_position: 5
 [下载](https://github.com/lilingfengdev/NitWiki-Script/releases/download/windows-latest/config-eazy.exe)，我们会询问一些问题，帮你**自动配置**
 
 目前可以配置的
-* 服务器端口
-* 正版验证
-* 服务器种子
-* 最大玩家数
+
+- 服务器端口
+- 正版验证
+- 服务器种子
+- 最大玩家数
 
 ## 正版验证
 
@@ -28,17 +29,18 @@ sidebar_position: 5
 ```
 online-mode=true
 ```
+
 如果你想关闭正版验证，将 true 改为 false ，保存，重启服务端
 
 :::danger
 
-不要开服开到一半去改正版验证! 这会造成UUID混乱，玩家数据丢失
+不要开服开到一半去改正版验证! 这会造成 UUID 混乱，玩家数据丢失
 
-当然,你可以转换UUID来解决这个问题,[查看](https://dodo939.love/2024/06/20/mc-online-conv-tool/)
+当然,你可以转换 UUID 来解决这个问题,[查看](https://dodo939.love/2024/06/20/mc-online-conv-tool/)
 
 :::
 
-注意,在离线模式下,玩家大概率没皮肤,你需要[SkinsRestorer](/docs/process/cross-server/plugin/BC&WF.md#skinsrestorer),根据需求选择 SkinsRestorer 的版本。
+注意,在离线模式下,玩家大概率没皮肤,你需要[SkinsRestorer](/docs-java/advance/cross-server/plugin/BC&WF.md#skinsrestorer),根据需求选择 SkinsRestorer 的版本。
 
 ## 最大玩家数
 

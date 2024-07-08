@@ -3,3 +3,4 @@ build
 .vscode
 .docusaurus
 node_modules
+yarn.lock

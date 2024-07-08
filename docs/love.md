@@ -1,6 +1,6 @@
 ---
 title: 相亲墙
-sidebar_position: 100
+sidebar_position: 101
 ---
 
 # 驿站忆行
@@ -22,6 +22,10 @@ NitWikit 项目的建立者，维护者，写下这段话时文档提交次数�
 
 “嗯。。。这里原本是打算放莎碧的”驿站喃喃自语道
 
-![](_images/postyizhan_zanzhu.jpg)
+<img
+  src="_images/postyizhan_zanzhu.jpg"
+  width="300;"
+  alt=""
+/>
 
 </details>
