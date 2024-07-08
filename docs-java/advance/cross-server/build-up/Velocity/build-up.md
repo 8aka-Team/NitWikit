@@ -7,7 +7,7 @@ sidebar_position: 2
 
 ## 下载
 
-在 [核心选择](/docs/advance/cross-server/server-core-choose.md) 找到 Velocity 然后下载
+在 [核心选择](/docs-java/advance/cross-server/server-core-choose.md) 找到 Velocity 然后下载
 
 ## 启动
 
@@ -15,7 +15,7 @@ sidebar_position: 2
 
 并且使用参数启动以生成初始文件
 
-如果想进一步优化可以使用JVM参数 [Velocity官方](https://docs.papermc.io/velocity/getting-started#launching-velocity-under-windows)有推荐的Flags
+如果想进一步优化可以使用 JVM 参数 [Velocity 官方](https://docs.papermc.io/velocity/getting-started#launching-velocity-under-windows)有推荐的 Flags
 
 ```bash
 java -Xms1024M -Xmx1024M -jar 核心名字.jar
@@ -29,10 +29,10 @@ java -Xms1024M -Xmx1024M -jar 核心名字.jar
 
 > 在 **[servers]** 那里该填什么?
 >
->> 答:
->> `子服名 = "子服地址"`
->>
->> 如 `login = "0.0.0.0:25501"`
+> > 答:
+> > `子服名 = "子服地址"`
+> >
+> > 如 `login = "0.0.0.0:25501"`
 
 :::danger
 
@@ -78,13 +78,13 @@ try = [
 
 ## 子服配置
 
-Velocity支持将玩家信息（如IP地址、UUID和皮肤）转发到您的服务器。Velocity支持三种转发格式：
+Velocity 支持将玩家信息（如 IP 地址、UUID 和皮肤）转发到您的服务器。Velocity 支持三种转发格式：
 
 - **Velocity Modern 转发** （现代转发）是一种自定义的转发格式（modern 转发），它更安全。
-- **BungeeCord 转发**（也称为_传统转发_），它有更好的兼容性但安全性较低。
-- **BungeeGuard**，与传统BungeeCord转发相同，但包含了一个密钥。它比单独的BungeeCord转发更好，但不如Velocitymodern 转发理想。
+- **BungeeCord 转发**（也称为*传统转发*），它有更好的兼容性但安全性较低。
+- **BungeeGuard**，与传统 BungeeCord 转发相同，但包含了一个密钥。它比单独的 BungeeCord 转发更好，但不如 Velocitymodern 转发理想。
 
-您只能选择这些转发格式中的一种。目前不可能“混合匹配”转发模式或同时使用所有转发格式。一般来说，如果您只支持使用Minecraft 1.13及更新版本的客户端，请使用Velocity Modern 转发；否则，您必须使用BungeeCord转发。
+您只能选择这些转发格式中的一种。目前不可能“混合匹配”转发模式或同时使用所有转发格式。一般来说，如果您只支持使用 Minecraft 1.13 及更新版本的客户端，请使用 Velocity Modern 转发；否则，您必须使用 BungeeCord 转发。
 
 ### 配置现代转发（Modern Forwarding）
 

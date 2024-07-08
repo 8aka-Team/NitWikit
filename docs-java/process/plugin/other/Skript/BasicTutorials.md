@@ -202,11 +202,11 @@ on join:
 
 想必你一定有一些想法，市面上可能找不到，而且因为你不会使用 Java 写插件所以难以实现。
 
-前往 [skhub](https://skripthub.net/docs/) 或 [skunity](https://docs.skunity.com/syntax)查询 Skript 语法，现在开始构思你的插件吧。
+前往 [skhub](https://skripthub.net/docs-java/) 或 [skunity](https://docs.skunity.com/syntax)查询 Skript 语法，现在开始构思你的插件吧。
 
 ### 如何使用语法
 
-首先，最重要的是 Event（事件），这是所有逻辑的先决要素，我们在[skhub](https://skripthub.net/docs/) 或 [skunity](https://docs.skunity.com/syntax) 上，
+首先，最重要的是 Event（事件），这是所有逻辑的先决要素，我们在[skhub](https://skripthub.net/docs-java/) 或 [skunity](https://docs.skunity.com/syntax) 上，
 
 在侧边栏中选中（Skript 和 Events），即可筛选 Skript 原生事件。此处以指令监听器为例：
 
@@ -221,6 +221,7 @@ on join:
 ```
 [on] [(right|left)(| |-)][mouse(| |-)]click[ing] (with|using|holding) %itemtype% on %entitydata/itemtype%
 ```
+
 ##### `[xxx]`
 
 表示这部分可以被省略，但省略后可能会导致意义改变，如此处 `on click:` 和 `on rightclick:` 意义不同，前者为所有类型的点击，而后者为右键。
@@ -233,8 +234,7 @@ on join:
 
 ##### `%type%`
 
-表示这部分只能是固定的某种 type，如 `%itemtype%`，这部分可以勾选 [skhub](https://skripthub.net/docs/) 侧边栏 `Type` 获取。
-
+表示这部分只能是固定的某种 type，如 `%itemtype%`，这部分可以勾选 [skhub](https://skripthub.net/docs-java/) 侧边栏 `Type` 获取。
 
 #### 属性
 
@@ -267,7 +267,7 @@ on command "/op":
 
 ### 最初的脚本
 
-在这个板块中，请利用 [skhub](https://skripthub.net/docs/) 或 [skunity](https://docs.skunity.com/syntax)查询 Skript 语法，满足缩进等要求，尝试写一些最基础脚本吧~
+在这个板块中，请利用 [skhub](https://skripthub.net/docs-java/) 或 [skunity](https://docs.skunity.com/syntax)查询 Skript 语法，满足缩进等要求，尝试写一些最基础脚本吧~
 
 #### 事件
 
@@ -289,14 +289,14 @@ on command "/op":
 
 要注意，事件的监听是有优先级的，其中有六个优先级，其中执行顺序为**从上到下**分别为：
 
-|优先级| Priority|
--------- | -----
-|最低| Lowest|
-|低 |Low|
-|正常（默认）|Normal|
-|高 |High|
-|最高 |Highest|
-|监控 |Monitor|
+| 优先级       | Priority |
+| ------------ | -------- |
+| 最低         | Lowest   |
+| 低           | Low      |
+| 正常（默认） | Normal   |
+| 高           | High     |
+| 最高         | Highest  |
+| 监控         | Monitor  |
 
 :::warning[吐槽]
 
@@ -327,7 +327,7 @@ on teleport with priority lowest:
 
 例如，我们想写一个脚本，检测玩家在 00:00 - 06:00 没有在床上睡觉，那么就每秒扣玩家 1 生命值。
 
-查询 [skhub](https://skripthub.net/docs/) 或 [skunity](https://docs.skunity.com/syntax) ，根据直觉选择，与时间和睡觉有关系的事件可能有这些：
+查询 [skhub](https://skripthub.net/docs-java/) 或 [skunity](https://docs.skunity.com/syntax) ，根据直觉选择，与时间和睡觉有关系的事件可能有这些：
 
 ```
 every 10 seconds:
@@ -481,7 +481,7 @@ TODO
 
 1. `command /xxx` 后一定要使用 `trigger:` 否则指令将不会注册并报错。
 2. `/xxx` 为 "指令"，第 n 个空格后的参数即为 `arg-n`，如此处的 `<world>` 为 `arg-1`
-3. 参数类型可以查 [skhub](https://skripthub.net/docs/) 选择 `type` 为参数类型，万能参数可用 `string` / `text`。
+3. 参数类型可以查 [skhub](https://skripthub.net/docs-java/) 选择 `type` 为参数类型，万能参数可用 `string` / `text`。
 4. 参数以 `<>` 引用起来时说明该参数为必要参数，如果输入时没有这个参数时会提示格式错误，如果这个参数是可以省略的，那么可以使用类似 `[<text>]` 的方法。
 
 在这里，我们分析一下指令，应该是 `/world xxx` 中的 `xxx` 代表世界，所以我们选择 `/world <world>` 作为指令。
@@ -583,9 +583,7 @@ command /world <world>:
 
 后文为 TUCAOEVER 在 mcbbs 的教程未参考部分，没有进行任何格式化，TODO
 
-:::
-=
-
+# :::
 
 ---
 
@@ -600,10 +598,12 @@ command /world <world>:
 权限的英文是什么? "permission" 我们通过翻阅侧边栏可以得知与 "permission" 相关的只有 "Has Permission" 一条，官方对这个条件的解释为："Test whether a player has a certain permission."，翻译过来就是 "检测一个玩家是否拥有某一权限"。即我们所需要的：判断玩家是否有权限，那么我们又该如何使用呢 "Has Permssion" 条件呢?
 
 在 "Has Permission" 下 "Patterns" 给了我们两种标准格式用法：
+
 - `%players/console% (has|have) [the] permission[s] %texts%`
 - `%players/console% (doesn't|does not|do not|don't) have [the] permission[s] %texts%`
 
 针对这样的格式，我相信很多人可能一头雾水。了解如下几点，或许能帮助你更好的了解用法：
+
 - "[]" 内可以省略
 - "(...|...)" 内必须选择一项填写
 - "%%" 内必须根据其所对应的类型进行填写
@@ -652,7 +652,8 @@ on command "/op":
                 send "false" to event-player
 ```
 
-我们把两个条件判断句替换为条件1和条件2，那么这段代码就可以理解为：
+我们把两个条件判断句替换为条件 1 和条件 2，那么这段代码就可以理解为：
+
 ```
 指令监听 "/op":
         事件-发送者类别 是 玩家
@@ -668,21 +669,23 @@ on command "/op":
 如果我希望执行其他行动呢? 比如我想给一个玩家发送一个 Title 消息：
 
 通过在官方 Doc 搜索，我们得知关于 Title 相关的 Effects 一共有两个：
+
 - (EffResetTitle)[https://docs.skriptlang.org/docs.html?search=#EffResetTitle]
-    "Resets the title of the player to the default values."
-    "重置玩家的 Title 至默认值"
+  "Resets the title of the player to the default values."
+  "重置玩家的 Title 至默认值"
 - (EffSendTitle)[https://docs.skriptlang.org/docs.html?search=#EffSendTitle]
-    "Sends a title/subtitle to the given player(s) with optional fadein/stay/fadeout times."
-    "发送 Title/Subtitle 至指定玩家 可自定义渐入和淡出的时间"
+  "Sends a title/subtitle to the given player(s) with optional fadein/stay/fadeout times."
+  "发送 Title/Subtitle 至指定玩家 可自定义渐入和淡出的时间"
 
-我们需要知道的是 #EffSendTitle 的用法。关于怎么用，这里本质上和学习Conditions(条件)一样，我们将注意点放在 "Patterns" 上。
+我们需要知道的是 #EffSendTitle 的用法。关于怎么用，这里本质上和学习 Conditions(条件)一样，我们将注意点放在 "Patterns" 上。
 
-``` skript
+```skript
 send title %text% [with subtitle %text%] [to %players%] [for %time span%] [with fade[(-| )]in %time span%] [(and|with) fade[(-| )]out %time span%]
 send subtitle %text% [to %players%] [for %time span%] [with fade[(-| )]in %time span%] [(and|with) fade[(-| )]out %time span%]
 ```
 
 按照我们提到的原则：
+
 - "[]" 内可以省略
 - "(...|...)" 内必须选择一项填写
 - "%%" 内必须根据其所对应的类型进行填写
@@ -740,6 +743,7 @@ Effect(效果) 所能提供的 只有 "生成"
 这两个词我们又该怎么处理呢? 这时候我们就需要用到 Expressions(表达)。
 
 位置的英文单词是 "Location" 我们在官方 Doc 查到了多种有关 "Location" 的表达
+
 - https://docs.skriptlang.org/docs.html?search=#ExprLocation
 - https://docs.skriptlang.org/docs.html?search=#ExprLocationOf
 - https://docs.skriptlang.org/docs.html?search=#ExprLocationAt
@@ -761,17 +765,17 @@ https://docs.skriptlang.org/classes.html
 通过翻译我们可以轻松知道玩家的英文以及僵尸的英文，分别为 "player"和"zombie"。
 
 与之相对应的，我们分别在 Types(类别) 中找到：
+
 - https://docs.skriptlang.org/docs.html?search=#player
 - https://docs.skriptlang.org/docs.html?search=#entity
 
 综合上面我们所获得的信息 我们获得了完整一行代码：
 
-```spawn zombie at location of player```
+`spawn zombie at location of player`
 
 ---
 
 WOW，恭喜你！看到这，你就可以开始尝试着写一些插件了。
-
 
 ## 例子
 
@@ -799,9 +803,9 @@ WOW，恭喜你！看到这，你就可以开始尝试着写一些插件了。
 
 你需要将所有玩家的 `{(玩家的名称)的游戏币数}` 变量都 +1000。
 
-还好只有10个玩家数据，你可以一个一个调，就是浪费一点时间，倒还不成问题。
+还好只有 10 个玩家数据，你可以一个一个调，就是浪费一点时间，倒还不成问题。
 
-但是如果你有10000个玩家数据，如果你一个一个调，可能玩家都走完了，你也调不完。
+但是如果你有 10000 个玩家数据，如果你一个一个调，可能玩家都走完了，你也调不完。
 
 你遇到了新的问题，如何存储并快速操作一类变量?
 
@@ -825,9 +829,9 @@ WOW，恭喜你！看到这，你就可以开始尝试着写一些插件了。
 
 是的，确实。如果仅仅需要获得某一个玩家的游戏币数量，两者并没有什么区别。
 
-但是，如果我将 `{金币::(玩家的名称)}` 中玩家的名称改为 "*" 即 ``{金币::*}``，这时候会产生什么样的效果呢?
+但是，如果我将 `{金币::(玩家的名称)}` 中玩家的名称改为 "_" 即 ``{金币::_}``，这时候会产生什么样的效果呢?
 
-``{金币::*}`` 将包含，所有 ``{金币::(玩家的名称)}`` 变量。
+`{金币::*}` 将包含，所有 `{金币::(玩家的名称)}` 变量。
 
 而这个，却是 `{(玩家的名称)的游戏币数量}` 怎么改也做不到的。
 
@@ -884,7 +888,7 @@ command /自定义指令:
 
 你并不需要理解前者是什么意思，仅仅需要记住后者的格式即可。
 
-如果我想注册一个 "/我学你马Java" 的指令，你只需这样：（编者注：不建议注册中文指令。）
+如果我想注册一个 "/我学你马 Java" 的指令，你只需这样：（编者注：不建议注册中文指令。）
 
 ```skript
 command /我学你马Java:
@@ -960,17 +964,17 @@ command /<指令名称> <参数>:
 ```
 
 - 指令名称(必填)
-    指令名称基本上是指令，您可以在指令名称中使用任何字符(空格字符除外)。
-    当然如果在指令名称中使用空格字符，那么空格字符后的文本将成为参数。
-    指令名称前的斜杠字符(/)是可选的(但这并不意味着您可以在执行指令时不带斜杠)。
+  指令名称基本上是指令，您可以在指令名称中使用任何字符(空格字符除外)。
+  当然如果在指令名称中使用空格字符，那么空格字符后的文本将成为参数。
+  指令名称前的斜杠字符(/)是可选的(但这并不意味着您可以在执行指令时不带斜杠)。
 - 参数(可选)
-    可以通过将参数放在 "[]" 中来使其成为可选参数。
-    - 类型参数
-        可以通过使用规定的格式来限制参数的类型，例如: `<type = default value>`。
-        - 类型为 "text/string" 的参数可以接受任何字符，但 "object" 类型不能用作于参数（编者注：原因大抵是无法输入 `object`）。
-        - 类型可以是多个 (例如 number -> numbers entity -> entities)。通过这样的方法，可以使参数接受多个值。
-        - "= default value" 这一部分是可选的，如果指令执行者未输入参数，系统将自动使用默认值。
-        - 同样你也可以使用这样的方式设置参数默认值，例如: `<item = %player's tool%>`。
+  可以通过将参数放在 "[]" 中来使其成为可选参数。
+  - 类型参数
+    可以通过使用规定的格式来限制参数的类型，例如: `<type = default value>`。
+    - 类型为 "text/string" 的参数可以接受任何字符，但 "object" 类型不能用作于参数（编者注：原因大抵是无法输入 `object`）。
+    - 类型可以是多个 (例如 number -> numbers entity -> entities)。通过这样的方法，可以使参数接受多个值。
+    - "= default value" 这一部分是可选的，如果指令执行者未输入参数，系统将自动使用默认值。
+    - 同样你也可以使用这样的方式设置参数默认值，例如: `<item = %player's tool%>`。
 
 以下是一份指令示例:
 
@@ -979,28 +983,29 @@ command /<指令名称> <参数>:
 使用 `/kill zombies /kill creepers and animals in radius 100` 或 `/kill monsters in the radius 6` 都是可以的。
 
 但是如果没有输入数值，系统将自动使用默认值，半径 20。
+
 - Aliases
-    子指令，指令的别名。如果需要创建多个子指令，请使用用逗号分隔。
-    示例：（/alias1,alias2,/alias3）
+  子指令，指令的别名。如果需要创建多个子指令，请使用用逗号分隔。
+  示例：（/alias1,alias2,/alias3）
 - Executable By
-    指定可以使用该指令的执行者。
-    例如：console(后台), players(玩家), the console and players(后台和玩家)
+  指定可以使用该指令的执行者。
+  例如：console(后台), players(玩家), the console and players(后台和玩家)
 - Usage
-    执行者用法不正确时，将发送的消息。
+  执行者用法不正确时，将发送的消息。
 - Description
-    指令描述，其他插件可以获取/显示此信息。
+  指令描述，其他插件可以获取/显示此信息。
 - Permission
-    执行指令所需要的权限。
+  执行指令所需要的权限。
 - Permission Message
-    执行者没有权限时的提示信息。
+  执行者没有权限时的提示信息。
 - Cooldown
-    多长冷却时间后可以再次使用该指令，需要注意的是，关服时所有指令冷却时间将被重置。
+  多长冷却时间后可以再次使用该指令，需要注意的是，关服时所有指令冷却时间将被重置。
 - Cooldown Message
-    冷却期间，提示信息。
+  冷却期间，提示信息。
 - Cooldown Bypass
-    无视冷却时间所需要的权限。
+  无视冷却时间所需要的权限。
 - Cooldown Storage
-    存储冷却时间全局变量名称。
+  存储冷却时间全局变量名称。
 
 ---
 
@@ -1051,7 +1056,7 @@ function SG_writeFile(variableName: text, value: text, fileDir: text):
     save yaml "plugins/SUPERGUILDS/%{_fileDir}%.yml"
 ```
 
-若想将 "plugins/SUPERGUILDS/playerdata/玩家UUID.yml" 的 "Datas.Username" 设置为 "**EVER"
+若想将 "plugins/SUPERGUILDS/playerdata/玩家 UUID.yml" 的 "Datas.Username" 设置为 "\*\*EVER"
 
 ```skript
 file "plugins/SUPERGUILDS/playerdata/%uuid of player%.yml" does not exists:

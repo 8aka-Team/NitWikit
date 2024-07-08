@@ -15,14 +15,13 @@ sidebar_position: 3
 
 为什么需要 skript-reflect？
 
--   正确编写插件是很困难的，特别是如果你是 **Java** 的新手。 **skript-reflect** 将为您负重前行，让你专注于编写高质量的 **Skript** 脚本。
+- 正确编写插件是很困难的，特别是如果你是 **Java** 的新手。 **skript-reflect** 将为您负重前行，让你专注于编写高质量的 **Skript** 脚本。
 
--   用 **skript-reflect** 编写的扩展可以快速测试，就像任何其他脚本一样。与需要编译和完全重新启动服务器的 **Skript** 插件不同， **skript-reflect** 脚本可以使用简单的 `sk reload`。
+- 用 **skript-reflect** 编写的扩展可以快速测试，就像任何其他脚本一样。与需要编译和完全重新启动服务器的 **Skript** 插件不同， **skript-reflect** 脚本可以使用简单的 `sk reload`。
 
--   在 sk 脚本中实现某些功能可能需要使用反射来访问私有方法、字段和构造函数。 **skript-reflect** 的内置反射允许你无缝访问这些私人成员。
+- 在 sk 脚本中实现某些功能可能需要使用反射来访问私有方法、字段和构造函数。 **skript-reflect** 的内置反射允许你无缝访问这些私人成员。
 
--   **Skript** 的基本特性之一是其极大的可定制性。使用 **skript-reflect** 编写的扩展使 sk 的这点更为突出，这允许你在必要时快速更改您的代码。
-
+- **Skript** 的基本特性之一是其极大的可定制性。使用 **skript-reflect** 编写的扩展使 sk 的这点更为突出，这允许你在必要时快速更改您的代码。
 
 下面的代码块包含了一些 **skript-reflect** 基础的语法。
 
@@ -86,7 +85,7 @@ on TPARequestEvent:
 
 **skript-reflect** 很好的解决了这一点。
 
-比如，你正在使用 **Leaves** 服务端，想要用sk来改变Leaves中假人在玩家列表中显示的名字，那么可以遵循以下步骤：
+比如，你正在使用 **Leaves** 服务端，想要用 sk 来改变 Leaves 中假人在玩家列表中显示的名字，那么可以遵循以下步骤：
 
 #### 查询 Javadoc
 
@@ -133,7 +132,7 @@ on BotJoinEvent:
     {_bot}.setPlayerListName("假的%{_bot_name}%")   # 修改假人在tab列表里的名字
 ```
 
-这一过程也可适用于其他插件，比如[zimzaza4大蛇](https://github.com/zimzaza4)的 [Skript-Floodgate-Api](https://github.com/zimzaza4/Skript-Floodgate-Api) ，
+这一过程也可适用于其他插件，比如[zimzaza4 大蛇](https://github.com/zimzaza4)的 [Skript-Floodgate-Api](https://github.com/zimzaza4/Skript-Floodgate-Api) ，
 就是利用 **skript-reflect** 来调用 [Floodagate API](https://wiki.geysermc.org/floodgate/api/) 的。
 
 可以查看下面的教程来详细学习 **skript-reflect** 的基础功能（对，下面这一大坨只是基础）
@@ -189,11 +188,9 @@ command /example:
 
 由于 **Minecraft** 1.17 以下版本的 **NMS** 包会随着每个 **Minecraft** 版本而变化，因此您应该动态生成包前缀。有关详细信息，请参阅[计算选项](https://tpgamesnl.gitbook.io/skript-reflect/advanced/computed-options#using-computed-options-for-nms-imports)。
 
-
 ##### _在运行时导入类_
 
 有时，在执行脚本之前，无法确定所需的类引用。
-
 
 ###### 从完全限定的名称
 
@@ -230,7 +227,7 @@ command /example:
         message "%{Player}%" # org.bukkit.entity.Player
 ```
 
-###### 在effect命令中导入
+###### 在 effect 命令中导入
 
 由于导入块在 effect 命令中不可用，因此您可以使用 import effect（仅在 effect 命令中可用）：
 
@@ -242,7 +239,7 @@ import <fully qualified name> [as <alias>]
 
 ##### _处理嵌套类_
 
-有时，一个类可能嵌套在另一个类中。当引用类的完全限定名称时，嵌套类使用一个`$`而不是`.` 
+有时，一个类可能嵌套在另一个类中。当引用类的完全限定名称时，嵌套类使用一个`$`而不是`.`
 
 例如，将`org.bukkit.entity.EnderDragon.Phase`变成`org.bukkit.entity.EnderDragon$Phase`。
 
@@ -415,6 +412,7 @@ on EnderDragonChangePhaseEvent with priority highest:
 可以使用`org.bukkit.event.EventPriority`中定义的任何事件优先级。优先级较低的事件处理程序在优先级较高的事件处理程序之前运行。
 
 事件优先级：
+
 ```
 lowest
 low
@@ -549,7 +547,6 @@ effect put %objects% in %objects%:
 
 如果需要不带修饰符或参数详细信息的字段或方法名称列表，请参阅[成员名称](https://tpgamesnl.gitbook.io/skript-reflect/basics/utilities#member-names)。
 
-
 ##### 成员的名字
 
 ```sk
@@ -584,5 +581,4 @@ effect put %objects% in %objects%:
 
 返回给定插件的实例（字符串形式的名称或插件类）。
 
-
-更高级的用法及详细内容请自行查阅[skript-reflect文档](https://tpgamesnl.gitbook.io/skript-reflect)
+更高级的用法及详细内容请自行查阅[skript-reflect 文档](https://tpgamesnl.gitbook.io/skript-reflect)

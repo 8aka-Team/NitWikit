@@ -20,4 +20,4 @@ sidebar_position: 6
 
 自定义 npc 执行命令需要开启命令方块
 
-[如何启用命令方块？](/docs/start/config-server.md#启用命令方块)
+[如何启用命令方块？](/docs-java/start/config-server.md#启用命令方块)

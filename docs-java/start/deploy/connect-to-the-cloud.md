@@ -22,13 +22,13 @@ sidebar_position: 4
 
 在弹出的窗口中输入 `mstsc`
 
-把卖你vps的人给你的信息照着填进去就可以连接到你的vps了。
+把卖你 vps 的人给你的信息照着填进去就可以连接到你的 vps 了。
 
 你也可以在 vps 安装 [ToDesk](https://www.todesk.com/download.html) 或 [向日葵远程控制](https://sunlogin.oray.com/) 等软件
 
 #### 映射驱动器
 
-可以在 vps 中点击 `此电脑` 看到本地的 **驱动器**（c盘d盘的，这下听懂了吧）
+可以在 vps 中点击 `此电脑` 看到本地的 **驱动器**（c 盘 d 盘的，这下听懂了吧）
 
 方便你传输文件
 
@@ -42,7 +42,7 @@ sidebar_position: 4
 
 #### 放行端口
 
-然后你需要在防火墙放行你mc服务端使用的端口，可参考教程：https://blog.csdn.net/aa1213366512/article/details/119964839
+然后你需要在防火墙放行你 mc 服务端使用的端口，可参考教程：https://blog.csdn.net/aa1213366512/article/details/119964839
 
 接着用外网地址连接你的服务器
 
@@ -52,7 +52,7 @@ sidebar_position: 4
 
 你的服务商告诉你，你可以使用 `12346` 端口
 
-那你就把你服务端的 [端口](/docs/start/connect-to-server.md#端口) 设置为 `12346` ，记得 [放行端口](#放行端口)
+那你就把你服务端的 [端口](/docs-java/start/connect-to-server.md#端口) 设置为 `12346` ，记得 [放行端口](#放行端口)
 
 然后在你的游戏客户端里添加服务器，填地址为 `yizhan.wiki:12346`
 

@@ -15,7 +15,7 @@ sidebar_position: 3
 /server [配置中设置的子服名字]
 ```
 
-不过不建议用 `/server` 详见 [此处](/docs/advance/cross-server/precautions.md#不要给玩家-server-权限)
+不过不建议用 `/server` 详见 [此处](/docs-java/advance/cross-server/precautions.md#不要给玩家-server-权限)
 
 :::warning
 
@@ -37,15 +37,15 @@ https://wiki.citizensnpcs.co/NPC_Commands#Bungee
 
 ### Adyeshach
 
-ady没有跨服动作，你可以导入其他插件的跨服动作来使用
+ady 没有跨服动作，你可以导入其他插件的跨服动作来使用
 
-如安装Invero插件后：
+如安装 Invero 插件后：
 
 ```
 kether: import invero connect 子服名
 ```
 
-或者使用command...
+或者使用 command...
 
 ### ZNPCs
 
@@ -57,7 +57,6 @@ https://github.com/gonalez/znpcs/wiki/Commands#server
 
 - [id] 是 NPC 的 id.
 - [server] 是子服名字.
-
 
 ## 菜单
 

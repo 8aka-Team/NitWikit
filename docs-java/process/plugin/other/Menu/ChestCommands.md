@@ -6,7 +6,7 @@ sidebar_position: 2
 
 :::info
 
-`文档（英文）` https://filoghost.me/docs/chest-commands
+`文档（英文）` https://filoghost.me/docs-java/chest-commands
 
 `文档（中文）` https://postyizhan.github.io/Chest-Commands-Wiki-CN/intro
 
@@ -16,6 +16,6 @@ sidebar_position: 2
 
 :::
 
-1.7 1.8用用就算了，再高的版本就别用ChestCommands了
+1.7 1.8 用用就算了，再高的版本就别用 ChestCommands 了
 
-~~甚至高版本还用ChestCommands可以用来定性判断此人的开服水平~~
+~~甚至高版本还用 ChestCommands 可以用来定性判断此人的开服水平~~
