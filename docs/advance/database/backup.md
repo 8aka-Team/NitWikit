@@ -1,6 +1,6 @@
 ---
 title: 备份
-slug: /docs/database/backup
+slug: /database/backup
 sidebar_position: 3
 ---
 

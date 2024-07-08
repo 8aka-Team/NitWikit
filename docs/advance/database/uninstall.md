@@ -1,6 +1,6 @@
 ---
 title: 卸载
-slug: /docs/database/uninstall
+slug: /database/uninstall
 sidebar_position: 4
 ---
 

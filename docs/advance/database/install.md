@@ -1,6 +1,6 @@
 ---
 title: 安装
-slug: /docs/database/install
+slug: /database/install
 sidebar_position: 1
 ---
 
@@ -30,7 +30,7 @@ sidebar_position: 1
 <details>
   <summary>卸载MySQL5和安装MySQL8</summary>
 
-MySQL5 版本太低了，很多插件需要更高版本的，装MySQL8就够用了
+MySQL5 版本太低了，很多插件需要更高版本的，装 MySQL8 就够用了
 
 ![](_images/7.png)
 

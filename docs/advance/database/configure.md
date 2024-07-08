@@ -1,6 +1,6 @@
 ---
 title: 配置
-slug: /docs/database/configure
+slug: /database/configure
 sidebar_position: 2
 ---
 
@@ -19,6 +19,7 @@ sidebar_position: 2
 ```sql
 CREATE DATABASE <数据库名称> CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 ```
+
 解释: `CHARACTER SET utf8mb4` 将数据库字符集设置为 utf8mb4， 能够存储包括表情符号在内的所有 Unicode 字符。 `utf8mb4_general_ci` 是一种不区分大小写（case-insensitive）的排序规则，如果你想区分大小写，可以改为 `utf8mb4_bin`，`_bin` 意为以二进制方式比较字符。
 
 :::
@@ -34,7 +35,7 @@ CREATE DATABASE <数据库名称> CHARACTER SET utf8mb4 COLLATE utf8mb4_general_
 
 ![](_images/9.png)
 
-更改root账户的密码
+更改 root 账户的密码
 
 :::danger
 
