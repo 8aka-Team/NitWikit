@@ -1,7 +1,7 @@
 ---
 title: 数据库相关
-slug: /Sundry/Advance/database
-sidebar_position: 5
+slug: /docs/database/database
+sidebar_position: 1
 ---
 
 # 数据库相关

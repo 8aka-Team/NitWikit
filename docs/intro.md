@@ -1,6 +1,6 @@
 ---
 title: 笨蛋开服教程
-sidebar_position: 0
+sidebar_position: 1
 ---
 
 # 笨蛋开服教程

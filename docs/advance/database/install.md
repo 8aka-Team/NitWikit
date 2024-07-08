@@ -1,6 +1,6 @@
 ---
 title: 安装
-slug: /Sundry/Advance/install
+slug: /docs/database/install
 sidebar_position: 1
 ---
 

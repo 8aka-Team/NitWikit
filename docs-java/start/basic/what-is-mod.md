@@ -1,6 +1,6 @@
 ---
 title: 什么是模组？
-sidebar_position: 4
+sidebar_position: 3
 ---
 
 # 什么是模组？

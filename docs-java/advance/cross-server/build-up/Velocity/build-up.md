@@ -175,4 +175,4 @@ Velocity支持将玩家信息（如IP地址、UUID和皮肤）转发到您的服
 
 ## 加入
 
-见 [加入服务器](/docs/advance/cross-server/join-server.md)
+见 [加入服务器](/docs-java/advance/cross-server/join-server.md)
