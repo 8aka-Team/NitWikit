@@ -118,7 +118,7 @@ sidebar_position: 7
 
 Wiki 就是让你解决常见问题的，不看这玩意儿就在那瞎问只会获得 `滚过去看 wiki ` 回复。
 
-不遵守以上规则，可能会导致你写入**乐子文档**
+不遵守以上规则，可能会导致你被写入**乐子文档**
 
 经典如何提问: https://settingdust.gitbook.io/stop-ask-questions-the-stupid-ways/
 
