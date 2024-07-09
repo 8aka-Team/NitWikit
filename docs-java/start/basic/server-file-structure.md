@@ -84,7 +84,7 @@ sidebar_position: 1
 
 - `purpur.jar`
 
-你可以改名叫任何名字（只要以 `.jar` 结尾，且在启动脚本中对应修改）
+你下载的服务端，你可以改名为任何名字（只要以 `.jar` 结尾，且在启动脚本中对应修改）
 
 - `purpur.yml`
 
@@ -104,7 +104,7 @@ Spigot 服务器都有的配置文件。
 
 - `usercache.json`
 
-储存着用名字及 UUID 信息的缓存文件。
+储存着用户名字(玩家名)及 UUID 信息的缓存文件。
 
 - `version_history`
 
