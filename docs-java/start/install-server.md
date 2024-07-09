@@ -57,5 +57,18 @@ java -jar forge-1.20.4-49.1.2-installer.jar(这里请改成你下载的文件名
 
 ## Fabric
 
-TODO
+Fabric 服务端安装器[点这](https://fabricmc.net/use/server/)
 
+下载方法如图（下载完毕后请不要运行！）
+![image](https://github.com/pingguomc/NitWikit/assets/141195321/4e4b8d33-82ea-4a7d-851d-a097f5836844)
+
+下面对此文件称呼为 Fabric 服务端安装器。
+
+下载好后双击运行。
+:::tip
+
+如果出现第一次双击后只有 .fabric 、 libraries 两个文件夹的情况。
+再次双击运行该文件夹内的 Fabric 服务端安装器。请不要过于着急而反复双击，也不需要删除已创建的文件夹，只需耐心等待一会。如果超过5分钟仍然没有变化，则尝试再次双击该文件夹内的 Fabric 服务端安装器。
+
+:::
+等待出现一些文件和文件夹后，修改eula文件为true，然后使用命令运行 或 直接双击运行 该安装器（同时是服务端核心）
