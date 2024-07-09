@@ -107,7 +107,7 @@ Leaf 相比于 Purpur 多了生电模组兼容，没多什么特性
 | [CraftBukkit](https://getbukkit.org/download/craftbukkit) | 插件端鼻祖核心，无优化 |
 | [Spigot](https://getbukkit.org/download/spigot/) | CraftBukkit的分支，有一点优化，仍不推荐 |
 
-:::danger
+::warning
 
 大部分付费所谓的高性能核心大概率是假的，如果你真的需要购买，你可以向大佬咨询
 
