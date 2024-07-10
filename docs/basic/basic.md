@@ -1,7 +1,7 @@
 ---
 title: 基础知识
 slug: /basic
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 # 基础知识
