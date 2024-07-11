@@ -37,7 +37,7 @@ Leaves - 是基于 Paper 的一个致力于修复原版服务端被破坏特性�
 
 Purpur - 是基于 Purfferfish 的一个专注功能性和性能的 Fork；
 
-Leaf - 是基于 Purfferfish，Purpur，Gale 等的平衡功能性、性能、拓展性的 Fork。
+Leaf - 是基于 Purfferfish，Purpur，Gale 等的专注于性能的 Fork。
 
 ## MOD 端
 

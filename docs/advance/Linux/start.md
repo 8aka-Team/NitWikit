@@ -3,6 +3,9 @@ title: 开服
 sidebar_position: 3
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # 开服
 
 开服之前，请检查服务器是否安装了 Java，在终端输入
@@ -25,7 +28,6 @@ OpenJDK 64-Bit Server VM Zulu21.32+17-CA (build 21.0.2+13-LTS, mixed mode, shari
 
 下方以安装 `openjdk-17` 为例
 
-```
 <Tabs
   defaultValue="Debian/Ubuntu"
   values={[
@@ -37,7 +39,6 @@ OpenJDK 64-Bit Server VM Zulu21.32+17-CA (build 21.0.2+13-LTS, mixed mode, shari
   <TabItem value="RedHat/CentOS">sudo yum install java-11-openjdk</TabItem>
   <TabItem value="ArchLinux">sudo pacman -S jdk11-openjdk</TabItem>
 </Tabs>
-```
 
 其他发行版安装方式自行百度
 

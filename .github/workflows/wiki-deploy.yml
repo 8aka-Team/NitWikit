@@ -6,6 +6,8 @@ on:
     branches: [ 'main' ]
     paths:
       - 'docs/**'
+      - 'docs-java/**'
+      - 'docs-bedrock/**'
       - 'package.json'
 
 # 设置权限

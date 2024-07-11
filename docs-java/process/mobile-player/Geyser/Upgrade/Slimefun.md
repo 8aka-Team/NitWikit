@@ -19,8 +19,6 @@ sidebar_position: 2
 
 第二步，下载[Mapping](https://qcymc.cloud/f/R6DT5/RYSurvival-SlimefunMapping.jar)，安装到 `服务端/geyser/extensions` 文件夹
 
-![](_image/Geyser5.png)
-
-第三步，将[Item-model.yml](https://github.com/xMikux/Slimefun-Resourcepack/blob/main/Resourcepack/item-models.yml)放入 `服务端/plugins/slimefun` 文件夹
+![](Extended/_image/Geyser5.png)
 
 **重启**服务端即可!
