@@ -5,7 +5,7 @@ sidebar_position: 1
 
 # BungeeCord 端
 
-支持 *BungeeCord/Waterfall* 的插件
+支持 _BungeeCord/Waterfall_ 的插件
 
 # 只安装在跨服端
 
@@ -35,13 +35,13 @@ sidebar_position: 1
 
 :::info
 
-见 [这里](/docs/process/plugin/other/Via/Via.md)
+见 [这里](/docs-java/process/plugin/other/Via/Via.md)
 
 :::
 
 :::danger[缺点]
 
-不能使用 [ViaVersion的papi变量](https://wiki.placeholderapi.com/users/placeholder-list/#viaversion)
+不能使用 [ViaVersion 的 papi 变量](https://wiki.placeholderapi.com/users/placeholder-list/#viaversion)
 
 比如 %viaversion_player_protocol_version% 来查看玩家客户端版本
 
@@ -51,11 +51,11 @@ sidebar_position: 1
 
 ## SkinsRestorer
 
-[插件 | 皮肤 - skinsRestorer](/docs/process/plugin/other/SkinsRestorer.md)
+[插件 | 皮肤 - skinsRestorer](/docs-java/process/plugin/other/SkinsRestorer.md)
 
 :::danger[缺点]
 
-不能使用 [变量](https://skinsrestorer.net/docs/integrations/placeholderapi) 和命令打开菜单UI切换皮肤
+不能使用 [变量](https://skinsrestorer.net/docs/integrations/placeholderapi) 和命令打开菜单 UI 切换皮肤
 
 :::
 
@@ -63,15 +63,15 @@ sidebar_position: 1
 
 :::info
 
-见 [这里](/docs/process/mobile-player/Geyser/introduction/overview.md)
+见 [这里](/docs-java/process/mobile-player/Geyser/introduction/overview.md)
 
 :::
 
 :::danger[缺点]
 
 - 不方便让反作弊支持
-- 不能用基岩版UI
-- 不方便单端判断BE玩家
+- 不能用基岩版 UI
+- 不方便单端判断 BE 玩家
 - 还有更多......
 
 :::
@@ -98,7 +98,7 @@ sidebar_position: 1
 
 :::info
 
-见 [插件 | ServerUtils](/docs/process/plugin/ManageTool/PluginManagement/ServerUtils.md)
+见 [插件 | ServerUtils](/docs-java/process/plugin/ManageTool/PluginManagement/ServerUtils.md)
 
 :::
 

@@ -242,7 +242,7 @@ import <fully qualified name> [as <alias>]
 
 ##### _处理嵌套类_
 
-有时，一个类可能嵌套在另一个类中。当引用类的完全限定名称时，嵌套类使用一个`$`而不是`.` 
+有时，一个类可能嵌套在另一个类中。当引用类的完全限定名称时，嵌套类使用一个`$`而不是`.`
 
 例如，将`org.bukkit.entity.EnderDragon.Phase`变成`org.bukkit.entity.EnderDragon$Phase`。
 
@@ -351,7 +351,7 @@ on EnderDragonChangePhaseEvent:
   # your code
 ```
 
-:::warn
+:::warning
 
 一些插件使用自己的事件处理系统，或者不通过 **Bukkit** 的事件执行器传递他们的事件（ **Skript** 的一些内部事件就是这种情况）。
 

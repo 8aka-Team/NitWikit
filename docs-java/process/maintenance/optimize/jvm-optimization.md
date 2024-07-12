@@ -205,6 +205,12 @@ G1GC
 
 显然,单次GC时间从32ms降到0.012ms
 
+:::tip
+
+你可能会发现`ZGC Cycle Time`很长,但其实你不用关心,因为没有停顿主线程，你只需要关心`ZGC Pause Time`即可
+
+:::
+
 ## JDK
 
 TODO

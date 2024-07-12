@@ -1,7 +1,7 @@
 ---
 title: 进阶教程
 slug: /advance
-sidebar_position: 21
+sidebar_position: 5
 ---
 
 

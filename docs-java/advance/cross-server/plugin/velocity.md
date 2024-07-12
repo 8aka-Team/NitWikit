@@ -5,7 +5,7 @@ sidebar_position: 2
 
 # Velocity 端
 
-支持 *Velocity* 的插件
+支持 _Velocity_ 的插件
 
 # 只安装在跨服端
 
@@ -25,7 +25,7 @@ sidebar_position: 2
 
 :::info
 
-见 [插件 | LimboAuth](/docs/process/plugin/other/Login/LimboAuth.md)
+见 [插件 | LimboAuth](/docs-java/process/plugin/other/Login/LimboAuth.md)
 
 :::
 
@@ -35,19 +35,19 @@ sidebar_position: 2
 
 ## MiniMOTD
 
-同 [BungeeCord一侧的讲解](BC&WF.md#minimotd)
+同 [BungeeCord 一侧的讲解](BC&WF.md#minimotd)
 
 ## ViaVersion
 
-同 [BungeeCord一侧的讲解](BC&WF.md#viaversion)
+同 [BungeeCord 一侧的讲解](BC&WF.md#viaversion)
 
 ## SkinsRestorer
 
-同 [BungeeCord一侧的讲解](BC&WF.md#skinsrestorer)
+同 [BungeeCord 一侧的讲解](BC&WF.md#skinsrestorer)
 
 ## Geyser
 
-同 [BungeeCord一侧的讲解](BC&WF.md#geyser)
+同 [BungeeCord 一侧的讲解](BC&WF.md#geyser)
 
 # 装在跨服端或+子服端
 
@@ -57,7 +57,7 @@ sidebar_position: 2
 
 :::info
 
-见 [插件 | ServerUtils](/docs/process/plugin/ManageTool/PluginManagement/ServerUtils.md)
+见 [插件 | ServerUtils](/docs-java/process/plugin/ManageTool/PluginManagement/ServerUtils.md)
 
 :::
 
@@ -65,7 +65,7 @@ sidebar_position: 2
 
 :::info
 
-同 [BungeeCord一侧的讲解](BC&WF.md#playerbalancer)
+同 [BungeeCord 一侧的讲解](BC&WF.md#playerbalancer)
 
 :::
 
@@ -77,6 +77,6 @@ sidebar_position: 2
 
 :::info
 
-同 [BungeeCord一侧的讲解](BC&WF.md#papiproxybridge)
+同 [BungeeCord 一侧的讲解](BC&WF.md#papiproxybridge)
 
 :::
