@@ -128,14 +128,14 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Java版',
+            label: 'Java',
             docsPluginId: 'docs-java'
           },
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: '基岩版',
+            label: 'Bedrock',
             docsPluginId: 'docs-bedrock'
           },
           // 搜索框
