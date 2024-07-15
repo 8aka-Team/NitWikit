@@ -15,7 +15,7 @@ sidebar_position: 4
 
 ### 使用数据库
 
-合理使用数据库可以降低服务器硬盘占用。详见[数据库相关](../../advance/database.md)
+合理使用数据库可以降低服务器硬盘占用。详见[数据库相关](https://yizhan.wiki/NitWikit/database)
 
 ## 备份空间优化
 

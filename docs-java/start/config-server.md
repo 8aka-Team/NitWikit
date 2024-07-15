@@ -40,7 +40,7 @@ online-mode=true
 
 :::
 
-注意,在离线模式下,玩家大概率没皮肤,你需要 [SkinsRestorer](/docs/process/cross-server/plugin/BC&WF.md#skinsrestorer)，根据需求选择 SkinsRestorer 的版本。
+注意,在离线模式下,玩家大概率没皮肤,你需要 [SkinsRestorer](/docs-java/process/plugin/other/SkinsRestorer.md)，根据需求选择 SkinsRestorer 的版本。
 
 ## 最大玩家数
 

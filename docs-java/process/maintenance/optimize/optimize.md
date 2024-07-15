@@ -19,7 +19,7 @@ sidebar_position: 1
 
 ## 选择合适的 Java
 
-参考[ Java 下载及安装](/docs/preparation/download-and-install-java.md)安装合适的 Java
+参考[ Java 下载及安装](https://yizhan.wiki/NitWikit/preparation/choose-and-download-and-install-java/)安装合适的 Java
 
 ## JVM 参数优化
 
@@ -52,7 +52,7 @@ sidebar_position: 1
 
 <summary>选择更换的服务器核心</summary>
 
-此处只是作为最基础的核心选择推荐，完整版请查看[核心选择](/docs/start/server-core-choose.md)
+此处只是作为最基础的核心选择推荐，完整版请查看[核心选择](/docs-java/start/server-core-choose.md)
 
 ## Paper - 追求极致稳定 _推荐度 ★★★★☆_
 
@@ -96,7 +96,7 @@ sidebar_position: 1
 
 无论在性能还是稳定性， Linux 都比 Windows 更适合用于开服，对于 Linux 根据自己的使用经验选择即可，如果没有使用经验可以先使用 Ubuntu 等主流系统。
 
-如果想要了解更多请前往进阶 [Linux 开服教程](/docs/advance/Linux/start.md)
+如果想要了解更多请前往进阶 [Linux 开服教程](https://yizhan.wiki/NitWikit/Sundry/Advance/Linux)
 
 # 第七步 - 性能分析
 
