@@ -105,13 +105,13 @@ connection_throttle_limit: 3
 
 使用插件直接对抗超大规模的网络攻击是不太现实的。
 
-如果正在遭受这种攻击，最合理的办法是提升服务器带宽或使用专门针对于此类攻击的代理 ([点这里](/docs/maintenance/how-to-defend-against-cyber-attacks.md#使用第三方Minecraft代理))。
+如果正在遭受这种攻击，最合理的办法是提升服务器带宽或使用专门针对于此类攻击的代理
 
 :::
 
 ### 付费防御核心
 
-如果您非常有钱，您可以打开服务端[核心选择](/docs-java/process/cross-server/server-core-choose.md)，选择那些付费的服务端核心，NullCordX 是一个较好的选择。
+如果您非常有钱，您可以打开跨服端[核心选择](https://yizhan.wiki/NitWikit/Java/advance/cross-server/server-core-choose)，选择那些付费的跨服端核心，NullCordX 是一个较好的选择。
 
 但在没有想好的情况下，**不建议为反假人付费**。
 

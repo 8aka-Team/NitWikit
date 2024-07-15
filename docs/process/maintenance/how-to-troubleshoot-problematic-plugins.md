@@ -13,7 +13,7 @@ sidebar_position: 7
 
 将报错先翻译一遍，确定其中是否提示了错误的类型（如缺少前置，缺少类，插件需要更新等）。
 
-然后你可以尝试按照[如何向大佬求助](../ask-for-help.md)中提到的方法，增加问题解决的可能性。
+然后你可以尝试按照[如何向大佬求助](https://yizhan.wiki/NitWikit/Java/start/ask-for-help)中提到的方法，增加问题解决的可能性。
 
 ## 二分法
 
