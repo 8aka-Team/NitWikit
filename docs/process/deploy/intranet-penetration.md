@@ -11,7 +11,7 @@ sidebar_position: 5
 
 **来几个？**
 
-内网穿透一抓一大把，比如[樱花内网穿透](https：//www.natfrp.com/)和[OpenFrp](https：//www.openfrp.net/)
+内网穿透一抓一大把，比如[樱花内网穿透](https://www.natfrp.com/)和[OpenFrp](https://www.openfrp.net/)
 
 ~~因为rz用户比较多，你甚至能用某人用不用樱花来定性判断这人有没有技术~~
 

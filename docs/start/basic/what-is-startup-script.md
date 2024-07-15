@@ -67,7 +67,7 @@ java -Xms12G -Xmx12G -jar 核心名.jar nogui
 
 1. 无论什么时候，分配内存时一定要多预留15%左右内存，如服务器还剩余 10G 内存， 不要将 -Xms 设置到大于 9G 的内存，否则会很危险。
 2. 在 G1GC 模式下，尽量保证 Xmx = Xms 因为如果二者不同 JVM 需要更多的内存时候，JVM需要申请更多内存，这个过程的耗时会导致顿卡。
-3. 更多的参数讲解，请前往 [JVM参数优化](/docs/maintenance/optimize/jvm-optimization.md)
+3. 更多的参数讲解，请前往 [JVM参数优化](https://yizhan.wiki/NitWikit/Java/process/maintenance/optimize/jvm-optimization)
 
 :::
 

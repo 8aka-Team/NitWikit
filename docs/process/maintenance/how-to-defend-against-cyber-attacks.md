@@ -111,7 +111,7 @@ connection_throttle_limit: 3
 
 ### 付费防御核心
 
-如果您非常有钱，您可以打开服务端[核心选择](/docs/process/cross-server/server-core-choose.md)，选择那些付费的服务端核心，NullCordX 是一个较好的选择。
+如果您非常有钱，您可以打开服务端[核心选择](/docs-java/process/cross-server/server-core-choose.md)，选择那些付费的服务端核心，NullCordX 是一个较好的选择。
 
 但在没有想好的情况下，**不建议为反假人付费**。
 

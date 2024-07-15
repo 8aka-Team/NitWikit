@@ -1,5 +1,7 @@
 ---
 title: 世界管理
-slug: /Plugins/OtherPlugin/Via
+slug: /Plugins/Worldmanagement
 sidebar_position: 8
 ---
+
+# 世界管理
