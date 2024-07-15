@@ -22,7 +22,7 @@ JDK(Java Development Kit) 又称 J2SDK(Java2 Software Development Kit)，是 Jav
 ## 选择版本
 
 :::warning
-部分服务端有在项目的README中标注最低版本和推荐版本，例如 [Beast](https://github.com/HomoMC/Beast)，最低版本为 Java 8，推荐版本为 Java 21  
+部分服务端有在项目的README中标注最低版本和推荐版本，例如 [Beast](https://github.com/HomoMC/Beast)，最低版本为 Java 8，推荐版本为 Java 21
 MOD 服务端
 :::
 
