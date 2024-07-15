@@ -1,7 +1,7 @@
 ---
 title: 部署到生产环境
 slug: /deploy
-sidebar_position: 3
+sidebar_position: 1
 ---
 
 # 概览
