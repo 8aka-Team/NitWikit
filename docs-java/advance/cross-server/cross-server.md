@@ -1,7 +1,7 @@
 ---
 title: 跨服端
 slug: /cross-server
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # 跨服端
