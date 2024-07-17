@@ -7,7 +7,7 @@ sidebar_position: 6
 
 ## AZPixel-Team的Java2Bedrock
 
-:::tips
+:::tip
 
 注意！字体偏移是Java版独有的，基岩版没有这个功能，因此一些利用字体偏移做到的东西（如IA菜单）无法正常显示，但你可以通过万能的jsonui来实现，或者给大佬爆金币定制基岩jsonui
 

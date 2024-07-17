@@ -92,7 +92,7 @@ GitHub: https://github.com/rizonesoft/Notepad3
 
 可用, 相关功能也较为完善。
 
-:::wanning
+:::warning
 
 作者政治立场可能引起众怒, 但请理性看待：
 
