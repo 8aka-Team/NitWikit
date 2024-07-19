@@ -68,7 +68,9 @@ TODO
 <details>
   <summary>我没有/不知道啥是公网ip</summary>
 
-todo
+为了在没有公网IP的情况下连接到你的内外机器，你需要搭建 **Frp**。
+
+参见：[搭建内网穿透（Frp）](../../advance/Linux/frp.md)
 
 </details>
 
