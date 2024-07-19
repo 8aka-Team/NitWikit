@@ -60,7 +60,7 @@ sidebar_position: 4
 
 作用是收取10个钻石
 
-> amt是 amount 的所写
+> amt是 amount 的缩写
 
 :::note
 
