@@ -16,7 +16,7 @@ sidebar_position: 4
 - [插件特征文件](/docs-java/process/plugin/plugin-signature-file.md) - 了解插件的一些信息。
 - [格式化代码](/docs-java/advance/format-code.md) - 了解彩色字体，下划线，删除线等。
 - [MiniMessage](/docs-java/advance/MiniMessage.md) - 了解 RGB 颜色，文本悬浮和点击文字执行等。
-- [什么是乱码](/docs/start/basic/what-is-messy-code.md) - 了解文本文件中的字符有时为什么会变得奇奇怪怪。
+- [什么是乱码](https://yizhan.wiki/NitWikit/start/basic/what-is-messy-code) - 了解文本文件中的字符有时为什么会变得奇奇怪怪。
 
 :::danger
 
