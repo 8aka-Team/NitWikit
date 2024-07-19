@@ -168,7 +168,7 @@ simulate-distance: 8
 
 #### chunk-loading-basic
 
-服务器生成区块非常消耗资源，希望你服务器进行了预生成，如果没有进行的话请阅读 [优化概论](overview.md)
+服务器生成区块非常消耗资源，希望你服务器进行了预生成，如果没有进行的话请阅读 [预生成](/docs-java/process/maintenance/optimize/optimize.md#第二步---预生成)
 
 在 `/config/paper-global.yml` 中有关于区块生成的一些参数
 

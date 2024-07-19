@@ -1,7 +1,7 @@
 ---
 title: 跨服端
 slug: /cross-server
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # 跨服端
@@ -50,6 +50,6 @@ BungeeCord / Velocity 端（或他们的 Fork ）在这里我们称为`跨服端
 
 你都跨服了，估计会有多端数据同步的需求吧?
 
-看 [数据库相关](/database)
+看 [数据库相关](https://yizhan.wiki/NitWikit/database)
 
 一般需要安装两个数据库，MySQL 和 Redis，MySQL 用于存储重要信息，比如账号密码，经济，权限 Redis 用于快速跨服同步

@@ -19,15 +19,15 @@ sidebar_position: 3
 
 首先，来到 [Forge 官方网站](https://files.minecraftforge.net/net/minecraftforge/forge/)
 
-![](install/1.png)
+![](_images/install/1.png)
 
 在左边的 `Minecraft Version` 找到你需要的版本，然后下载下来
 
-![](install/2.png)
+![](_images/install/2.png)
 
 请选择 `Installer` ，左边右边都无所谓，打开后，你会来到一个广告窗口，点击最上面的 `SKIP`(没有出现就等一会)
 
-![](install/3.png)
+![](_images/install/3.png)
 
 然后你就成功下载了 Forge Installer，但还没有完!，继续
 
@@ -41,7 +41,7 @@ https://bmclapi2.bangbang93.com/version/这里填你的MC版本/server
 
 下载下来后，你需要将文件重命名为`minecraft_server.这里填你的MC版本.jar`，比如我1.20.4服务器应该是`minecraft_server.1.20.4.jar`，现在你的目录应该长这样
 
-![](install/4.png)
+![](_images/install/4.png)
 
 接着打开cmd，不会请查看[开启 cmd](launch-server.md#笨蛋脚本)，输入以下命令
 
@@ -58,4 +58,3 @@ java -jar forge-1.20.4-49.1.2-installer.jar(这里请改成你下载的文件名
 ## Fabric
 
 TODO
-

@@ -43,7 +43,7 @@ Standalone版本 可以作为一个独立的代理端启动
 ### 其他版本
 作为插件或模组安装到对应文件夹即可
 ### 独立版
-独立版作为一个单独的服务端，你可以参考 [此处](/docs/start/launch-server.md) 的开启方法
+独立版作为一个单独的服务端，你可以参考 [此处](/docs-java/start/launch-server.md) 的开启方法
 
 ## 配置
 

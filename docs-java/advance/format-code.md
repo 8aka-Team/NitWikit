@@ -7,7 +7,7 @@ sidebar_position: 8
 
 **格式化代码（Formatting code）**，又称**颜色代码（Color code）**，能使在游戏中加入含颜色和格式信息。
 
-在 Minecraft 中，可以以分节符号（`§`）产生带色文字。 
+在 Minecraft 中，可以以分节符号（`§`）产生带色文字。
 
 
 ![](_images/格式化代码/Minecraft_Formatting.gif)

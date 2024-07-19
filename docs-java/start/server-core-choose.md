@@ -5,7 +5,7 @@ sidebar_position: 2
 
 # 服务端核心选择
 
-> 目前有三类主流的选择： Mod，插件，Mod 和插件混合。但其实，插件核心只要是同版本的分支基本可以后期再替换（如使用 Purpur 替换 Paper 或 pigot等），
+> 目前有三类主流的选择： Mod，插件，Mod 和插件混合。但其实，插件核心只要是同版本的分支基本可以后期再替换（如使用 Purpur 替换 Paper 或 Spigot等），
 
 Mod 服最开始就必须选好核心，也就是 Forge 还是 Fabric 的问题。
 

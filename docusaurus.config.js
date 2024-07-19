@@ -72,7 +72,7 @@ const config = {
       {
         id: 'docs-java',
         path: 'docs-java',
-        routeBasePath: 'Java版',
+        routeBasePath: 'Java',
         editUrl: 'https://github.com/postyizhan/NitWikit/tree/main',
         sidebarPath: require.resolve('./sidebars.js'),
         editCurrentVersion: true,
@@ -85,7 +85,7 @@ const config = {
       {
         id: 'docs-bedrock',
         path: 'docs-bedrock',
-        routeBasePath: '基岩版',
+        routeBasePath: 'Bedrock',
         editUrl: 'https://github.com/postyizhan/NitWikit/tree/main',
         sidebarPath: require.resolve('./sidebars.js'),
         editCurrentVersion: true,
@@ -128,14 +128,14 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Java版',
+            label: 'Java',
             docsPluginId: 'docs-java'
           },
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: '基岩版',
+            label: 'Bedrock',
             docsPluginId: 'docs-bedrock'
           },
           // 搜索框

@@ -14,6 +14,7 @@ sidebar_position: 1
 - 具备**基础**的计算机操作技能 - 如解压、新建文件夹、打开文件、安装软件等；
 - 具备使用**搜索引擎**搜索关键词的能力；
 - 拥有一台能够**正常游玩 Minecraft** 的电脑。
+- 具有一定的**英语基础** 
 
 # 教程适合的群体
 
@@ -38,3 +39,7 @@ sidebar_position: 1
 对于文档中的错误请进入 [Github](https://github.com/postyizhan/NitWikit) 提出 Issue 或提交 Pr。
 
 欢迎加入 [企鹅群 🐧611076407](https://qm.qq.com/q/lEnfzgzxjq)。
+
+# 本节视频教程
+
+[**点此前往B站**: 笨蛋级MC开服教程-第一集:服主的基本要求](https://www.bilibili.com/video/BV16W421R7tm/?share_source=copy_web&vd_source=53975e70eabfc1d6563221a670d4021a)

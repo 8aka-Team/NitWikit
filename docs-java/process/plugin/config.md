@@ -7,9 +7,9 @@ sidebar_position: 2
 
 插件的配置文件一般在 `/plugins/插件名字/` 文件夹中，常见的配置文件一般是 `config.yml` 。
 
-> 插件一般会使用 **Yaml** 作为配置文件格式，建议先学习 [Yaml](/docs/advance/YAML/YAML.md) 语法。
+> 插件一般会使用 **Yaml** 作为配置文件格式，建议先学习 [Yaml](/docs-java/advance/YAML/YAML.md) 语法。
 
-我们在开始前所做的准备工作中，推荐你安装任意一款推荐的文档编辑软件：请查看[准备工作](/docs/preparation/text-editor.md)
+我们在开始前所做的准备工作中，推荐你安装任意一款推荐的文档编辑软件：请查看[文本编辑器](https://yizhan.wiki/NitWikit/preparation/text-editor)
 
 如果你是 Windows ，现在让我们双击 .yml 文件就可以开始修改配置文件了！
 

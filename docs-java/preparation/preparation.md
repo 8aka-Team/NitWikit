@@ -1,7 +1,7 @@
 ---
 title: 准备工作
 slug: /preparation
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # 准备工作
