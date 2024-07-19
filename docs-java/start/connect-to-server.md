@@ -75,4 +75,4 @@ server-port=25565
 
 ### 我没公网
 
-请使用你的搜索引擎搜索内网映射，我个人比较推荐樱花，然后按照上面的教程把你的端口映射出去
+请见 [通用| 内网穿透](https://yizhan.wiki/NitWikit/process/deploy/intranet-penetration)
