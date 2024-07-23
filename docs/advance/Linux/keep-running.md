@@ -3,6 +3,9 @@ title: 如何保持服务器在 Linux 服务器中后台运行
 sidebar_position: 3
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # 如何保持服务器在 Linux 服务器中后台运行
 
 由于Linux的会话机制，手动启动的服务端会在ssh断开连接之后停止运行，所以我们需要服务端保持后台运行。
