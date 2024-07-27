@@ -94,7 +94,7 @@ Done (6.554s)! For help， type "help"
 
 ## 更复杂的 bat
 
-请参考 [JVM 参数优化](/docs-java/process/maintenance/optimize/jvm-optimization.md)
+请参考 [JVM 参数优化](/docs-java/process/maintenance/optimize/optimize.md#jvm-参数优化)
 
 ## 常见问题
 
