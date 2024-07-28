@@ -48,10 +48,8 @@ C4 是 Zing 中唯一的垃圾收集器，取代了 OpenJDK 中可用的其他�
 
 [TAR.GZ](https://cdn.azul.com/zing-zvm/ZVM24.06.0.0/zing24.06.0.0-2-jdk21.0.3-linux_x64.tar.gz)
 
+[DEB](https://cdn.azul.com/zing-zvm/ZVM24.06.0.0/zing24.06.0.0-2-jdk21.0.3-linux_amd64.deb)
+
 ## 一些特殊情况
 
 zing和mariadb不要一起用
-
-[DEB](https://cdn.azul.com/zing-zvm/ZVM24.06.0.0/zing24.06.0.0-2-jdk21.0.3-linux_amd64.deb)
-
-
