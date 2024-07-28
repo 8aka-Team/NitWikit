@@ -28,14 +28,14 @@ MOD 服务端
 
 ### 常见插件端(Paper 等)
 
-| Minecraft 版本    | 最低版本    | 推荐版本    |
-|-----------------|---------|---------|
-| 1.0 - 1.11.2    | Java 6  | Java 8  |
-| 1.12 - 1.16.4   | Java 8  | Java 11 |
-| 1.16.5          | Java 8  | Java 16 |
-| 1.17            | Java 16 | Java 17 |
-| 1.17.1 - 1.20.4 | Java 17 | Java 21 |
-| 1.20.5 - 1.21   | Java 21 | Java 21 |
+| Minecraft 版本  | 最低版本 | 推荐版本 |
+| --------------- | -------- | -------- |
+| 1.0 - 1.11.2    | Java 6   | Java 8   |
+| 1.12 - 1.16.4   | Java 8   | Java 11  |
+| 1.16.5          | Java 8   | Java 16  |
+| 1.17            | Java 16  | Java 17  |
+| 1.17.1 - 1.20.4 | Java 17  | Java 21  |
+| 1.20.5 - 1.21   | Java 21  | Java 21  |
 
 ### 混合服务端(CatServer 等)
 TODO
@@ -46,12 +46,12 @@ TODO
 此处下载链接可能不是最新版，如需下载最新版请跳转至 [手动下载](#%E6%89%8B%E5%8A%A8%E4%B8%8B%E8%BD%BD)
 :::
 
-| Java 版本 | 下载链接                                                                                                                                   |
-|---------|----------------------------------------------------------------------------------------------------------------------------------------|
-| Java 8  | [Dragonwell 8](https://dragonwell.oss-cn-shanghai.aliyuncs.com/8.19.20/Alibaba_Dragonwell_Extended_8.19.20_x64_windows.zip)            |
-| Java 11 | [Dragonwell 11](https://dragonwell.oss-cn-shanghai.aliyuncs.com/11.0.23.20.9/Alibaba_Dragonwell_Extended_11.0.23.20.9_x64_windows.zip) |
-| Java 17 | [Azul Zulu](https://cdn.azul.com/zulu/bin/zulu22.32.15-ca-jdk22.0.2-win_x64.zip)                                                       |
-| Java 21 | [GraalVM EE](https://download.oracle.com/graalvm/21/latest/graalvm-jdk-21_windows-x64_bin.zip)                                         |
+| Java 版本 | 下载链接                                                                                                                               |
+| --------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| Java 8    | [Dragonwell 8](https://dragonwell.oss-cn-shanghai.aliyuncs.com/8.19.20/Alibaba_Dragonwell_Extended_8.19.20_x64_windows.zip)            |
+| Java 11   | [Dragonwell 11](https://dragonwell.oss-cn-shanghai.aliyuncs.com/11.0.23.20.9/Alibaba_Dragonwell_Extended_11.0.23.20.9_x64_windows.zip) |
+| Java 17   | [Azul Zulu](https://cdn.azul.com/zulu/bin/zulu22.32.15-ca-jdk22.0.2-win_x64.zip)                                                       |
+| Java 21   | [GraalVM EE](https://download.oracle.com/graalvm/21/latest/graalvm-jdk-21_windows-x64_bin.zip)                                         |
 
 :::danger
 
@@ -88,7 +88,7 @@ TODO
 https://www.java.com/zh-CN/download/
 </details>
 
-如果你想进行 JVM 优化,请看[JVM优化](/docs-java/process/maintenance/optimize/jvm/jvm.md)
+如果你想进行 JVM 优化,请看[JVM优化](http://localhost:3000/Java/optimize/jvm)
 
 ## 验证 Java 安装
 
