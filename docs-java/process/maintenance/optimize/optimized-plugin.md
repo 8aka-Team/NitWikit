@@ -102,6 +102,19 @@ sidebar_position: 6
 
 *[StackMob](https://www.spigotmc.org/resources/stackmob-enhance-your-servers-performance-without-the-sacrifice.29999/) - 实体密集时进行堆叠的插件(若一定要使用仍推荐本插件而不是其他堆叠插件)*
 
+其实叠加后的一小段时间，应该是占用下降的，但是服务器会因为实际的实体变少，重新刷新怪物，这会让占用缓慢恢复。
+
+其次，如果堆叠插件使用的是命名的方式，这会牺牲命名这个操作，主流的是通过发包，告诉玩家这里有多少怪物，但是大量的会刷新的发包也会造成一定的带宽、cpu压力
+
+最后，从心理学的角度（不是），玩家总是倾向将动物养殖到服务器能容忍的最大限度，如果你堆叠到100，他一样会养很多堆叠到100的羊，
+
+综上所述，不要安装堆叠插件。
+
+:::tip
+补充一点，我可以推荐给你这个，只在服务器mspt超过阈值才堆叠动物。如果你本身有farmcontrol之类的插件控制总量，那这个插件的使用是安全、无感、且能起到一定的“优化”作用的。<br />
+https://github.com/quiquelhappy/StackMob-5
+:::
+
 ### 爆炸优化插件
 
 Paper 酱为你在 `/config/paper-world-default.yml` 中准备了爆炸优化。
