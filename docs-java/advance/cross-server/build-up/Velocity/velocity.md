@@ -88,7 +88,7 @@ Can't connect to server lobby： This server requires you to connect with Veloci
 一句话， Mod 太多太大导致连接时间延长了。你可以减少服务器的 Mod 数量或者在 Velocity 配置文件中设置 `read-timeout` 的值，同时在你的 Forge 子服的启动参数中添加 `-Dfml.readTimeout` 参数来提高阈值。比如，你想设置你的 readTimeout 时间到 120 秒
 那么你可以设置：
 
-`read-timeout = 120000` (单位：毫秒) 
+`read-timeout = 120000` (单位：毫秒)
 
 `-Dfml.readTimeout=120` (单位：秒)
 
@@ -103,4 +103,3 @@ Can't connect to server lobby： This server requires you to connect with Veloci
 有大佬提出了关于这个问题的 [PR](https://github.com/PaperMC/Velocity/pull/1357)
 
 可以坐等合并了，合并之后就可以给各个不同的子服配置不同的转发模式啦
-

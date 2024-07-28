@@ -17,6 +17,7 @@ JRE(Java Runtime Enviroment) 是 Java 的运行环境。面向 Java 程序的使
 JDK(Java Development Kit) 又称 J2SDK(Java2 Software Development Kit)，是 Java 开发工具包，它提供了 Java 的开发环境(提供了编译器 javac 等工具，用于将 java 文件编译为 class 文件)和运行环境(提 供了 JVM 和 Runtime 辅助包，用于解析 class 文件使其得到运行)。如果你下载并安装了 JDK，那么你不仅可以开发 Java 程序，也同时拥有了运行 Java 程序的平台。JDK 是整个 Java 的核心，包括了 Java 运行环境(JRE)，一堆 Java 工具 tools.jar 和 Java 标准类库 (rt.jar)
 
 **总结: 只开服务端下载 JRE 即可，JDK 也没问题**
+
 </details>
 
 ## 选择版本
@@ -38,6 +39,7 @@ MOD 服务端
 | 1.20.5 - 1.21   | Java 21  | Java 21  |
 
 ### 混合服务端(CatServer 等)
+
 TODO
 
 ## 直接下载
@@ -46,12 +48,12 @@ TODO
 此处下载链接可能不是最新版，如需下载最新版请跳转至 [手动下载](#%E6%89%8B%E5%8A%A8%E4%B8%8B%E8%BD%BD)
 :::
 
-| Java 版本 | 下载链接                                                                                                                               |
-| --------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| Java 8    | [Dragonwell 8](https://dragonwell.oss-cn-shanghai.aliyuncs.com/8.19.20/Alibaba_Dragonwell_Extended_8.19.20_x64_windows.zip)            |
-| Java 11   | [Dragonwell 11](https://dragonwell.oss-cn-shanghai.aliyuncs.com/11.0.23.20.9/Alibaba_Dragonwell_Extended_11.0.23.20.9_x64_windows.zip) |
-| Java 17   | [Azul Zulu](https://cdn.azul.com/zulu/bin/zulu22.32.15-ca-jdk22.0.2-win_x64.zip)                                                       |
-| Java 21   | [GraalVM EE](https://download.oracle.com/graalvm/21/latest/graalvm-jdk-21_windows-x64_bin.zip)                                         |
+| Java 版本 | 下载链接                                                                                                                                   |
+|---------|----------------------------------------------------------------------------------------------------------------------------------------|
+| Java 8  | [Dragonwell 8](https://dragonwell.oss-cn-shanghai.aliyuncs.com/8.19.20/Alibaba_Dragonwell_Extended_8.19.20_x64_windows.zip)            |
+| Java 11 | [Dragonwell 11](https://dragonwell.oss-cn-shanghai.aliyuncs.com/11.0.23.20.9/Alibaba_Dragonwell_Extended_11.0.23.20.9_x64_windows.zip) |
+| Java 17 | [Azul Zulu](https://cdn.azul.com/zulu/bin/zulu22.32.15-ca-jdk22.0.2-win_x64.zip)                                                       |
+| Java 21 | [GraalVM EE](https://download.oracle.com/graalvm/21/latest/graalvm-jdk-21_windows-x64_bin.zip)                                         |                                      |
 
 :::danger
 
@@ -86,9 +88,10 @@ TODO
 你可以在下方链接直接下载 Java 8：
 
 https://www.java.com/zh-CN/download/
+
 </details>
 
-如果你想进行 JVM 优化,请看[JVM优化](http://localhost:3000/Java/optimize/jvm)
+如果你想进行 JVM 优化,请看[JVM 优化](https://yizhan.wiki/NitWikit/Java/optimize/jvm/)
 
 ## 验证 Java 安装
 
@@ -124,4 +127,4 @@ java -version
 
 # 本节视频教程
 
-[**点此前往B站**: 笨蛋级MC开服教程-第三集P1:实机演示安装JAVA](https://www.bilibili.com/video/BV1eT42167iZ/?share_source=copy_web&vd_source=53975e70eabfc1d6563221a670d4021a)
+[**点此前往 B 站**: 笨蛋级 MC 开服教程-第三集 P1:实机演示安装 JAVA](https://www.bilibili.com/video/BV1eT42167iZ/?share_source=copy_web&vd_source=53975e70eabfc1d6563221a670d4021a)
