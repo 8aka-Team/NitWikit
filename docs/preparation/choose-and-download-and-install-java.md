@@ -7,7 +7,7 @@ sidebar_position: 1
 
 您的服务端和客户端都需要安装 Java 才能运行。各个游戏版本需要安装的 Java 版本不同。
 
-原则上选择最新的兼容的 Java 版本，可以体验到最新的优化，并且大部分现代插件对最新版的特性有优化（比如AuthMeReReload）。
+原则上选择最新的兼容的 Java 版本，可以体验到最新的优化，并且大部分现代插件对最新版的特性有优化（比如 AuthMeReReload）。
 
 <details>
   <summary>JRE 和 JDK 是什么? 我该怎么选择?</summary>
@@ -17,12 +17,13 @@ JRE(Java Runtime Enviroment) 是 Java 的运行环境。面向 Java 程序的使
 JDK(Java Development Kit) 又称 J2SDK(Java2 Software Development Kit)，是 Java 开发工具包，它提供了 Java 的开发环境(提供了编译器 javac 等工具，用于将 java 文件编译为 class 文件)和运行环境(提 供了 JVM 和 Runtime 辅助包，用于解析 class 文件使其得到运行)。如果你下载并安装了 JDK，那么你不仅可以开发 Java 程序，也同时拥有了运行 Java 程序的平台。JDK 是整个 Java 的核心，包括了 Java 运行环境(JRE)，一堆 Java 工具 tools.jar 和 Java 标准类库 (rt.jar)
 
 **总结: 只开服务端下载 JRE 即可，JDK 也没问题**
+
 </details>
 
 ## 选择版本
 
 :::warning
-部分服务端有在项目的README中标注最低版本和推荐版本，例如 [Beast](https://github.com/HomoMC/Beast)，最低版本为 Java 8，推荐版本为 Java 21
+部分服务端有在项目的 README 中标注最低版本和推荐版本，例如 [Beast](https://github.com/HomoMC/Beast)，最低版本为 Java 8，推荐版本为 Java 21
 MOD 服务端
 :::
 
@@ -38,6 +39,7 @@ MOD 服务端
 | 1.20.5 - 1.21   | Java 21  | Java 21  |
 
 ### 混合服务端(CatServer 等)
+
 TODO
 
 ## 直接下载
@@ -55,7 +57,7 @@ TODO
 
 :::danger
 
-32位操作系统开服开个鬼服...
+32 位操作系统开服开个鬼服...
 
 [32 位和 64 位有什么区别](https://cn.bing.com/search?q=32%E4%BD%8D%2064%E4%BD%8D%E6%98%AF%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D)
 
@@ -86,9 +88,10 @@ TODO
 你可以在下方链接直接下载 Java 8：
 
 https://www.java.com/zh-CN/download/
+
 </details>
 
-如果你想进行 JVM 优化,请看[JVM优化](http://localhost:3000/Java/optimize/jvm)
+如果你想进行 JVM 优化,请看[JVM 优化](https://yizhan.wiki/NitWikit/Java/optimize/jvm/)
 
 ## 验证 Java 安装
 
@@ -124,4 +127,4 @@ java -version
 
 # 本节视频教程
 
-[**点此前往B站**: 笨蛋级MC开服教程-第三集P1:实机演示安装JAVA](https://www.bilibili.com/video/BV1eT42167iZ/?share_source=copy_web&vd_source=53975e70eabfc1d6563221a670d4021a)
+[**点此前往 B 站**: 笨蛋级 MC 开服教程-第三集 P1:实机演示安装 JAVA](https://www.bilibili.com/video/BV1eT42167iZ/?share_source=copy_web&vd_source=53975e70eabfc1d6563221a670d4021a)

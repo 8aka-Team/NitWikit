@@ -12,11 +12,11 @@ sidebar_position: 2
 
 ## 什么是 Velocity ？
 
-velocity 可以说是目前最优秀的**Minecraft代理端**之一，由经验丰富的PaperMC团队研发，Velocity 拥有先进的转发方式和极高的安全性。与此同时，Velocity 也有优秀的性能表现
+velocity 可以说是目前最优秀的**Minecraft 代理端**之一，由经验丰富的 PaperMC 团队研发，Velocity 拥有先进的转发方式和极高的安全性。与此同时，Velocity 也有优秀的性能表现
 
 使用 Velocity ，能让你的群组服务器锦上添花
 
-如果你开的是mod群组服务器，那么强烈推荐使用 Velocity ，因为他对 forge 和 fabric 服务端做了特别的适配
+如果你开的是 mod 群组服务器，那么强烈推荐使用 Velocity ，因为他对 forge 和 fabric 服务端做了特别的适配
 
 当然，Mod 服务端原生不支持 Velocity，需要安装让 Mod 端支持 Velocity 的 Mod
 
@@ -28,9 +28,9 @@ velocity 可以说是目前最优秀的**Minecraft代理端**之一，由经验�
 
 ## FAQ
 
-**1.Q：velocity 支持bungeecord和waterfall插件吗？**
+**1.Q：velocity 支持 bungeecord 和 waterfall 插件吗？**
 
-A： 不支持，因为如果我们支持 BungeeCord 插件的话，那么很多velocity的功能就无从实现了
+A： 不支持，因为如果我们支持 BungeeCord 插件的话，那么很多 velocity 的功能就无从实现了
 
 但是有些插件可能同时也支持 Velocity 或者有 Velocity 的版本。并且，有些 BungeeCord 插件仅要求在子服务器安装，那么这些插件理论上也是可以在 Velocity 为基础的代理服务器上使用的
 
@@ -40,7 +40,7 @@ A： 不支持，因为如果我们支持 BungeeCord 插件的话，那么很多
 
 **3.Q：为什么我的玩家连不进服务器？**
 
-*<font color="gray">这里是一些可能的原因</font>*
+_<font color="gray">这里是一些可能的原因</font>_
 
 首先，你需要检查：
 
@@ -58,7 +58,7 @@ Can't connect to server lobby： If you wish to use IP forwarding, please enable
 Can't connect to server lobby： Your server did not send a forwarding request to the proxy. Is it set up correctly?
 ```
 
-这些报错是你不正确配置代理端引起的 [点此前往了解velocity配置](velocity.toml.md)
+这些报错是你不正确配置代理端引起的 [点此前往了解 velocity 配置](velocity.toml.md)
 
 此外，如果你同时启用了 BungeeCord 模式，也会报出以上错误，如果你使用 Velocity ，那么请务必关闭 BungeeCord 模式
 
@@ -79,7 +79,7 @@ Can't connect to server lobby： This server requires you to connect with Veloci
 
 这种情况一般发生在插件服群组中。当有些人使用 Mod 客户端进入服务器时，有可能出现这种问题。
 
-如果你使用 Paper (或者其他 Fork 版本) 1.12.2或者以上的服务端，你可以在启动脚本中添加 flag `-Dpaper.disableChannelLimit=true` 来解决这个问题
+如果你使用 Paper (或者其他 Fork 版本) 1.12.2 或者以上的服务端，你可以在启动脚本中添加 flag `-Dpaper.disableChannelLimit=true` 来解决这个问题
 
 ~~虽然没什么人遇到这个问题就是了~~
 
@@ -88,7 +88,7 @@ Can't connect to server lobby： This server requires you to connect with Veloci
 一句话， Mod 太多太大导致连接时间延长了。你可以减少服务器的 Mod 数量或者在 Velocity 配置文件中设置 `read-timeout` 的值，同时在你的 Forge 子服的启动参数中添加 `-Dfml.readTimeout` 参数来提高阈值。比如，你想设置你的 readTimeout 时间到 120 秒
 那么你可以设置：
 
-`read-timeout = 120000` (单位：毫秒) 
+`read-timeout = 120000` (单位：毫秒)
 
 `-Dfml.readTimeout=120` (单位：秒)
 
@@ -103,4 +103,3 @@ Can't connect to server lobby： This server requires you to connect with Veloci
 有大佬提出了关于这个问题的 [PR](https://github.com/PaperMC/Velocity/pull/1357)
 
 可以坐等合并了，合并之后就可以给各个不同的子服配置不同的转发模式啦
-
