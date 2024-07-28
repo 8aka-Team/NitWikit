@@ -116,6 +116,10 @@ entity-tracking-range:
 
 使用 Paper 矿物混淆时候，尽量不要在 **非主世界** 开启 `mode 2` 或 `mode 3`
 
+## 心跳连接
+
+在`purpur.yml`中打开选项`use-alternate-keepalive`
+
 ---
 
 # 性能优化

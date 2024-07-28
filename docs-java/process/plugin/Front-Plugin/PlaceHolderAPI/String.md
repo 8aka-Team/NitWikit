@@ -6,10 +6,10 @@ sidebar_position: 9
 
 :::info
 
-`eCloud` :https://api.extendedclip.com/expansions/string/
+`eCloud` https://api.extendedclip.com/expansions/string/
 
-`Placeholder List` :https://wiki.placeholderapi.com/users/placeholder-list/#changeoutput
+`Placeholder List` https://wiki.placeholderapi.com/users/placeholder-list/#changeoutput
 
-`GitHub` :https://github.com/BlitzOffline/StringExpansion
+`GitHub` https://github.com/BlitzOffline/StringExpansion
 
 :::

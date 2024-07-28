@@ -6,11 +6,11 @@ sidebar_position: 3
 
 :::info
 
-`eCloud` :https://api.extendedclip.com/expansions/math/
+`eCloud` https://api.extendedclip.com/expansions/math/
 
-`Placeholder List` :https://wiki.placeholderapi.com/users/placeholder-list/#math
+`Placeholder List` https://wiki.placeholderapi.com/users/placeholder-list/#math
 
-`GitHub` :https://github.com/Andre601/Math-Expansion
+`GitHub` https://github.com/Andre601/Math-Expansion
 
 :::
 

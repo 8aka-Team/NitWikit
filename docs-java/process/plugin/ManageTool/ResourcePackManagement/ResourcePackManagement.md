@@ -59,16 +59,38 @@ sidebar_position: 6
 
 这都是原版资源包能做到的东西，ia 只是一个打包器，你有能力甚至可以自己手搓材质包。
 
-# tooltip
+# 材质包相关工具
+
+我发现的和材质包相关的工具
+
+## tooltip
 
 发现一个整 tooltip 的妙妙工具
 
+![](_images/tooltip1.png)
+
+![](_images/tooltip2.png)
+
 https://github.com/Godlander/tooltip
 
-# Minecraft Title Generator
+## Minecraft Title Generator
 
 一个用来整服务器 title 的 blockbench 插件
 
 ![](_images/title.png)
 
 https://www.blockbench.net/plugins/minecraft_title_generator
+
+## 2D head
+
+2D的和占四格的头颅，可以使用皮肤
+
+![](_images/head.png)
+
+https://www.spigotmc.org/resources/.99121/
+
+## PackSquash
+
+资源包压缩工具，**显著减小** 资源包的体积
+
+https://github.com/ComunidadAylas/PackSquash

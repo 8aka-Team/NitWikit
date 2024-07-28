@@ -6,15 +6,15 @@ sidebar_position: 2
 
 :::info
 
-`文档（英文）` :https://wiki.decentholograms.eu/
+`文档（英文）` https://wiki.decentholograms.eu/
 
-`SpigotMC` :https://www.spigotmc.org/resources/.96927/
+`SpigotMC` https://www.spigotmc.org/resources/.96927/
 
-`GitHub` :https://github.com/DecentSoftware-eu/DecentHolograms
+`GitHub` https://github.com/DecentSoftware-eu/DecentHolograms
 
-`Modrinth` :https://modrinth.com/plugin/decentholograms
+`Modrinth` https://modrinth.com/plugin/decentholograms
 
-`插件百科` :https://mineplugin.org/Tab
+`插件百科` https://mineplugin.org/Tab
 
 :::
 

@@ -51,27 +51,79 @@ require-resource-pack=false
 
 :::note
 
-你**完全照做**然后下载不到材质包也很正常，因为上面的链接是 GitHub 的，而国内的网络环境有时连不上 GitHub 很正常
+上面的例子链接是 GitHub 的，而国内的网络环境有时连不上 GitHub
 
 :::
 
-# 下面这些都还没做
-
 ## 使用 ItemsAdder
+
+https://itemsadder.devs.beer/v/chinese/plugin-usage/resourcepack-hosting
 
 ## 使用 Oraxen
 
+看配置文件
+
 # 托管
+
+以下均为ia文档中所说的 第三方平台托管（external-host）
 
 ## GitHub
 
+https://github.com
+
+国内的网络环境不建议用这个
+
+> 方案一：首先创建一个新的仓库，接着创建发行版，把资源包上传至发行版，复制下载链接，将链接填入ia的 第三方平台托管（external-host） 或使用 server.properties
+
+> 方案二：首先创建一个新的仓库，接着上传资源包文件到仓库中，点击你上传的文件，复制这单个文件的下载链接
+
+创建新仓库：https://docs.github.com/zh/repositories/creating-and-managing-repositories/creating-a-new-repository
+
+创建发行版：https://docs.github.com/zh/repositories/releasing-projects-on-github/managing-releases-in-a-repository?tool=webui
+
 ## Gitee
 
-## Gitlab
+https://gitee.com
+
+国内的代码托管平台，访问速度快，推荐使用
+
+> 方案一：首先创建一个新的仓库，接着创建发行版，把资源包上传至发行版，复制下载链接，将链接填入ia的 第三方平台托管（external-host） 或使用 server.properties
+
+> 方案二：首先创建一个新的仓库，接着上传资源包文件到仓库中，点击你上传的文件，复制这单个文件的下载链接
+
+创建发行版：https://help.gitee.com/repository/release/create#%E5%A6%82%E4%BD%95%E5%88%9B%E5%BB%BA%E5%8F%91%E8%A1%8C%E7%89%88
+
+## GitLab
+
+https://gitlab.com
+
+国内访问比较稳定的代码托管平台
+
+> 方案一：首先创建一个新的仓库，接着创建发行版，把资源包上传至发行版，复制下载链接，将链接填入ia的 第三方平台托管（external-host） 或使用 server.properties
+
+> 方案二：首先创建一个新的仓库，接着上传资源包文件到仓库中，点击你上传的文件，复制这单个文件的下载链接
+
+创建仓库：https://www.bookstack.cn/read/gitlab-doc-zh/docs-150.md#2rp8yq
+
+创建发行版：https://www.bookstack.cn/read/gitlab-doc-zh/docs-149.md#chaa1u
 
 ## 直链网盘
 
+ia的文档教了如何使用 [Google Drive](https://itemsadder.devs.beer/v/chinese/plugin-usage/resourcepack-hosting/google-drive-1.17.1+) 和 [onedrive](https://itemsadder.devs.beer/v/chinese/plugin-usage/resourcepack-hosting/onedrive) 进行材质托管
+
+:::tip
+
+鉴于国内的网络环境，这两个网盘均不建议使用
+
+:::
+
+[搜索直链网盘](https://cn.bing.com/search?q=%E7%9B%B4%E9%93%BE%E7%BD%91%E7%9B%98)
+
 ## 自托管
+
+使用 ItemsAdder，可以直接在服务器上托管资源包：https://itemsadder.devs.beer/v/chinese/plugin-usage/resourcepack-hosting/resourcepack-self-hosting
+
+或者自己搭建个直链下载站来用
 
 # FAQ
 

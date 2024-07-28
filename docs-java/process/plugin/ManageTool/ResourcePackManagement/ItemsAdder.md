@@ -6,17 +6,17 @@ sidebar_position: 2
 
 :::info
 
-`SpigotMC` :https://www.spigotmc.org/resources/.73355/
+`SpigotMC` https://www.spigotmc.org/resources/.73355/
 
-`GitHub（主页）` :https://github.com/ItemsAdder
+`GitHub（主页）` https://github.com/ItemsAdder
 
-`GitHub（可以反馈BUG）` :https://github.com/PluginBugs/Issues-ItemsAdder
+`GitHub（可以反馈BUG）` https://github.com/PluginBugs/Issues-ItemsAdder
 
-`文档（英文）` :https://itemsadder.devs.beer/
+`文档（英文）` https://itemsadder.devs.beer/
 
-`文档（中文）` :https://itemsadder.devs.beer/v/chinese
+`文档（中文）` https://itemsadder.devs.beer/v/chinese
 
-`文档（非官方中文）` :https://docs.superiormc.cn/v/itemsadder-doc
+`文档（非官方中文）` https://docs.superiormc.cn/v/itemsadder-doc
 
 :::
 

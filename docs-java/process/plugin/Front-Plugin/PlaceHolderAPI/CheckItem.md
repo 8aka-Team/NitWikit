@@ -8,11 +8,11 @@ sidebar_position: 4
 
 :::info
 
-`eCloud` : https://api.extendedclip.com/expansions/checkitem/
+`eCloud` https://api.extendedclip.com/expansions/checkitem/
 
-`Placeholder List` : https://wiki.placeholderapi.com/users/placeholder-list/#checkitem
+`Placeholder List` https://wiki.placeholderapi.com/users/placeholder-list/#checkitem
 
-`GitHub` : https://github.com/PlaceholderAPI/CheckItem-Expansion
+`GitHub` https://github.com/PlaceholderAPI/CheckItem-Expansion
 
 :::
 
