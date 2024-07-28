@@ -166,6 +166,10 @@ const config = {
                 label: '开始',
                 to: '/intro',
               },
+              {
+                label: 'GitHub',
+                href: 'https://github.com/postyizhan/NitWikit',
+              },
             ],
           },
           {
@@ -178,11 +182,15 @@ const config = {
             ],
           },
           {
-            title: '文档仓库',
+            title: '友链',
             items: [
               {
-                label: 'GitHub',
-                href: 'https://github.com/postyizhan/NitWikit',
+                label: '服主资源导航页',
+                href: 'http://nav.yumc.fun',
+              },
+              {
+                label: 'CSKB 日冕知识库',
+                href: 'https://kb.corona.studio',
               },
             ],
           },

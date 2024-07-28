@@ -7,11 +7,11 @@ sidebar_label: 空岛 - ASkyBlock
 
 :::info
 
-`SpigotMC` :https://www.spigotmc.org/resources/askyblock.1220/
+`SpigotMC` https://www.spigotmc.org/resources/askyblock.1220/
 
-`Bukkit` :https://dev.bukkit.org/projects/skyblock
+`Bukkit` https://dev.bukkit.org/projects/skyblock
 
-`GitHub` :https://github.com/tastybento/askyblock
+`GitHub` https://github.com/tastybento/askyblock
 
 :::
 

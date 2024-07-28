@@ -7,11 +7,11 @@ sidebar_label: 查包 - InvSee++
 
 :::info
 
-`SpigotMC` :https://www.spigotmc.org/resources/invsee.82342/
+`SpigotMC` https://www.spigotmc.org/resources/invsee.82342/
 
-`Modrinth` :https://modrinth.com/plugin/invsee++
+`Modrinth` https://modrinth.com/plugin/invsee++
 
-`GitHub` :https://github.com/Jannyboy11/InvSee-plus-plus
+`GitHub` https://github.com/Jannyboy11/InvSee-plus-plus
 
 :::
 

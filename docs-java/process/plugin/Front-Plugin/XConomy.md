@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # 经济插件
 
-这里指以 [Vault](vault.md) 为前置的为服务器提供经济的**一类插件**
+这里指以 [Vault](vault.md) 为前置的为服务器提供经济的 **一类插件**
 
 如 XConomy
 
@@ -12,13 +12,15 @@ sidebar_position: 3
 
 :::info
 
-`SpigotMC` :https://www.spigotmc.org/resources/vault.34315/
+`SpigotMC` https://www.spigotmc.org/resources/.75669/
 
-`文档` :https://xc.itzdrli.com/
+`文档` https://xc.itzdrli.com/
 
-`GitHub` :https://github.com/YiC200333/XConomy
+`GitHub` https://github.com/YiC200333/XConomy
 
 :::
+
+国人插件
 
 如果你已经安装了 [基础插件](/docs-java/process/plugin/ManageTool/BasicPlugins/BasicPlugins.md) 并且**没有跨服的需求**，可以不安装这个插件
 
@@ -26,7 +28,7 @@ sidebar_position: 3
 
 > Vault 是这些经济插件的前置，但本身并不提供经济
 
-# 连接数据库
+## 连接数据库
 
 如果你使用的是**MySQL 8**，并且无法正常连接到数据库，请下载 [DatabaseDrivers](https://github.com/YiC200333/DatabaseDrivers/releases) (1.17.X 以上版本服务器不需要)
 

@@ -6,13 +6,13 @@ sidebar_position: 2
 
 :::info
 
-`SpigotMC` :https://www.spigotmc.org/resources/vault.34315/
+`SpigotMC` https://www.spigotmc.org/resources/vault.34315/
 
-`Bukkit` :https://dev.bukkit.org/projects/vault
+`Bukkit` https://dev.bukkit.org/projects/vault
 
-`GitHub` :https://github.com/LuckPerms/LuckPerms
+`GitHub` https://github.com/LuckPerms/LuckPerms
 
-`插件百科` :https://github.com/milkbowl/Vault
+`插件百科` https://github.com/milkbowl/Vault
 
 :::
 

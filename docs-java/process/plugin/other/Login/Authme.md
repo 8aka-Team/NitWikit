@@ -6,19 +6,19 @@ sidebar_position: 2
 
 :::info
 
-`官网` :https://luckperms.net/
+`官网` https://luckperms.net/
 
-`Bukkit` :https://dev.bukkit.org/projects/authme-reloaded
+`Bukkit` https://dev.bukkit.org/projects/authme-reloaded
 
-`SpigotMC` :https://www.spigotmc.org/resources/authmereloaded.6269/
+`SpigotMC` https://www.spigotmc.org/resources/authmereloaded.6269/
 
-`ci构建站` :https://ci.codemc.io/job/AuthMe/job/AuthMeReloaded/
+`ci构建站` https://ci.codemc.io/job/AuthMe/job/AuthMeReloaded/
 
-`GitHub（原版）` :https://github.com/AuthMe/AuthMeReloaded
+`GitHub（原版）` https://github.com/AuthMe/AuthMeReloaded
 
-`GitHub（电棍的fork）` :https://github.com/HaHaWTH/AuthMeReReloaded
+`GitHub（电棍的fork）` https://github.com/HaHaWTH/AuthMeReReloaded
 
-`插件百科` :https://mineplugin.org/Authme
+`插件百科` https://mineplugin.org/Authme
 
 :::
 

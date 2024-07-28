@@ -7,13 +7,13 @@ sidebar_label: 领地 - GriefDefender
 
 :::info
 
-`SpigotMC` :https://www.spigotmc.org/resources/.68900/
+`SpigotMC` https://www.spigotmc.org/resources/.68900/
 
-`GitHub` :https://github.com/bloodmc/GriefDefender
+`GitHub` https://github.com/bloodmc/GriefDefender
 
-`文档（英文）`:https://docs.griefdefender.com/
+`文档（英文）`https://docs.griefdefender.com/
 
-`文档（中文）`:https://docs.griefdefender.com/zh/
+`文档（中文）`https://docs.griefdefender.com/zh/
 
 :::
 

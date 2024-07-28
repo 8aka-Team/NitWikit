@@ -6,13 +6,13 @@ sidebar_position: 3
 
 :::info
 
-`SpigotMC` :https://www.spigotmc.org/resources/.72448/
+`SpigotMC` https://www.spigotmc.org/resources/.72448/
 
-`GitHub` :https://github.com/oraxen/oraxen
+`GitHub` https://github.com/oraxen/oraxen
 
-`文档（英文）` :https://docs.oraxen.com/
+`文档（英文）` https://docs.oraxen.com/
 
-`文档（非官方中文）` :https://3504743864.gitbook.io/oraxen-wiki
+`文档（非官方中文）` https://3504743864.gitbook.io/oraxen-wiki
 
 :::
 

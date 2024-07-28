@@ -57,15 +57,15 @@ Purpur 还原了 Minecraft 的部分特性，用来开生存服务器更加适�
 
 ### 插件服核心推荐
 
-| 名称 | 介绍 | 推荐与否 | 下载镜像 | 支持的MC版本   |
-| --- | ----------- | --- | --- |-----------|
-| [Paper](https://papermc.io/) | 稳定性最好的核心，但是性能在高版本不太好 | 推荐 | [McRes](https://mcres.cn/downloads/paper.html) [FastMirror](https://www.fastmirror.net/#/download/Paper) [原子云](https://res.nullatom.com/Minecraft/Server/Paper/) | 1.8.8-最新  |
-| [Purpur](https://purpurmc.org) | 高版本最推荐的插件端核心，拥有较好的性能和稳定性，是开服务器的不二之选 | 推荐 | [McRes](https://mcres.cn/downloads/purpur.html) [FastMirror](https://www.fastmirror.net/#/download/Purpur) | 1.16.5-最新 |
-| [Leaves](https://leavesmc.org/) | Leaves就是生电版的paper，他完全支持paper能使用的全部插件，相比paper拥有更强的优化和生电向特性支持。leaves基本完全支持客户端生电 Mod ，包括但不限于carpet，pca，投影，共享原理图，minihud，bbor，ommc，xaero小地图，jade，appleskin等| 非常推荐 | [官方网站](https://leavesmc.org/downloads/leaves)  [McRes](https://mcres.cn/downloads/leaves.html) | 1.17.1-最新(1.19以前不推荐用，那个时候没啥功能)   |
-| [Leaf](https://github.com/Winds-Studio/Leaf) | 基于Gale，拥有非常棒的性能（叶子），支持中文名进服，拥有较好的稳定性，国人开发 | 非常推荐 | [McRes](https://mcres.cn/downloads/leaf.html) | 1.19.3-最新 |
-| [PandaSpigot](https://github.com/hpfxd/PandaSpigot) | paper1.8.8的fork，此核心只有1.8版本，可用于开PVP服务器，含大量konckback配置选项 | 推荐 | [McRes](https://vip.123pan.cn/1821558579/Lingyi/core/pandaspigot-116-mcres.cn.jar) | 1.8       |
-| [SportPaper](https://github.com/Electroid/SportPaper) | paper1.8.8的fork，此核心只有1.8版本，拥有较好的性能和很多生存配置选项，如果你不需要开PVP，你可以选择这个核心 | 推荐 | [青草云MC](https://qcymc.cloud/f/ERGcp/sportpaper-1.8.8-R0.1-SNAPSHOT.jar) | 1.8       |
-| [Beast](https://github.com/HomoMC/Beast) | Paper 1.12.2 分支，旨在提供极致性能、错误修复和改进。推荐使用Java 21以上 | 推荐 | [青草云MC](https://qcymc.cloud/f/G6ziA/beast-1.12.2.jar) | 1.12.2    |
+| 名称                                                    | 介绍                                                                                                                                                      | 推荐与否 | 下载镜像                                                                                                                                                             | 支持的MC版本                        |
+|-------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|
+| [Paper](https://papermc.io/)                          | 稳定性最好的核心，但是性能在高版本不太好                                                                                                                                    | 推荐   | [McRes](https://mcres.cn/downloads/paper.html) [FastMirror](https://www.fastmirror.net/#/download/Paper) [原子云](https://res.nullatom.com/Minecraft/Server/Paper/) | 1.8.8-最新                       |
+| [Purpur](https://purpurmc.org)                        | 高版本最推荐的插件端核心，拥有较好的性能和稳定性，是开服务器的不二之选                                                                                                                     | 推荐   | [McRes](https://mcres.cn/downloads/purpur.html) [FastMirror](https://www.fastmirror.net/#/download/Purpur)                                                       | 1.16.5-最新                      |
+| [Leaves](https://leavesmc.org/)                       | Leaves就是生电版的paper，他完全支持paper能使用的全部插件，相比paper拥有更强的优化和生电向特性支持。leaves基本完全支持客户端生电 Mod ，包括但不限于carpet，pca，投影，共享原理图，minihud，bbor，ommc，xaero小地图，jade，appleskin等 | 非常推荐 | [官方网站](https://leavesmc.org/downloads/leaves)  [McRes](https://mcres.cn/downloads/leaves.html)                                                                   | 1.17.1-最新(1.19以前不推荐用，那个时候没啥功能) |
+| [Leaf](https://github.com/Winds-Studio/Leaf)          | 基于Gale，拥有非常棒的性能（叶子），支持中文名进服，拥有较好的稳定性，国人开发                                                                                                               | 非常推荐 | [McRes](https://mcres.cn/downloads/leaf.html)                                                                                                                    | 1.19.3-最新                      |
+| [PandaSpigot](https://github.com/hpfxd/PandaSpigot)   | paper1.8.8的fork，此核心只有1.8版本，可用于开PVP服务器，含大量konckback配置选项                                                                                                  | 推荐   | [McRes](https://vip.123pan.cn/1821558579/Lingyi/core/pandaspigot-116-mcres.cn.jar)                                                                               | 1.8                            |
+| [SportPaper](https://github.com/Electroid/SportPaper) | paper1.8.8的fork，此核心只有1.8版本，拥有较好的性能和很多生存配置选项，如果你不需要开PVP，你可以选择这个核心                                                                                        | 推荐   | [青草云MC](https://qcymc.cloud/f/ERGcp/sportpaper-1.8.8-R0.1-SNAPSHOT.jar)                                                                                          | 1.8                            |
+| [Beast](https://github.com/HomoMC/Beast)              | Paper 1.12.2 分支，旨在提供极致性能、错误修复和改进。推荐使用Java 21以上                                                                                                          | 推荐   | [青草云MC](https://qcymc.cloud/f/G6ziA/beast-1.12.2.jar)                                                                                                            | 1.12.2                         |
 
 :::info
 
@@ -73,28 +73,37 @@ Purpur 还原了 Minecraft 的部分特性，用来开生存服务器更加适�
 
 :::
 
-<details>
-  <summary>高版本不同服务端核心的比较</summary>
+如果你不知道怎么选,我们为你提供一个简单的方法(:
 
-# 性能
-
-Leaf > Purpur > Paper
-
-Leaves 参与比较是很愚蠢的，它的性能介于 Purpur Paper之间
-
-# 兼容
-
-Paper = Purpur > Leaf /Leaves
-
-Leaves 由于假人的存在会不兼容部分老的插件，比如Authme官方版本，
-
-# 生电
-
-Leaves > Leaf > Purpur > Paper
-
-Leaf 相比于 Purpur 多了生电模组兼容，没多什么特性
-
-</details>
+```mermaid
+flowchart TD
+    A[服务端版本]
+    A --> 1.8
+    A --> 1.12.2
+    A --> 1.16.5+
+    1.8 --> PVP
+    PVP --> PandaSpigot
+    1.8 --> 生存
+    生存 --> SportPaper
+    1.12.2 --> 性能
+    性能 --> Beast
+    1.12.2 --> 稳定
+    稳定 --> Paper
+    1.16.5+ --> 生电
+    生电 --> 1.18以下
+    生电 --> 1.18以上
+    1.18以下 --> Purpur
+    1.18以上 --> 假人,以及一些偏门的特性
+    假人,以及一些偏门的特性 -->|需要| Leaves
+    假人,以及一些偏门的特性 -->|不需要| Leaf
+    1.16.5+ --> 高性能
+    高性能 --> 1.19以上
+    1.19以上 --> Leaf
+    高性能 --> 1.19以下
+    1.19以下 --> Purpur
+    1.16.5+ --> 其他
+    其他 --> Purpur
+```
 
 :::danger
 
@@ -102,10 +111,10 @@ Leaf 相比于 Purpur 多了生电模组兼容，没多什么特性
 
 :::
 
-| 名称 | 介绍 |
-| --- | ----------- |
-| [CraftBukkit](https://getbukkit.org/download/craftbukkit) | 插件端鼻祖核心，无优化 |
-| [Spigot](https://getbukkit.org/download/spigot/) | CraftBukkit的分支，有一点优化，仍不推荐 |
+| 名称                                                        | 介绍                        |
+|-----------------------------------------------------------|---------------------------|
+| [CraftBukkit](https://getbukkit.org/download/craftbukkit) | 插件端鼻祖核心，无优化               |
+| [Spigot](https://getbukkit.org/download/spigot/)          | CraftBukkit的分支，有一点优化，仍不推荐 |
 
 :::danger
 
@@ -129,22 +138,22 @@ Leaf 相比于 Purpur 多了生电模组兼容，没多什么特性
 
 #### Forge混合端
 
-| 名称                                                      | 介绍                                                                                                                     | 推荐与否     | 下载镜像                                                                                                                                                                                                                                                                   | 支持版本                  |
-|---------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------|
-| [Crucible](https://github.com/CrucibleMC/Crucible)      | Thermos的分支，目前还在积极维护，完全兼容Thermos                                                                                             | 推荐 | [McRes](https://www.123pan.com/s/HRhfjv-3ey8v.html)，[青草云MC(推荐)](https://qcymc.cloud/f/gJRFG/Crucible-1.7.10-staging-0c25d250-server.jar)([library文件](https://github.moeyy.xyz/https://github.com/CrucibleMC/Crucible/releases/download/staging-0c25d25/libraries.zip)) | 1.7.10                   |
+| 名称                                                      | 介绍                                                                                                                   | 推荐与否     | 下载镜像                                                                                                                                                                                                                                                                   | 支持版本                  |
+|---------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------|
+| [Crucible](https://github.com/CrucibleMC/Crucible)      | Thermos的分支，目前还在积极维护，完全兼容Thermos                                                                                      | 推荐       | [McRes](https://www.123pan.com/s/HRhfjv-3ey8v.html)，[青草云MC(推荐)](https://qcymc.cloud/f/gJRFG/Crucible-1.7.10-staging-0c25d250-server.jar)([library文件](https://github.moeyy.xyz/https://github.com/CrucibleMC/Crucible/releases/download/staging-0c25d25/libraries.zip)) | 1.7.10                |
 | [CatServer](https://catmc.org/)                         | （推荐，但我真不喜欢核心内置广告）。既可以加入 Mod 又可以加入插件缺点：部分插件不支持，部分 Mod 不支持； Mod 和插件在一起运行难免出现一些七七八八的 bug。                               | 推荐1.12.2 | [McRes](https://mcres.cn/downloads/catserver.html) [FastMirror](https://www.fastmirror.net/#/download/CatServer)                                                                                                                                                       | 1.12.2/1.16.5/1.18.2/ |
-| [Mohist](https://mohistmc.com/software/mohist)          | 兼容paper的一些插件支持，兼容 Mod 和插件；缺点：比较多插件不支持，部分 Mod 不支持； Mod 和插件在一起运行难免出现一些七七八八的 bug。                                        | 推荐高版本    | [McRes](https://mcres.cn/downloads/mohist.html) [FastMirror](https://www.fastmirror.net/#/download/Mohist) [原子云](https://res.nullatom.com/Minecraft/Server/Mohist/)                                                                                                    | 1.12.2/1.16.5/1.18+   |
-| [Arclight-Forge](https://github.com/IzzelAliz/Arclight) | -                                                                                                                      | 推荐高版本    | [FastMirror](https://www.fastmirror.net/#/download/Arclight) [McRes](https://mcres.cn/downloads/arclight.html)                                                                                                                                                                                                          | 1.16.5+               |
-| [Magma](https://magmafoundation.org/)                   | -                                                                                                                      | -        | [McRes](https://mcres.cn/downloads/magma.html)                                                                                                                                                                                                                         | 没用过，不知道               |
+| [Mohist](https://mohistmc.com/software/mohist)          | 兼容paper的一些插件支持，兼容 Mod 和插件；缺点：比较多插件不支持，部分 Mod 不支持； Mod 和插件在一起运行难免出现一些七七八八的 bug。                                       | 推荐高版本    | [McRes](https://mcres.cn/downloads/mohist.html) [FastMirror](https://www.fastmirror.net/#/download/Mohist) [原子云](https://res.nullatom.com/Minecraft/Server/Mohist/)                                                                                                    | 1.12.2/1.16.5/1.18+   |
+| [Arclight-Forge](https://github.com/IzzelAliz/Arclight) | -                                                                                                                    | 推荐高版本    | [FastMirror](https://www.fastmirror.net/#/download/Arclight) [McRes](https://mcres.cn/downloads/arclight.html)                                                                                                                                                         | 1.16.5+               |
+| [Magma](https://magmafoundation.org/)                   | -                                                                                                                    | -        | [McRes](https://mcres.cn/downloads/magma.html)                                                                                                                                                                                                                         | 没用过，不知道               |
 | [Sponge](https://spongepowered.org/]Sponge)             | 可加入sponge插件，支持 Mod，优化极强，而且服务器兼容性更高，对于线程优化能力更强，负载更好。缺点：即使你用了很多办法也很难让bukkit插件稳定运行；sponge插件特别少；启动速度特别慢。操作特别难，与前面的完全不相同。 | 不推荐新手使用  | [McRes](https://mcres.cn/downloads/spongeforge.html) [FastMirror](https://www.fastmirror.net/#/download/SpongeForge)                                                                                                                                                   | 没用过，不知道               |
 
 #### Fabric 混合端
 
-| 名称                                                       | 介绍                                      | 推荐与否 | 下载镜像                                                         |
-|----------------------------------------------------------|-----------------------------------------|------|--------------------------------------------------------------|
-| [Banner](https://new.mohistmc.com/software/banner)       | 并不是一款端，而是一个 Mod 需要安装在Fabric，安装后重启即可加载插件 | -    | [McRes](https://mcres.cn/downloads/banner.html)              |
+| 名称                                                       | 介绍                                      | 推荐与否 | 下载镜像                                                                                                           |
+|----------------------------------------------------------|-----------------------------------------|------|----------------------------------------------------------------------------------------------------------------|
+| [Banner](https://new.mohistmc.com/software/banner)       | 并不是一款端，而是一个 Mod 需要安装在Fabric，安装后重启即可加载插件 | -    | [McRes](https://mcres.cn/downloads/banner.html)                                                                |
 | [Arclight-Fabric](https://github.com/IzzelAliz/Arclight) | 出现时间比banner晚，目前不太稳定                     | -    | [FastMirror](https://www.fastmirror.net/#/download/Arclight) [McRes](https://mcres.cn/downloads/arclight.html) |
-| [Cardboard](https://cardboardpowered.org/)               | 支持的版本较多，支持1.16.5-1.20.4                 | -    | [McRes](https://mcres.cn/downloads/carboard.html)            |
+| [Cardboard](https://cardboardpowered.org/)               | 支持的版本较多，支持1.16.5-1.20.4                 | -    | [McRes](https://mcres.cn/downloads/carboard.html)                                                              |
 
 ![](_images/那些服务端有后门吗.png)
 

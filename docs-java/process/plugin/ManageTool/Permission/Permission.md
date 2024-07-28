@@ -14,17 +14,17 @@ sidebar_position: 1
 
 :::info
 
-`官网` ：https://luckperms.net/
+`官网` https://luckperms.net/
 
-`SpigotMC` ：https://www.spigotmc.org/resources/luckperms.28140/
+`SpigotMC` https://www.spigotmc.org/resources/luckperms.28140/
 
-`GitHub` ：https://github.com/LuckPerms/LuckPerms
+`GitHub` https://github.com/LuckPerms/LuckPerms
 
-`文档（英文）` ：https://luckperms.net/wiki/Home
+`文档（英文）` https://luckperms.net/wiki/Home
 
-`文档（中文）` ：https://snowcutieowo.github.io/LuckPerms/
+`文档（中文）` https://snowcutieowo.github.io/LuckPerms/
 
-`插件百科` ：https://mineplugin.org/LuckPerms
+`插件百科` https://mineplugin.org/LuckPerms
 
 :::
 

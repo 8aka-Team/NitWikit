@@ -1,14 +1,14 @@
 ---
-sidebar_position: 5
+sidebar_position: 4
 ---
 
 # Plugin Portal
 
 :::info
 
-`SpigotMC` :https://www.spigotmc.org/resources/.108700/
+`SpigotMC` https://www.spigotmc.org/resources/.108700/
 
-`GitHub` :https://github.com/flytegg/plugin-portal
+`GitHub` https://github.com/flytegg/plugin-portal
 
 :::
 

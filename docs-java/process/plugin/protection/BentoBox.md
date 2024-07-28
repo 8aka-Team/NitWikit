@@ -7,13 +7,13 @@ sidebar_label: 领域 - BentoBox
 
 :::info
 
-`SpigotMC` :https://www.spigotmc.org/resources/.73261/
+`SpigotMC` https://www.spigotmc.org/resources/.73261/
 
-`文档（英文）` :https://docs.bentobox.world/en/latest/
+`文档（英文）` https://docs.bentobox.world/en/latest/
 
-`文档（中文）` :https://docs.bentobox.world/zh/latest/
+`文档（中文）` https://docs.bentobox.world/zh/latest/
 
-`GitHub` :https://github.com/BentoBoxWorld/BentoBox
+`GitHub` https://github.com/BentoBoxWorld/BentoBox
 
 :::
 

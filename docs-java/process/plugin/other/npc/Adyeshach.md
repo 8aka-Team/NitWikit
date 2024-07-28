@@ -6,9 +6,9 @@ sidebar_position: 4
 
 :::info
 
-`GitHub` :https://github.com/TabooLib/Adyeshach
+`GitHub` https://github.com/TabooLib/Adyeshach
 
-`文档` :https://a.ptms.ink/docs/start
+`文档` https://a.ptms.ink/docs/start
 
 :::
 

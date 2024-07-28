@@ -7,13 +7,13 @@ sidebar_position: 1
 
 :::info
 
-`SpigotMC` :https://www.spigotmc.org/resources/.6245/
+`SpigotMC` https://www.spigotmc.org/resources/.6245/
 
-`GitHub` :https://github.com/PlaceholderAPI/PlaceholderAPI
+`GitHub` https://github.com/PlaceholderAPI/PlaceholderAPI
 
-`Wiki` :https://wiki.placeholderapi.com/
+`Wiki` https://wiki.placeholderapi.com/
 
-`插件百科(不推荐，老掉牙了)` :https://mineplugin.org/PlaceholderAPI(%E6%97%A7)
+`插件百科(不推荐，老掉牙了)` https://mineplugin.org/PlaceholderAPI(%E6%97%A7)
 
 :::
 

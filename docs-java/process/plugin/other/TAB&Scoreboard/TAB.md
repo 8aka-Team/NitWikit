@@ -6,17 +6,17 @@ sidebar_position: 2
 
 :::info
 
-`文档（英文）` :https://github.com/NEZNAMY/TAB/wiki
+`文档（英文）` https://github.com/NEZNAMY/TAB/wiki
 
-`文档（中文）` :https://docs.superiormc.cn/v/tab-wiki
+`文档（中文）` https://docs.superiormc.cn/v/tab-wiki
 
-`SpigotMC` :https://www.spigotmc.org/resources/tab-1-5-1-20-4.57806/
+`SpigotMC` https://www.spigotmc.org/resources/tab-1-5-1-20-4.57806/
 
-`GitHub` :https://github.com/NEZNAMY/TAB
+`GitHub` https://github.com/NEZNAMY/TAB
 
-`Modrinth` :https://modrinth.com/plugin/tab-was-taken
+`Modrinth` https://modrinth.com/plugin/tab-was-taken
 
-`插件百科` :https://mineplugin.org/Tab
+`插件百科` https://mineplugin.org/Tab
 
 :::
 

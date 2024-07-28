@@ -6,15 +6,15 @@ sidebar_position: 2
 
 :::info
 
-`文档（英文）` :https://github.com/jpenilla/MiniMOTD/wiki
+`文档（英文）` https://github.com/jpenilla/MiniMOTD/wiki
 
-`SpigotMC` :https://www.spigotmc.org/resources/.81254/
+`SpigotMC` https://www.spigotmc.org/resources/.81254/
 
-`Paper` :https://hangar.papermc.io/jmp/MiniMOTD
+`Paper` https://hangar.papermc.io/jmp/MiniMOTD
 
-`GitHub` :https://github.com/jpenilla/MiniMOTD
+`GitHub` https://github.com/jpenilla/MiniMOTD
 
-`Modrinth` :https://modrinth.com/plugin/minimotd
+`Modrinth` https://modrinth.com/plugin/minimotd
 
 :::
 
