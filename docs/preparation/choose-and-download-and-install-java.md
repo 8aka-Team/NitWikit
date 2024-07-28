@@ -88,7 +88,7 @@ TODO
 https://www.java.com/zh-CN/download/
 </details>
 
-如果你想进行 JVM 优化,请看[JVM优化](/docs-java/process/maintenance/optimize/jvm/jvm.md)
+如果你想进行 JVM 优化,请看[JVM优化](https://yizhan.wiki/NitWikit/Java/optimize/jvm)
 
 ## 验证 Java 安装
 
