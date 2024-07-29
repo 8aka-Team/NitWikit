@@ -11,6 +11,8 @@ sidebar_position: 1
 
 `GitHub` https://github.com/EssentialsX/Essentials
 
+`文档` https://trchat.trixey.cc
+
 :::
 
 国人插件，一个功能强大的聊天插件

@@ -13,6 +13,8 @@ sidebar_position: 3
 
 `GitHub` https://github.com/Hexaoxide/Carbon
 
+`文档（英文）` https://github.com/Hexaoxide/Carbon/wiki
+
 :::
 
 设计先进的聊天插件
