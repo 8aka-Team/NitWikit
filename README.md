@@ -289,7 +289,7 @@ https://nitwikit.yizhan.wiki/
 
 ## 📜 笨蛋脚本
 
-笨蛋脚本是本wiki贡献者lilingfengdev主导做的一些工具
+笨蛋脚本是本 wiki 贡献者 lilingfengdev 主导做的一些工具
 
 [项目地址](https://github.com/lilingfengdev/NitWiki-Script)
 
