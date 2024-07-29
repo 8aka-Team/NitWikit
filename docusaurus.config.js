@@ -100,7 +100,7 @@ const config = {
     ({
       // 标题渲染范围
       tableOfContents: {
-        minHeadingLevel: 1,
+        minHeadingLevel: 2,
         maxHeadingLevel: 5,
       },
       // Replace with your project's social card
