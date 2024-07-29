@@ -11,3 +11,7 @@ kether 并不是一个插件，而是使用 Taboolib 框架开发的插件（如
 推荐教程：https://www.yuque.com/sacredcraft/kether
 
 kether语句表：https://kether.tabooproject.org/list.html
+
+vscode插件-kether动作补全：https://github.com/LiteCat0905/Kether-snippet
+
+vscode插件-TrMenu v3语法提示：https://marketplace.visualstudio.com/items?itemName=hhhhhy.trmenu-helper
