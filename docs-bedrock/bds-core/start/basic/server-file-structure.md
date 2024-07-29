@@ -9,7 +9,7 @@ sidebar_position: 1
 
 # Biggest SUCCESS!!!
 
-作者：梦涵LOVE
+作者：[梦涵LOVE](https://github.com/MengHanLOVE1027)
 :::
 
 # 服务端结构
@@ -156,6 +156,6 @@ BDS服务端文件夹
 
 :::tip
 
-如果你的服务端有更多的文件，大概率是 [**插件加载器** / **插件**](../../process/plugins/plugins-loader.md)（如针对 BDS 的 Levilamina 插件加载器会释放更多文件夹）创建的文件夹，一般来说无需担心。
+如果你的服务端有更多的文件，大概率是 [**插件加载器** / **插件**](../../process/plugins/plugins-loader-choose.md)（如针对 BDS 的 Levilamina 插件加载器会释放更多文件夹）创建的文件夹，一般来说无需担心。
 
 :::
