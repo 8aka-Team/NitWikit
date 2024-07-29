@@ -143,7 +143,7 @@ const config = {
             type: 'search',
             position: 'right',
           },
-          // Github
+          // GitHub
           {
             href: "https://github.com/postyizhan/NitWikit",
             className: "header-github-link",

@@ -16,7 +16,7 @@ sidebar_position: 6
 | 前置插件                       | 橡木链接                                                             | 作用                            |
 | :---                           | :----                                                                | :---                            |
 | GeyserUtils                    | [GeyserUtils](https://github.com/zimzaza4/GeyserUtils)               | 让你的Geyser支持调用一些BE的东西  |
-| GeyserModelEngine              | [Github](https://github.com/zimzaza4/GeyserModelEngine)              | 你猜                            |
+| GeyserModelEngine              | [GitHub](https://github.com/zimzaza4/GeyserModelEngine)              | 你猜                            |
 | LibsDisguises(免费版即可)       | [LibsDisguises](https://www.spigotmc.org/resources/libs-disguises-free.81/)| 伪装成其他生物             |
 
 项目地址有简体中文，所以后续步骤我就不写了
@@ -37,10 +37,10 @@ sidebar_position: 6
 
 | 前置插件                       | 项目链接                                                             | 作用                            |
 | :---                           | :----                                                                | :---                            |
-| GeyserUtils                    | [Github](https://github.com/zimzaza4/GeyserUtils)                    | 让你的Geyser支持调用一些BE的东西  |
-| GeyserModelEngine自定义实体分支 | [Github](https://github.com/zimzaza4/GeyserModelEngine/tree/custom-entity)| 你猜                        |
-| Geyser 自定义实体分支           | [Github](https://github.com/zimzaza4/Geyser)                         | 让Geyser支持自定义实体            |
-| GeyserModelEnginePackGenerator | [Github](https://github.com/zimzaza4/GeyserModelEnginePackGenerator) | 帮你自动转换模型生成资源包        |
+| GeyserUtils                    | [GitHub](https://github.com/zimzaza4/GeyserUtils)                    | 让你的Geyser支持调用一些BE的东西  |
+| GeyserModelEngine自定义实体分支 | [GitHub](https://github.com/zimzaza4/GeyserModelEngine/tree/custom-entity)| 你猜                        |
+| Geyser 自定义实体分支           | [GitHub](https://github.com/zimzaza4/Geyser)                         | 让Geyser支持自定义实体            |
+| GeyserModelEnginePackGenerator | [GitHub](https://github.com/zimzaza4/GeyserModelEnginePackGenerator) | 帮你自动转换模型生成资源包        |
 
 后续更多步骤请看项目地址
 

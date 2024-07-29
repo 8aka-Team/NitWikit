@@ -9,7 +9,7 @@ sidebar_position: 4
 
 ## 下载
 
-[笨蛋脚本 Github 链接](https://github.com/lilingfengdev/NitWiki-Script)
+[笨蛋脚本 GitHub 链接](https://github.com/lilingfengdev/NitWiki-Script)
 
 ## 功能
 
