@@ -105,6 +105,9 @@ import TabItem from '@theme/TabItem';
 
 我们呼吁大家积极参与讨论，让官方了解我们的诉求！Partner 项目总监和工作室里的人讨论过，反正他们的观点是力推CRIPT的API，这将势不可挡，未来是 [All in JavaScript（即 SAPI）](#冷门加载器) 的时代，只要社区的需求大且合理，他们就会添加对应的接口。在PDB方面，他们认为这是 **非行业化的**，他们不认为这是合适且合法的 MOD 的行为，并 **《希望》** 社区给出一定要 PDB 才能实现的功能。
 
+此后，著名插件加载器 LeviLamina 刚出生不久就胎死腹中了...
+![LeviLamina 在未来将会存档](./_images/levilamina-will-archived.png)
+
 总之，在这场 PDB 事件风波不久后，很多基岩版腐竹都转移到 Java版服务端，以求后路。
 
 不过，[EndStone](./plugins-loader-choose.md?plugins-loader=endstone#热门加载器) 的出现貌似给基岩版服务端带来了希望。
