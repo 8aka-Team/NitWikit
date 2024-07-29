@@ -1,5 +1,5 @@
 ---
-title: 安装Mod服务端
+title: 安装 Mod 服务端
 sidebar_position: 3
 ---
 
@@ -7,7 +7,7 @@ sidebar_position: 3
 
 :::tip
 
-该教程是为 mod 服所编写的，插件和混合直接新建文件夹扔进去就完事
+该教程是为 Mod 服所编写的，插件和混合直接新建文件夹扔进去就完事
 
 :::
 
