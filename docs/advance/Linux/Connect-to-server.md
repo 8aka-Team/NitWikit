@@ -5,7 +5,7 @@ sidebar_position: 2
 
 # 连接服务器
 
-使用SSH工具连接至服务器，在这里举出几种方法
+使用 SSH 工具连接至服务器，在这里举出几种方法
 
 # powershell
 
