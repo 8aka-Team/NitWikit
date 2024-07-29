@@ -9,7 +9,7 @@ sidebar_position: 1
 
 :::info
 
-翻译自Blockbench Wiki 上的 Minecraft 风格指南
+翻译自 Blockbench Wiki 上的 Minecraft 风格指南
 
 :::
 
