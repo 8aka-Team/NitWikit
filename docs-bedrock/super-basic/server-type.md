@@ -1,13 +1,13 @@
 ---
 title: 服务器类型
-sidebar_position: 1
+sidebar_position: 2
 ---
 
-:::warning
-本篇文档持续更新中...<br />
+:::tip
+本篇文档已完成编写！<br />
 支持后续 PR
 
-# Biggest TODO...
+# Biggest SUCCESS!!!
 
 作者：梦涵LOVE
 :::

@@ -1,15 +1,15 @@
 ---
 title: 服务器核心选择
-sidebar_position: 2
+sidebar_position: 1
 ---
 
-:::warning
-本篇文档持续更新中...<br />
+:::tip
+本篇文档已完成编写！<br />
 支持后续 PR
 
-# Biggest TODO...
+# Biggest SUCCESS!!!
 
-作者：梦涵 LOVE
+作者：梦涵LOVE
 :::
 
 # 服务器核心选择
