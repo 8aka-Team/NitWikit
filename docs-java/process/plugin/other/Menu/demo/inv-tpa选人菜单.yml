@@ -1,0 +1,126 @@
+##############################
+# 我使用 essentialsX 不保证其他拥有tpa功能的插件可用
+# 是驿站写滴 Q:185839426
+# 禁止商用和抹除作者信息
+##############################
+
+## 功能：
+# 使用tpa可以在聊天框看到 [接受][拒绝] 可点击
+
+# 可以打开tpa选人菜单 这样子写
+  # 'A':
+  #   material: stone
+  #     action: |-
+  #      context set ignoreOpenEvents to true
+  #      menu open tpagui
+
+
+title: '&b&l传送菜单 &7&o{tpaMenu} &r[{{page get}}/{{page max}}]'
+
+bindings:
+  command:
+    name: 'tpa'
+    args:
+      - 'tpaname'
+
+events:
+  pre_open: node Check
+
+nodes:
+  Sound:
+    type: kether
+    value: sound BLOCK_NOTE_BLOCK_PLING by 1 2
+  Check:
+    type: kether
+    value:
+      if &ignoreOpenEvents
+      then context del ignoreOpenEvents
+      else {
+        if check &tpaname == player name
+        then {
+          tell "&c&l! &7你不能tp你自己!"
+          false
+        }else if check &tpaname == null
+        then {
+          true
+        }else {
+          command join [ "call " &tpaname ]
+          command node tellraw as console
+          false
+        }
+      }
+  tellraw: 'tellraw {{&tpaname}} [{"text":"&7[&a接受&7]","clickEvent":{"action":"run_command","value":"/tpaccept"}},{"text":"&7[&c拒绝&7]","clickEvent":{"action":"run_command","value":"/tpdeny"}}]'
+
+
+
+layout: |-
+  #########
+  #       #
+  #       #
+  #       #
+  <###@###>
+
+generator:
+  source: player
+  sortBy: name
+  filter: |-
+    any [
+      ctx without filter
+      check &element_name[lower] has &filter[lower]
+    ]
+  output:
+    head: '{{element *name}}'
+    name: '{{&element_name}}'
+    lore:
+      - ''
+      - '&8| &6左键&7请求传送到他'
+      - '&8| &6右键&7请求他传送到你'
+      - ''
+    action:
+      def: node Sound menu close
+      left: |-
+        context set tpaname to element *name
+        node Check with &tpaname
+      right: |-
+        command join [ "tpahere " element *name ]
+        command node tellraw as console
+icons:
+  '#':
+    material: gray stained glass pane
+    name: ' '
+  '@':
+    #https://minecraft-heads.com/custom-heads/decoration/49423
+    head: 7615b775b211e5b14c9f47cfdb4e64cd38b2e4c875569f0d1bc3468e7a233f23
+    name: '&a&l返回'
+    lore:
+      - ''
+      - '&8| &7点击返回主菜单'
+      - ''
+    action: node Sound menu open main
+
+
+
+  '>':
+    material: black stained glass pane
+    name: ' '
+    lore: '{{page current}} / {{page max}}'
+    sub:
+      - if: not page isLast
+        material: lime stained glass pane
+        name: '<green>下一页 →'
+        action: |-
+          page next
+          icons refresh
+          menu title update
+  '<':
+    material: black stained glass pane
+    name: ' '
+    lore: '{{page current}} / {{page max}}'
+    sub:
+      - if: not page isFirst
+        material: cyan stained glass pane
+        name: '<aqua>← 上一页'
+        action: |-
+          page previous
+          icons refresh
+          menu title update

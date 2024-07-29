@@ -4,11 +4,13 @@ sidebar_position: 4
 
 # TrMenu
 
-一个功能强大的菜单插件
+一个功能强大的菜单插件，国人插件。
 
-## v2
+![](_images/trm一定要看wiki呐.jpg)
 
-不推荐使用
+## TrMenu v2
+
+早已停更，不推荐使用
 
 :::info
 
@@ -18,7 +20,7 @@ sidebar_position: 4
 
 :::
 
-## v3
+## TrMenu v3
 
 :::info
 
@@ -34,12 +36,11 @@ sidebar_position: 4
 
 :::
 
-
 交流群：325014486
 
-## v4
+## Invero
 
-Invero 俗称 Trmenu v4
+Invero 俗称 TrMenu v4
 
 **目前**还不推荐使用
 
@@ -51,6 +52,60 @@ Invero 俗称 Trmenu v4
 
 ~~文档 https://legacy.invero.fining.io/~~
 
-地址改了，我就不放新地址了
+文档地址改了，我就不放新地址了
 
-![](_images/trm一定要看wiki呐.jpg)
+# 案例
+
+## TrMenu v3
+
+### 玩家信息
+
+这是 TrMenu 的一个默认案例
+
+**右键玩家执行动作**
+
+https://github.com/Dreeam-qwq/TrMenu/blob/stable/v3/plugin/src/main/resources/settings.yml
+
+此处为右键玩家打开名为 Profile 的菜单
+
+找到
+```yaml
+Right-Click-Player: 'open: Profile'
+```
+
+**玩家信息菜单**
+
+https://github.com/Dreeam-qwq/TrMenu/blob/stable/v3/plugin/src/main/resources/menus/Profile.yml
+
+### 蹲下+替换副手打开菜单
+
+或者说 shift+F 打开菜单？
+
+**蹲下+替换副手执行动作**
+
+https://github.com/Dreeam-qwq/TrMenu/blob/stable/v3/plugin/src/main/resources/settings.yml
+
+```yaml
+  Sneaking-Offhand:
+    - condition: 'perm *trmenu.shortcut'
+      execute: 'open: Example'
+      deny: 'return'
+```
+
+### 每日签到
+
+[查看配置](https://github.com/postyizhan/NitWikit/blob/main/docs-java/process/plugin/other/Menu/demo/trmv3-每日签到.yml)
+
+据作者所说重启服务器会丢数据
+
+不过这些配置主要是用来学习的，不会有人直接cv过去用吧
+
+## Invero
+
+### 每日签到
+
+[查看配置](https://github.com/postyizhan/NitWikit/blob/main/docs-java/process/plugin/other/Menu/demo/inv-每日签到.yml)
+
+### tpa选人菜单
+
+[查看配置](https://github.com/postyizhan/NitWikit/blob/main/docs-java/process/plugin/other/Menu/demo/inv-tpa选人菜单.yml)
