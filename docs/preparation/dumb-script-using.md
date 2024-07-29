@@ -9,7 +9,7 @@ sidebar_position: 4
 
 ## 下载
 
-[笨蛋脚本Github链接](https://github.com/lilingfengdev/NitWiki-Script)
+[笨蛋脚本 GitHub 链接](https://github.com/lilingfengdev/NitWiki-Script)
 
 ## 功能
 
@@ -25,8 +25,8 @@ sidebar_position: 4
 * 自动配置反作弊
 * 自动简单配置
 * 自动选择服务端核心并下载
-* 自动配置Geyser
-* Via自动配置
+* 自动配置 Geyser
+* Via 自动配置
 * 服务端选择+下载
 * 还有更多（在编写中）
 

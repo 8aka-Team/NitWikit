@@ -54,7 +54,7 @@ screen -S xxx -X quit # 删除 xxx 窗口（在 screen 中输入 exit 也可以�
 
 ## 方法二  面板(推荐)
 
-例如mcsm，简单无脑可视化
+例如 mcsm，简单无脑可视化
 
 ## 方法三 Systemd
 

@@ -21,7 +21,7 @@ sidebar_position: 1
 
 如果出现该玩家想要退出客户端，那么所有人的链接都会中断。因此，为了更加稳定的联机，
 
-*Minecraft* 提供了让玩家可以进行 *多人游戏* 的服务端，称为 **Minecraft Server**，俗称 **Vanilla Server** 、 **香草端**、**原版端**。
+*Minecraft* 提供了让玩家可以进行 *多人游戏* 的服务端，称为 **Minecraft Server**，俗称 **Vanilla Server** 、**香草端**、**原版端**。
 
 :::tip
 

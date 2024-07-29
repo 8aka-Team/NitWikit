@@ -65,7 +65,7 @@ Matrix 是由国人 RE 编写的一款反作弊插件，当年诞生是用于取
 
 ！不建议在不接触配置文件的情况下直接使用该插件。
 
-> Github: https://github.com/Updated-NoCheatPlus/NoCheatPlus
+> GitHub: https://github.com/Updated-NoCheatPlus/NoCheatPlus
 
 或者 Leaf 核心作者 [Dreeam](https://github.com/Dreeam-qwq)（国人）的分支版本，这个版本剔除了一些检测以提升性能。
 
@@ -81,7 +81,7 @@ Matrix 是由国人 RE 编写的一款反作弊插件，当年诞生是用于取
 
 ！可能不适合部分生电服务器或声明允许使用辅助模组的插件。
 
-> Github: https://github.com/GrimAnticheat/Grim
+> GitHub: https://github.com/GrimAnticheat/Grim
 
 ## Vulcan
 
@@ -143,7 +143,7 @@ Matrix 是由国人 RE 编写的一款反作弊插件，当年诞生是用于取
 
 一款面向萌新的主流反作弊配置，对配置有任何问题骚扰 Talents 先生项目的 Issues 即可解决！
 
-Github：https://github.com/TalentsRC/Talents-AntiCheat-Config
+GitHub：https://github.com/TalentsRC/Talents-AntiCheat-Config
 
 ## ViaBackwards
 

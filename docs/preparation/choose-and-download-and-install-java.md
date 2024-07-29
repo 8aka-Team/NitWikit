@@ -7,7 +7,7 @@ sidebar_position: 1
 
 您的服务端和客户端都需要安装 Java 才能运行。各个游戏版本需要安装的 Java 版本不同。
 
-原则上选择最新的兼容的 Java 版本，可以体验到最新的优化，并且大部分现代插件对最新版的特性有优化（比如AuthMeReReload）。
+原则上选择最新的兼容的 Java 版本，可以体验到最新的优化，并且大部分现代插件对最新版的特性有优化（比如 AuthMeReReload）。
 
 <details>
   <summary>JRE 和 JDK 是什么? 我该怎么选择?</summary>
@@ -22,7 +22,7 @@ JDK(Java Development Kit) 又称 J2SDK(Java2 Software Development Kit)，是 Jav
 ## 选择版本
 
 :::warning
-部分服务端有在项目的README中标注最低版本和推荐版本，例如 [Beast](https://github.com/HomoMC/Beast)，最低版本为 Java 8，推荐版本为 Java 21
+部分服务端有在项目的 README 中标注最低版本和推荐版本，例如 [Beast](https://github.com/HomoMC/Beast)，最低版本为 Java 8，推荐版本为 Java 21
 MOD 服务端
 :::
 
@@ -88,7 +88,7 @@ TODO
 https://www.java.com/zh-CN/download/
 </details>
 
-如果你想进行 JVM 优化,请看[JVM优化](https://yizhan.wiki/NitWikit/Java/optimize/jvm)
+如果你想进行 JVM 优化,请看 [JVM 优化](https://yizhan.wiki/NitWikit/Java/optimize/jvm)
 
 ## 验证 Java 安装
 
