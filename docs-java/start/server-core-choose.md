@@ -151,9 +151,6 @@ leaves基本完全支持客户端生电 Mod ，包括但不限于carpet，pca，
 
 ### 其他版本核心推荐
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 <Tabs queryString="server-core-choose-2">
 <TabItem value="pandaspigot" label="1.8-PandaSpigot">
 
