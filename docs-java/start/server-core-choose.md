@@ -197,6 +197,7 @@ leaves基本完全支持客户端生电 Mod ，包括但不限于carpet，pca，
 - [官方](https://github.com/HomoMC/Beast)
 - [青草云MC](https://qcymc.cloud/f/G6ziA/beast-1.12.2.jar)
 
+</TabItem>
 </Tabs>
 
 
