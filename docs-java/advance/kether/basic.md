@@ -63,7 +63,7 @@ sidebar_position: 2
 
 那么如果我们把 `tell` 的返回值打印呢
 
-![](_images/vul-tell_color.png)
+![](_images/vul-tell_tell.png)
 
 ![](_images/痴呆.jpg)
 
