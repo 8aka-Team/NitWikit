@@ -61,16 +61,20 @@ sidebar_position: 4
 <details>
   <summary>我有公网ip</summary>
 
-TODO
+嘎嘎开就行了
 
 </details>
 
 <details>
   <summary>我没有/不知道啥是公网ip</summary>
 
-为了在没有公网IP的情况下连接到你的内外机器，你需要搭建 **Frp**。
+[申请公网ip](https://search.bilibili.com/all?keyword=%E7%94%B3%E8%AF%B7%E5%85%AC%E7%BD%91ip)
 
-参见：[搭建内网穿透（Frp）](../../advance/Linux/frp.md)
+如果申请不到，那么为了在没有公网IP的情况下连接到你的内外机器，你需要 **内网穿透（Frp）**
+
+[内网穿透](intranet-penetration.md)
+
+[Linux | 搭建内网穿透（Frp）](../../advance/Linux/frp.md)
 
 </details>
 
