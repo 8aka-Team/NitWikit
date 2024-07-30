@@ -1,6 +1,6 @@
 ---
 title: kether 教程
-slug: /Advance/Kether
+slug: /Advance/kether
 sidebar_position: 11
 ---
 
