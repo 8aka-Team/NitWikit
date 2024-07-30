@@ -8,7 +8,7 @@ import TabItem from '@theme/TabItem';
 
 # 如何保持服务器在 Linux 服务器中后台运行
 
-由于Linux的会话机制，手动启动的服务端会在ssh断开连接之后停止运行，所以我们需要服务端保持后台运行。
+由于Linux的会话机制，在ssh断开连接之后手动启动的服务端会停止运行，而我们需要服务端保持后台运行。
 
 ## 方法一 screen(推荐)
 
@@ -24,14 +24,14 @@ import TabItem from '@theme/TabItem';
     </TabItem>
     <TabItem value="redhat" label="CentOS/Redhat Linux">
         ```bash
-        yum install screen 
+        yum install screen
         ```
     </TabItem>
     <TabItem value="arch" label="Arch Linux">
         ```bash
          pacman -Sy screen
         ```
-    </TabItem>    
+    </TabItem>
 </Tabs>
 
 screen 的基础指令：

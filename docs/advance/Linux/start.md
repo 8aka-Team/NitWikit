@@ -91,7 +91,6 @@ OpenJDK 64-Bit Server VM Zulu21.32+17-CA (build 21.0.2+13-LTS, mixed mode, shari
 
 ## 方法一
 
-```
 <Tabs
   defaultValue="Debian/Ubuntu"
   values={[
@@ -105,7 +104,6 @@ OpenJDK 64-Bit Server VM Zulu21.32+17-CA (build 21.0.2+13-LTS, mixed mode, shari
 </Tabs>
 
 然后选择你想使用的 Java ，接着 `java -version` 验证版本
-```
 
 ## 方法二
 
