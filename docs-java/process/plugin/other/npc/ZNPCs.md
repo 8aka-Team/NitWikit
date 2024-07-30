@@ -6,11 +6,11 @@ sidebar_position: 5
 
 :::info
 
-`SpigotMC` :https://www.spigotmc.org/resources/znpcs.80940/
+`SpigotMC` https://www.spigotmc.org/resources/znpcs.80940/
 
-`GitHub` :https://github.com/Pyrbu/ZNPCsPlus
+`GitHub` https://github.com/Pyrbu/ZNPCsPlus
 
-`文档` :https://github.com/gonalez/znpcs/wiki
+`文档` https://github.com/gonalez/znpcs/wiki
 
 :::
 

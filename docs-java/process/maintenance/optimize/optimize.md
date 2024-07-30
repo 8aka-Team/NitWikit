@@ -25,7 +25,7 @@ sidebar_position: 1
 
 可以在 [JVM 参数生成器](https://startmc.jakaco.xyz/)生成适合你服务器的基本 JVM 参数，然后复制并保存到你的启动脚本里，然后重启就完成了
 
-别急，还有一些更高阶的参数。[JVM 优化](jvm-optimization.md)
+别急，还有一些更高阶的参数。[JVM 优化](./jvm/jvm.md)
 
 # 第二步 - 预生成
 
@@ -64,7 +64,7 @@ sidebar_position: 1
 
 ## Leaf - 极致性能 _推荐度 ★★★★☆_
 
-前往 Leaf 的 Github Action 下载最新核心，然后替换!!，Leaf 兼容你的绝大部分插件(已知仅有一个不兼容，但在插件的分支解决)
+前往 Leaf 的 GitHub Action 下载最新核心，然后替换!!，Leaf 兼容你的绝大部分插件(已知仅有一个不兼容，但在插件的分支解决)
 
 ## Folia - 硬件利用率超高的高性能，但兼容性较差 _推荐度 ★★★☆☆_
 

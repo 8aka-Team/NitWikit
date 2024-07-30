@@ -42,14 +42,18 @@ sidebar_position: 7
 
 # 如何设置编码、转码
 
-这里以VScode为例:
+这里以 VScode 为例:
 
 ![](https://img.fastmirror.net/s/2024/07/19/6699cc78da4ab.png)
+
 发现这是典型的口字码
 
-我们看到VScode右下角
+我们看到 VScode 右下角
+
 ![](https://img.fastmirror.net/s/2024/07/19/6699cd59a7b0a.png)
+
 点击**UTF-8**
 
 然后重新用**GBK**方式打开就可以了
+
 ![](https://img.fastmirror.net/s/2024/07/19/6699cd9d5521f.png)

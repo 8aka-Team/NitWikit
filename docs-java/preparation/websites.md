@@ -294,3 +294,13 @@ MOTD 是玩家进入服务器之前最先看到的东西，决定了玩家对一
 交易前查询下这人有没有被记录过，被记录过就别交易了。如果你被骗了，搜集证据去发个帖，给大家避个雷。
 
 能为你避开 90% 诈骗坑的[防骗小技巧](https://www.pixelbbs.cn/t-1377-1-1.html)。
+
+# bStats
+
+常用的统计数据网站，不少开发者会在自己的插件中写统计数据功能（一般默认开启）
+
+例如：
+
+paper核心的使用情况：https://bstats.org/plugin/server-implementation/Paper/580
+
+PlaceHolderAPI插件使用情况：https://bstats.org/plugin/bukkit/PlaceholderAPI/438

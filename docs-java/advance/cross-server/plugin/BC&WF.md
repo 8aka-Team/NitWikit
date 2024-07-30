@@ -9,6 +9,28 @@ sidebar_position: 1
 
 # 只安装在跨服端
 
+## HuskChat
+
+同 [Velocity 一侧的讲解](velocity.md#HuskChat)
+
+## Sonar
+
+同 [Velocity 一侧的讲解](velocity.md#Sonar)
+
+## AuthMeBungee
+
+:::info
+
+`SpigotMC` https://www.spigotmc.org/resources/.50219/
+
+`GitHub` https://github.com/AuthMe/AuthMeBungee
+
+:::
+
+这是 BungeeCord 版本的 AuthMe 。如果你的登录服使用 AuthMe 登录，请务必在 BungeeCord 上安装此插件，以增加登录系统的安全性和完整性，这可以为你避免一些不必要的麻烦
+
+如果你不安装此插件，在玩家登录时很可能乘此跳到其他子服务器来跳过登录，以此获取管理员账号来炸服
+
 # 可安装在跨服端或子服
 
 这一分类中的插件有单端版和跨服端版，你可以删除单端版使用跨服端版。
@@ -17,11 +39,11 @@ sidebar_position: 1
 
 :::info
 
-`SpigotMC` :https://www.spigotmc.org/resources/.81254/
+`SpigotMC` https://www.spigotmc.org/resources/.81254/
 
-`GitHub` :https://github.com/jpenilla/MiniMOTD/
+`GitHub` https://github.com/jpenilla/MiniMOTD/
 
-`modrinth` :https://modrinth.com/plugin/minimotd
+`modrinth` https://modrinth.com/plugin/minimotd
 
 :::
 
@@ -84,11 +106,11 @@ sidebar_position: 1
 
 :::info
 
-`SpigotMC` :https://www.spigotmc.org/resources/.55011/
+`SpigotMC` https://www.spigotmc.org/resources/.55011/
 
-`GitHub` :https://github.com/BGHDDevelopment/PlayerBalancer
+`GitHub` https://github.com/BGHDDevelopment/PlayerBalancer
 
-`modrinth` :https://modrinth.com/plugin/minimotd
+`modrinth` https://modrinth.com/plugin/minimotd
 
 :::
 
@@ -102,6 +124,10 @@ sidebar_position: 1
 
 :::
 
+## Tab
+
+同 [Velocity 一侧的讲解](velocity.md#tab)
+
 # 装在跨服端+子服端
 
 这类插件必须要同时安装在跨服端和子服。
@@ -110,13 +136,13 @@ sidebar_position: 1
 
 :::info
 
-`spigot` :https://www.spigotmc.org/resources/papiproxybridge.108415/
+`spigot` https://www.spigotmc.org/resources/papiproxybridge.108415/
 
-`GitHub` :https://github.com/WiIIiam278/PAPIProxyBridge
+`GitHub` https://github.com/WiIIiam278/PAPIProxyBridge
 
-`modrinth` :https://modrinth.com/plugin/papiproxybridge
+`modrinth` https://modrinth.com/plugin/papiproxybridge
 
-`官方文档` :https://william278.net/project/papiproxybridge
+`官方文档` https://william278.net/project/papiproxybridge
 
 :::
 

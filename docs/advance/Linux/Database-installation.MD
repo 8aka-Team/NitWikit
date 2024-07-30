@@ -5,7 +5,7 @@ sidebar_position: 5
 
 # 数据库安装
 
-本部分讲解在命令行中安装常见数据库的方式。本教程以 Ubuntu 24.04系统为例
+本部分讲解在命令行中安装常见数据库的方式。本教程以 Ubuntu 24.04 系统为例
 
 ## MySQL
 
@@ -13,7 +13,7 @@ sidebar_position: 5
 
 在[官方网站](https://dev.mysql.com/downloads/repo/apt/)页面下载 `mysql-apt-config_0.8.301_all.deb`
 
-这个包是一个配置APT 的 MySQL 仓库。安装 mysql-apt-config 后，用户可以选择想要安装的MySQL版本。
+这个包是一个配置APT 的 MySQL 仓库。安装 mysql-apt-config 后，用户可以选择想要安装的 MySQL 版本。
 
 将文件传入服务器 `/opt` 目录下，输入以下指令安装：
 

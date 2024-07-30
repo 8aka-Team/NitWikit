@@ -6,15 +6,15 @@ sidebar_position: 2
 
 :::info
 
-`官网` :https://wiki.citizensnpcs.co/Citizens_Wiki
+`官网` https://wiki.citizensnpcs.co/Citizens_Wiki
 
-`SpigotMC` :https://www.spigotmc.org/resources/citizens.13811/
+`SpigotMC` https://www.spigotmc.org/resources/citizens.13811/
 
-`Bukkit（太老旧不要使用）` :https://dev.bukkit.org/projects/citizens
+`Bukkit（太老旧不要使用）` https://dev.bukkit.org/projects/citizens
 
-`GitHub` :https://github.com/CitizensDev/Citizens2
+`GitHub` https://github.com/CitizensDev/Citizens2
 
-`插件百科` :https://www.mineplugin.org/Citizens
+`插件百科` https://www.mineplugin.org/Citizens
 
 :::
 

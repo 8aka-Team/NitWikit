@@ -50,7 +50,7 @@ sidebar_position: 2
 %vault_eco_balance% - 玩家的钱数
 ```
 
-## Multiverse-Core
+## Multiverse
 > https://wiki.placeholderapi.com/users/placeholder-list/#multiverse-core
 ```
 /papi ecloud download multiverse
@@ -59,3 +59,5 @@ sidebar_position: 2
 ```
 %multiverse_world_alias% - 显示世界别名
 ```
+
+[案例 | 中文世界名](../../WorldManagement/Multiverse.md#中文世界名)

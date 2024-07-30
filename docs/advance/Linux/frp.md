@@ -3,155 +3,282 @@ title: 搭建内网穿透（Frp）
 sidebar_position: 7
 ---
 
+<!-- @format -->
+
 # 搭建内网穿透（Frp）
 
 ## 使用现成的内网穿透提供商
 
 [Sakura Frp](https://www.natfrp.com/?page=panel&module=download) - 注册登录后前往 [下载页面](https://www.natfrp.com/tunnel/download) 下载 Frp 启动器。安装过程参考官方 [安装教程](https://doc.natfrp.com/launcher/usage.html) 即可。
 
-## 搭建 Frp
+## 自建 Frp
 
-获取 Frp [下载链接](https://github.com/fatedier/frp)
+首先你得确保你有一台有公网 IP 的机器，最好是**Linux**的。
 
-![](_images/Linux开服/搭建内网穿透/1.png)
+这里假定你有一台符合条件的 Linux 服务器，并且你已经可以连上你服务器的**SSH**。
 
-解压缩重命名
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-![](_images/Linux开服/搭建内网穿透/2.png)
+### 安装 Frp
 
-### 服务端配置 frps.toml
+1. 首先确保服务器所有软件包是最新的：
 
-```
-bindAddr = "0.0.0.0"
-bindPort = 7000
-kcpBindPort = 7000
-log.to = "/var/log/frps.log"
-log.level = "info"
-log.maxDays = 3
-auth.method = "token"
-auth.token = "12345678" #这里改成你自己的token
-```
+不同的 linux 发行版更新方法大同小异
 
-### 客户端配置 frpc.toml
+<Tabs>
+  <TabItem value="debian" label="Debian/Ubuntu Linux" default>
+    ```bash
+    apt-get update && apt-get upgrade -y
+    ```
+  </TabItem>
+  <TabItem value="redhat" label="CentOS/Redhat Linux">
+    ```bash
+    yum -y update
+    ```
+  </TabItem>
+  <TabItem value="arch" label="Arch Linux">
+    ```bash
+    pacman -Syu
+    ```
+  </TabItem>
+</Tabs>
 
-```
-serverAddr = "192.168.182.132" #这里服务器ip填你自己的ip
-serverPort = 7000
-log.to = "/var/log/frpc.log"
-log.level = "info"
-log.maxDays = 3
-auth.method = "token"
-auth.token = "12345678" #这里的token要和上面服务端的一致
-[[proxies]]
-name = "Minecraft"
-type = "tcp"
-localIP = "127.0.0.1"
-localPort = 25565
-remotePort = 25565
-```
+2. 将`frp.go`软件安装到系统中：
 
-### 将 Frp 添加到系统指令
+<Tabs>
+    <TabItem value="others" label="deb和rht系的 Linux" default>
+        手动下载frp软件包：
 
-服务端：
+        ```bash
+        cd ~
+        wget https：//github.com/fatedier/frp/releases/download/v0.58.1/frp_0.58.1_linux_amd64.tar.gz
+        ```
 
-```
-cp frps /usr/bin
-```
+        解压：
 
-客户端：
+        ```bash
+        tar -xzvf frp_0.58.1_linux_amd64.tar.gz
+        ```
 
-```
-cp frpc /usr/bin
-```
+        安装：
 
-### 将配置添加到系统配置目录里
+        <Tabs>
+            <TabItem value="server" label="服务端" default>
+                ```bash
+                cd ~/frp_0.58.1_linux_amd64/
+                cp frps /usr/bin/
+                mkdir -p /etc/frp
+                cp frps.toml /etc/frp/
+                ```
+            </TabItem>
+            <TabItem value="client" label="客户端" default>
+                ```bash
+                cd ~/frp_0.58.1_linux_amd64/
+                cp frpc /usr/bin/
+                mkdir -p /etc/frp
+                cp frpc.toml /etc/frp/
+                ```
+            </TabItem>
+        </Tabs>
 
-服务端：
+    </TabItem>
+    <TabItem value="arch" label="Arch Linux">
 
-```
-mkdir -p /etc/frp
-cp frps.toml /etc/frp
-```
+        在 Arch Linux 下可以直接用aur助手通过包管理器安装frp
 
-客户端：
+        ```bash
+        # 使用你的aur助手，这里列举了paru的
+        paru -Sy frps # 服务器上运行这个
+        paru -Sy frpc # 客户机上运行这个
+        ```
+    </TabItem>
 
-```
-mkdir -p /etc/frp
-cp frpc.toml /etc/frp
-```
-
-
-### 配置服务自启动进程
-
-#### 客户端 frpc.service
-
-```
-[Unit]
-Description=frpc
-After=syslog.target  network.target
-Wants=network.target
-
-[Service]
-Type=simple
-ExecStart=frpc -c /etc/frp/frpc.toml
-Restart= always
-RestartSec=1min
-ExecStop=/usr/bin/killall frpc
+</Tabs>
 
 
-[Install]
-WantedBy=multi-user.target
-```
+### 配置 Frp
 
-#### 服务端 frps.service
+<Tabs>
+    <TabItem value="server" label="服务端" default>
+        ```bash
+        vim /etc/frp/frps.toml
+        ```
 
-```
-[Unit]
-Description=frps
-After=syslog.target  network.target
-Wants=network.target
+        写入如下内容：
 
-[Service]
-Type=simple
-ExecStart=frps -c /etc/frp/frps.toml
-Restart= always
-RestartSec=1min
-ExecStop=/usr/bin/killall frps
+        ```toml
+        bindPort = 7000 # frps监听的端口
 
-[Install]
-WantedBy=multi-user.target
-```
+        log.to = "/var/log/frps.log" # 日志存放路径，一般不用改
+        log.level = "info" # 日志等级，不用改
+        log.maxDays = 3
 
-### 启动服务
+        auth.token = "example" # 身份验证令牌，frpc要与frps一致
+        ```
+    </TabItem>
+    <TabItem value="client" label="客户端">
+        ```bash
+        vim ~/frp_0.58.1_linux_amd64/frpc.toml
+        ```
 
-服务端：
+        输入以下内容：
 
-```
-cp frps.service /usr/lib/systemd/system/
-systemctl start frps.service
-```
+        ```toml
+        serverAddr = "x.x.x.x" # 你frps服务器的ip地址
+        serverPort = 7000 # 你frps服务开在的端口
 
-客户端：
+        log.to = "/var/log/frps.log" # 日志存放路径，一般不用改
+        log.level = "info" # 日志等级，不用改
+        log.maxDays = 3
 
-```
-cp frpc.service /usr/lib/systemd/system/
-systemctl start frpc.service
-```
+        auth.token = "example" # 令牌，与公网服务端保持一致
 
-效果展示：
+        [[proxies]]
+        name = "mc je"
+        type = "tcp" # java版使用tcp协议通信，不可更改
+        localIP = "127.0.0.1" # 默认不用改
+        localPort = 25565 # mc服务端开在哪个端口？
+        remotePort = 25565 # 暴露服务的公网入口
 
-![](_images/Linux开服/搭建内网穿透/3.png)
+        # 如果你开了互通，要基岩支持
+        [[proxies]]
+        name = "mc be"
+        type = "udp" # 基岩版使用udp协议通信，不可更改
+        localIP = "127.0.0.1"
+        localPort = 19132
+        remotePort = 19132
+        ```
+        </TabItem>
+</Tabs>
 
-在我们这个演示例子中：
 
-Minecraft 服务器启动于 192.168.182.131 上
+### 开启 Frp：
 
-Frp 服务器启动于 192.168.182.132 上
+为了保证 frp 在后台运行，这里有两种方法：
 
-Frp 日志中可以输入以下指令查看 Frp 日志
+1. screen    方便快捷
 
-```
-cat /var/log/frps.log
-```
+2. systemd   省心，有点复杂
 
-![](_images/Linux开服/搭建内网穿透/4.png)
+<Tabs>
+    <TabItem value="screen" label="Screen" default>
+
+        确保你的系统上有`screen`包，没有的话安装它们：
+
+        <Tabs>
+            <TabItem value="debian" label="Debian/Ubuntu Linux" default>
+                ```bash
+                apt-get install screen
+                ```
+            </TabItem>
+            <TabItem value="redhat" label="CentOS/Redhat Linux">
+                ```bash
+                yum install screen 
+                ```
+            </TabItem>
+            <TabItem value="arch" label="Arch Linux">
+                ```bash
+                pacman -Sy screen
+                ```
+            </TabItem>    
+        </Tabs>
+
+        启动：
+
+        ```bash
+        screen -dR frps frps # 服务端
+        screen -dR frpc frpc # 客户端
+        # 键盘上按Ctrl+A+D退出
+        ```
+    </TabItem>
+    <TabItem value="systemd" label="Systemd">
+
+        在 Linux 系统下，使用 systemd 可以方便地控制 frps 服务端的启动、停止、配置后台运行以及开机自启动。
+
+        <Tabs>
+            <TabItem value="server" label="服务端" default>
+            1. 创建 systemd 单元文件：
+
+            ```bash
+            vim /etc/systemd/system/frps.service
+            ```
+
+            ```
+            [Unit]
+            # 服务名称，可自定义
+            Description = frp server
+            After = network.target syslog.target
+            Wants = network.target
+
+            [Service]
+            Type = simple
+            ExecStart = /usr/bin/frps -c /etc/frp/frps.toml
+
+            [Install]
+            WantedBy = multi-user.target
+            ```
+
+            2. 使用 systemd 命令管理 frps 服务
+
+            ```bash
+            # 启动frp
+            sudo systemctl start frps
+            # 停止frp
+            sudo systemctl stop frps
+            # 重启frp
+            sudo systemctl restart frps
+            # 查看frp状态
+            sudo systemctl status frps
+            ```
+
+            3. 设置 frps 开机自启动
+
+            ```bash
+            sudo systemctl enable frps
+            ```
+            </TabItem>
+            <TabItem value="client" label="客户端" default>
+            1. 创建 systemd 单元文件：
+
+            ```bash
+            vim /etc/systemd/system/frpc.service
+            ```
+
+            ```
+            [Unit]
+            # 服务名称，可自定义
+            Description = frp client
+            After = network.target syslog.target
+            Wants = network.target
+
+            [Service]
+            Type = simple
+            ExecStart = /usr/bin/frpc -c /etc/frp/frpc.toml
+
+            [Install]
+            WantedBy = multi-user.target
+            ```
+
+            2. 使用 systemd 命令管理 frpc 服务
+
+            ```bash
+            # 启动frp
+            sudo systemctl start frpc
+            # 停止frp
+            sudo systemctl stop frpc
+            # 重启frp
+            sudo systemctl restart frpc
+            # 查看frp状态
+            sudo systemctl status frpc
+            ```
+
+            3. 设置 frpc 开机自启动
+
+            ```bash
+            sudo systemctl enable frpc
+            ```
+            </TabItem>
+        </Tabs>
+    </TabItem>
+</Tabs>

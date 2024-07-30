@@ -4,10 +4,10 @@ sidebar_position: 7
 
 :::info
 
-`eCloud` :https://api.extendedclip.com/expansions/progress/
+`eCloud` https://api.extendedclip.com/expansions/progress/
 
-`Placeholder List` :https://wiki.placeholderapi.com/users/placeholder-list/#progress
+`Placeholder List` https://wiki.placeholderapi.com/users/placeholder-list/#progress
 
-`GitHub` :https://github.com/aBooDyy/Progress-Expansion
+`GitHub` https://github.com/aBooDyy/Progress-Expansion
 
 :::

@@ -205,12 +205,12 @@ IOC（International Olympic Committee，国际奥林匹克委员会）。这样�
 ```
 使用 github 登录
 使用 GITHUB 登录
-使用 Github 登录
+使用 GitHub 登录
 使用 gitHub 登录
 使用 gｲんĤЦ8 登录
 我们的客户有 github、foursquare、microsoft corporation、google、facebook, inc.。
 我们的客户有 GITHUB、FOURSQUARE、MICROSOFT CORPORATION、GOOGLE、FACEBOOK, INC.。
-我们的客户有 Github、FourSquare、MicroSoft Corporation、Google、FaceBook, Inc.。
+我们的客户有 GitHub、FourSquare、MicroSoft Corporation、Google、FaceBook, Inc.。
 我们的客户有 gitHub、fourSquare、microSoft Corporation、google、faceBook, Inc.。
 我们的客户有 gｲんĤЦ8、ｷouЯƧquﾑгє、๓เςг๏ร๏Ŧt ς๏гק๏гคtเ๏ภn、900913、ƒ4ᄃëв๏๏к, IПᄃ.。
 ```

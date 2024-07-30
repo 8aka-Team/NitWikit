@@ -1,10 +1,10 @@
 ---
-title: Nukkit核心
+title: Nukkit 核心
 slug: /nukkit-core
 sidebar_position: 4
 ---
 
-# Nukkit核心
+# Nukkit 核心
 
 import DocCardList from '@theme/DocCardList';
 

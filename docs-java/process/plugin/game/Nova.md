@@ -1,20 +1,15 @@
 ---
 title: Nova
-slug: /Slimefun
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # Nova
 
 :::info
 
-`GitHub（官方）` :https://github.com/Slimefun/Slimefun4
+`GitHub（官方）` https://github.com/xenondevs/Nova
 
-`GitHub（中文）` :https://github.com/SlimefunGuguProject/Slimefun4
-
-`非官方中文wiki` :https://slimefun-wiki.guizhanss.cn/
-
-`中文附属插件表` :https://slimefun-wiki.guizhanss.cn/Addons
+`Modrinth` https://modrinth.com/plugin/nova-framework
 
 :::
 
@@ -24,4 +19,4 @@ sidebar_position: 1
 
 下载完成后 Nova 的插件文件夹有一个多 G
 
-因此建议下载依赖时候挂梯，不然就国内的网络环境嘛
+建议下载依赖时候挂梯，不然就国内的网络环境嘛

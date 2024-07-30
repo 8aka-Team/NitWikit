@@ -1,6 +1,6 @@
 ---
 title: 数学运算
-sidebar_position: 2
+sidebar_position: 5
 ---
 
 # 数学运算
@@ -36,25 +36,23 @@ math / [ 6 2 ]
 math 1 + 3 * 5 / 6 - 2
 ```
 
+当然也可以用上一节学到的变量来运算
+
+```
+/vul eval set a to 1 set b to 2 math &a - &b
+```
+
+![](_images/math_1.png)
+
 ## calc
 
 详细请查看：https://github.com/TabooLib/taboolib/blob/master/module/module-kether/src/main/kotlin/taboolib/module/kether/action/transform/ActionJexl3.kt
-
 
 - 加法：a + b
 - 减法：a - b
 - 乘法：a * b
 - 除法：a / b
 
-- 幂运算（我测试不能使用）：幂运算使用 `**` 符号，例如，计算 2 的 3 次方：2 ** 3 。
-
-- 开方（我测试不能使用）：JEX 支持开方操作，例如，计算 9 的平方根：sqrt(9) 。
-
-- 取整（我测试不能使用）：
-    - 取整操作可以使用 floor()、ceil() 或 round() 函数。
-    - floor(x)：向下取整，返回不大于 x 的最大整数。
-    - ceil(x)：向上取整，返回不小于 x 的最小整数。
-    - round(x)：四舍五入，返回最接近 x 的整数。
 - 取余：取余操作使用 % 符号。例如，计算 10 除以 3 的余数：10 % 3。
 
 当然也可以使用括号：

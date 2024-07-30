@@ -1,12 +1,10 @@
 ---
-title: 概览
+title: 全息图/浮空字
+slug: /Plugins/OtherPlugin/Holograms
 sidebar_position: 1
 ---
 
-# 概览
-
-
-## 啥是全息图?
+# 啥是全息图?
 
 如图，图中的悬浮字，还有包括展示的实体和物品，都算全息图。
 

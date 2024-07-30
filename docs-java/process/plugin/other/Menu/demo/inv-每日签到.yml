@@ -1,0 +1,194 @@
+##############################
+# 是驿站写滴 Q:185839426
+# 禁止商用和抹除作者信息
+##############################
+
+
+
+title: ':offset_-16::signin:'
+
+layout:
+  - '####T####'
+  - '         '
+  - '         '
+  - '         '
+  - '         '
+  - '####@####'
+
+bindings:
+  command: 'signin'
+
+nodes:
+  Sound:
+    type: kether
+    value:
+      sound UI_BUTTON_CLICK by 1 1
+  LeapYear:
+    type: kether
+    value:
+      set YEAR to time as "yyyy"
+      if* calc "YEAR % 4" == 0 && calc "YEAR % 100" != 0 || calc "YEAR % 400" == 0
+      then context set max to 29
+      else context set max to 28
+
+
+
+## 引用配置
+set:
+  common_reward:
+    money give 50
+  signin: &signin
+    context set join [ "player@signin_" element *id ] to true
+    context increase player@signin_statistics_of_all by 1
+    context increase player@signin_statistics_of_year by 1
+    context increase player@signin_statistics_of_month by 1
+    icons refresh
+    node Sound
+    tell "&a&l! &7签到成功！"
+    command "ni giveSilent {{player name}} primogem" as console
+  previous_signin: &previous_signin
+    if: papi %checkitem_nbtstrings:NeigeItems..id..data=signin_card%
+    then:
+      - papi %checkitem_remove_nbtstrings:NeigeItems..id..data=signin_card,amt:1%
+        tell "&a&l! &7补签成功!"
+      - *signin
+    else:
+      tell "&c&l! &7你没有补签卡!"
+      sound ENTITY_VILLAGER_NO by 1 1
+
+
+
+events:
+  post_open:
+    # 物品数量随代表的日期变化 true开启 false关闭(物品数量全为1)
+    - context set itemAmount to false
+
+    - case: '{{format date with "MM"}}'
+      when:
+        "= 01": 'context set max to 31'
+        "= 02": 'node LeapYear'
+        "= 03": 'context set max to 31'
+        "= 04": 'context set max to 30'
+        "= 05": 'context set max to 31'
+        "= 06": 'context set max to 30'
+        "= 07": 'context set max to 31'
+        "= 08": 'context set max to 31'
+        "= 09": 'context set max to 30'
+        "= 10": 'context set max to 31'
+        "= 11": 'context set max to 30'
+        "= 12": 'context set max to 31'
+    - if: check &player@signin_update != time as "yyyyMM"
+      then:
+        # 年
+        - if: check &player@signin_update_year != time as "yyyy"
+          then: context set player@signin_statistics_of_year to 0
+        # 月 更新控制
+        - context set player@signin_update to time as "yyyyMM"
+          context set player@signin_statistics_of_month to 0
+        # 1-9日 签到数据
+        - for it in range 1 to 9 then {
+            context set join [ "player@signin_0" &it ] to false
+          }
+        # 10-31日 签到数据
+        - for it in range 10 to 31 then {
+            context set join [ "player@signin_" &it ] to false
+          }
+
+
+
+icons:
+  '#':
+    material: air
+  '|':
+    material: light_blue_stained_glass_pane
+    name: ' '
+  '@':
+    ia: ui:space
+    name: '&c&l返回'
+    lore:
+      - ''
+      - '&8| &7点击返回主菜单.'
+      - ''
+    action: menu open main node Sound
+    # action: node LeapYear
+  'T':
+    ia: ui:space
+    name: '&a统计数据'
+    lore:
+      - ''
+      - '&8| &7本月累计签到: &a{{&player@signin_statistics_of_month}} &7天.'
+      - '&8| &7本年累计签到: &a{{&player@signin_statistics_of_year}} &7天.'
+      - '&8| &7生涯累计签到: &a{{&player@signin_statistics_of_all}} &7天.'
+      - ''
+      - '&8| &a点击打开累签奖励'
+    action: node Sound menu open rewards
+
+generator:
+  output:
+    material: barrier
+    name: '错误,请联系管理员'
+    amount: '{{if &itemAmount then element *id else 1}}'
+    sub:
+      # 空
+      - rule: check &max < element *id
+        material: air
+      # 漏签
+      - rule: all [ check day in month > element *id not context get join [ "player@signin_" element *id ] ]
+        ia: ui:sign_no
+        name: '&7日期 &6{{element *id}}号 &7漏签'
+        lore:
+          - ''
+          - '&8| &7您可以使用&a补签卡&7进行补签'
+          - '&8| &7您拥有的补签卡数量: &6%checkitem_amount_nbtstrings:NeigeItems..id..data=signin_card%'
+          - ''
+        action: *previous_signin
+      # 点击签到
+      - rule: all [ check element *id == day in month not context get join [ "player@signin_" element *id ] ]
+        ia: ui:sign_now
+        name: '&e日期 &6{{element *id}}号 &e点击签到'
+        action: *signin
+      # 已签到
+      - rule: context get join [ "player@signin_" element *id ]
+        ia: ui:sign_yes
+        name: '&a日期 &6{{element *id}}号 &a已签到'
+        lore:
+          - ''
+          - '&8&l| &7您本月已签到 &a{{&player@signin_statistics_of_month}} &7天!'
+          - ''
+      # 未到达
+      - rule:  check day in month < element *id
+        ia: ui:sign_furture
+        name: '&7日期 &6{{element *id}}号 &7未到达'
+
+  elements:
+    - id: '01'
+    - id: '02'
+    - id: '03'
+    - id: '04'
+    - id: '05'
+    - id: '06'
+    - id: '07'
+    - id: '08'
+    - id: '09'
+    - id: '10'
+    - id: '11'
+    - id: '12'
+    - id: '13'
+    - id: '14'
+    - id: '15'
+    - id: '16'
+    - id: '17'
+    - id: '18'
+    - id: '19'
+    - id: '20'
+    - id: '21'
+    - id: '22'
+    - id: '23'
+    - id: '24'
+    - id: '25'
+    - id: '26'
+    - id: '27'
+    - id: '28'
+    - id: '29'
+    - id: '30'
+    - id: '31'

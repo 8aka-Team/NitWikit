@@ -1,0 +1,2808 @@
+# 
+# Power by TrMenu v3.1.1
+# Author by 小晓
+# QQ: 614401508
+# Date: 2022-01-13 16:55:21
+
+# 强制重置某玩家的本月签到: /trmenu action 玩家 set-data: 签到重置节点 0  
+# 强制修改某玩家的某日签到状态: /trmenu action 玩家 set-data: 签到-[日期] 0/1     [日期]:假如12号就填12,不含中括号；后面0为未签到,1为已签到
+# 强制修改某玩家的签到总数: /trmenu action 玩家 set-data: 总签到 [数值]
+# 强制修改某玩家的本月签到数: /trmenu action 玩家 set-data: 本月签到 [数值]
+
+TITLE: '&2%server_time_M%月签到'
+Layout:
+- - 'Y---x---Z'
+  - '123456789'
+  - '0abcdefgh'
+  - 'ijklmnopq'
+  - 'rstu     '
+  - '-A-B-C-D*'
+
+
+OPTIONS:
+  TRANSFER-ARGS: true
+  Min-Click-Delay: 200
+  Depend-Expansions: ['server', 'player', 'progress', 'math']
+
+Events:
+  Open:
+    - condition: ''
+      actions:
+      - 'setargs: %server_time_M% %server_time_d% %player_name% %server_time_H% %server_time_m%'
+    - condition: 'check papi *%trmenu_data_签到重置节点% != papi *%server_time_M%'
+      actions:
+      - 'tell: &a检测到您是本月首次签到，正在准备数据...'
+      - 'set-data: 签到重置节点 %server_time_M%'
+      - 'set-data: 签到01 0;签到02 0;签到03 0;签到04 0;签到05 0;签到06 0;签到07 0;签到08 0;签到09 0;签到010 0'
+      - 'set-data: 签到011 0;签到012 0;签到013 0;签到014 0;签到015 0;签到016 0;签到017 0;签到018 0;签到019 0;签到020 0'
+      - 'set-data: 签到021 0;签到022 0;签到023 0;签到024 0;签到025 0;签到026 0;签到027 0;签到028 0;签到029 0;签到030 0;签到031 0'
+      - 'set-data: 签到礼包A 0;签到礼包B 0;签到礼包C 0;签到礼包D 0;本月签到 0'
+      - 'set-data: 上次签到 无<condition: check papi *%trmenu_data_上次签到% == *"null">'
+      - 'set-data: 总签到 0<condition: check papi *%trmenu_data_总签到% == *"null">'
+      deny:
+      - 'setargs: %server_time_M% %server_time_d% %player_name% %server_time_H% %server_time_m%'
+
+
+Icons:
+  'Y':
+    display:
+      material: orange Stained Glass Pane
+      name: '&c返回 '
+    actions:
+      all:
+        - 'open: 主菜单'
+  'Z':
+    display:
+      mats: ORANGE_STAINED_GLASS_PANE
+      name:
+        - '&c 关闭菜单 '
+      Shiny: true
+    actions:
+      all:
+        - 'sound: BLOCK_GLASS_BREAK'
+        - 'Close'
+  '-':
+    display:
+      name: ' '
+      mats: YELLOW_STAINED_GLASS_PANE
+  '*':
+    display:
+      mats: YELLOW_STAINED_GLASS_PANE
+      name: '&a '
+  'x':
+    update: 10
+    display:
+      name: '&b           我的信息'
+      lore:
+        - ' '
+        - ' &a当前时间： &2%server_time_YYYY/MM/dd-HH:mm:ss%  '
+        - ' &a上次签到： &2%trmenu_data_上次签到%   '
+        - ' &a本月签到： &2%trmenu_data_本月签到% 天'
+        - ' &a累计签到： &2%trmenu_data_总签到% 天'
+        - ''
+      mats: 
+        - 'head:%player_name%'
+  'A':
+    update: 20
+    display:
+      mats: air
+    icons: 
+      - condition: 'check papi *%trmenu_data_签到礼包A% == *1'
+        pri: 1
+        display:
+          mats: 
+           - 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmRiMmUwMmU3MTQxNmJlNjlmZGE4NGM5NTBmYWYwYzU3OWI2Y2E4MDU1NjBiMDI0ZWI0MzQ2ODdlMzdjNTQwMyJ9fX0='
+          name: '&b 累计签到3天奖励'
+          amount: '3'
+          lore: 
+           - ''
+           - '&d▪ &c该奖励您已领取 '
+           - '&7▪ &a需要累计签到 3 天' 
+           - '&8  [%progress_bar_{trmenu_data_本月签到}_m:3_c:&3■_p:&7■_r:&8■_l:15_fullbar:&a■■■■■■■■■■■■■■■%&8]: &a%trmenu_data_本月签到%&7/&e3'
+           - '&d▪ &7奖励： '
+           - '&d  &7金币*1000     '
+           - '&d  &7钻石*2      '
+           - ''
+      - condition: 'check papi *%trmenu_data_本月签到% >= *3'
+        pri: 3
+        display:
+          mats: 
+          - 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGEyMjQyZWU1YzUwYmMwYjU4MmUzYzA4NWIwODc5MTI0NTNiMDE0NTlkMWUyYTI5YzcyOTkzNmI0YjM1MGIzZCJ9fX0='
+          name: '&b 累计签到3天奖励'
+          amount: '3'
+          lore: 
+          - ''
+          - '&d▪ &a点击领取 '
+          - '&7▪ &a需要累计签到 3 天'
+          - '&8  [%progress_bar_{trmenu_data_本月签到}_m:3_c:&3■_p:&7■_r:&8■_l:15_fullbar:&a■■■■■■■■■■■■■■■%&8]  &a%trmenu_data_本月签到%&7/&e3'
+          - '&d▪ &d奖励： '
+          - '&d  &b金币*1000     '
+          - '&d  &b钻石*2      '
+          - ''
+        actions:
+          all:
+            - 'Close'
+            - 'GIVE-ECO: 1000'
+            - 'Tell: &a ▪ 您获得了1000金币。'
+            - 'title: `&a领取完成` `&3 奖励已发送至您的背包 `'
+            - 'giveitem: material:diamond,amount:2'
+            - 'Tell: &a ▪ 您获得了2个钻石。'
+            - 'set-data: 签到礼包A 1' 
+      - condition: 'check papi *%trmenu_data_本月签到% < *3'
+        pri: 2
+        display:
+          mats: 
+           - 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGEyMjQyZWU1YzUwYmMwYjU4MmUzYzA4NWIwODc5MTI0NTNiMDE0NTlkMWUyYTI5YzcyOTkzNmI0YjM1MGIzZCJ9fX0='
+          name: '&b 累计签到3天奖励'
+          amount: '3'
+          lore: 
+           - ''
+           - '&d▪ &c您累计签到天数不足 '
+           - '&7▪ &a需要累计签到 3 天'
+           - '&8  [%progress_bar_{trmenu_data_本月签到}_m:3_c:&3■_p:&7■_r:&8■_l:15_fullbar:&a■■■■■■■■■■■■■■■%&8]: &a%trmenu_data_本月签到%&7/&e3'
+           - '&d▪ &7奖励： '
+           - '&d  &7金币*1000     '
+           - '&d  &7钻石*2      '
+           - ''
+  'B':
+    update: 20
+    display:
+      mats: air
+    icons:
+      - condition: 'check papi *%trmenu_data_签到礼包B% == *1'
+        pri: 1
+        display:
+          mats: 
+           - 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmRiMmUwMmU3MTQxNmJlNjlmZGE4NGM5NTBmYWYwYzU3OWI2Y2E4MDU1NjBiMDI0ZWI0MzQ2ODdlMzdjNTQwMyJ9fX0='
+          name: '&b 累计签到7天奖励'
+          amount: '7'
+          lore: 
+           - ''
+           - '&d▪ &c该奖励您已领取 '
+           - '&7▪ &a需要累计签到 7 天'
+           - '&8  [%progress_bar_{trmenu_data_本月签到}_m:7_c:&3■_p:&7■_r:&8■_l:15_fullbar:&a■■■■■■■■■■■■■■■%&8]: &a%trmenu_data_本月签到%&7/&e7'
+           - '&d▪ &7奖励： '
+           - '&d  &7金币*5000      '
+           - '&d  &7钻石*8      '
+           - ''
+      - condition: 'check papi *%trmenu_data_本月签到% >= *7'
+        pri: 3
+        display:
+          mats: 
+          - 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGEyMjQyZWU1YzUwYmMwYjU4MmUzYzA4NWIwODc5MTI0NTNiMDE0NTlkMWUyYTI5YzcyOTkzNmI0YjM1MGIzZCJ9fX0='
+          name: '&b 累计签到7天奖励'
+          amount: '7'
+          lore: 
+          - ''
+          - '&d▪ &a点击领取 '
+          - '&7▪ &a需要累计签到 7 天'
+          - '&8  [%progress_bar_{trmenu_data_本月签到}_m:7_c:&3■_p:&7■_r:&8■_l:15_fullbar:&a■■■■■■■■■■■■■■■%&8]: &a%trmenu_data_本月签到%&7/&e7'
+          - '&d▪ &d奖励： '
+          - '&d  &b金币*5000      '
+          - '&d  &b钻石*8      '
+          - ''
+        actions:
+          all:
+            - 'Close'
+            - 'GIVE-ECO: 5000'
+            - 'Tell: &a ▪ 您获得了5000金币。'
+            - 'title: `&a领取完成` `&3 奖励已发送至您的背包 `'
+            - 'giveitem: material:diamond,amount:8'
+            - 'Tell: &a ▪ 您获得了8个钻石。'
+            - 'set-data: 签到礼包B 1'  
+      - condition: 'check papi *%trmenu_data_本月签到% < *7'
+        pri: 2
+        display:
+          mats: 
+           - 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGEyMjQyZWU1YzUwYmMwYjU4MmUzYzA4NWIwODc5MTI0NTNiMDE0NTlkMWUyYTI5YzcyOTkzNmI0YjM1MGIzZCJ9fX0='
+          name: '&b 累计签到7天奖励'
+          amount: '7'
+          lore: 
+           - ''
+           - '&d▪ &c您累计签到天数不足 '
+           - '&7▪ &a需要累计签到 7 天'
+           - '&8  [%progress_bar_{trmenu_data_本月签到}_m:7_c:&3■_p:&7■_r:&8■_l:15_fullbar:&a■■■■■■■■■■■■■■■%&8]: &a%trmenu_data_本月签到%&7/&e7'
+           - '&d▪ &7奖励： '
+           - '&d  &7金币*5000      '
+           - '&d  &7钻石*8      '
+           - ''
+  'C':
+    update: 20
+    display:
+      mats: air
+    icons:
+      - condition: 'check papi *%trmenu_data_签到礼包C% == *1'
+        pri: 1
+        display:
+          mats: 
+           - 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmRiMmUwMmU3MTQxNmJlNjlmZGE4NGM5NTBmYWYwYzU3OWI2Y2E4MDU1NjBiMDI0ZWI0MzQ2ODdlMzdjNTQwMyJ9fX0='
+          name: '&b 累计签到15天奖励'
+          amount: '15'
+          lore: 
+           - ''
+           - '&d▪ &c该奖励您已领取 '
+           - '&7▪ &a需要累计签到 15 天'
+           - '&8  [%progress_bar_{trmenu_data_本月签到}_m:15_c:&3■_p:&7■_r:&8■_l:15_fullbar:&a■■■■■■■■■■■■■■■%&8]: &a%trmenu_data_本月签到%&7/&e15'
+           - '&d▪ &7奖励： '
+           - '&d  &7金币*20000     '
+           - '&d  &7钻石*16      '
+           - ''
+      - condition: 'check papi *%trmenu_data_本月签到% >= *15'
+        pri: 3
+        display:
+          mats:
+          - 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGEyMjQyZWU1YzUwYmMwYjU4MmUzYzA4NWIwODc5MTI0NTNiMDE0NTlkMWUyYTI5YzcyOTkzNmI0YjM1MGIzZCJ9fX0='
+          name: '&b 累计签到15天奖励'
+          amount: '15'
+          lore: 
+          - ''
+          - '&d▪ &a点击领取 '
+          - '&7▪ &a需要累计签到 15 天'
+          - '&8  [%progress_bar_{trmenu_data_本月签到}_m:15_c:&3■_p:&7■_r:&8■_l:15_fullbar:&a■■■■■■■■■■■■■■■%&8]: &a%trmenu_data_本月签到%&7/&e15'
+          - '&d▪ &d奖励： '
+          - '&d  &b金币*20000     '
+          - '&d  &b钻石*16      '
+          - ''
+        actions:
+          all:
+            - 'Close'
+            - 'GIVE-ECO: 20000'
+            - 'Tell: &a ▪ 您获得了20000金币。'
+            - 'title: `&a领取完成` `&3 奖励已发送至您的背包 `'
+            - 'giveitem: material:diamond,amount:16'
+            - 'Tell: &a ▪ 您获得了16个钻石。'
+            - 'set-data: 签到礼包C 1'  
+      - condition: 'check papi *%trmenu_data_本月签到% < *15'
+        pri: 2
+        display:
+          mats: 
+           - 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGEyMjQyZWU1YzUwYmMwYjU4MmUzYzA4NWIwODc5MTI0NTNiMDE0NTlkMWUyYTI5YzcyOTkzNmI0YjM1MGIzZCJ9fX0='
+          name: '&b 累计签到15天奖励'
+          amount: '15'
+          lore: 
+           - ''
+           - '&d▪ &c您累计签到天数不足 '
+           - '&7▪ &a需要累计签到 15 天'
+           - '&8  [%progress_bar_{trmenu_data_本月签到}_m:15_c:&3■_p:&7■_r:&8■_l:15_fullbar:&a■■■■■■■■■■■■■■■%&8]: &a%trmenu_data_本月签到%&7/&e15'
+           - '&d▪ &7奖励： '
+           - '&d  &7金币*20000     '
+           - '&d  &7钻石*16      '
+           - ''
+  'D':
+    update: 20
+    display:
+      mats: air
+    icons:
+      - condition: 'check papi *%trmenu_data_签到礼包D% == *1'
+        pri: 1
+        display:
+          mats: 
+           - 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmRiMmUwMmU3MTQxNmJlNjlmZGE4NGM5NTBmYWYwYzU3OWI2Y2E4MDU1NjBiMDI0ZWI0MzQ2ODdlMzdjNTQwMyJ9fX0='
+          name: '&b 累计签到26天奖励'
+          amount: '26'
+          lore: 
+           - ''
+           - '&d▪ &c该奖励您已领取 '
+           - '&7▪ &a需要累计签到 26 天'
+           - '&8  [%progress_bar_{trmenu_data_本月签到}_m:26_c:&3■_p:&7■_r:&8■_l:15_fullbar:&a■■■■■■■■■■■■■■■%&8]: &a%trmenu_data_本月签到%&7/&e26'
+           - '&d▪ &7奖励： '
+           - '&d  &7金币*30000     '
+           - '&d  &7钻石*32      '
+           - '&d  &7合金锭*16      '
+           - ''
+      - condition: 'check papi *%trmenu_data_本月签到% >= *26'
+        pri: 3
+        display:
+          mats: 
+          - 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGEyMjQyZWU1YzUwYmMwYjU4MmUzYzA4NWIwODc5MTI0NTNiMDE0NTlkMWUyYTI5YzcyOTkzNmI0YjM1MGIzZCJ9fX0='
+          name: '&b 累计签到26天奖励'
+          amount: '26'
+          lore: 
+          - ''
+          - '&d▪ &a点击领取 '
+          - '&7▪ &a需要累计签到 26 天'
+          - '&8  [%progress_bar_{trmenu_data_本月签到}_m:26_c:&3■_p:&7■_r:&8■_l:15_fullbar:&a■■■■■■■■■■■■■■■%&8]: &a%trmenu_data_本月签到%&7/&e26'
+          - '&d▪ &d奖励： '
+          - '&d  &b金币*30000     '
+          - '&d  &b钻石*32      '
+          - '&d  &b合金锭*16      '
+          - ''
+        actions:
+          all:
+            - 'Close'
+            - 'GIVE-ECO: 30000'
+            - 'Tell: &a ▪ 您获得了30000金币。'
+            - 'title: `&a领取完成` `&3 奖励已发送至您的背包 `'
+            - 'giveitem: material:diamond,amount:32'
+            - 'Tell: &a ▪ 您获得了32个钻石。'
+            - 'console: give {2} netherite_ingot 16'
+            - 'Tell: &a ▪ 您获得了16个合金锭。'
+            - 'set-data: 签到礼包D 1'  
+      - condition: 'check papi *%trmenu_data_本月签到% < *26'
+        pri: 2
+        display:
+          mats: 
+           - 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGEyMjQyZWU1YzUwYmMwYjU4MmUzYzA4NWIwODc5MTI0NTNiMDE0NTlkMWUyYTI5YzcyOTkzNmI0YjM1MGIzZCJ9fX0='
+          name: '&b 累计签到26天奖励'
+          amount: '26'
+          lore: 
+           - ''
+           - '&d▪ &c您累计签到天数不足 '
+           - '&7▪ &a需要累计签到 26 天'
+           - '&8  [%progress_bar_{trmenu_data_本月签到}_m:26_c:&3■_p:&7■_r:&8■_l:15_fullbar:&a■■■■■■■■■■■■■■■%&8]: &a%trmenu_data_本月签到%&7/&e26'
+           - '&d▪ &7奖励： '
+           - '&d  &7金币*30000     '
+           - '&d  &7钻石*32      '
+           - '&d  &7合金锭*16      '
+           - ''
+  '1':
+    display:
+      mats: 
+        - 'lime_stained_glass_pane'
+      name: '&b1号签到'
+      amount: '1'
+      shiny: true
+      lore: 
+      - ''
+      - '&d▪ &a  点击签到'
+      - '&d▪ &b领取签到奖励      '
+      - ''
+    actions:
+      all:
+        condition: 'check papi *%server_time_d% == *1'
+        actions:
+        - 'Close'
+        - 'GIVE-ECO: 1000'
+        - 'Tell: &a ▪ 您获得了1000金币。'
+        - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+        - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+        - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+        - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+        - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+        - 'set-data: 签到01 1'
+        Deny:
+        - 'Close'
+    icons:
+      - condition: 'check papi *"%trmenu_data_签到01%" == *"1"'
+        pri: 1
+        display:
+          mats: lime_stained_glass_pane
+          name: '&b1号签到'
+          lore:
+            - '&a   当日您已签到  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c当日您已签到。'
+      - condition: 'check papi *%server_time_d% > *1'
+        pri: 2
+        display:
+          mats: black_stained_glass_pane
+          name: '&b1号签到'
+          lore: 
+            - '&c   本日日期已过  ' 
+            - '&a   您可以点击补签'
+            - '&a   价格: 10点券'
+        actions:
+          all:
+            condition: 'points *10'
+            actions:
+            - 'Close'
+            - 'GIVE-ECO: 1000'
+            - 'Tell: &a ▪ 您获得了1000金币。'
+            - 'take-points: 10'
+            - 'tell: &a ▪ 您已花费10点券补签。'
+            - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+            - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+            - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+            - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+            - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+            - 'set-data: 签到01 1'
+            deny:
+            - 'Tell: &c ▪ 您的点券不足'
+            - close
+      - condition: 'check papi *%server_time_d% < *1'
+        pri: 3
+        display:
+          mats: light_gray_stained_glass_pane
+          name: '&b1号签到'
+          lore: 
+            - '&c   暂未到达本日  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c暂未到达本日。'
+  '2':
+    display:
+      mats: 
+        - 'lime_stained_glass_pane'
+      name: '&b2号签到'
+      amount: '2'
+      shiny: true
+      lore: 
+      - ''
+      - '&d▪ &a  点击签到'
+      - '&d▪ &b领取签到奖励      '
+      - ''
+    actions:
+      all:
+        condition: 'check papi *%server_time_d% == *2'
+        actions:
+        - 'Close'
+        - 'GIVE-ECO: 1000'
+        - 'Tell: &a ▪ 您获得了1000金币。'
+        - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+        - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+        - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+        - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+        - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+        - 'set-data: 签到02 1'  
+        Deny:
+        - 'Close'
+    icons:
+      - condition: 'check papi *"%trmenu_data_签到02%" == *"1"'
+        pri: 1
+        display:
+          mats: lime_stained_glass_pane
+          name: '&b2号签到'
+          amount: '2'
+          lore:
+            - '&a   当日您已签到  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c当日您已签到。'
+      - condition: 'check papi *%server_time_d% > *2'
+        pri: 2
+        display:
+          mats: black_stained_glass_pane
+          name: '&b2号签到'
+          amount: '2'
+          lore: 
+            - '&c   本日日期已过  ' 
+            - '&a   您可以点击补签'
+            - '&a   价格: 10点券'
+        actions:
+          all:
+            condition: 'points *10'
+            actions:
+            - 'Close'
+            - 'GIVE-ECO: 1000'
+            - 'Tell: &a ▪ 您获得了1000金币。'
+            - 'take-points: 10'
+            - 'tell: &a ▪ 您已花费10点券补签。'
+            - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+            - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+            - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+            - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+            - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+            - 'set-data: 签到02 1'
+            deny:
+            - 'Tell: &c ▪ 您的点券不足'
+            - close
+      - condition: 'check papi *%server_time_d% < *2'
+        pri: 3
+        display:
+          mats: light_gray_stained_glass_pane
+          name: '&b2号签到'
+          amount: '2'
+          lore: 
+            - '&c   暂未到达本日  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c暂未到达本日。'
+  '3':
+    display:
+      mats: 
+        - 'lime_stained_glass_pane'
+      name: '&b3号签到'
+      amount: '3'
+      shiny: true
+      lore: 
+      - ''
+      - '&d▪ &a  点击签到'
+      - '&d▪ &b领取签到奖励      '
+      - ''
+    actions:
+      all:
+        condition: 'check papi *%server_time_d% == *3'
+        actions:
+        - 'Close'
+        - 'GIVE-ECO: 1000'
+        - 'Tell: &a ▪ 您获得了1000金币。'
+        - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+        - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+        - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+        - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+        - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+        - 'set-data: 签到03 1'  
+        Deny:
+        - 'Close'
+    icons:
+      - condition: 'check papi *"%trmenu_data_签到03%" == *"1"'
+        pri: 1
+        display:
+          mats: lime_stained_glass_pane
+          name: '&b3号签到'
+          amount: '3'
+          lore:
+            - '&a   当日您已签到  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c当日您已签到。'
+      - condition: 'check papi *%server_time_d% > *3'
+        pri: 2
+        display:
+          mats: black_stained_glass_pane
+          name: '&b3号签到'
+          amount: '3'
+          lore: 
+            - '&c   本日日期已过  ' 
+            - '&a   您可以点击补签'
+            - '&a   价格: 10点券'
+        actions:
+          all:
+            condition: 'points *10'
+            actions:
+            - 'Close'
+            - 'GIVE-ECO: 1000'
+            - 'Tell: &a ▪ 您获得了1000金币。'
+            - 'take-points: 10'
+            - 'tell: &a ▪ 您已花费10点券补签。'
+            - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+            - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+            - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+            - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+            - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+            - 'set-data: 签到03 1'
+            deny:
+            - 'Tell: &c ▪ 您的点券不足'
+            - close
+      - condition: 'check papi *%server_time_d% < *3'
+        pri: 3
+        display:
+          mats: light_gray_stained_glass_pane
+          name: '&b3号签到'
+          amount: '3'
+          lore: 
+            - '&c   暂未到达本日  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c暂未到达本日。'
+  '4':
+    display:
+      mats: 
+        - 'lime_stained_glass_pane'
+      name: '&b4号签到'
+      amount: '4'
+      shiny: true
+      lore: 
+      - ''
+      - '&d▪ &a  点击签到'
+      - '&d▪ &b领取签到奖励      '
+      - ''
+    actions:
+      all:
+        condition: 'check papi *%server_time_d% == *4'
+        actions:
+        - 'Close'
+        - 'GIVE-ECO: 1000'
+        - 'Tell: &a ▪ 您获得了1000金币。'
+        - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+        - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+        - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+        - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+        - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+        - 'set-data: 签到04 1'  
+        Deny:
+        - 'Close'
+    icons:
+      - condition: 'check papi *"%trmenu_data_签到04%" == *"1"'
+        pri: 1
+        display:
+          mats: lime_stained_glass_pane
+          name: '&b4号签到'
+          amount: '4'
+          lore:
+            - '&a   当日您已签到  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c当日您已签到。'
+      - condition: 'check papi *%server_time_d% > *4'
+        pri: 2
+        display:
+          mats: black_stained_glass_pane
+          name: '&b4号签到'
+          amount: '4'
+          lore: 
+            - '&c   本日日期已过  ' 
+            - '&a   您可以点击补签'
+            - '&a   价格: 10点券'
+        actions:
+          all:
+            condition: 'points *10'
+            actions:
+            - 'Close'
+            - 'GIVE-ECO: 1000'
+            - 'Tell: &a ▪ 您获得了1000金币。'
+            - 'take-points: 10'
+            - 'tell: &a ▪ 您已花费10点券补签。'
+            - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+            - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+            - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+            - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+            - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+            - 'set-data: 签到04 1'
+            deny:
+            - 'Tell: &c ▪ 您的点券不足'
+            - close
+      - condition: 'check papi *%server_time_d% < *4'
+        pri: 3
+        display:
+          mats: light_gray_stained_glass_pane
+          name: '&b4号签到'
+          amount: '4'
+          lore: 
+            - '&c   暂未到达本日  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c暂未到达本日。'
+  '5':
+    display:
+      mats: 
+        - 'lime_stained_glass_pane'
+      name: '&b5号签到'
+      amount: '5'
+      shiny: true
+      lore: 
+      - ''
+      - '&d▪ &a  点击签到'
+      - '&d▪ &b领取签到奖励      '
+      - ''
+    actions:
+      all:
+        condition: 'check papi *%server_time_d% == *5'
+        actions:
+        - 'Close'
+        - 'GIVE-ECO: 1000'
+        - 'Tell: &a ▪ 您获得了1000金币。'
+        - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+        - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+        - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+        - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+        - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+        - 'set-data: 签到05 1'  
+        Deny:
+        - 'Close'
+    icons:
+      - condition: 'check papi *"%trmenu_data_签到05%" == *"1"'
+        pri: 1
+        display:
+          mats: lime_stained_glass_pane
+          name: '&b5号签到'
+          amount: '5'
+          lore:
+            - '&a   当日您已签到  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c当日您已签到。'
+      - condition: 'check papi *%server_time_d% > *5'
+        pri: 2
+        display:
+          mats: black_stained_glass_pane
+          name: '&b5号签到'
+          amount: '5'
+          lore: 
+            - '&c   本日日期已过  ' 
+            - '&a   您可以点击补签'
+            - '&a   价格: 10点券'
+        actions:
+          all:
+            condition: 'points *10'
+            actions:
+            - 'Close'
+            - 'GIVE-ECO: 1000'
+            - 'Tell: &a ▪ 您获得了1000金币。'
+            - 'take-points: 10'
+            - 'tell: &a ▪ 您已花费10点券补签。'
+            - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+            - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+            - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+            - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+            - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+            - 'set-data: 签到05 1'
+            deny:
+            - 'Tell: &c ▪ 您的点券不足'
+            - close
+      - condition: 'check papi *%server_time_d% < *5'
+        pri: 3
+        display:
+          mats: light_gray_stained_glass_pane
+          name: '&b5号签到'
+          amount: '5'
+          lore: 
+            - '&c   暂未到达本日  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c暂未到达本日。'
+  '6':
+    display:
+      mats: 
+        - 'lime_stained_glass_pane'
+      name: '&b6号签到'
+      amount: '6'
+      shiny: true
+      lore: 
+      - ''
+      - '&d▪ &a  点击签到'
+      - '&d▪ &b领取签到奖励      '
+      - ''
+    actions:
+      all:
+        condition: 'check papi *%server_time_d% == *6'
+        actions:
+        - 'Close'
+        - 'GIVE-ECO: 1000'
+        - 'Tell: &a ▪ 您获得了1000金币。'
+        - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+        - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+        - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+        - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+        - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+        - 'set-data: 签到06 1'  
+        Deny:
+        - 'Close'
+    icons:
+      - condition: 'check papi *"%trmenu_data_签到06%" == *"1"'
+        pri: 1
+        display:
+          mats: lime_stained_glass_pane
+          name: '&b6号签到'
+          amount: '6'
+          lore:
+            - '&a   当日您已签到  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c当日您已签到。'
+      - condition: 'check papi *%server_time_d% > *6'
+        pri: 2
+        display:
+          mats: black_stained_glass_pane
+          name: '&b6号签到'
+          amount: '6'
+          lore: 
+            - '&c   本日日期已过  ' 
+            - '&a   您可以点击补签'
+            - '&a   价格: 10点券'
+        actions:
+          all:
+            condition: 'points *10'
+            actions:
+            - 'Close'
+            - 'GIVE-ECO: 1000'
+            - 'Tell: &a ▪ 您获得了1000金币。'
+            - 'take-points: 10'
+            - 'tell: &a ▪ 您已花费10点券补签。'
+            - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+            - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+            - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+            - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+            - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+            - 'set-data: 签到06 1'
+            deny:
+            - 'Tell: &c ▪ 您的点券不足'
+            - close
+      - condition: 'check papi *%server_time_d% < *6'
+        pri: 3
+        display:
+          mats: light_gray_stained_glass_pane
+          name: '&b6号签到'
+          amount: '6'
+          lore: 
+            - '&c   暂未到达本日  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c暂未到达本日。'
+  '7':
+    display:
+      mats: 
+        - 'lime_stained_glass_pane'
+      name: '&b7号签到'
+      amount: '7'
+      shiny: true
+      lore: 
+      - ''
+      - '&d▪ &a  点击签到'
+      - '&d▪ &b领取签到奖励      '
+      - ''
+    actions:
+      all:
+        condition: 'check papi *%server_time_d% == *7'
+        actions:
+        - 'Close'
+        - 'GIVE-ECO: 1000'
+        - 'Tell: &a ▪ 您获得了1000金币。'
+        - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+        - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+        - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+        - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+        - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+        - 'set-data: 签到07 1'  
+        Deny:
+        - 'Close'
+    icons:
+      - condition: 'check papi *"%trmenu_data_签到07%" == *"1"'
+        pri: 1
+        display:
+          mats: lime_stained_glass_pane
+          name: '&b7号签到'
+          amount: '7'
+          lore:
+            - '&a   当日您已签到  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c当日您已签到。'
+      - condition: 'check papi *%server_time_d% > *7'
+        pri: 2
+        display:
+          mats: black_stained_glass_pane
+          name: '&b7号签到'
+          amount: '7'
+          lore: 
+            - '&c   本日日期已过  ' 
+            - '&a   您可以点击补签'
+            - '&a   价格: 10点券'
+        actions:
+          all:
+            condition: 'points *10'
+            actions:
+            - 'Close'
+            - 'GIVE-ECO: 1000'
+            - 'Tell: &a ▪ 您获得了1000金币。'
+            - 'take-points: 10'
+            - 'tell: &a ▪ 您已花费10点券补签。'
+            - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+            - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+            - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+            - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+            - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+            - 'set-data: 签到07 1'
+            deny:
+            - 'Tell: &c ▪ 您的点券不足'
+            - close
+      - condition: 'check papi *%server_time_d% < *7'
+        pri: 3
+        display:
+          mats: light_gray_stained_glass_pane
+          name: '&b7号签到'
+          amount: '7'
+          lore: 
+            - '&c   暂未到达本日  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c暂未到达本日。'
+  '8':
+    display:
+      mats: 
+        - 'lime_stained_glass_pane'
+      name: '&b8号签到'
+      amount: '8'
+      shiny: true
+      lore: 
+      - ''
+      - '&d▪ &a  点击签到'
+      - '&d▪ &b领取签到奖励      '
+      - ''
+    actions:
+      all:
+        condition: 'check papi *%server_time_d% == *8'
+        actions:
+        - 'Close'
+        - 'GIVE-ECO: 1000'
+        - 'Tell: &a ▪ 您获得了1000金币。'
+        - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+        - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+        - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+        - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+        - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+        - 'set-data: 签到08 1' 
+        deny:
+        - 'Close'
+    icons:
+      - condition: 'check papi *"%trmenu_data_签到08%" == *"1"'
+        pri: 1
+        display:
+          mats: lime_stained_glass_pane
+          name: '&b8号签到'
+          amount: '8'
+          lore:
+            - '&a   当日您已签到  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c当日您已签到。'
+      - condition: 'check papi *%server_time_d% > *8'
+        pri: 2
+        display:
+          mats: black_stained_glass_pane
+          name: '&b8号签到'
+          amount: '8'
+          lore: 
+            - '&c   本日日期已过  ' 
+            - '&a   您可以点击补签'
+            - '&a   价格: 10点券'
+        actions:
+          all:
+            condition: 'points *10'
+            actions:
+            - 'Close'
+            - 'GIVE-ECO: 1000'
+            - 'Tell: &a ▪ 您获得了1000金币。'
+            - 'take-points: 10'
+            - 'tell: &a ▪ 您已花费10点券补签。'
+            - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+            - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+            - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+            - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+            - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+            - 'set-data: 签到08 1'
+            deny:
+            - 'Tell: &c ▪ 您的点券不足'
+            - close
+      - condition: 'check papi *%server_time_d% < *8'
+        pri: 3
+        display:
+          mats: light_gray_stained_glass_pane
+          name: '&b8号签到'
+          amount: '8'
+          lore: 
+            - '&c   暂未到达本日  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c暂未到达本日。'
+  '9':
+    display:
+      mats: 
+        - 'lime_stained_glass_pane'
+      name: '&b9号签到'
+      amount: '9'
+      shiny: true
+      lore: 
+      - ''
+      - '&d▪ &a  点击签到'
+      - '&d▪ &b领取签到奖励      '
+      - ''
+    actions:
+      all:
+        condition: 'check papi *%server_time_d% == *9'
+        actions:
+        - 'Close'
+        - 'GIVE-ECO: 1000'
+        - 'Tell: &a ▪ 您获得了1000金币。'
+        - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+        - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+        - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+        - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+        - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+        - 'set-data: 签到09 1'  
+        Deny:
+        - 'Close'
+    icons:
+      - condition: 'check papi *"%trmenu_data_签到09%" == *"1"'
+        pri: 1
+        display:
+          mats: lime_stained_glass_pane
+          name: '&b9号签到'
+          amount: '9'
+          lore:
+            - '&a   当日您已签到  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c当日您已签到。'
+      - condition: 'check papi *%server_time_d% > *9'
+        pri: 2
+        display:
+          mats: black_stained_glass_pane
+          name: '&b9号签到'
+          amount: '9'
+          lore: 
+            - '&c   本日日期已过  ' 
+            - '&a   您可以点击补签'
+            - '&a   价格: 10点券'
+        actions:
+          all:
+            condition: 'points *10'
+            actions:
+            - 'Close'
+            - 'GIVE-ECO: 1000'
+            - 'Tell: &a ▪ 您获得了1000金币。'
+            - 'take-points: 10'
+            - 'tell: &a ▪ 您已花费10点券补签。'
+            - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+            - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+            - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+            - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+            - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+            - 'set-data: 签到09 1'
+            deny:
+            - 'Tell: &c ▪ 您的点券不足'
+            - close
+      - condition: 'check papi *%server_time_d% < *9'
+        pri: 3
+        display:
+          mats: light_gray_stained_glass_pane
+          name: '&b9号签到'
+          amount: '9'
+          lore: 
+            - '&c   暂未到达本日  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c暂未到达本日。'
+  '0':
+    display:
+      mats: 
+        - 'lime_stained_glass_pane'
+      name: '&b10号签到'
+      amount: '10'
+      shiny: true
+      lore: 
+      - ''
+      - '&d▪ &a  点击签到'
+      - '&d▪ &b领取签到奖励      '
+      - ''
+    actions:
+      all:
+        condition: 'check papi *%server_time_d% == *10'
+        actions:
+        - 'Close'
+        - 'GIVE-ECO: 1000'
+        - 'Tell: &a ▪ 您获得了1000金币。'
+        - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+        - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+        - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+        - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+        - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+        - 'set-data: 签到010 1'  
+        Deny:
+        - 'Close'
+    icons:
+      - condition: 'check papi *"%trmenu_data_签到010%" == *"1"'
+        pri: 1
+        display:
+          mats: lime_stained_glass_pane
+          name: '&b10号签到'
+          amount: '10'
+          lore:
+            - '&a   当日您已签到  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c当日您已签到。'
+      - condition: 'check papi *%server_time_d% > *10'
+        pri: 2
+        display:
+          mats: black_stained_glass_pane
+          name: '&b10号签到'
+          amount: '10'
+          lore: 
+            - '&c   本日日期已过  ' 
+            - '&a   您可以点击补签'
+            - '&a   价格: 10点券'
+        actions:
+          all:
+            condition: 'points *10'
+            actions:
+            - 'Close'
+            - 'GIVE-ECO: 1000'
+            - 'Tell: &a ▪ 您获得了1000金币。'
+            - 'take-points: 10'
+            - 'tell: &a ▪ 您已花费10点券补签。'
+            - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+            - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+            - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+            - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+            - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+            - 'set-data: 签到010 1'
+            deny:
+            - 'Tell: &c ▪ 您的点券不足'
+            - close
+      - condition: 'check papi *%server_time_d% < *10'
+        pri: 3
+        display:
+          mats: light_gray_stained_glass_pane
+          name: '&b10号签到'
+          amount: '10'
+          lore: 
+            - '&c   暂未到达本日  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c暂未到达本日。'
+  'a':
+    display:
+      mats: 
+        - 'lime_stained_glass_pane'
+      name: '&b11号签到'
+      amount: '11'
+      shiny: true
+      lore: 
+      - ''
+      - '&d▪ &a  点击签到'
+      - '&d▪ &b领取签到奖励      '
+      - ''
+    actions:
+      all:
+        condition: 'check papi *%server_time_d% == *11'
+        actions:
+        - 'Close'
+        - 'GIVE-ECO: 1000'
+        - 'Tell: &a ▪ 您获得了1000金币。'
+        - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+        - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+        - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+        - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+        - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+        - 'set-data: 签到011 1'  
+        Deny:
+        - 'Close'
+    icons:
+      - condition: 'check papi *"%trmenu_data_签到011%" == *"1"'
+        pri: 1
+        display:
+          mats: lime_stained_glass_pane
+          name: '&b11号签到'
+          amount: '11'
+          lore:
+            - '&a   当日您已签到  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c当日您已签到。'
+      - condition: 'check papi *%server_time_d% > *11'
+        pri: 2
+        display:
+          mats: black_stained_glass_pane
+          name: '&b11号签到'
+          amount: '11'
+          lore: 
+            - '&c   本日日期已过  ' 
+            - '&a   您可以点击补签'
+            - '&a   价格: 10点券'
+        actions:
+          all:
+            condition: 'points *10'
+            actions:
+            - 'Close'
+            - 'GIVE-ECO: 1000'
+            - 'Tell: &a ▪ 您获得了1000金币。'
+            - 'take-points: 10'
+            - 'tell: &a ▪ 您已花费10点券补签。'
+            - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+            - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+            - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+            - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+            - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+            - 'set-data: 签到011 1'
+            deny:
+            - 'Tell: &c ▪ 您的点券不足'
+            - close
+      - condition: 'check papi *%server_time_d% < *11'
+        pri: 3
+        display:
+          mats: light_gray_stained_glass_pane
+          name: '&b11号签到'
+          amount: '11'
+          lore: 
+            - '&c   暂未到达本日  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c暂未到达本日。'
+  'b':
+    display:
+      mats: 
+        - 'lime_stained_glass_pane'
+      name: '&b12号签到'
+      amount: '12'
+      shiny: true
+      lore: 
+      - ''
+      - '&d▪ &a  点击签到'
+      - '&d▪ &b领取签到奖励      '
+      - ''
+    actions:
+      all:
+        condition: 'check papi *%server_time_d% == *12'
+        actions:
+        - 'Close'
+        - 'GIVE-ECO: 1000'
+        - 'Tell: &a ▪ 您获得了1000金币。'
+        - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+        - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+        - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+        - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+        - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+        - 'set-data: 签到012 1'  
+        Deny:
+        - 'Close'
+    icons:
+      - condition: 'check papi *"%trmenu_data_签到012%" == *"1"'
+        pri: 1
+        display:
+          mats: lime_stained_glass_pane
+          name: '&b12号签到'
+          amount: '12'
+          lore:
+            - '&a   当日您已签到  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c当日您已签到。'
+      - condition: 'check papi *%server_time_d% > *12'
+        pri: 2
+        display:
+          mats: black_stained_glass_pane
+          name: '&b12号签到'
+          amount: '12'
+          lore: 
+            - '&c   本日日期已过  ' 
+            - '&a   您可以点击补签'
+            - '&a   价格: 10点券'
+        actions:
+          all:
+            condition: 'points *10'
+            actions:
+            - 'Close'
+            - 'GIVE-ECO: 1000'
+            - 'Tell: &a ▪ 您获得了1000金币。'
+            - 'take-points: 10'
+            - 'tell: &a ▪ 您已花费10点券补签。'
+            - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+            - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+            - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+            - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+            - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+            - 'set-data: 签到012 1'
+            deny:
+            - 'Tell: &c ▪ 您的点券不足'
+            - close
+      - condition: 'check papi *%server_time_d% < *12'
+        pri: 3
+        display:
+          mats: light_gray_stained_glass_pane
+          name: '&b12号签到'
+          amount: '12'
+          lore: 
+            - '&c   暂未到达本日  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c暂未到达本日。'
+  'c':
+    display:
+      mats: 
+        - 'lime_stained_glass_pane'
+      name: '&b13号签到'
+      amount: '13'
+      shiny: true
+      lore: 
+      - ''
+      - '&d▪ &a  点击签到'
+      - '&d▪ &b领取签到奖励      '
+      - ''
+    actions:
+      all:
+        condition: 'check papi *%server_time_d% == *13'
+        actions:
+        - 'Close'
+        - 'GIVE-ECO: 1000'
+        - 'Tell: &a ▪ 您获得了1000金币。'
+        - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+        - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+        - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+        - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+        - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+        - 'set-data: 签到013 1'  
+        Deny:
+        - 'Close'
+    icons:
+      - condition: 'check papi *"%trmenu_data_签到013%" == *"1"'
+        pri: 1
+        display:
+          mats: lime_stained_glass_pane
+          name: '&b13号签到'
+          amount: '13'
+          lore:
+            - '&a   当日您已签到  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c当日您已签到。'
+      - condition: 'check papi *%server_time_d% > *13'
+        pri: 2
+        display:
+          mats: black_stained_glass_pane
+          name: '&b13号签到'
+          amount: '13'
+          lore: 
+            - '&c   本日日期已过  ' 
+            - '&a   您可以点击补签'
+            - '&a   价格: 10点券'
+        actions:
+          all:
+            condition: 'points *10'
+            actions:
+            - 'Close'
+            - 'GIVE-ECO: 1000'
+            - 'Tell: &a ▪ 您获得了1000金币。'
+            - 'take-points: 10'
+            - 'tell: &a ▪ 您已花费10点券补签。'
+            - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+            - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+            - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+            - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+            - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+            - 'set-data: 签到013 1'
+            deny:
+            - 'Tell: &c ▪ 您的点券不足'
+            - close
+      - condition: 'check papi *%server_time_d% < *13'
+        pri: 3
+        display:
+          mats: light_gray_stained_glass_pane
+          name: '&b13号签到'
+          amount: '13'
+          lore: 
+            - '&c   暂未到达本日  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c暂未到达本日。'
+  'd':
+    display:
+      mats: 
+        - 'lime_stained_glass_pane'
+      name: '&b14号签到'
+      amount: '14'
+      shiny: true
+      lore: 
+      - ''
+      - '&d▪ &a  点击签到'
+      - '&d▪ &b领取签到奖励      '
+      - ''
+    actions:
+      all:
+        condition: 'check papi *%server_time_d% == *14'
+        actions:
+        - 'Close'
+        - 'GIVE-ECO: 1000'
+        - 'Tell: &a ▪ 您获得了1000金币。'
+        - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+        - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+        - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+        - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+        - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+        - 'set-data: 签到014 1'  
+        Deny:
+        - 'Close'
+    icons:
+      - condition: 'check papi *"%trmenu_data_签到014%" == *"1"'
+        pri: 1
+        display:
+          mats: lime_stained_glass_pane
+          name: '&b14号签到'
+          amount: '14'
+          lore:
+            - '&a   当日您已签到  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c当日您已签到。'
+      - condition: 'check papi *%server_time_d% > *14'
+        pri: 2
+        display:
+          mats: black_stained_glass_pane
+          name: '&b14号签到'
+          amount: '14'
+          lore: 
+            - '&c   本日日期已过  ' 
+            - '&a   您可以点击补签'
+            - '&a   价格: 10点券'
+        actions:
+          all:
+            condition: 'points *10'
+            actions:
+            - 'Close'
+            - 'GIVE-ECO: 1000'
+            - 'Tell: &a ▪ 您获得了1000金币。'
+            - 'take-points: 10'
+            - 'tell: &a ▪ 您已花费10点券补签。'
+            - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+            - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+            - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+            - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+            - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+            - 'set-data: 签到014 1'
+            deny:
+            - 'Tell: &c ▪ 您的点券不足'
+            - close
+      - condition: 'check papi *%server_time_d% < *14'
+        pri: 3
+        display:
+          mats: light_gray_stained_glass_pane
+          name: '&b14号签到'
+          amount: '14'
+          lore: 
+            - '&c   暂未到达本日  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c暂未到达本日。'
+  'e':
+    display:
+      mats: 
+        - 'lime_stained_glass_pane'
+      name: '&b15号签到'
+      amount: '15'
+      shiny: true
+      lore: 
+      - ''
+      - '&d▪ &a  点击签到'
+      - '&d▪ &b领取签到奖励      '
+      - ''
+    actions:
+      all:
+        condition: 'check papi *%server_time_d% == *15'
+        actions:
+        - 'Close'
+        - 'GIVE-ECO: 1000'
+        - 'Tell: &a ▪ 您获得了1000金币。'
+        - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+        - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+        - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+        - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+        - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+        - 'set-data: 签到015 1'  
+        Deny:
+        - 'Close'
+    icons:
+      - condition: 'check papi *"%trmenu_data_签到015%" == *"1"'
+        pri: 1
+        display:
+          mats: lime_stained_glass_pane
+          name: '&b15号签到'
+          amount: '15'
+          lore:
+            - '&a   当日您已签到  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c当日您已签到。'
+      - condition: 'check papi *%server_time_d% > *15'
+        pri: 2
+        display:
+          mats: black_stained_glass_pane
+          name: '&b15号签到'
+          amount: '15'
+          lore: 
+            - '&c   本日日期已过  ' 
+            - '&a   您可以点击补签'
+            - '&a   价格: 10点券'
+        actions:
+          all:
+            condition: 'points *10'
+            actions:
+            - 'menu: 补签确认 15 1'
+            deny:
+            - 'Tell: &c ▪ 您的点券不足'
+            - close
+      - condition: 'check papi *%server_time_d% < *15'
+        pri: 3
+        display:
+          mats: light_gray_stained_glass_pane
+          name: '&b15号签到'
+          amount: '15'
+          lore: 
+            - '&c   暂未到达本日  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c暂未到达本日。'
+  'f':
+    display:
+      mats: 
+        - 'lime_stained_glass_pane'
+      name: '&b16号签到'
+      amount: '16'
+      shiny: true
+      lore: 
+      - ''
+      - '&d▪ &a  点击签到'
+      - '&d▪ &b领取签到奖励      '
+      - ''
+    actions:
+      all:
+        condition: 'check papi *%server_time_d% == *16'
+        actions:
+        - 'Close'
+        - 'GIVE-ECO: 1000'
+        - 'Tell: &a ▪ 您获得了1000金币。'
+        - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+        - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+        - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+        - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+        - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+        - 'set-data: 签到016 1'  
+        Deny:
+        - 'Close'
+    icons:
+      - condition: 'check papi *"%trmenu_data_签到016%" == *"1"'
+        pri: 1
+        display:
+          mats: lime_stained_glass_pane
+          name: '&b16号签到'
+          amount: '16'
+          lore:
+            - '&a   当日您已签到  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c当日您已签到。'
+      - condition: 'check papi *%server_time_d% > *16'
+        pri: 2
+        display:
+          mats: black_stained_glass_pane
+          name: '&b16号签到'
+          amount: '16'
+          lore: 
+            - '&c   本日日期已过  ' 
+            - '&a   您可以点击补签'
+            - '&a   价格: 10点券'
+        actions:
+          all:
+            condition: 'points *10'
+            actions:
+            - 'Close'
+            - 'GIVE-ECO: 1000'
+            - 'Tell: &a ▪ 您获得了1000金币。'
+            - 'take-points: 10'
+            - 'tell: &a ▪ 您已花费10点券补签。'
+            - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+            - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+            - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+            - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+            - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+            - 'set-data: 签到016 1'
+            deny:
+            - 'Tell: &c ▪ 您的点券不足'
+            - close
+      - condition: 'check papi *%server_time_d% < *16'
+        pri: 3
+        display:
+          mats: light_gray_stained_glass_pane
+          name: '&b16号签到'
+          amount: '16'
+          lore: 
+            - '&c   暂未到达本日  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c暂未到达本日。'
+  'g':
+    display:
+      mats: 
+        - 'lime_stained_glass_pane'
+      name: '&b17号签到'
+      amount: '17'
+      shiny: true
+      lore: 
+      - ''
+      - '&d▪ &a  点击签到'
+      - '&d▪ &b领取签到奖励      '
+      - ''
+    actions:
+      all:
+        condition: 'check papi *%server_time_d% == *17'
+        actions:
+        - 'Close'
+        - 'GIVE-ECO: 1000'
+        - 'Tell: &a ▪ 您获得了1000金币。'
+        - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+        - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+        - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+        - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+        - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+        - 'set-data: 签到017 1'  
+        Deny:
+        - 'Close'
+    icons:
+      - condition: 'check papi *"%trmenu_data_签到017%" == *"1"'
+        pri: 1
+        display:
+          mats: lime_stained_glass_pane
+          name: '&b17号签到'
+          amount: '17'
+          lore:
+            - '&a   当日您已签到  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c当日您已签到。'
+      - condition: 'check papi *%server_time_d% > *17'
+        pri: 2
+        display:
+          mats: black_stained_glass_pane
+          name: '&b17号签到'
+          amount: '17'
+          lore: 
+            - '&c   本日日期已过  ' 
+            - '&a   您可以点击补签'
+            - '&a   价格: 10点券'
+        actions:
+          all:
+            condition: 'points *10'
+            actions:
+            - 'Close'
+            - 'GIVE-ECO: 1000'
+            - 'Tell: &a ▪ 您获得了1000金币。'
+            - 'take-points: 10'
+            - 'tell: &a ▪ 您已花费10点券补签。'
+            - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+            - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+            - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+            - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+            - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+            - 'set-data: 签到017 1'
+            deny:
+            - 'Tell: &c ▪ 您的点券不足'
+            - close
+      - condition: 'check papi *%server_time_d% < *17'
+        pri: 3
+        display:
+          mats: light_gray_stained_glass_pane
+          name: '&b17号签到'
+          amount: '17'
+          lore: 
+            - '&c   暂未到达本日  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c暂未到达本日。'
+  'h':
+    display:
+      mats: 
+        - 'lime_stained_glass_pane'
+      name: '&b18号签到'
+      amount: '18'
+      shiny: true
+      lore: 
+      - ''
+      - '&d▪ &a  点击签到'
+      - '&d▪ &b领取签到奖励      '
+      - ''
+    actions:
+      all:
+        condition: 'check papi *%server_time_d% == *18'
+        actions:
+        - 'Close'
+        - 'GIVE-ECO: 1000'
+        - 'Tell: &a ▪ 您获得了1000金币。'
+        - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+        - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+        - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+        - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+        - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+        - 'set-data: 签到018 1'
+    icons:
+      - condition: 'check papi *"%trmenu_data_签到018%" == *"1"'
+        pri: 1
+        display:
+          mats: lime_stained_glass_pane
+          name: '&b18号签到'
+          amount: '18'
+          lore:
+            - '&a   当日您已签到  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c当日您已签到。'
+      - condition: 'check papi *%server_time_d% > *18'
+        pri: 2
+        display:
+          mats: black_stained_glass_pane
+          name: '&b18号签到'
+          amount: '18'
+          lore: 
+            - '&c   本日日期已过  ' 
+            - '&a   您可以点击补签'
+            - '&a   价格: 10点券'
+        actions:
+          all:
+            condition: 'points *10'
+            actions:
+            - 'Close'
+            - 'GIVE-ECO: 1000'
+            - 'Tell: &a ▪ 您获得了1000金币。'
+            - 'take-points: 10'
+            - 'tell: &a ▪ 您已花费10点券补签。'
+            - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+            - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+            - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+            - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+            - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+            - 'set-data: 签到018 1'
+            deny:
+            - 'Tell: &c ▪ 您的点券不足'
+            - close
+      - condition: 'check papi *%server_time_d% < *18'
+        pri: 3
+        display:
+          mats: light_gray_stained_glass_pane
+          name: '&b18号签到'
+          amount: '18'
+          lore: 
+            - '&c   暂未到达本日  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c暂未到达本日。'
+  'i':
+    display:
+      mats: 
+        - 'lime_stained_glass_pane'
+      name: '&b19号签到'
+      amount: '19'
+      shiny: true
+      lore: 
+      - ''
+      - '&d▪ &a  点击签到'
+      - '&d▪ &b领取签到奖励      '
+      - ''
+    actions:
+      all:
+        condition: 'check papi *%server_time_d% == *19'
+        actions:
+        - 'Close'
+        - 'GIVE-ECO: 1000'
+        - 'Tell: &a ▪ 您获得了1000金币。'
+        - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+        - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+        - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+        - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+        - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+        - 'set-data: 签到019 1'  
+        Deny:
+        - 'Close'
+    icons:
+      - condition: 'check papi *"%trmenu_data_签到019%" == *"1"'
+        pri: 1
+        display:
+          mats: lime_stained_glass_pane
+          name: '&b19号签到'
+          amount: '19'
+          lore:
+            - '&a   当日您已签到  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c当日您已签到。'
+      - condition: 'check papi *%server_time_d% > *19'
+        pri: 2
+        display:
+          mats: black_stained_glass_pane
+          name: '&b19号签到'
+          amount: '19'
+          lore: 
+            - '&c   本日日期已过  ' 
+            - '&a   您可以点击补签'
+            - '&a   价格: 10点券'
+        actions:
+          all:
+            condition: 'points *10'
+            actions:
+            - 'Close'
+            - 'GIVE-ECO: 1000'
+            - 'Tell: &a ▪ 您获得了1000金币。'
+            - 'take-points: 10'
+            - 'tell: &a ▪ 您已花费10点券补签。'
+            - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+            - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+            - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+            - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+            - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+            - 'set-data: 签到019 1'
+            deny:
+            - 'Tell: &c ▪ 您的点券不足'
+            - close
+      - condition: 'check papi *%server_time_d% < *19'
+        pri: 3
+        display:
+          mats: light_gray_stained_glass_pane
+          name: '&b19号签到'
+          amount: '19'
+          lore: 
+            - '&c   暂未到达本日  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c暂未到达本日。'
+  'j':
+    display:
+      mats: 
+        - 'lime_stained_glass_pane'
+      name: '&b20号签到'
+      amount: '20'
+      shiny: true
+      lore: 
+      - ''
+      - '&d▪ &a  点击签到'
+      - '&d▪ &b领取签到奖励      '
+      - ''
+    actions:
+      all:
+        condition: 'check papi *%server_time_d% == *20'
+        actions:
+        - 'Close'
+        - 'GIVE-ECO: 1000'
+        - 'Tell: &a ▪ 您获得了1000金币。'
+        - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+        - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+        - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+        - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+        - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+        - 'set-data: 签到020 1'  
+        Deny:
+        - 'Close'
+    icons:
+      - condition: 'check papi *"%trmenu_data_签到020%" == *"1"'
+        pri: 1
+        display:
+          mats: lime_stained_glass_pane
+          name: '&b20号签到'
+          amount: '20'
+          lore:
+            - '&a   当日您已签到  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c当日您已签到。'
+      - condition: 'check papi *%server_time_d% > *20'
+        pri: 2
+        display:
+          mats: black_stained_glass_pane
+          name: '&b20号签到'
+          amount: '20'
+          lore: 
+            - '&c   本日日期已过  ' 
+            - '&a   您可以点击补签'
+            - '&a   价格: 10点券'
+        actions:
+          all:
+            condition: 'points *10'
+            actions:
+            - 'Close'
+            - 'GIVE-ECO: 1000'
+            - 'Tell: &a ▪ 您获得了1000金币。'
+            - 'take-points: 10'
+            - 'tell: &a ▪ 您已花费10点券补签。'
+            - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+            - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+            - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+            - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+            - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+            - 'set-data: 签到020 1'
+            deny:
+            - 'Tell: &c ▪ 您的点券不足'
+            - close
+      - condition: 'check papi *%server_time_d% < *20'
+        pri: 3
+        display:
+          mats: light_gray_stained_glass_pane
+          name: '&b20号签到'
+          amount: '20'
+          lore: 
+            - '&c   暂未到达本日  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c暂未到达本日。'
+  'k':
+    display:
+      mats: 
+        - 'lime_stained_glass_pane'
+      name: '&b21号签到'
+      amount: '21'
+      shiny: true
+      lore: 
+      - ''
+      - '&d▪ &a  点击签到'
+      - '&d▪ &b领取签到奖励      '
+      - ''
+    actions:
+      all:
+        condition: 'check papi *%server_time_d% == *21'
+        actions:
+        - 'Close'
+        - 'GIVE-ECO: 1000'
+        - 'Tell: &a ▪ 您获得了1000金币。'
+        - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+        - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+        - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+        - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+        - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+        - 'set-data: 签到021 1'  
+        Deny:
+        - 'Close'
+    icons:
+      - condition: 'check papi *"%trmenu_data_签到021%" == *"1"'
+        pri: 1
+        display:
+          mats: lime_stained_glass_pane
+          name: '&b21号签到'
+          amount: '21'
+          lore:
+            - '&a   当日您已签到  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c当日您已签到。'
+      - condition: 'check papi *%server_time_d% > *21'
+        pri: 2
+        display:
+          mats: black_stained_glass_pane
+          name: '&b21号签到'
+          amount: '21'
+          lore: 
+            - '&c   本日日期已过  ' 
+            - '&a   您可以点击补签'
+            - '&a   价格: 10点券'
+        actions:
+          all:
+            condition: 'points *10'
+            actions:
+            - 'Close'
+            - 'GIVE-ECO: 1000'
+            - 'Tell: &a ▪ 您获得了1000金币。'
+            - 'take-points: 10'
+            - 'tell: &a ▪ 您已花费10点券补签。'
+            - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+            - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+            - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+            - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+            - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+            - 'set-data: 签到021 1'
+            deny:
+            - 'Tell: &c ▪ 您的点券不足'
+            - close
+      - condition: 'check papi *%server_time_d% < *21'
+        pri: 3
+        display:
+          mats: light_gray_stained_glass_pane
+          name: '&b21号签到'
+          amount: '21'
+          lore: 
+            - '&c   暂未到达本日  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c暂未到达本日。'
+  'l':
+    display:
+      mats: 
+        - 'lime_stained_glass_pane'
+      name: '&b22号签到'
+      amount: '22'
+      shiny: true
+      lore: 
+      - ''
+      - '&d▪ &a  点击签到'
+      - '&d▪ &b领取签到奖励      '
+      - ''
+    actions:
+      all:
+        condition: 'check papi *%server_time_d% == *22'
+        actions:
+        - 'Close'
+        - 'GIVE-ECO: 1000'
+        - 'Tell: &a ▪ 您获得了1000金币。'
+        - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+        - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+        - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+        - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+        - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+        - 'set-data: 签到022 1'  
+        Deny:
+        - 'Close'
+    icons:
+      - condition: 'check papi *"%trmenu_data_签到022%" == *"1"'
+        pri: 1
+        display:
+          mats: lime_stained_glass_pane
+          name: '&b22号签到'
+          amount: '22'
+          lore:
+            - '&a   当日您已签到  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c当日您已签到。'
+      - condition: 'check papi *%server_time_d% > *22'
+        pri: 2
+        display:
+          mats: black_stained_glass_pane
+          name: '&b22号签到'
+          amount: '22'
+          lore: 
+            - '&c   本日日期已过  ' 
+            - '&a   您可以点击补签'
+            - '&a   价格: 10点券'
+        actions:
+          all:
+            condition: 'points *10'
+            actions:
+            - 'Close'
+            - 'GIVE-ECO: 1000'
+            - 'Tell: &a ▪ 您获得了1000金币。'
+            - 'take-points: 10'
+            - 'tell: &a ▪ 您已花费10点券补签。'
+            - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+            - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+            - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+            - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+            - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+            - 'set-data: 签到022 1'
+            deny:
+            - 'Tell: &c ▪ 您的点券不足'
+            - close
+      - condition: 'check papi *%server_time_d% < *22'
+        pri: 3
+        display:
+          mats: light_gray_stained_glass_pane
+          name: '&b22号签到'
+          amount: '22'
+          lore: 
+            - '&c   暂未到达本日  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c暂未到达本日。'
+  'm':
+    display:
+      mats: 
+        - 'lime_stained_glass_pane'
+      name: '&b23号签到'
+      amount: '23'
+      shiny: true
+      lore: 
+      - ''
+      - '&d▪ &a  点击签到'
+      - '&d▪ &b领取签到奖励      '
+      - ''
+    actions:
+      all:
+        condition: 'check papi *%server_time_d% == *23'
+        actions:
+        - 'Close'
+        - 'GIVE-ECO: 1000'
+        - 'Tell: &a ▪ 您获得了1000金币。'
+        - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+        - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+        - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+        - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+        - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+        - 'set-data: 签到023 1'  
+        Deny:
+        - 'Close'
+    icons:
+      - condition: 'check papi *"%trmenu_data_签到023%" == *"1"'
+        pri: 1
+        display:
+          mats: lime_stained_glass_pane
+          name: '&b23号签到'
+          amount: '23'
+          lore:
+            - '&a   当日您已签到  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c当日您已签到。'
+      - condition: 'check papi *%server_time_d% > *23'
+        pri: 2
+        display:
+          mats: black_stained_glass_pane
+          name: '&b23号签到'
+          amount: '23'
+          lore: 
+            - '&c   本日日期已过  ' 
+            - '&a   您可以点击补签'
+            - '&a   价格: 10点券'
+        actions:
+          all:
+            condition: 'points *10'
+            actions:
+            - 'Close'
+            - 'GIVE-ECO: 1000'
+            - 'Tell: &a ▪ 您获得了1000金币。'
+            - 'take-points: 10'
+            - 'tell: &a ▪ 您已花费10点券补签。'
+            - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+            - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+            - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+            - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+            - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+            - 'set-data: 签到023 1'
+            deny:
+            - 'Tell: &c ▪ 您的点券不足'
+            - close
+      - condition: 'check papi *%server_time_d% < *23'
+        pri: 3
+        display:
+          mats: light_gray_stained_glass_pane
+          name: '&b23号签到'
+          amount: '23'
+          lore: 
+            - '&c   暂未到达本日  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c暂未到达本日。'
+  'n':
+    display:
+      mats: 
+        - 'lime_stained_glass_pane'
+      name: '&b24号签到'
+      amount: '24'
+      shiny: true
+      lore: 
+      - ''
+      - '&d▪ &a  点击签到'
+      - '&d▪ &b领取签到奖励      '
+      - ''
+    actions:
+      all:
+        condition: 'check papi *%server_time_d% == *24'
+        actions:
+        - 'Close'
+        - 'GIVE-ECO: 1000'
+        - 'Tell: &a ▪ 您获得了1000金币。'
+        - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+        - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+        - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+        - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+        - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+        - 'set-data: 签到024 1'  
+        Deny:
+        - 'Close'
+    icons:
+      - condition: 'check papi *"%trmenu_data_签到024%" == *"1"'
+        pri: 1
+        display:
+          mats: lime_stained_glass_pane
+          name: '&b24号签到'
+          amount: '24'
+          lore:
+            - '&a   当日您已签到  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c当日您已签到。'
+      - condition: 'check papi *%server_time_d% > *24'
+        pri: 2
+        display:
+          mats: black_stained_glass_pane
+          name: '&b24号签到'
+          amount: '24'
+          lore: 
+            - '&c   本日日期已过  ' 
+            - '&a   您可以点击补签'
+            - '&a   价格: 10点券'
+        actions:
+          all:
+            condition: 'points *10'
+            actions:
+            - 'Close'
+            - 'GIVE-ECO: 1000'
+            - 'Tell: &a ▪ 您获得了1000金币。'
+            - 'take-points: 10'
+            - 'tell: &a ▪ 您已花费10点券补签。'
+            - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+            - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+            - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+            - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+            - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+            - 'set-data: 签到024 1'
+            deny:
+            - 'Tell: &c ▪ 您的点券不足'
+            - close
+      - condition: 'check papi *%server_time_d% < *24'
+        pri: 3
+        display:
+          mats: light_gray_stained_glass_pane
+          name: '&b24号签到'
+          amount: '24'
+          lore: 
+            - '&c   暂未到达本日  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c暂未到达本日。'
+  'o':
+    display:
+      mats: 
+        - 'lime_stained_glass_pane'
+      name: '&b25号签到'
+      amount: '25'
+      shiny: true
+      lore: 
+      - ''
+      - '&d▪ &a  点击签到'
+      - '&d▪ &b领取签到奖励      '
+      - ''
+    actions:
+      all:
+        condition: 'check papi *%server_time_d% == *25'
+        actions:
+        - 'Close'
+        - 'GIVE-ECO: 1000'
+        - 'Tell: &a ▪ 您获得了1000金币。'
+        - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+        - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+        - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+        - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+        - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+        - 'set-data: 签到025 1'  
+        Deny:
+        - 'Close'
+    icons:
+      - condition: 'check papi *"%trmenu_data_签到025%" == *"1"'
+        pri: 1
+        display:
+          mats: lime_stained_glass_pane
+          name: '&b25号签到'
+          amount: '25'
+          lore:
+            - '&a   当日您已签到  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c当日您已签到。'
+      - condition: 'check papi *%server_time_d% > *25'
+        pri: 2
+        display:
+          mats: black_stained_glass_pane
+          name: '&b25号签到'
+          amount: '25'
+          lore: 
+            - '&c   本日日期已过  ' 
+            - '&a   您可以点击补签'
+            - '&a   价格: 10点券'
+        actions:
+          all:
+            condition: 'points *10'
+            actions:
+            - 'Close'
+            - 'GIVE-ECO: 1000'
+            - 'Tell: &a ▪ 您获得了1000金币。'
+            - 'take-points: 10'
+            - 'tell: &a ▪ 您已花费10点券补签。'
+            - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+            - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+            - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+            - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+            - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+            - 'set-data: 签到025 1'
+            deny:
+            - 'Tell: &c ▪ 您的点券不足'
+            - close
+      - condition: 'check papi *%server_time_d% < *25'
+        pri: 3
+        display:
+          mats: light_gray_stained_glass_pane
+          name: '&b25号签到'
+          amount: '25'
+          lore: 
+            - '&c   暂未到达本日  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c暂未到达本日。'
+  'p':
+    display:
+      mats: 
+        - 'lime_stained_glass_pane'
+      name: '&b26号签到'
+      amount: '26'
+      shiny: true
+      lore: 
+      - ''
+      - '&d▪ &a  点击签到'
+      - '&d▪ &b领取签到奖励      '
+      - ''
+    actions:
+      all:
+        condition: 'check papi *%server_time_d% == *26'
+        actions:
+        - 'Close'
+        - 'GIVE-ECO: 1000'
+        - 'Tell: &a ▪ 您获得了1000金币。'
+        - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+        - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+        - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+        - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+        - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+        - 'set-data: 签到026 1'  
+        Deny:
+        - 'Close'
+    icons:
+      - condition: 'check papi *"%trmenu_data_签到026%" == *"1"'
+        pri: 1
+        display:
+          mats: lime_stained_glass_pane
+          name: '&b26号签到'
+          amount: '26'
+          lore:
+            - '&a   当日您已签到  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c当日您已签到。'
+      - condition: 'check papi *%server_time_d% > *26'
+        pri: 2
+        display:
+          mats: black_stained_glass_pane
+          name: '&b26号签到'
+          amount: '26'
+          lore: 
+            - '&c   本日日期已过  ' 
+            - '&a   您可以点击补签'
+            - '&a   价格: 10点券'
+        actions:
+          all:
+            condition: 'points *10'
+            actions:
+            - 'Close'
+            - 'GIVE-ECO: 1000'
+            - 'Tell: &a ▪ 您获得了1000金币。'
+            - 'take-points: 10'
+            - 'tell: &a ▪ 您已花费10点券补签。'
+            - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+            - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+            - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+            - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+            - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+            - 'set-data: 签到026 1'
+            deny:
+            - 'Tell: &c ▪ 您的点券不足'
+            - close
+      - condition: 'check papi *%server_time_d% < *26'
+        pri: 3
+        display:
+          mats: light_gray_stained_glass_pane
+          name: '&b26号签到'
+          amount: '26'
+          lore: 
+            - '&c   暂未到达本日  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c暂未到达本日。'
+  'q':
+    display:
+      mats: 
+        - 'lime_stained_glass_pane'
+      name: '&b27号签到'
+      amount: '27'
+      shiny: true
+      lore: 
+      - ''
+      - '&d▪ &a  点击签到'
+      - '&d▪ &b领取签到奖励      '
+      - ''
+    actions:
+      all:
+        condition: 'check papi *%server_time_d% == *27'
+        actions:
+        - 'Close'
+        - 'GIVE-ECO: 1000'
+        - 'Tell: &a ▪ 您获得了1000金币。'
+        - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+        - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+        - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+        - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+        - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+        - 'set-data: 签到027 1'  
+        Deny:
+        - 'Close'
+    icons:
+      - condition: 'check papi *"%trmenu_data_签到027%" == *"1"'
+        pri: 1
+        display:
+          mats: lime_stained_glass_pane
+          name: '&b27号签到'
+          amount: '27'
+          lore:
+            - '&a   当日您已签到  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c当日您已签到。'
+      - condition: 'check papi *%server_time_d% > *27'
+        pri: 2
+        display:
+          mats: black_stained_glass_pane
+          name: '&b27号签到'
+          amount: '27'
+          lore: 
+            - '&c   本日日期已过  ' 
+            - '&a   您可以点击补签'
+            - '&a   价格: 10点券'
+        actions:
+          all:
+            condition: 'points *10'
+            actions:
+            - 'Close'
+            - 'GIVE-ECO: 1000'
+            - 'Tell: &a ▪ 您获得了1000金币。'
+            - 'take-points: 10'
+            - 'tell: &a ▪ 您已花费10点券补签。'
+            - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+            - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+            - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+            - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+            - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+            - 'set-data: 签到027 1'
+            deny:
+            - 'Tell: &c ▪ 您的点券不足'
+            - close
+      - condition: 'check papi *%server_time_d% < *27'
+        pri: 3
+        display:
+          mats: light_gray_stained_glass_pane
+          name: '&b27号签到'
+          amount: '27'
+          lore: 
+            - '&c   暂未到达本日  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c暂未到达本日。'
+  'r':
+    display:
+      mats: 
+        - 'lime_stained_glass_pane'
+      name: '&b28号签到'
+      amount: '28'
+      shiny: true
+      lore: 
+      - ''
+      - '&d▪ &a  点击签到'
+      - '&d▪ &b领取签到奖励      '
+      - ''
+    actions:
+      all:
+        condition: 'check papi *%server_time_d% == *28'
+        actions:
+        - 'Close'
+        - 'GIVE-ECO: 1000'
+        - 'Tell: &a ▪ 您获得了1000金币。'
+        - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+        - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+        - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+        - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+        - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+        - 'set-data: 签到028 1'  
+        Deny:
+        - 'Close'
+    icons:
+      - condition: 'check papi *"%trmenu_data_签到028%" == *"1"'
+        pri: 1
+        display:
+          mats: lime_stained_glass_pane
+          name: '&b28号签到'
+          amount: '28'
+          lore:
+            - '&a   当日您已签到  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c当日您已签到。'
+      - condition: 'check papi *%server_time_d% > *28'
+        pri: 2
+        display:
+          mats: black_stained_glass_pane
+          name: '&b28号签到'
+          amount: '28'
+          lore: 
+            - '&c   本日日期已过  ' 
+            - '&a   您可以点击补签'
+            - '&a   价格: 10点券'
+        actions:
+          all:
+            condition: 'points *10'
+            actions:
+            - 'Close'
+            - 'GIVE-ECO: 1000'
+            - 'Tell: &a ▪ 您获得了1000金币。'
+            - 'take-points: 10'
+            - 'tell: &a ▪ 您已花费10点券补签。'
+            - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+            - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+            - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+            - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+            - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+            - 'set-data: 签到028 1'
+            deny:
+            - 'Tell: &c ▪ 您的点券不足'
+            - close
+      - condition: 'check papi *%server_time_d% < *28'
+        pri: 3
+        display:
+          mats: light_gray_stained_glass_pane
+          name: '&b28号签到'
+          amount: '28'
+          lore: 
+            - '&c   暂未到达本日  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c暂未到达本日。'
+  's':
+    display:
+      mats: 
+        - 'lime_stained_glass_pane'
+      name: '&b29号签到'
+      amount: '29'
+      shiny: true
+      lore: 
+      - ''
+      - '&d▪ &a  点击签到'
+      - '&d▪ &b领取签到奖励      '
+      - ''
+    actions:
+      all:
+        condition: 'check papi *%server_time_d% == *29'
+        actions:
+        - 'Close'
+        - 'GIVE-ECO: 1000'
+        - 'Tell: &a ▪ 您获得了1000金币。'
+        - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+        - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+        - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+        - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+        - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+        - 'set-data: 签到029 1'  
+    icons:
+      - condition: 'check var *{0} == *2'
+        pri: 4
+        display:
+          mats: 'air'
+      - condition: 'check papi *"%trmenu_data_签到029%" == *"1"'
+        pri: 1
+        display:
+          mats: lime_stained_glass_pane
+          name: '&b29号签到'
+          amount: '29'
+          lore:
+            - '&a   当日您已签到  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c当日您已签到。'
+      - condition: 'check papi *%server_time_d% > *29'
+        pri: 2
+        display:
+          mats: black_stained_glass_pane
+          name: '&b29号签到'
+          amount: '29'
+          lore: 
+            - '&c   本日日期已过  ' 
+            - '&a   您可以点击补签'
+            - '&a   价格: 10点券'
+        actions:
+          all:
+            condition: 'points *10'
+            actions:
+            - 'Close'
+            - 'GIVE-ECO: 1000'
+            - 'Tell: &a ▪ 您获得了1000金币。'
+            - 'take-points: 10'
+            - 'tell: &a ▪ 您已花费10点券补签。'
+            - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+            - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+            - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+            - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+            - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+            - 'set-data: 签到029 1'
+            deny:
+            - 'Tell: &c ▪ 您的点券不足'
+            - close
+      - condition: 'check papi *%server_time_d% < *29'
+        pri: 3
+        display:
+          mats: light_gray_stained_glass_pane
+          name: '&b29号签到'
+          amount: '29'
+          lore: 
+            - '&c   暂未到达本日  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c暂未到达本日。'
+  't':
+    display:
+      mats: 
+        - 'lime_stained_glass_pane'
+      name: '&b30号签到'
+      amount: '30'
+      shiny: true
+      lore: 
+      - ''
+      - '&d▪ &a  点击签到'
+      - '&d▪ &b领取签到奖励      '
+      - ''
+    actions:
+      all:
+        condition: 'check papi *%server_time_d% == *30'
+        actions:
+        - 'Close'
+        - 'GIVE-ECO: 1000'
+        - 'Tell: &a ▪ 您获得了1000金币。'
+        - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+        - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+        - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+        - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+        - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+        - 'set-data: 签到030 1'  
+    icons:
+      - condition: 'check var *{0} == *2'
+        pri: 4
+        display:
+          mats: 'air'
+      - condition: 'check papi *"%trmenu_data_签到030%" == *"1"'
+        pri: 1
+        display:
+          mats: lime_stained_glass_pane
+          name: '&b30号签到'
+          amount: '30'
+          lore:
+            - '&a   当日您已签到  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c当日您已签到。'
+      - condition: 'check papi *%server_time_d% > *30'
+        pri: 2
+        display:
+          mats: black_stained_glass_pane
+          name: '&b30号签到'
+          amount: '30'
+          lore: 
+            - '&c   本日日期已过  ' 
+            - '&a   您可以点击补签'
+            - '&a   价格: 10点券'
+        actions:
+          all:
+            condition: 'points *10'
+            actions:
+            - 'Close'
+            - 'GIVE-ECO: 1000'
+            - 'Tell: &a ▪ 您获得了1000金币。'
+            - 'take-points: 10'
+            - 'tell: &a ▪ 您已花费10点券补签。'
+            - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+            - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+            - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+            - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+            - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+            - 'set-data: 签到030 1'
+            deny:
+            - 'Tell: &c ▪ 您的点券不足'
+            - close
+      - condition: 'check papi *%server_time_d% < *30'
+        pri: 3
+        display:
+          mats: light_gray_stained_glass_pane
+          name: '&b30号签到'
+          amount: '30'
+          lore: 
+            - '&c   暂未到达本日  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c暂未到达本日。'
+  'u':
+    display:
+      mats: 
+        - 'lime_stained_glass_pane'
+      name: '&b31号签到'
+      amount: '31'
+      shiny: true
+      lore: 
+      - ''
+      - '&d▪ &a  点击签到'
+      - '&d▪ &b领取签到奖励      '
+      - ''
+    actions:
+      all:
+        condition: 'check papi *%server_time_d% == *31'
+        actions:
+        - 'Close'
+        - 'GIVE-ECO: 1000'
+        - 'Tell: &a ▪ 您获得了1000金币。'
+        - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+        - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+        - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+        - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+        - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+        - 'set-data: 签到031 1'  
+    icons:
+      - condition: 'any [ check var *{0} == *2 check var *{0} == *4 check var *{0} == *6 check var *{0} == *9 check var *{0} == *11 ]'
+        pri: 4
+        display:
+          mats: 'air'
+      - condition: 'check papi *"%trmenu_data_签到031%" == *"1"'
+        pri: 1
+        display:
+          mats: lime_stained_glass_pane
+          name: '&b31号签到'
+          amount: '31'
+          lore:
+            - '&a   当日您已签到  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c当日您已签到。'
+      - condition: 'check papi *%server_time_d% > *31'
+        pri: 2
+        display:
+          mats: black_stained_glass_pane
+          name: '&b31号签到'
+          amount: '31'
+          lore: 
+            - '&c   本日日期已过  ' 
+            - '&a   您可以点击补签'
+            - '&a   价格: 10点券'
+        actions:
+          all:
+            condition: 'points *10'
+            actions:
+            - 'Close'
+            - 'GIVE-ECO: 1000'
+            - 'Tell: &a ▪ 您获得了1000金币。'
+            - 'take-points: 10'
+            - 'tell: &a ▪ 您已花费10点券补签。'
+            - 'set-data: 上次签到日 %server_time_YYYYMMDD%'
+            - 'title: `&a签到完成` `&3 奖励已发送至您的背包 `'
+            - 'set-data: 本月签到 %math_0_{trmenu_data_本月签到}+1%'
+            - 'set-data: 总签到 %math_0_{trmenu_data_总签到}+1%'
+            - 'set-data: 上次签到 %server_time_YYYY/MM/dd-HH:mm:ss%'
+            - 'set-data: 签到031 1'
+            deny:
+            - 'Tell: &c ▪ 您的点券不足'
+            - close
+      - condition: 'check papi *%server_time_d% < *31'
+        pri: 3
+        display:
+          mats: light_gray_stained_glass_pane
+          name: '&b31号签到'
+          amount: '31'
+          lore: 
+            - '&c   暂未到达本日  ' 
+        actions:
+          all:
+            - Close
+            - 'tell: &c暂未到达本日。'

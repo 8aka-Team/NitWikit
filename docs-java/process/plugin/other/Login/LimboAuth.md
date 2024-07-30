@@ -6,13 +6,13 @@ sidebar_position: 4
 
 :::info
 
-`GitHub` :https://github.com/Elytrium/LimboAuth
+`GitHub` https://github.com/Elytrium/LimboAuth
 
-`SpigotMC` :https://www.spigotmc.org/resources/limboapi.95748/
+`SpigotMC` https://www.spigotmc.org/resources/limboapi.95748/
 
-`PaperMC Forums` :https://forums.papermc.io/threads/.330/
+`PaperMC Forums` https://forums.papermc.io/threads/.330/
 
-`Modrinth` :https://modrinth.com/plugin/limboauth
+`Modrinth` https://modrinth.com/plugin/limboauth
 
 :::
 
@@ -20,7 +20,7 @@ sidebar_position: 4
 
 :::danger
 
-**不要**在你的 *Spigot/Paper* 或者 *BungeeCord/Waterfall* 端上 **安装此插件!!!**
+**不要** 在你的 *Spigot/Paper* 或者 *BungeeCord/Waterfall* 端上 **安装此插件!!!**
 
 :::
 
