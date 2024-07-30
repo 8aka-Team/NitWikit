@@ -15,7 +15,7 @@ sidebar_position: 3
 
 > https://kether.tabooproject.org/list.html#Permission
 
-判断玩家是否拥有某权限，如果是，则返回 **true**，否，则返回 **false**
+判断玩家是否拥有某权限，如果是，则返回 **true** ，否，则返回 **false**
 
 ![](_images/vul-perm.png)
 
@@ -65,7 +65,7 @@ check 动作1 {symbol} 动作2
 4. 绝对等于（=!、is!）：指两个值内存路径上相同。
 5. 大于（>、gt）：指第一个值大于第二个值。
 6. 大于等于（>=）：指第一个值大于或等于第二个值。
-7. 小于（<、lt）：指第一个值小于第二个值。
+7. 小于（\<、lt）：指第一个值小于第二个值。
 8. 小于等于（<=）：指第一个值小于或等于第二个值。
 9. 右含左（in）：左侧 action A 的返回值是否属于右侧 action B 返回值的内容之一
 10. 左含右（has）：左侧 action A 是否含有右侧 action B 内容
