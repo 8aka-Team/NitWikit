@@ -67,7 +67,7 @@ sidebar_position: 2
 
 ![](_images/痴呆.jpg)
 
-## {action}，{token}和Literal
+## \{action\}，\{token\}和Literal
 
 查阅 https://kether.tabooproject.org/list.html 我们可以发现
 

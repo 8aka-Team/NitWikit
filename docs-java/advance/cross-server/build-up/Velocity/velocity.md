@@ -6,7 +6,7 @@ sidebar_position: 2
 
 # Velocity
 
-[点此跳转到官方英文文档](https：//docs.papermc.io/velocity)
+[点此跳转到官方英文文档](https://docs.papermc.io/velocity)
 
 # 关于 Velocity 的介绍
 
@@ -88,7 +88,7 @@ Can't connect to server lobby： This server requires you to connect with Veloci
 一句话， Mod 太多太大导致连接时间延长了。你可以减少服务器的 Mod 数量或者在 Velocity 配置文件中设置 `read-timeout` 的值，同时在你的 Forge 子服的启动参数中添加 `-Dfml.readTimeout` 参数来提高阈值。比如，你想设置你的 readTimeout 时间到 120 秒
 那么你可以设置：
 
-`read-timeout = 120000` (单位：毫秒) 
+`read-timeout = 120000` (单位：毫秒)
 
 `-Dfml.readTimeout=120` (单位：秒)
 
@@ -98,7 +98,7 @@ Can't connect to server lobby： This server requires you to connect with Veloci
 
 不行，至少现在不行，你只能在 `velocity.toml` 中设置一个单一的转发模式
 
-关于各个不同的转发模式，可以看到这里 [搭建](docs-java\advance\cross-server\build-up\Velocity\build-up.md##子服配置)
+关于各个不同的转发模式，可以看到这里 [搭建](./build-up.md#子服配置)
 
 有大佬提出了关于这个问题的 [PR](https://github.com/PaperMC/Velocity/pull/1357)
 

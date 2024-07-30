@@ -702,7 +702,7 @@ tick-inactive-villagers: true
       nearestlivingentitysensor: 40
 ```
 
-> 当 [Pufferfish's DAB](#dabenabled) 启用时，不建议修改该项任何默认值。
+> 当 [Pufferfish's DAB](#dab) 启用时，不建议修改该项任何默认值。
 
 `acquirepoi`是村民最频繁的行为, 因此它的间隔已经大大增加了。 如果村民有寻路问题，请减少此项。
 
