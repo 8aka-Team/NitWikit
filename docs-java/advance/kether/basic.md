@@ -7,13 +7,17 @@ sidebar_position: 2
 
 >  动作，又称语句
 
-我们先了解几个简单的语句
+我们先了解几个简单的动作
 
-## 输出文本（tell）
+## 输出文本（Tell）
 
 > https://kether.tabooproject.org/list.html#Tell
 
 ![](_images/vul-tell.png)
+
+这个动作的作用是给玩家发送一条信息（图中的 1 ）
+
+下面的 `< > Result:` 是动作的返回值（下面会讲）
 
 :::note
 
@@ -29,13 +33,13 @@ sidebar_position: 2
 
 ![](_images/vul-tell_noColor.png)
 
+我们可以用下面的 `color Text` 动作来搞颜色
+
 ## 彩色（color Text）
 
 > https://kether.tabooproject.org/list.html#Color_Text
 
 ![](_images/vul-color.png)
-
-我们可以用 color 动作搞颜色
 
 这里要用 `" "` 把要打印的信息包裹起来
 
@@ -59,9 +63,11 @@ sidebar_position: 2
 
 在使用 `/vul evel` 时，语句的返回值会在 `< > Result:` 显示
 
-于是我们可以知道，执行顺序为：color -> tell
+于是我们可以知道，`color` 动作先翻译了颜色，然后把翻译好的交给了 `Tell` 动作
 
-那么如果我们把 `tell` 的返回值打印呢
+所以动作的执行顺序为：color -> tell
+
+**番外：**那么如果我们把 `tell` 的返回值打印呢
 
 ![](_images/vul-tell_tell.png)
 
@@ -100,7 +106,7 @@ sidebar_position: 2
 
 > https://kether.tabooproject.org/list.html#PlaceholderAPI
 
-使用一个papi变量
+翻译一个papi变量（如图）
 
 ![](_images/vul-papi.png)
 
@@ -108,17 +114,17 @@ sidebar_position: 2
 papi {action} | placeholder {action}
 ```
 
-papi是简写
+两种用法，papi是简写
 
 ## inline和join
 
 ![](_images/vul-tell_papiNoInline.png)
 
-假如你用的那个插件不会给你自动翻译语句中的papi，阁下又当如何应对？
+假如你用的那个插件不会给你自动翻译动作中的papi，阁下又当如何应对？
 
 > https://kether.tabooproject.org/list.html#Inline
 
-`内联（inline）` 语句！在一段文本中插入 kether ！
+`内联（inline）` 动作！在一段文本中插入 kether ！
 
 用法为：
 
@@ -136,13 +142,13 @@ inline "阿巴阿巴{{你要用的kether}}qwq"
 
 > https://kether.tabooproject.org/list.html#Join
 
-而 `join` 则是可以把多个语句拼接在一起，很多时候 `inline` 和 `join` 可以互相替代
+而 `join` 则是可以把多个动作拼接在一起，很多时候 `inline` 和 `join` 可以互相替代
 
 用法为：
 ```
-join [ 语句1 语句2 语句3 更多语句 ]
+join [ 动作1 动作2 动作3 更多 ]
 ```
-语句之间要空格
+动作之间要空格
 
 在上面的案例中，可以这样做
 
