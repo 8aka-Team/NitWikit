@@ -160,7 +160,7 @@ https://mineplugin.org/Multiverse-Core#%E4%BD%A0%E8%83%BD%E8%AE%A9%E6%AF%8F%E4%B
 
 **安装papi的 Multiverse 扩展**
 
-[点击此处](../Front-Plugin/PlaceHolderAPI/CommonUsage.md#multiverse-core)
+[点击此处](../Front-Plugin/PlaceHolderAPI/CommonUsage.md#multiverse)
 
 **设置别名**
 
