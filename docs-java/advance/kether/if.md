@@ -41,11 +41,11 @@ sidebar_position: 3
 
 ![](_images/vul-permNot_2.png)
 
-因为我拥有此权限，所以 prem 判断是 true
+因为我拥有此权限，所以 perm 判断是 true
 
 接着因为 not，最后的结果是 false
 
-prem -> not
+perm -> not
 
 ## 判断（Check）
 
