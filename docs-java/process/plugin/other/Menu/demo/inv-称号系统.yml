@@ -1,0 +1,165 @@
+##############################
+# 是驿站写滴 Q:185839426
+# 禁止商用和抹除作者信息
+##############################
+
+
+
+title: '称号菜单'
+
+layout:
+  - '#|#######'
+  - '#?#     #'
+  - '#|#     #'
+  - '#|#     #'
+  - '#|#######'
+  - '#|#<#@#>#'
+
+# bindings:
+#   command:
+#     name: 'prefix'
+
+common: &common
+  name: '{{element name}}'
+  lore: |-
+    {{element lore}}
+    {{v-script run prefix by player name with [ element id ] }}
+page_act: &page_act
+  node Sound
+  icons refresh
+  menu title update
+  icons refresh
+
+nodes:
+  Sound:
+    type: kether
+    value:
+      sound UI_BUTTON_CLICK by 1 1
+
+generator:
+  # filter:
+  #   any [
+  #     check &filter == 无
+  #   ]
+  output:
+    enhancedLore: true
+    material: bedrock
+    name: '&c&l判断错误，请联系管理'
+    sub:
+      - if: check element source == mc
+        material: '{{element mat}}'
+        <<: *common
+      - if: check element source == ni
+        texture:
+          source: ni
+          value: '{{element mat}}'
+        <<: *common
+    action:
+      - if: not perm join [ "prefix." element id ]
+        # 称号获得
+        then:
+          context set id to element id
+          menu open_ctx element id
+        # 佩戴称号
+        else:
+          if* element id != papi %luckperms_meta_prefix% then {
+            v-memory prefix to element id by &player using lp
+            v-memory prefix_name to &element_name by &player using lp
+            tell "&a&l! &7佩戴成功！%luckperms_meta_prefix_name%"
+          }
+      - icons refresh
+
+
+
+  elements:
+    - id: citizen
+      source: mc
+      mat: name_tag
+      name: '&7公民'
+      lore: |-
+
+        \n服务器玩家的默认称号！
+        \n
+    - id: ben_dan
+      source: mc
+      mat: redstone
+      name: '&c&l笨蛋'
+      lore: |-
+
+        \n服务器管理员称号
+        \n
+    - id: hei_nu
+      source: mc
+      mat: coal
+      name: '&0&l黑奴'
+      lore: |-
+
+        \n挖煤导致的
+        \n
+    - id: yuan_shi
+      source: mc
+      mat: cobblestone
+      name: '&d圆石&7粉碎机'
+      lore: |-
+
+        \n关于我上辈子是个刷石机这件事
+        \n
+
+
+
+icons:
+  '#':
+    material: air
+  '|':
+    material: light_blue_stained_glass_pane
+    name: ' '
+  '@':
+    material: barrier
+    name: '&c&l返回'
+    lore:
+      - ''
+      - '&8| &7点击返回主菜单.'
+      - ''
+    action: node Sound
+  '?':
+    material: sign
+    name: '&c&l搜索'
+    lore:
+      - ''
+      - '&8| &6左键&7点击搜索内容'
+      - '&8| &7搜素内容: &6{{&filter}}'
+      - '&8| &6右键&7点击清除搜索'
+      - ''
+    action:
+      def: node Sound regenerate icons update
+      # number_key_1: context set filter to 1
+      # number_key_2: context set filter to 2
+      # number_key_3: context set filter to 3
+      left:
+        catch: filter
+        cancel: [ 'exit' ]
+        beforeInput: tell '&7请输入 &a搜素内容 &7输入 &cexit &7取消'
+        onCancel: tell '&a! &7已经取消'
+      right: context set filter to 无 regenerate
+  '>':
+    material: air
+    name: ' '
+    lore: '{{math page current + 1}} / {{math page max + 1}}'
+    sub:
+      if: not page isLast
+      material: arrow
+      name: '<green>下一页 →'
+      action:
+        - page next
+        - *page_act
+  '<':
+    material: air
+    name: ' '
+    lore: '{{math page current + 1}} / {{math page max + 1}}'
+    sub:
+      if: not page isFirst
+      material: arrow
+      name: '<aqua>← 上一页'
+      action:
+        - page previous
+        - *page_act

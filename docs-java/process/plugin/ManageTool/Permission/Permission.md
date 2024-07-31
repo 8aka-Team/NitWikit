@@ -8,7 +8,7 @@ sidebar_position: 1
 
 :::tip[注意]
 
-我们只推荐 Luckperms 作为高版本插件服作为权限插件，如果是老版本服请自行学习 GroupManager 等老插件。
+我们只推荐 Luckperms 作为服武器的权限插件
 
 :::
 
@@ -25,6 +25,8 @@ sidebar_position: 1
 `文档（中文）` https://snowcutieowo.github.io/LuckPerms/
 
 `插件百科` https://mineplugin.org/LuckPerms
+
+`papi变量` https://snowcutieowo.github.io/LuckPerms/#/project-info.placeholders?id=%e5%8f%98%e9%87%8f-1
 
 :::
 
@@ -44,3 +46,15 @@ sidebar_position: 1
 下载 jar 文件放入 plugins 文件夹即可
 
 [点击此处查看教程](https://snowcutieowo.github.io/LuckPerms/#/install-on-a-single-server)
+
+:::tip[注意]
+
+1.7.10 要用 Bukkit Legacy 版本
+
+:::
+
+## 存储方式
+
+LuckPerms 可以使用 yml 文件存储数据，易于编辑，但我推荐使用 h2（默认） 或者连接数据库使用
+
+如果你想更改存储方式，可见：https://snowcutieowo.github.io/LuckPerms/#/configuration?id=storage-method
