@@ -102,6 +102,108 @@ https://github.com/Dreeam-qwq/TrMenu/blob/stable/v3/plugin/src/main/resources/se
 
 不过这些配置主要是用来学习的，不会有人直接cv过去用吧
 
+### 商店
+
+:::tip
+
+你需要安装 [CheckItem](../../Front-Plugin/PlaceHolderAPI/CheckItem.md)
+
+并 [开启give和remove](../../Front-Plugin/PlaceHolderAPI/CheckItem.md#启用give和remove) 和 [更改-boolean](../../Front-Plugin/PlaceHolderAPI/outline.md#更改-boolean)
+
+:::
+
+:::warning
+
+使用 最新的 **TrMenu社区版** 不保证旧版本可用性
+
+:::
+
+#### 以物易物
+
+```yaml
+  '写法1':
+    display:
+      name: '两个钻石换三个绿宝石'
+      material: stone
+    actions:
+      - condition: 'papi %checkitem_mat:diamond,amt:2%'
+        actions:
+          - 'papi %checkitem_remove_mat:diamond,amt:2%'
+          - 'papi %checkitem_give_mat:emerald,amt:3%'
+        deny:
+          - 'tell inline "物品不够，你有{{papi %checkitem_amount_mat:diamond,amt:2%}}个，还差{{math 2 - papi %checkitem_amount_mat:diamond,amt:2%}}个"'
+  '写法2':
+    display:
+      name: '两个钻石换三个绿宝石'
+      material: stone
+    actions:
+      - if papi %checkitem_mat:diamond,amt:2% then {
+          papi %checkitem_remove_mat:diamond,amt:2%
+          papi %checkitem_give_mat:emerald,amt:3%
+        } else tell inline "物品不够，你有{{papi %checkitem_amount_mat:diamond,amt:2%}}个，还差{{math 2 - papi %checkitem_amount_mat:diamond,amt:2%}}个"
+```
+
+#### 购买
+
+```yaml
+  '写法1':
+    display:
+      name: '10块钱买2个钻石'
+      material: stone
+    actions:
+      - condition: 'money 10'
+        actions:
+          - 'take-money: 10'
+          - 'papi %checkitem_give_mat:emerald,amt:3%'
+        deny:
+          - tell inline "钱不够，你有{{papi %vault_eco_balance%}}块，还差{{math 10 - papi %vault_eco_balance%}}块"
+  '写法2':
+    display:
+      name: '10块钱买2个钻石'
+      material: stone
+    actions:
+      - if money 10 then {
+          command inline"money take {{player name}} 10"
+          papi %checkitem_give_mat:emerald,amt:3%
+        } else tell inline "钱不够，你有{{papi %vault_eco_balance%}}块，还差{{math 10 - papi %vault_eco_balance%}}块"
+```
+
+#### 个人限购
+
+```yaml
+  '写法1':
+    display:
+      name: '10块钱买2个钻石（限购20个）'
+      material: stone
+    icons:
+      - condition: 'meta set KEY to 限购数据1'
+      - condition: 'data set papi %trmenu_meta_KEY% to 20'
+    actions:
+      - condition: meta set 单价 to 10
+      - condition: 'all [ money papi %trmenu_meta_单价% check data get meta get KEY > 0 ]'
+        actions:
+          # 扣钱
+          - 'take-money: %trmenu_meta_单价%'
+          # 扣一次限购
+          - 'data set papi %trmenu_meta_KEY% to math data get meta get KEY - 1'
+          # 给货
+          - 'papi %checkitem_give_mat:emerald,amt:3%'
+          - tell data get meta get KEY
+          - tell papi %vault_eco_balance%
+          - tell math - [ data get meta get KEY 1 ]
+        deny:
+          - tell inline '钱不够，你有{{papi %vault_eco_balance%}}块，还差{{math papi %trmenu_meta_单价% - papi %vault_eco_balance%}}块 {condition=not money meta get 单价}'
+          - tell inline '限购次数用完了 {condition=check data get meta get KEY == 0}'
+```
+
+#### 全服限购
+
+#### 出售
+
+#### 个人限售
+
+#### 全服限售
+
 ## Invero
 
 ### 每日签到
@@ -115,3 +217,27 @@ https://github.com/Dreeam-qwq/TrMenu/blob/stable/v3/plugin/src/main/resources/se
 ### 称号系统
 
 [查看配置](https://github.com/postyizhan/NitWikit/blob/main/docs-java/process/plugin/other/Menu/demo/inv-称号系统.yml)
+
+### 商店
+
+:::tip
+
+你需要安装 [CheckItem](../../Front-Plugin/PlaceHolderAPI/CheckItem.md)
+
+并 [开启give和remove](../../Front-Plugin/PlaceHolderAPI/CheckItem.md#启用give和remove) 和 [更改-boolean](../../Front-Plugin/PlaceHolderAPI/outline.md#更改-boolean)
+
+:::
+
+#### 以物易物
+
+#### 购买
+
+#### 个人限购
+
+#### 全服限购
+
+#### 出售
+
+#### 个人限售
+
+#### 全服限售
