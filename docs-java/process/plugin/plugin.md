@@ -8,6 +8,8 @@ sidebar_position: 1
 
 **本文档中提到的插件都有较多用户基础和完善的 Wiki，具体插件请查看插件的 Wiki。**
 
+![](_images/wiki背诵.jpg)
+
 ![](_images/概览/餐叉.jpg)
 
 **建议阅读**
