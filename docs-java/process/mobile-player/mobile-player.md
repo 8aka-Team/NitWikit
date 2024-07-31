@@ -1,6 +1,6 @@
 ---
 title: 手机玩家支持
-sidebar_position: 1
+sidebar_position: 3
 ---
 
 # 支持方式

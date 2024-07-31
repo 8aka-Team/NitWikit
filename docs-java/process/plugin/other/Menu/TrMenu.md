@@ -34,6 +34,8 @@ sidebar_position: 4
 
 `GitHub（推荐，社区维护）` https://github.com/Dreeam-qwq/TrMenu
 
+`vscode插件-trm语法提示` https://marketplace.visualstudio.com/items?itemName=hhhhhy.trmenu-helper
+
 :::
 
 交流群：325014486

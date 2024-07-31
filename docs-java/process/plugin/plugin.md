@@ -1,7 +1,7 @@
 ---
 title: 插件
 slug: /plugin
-sidebar_position: 4
+sidebar_position: 1
 ---
 
 # 插件

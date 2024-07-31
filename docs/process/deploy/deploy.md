@@ -24,7 +24,7 @@ sidebar_position: 1
 
 个人建议使用 vps，你会在 [可选方式#vps](optional-mode.md#vps) 了解到相关内容
 
-如果是新手刚起步，那就不要买东西瞎费钱了，自己机器上做就可，可以通过 [内网穿透](intranet-penetration.md) 让其他玩家加入开在你电脑上的服务器
+如果是新手刚起步，那就不要买东西瞎费钱了，自己电脑上做就可，做成之后可以考虑 vps 了
 
 import DocCardList from '@theme/DocCardList';
 

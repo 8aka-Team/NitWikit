@@ -11,11 +11,11 @@ sidebar_position: 1
 
 ## HuskChat
 
-同 [Velocity 一侧的讲解](velocity.md#HuskChat)
+同 [Velocity 一侧的讲解](velocity.md#huskchat)
 
 ## Sonar
 
-同 [Velocity 一侧的讲解](velocity.md#Sonar)
+同 [Velocity 一侧的讲解](velocity.md#sonar)
 
 ## AuthMeBungee
 

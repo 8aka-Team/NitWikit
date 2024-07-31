@@ -61,13 +61,13 @@ import TabItem from '@theme/TabItem';
 ## 寿终正寝の加载器
 <Tabs queryString="plugins-loader">
 <TabItem value="liteloader" label="LiteLoader">
-| 插件加载器 | 别名：LL，LLv2，LXL（[详情点我](#litexloader-合并至-liteloader2022-年-2-月-12-日)） |
+| 插件加载器 | 别名：LL，LLv2（[详情点我](#litexloader-合并至-liteloader2022年2月12日)） |
 | --- | --- |
 | 名称 | [LiteLoaderBDS](https://github.com/LiteLDev/LiteLoaderBDSv2/) |
 | 作者 | [LiteLDev](https://github.com/LiteLDev) |
 | 介绍 | LiteLoaderBDSv2 是一款专为 BDS 编写的插件加载器，旨在弥补官方行为包开发接口的不足。LiteLoaderBDSv2 支持多种编程语言编写插件，并保证了插件开发与维护的便利性 |
 | 推荐与否 | 非常不推荐 |
-| 理由 | 插件生态无可厚非，没人会否定它的巅峰时代，可惜岁月不饶人啊...如果你服务器愿意在此版本区间便罢了，因为不好找插件了 |
+| 理由 | 插件生态无可厚非，没人会否定它的巅峰时代，可惜岁月不饶人啊...如果你服务器愿意在此版本区间便罢了，因为不好找插件了（[详情点我](#liteloader-宣布停更2023年10月份)） |
 | 下载 | [GitHub 下载](https://github.com/LiteLDev/LeviLamina/releases) |
 | 支持的 MC 版本 | 1.16.210-1.20.31.01（已存档）[^Archived] |
 </TabItem>
@@ -78,7 +78,7 @@ import TabItem from '@theme/TabItem';
 | 作者 | [LiteDev](https://github.com/LiteLDev) |
 | 介绍 | LiteXLoader 是一款专为 LiteLoader 编写的拓展类插件加载器，旨在弥补 LiteLoader 可开发语言的不足。LiteXLoader 支持多种编程语言编写插件，并保证了插件开发与维护的便利性，例如拓展支持 Node-Js、Python、Qucik-Js 的开发 |
 | 推荐与否 | 非常不推荐 |
-| 理由 | 后续合并到 LiteLoader 中。[详情点我](#litexloader-合并至-liteloader2022-年-2-月-12-日) |
+| 理由 | 后续合并到 LiteLoader 中。[详情点我](#litexloader-合并至-liteloader2022年2月12日) |
 | 下载 | [Github 下载](https://github.com/EndstoneMC/endstone/releases) |
 | 支持的 MC 版本 | 1.20.71 - 1.21.2（已存档）[^Archived] |
 </TabItem>
@@ -86,7 +86,7 @@ import TabItem from '@theme/TabItem';
 
 ## 相关历史
 
-### PDB 事件
+### PDB 事件（2024年6月6日）
 
 此文段部分引用自 B站 Dofes 与 MRUIAW 的合作视频，稍作了修改。
 [Mojang删除了对基岩版最重要的东西...](https://www.bilibili.com/video/BV1GS421o7Dz/)
@@ -112,7 +112,7 @@ import TabItem from '@theme/TabItem';
 
 不过，[EndStone](./plugins-loader-choose.md?plugins-loader=endstone#热门加载器) 的出现貌似给基岩版服务端带来了希望。
 
-### LiteLoader 宣布停更（2023 年 10 月份）
+### LiteLoader 宣布停更（2023年10月份）
 LiteLoaderBDS 最初是基于 BedrockX 开发的，在 2.0 版本进行了完全重写。它一直处于存档状态，是以前最流行的 BDS 插件加载器之一。最后的版本是 2.16.2，发布于 2023 年 10 月 9 日，支持 BDS 1.20.32 版本。
 
 一代骄子难道就此陨落了？
@@ -122,7 +122,7 @@ LiteLoaderBDS 最初是基于 BedrockX 开发的，在 2.0 版本进行了完全
 所以并不是 LiteDev 扔下史山跑路了（这是官方原话自嘲），而是着手重构 LiteLoader，预计在未来发布 LiteLoaderBDSV3，即 LeviLamina。
 
 
-### LiteXLoader 合并至 LiteLoader（2022 年 2 月 12 日）
+### LiteXLoader 合并至 LiteLoader（2022年2月12日）
 LiteXLoader 于 2022 年 2 月 12 日 合并至 LiteLoader 项目，LXL成为LL的一个子模块。 LiteLoaderBDS将继续更新，作为C++、Go、Js、Lua和其他语言的通用加载器。所有以前的LXL插件将继续在新的LL版本下正常运行，所有现有的API将保持不变。
 
 

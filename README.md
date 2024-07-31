@@ -30,7 +30,7 @@ https://nitwikit.yizhan.wiki/
 
 - https://nitwikit.yizhan.wiki/
 - [GitHub](https://github.com/postyizhan/NitWikit)
-- [Minebbs](https://www.minebbs.com/threads/nitwikit-geyser.26356/)
+- [MineBBS](https://www.minebbs.com/threads/nitwikit-geyser.26356/)
 - [klpbbs](https://klpbbs.com/forum.php?mod=viewthread&tid=136184&page=1&extra=#pid10518779)
 - [九域](https://bbs.mc9y.net/threads/1624/)
 - [暮光方块论坛](https://bbs.tsfk.top/threads/399/)
@@ -128,17 +128,17 @@ https://nitwikit.yizhan.wiki/
                 </a>
             </td>
             <td align="center">
-                <a href="https://github.com/Lafcadia">
-                    <img src="https://avatars.githubusercontent.com/u/147896059?v=4" width="50;" alt="Lafcadia"/>
-                    <br />
-                    <sub><b>Percival Zheng</b></sub>
-                </a>
-            </td>
-            <td align="center">
                 <a href="https://github.com/liangcha385">
                     <img src="https://avatars.githubusercontent.com/u/108937242?v=4" width="50;" alt="liangcha385"/>
                     <br />
                     <sub><b>凉茶是帅哥</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/Lafcadia">
+                    <img src="https://avatars.githubusercontent.com/u/147896059?v=4" width="50;" alt="Lafcadia"/>
+                    <br />
+                    <sub><b>Percival Zheng</b></sub>
                 </a>
             </td>
             <td align="center">
@@ -195,17 +195,17 @@ https://nitwikit.yizhan.wiki/
                 </a>
             </td>
             <td align="center">
-                <a href="https://github.com/lim114514">
-                    <img src="https://avatars.githubusercontent.com/u/113185430?v=4" width="50;" alt="lim114514"/>
-                    <br />
-                    <sub><b>lim114514</b></sub>
-                </a>
-            </td>
-            <td align="center">
                 <a href="https://github.com/CkaDebug">
                     <img src="https://avatars.githubusercontent.com/u/141492699?v=4" width="50;" alt="CkaDebug"/>
                     <br />
                     <sub><b>Debug-Cracked</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/lim114514">
+                    <img src="https://avatars.githubusercontent.com/u/113185430?v=4" width="50;" alt="lim114514"/>
+                    <br />
+                    <sub><b>lim114514</b></sub>
                 </a>
             </td>
             <td align="center">
