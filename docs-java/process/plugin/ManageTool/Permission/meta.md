@@ -127,9 +127,9 @@ command inline "lp user {{sender}} permission settemp nitwikit.demo true {{math 
 
 你也可以用 papi 的 server 和 math 两个扩展来做
 
-- %math_0_24-{server_time_HH}% // 时
-- %math_0_60-{server_time_mm}% // 分
-- %math_0_60-{server_time_ss}% // 秒
+- \%math_0_24-{server_time_HH}% // 时
+- \%math_0_60-{server_time_mm}% // 分
+- \%math_0_60-{server_time_ss}% // 秒
 
 不过我不太喜欢这种做法，另一种： [案例 | 变量|每日刷新](../../../../advance/kether/variable.md#每日刷新)
 
@@ -150,7 +150,7 @@ command inline "lp user {{sender}} permission settemp nitwikit.demo true {{math 
 ![](_images/memory_9.png)
 
 ```
-%luckperms_meta_键名%
+\%luckperms_meta_键名%
 ```
 
 ![](_images/memory_10.png)
