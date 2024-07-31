@@ -236,6 +236,8 @@ any [ 动作1 动作2 动作3 更多 ]
 
 ### 妙妙写法
 
+#### all_any多行
+
 ```
 all [ 条件1 条件2 ]
 any [ 条件1 条件2]
@@ -248,4 +250,32 @@ any [
     条件1
     条件2
 ]
+```
+
+####  判断null字符串
+
+如果一个动作，变量，或者其他什么东西会有输出null的情况，而你想判断这个情况
+
+但是 `null` 是一个已有的动作：https://kether.tabooproject.org/list.html#Null
+
+> 返回一个空值。
+
+可是我想判断的是 `null` 这四个字母！这咋办？
+
+还记得之前学的 [literal](basic.md#actiontoken和literal) 吗？
+
+```yaml
+check 你要判断的东西 == literal null
+```
+
+告诉kether我要的null是个字符串而不是使用 null动作
+
+#### 判断空值
+
+https://kether.tabooproject.org/list.html#Pass
+
+> 返回一个空字符串。
+
+```yaml
+check 你要判断的东西 == pass
 ```
