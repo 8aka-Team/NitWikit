@@ -112,7 +112,7 @@ sidebar_position: 6
 实现（kether）：
 
 搓命令：
-```
+```yaml
 inline "lp user {{sender}} permission settemp nitwikit.demo true {{math 24 - time as HH}}h{{math 60 - time as mm}}m{{math 60 - time as ss}}s"
 ```
 
@@ -121,15 +121,15 @@ tell搓出来的看看
 ![](_images/memory_6.png)
 
 执行命令：
-```
+```yaml
 command inline "lp user {{sender}} permission settemp nitwikit.demo true {{math 24 - time as HH}}h{{math 60 - time as mm}}m{{math 60 - time as ss}}s" as console
 ```
 
 你也可以用 papi 的 server 和 math 两个扩展来做
 
-- \%math_0_24-{server_time_HH}% // 时
-- \%math_0_60-{server_time_mm}% // 分
-- \%math_0_60-{server_time_ss}% // 秒
+- `%math_0_24-{server_time_HH}%` // 时
+- `%math_0_60-{server_time_mm}%` // 分
+- `%math_0_60-{server_time_ss}%` // 秒
 
 不过我不太喜欢这种做法，另一种： [案例 | 变量|每日刷新](../../../../advance/kether/variable.md#每日刷新)
 
