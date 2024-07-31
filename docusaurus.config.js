@@ -127,7 +127,7 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: '开始',
+            label: '通用',
           },
           {
             type: 'docSidebar',
