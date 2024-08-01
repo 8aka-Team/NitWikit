@@ -48,6 +48,12 @@ Invero 俗称 TrMenu v4
 
 ## 案例
 
+:::warning
+
+请使用 最新的 **TrMenu社区版** 不保证**旧**版本可用性
+
+:::
+
 ### 妙妙写法
 
 ### 玩家信息
@@ -99,12 +105,6 @@ https://github.com/Dreeam-qwq/TrMenu/blob/stable/v3/plugin/src/main/resources/se
 你需要安装 [CheckItem](../../Front-Plugin/PlaceHolderAPI/CheckItem.md)
 
 并 [开启give和remove](../../Front-Plugin/PlaceHolderAPI/CheckItem.md#启用give和remove) 和 [更改-boolean](../../Front-Plugin/PlaceHolderAPI/outline.md#更改-boolean)
-
-:::
-
-:::warning
-
-使用 最新的 **TrMenu社区版** 不保证旧版本可用性
 
 :::
 
