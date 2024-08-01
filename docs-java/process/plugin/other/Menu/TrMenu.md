@@ -56,6 +56,44 @@ Invero 俗称 TrMenu v4
 
 ### 妙妙写法
 
+#### 子图标写true
+
+`condition` 最后的结果为 true 就会显示这个子图标
+
+```yaml
+  'A':
+    display:
+      material: stone
+    icons:
+      - condition: 'true'
+        display:
+          name: '我有没有条件啊！我到底有没有条件啊！'
+```
+
+所以你可以直接写 true 让他显示这个子图标
+
+![](_images/为难.jpg)
+
+#### 子图标写动作
+
+因为 `condition` 会执行里面的kether语句
+
+所以你可以这样子在菜单打开或重新计算子图标的时候跑一遍这些语句
+
+```yaml
+  'A':
+    display:
+      material: stone
+    icons:
+      - condition: 'tell 想不到骚话'
+      - condition: 'tell 想不到骚话'
+      - condition: 'tell 想不到骚话'
+      - condition: 'tell 想不到骚话'
+      - condition: 'tell 想不到骚话'
+```
+
+![](_images/子图标写动作.png)
+
 ### 玩家信息
 
 这是 TrMenu 的一个默认案例
