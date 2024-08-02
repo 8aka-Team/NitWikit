@@ -205,7 +205,8 @@ https://github.com/Dreeam-qwq/TrMenu/blob/stable/v3/plugin/src/main/resources/se
       material: stone
     icons:
       - condition: 'meta set KEY to 限购数据1'
-      - condition: 'data set papi %trmenu_meta_KEY% to 20'
+      - condition: 'data set 限购数据1 to 210'
+      - condition: 'tell data get 限购数据1'
     actions:
       - condition: meta set 单价 to 10
       - condition: 'all [ money papi %trmenu_meta_单价% check data get meta get KEY > 0 ]'
@@ -213,12 +214,9 @@ https://github.com/Dreeam-qwq/TrMenu/blob/stable/v3/plugin/src/main/resources/se
           # 扣钱
           - 'take-money: %trmenu_meta_单价%'
           # 扣一次限购
-          - 'data set papi %trmenu_meta_KEY% to math data get meta get KEY - 1'
+          - 'data set papi %trmenu_meta_KEY% to inline {{math data get meta get KEY - 1}}'
           # 给货
           - 'papi %checkitem_give_mat:emerald,amt:3%'
-          - tell data get meta get KEY
-          - tell papi %vault_eco_balance%
-          - tell math - [ data get meta get KEY 1 ]
         deny:
           - tell inline '钱不够，你有{{papi %vault_eco_balance%}}块，还差{{math papi %trmenu_meta_单价% - papi %vault_eco_balance%}}块 {condition=not money meta get 单价}'
           - tell inline '限购次数用完了 {condition=check data get meta get KEY == 0}'
