@@ -51,3 +51,15 @@ Linux自建frp参见[此页面](/advance/Linux/frp)
 ### 反假人插件
 
 这会导致反假人插件几乎不能使用，因为无论是封禁 IP 还是 IP 白名单都会因为所有玩家 IP 相同而失效。
+
+### 解决以上无法显示IP地址的办法：proxy protocol
+
+正是因为frp在转发玩家请求时重写了请求头部，导致了以上情况的发生。frp虽然不能不重写这个请求头部，但是他可以通过一种方式还原请求头部，让服务器正常显示出连接IP。Proxy Protocol是由 HAProxy 开发者 Willy 提出的一种反向代理协议，可以参考 [HAProxy 文档](http://www.haproxy.org/download/1.8/doc/proxy-protocol.txt) 获取更多信息。frp内置的proxy protocol要求被其穿透的服务器也支持proxy protocol，否则会造成对应的服务无法使用，所以并不是随便拿一个服务就能用proxy protocol。frp启用proxy protocol的方式参考[Linux自建frp](/advance/Linux/frp)。
+
+对于mc服务器来说，支持proxy protocol的软件有：
+- bungeecord系
+- paper分支（1.18.2）（仅支持v2）
+- Geyser
+- Spigot端插件[HAProxyDetector](https://github.com/andylizi/haproxy-detector)
+
+等。BDS服务器目前不支持此协议。[此文档](https://doc.natfrp.com/offtopic/proxy-protocol.html#minecraft)给出了这些服务端的配置方法。
