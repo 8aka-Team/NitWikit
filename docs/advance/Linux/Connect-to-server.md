@@ -14,7 +14,7 @@ Linux有一个工具被业界广泛使用，它就是ssh。它虽然不能远程
 
 :::danger
 
-配置直接在公网使用22端口连接服务器ssh**会导致严重的安全性问题**，详见[如何抵御网络攻击](../maintenance/how-to-defend-against-cyber-attacks.md)。  
+配置直接在公网使用22端口连接服务器ssh**会导致严重的安全性问题**，详见[如何抵御网络攻击](../../../process/maintenance/how-to-defend-against-cyber-attacks.md)。  
 另外除非有明确需求，不要随意配置UDP协议端口映射，包括上文中提到的**不需要UDP协议**的ssh，否则可能导致你的服务器被DDoS！详见[如何抵御网络攻击](../maintenance/how-to-defend-against-cyber-attacks.md)。
 
 :::
