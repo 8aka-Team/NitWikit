@@ -100,7 +100,7 @@ Invero 俗称 TrMenu v4
 
 **右键玩家执行动作**
 
-https://github.com/Dreeam-qwq/TrMenu/blob/stable/v3/plugin/src/main/resources/settings.yml
+https://hhhhhy.gitbook.io/trmenu-v3/usage/shortcuts
 
 此处为右键玩家打开名为 Profile 的菜单
 
@@ -119,7 +119,7 @@ https://github.com/Dreeam-qwq/TrMenu/blob/stable/v3/plugin/src/main/resources/me
 
 **蹲下+替换副手执行动作**
 
-https://github.com/Dreeam-qwq/TrMenu/blob/stable/v3/plugin/src/main/resources/settings.yml
+https://hhhhhy.gitbook.io/trmenu-v3/usage/shortcuts
 
 ```yaml
   Sneaking-Offhand:
@@ -147,6 +147,12 @@ https://github.com/Dreeam-qwq/TrMenu/blob/stable/v3/plugin/src/main/resources/se
 :::
 
 #### 以物易物
+
+**知识点：**
+
+- TrMenu 文档熟读并背诵
+- [kether](/docs-java/advance/kether/basic.md)
+- [CheckItem](../../Front-Plugin/PlaceHolderAPI/CheckItem.md)
 
 ```yaml
   '写法1':
@@ -198,35 +204,52 @@ https://github.com/Dreeam-qwq/TrMenu/blob/stable/v3/plugin/src/main/resources/se
 
 #### 个人限购
 
+**知识点：**
+
+- TrMenu 文档熟读并背诵
+- [kether](/docs-java/advance/kether/basic.md)
+- [CheckItem](../../Front-Plugin/PlaceHolderAPI/CheckItem.md)
+- [妙妙写法](#妙妙写法)
+- [\{condition=\}条件](https://hhhhhy.gitbook.io/trmenu-v3/menu/action/option#tiao-jian)
+
 ```yaml
-  '写法1':
+  'C':
     display:
       name: '10块钱买2个钻石（限购20个）'
       material: stone
     icons:
-      - condition: 'meta set KEY to 限购数据1'
-      - condition: 'data set 限购数据1 to 210'
-      - condition: 'tell data get 限购数据1'
+      - condition: meta set KEY to 限购数据1
+      - condition: data set papi %trmenu_meta_KEY% to 20
     actions:
       - condition: meta set 单价 to 10
-      - condition: 'all [ money papi %trmenu_meta_单价% check data get meta get KEY > 0 ]'
+      - condition: all [ money papi %trmenu_meta_单价% check data get meta get KEY > 0 ]
         actions:
           # 扣钱
           - 'take-money: %trmenu_meta_单价%'
           # 扣一次限购
-          - 'data set papi %trmenu_meta_KEY% to inline {{math data get meta get KEY - 1}}'
+          - data set papi %trmenu_meta_KEY% to join [ math data get meta get KEY - 1 ]
+          - tell join [ "剩余限购次数：" data get meta get KEY " 剩的钱：" papi %vault_eco_balance% ]
           # 给货
-          - 'papi %checkitem_give_mat:emerald,amt:3%'
+          - papi %checkitem_give_mat:emerald,amt:3%
         deny:
-          - tell inline '钱不够，你有{{papi %vault_eco_balance%}}块，还差{{math papi %trmenu_meta_单价% - papi %vault_eco_balance%}}块 {condition=not money meta get 单价}'
-          - tell inline '限购次数用完了 {condition=check data get meta get KEY == 0}'
+          - tell inline 钱不够，你有{{papi %vault_eco_balance%}}块，还差{{math papi %trmenu_meta_单价% - papi %vault_eco_balance%}}块 {condition=not money meta get 单价}
+          - tell inline 限购次数用完了 {condition=check data get meta get KEY == 0}
 ```
 
 #### 全服限购
 
+上面个人限购的 data 改成 globaldata
+
+自己看文档：https://hhhhhy.gitbook.io/trmenu-v3/menu/action/types#shu-ju-cao-zuo
+
 #### 出售
+
+和上面的购买几乎一样的逻辑，自己去学 CheckItem 然后把 give 改成 remove
 
 #### 个人限售
 
+和上面的个人限售几乎一样的逻辑，自己去学
+
 #### 全服限售
 
+上面的会了这个你就会写了
