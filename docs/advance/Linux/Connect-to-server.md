@@ -14,8 +14,8 @@ Linux有一个工具被业界广泛使用，它就是ssh。它虽然不能远程
 
 :::danger
 
-配置直接在公网使用22端口连接服务器ssh**会导致严重的安全性问题**，详见[如何抵御网络攻击](../../../process/maintenance/how-to-defend-against-cyber-attacks.md)。  
-另外除非有明确需求，不要随意配置UDP协议端口映射，包括上文中提到的**不需要UDP协议**的ssh，否则可能导致你的服务器被DDoS！详见[如何抵御网络攻击](../maintenance/how-to-defend-against-cyber-attacks.md)。
+配置直接在公网使用22端口连接服务器ssh**会导致严重的安全性问题**，详见[如何抵御网络攻击](../../process/maintenance/how-to-defend-against-cyber-attacks.md)。  
+另外除非有明确需求，不要随意配置UDP协议端口映射，包括上文中提到的**不需要UDP协议**的ssh，否则可能导致你的服务器被DDoS！详见[如何抵御网络攻击](../../process/maintenance/how-to-defend-against-cyber-attacks.md)。
 
 :::
 
@@ -27,7 +27,7 @@ Linux有一个工具被业界广泛使用，它就是ssh。它虽然不能远程
 ```
 ssh 用户名@连接地址
 ```
-如果
+如何要指定端口，你需要指定端口参数。在一些操作系统上这个参数是-p，例如`ssh root@yizhan.wiki -p 48291`，有一些工具上则是直接在后面输入端口，例如Xshell是`ssh root@yizhan.wiki 48291`。你需要根据不同的工具的使用方式来确定ssh的命令格式。比如，你可以仅执行`ssh`，然后让ssh工具提示你如何使用当前工具的这个命令。
 
 ### 使用工具连接
 其他操作系统也可以使用工具连接至服务器，在这里举出几个工具
@@ -95,11 +95,5 @@ macOS内置的终端app中的命令行工具就是zsh，它可以用来连接ssh
 打开终端后，使用上文中提到的ssh命令即可连接到服务器。
   </TabItem>
 </Tabs>
-
-
-
-### 连接ssh
-#### 通过类Unix系统（Linux或macOS）连接
-此时如果可以使用内网的另一台Linux或macOS电脑，你就可以执行ssh 用户名@内网IP地址，然后输入密码来连接到服务器。Linux的内网IP地址可以使用ifconfig命令查看。连接成功后，你虽然不能使用服务器的桌面，但是你可以使用服务器的命令行了。如果要退出，执行exit即可。如果没有Linux或macOS电脑，在Windows电脑和安卓手机上使用工具也可以进行连接。
 
 <!--除了ssh之外，还有一种远程桌面叫VNC。VNC是一种远程桌面协议，在Linux上的使用尤其广泛，也可以用作包括Windows在内的其他系统。由于VNC没有业界采用极其广泛的具体软件，这里不介绍广泛使用的软件，具体要使用可以上网搜索相关的软件和教程。 -->
