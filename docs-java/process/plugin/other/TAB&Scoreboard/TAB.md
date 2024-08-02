@@ -23,3 +23,5 @@ sidebar_position: 2
 这个插件只是名字叫TAB，其实TAB、计分板、bossbar等功能它都有，但总是有不看配置文件和文档的大聪明...
 
 TAB插件的计分板相关: https://docs.superiormc.cn/v/tab-wiki/core-features/ji-fen-ban
+
+汉化（见贴内）：https://www.minebbs.com/resources/tab-tab.9057/
