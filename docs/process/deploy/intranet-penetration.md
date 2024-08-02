@@ -59,7 +59,7 @@ Linux自建frp参见[此页面](/advance/Linux/frp)
 对于mc服务器来说，支持proxy protocol的软件有：
 - bungeecord系
 - paper分支（1.18.2）（仅支持v2）
-- Geyser
+- [Geyser](../../../Java/process/mobile-player/Geyser/introduction/FAQ#frp搭建内网穿透想显示真实ip怎么办)
 - Spigot端插件[HAProxyDetector](https://github.com/andylizi/haproxy-detector)
 
-等。BDS服务器目前不支持此协议。[此文档](https://doc.natfrp.com/offtopic/proxy-protocol.html#minecraft)给出了这些服务端的配置方法。
+等。BDS服务器目前不支持此协议。
