@@ -46,7 +46,7 @@ sidebar_position: 4
 
 </details>
 
-[Linux ssh](../../advance/Linux/Connect-to-server)
+[Linux ssh](../../advance/Linux/Connect-to-server.md)
 
 #### 放行端口
 
