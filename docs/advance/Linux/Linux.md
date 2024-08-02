@@ -29,7 +29,7 @@ sidebar_position: 1
 
 在开始开服之前，你需要掌握的 Linux 常用指令
 
-![菜鸟教程 | Linux 需要掌握的一些命令](https://www.runoob.com/w3cnote/linux-useful-command.html)
+[菜鸟教程 | Linux 需要掌握的一些命令](https://www.runoob.com/w3cnote/linux-useful-command.html)
 
 ## 鸣谢
 
