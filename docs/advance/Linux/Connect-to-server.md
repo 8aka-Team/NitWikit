@@ -23,11 +23,11 @@ Linux有一个工具被业界广泛使用，它就是ssh。它虽然不能远程
 
 ### Linux的ssh命令
 
-就像Windows不用安装任何软件就能连接Windows的远程桌面一样，Linux也内置了连接ssh的方式，直接执行ssh命令即可连接。它的语法如下：
+就像 Windows 不用安装任何软件就能连接 Windows 的远程桌面一样， Linux 也内置了连接 ssh 的方式，直接执行 ssh 命令即可连接。它的语法如下：
 ```
 ssh 用户名@连接地址
 ```
-如何要指定端口，你需要指定端口参数。在一些操作系统上这个参数是-p，例如`ssh root@yizhan.wiki -p 48291`，有一些工具上则是直接在后面输入端口，例如Xshell是`ssh root@yizhan.wiki 48291`。你需要根据不同的工具的使用方式来确定ssh的命令格式。比如，你可以仅执行`ssh`，然后让ssh工具提示你如何使用当前工具的这个命令。
+如何要指定端口，你需要指定端口参数。在一些操作系统上这个参数是`-p`，例如`ssh root@yizhan.wiki -p 48291`，有一些工具上则是直接在后面输入端口，例如Xshell是`ssh root@yizhan.wiki 48291`。你需要根据不同的工具的使用方式来确定ssh的命令格式。比如，你可以仅执行`ssh`，然后让 ssh 工具提示你如何使用当前工具的这个命令。
 
 ### 使用工具连接
 其他操作系统也可以使用工具连接至服务器，在这里举出几个工具
@@ -82,14 +82,14 @@ FinalShell是一体化的的服务器,网络管理软件,不仅是ssh客户端,�
   </TabItem>
   <TabItem value="termux" lable="安卓手机（termux）">
     
-你需要安装termux这个软件。你可以去Google Play下载，也可以去[它的开源地址](https://github.com/termux/termux-app)下载。  
-安装好之后，打开软件就是命令行，随后直接使用ssh命令即可连接。  
+你需要安装 termux 这个软件。你可以去 Google Play 下载，也可以去[它的开源地址](https://github.com/termux/termux-app)下载。  
+安装好之后，打开软件就是命令行，随后直接使用 ssh 命令即可连接。  
 ![](_images/Linux开服/连接服务器/termux_screenshot.jpg)  
   </TabItem>
   <TabItem value="zsh" lable="macOS（zsh）">
-macOS内置的终端app中的命令行工具就是zsh，它可以用来连接ssh。要打开这个工具，可以使用以下方式：
+macOS 内置的终端app 中的命令行工具就是 zsh，它可以用来连接 ssh 。要打开这个工具，可以使用以下方式：
 - （如果终端app没有被移动过）打开启动台，打开第一页的其他文件夹，点击终端。或者你也可以在应用文件夹（入口默认固定在访达侧边栏上）里找到它。
-- 按下command+空格或键盘上的搜索键唤起spotlight，输入“终端”，然后它就会显示在下面。
+- 按下command+空格或键盘上的搜索键唤起 spotlight ，输入“终端”，然后它就会显示在下面。
 
 ![](_images/Linux开服/连接服务器/macOS_terminal.png)  
 打开终端后，使用上文中提到的ssh命令即可连接到服务器。

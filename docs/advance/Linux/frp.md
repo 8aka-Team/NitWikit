@@ -285,11 +285,11 @@ import TabItem from '@theme/TabItem';
 
 ### 配置proxy protocol
 
-如果你使用的是现成的内网穿透运营商提供的内网穿透，**一定要根据运营商提供的教程操作**。以下是两个最有名的内网穿透运营商的proxy protocol开启方法。  
+如果你使用的是现成的内网穿透运营商提供的内网穿透，**一定要根据运营商提供的教程操作**。以下是两个最有名的内网穿透运营商的 proxy protocol 开启方法。  
 [SakuraFrp](https://doc.natfrp.com/bestpractice/realip.html#proxy-protocol)  
 [OpenFrp](https://openfrp.wiki/use/proxy-protocol.html#%E8%8E%B7%E5%8F%96%E8%AE%BF%E9%97%AE%E8%80%85%E7%9A%84%E7%9C%9F%E5%AE%9E-ip)  
 
-如果是自建内网穿透，那么如果是ini配置文件，就在frpc隧道对应的配置（位于frpc.ini中）中加入一行`proxy_protocol_version = `，如果是协议v1就写等于v1，v2就写等于v2。例如：  
+如果是自建内网穿透，那么如果是 ini 配置文件，就在frpc隧道对应的配置（位于frpc.ini中）中加入一行`proxy_protocol_version = `，如果是协议 v1 就写等于 v1 ， v2 就写等于 v2 。例如：  
 ```ini
 [mc]
 type = tcp
@@ -297,7 +297,7 @@ local_port = 25565
 # 目前支持 v1 和 v2 两个版本的 proxy protocol 协议。
 proxy_protocol_version = v2
 ```
-如果是toml配置文件，就在frpc隧道对应的配置（位于frpc.toml中）中加入一行`transport.proxyProtocolVersion = `，如果是协议v1就写等于v1，v2就写等于v2。例如：
+如果是 toml 配置文件，就在 frpc 隧道对应的配置（位于 frpc.toml 中）中加入一行`transport.proxyProtocolVersion = `，如果是协议v1就写等于v1，v2就写等于v2。例如：
 ```toml
 [[proxies]]
 name = "mc"
@@ -307,4 +307,4 @@ transport.proxyProtocolVersion = "v2"
 ```
 **frps的frps.ini或frps.toml不用动。**
 
-至于如何选择v1和v2，你需要根据对应服务器对proxy protocol的支持情况进行选择。例如Paper服务端目前只支持v2。
+至于如何选择 v1 和 v2 ，你需要根据对应服务器对 proxy protocol 的支持情况进行选择。例如 Paper 服务端目前只支持 v2。

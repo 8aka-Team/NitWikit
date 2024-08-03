@@ -36,6 +36,12 @@ sidebar_position: 2
 ![](_images/4.PNG)
 ## 方法二: 使用 TrollStore
 
+：：：warning
+
+由于苹果公司修复了 iOS 系统中的相关漏洞，巨魔商店不再支持iOS16.7 和 iOS17.1 及以上系统。
+
+:::
+
 从此[链接](https://github.com/PojavLauncherTeam/PojavLauncher_iOS/releases )下载PojavLauncher的ipa安装包
 
 从此[链接](https://github.com/opa334/TrollStore/releases)获取TrollStore
@@ -45,4 +51,10 @@ sidebar_position: 2
 
 我手机安装不了巨魔，接下来怎么做等待有缘人
 
-TODO
+## 方法三：使用电脑自签
+
+本文以爱思助手为例。
+
+首先，使用数据线将你的 iOS 设备连接至电脑。 **注意需要使用数据线，部分线缆只能充电而无法传输数据。有时线缆无 MFi 认证（弹窗），也可能无法使用。** 
+
+然后，通过[爱思助手官方教程](https://www.i4.cn/news_detail_38195.html)继续操作。

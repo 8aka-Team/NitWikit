@@ -54,12 +54,12 @@ Linux自建frp参见[此页面](/advance/Linux/frp)
 
 ### 解决以上无法显示IP地址的办法：proxy protocol
 
-正是因为frp在转发玩家请求时重写了请求头部，导致了以上情况的发生。frp虽然不能不重写这个请求头部，但是他可以通过一种方式还原请求头部，让服务器正常显示出连接IP。Proxy Protocol是由 HAProxy 开发者 Willy 提出的一种反向代理协议，可以参考 [HAProxy 文档](http://www.haproxy.org/download/1.8/doc/proxy-protocol.txt) 获取更多信息。frp内置的proxy protocol要求被其穿透的服务器也支持proxy protocol，否则会造成对应的服务无法使用，所以并不是随便拿一个服务就能用proxy protocol。frp启用proxy protocol的方式参考[Linux自建frp](/advance/Linux/frp)。
+正是因为frp在转发玩家请求时重写了请求头部，导致了以上情况的发生。 frp 虽然不能不重写这个请求头部，但是他可以通过一种方式还原请求头部，让服务器正常显示出连接 IP 。Proxy Protocol 是由 HAProxy 开发者 Willy 提出的一种反向代理协议，可以参考 [HAProxy 文档](http://www.haproxy.org/download/1.8/doc/proxy-protocol.txt) 获取更多信息。frp 内置的 proxy protocol 要求被其穿透的服务器也支持 proxy protocol ，否则会造成对应的服务无法使用，所以并不是随便拿一个服务就能用 proxy protocol 。 frp 启用 proxy protocol 的方式参考 [Linux自建frp](/advance/Linux/frp)。
 
-对于mc服务器来说，支持proxy protocol的软件有：
-- bungeecord系
-- paper分支（1.18.2）（仅支持v2）
+对于mc服务器来说，支持 proxy protocol 的软件有：
+- bungeecord 系
+- paper 分支（1.18.2）（仅支持v2）
 - [Geyser](../../../Java/process/mobile-player/Geyser/introduction/FAQ#frp搭建内网穿透想显示真实ip怎么办)
-- Spigot端插件[HAProxyDetector](https://github.com/andylizi/haproxy-detector)
+- Spigot端插件 [HAProxyDetector](https://github.com/andylizi/haproxy-detector)
 
-等。BDS服务器目前不支持此协议。
+等。BDS 服务器目前不支持此协议。
