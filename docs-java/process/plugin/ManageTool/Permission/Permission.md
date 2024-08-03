@@ -8,7 +8,7 @@ sidebar_position: 1
 
 :::tip[注意]
 
-我们只推荐 Luckperms 作为服武器的权限插件
+我们只推荐 Luckperms 作为服务器的权限插件
 
 :::
 
