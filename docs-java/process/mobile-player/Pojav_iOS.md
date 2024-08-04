@@ -42,14 +42,14 @@ sidebar_position: 2
 
 :::
 
-从此[链接](https://github.com/PojavLauncherTeam/PojavLauncher_iOS/releases )下载PojavLauncher的ipa安装包
-
-从此[链接](https://github.com/opa334/TrollStore/releases)获取TrollStore
+从此[链接](https://ios.cfw.guide/installing-trollstore/)获取TrollStore
 
 点击查看[TrollStore的安装流程](https://ios.cfw.guide/installing-trollstore/)
 ![](_images/trollstone_v.png)
 
 我手机安装不了巨魔，接下来怎么做等待有缘人
+
+从此[链接](https://github.com/PojavLauncherTeam/PojavLauncher_iOS/releases)下载PojavLauncher的ipa安装包
 
 ## 方法三：使用AltStore
 
