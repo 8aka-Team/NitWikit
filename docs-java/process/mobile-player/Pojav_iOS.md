@@ -94,7 +94,7 @@ sidebar_position: 2
 :::
 
 总之，当你~~终于~~历经千辛万苦安装完TrollStore之后，你的内心可能痛苦，可能舒畅；但不管怎么样，最痛苦的过程结束了，后面的Pojav安装将会异常轻松。
-![](_images/troll-icon.png)
+![](_images/troll-icon.jpg)
 现在你应该能看见这个图标了。
 
 现在，你需要从[此链接](https://github.com/PojavLauncherTeam/PojavLauncher_iOS/actions)下载PojavLauncher的ipa安装包。
