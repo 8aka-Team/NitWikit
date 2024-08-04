@@ -5,7 +5,7 @@ sidebar_position: 2
 
 # 在IOS 上安装PojavLauncher
 
-免越狱安装 PojavLauncher_iOS
+免越狱安装 PojavLauncher_iOS~~（当然如果下面几个方法都不成功那恭喜你只能去越狱了）~~
 
 ## 方法一: 使用牛蛙助手
 
@@ -48,7 +48,7 @@ sidebar_position: 2
 ~~我手机安装不了巨魔，接下来怎么做等待有缘人~~
 (有缘人：我tm来啦)
 
-:::tips
+:::tips 安装TrollStore
 
 安装TrollStore的方法因设备而异，这里简单分类了TrollStore的辅助工具。（iOS版本号和iPad OS版本号按照相同版本号计算）
 
