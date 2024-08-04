@@ -36,6 +36,8 @@ sidebar_position: 4
 
 `vscode插件-trm语法提示` https://marketplace.visualstudio.com/items?itemName=hhhhhy.trmenu-helper
 
+`MineBBS` https://www.minebbs.com/resources/trmenu-bug.9080/
+
 :::
 
 交流群：325014486

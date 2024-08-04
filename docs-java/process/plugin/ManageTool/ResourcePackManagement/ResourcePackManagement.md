@@ -89,6 +89,14 @@ https://www.blockbench.net/plugins/minecraft_title_generator
 
 https://www.spigotmc.org/resources/.99121/
 
+## emojis
+
+驿站的表情包配置
+
+![](https://www.minebbs.com/attachments/emojis_bilibili-png.75165/)
+
+https://www.minebbs.com/resources/emojis-itemsadder.9045/
+
 ## PackSquash
 
 资源包压缩工具，**显著减小** 资源包的体积
