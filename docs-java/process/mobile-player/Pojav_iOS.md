@@ -65,6 +65,14 @@ sidebar_position: 2
 
 那么[点此查看](https://ios.cfw.guide/installing-trollstore-trollinstallerx/)TrollInstallerX的安装方法。**（非常之复杂，怕麻烦的，没电脑的，没有苹果官方Type C转Lighting或者C2C的线的，但是又只能用这个方法安装TrollStore的劝退）**
 
+如果你是：
+- iOS14-beta2到iOS14.8.1的系统（A12以上，M1～M2处理器）
+- iOS15～iOS15.5 beta4（A8以上，M1～M2处理器）
+- iOS15.5系统（A12以上，M1～M2处理器）
+- iOS15.6 beta4～iOS15.6.1（A12以上，M1～M2处理器）
+- iOS16 beta1～beta3（A12以上，M1～M2处理器）
+
+那么[点此安装](itms-services://?action=download-manifest&url=https://jailbreaks.app/cdn/plists/TrollHelper.plist)TrollHelperOTA，然后按顺序点击Register Persistence Helper和Install TrollStore即可安装。（期间可能黑屏或重启。）
 
 :::
 
