@@ -72,13 +72,13 @@ sidebar_position: 2
 - iOS15.6 beta4～iOS15.6.1（A12以上，M1～M2处理器）
 - iOS16 beta1～beta3（A12以上，M1～M2处理器）
 
-那么[点此安装](itms-services://?action=download-manifest&url=https://jailbreaks.app/cdn/plists/TrollHelper.plist)TrollHelperOTA，然后按顺序点击Register Persistence Helper和Install TrollStore即可安装。（期间可能黑屏或重启。）
+那么[点此安装](itms-services://?action=download-manifest&url=https://jailbreaks.app/cdn/plists/TrollHelper.plist)TrollHelperOTA，然后**按顺序**点击Register Persistence Helper和Install TrollStore即可安装。**（期间可能黑屏或重启。）**
 
 如果你是：
 - iOS16.7RC（A9～A11处理器）
 - iOS17 beta5～iOS17.0（A9～A11处理器）
 
-那么你需要一个已经越狱了的苹果设备按照[这个教程]()使用TrollHelper安装TrollStore。~~（你手机都越狱了还用TrollStore干嘛，直接用其他ipa/dpkg包管理安装pojav~~
+那么你需要一个**已经越狱了**的苹果设备按照[这个教程](https://ios.cfw.guide/installing-trollstore-trollhelper/)使用TrollHelper安装TrollStore。~~（你手机都越狱了还用TrollStore干嘛，直接用其他ipa/dpkg包管理安装pojav~~
 
 :::
 
