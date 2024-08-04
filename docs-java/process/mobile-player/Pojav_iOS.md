@@ -80,6 +80,12 @@ sidebar_position: 2
 
 那么你需要一个**已经越狱了**的苹果设备按照[这个教程](https://ios.cfw.guide/installing-trollstore-trollhelper/)使用TrollHelper安装TrollStore。~~（你手机都越狱了还用TrollStore干嘛，直接用其他ipa/dpkg包管理安装pojav~~
 
+如果你是：
+- iOS15.5（A8处理器）
+- iOS15.6 beta4～iOS15.6.1（A8处理器）
+
+那么[点此查看](https://ios.cfw.guide/installing-trollstore-trollinstallermdc/)TrollInstallerMDC的安装方法。**（较复杂，怕麻烦的，没电脑的，没有苹果官方Type C转Lighting或者C2C的线的，但是又只能用这个方法安装TrollStore的劝退）**
+
 :::
 
 从此[链接](https://github.com/PojavLauncherTeam/PojavLauncher_iOS/releases)下载PojavLauncher的ipa安装包
