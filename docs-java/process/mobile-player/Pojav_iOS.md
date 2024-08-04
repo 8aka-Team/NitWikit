@@ -36,18 +36,34 @@ sidebar_position: 2
 ![](_images/4.PNG)
 ## 方法二: 使用 TrollStore
 
-：：：warning
+:::warning
 
 由于苹果公司修复了 iOS 系统中的相关漏洞，巨魔商店不再支持iOS16.7 和 iOS17.1 及以上系统。
 
 :::
 
-从此[链接](https://ios.cfw.guide/installing-trollstore/)获取TrollStore
-
 点击查看[TrollStore的安装流程](https://ios.cfw.guide/installing-trollstore/)
 ![](_images/trollstone_v.png)
 
-我手机安装不了巨魔，接下来怎么做等待有缘人
+~~我手机安装不了巨魔，接下来怎么做等待有缘人~~
+(有缘人：我tm来啦)
+
+:::tips
+
+安装TrollStore的方法因设备而异，这里简单分类了TrollStore的辅助工具。（iOS版本号和iPad OS版本号按照相同版本号计算）
+
+如果你是：
+- iOS14-beta2到iOS14.8.1的系统（A8～A11处理器）
+- iOS15.5系统（A9～A11处理器）
+- iOS15.6 beta4～iOS15.6.1（A9～A11处理器）
+- iOS15.7～iOS15.8.2（A9～A17，M1～M2处理器）
+- iOS16 beta1～beta3（A9～A11处理器）
+- iOS16 beta4～iOS16.6.1（A9以上，M1～M2处理器）
+- iOS17 beta1～beta4（A9～A11处理器）
+那么[点此安装]()TrollInstallerX
+
+
+:::
 
 从此[链接](https://github.com/PojavLauncherTeam/PojavLauncher_iOS/releases)下载PojavLauncher的ipa安装包
 
