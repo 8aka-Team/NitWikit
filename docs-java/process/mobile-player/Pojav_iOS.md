@@ -86,6 +86,11 @@ sidebar_position: 2
 
 那么[点此查看](https://ios.cfw.guide/installing-trollstore-trollinstallermdc/)TrollInstallerMDC的安装方法。**（较复杂，怕麻烦的，没电脑的，没有苹果官方Type C转Lighting或者C2C的线的，但是又只能用这个方法安装TrollStore的劝退）**
 
+如果你是：
+- iOS15.7.2～iOS15.8.2（A8处理器）
+
+那么[点此查看](https://ios.cfw.guide/installing-trollstore-trollmisaka)TrollMisaka的安装方法。**（也挺复杂，怕麻烦的，没电脑的，没有苹果官方Type C转Lighting或者C2C的线的，但是又只能用这个方法安装TrollStore的劝退）**
+
 :::
 
 从此[链接](https://github.com/PojavLauncherTeam/PojavLauncher_iOS/releases)下载PojavLauncher的ipa安装包
