@@ -103,5 +103,13 @@ sidebar_position: 2
 1.你需要一个github账号，不然你没法在actions里面下载东西。
 2.你使用的是TrollStore方案，那么就下载net.kdt.pojavlauncher-ios-trollstore.tipa，~~别告诉我你用的是TVOS~~。
 
+下载完pojav安装包后，我们来到TrollStore里面。
+![](_images/troll-idid.PNG)
+咱们要打开idid，以确保能正常安装没有签名的安装包。
+
+然后回到主界面，点击右上角加号，选择你刚刚下载的tipa文件，点击，然后就会安装，安装完之后差不多是这样的。
+![](_images/troll-ui.PNG)
+然后点击PojavLauncher，选择Open with JIT，打开Pojav后就能正常使用了。
+
 ## 方法三：使用AltStore
 
