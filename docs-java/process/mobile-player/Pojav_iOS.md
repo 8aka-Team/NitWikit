@@ -5,7 +5,9 @@ sidebar_position: 2
 
 # 在IOS 上安装PojavLauncher
 
-免越狱安装 PojavLauncher_iOS~~（当然如果下面几个方法都不成功那恭喜你只能去越狱了）~~
+免越狱安装 PojavLauncher_iOS
+
+~~（当然如果下面几个方法都不成功那恭喜你只能去越狱了）~~
 
 ## 方法一: 使用牛蛙助手
 
