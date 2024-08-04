@@ -109,7 +109,11 @@ sidebar_position: 2
 
 然后回到主界面，点击右上角加号，选择你刚刚下载的tipa文件，点击，然后就会安装，安装完之后差不多是这样的。
 ![](_images/troll-ui.PNG)
+
+~~（你不用管DolphiniOS干什么的，这是用来玩老游戏的模拟器）~~
+
 然后点击PojavLauncher，选择Open with JIT，打开Pojav后就能正常使用了。
 
 ## 方法三：使用AltStore
 
+后面即将补充
