@@ -93,7 +93,13 @@ sidebar_position: 2
 
 :::
 
-从此[链接](https://github.com/PojavLauncherTeam/PojavLauncher_iOS/releases)下载PojavLauncher的ipa安装包
+总之，当你~~终于~~历经千辛万苦安装完TrollStore之后，你的内心可能痛苦，可能舒畅；但不管怎么样，最痛苦的过程结束了，后面的Pojav安装将会异常轻松。
+
+现在，你需要从[此链接](https://github.com/PojavLauncherTeam/PojavLauncher_iOS/actions)下载PojavLauncher的ipa安装包。
+
+下载的时候有**两个注意事项**：
+1.你需要一个github账号，不然你没法在actions里面下载东西。
+2.你使用的是TrollStore方案，那么就下载net.kdt.pojavlauncher-ios-trollstore.tipa，~~别告诉我你用的是TVOS~~。
 
 ## 方法三：使用AltStore
 
