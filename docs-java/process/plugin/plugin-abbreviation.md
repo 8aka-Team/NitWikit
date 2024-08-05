@@ -48,6 +48,8 @@ pex 通常指 PermissionEX
 
 mm 通常指 MythicMobs
 
+meg 通常指 Model Engine
+
 res 通常指 Zrips 团队的 Residence
 
 ess/essx 通常指 Essentials/EssentialsX
