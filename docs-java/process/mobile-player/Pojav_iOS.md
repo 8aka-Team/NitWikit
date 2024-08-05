@@ -50,7 +50,8 @@ sidebar_position: 2
 ~~我手机安装不了巨魔，接下来怎么做等待有缘人~~
 (有缘人：我tm来啦)
 
-:::tips 安装TrollStore
+<details>
+  <summary>各苹果机型对应的TrollStore安装方法</summary>
 
 安装TrollStore的方法因设备而异，这里简单分类了TrollStore的辅助工具。（iOS版本号和iPad OS版本号按照相同版本号计算）
 
@@ -91,7 +92,7 @@ sidebar_position: 2
 
 那么[点此查看](https://ios.cfw.guide/installing-trollstore-trollmisaka)TrollMisaka的安装方法。**（也挺复杂，怕麻烦的，没电脑的，没有苹果官方Type C转Lighting或者C2C的线的，但是又只能用这个方法安装TrollStore的劝退）**
 
-:::
+</details>
 
 总之，当你~~终于~~历经千辛万苦安装完TrollStore之后，你的内心可能痛苦，可能舒畅；但不管怎么样，最痛苦的过程结束了，后面的Pojav安装将会异常轻松。
 ![](_images/troll-icon.jpg)
