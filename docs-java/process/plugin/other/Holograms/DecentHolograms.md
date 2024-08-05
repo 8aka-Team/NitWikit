@@ -16,6 +16,8 @@ sidebar_position: 2
 
 `插件百科` https://mineplugin.org/Tab
 
+`MineBBS` https://www.minebbs.com/resources/decentholograms.9059/
+
 :::
 
 目前主流的全息图插件，简称 dh 。
@@ -27,3 +29,5 @@ sidebar_position: 2
 支持交互，甚至可以用它来做菜单。
 
 详细请看 [wiki](https://wiki.decentholograms.eu/)，比较好上手
+
+内核汉化请看上方 MineBBS 帖子

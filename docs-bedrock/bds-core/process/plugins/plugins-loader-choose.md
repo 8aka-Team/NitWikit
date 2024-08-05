@@ -41,6 +41,18 @@ import TabItem from '@theme/TabItem';
 | 下载 | [Github 下载](https://github.com/EndstoneMC/endstone/releases) |
 | 支持的 MC 版本 | 1.20.71 - 1.21.2（目前保持更新） |
 </TabItem>
+<TabItem value="bdsx" label="BDSX">
+| 插件加载器 | 别名：BDSX |
+| --- | --- |
+| 名称 | [bdsx](https://github.com/bdsx/bdsx) |
+| 作者 | [bdsx](https://github.com/bdsx) |
+| 介绍 | BDSX 是一个支持 node.js 的 Minecraft 基岩版专用服务器（BDS）修改版本。基于官方 BDS 实现，包含了原版 Minecraft 的所有特性，并支持 Hook 函数与网络数据包以添加或修改服务器的功能与表现。 |
+| 推荐与否 | 较为推荐 |
+| 理由 | 国内插件虽然少，但还是有很多的人去使用它，作者也从19年一直维护到现在 |
+| 下载 | [克隆源代码下载](https://github.com/bdsx/bdsx) |
+| 插件下载 | [npm源](https://www.npmjs.com/search?q=%40bdsx%2F)<br />[Github](https://github.com/topics/bdsx-plugins) |
+| 支持的 MC 版本 | 1.12 - 最新（目前保持更新） |
+</TabItem>
 </Tabs>
 
 ## 冷门加载器

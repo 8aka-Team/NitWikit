@@ -82,6 +82,10 @@ Multiverse-Core [4.3.1](https://www.spigotmc.org/resources/multiverse-core.390/u
 
 **此部分来自插件百科**
 
+## 进入世界权限
+
+https://mineplugin.org/Multiverse-Core#Multiverse_%E8%BF%9B%E5%85%A5%E4%B8%96%E7%95%8C%E6%9D%83%E9%99%90
+
 ## Multiverse-Core 插件是什么？
 
 https://mineplugin.org/Multiverse-Core#Multiverse-Core_%E6%8F%92%E4%BB%B6%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F

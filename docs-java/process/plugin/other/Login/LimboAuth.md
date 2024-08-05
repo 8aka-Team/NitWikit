@@ -14,6 +14,8 @@ sidebar_position: 4
 
 `Modrinth` https://modrinth.com/plugin/limboauth
 
+`MineBBS` https://www.minebbs.com/resources/limboauth-velocity-limbo.7867/
+
 :::
 
 如果你使用 *Velocity* 跨服端可以试试这个

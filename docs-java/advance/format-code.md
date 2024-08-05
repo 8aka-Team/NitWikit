@@ -12,6 +12,9 @@ sidebar_position: 8
 
 ![](_images/格式化代码/Minecraft_Formatting.gif)
 
+
+你也可以用 [颜色代码生成器](https://mcg.tuanzi.ink/) 来生成它。
+
 :::note
 
 通常在游戏客户端中，你不能打出 `§` 这个符号。需要使用 `\u00A7` 或者 `\u00a7`

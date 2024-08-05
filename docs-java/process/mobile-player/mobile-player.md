@@ -7,7 +7,7 @@ sidebar_position: 3
 
 ## 一 手机运行Java
 
-### Android
+### Android      
 
 [Pojav_Android](Pojav_Android.md)
 
@@ -19,8 +19,12 @@ sidebar_position: 3
 
 使基岩版客户端进入Java版服务器
 
-#### 基岩版客户端下载
+## 基岩版客户端下载
 
-https://mc.minebbs.com/
+MineBBS：https://mc.minebbs.com
 
-https://res.nullatom.com/Minecraft/
+原子云：https://res.nullatom.com/Minecraft
+
+Minecraft for Windows 版本库：https://www.mcappx.com
+
+我的世界国际版下载：https://mcapks.com

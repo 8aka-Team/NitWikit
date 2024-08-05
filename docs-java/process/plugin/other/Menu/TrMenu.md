@@ -36,6 +36,8 @@ sidebar_position: 4
 
 `vscode插件-trm语法提示` https://marketplace.visualstudio.com/items?itemName=hhhhhy.trmenu-helper
 
+`MineBBS` https://www.minebbs.com/resources/trmenu-bug.9080/
+
 :::
 
 交流群：325014486
@@ -44,21 +46,55 @@ sidebar_position: 4
 
 Invero 俗称 TrMenu v4
 
-**目前**还不推荐使用
+详情请见 [Invero](Invero.md)
 
-文档不全，部分案例付费入群获取，但是目前不对外出售
+## 案例
 
-别人备份的源码 1.0.3版本 https://github.com/inrhor/Invero
+:::warning
 
-作者自己发的 1.0.8版本 也是老板本 https://gitlab.com/Arasple/Invero
+请使用 最新的 **TrMenu社区版** 不保证**旧**版本可用性
 
-~~文档 https://legacy.invero.fining.io/~~
+:::
 
-文档地址改了，我就不放新地址了
+### 妙妙写法
 
-# 案例
+#### 子图标写true
 
-## TrMenu v3
+`condition` 最后的结果为 true 就会显示这个子图标
+
+```yaml
+  'A':
+    display:
+      material: stone
+    icons:
+      - condition: 'true'
+        display:
+          name: '我有没有条件啊！我到底有没有条件啊！'
+```
+
+所以你可以直接写 true 让他显示这个子图标
+
+![](_images/为难.jpg)
+
+#### 子图标写动作
+
+因为 `condition` 会执行里面的kether语句
+
+所以你可以这样子在菜单打开或重新计算子图标的时候跑一遍这些语句
+
+```yaml
+  'A':
+    display:
+      material: stone
+    icons:
+      - condition: 'tell 想不到骚话'
+      - condition: 'tell 想不到骚话'
+      - condition: 'tell 想不到骚话'
+      - condition: 'tell 想不到骚话'
+      - condition: 'tell 想不到骚话'
+```
+
+![](_images/子图标写动作.png)
 
 ### 玩家信息
 
@@ -66,7 +102,7 @@ Invero 俗称 TrMenu v4
 
 **右键玩家执行动作**
 
-https://github.com/Dreeam-qwq/TrMenu/blob/stable/v3/plugin/src/main/resources/settings.yml
+https://hhhhhy.gitbook.io/trmenu-v3/usage/shortcuts
 
 此处为右键玩家打开名为 Profile 的菜单
 
@@ -85,7 +121,7 @@ https://github.com/Dreeam-qwq/TrMenu/blob/stable/v3/plugin/src/main/resources/me
 
 **蹲下+替换副手执行动作**
 
-https://github.com/Dreeam-qwq/TrMenu/blob/stable/v3/plugin/src/main/resources/settings.yml
+https://hhhhhy.gitbook.io/trmenu-v3/usage/shortcuts
 
 ```yaml
   Sneaking-Offhand:
@@ -102,12 +138,120 @@ https://github.com/Dreeam-qwq/TrMenu/blob/stable/v3/plugin/src/main/resources/se
 
 不过这些配置主要是用来学习的，不会有人直接cv过去用吧
 
-## Invero
+### 商店
 
-### 每日签到
+:::tip
 
-[查看配置](https://github.com/postyizhan/NitWikit/blob/main/docs-java/process/plugin/other/Menu/demo/inv-每日签到.yml)
+你需要安装 [CheckItem](../../Front-Plugin/PlaceHolderAPI/CheckItem.md)
 
-### tpa选人菜单
+并 [开启give和remove](../../Front-Plugin/PlaceHolderAPI/CheckItem.md#启用give和remove) 和 [更改-boolean](../../Front-Plugin/PlaceHolderAPI/outline.md#更改-boolean)
 
-[查看配置](https://github.com/postyizhan/NitWikit/blob/main/docs-java/process/plugin/other/Menu/demo/inv-tpa选人菜单.yml)
+:::
+
+#### 以物易物
+
+**知识点：**
+
+- TrMenu 文档熟读并背诵
+- [kether](/docs-java/advance/kether/basic.md)
+- [CheckItem](../../Front-Plugin/PlaceHolderAPI/CheckItem.md)
+
+```yaml
+  '写法1':
+    display:
+      name: '两个钻石换三个绿宝石'
+      material: stone
+    actions:
+      - condition: 'papi %checkitem_mat:diamond,amt:2%'
+        actions:
+          - 'papi %checkitem_remove_mat:diamond,amt:2%'
+          - 'papi %checkitem_give_mat:emerald,amt:3%'
+        deny:
+          - 'tell inline "物品不够，你有{{papi %checkitem_amount_mat:diamond,amt:2%}}个，还差{{math 2 - papi %checkitem_amount_mat:diamond,amt:2%}}个"'
+  '写法2':
+    display:
+      name: '两个钻石换三个绿宝石'
+      material: stone
+    actions:
+      - if papi %checkitem_mat:diamond,amt:2% then {
+          papi %checkitem_remove_mat:diamond,amt:2%
+          papi %checkitem_give_mat:emerald,amt:3%
+        } else tell inline "物品不够，你有{{papi %checkitem_amount_mat:diamond,amt:2%}}个，还差{{math 2 - papi %checkitem_amount_mat:diamond,amt:2%}}个"
+```
+
+#### 购买
+
+```yaml
+  '写法1':
+    display:
+      name: '10块钱买2个钻石'
+      material: stone
+    actions:
+      - condition: 'money 10'
+        actions:
+          - 'take-money: 10'
+          - 'papi %checkitem_give_mat:emerald,amt:3%'
+        deny:
+          - tell inline "钱不够，你有{{papi %vault_eco_balance%}}块，还差{{math 10 - papi %vault_eco_balance%}}块"
+  '写法2':
+    display:
+      name: '10块钱买2个钻石'
+      material: stone
+    actions:
+      - if money 10 then {
+          command inline"money take {{player name}} 10"
+          papi %checkitem_give_mat:emerald,amt:3%
+        } else tell inline "钱不够，你有{{papi %vault_eco_balance%}}块，还差{{math 10 - papi %vault_eco_balance%}}块"
+```
+
+#### 个人限购
+
+**知识点：**
+
+- TrMenu 文档熟读并背诵
+- [kether](/docs-java/advance/kether/basic.md)
+- [CheckItem](../../Front-Plugin/PlaceHolderAPI/CheckItem.md)
+- [妙妙写法](#妙妙写法)
+- [\{condition=\}条件](https://hhhhhy.gitbook.io/trmenu-v3/menu/action/option#tiao-jian)
+
+```yaml
+  'C':
+    display:
+      name: '10块钱买2个钻石（限购20个）'
+      material: stone
+    icons:
+      - condition: meta set KEY to 限购数据1
+      - condition: data set papi %trmenu_meta_KEY% to 20
+    actions:
+      - condition: meta set 单价 to 10
+      - condition: all [ money papi %trmenu_meta_单价% check data get meta get KEY > 0 ]
+        actions:
+          # 扣钱
+          - 'take-money: %trmenu_meta_单价%'
+          # 扣一次限购
+          - data set papi %trmenu_meta_KEY% to join [ math data get meta get KEY - 1 ]
+          - tell join [ "剩余限购次数：" data get meta get KEY " 剩的钱：" papi %vault_eco_balance% ]
+          # 给货
+          - papi %checkitem_give_mat:emerald,amt:3%
+        deny:
+          - tell inline 钱不够，你有{{papi %vault_eco_balance%}}块，还差{{math papi %trmenu_meta_单价% - papi %vault_eco_balance%}}块 {condition=not money meta get 单价}
+          - tell inline 限购次数用完了 {condition=check data get meta get KEY == 0}
+```
+
+#### 全服限购
+
+上面个人限购的 data 改成 globaldata
+
+自己看文档：https://hhhhhy.gitbook.io/trmenu-v3/menu/action/types#shu-ju-cao-zuo
+
+#### 出售
+
+和上面的购买几乎一样的逻辑，自己去学 CheckItem 然后把 give 改成 remove
+
+#### 个人限售
+
+和上面的个人限售几乎一样的逻辑，自己去学
+
+#### 全服限售
+
+上面的会了这个你就会写了

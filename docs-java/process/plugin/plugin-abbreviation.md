@@ -48,6 +48,10 @@ pex 通常指 PermissionEX
 
 mm 通常指 MythicMobs
 
+meg 通常指 Model Engine
+
+vul 通常指 Vulpecula
+
 res 通常指 Zrips 团队的 Residence
 
 ess/essx 通常指 Essentials/EssentialsX
@@ -72,7 +76,7 @@ tm 通常指 TitleManager
 
 tab 通常指 Nemzamy 的 Tab Reborn
 
-qs 一般指 鬼畜畜 现行维护的 QuickShop-Reremake
+qs 一般指 ~~鬼畜畜~~creatorfromhell 现行维护的 QuickShop-Reremake
 
 we 通常指 WorldEdit
 

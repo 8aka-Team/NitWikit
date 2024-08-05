@@ -63,17 +63,17 @@ sidebar_position: 8
 
 ## /pardon-ip [IP地址]
 
-解封封禁过的玩家
+解封封禁过IP地址的玩家
 
 ## /plugins
 
 看到服务器所有安装的插件(玩家也可以执行此指令)
 
-如果你不想玩家看到插件列表，你可以使用Plugin Hide Pro
+如果你不想玩家看到插件列表，你可以使用 `Plugin Hide Pro` 插件
 
 ## /op [玩家名称]
 
-给予指定玩家OP权限
+给予指定玩家OP（操作员）权限
 
 :::danger
 

@@ -16,6 +16,8 @@ sidebar_position: 1
 
 `中文附属插件表` https://slimefun-wiki.guizhanss.cn/Addons
 
+`MineBBS` https://www.minebbs.com/resources/1-16-1-20-slimefun.7287/
+
 :::
 
 一个玩法插件，为你的服务器提供类似 mod 的体验和更低的 TPS（大嘘）。

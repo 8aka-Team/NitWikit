@@ -21,6 +21,10 @@ Java版和基岩版的UUID不一致，请查阅进阶教程
 
 这是 **基岩版** 客户端的问题。具体请 [查看这里](https://minecraft.fandom.com/zh/wiki/%E5%9F%BA%E5%B2%A9%E7%89%88%E8%B7%9D%E7%A6%BB%E7%8E%B0%E8%B1%A1)
 
+### frp搭建内网穿透想显示真实IP怎么办
+
+在frp中[开启proxy protocol](../../../../../advance/Linux/frp#配置proxy-protocol)后，在配置文件里将enable-proxy-protocol设置为true。后续如果不再使用内网穿透，**一定记得把这个配置改回false**
+
 ### 皮肤不显示怎么办
 
 这可能是因为你在安装floodgate后又安装了额外的皮肤组件导致的
@@ -44,11 +48,11 @@ Java版和基岩版的UUID不一致，请查阅进阶教程
 
 * **是否使用了SRV**
 
-Geyser不支持SRV转发
+基岩版客户端不支持 SRV 解析，请让基岩版的玩家正常通过IP和端口连接服务器
 
 * **手贱开启enable-proxy-protocol**
 
-如果你不使用像 TCPShield 的反向代理，请保证你的 enable-proxy-protocol 选项是设置为 false 的
+如果你不使用像 TCPShield、frp 的反向代理，请保证你的 enable-proxy-protocol 选项是设置为 false 的
 
 * **启动时提示 java.net.BindException: Address already in use: bind**
 

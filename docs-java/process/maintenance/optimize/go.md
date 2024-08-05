@@ -55,7 +55,7 @@ chunk-loading-basic:
   player-max-chunk-generate-rate: -1.0
   #为每个玩家生成分块的最大速率，设置为-1 则禁用。
   player-max-chunk-load-rate: 100
-  #任何单个播放器加载块的最大速率，设置为-1 则禁用。
+  #任何单个玩家加载块的最大速率，设置为-1 则禁用。
   player-max-chunk-send-rate: 75
   #服务器发送给单个玩家的最大速率。设置为-1 则禁用。
 ```
@@ -182,7 +182,7 @@ chunk-loading-basic:
   player-max-chunk-generate-rate: -1.0
   #为每个玩家生成分块的最大速率，设置为-1 则禁用。
   player-max-chunk-load-rate: 100
-  #任何单个播放器加载块的最大速率，设置为-1 则禁用。
+  #任何单个玩家加载块的最大速率，设置为-1 则禁用。
   player-max-chunk-send-rate: 75
   #服务器发送给单个玩家的最大速率。设置为-1 则禁用。
 ```

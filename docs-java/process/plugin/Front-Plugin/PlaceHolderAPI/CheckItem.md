@@ -103,7 +103,7 @@ sidebar_position: 4
 %checkitem_remove_nbtstrings:itemsadder..id..data=ia物品ID,amt:数量%
 ```
 
-使用了两个个修饰符
+使用了两个修饰符
 
 - nbtstrings
 - amt
