@@ -50,6 +50,8 @@ mm 通常指 MythicMobs
 
 meg 通常指 Model Engine
 
+vul 通常指 Vulpecula
+
 res 通常指 Zrips 团队的 Residence
 
 ess/essx 通常指 Essentials/EssentialsX
