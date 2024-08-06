@@ -19,7 +19,7 @@ sidebar_position: 1
 
 ### 准备工作-安装 Lip
 
-首先，从 [GitHub](https://github.com/lippkg/lip/releases/latest) 下载lip的最新版本的应用
+首先，从 [GitHub](https://github.com/lippkg/lip/releases/latest) 下载 Lip 的最新版本的应用
 
 然后，解压文件到您想要安装 Lip 的位置。
 
