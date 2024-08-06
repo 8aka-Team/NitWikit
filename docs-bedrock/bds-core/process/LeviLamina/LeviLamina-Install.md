@@ -40,7 +40,7 @@ sidebar_position: 1
 lip install github.com/LiteLDev/LeviLamina
 ```
 
-lip会自动下载 BDS 并配置 LeviLamina 加载器
+Lip 会自动下载 BDS 并配置 LeviLamina 加载器
 
 :::info
 
