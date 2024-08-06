@@ -108,7 +108,7 @@ bedrock_server_mod.exe
    * 将 `PeEditor.exe` ​`PreLoader.dll`​ `bedrock_server.exe` 文件移动到解压后BDS文件的目录
 3. ​**安装 LeviLamina**​：
    * 从步骤 1 中解压文件 `levilamina-windows-x64.zip`
-   * 将文件夹放入其中BDS同一目录中
+   * 将文件夹放入BDS同一目录中
 4. ​**运行 PeEditor**​：
    * 双击 `PeEditor.exe` 并等待配置完成
    * 然后，您可以在目录中找到一个名为 `bedrock_server_mod.exe` 的新文件，原始文件 `bedrock_server.exe` 将重命名为 `bedrock_server.exe.bak`
