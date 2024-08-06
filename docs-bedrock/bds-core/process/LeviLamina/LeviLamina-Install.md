@@ -19,7 +19,7 @@ sidebar_position: 1
 
 ### 准备工作-安装 Lip
 
-首先，从 [Github](https://github.com/lippkg/lip/releases/latest) 下载lip的最新版本的应用
+首先，从 [GitHub](https://github.com/lippkg/lip/releases/latest) 下载lip的最新版本的应用
 
 然后，解压文件到您想要安装 Lip 的位置。
 
@@ -27,7 +27,7 @@ sidebar_position: 1
 
 要检查是否成功安装 Lip ，请在终端中运行 `lip --version`。您应该看到刚刚安装的lip的版本。
 
-如果你使用的是 Windows 系统，你也可以在 Github 中下载 `.exe` 后缀的安装程序来安装。
+如果你使用的是 Windows 系统，你也可以在 GitHub 中下载 `.exe` 后缀的安装程序来安装。
 
 
 ### 安装
