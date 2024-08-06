@@ -25,6 +25,8 @@ sidebar_position: 3
 
 使基岩版客户端进入Java版服务器的代理软件。
 
+[点此阅读](https://yizhan.wiki/NitWikit/Java/category/geyser)关于Geyser的文档。
+
 ## 基岩版客户端下载
 
 一共有以下网站可下载基岩版客户端：
