@@ -9,11 +9,17 @@ sidebar_position: 7
 
 ## 使用现成的内网穿透提供商
 
-[Sakura Frp](https://www.natfrp.com/?page=panel&module=download) - 注册登录后前往 [下载页面](https://www.natfrp.com/tunnel/download) 下载 Frp 启动器。安装过程参考官方 [安装教程](https://doc.natfrp.com/launcher/usage.html) 即可。
+- [Sakura Frp](https://www.natfrp.com/?page=panel&module=download) - 注册登录后前往 [下载页面](https://www.natfrp.com/tunnel/download) 下载 Frp 启动器。安装过程参考官方 [安装教程](https://doc.natfrp.com/launcher/usage.html) 即可。
+- [OpenFrp](https://www.openfrp.net/)
+- [StarryFrp（星空内网穿透）](https://frp.starryfrp.com/)
+- [花生壳](https://hsk.oray.com/)：网络非常稳定，但是非常贵，普通的服主一般用不上
+- [CPolar](https://www.cpolar.com)：不限流量，但带宽低
 
 ## 自建 Frp
 
 首先你得确保你有一台有公网 IP 的机器，最好是**Linux**的。
+
+如果你的朋友愿意把他的服务器作为节点提供给你，你还需要注意配置方法包括了需要在他的服务器上进行的操作，你可能需要他交给你服务器的控制权，或者请求他的帮助。
 
 这里假定你有一台符合条件的 Linux 服务器，并且你已经可以连上你服务器的**SSH**。
 
@@ -24,7 +30,7 @@ import TabItem from '@theme/TabItem';
 
 1. 首先确保服务器所有软件包是最新的：
 
-不同的 linux 发行版更新方法大同小异
+不同的 Linux 发行版更新方法大同小异
 
 <Tabs>
   <TabItem value="debian" label="Debian/Ubuntu Linux" default>
