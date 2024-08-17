@@ -73,7 +73,9 @@ sidebar_position: 2
 - iOS15.6 beta4～iOS15.6.1（A12以上，M1～M2处理器）
 - iOS16 beta1～beta3（A12以上，M1～M2处理器）
 
-那么[点此安装](itms-services://?action=download-manifest&url=https://jailbreaks.app/cdn/plists/TrollHelper.plist)TrollHelperOTA，然后**按顺序**点击Register Persistence Helper和Install TrollStore即可安装。**（期间可能黑屏或重启。）**
+那么复制此链接到你的Safari浏览器地址栏
+'itms-services://?action=download-manifest&url=https://jailbreaks.app/cdn/plists/TrollHelper.plist'
+以此安装TrollHelperOTA，然后**按顺序**点击Register Persistence Helper和Install TrollStore即可安装。**（期间可能黑屏或重启。）**
 
 如果你是：
 - iOS16.7RC（A9～A11处理器）
