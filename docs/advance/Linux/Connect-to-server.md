@@ -91,7 +91,7 @@ hostname 为服务器的域名或者 IP
 
 一个开源的 SSH/Telnet/Serial/Shell/Sftp 客户端工具
 
-<https://github.com/kingToolbox/WindTerm>
+https://github.com/kingToolbox/WindTerm
 
   </TabItem>
   <TabItem value="finelshell" label="FinelShell">
