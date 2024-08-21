@@ -373,11 +373,13 @@ https://nitwikit.yizhan.wiki/
                     <sub><b>磁铁开发部（MDD）</b></sub>
                 </a>
             </td>
+		</tr>
+		<tr>
             <td align="center">
                 <a href="https://github.com/XingLingQAQ">
                     <img src="https://avatars.githubusercontent.com/u/92240364?v=4" width="50;" alt="XingLingQAQ"/>
                     <br />
-                    <sub><b>星凌</b></sub>
+                    <sub><b> 星凌 </b></sub>
                 </a>
             </td>
 		</tr>
