@@ -375,8 +375,7 @@ https://nitwikit.yizhan.wiki/
             </td>
             <td align="center">
                 <a href="https://github.com/XingLingQAQ">
-                    <img src="https://github.com/user-attachments/assets/cd52c2e3-2892-479f-93aa-386e8cad3d34" width="50;" alt="MSCMDD"/>
-" width="50;" alt="XingLingQAQ"/>
+                    <img src="https://avatars.githubusercontent.com/u/92240364?v=4" width="50;" alt="XingLingQAQ"/>
                     <br />
                     <sub><b>星凌</b></sub>
                 </a>
