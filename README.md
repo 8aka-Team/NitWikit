@@ -12,7 +12,7 @@
 
 # 🤔 这是什么
 
-这是一份适用于游戏 [Minecraft](https://www.minecraft.net/zh-hans) [Java 版](https://zh.minecraft.wiki/w/Java%E7%89%88) 的服务器开服教程,在这里,你可以看到由众多用户经验编制而成的各色教程,希望它们可以成为你开服路上的一份趁手资料,也希望你能运营一个不错的服务器——一切皆有可能。动动手指来阅读第一章的内容吧。
+这是一份适用于游戏 [Minecraft](https://www.minecraft.net/zh-hans) [Java 版](https://zh.minecraft.wiki/w/Java%E7%89%88) 及 [Bedrock (基岩) 版](https://zh.minecraft.wiki/w/%E5%9F%BA%E5%B2%A9%E7%89%88) 的服务器开服教程,在这里,你可以看到由众多用户经验编制而成的各色教程,希望它们可以成为你开服路上的一份趁手资料,也希望你能运营一个不错的服务器——一切皆有可能。动动手指来阅读第一章的内容吧。
 
 # 📖 开始阅读
 
@@ -371,6 +371,14 @@ https://nitwikit.yizhan.wiki/
                     <img src="https://avatars.githubusercontent.com/u/128666602?v=4" width="50;" alt="MSCMDD"/>
                     <br />
                     <sub><b>磁铁开发部（MDD）</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/XingLingQAQ">
+                    <img src="https://github.com/user-attachments/assets/cd52c2e3-2892-479f-93aa-386e8cad3d34" width="50;" alt="MSCMDD"/>
+" width="50;" alt="XingLingQAQ"/>
+                    <br />
+                    <sub><b>星凌</b></sub>
                 </a>
             </td>
 		</tr>
