@@ -2,13 +2,13 @@
 title: LeviLamina 安装教程
 sidebar_position: 1
 ---
-
-# LeviLamina 安装教程
+:::info
 
 作者：[星凌QAQ](https://github.com/XingLingQAQ)
-:::
 
-   
+:::
+# LeviLamina 安装教程
+
 
 # 方法一: 使用 Lip 进行一键配置
 
