@@ -23,17 +23,15 @@ sidebar_position: 6
 
 **常见数据包的下载**：
 
-:::
 
 | 名称                                                      | 介绍                                    |
 |-----------------------------------------------------------|-----------------------------------------|
 | [PlanetMinecraft](https://www.planetminecraft.com/data-packs/) | 比较老牌的我的世界资源网站了，东西比较全   |
 | [Modrinth](https://modrinth.com/datapacks)          | 新兴的我的世界资源平台，东西比较全 |
-| [PlanetMinecraft](https://www.9minecraft.net/category/minecraft-data-packs/) | 比较老牌的我的世界资源网站了，界面不太符合中国习惯，不太推荐|
+| [9Minecraft](https://www.9minecraft.net/category/minecraft-data-packs/) | 比较老牌的我的世界资源网站了，界面不太符合中国习惯，不太推荐|
 
 **数据包工具及扩展资源**：
 
-:::
 
 | 名称                                                      | 介绍                                    |
 |-----------------------------------------------------------|-----------------------------------------|
