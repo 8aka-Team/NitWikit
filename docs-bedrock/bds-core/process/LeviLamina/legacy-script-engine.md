@@ -16,7 +16,7 @@ Legacy Script Engine 简称 LSE，是 LeviLamina 上的一系列插件，被用�
 
 ## 插件内容
 
-目前官方提供对 LSE 支持的插件如下：
+目前对 LSE 提供支持的插件如下：
 - **LegacyMoney** ：用于为 LSE 插件提供经济 API 相关功能
 - **LegacyParticleAPI** ：用于为 LSE 插件提供 ParticleAPI 相关功能
 - **LegacyRemoteCall** ： 用于为 LSE 插件提供插件间相互调用功能
