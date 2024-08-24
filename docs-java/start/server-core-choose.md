@@ -144,7 +144,7 @@ Leaves > Leaf > Purpur > Paper
 
 Leaf 相比于 Purpur 多了生电模组兼容，没多什么特性
 
-</details>
+</TabItem>
 
 :::danger
 
