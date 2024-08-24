@@ -71,6 +71,7 @@ bedrock:
   motd2: "Another Geyser server."
   server-name: "Geyser"
   compression-level: 6
+  enable-proxy-protocol: false
   #proxy-protocol-whitelisted-ips：[ "127.0.0.1"，"172.18.0.0/16" ]
 
 ```
