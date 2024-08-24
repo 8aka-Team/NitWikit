@@ -9,6 +9,15 @@ sidebar_position: 1
 :::
 # LeviLamina 安装教程
 
+# 方法零: 使用笨蛋脚本
+
+首先下载[安装脚本](https://github.com/lilingfengdev/NitWiki-Script/releases/download/windows-latest/liteloaderbds-install.exe),下载完后右键**以管理员启动**即可
+
+:::tip
+
+你甚至不需要安装VC运行库,自动脚本会自行安装常用运行库,还会自动配置 Lip 镜像以加速下载
+
+:::
 
 # 方法一: 使用 Lip 进行一键配置
 
@@ -67,9 +76,6 @@ lip config GitHubMirrorURL <url>
 ```
 bedrock_server_mod.exe
 ```
-
-
-
 
 
 # 方法二: 手动安装（不推荐）
