@@ -10,7 +10,7 @@ Invero 俗称 TrMenu v4
 
 文档不全，部分案例付费入群获取，但是目前不对外出售
 
-别人备份的源码 1.0.3版本 https://github.com/inrhor/Invero
+~~别人备份的源码 1.0.3版本 https://github.com/inrhor/Invero~~ 已经删除
 
 作者自己发的 1.0.8版本 也是老板本 https://gitlab.com/Arasple/Invero
 

@@ -4,7 +4,10 @@ sidebar_position: 2
 
 # ViaVersion
 
-ViaVersion是Via三件套的核心，无论你需不需要向上兼容，都需要安装ViaVersion
+ViaVersion 是Via三件套的核心，提供了向上兼容，如果你想要向下兼容，可以再安装 ViaBackwards 和 ViaRewind
+
+- **向上兼容：** 支持新版本客户端进服
+- **向下兼容：** 支持旧版本客户端进服
 
 [下载地址](https://ci.viaversion.com/job/ViaVersion/)
 
