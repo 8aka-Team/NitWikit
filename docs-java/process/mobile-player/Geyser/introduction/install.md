@@ -71,18 +71,17 @@ bedrock:
   motd2: "Another Geyser server."
   server-name: "Geyser"
   compression-level: 6
-  enable-proxy-protocol: false
   #proxy-protocol-whitelisted-ips：[ "127.0.0.1"，"172.18.0.0/16" ]
 
 ```
 ```yaml
 remote:
-  address: auto
-  port: 25565
-  auth-type: online
-  allow-password-authentication: true
-  use-proxy-protocol: false
-  forward-hostname: false
+  address：auto
+  port：25565
+  auth-type：online
+  allow-password-authentication：true
+  use-proxy-protocol：false
+  forward-hostname：false
 ```
 ### Bedrock 项
 **`port`**：其代表你向基岩版玩家所开放的端口，在设置端口时请不要低于 10000
@@ -105,15 +104,15 @@ remote:
 这里挑几个重点
 
 ```yaml
-passthrough-motd: true
-passthrough-player-counts: true
+passthrough-motd：true
+passthrough-player-counts：true
 
 # 请注意：如果启用了冷却时间，某些用户可能会在冷却过程中看到一个黑框，
 # 可以通过进入辅助功能选项卡下的基岩设置并将“文本背景不透明度”设置为 0 来禁用此功能
-show-cooldown: title
+show-cooldown：title
 
-show-coordinates: true
-above-bedrock-nether-building: false
+show-coordinates：true
+above-bedrock-nether-building：false
 ```
 
 **`passthrough-motd`**：把 Java 版本的 MOTD 发送给基岩版
@@ -171,7 +170,7 @@ Floodgate 是一个允许 **Minecraft 基岩版** 帐号加入 **Minecraft Java�
 安装 Floodgate 后，打开配置文件，注意到以下项
 
 ```yaml
-username-prefix: "."
+username-prefix："."
 ```
 
 这是 Floodgate 为了区分基岩版玩家和 Java 版玩家，而在基岩版玩家名称前添加的前缀
@@ -195,7 +194,7 @@ username-prefix: "."
 于是将前缀修改为诸如 `BE_` 这类的合法字符即可解决第二个问题
 
 ```yaml
-username-prefix: "BE_"
+username-prefix："BE_"
 ```
 
 ### 独立版Geyser配置
@@ -207,7 +206,7 @@ username-prefix: "BE_"
 
 ```yaml
 remote:
-auth-type: floodgate
+auth-type：floodgate
 ```
 若 Geyser 已开启，则重启 Geyser 即可完成配置
 
