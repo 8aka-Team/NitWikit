@@ -242,7 +242,7 @@ const config = {
             title: '交流',
             items: [
               {
-                label: 'QQ群',
+                label: 'QQ 群',
                 href: 'https://qm.qq.com/q/dENGavSflK',
               },
             ],
