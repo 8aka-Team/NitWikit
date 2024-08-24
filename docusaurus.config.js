@@ -5,17 +5,7 @@
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
 import { themes as prismThemes } from "prism-react-renderer";
-import {
-  AUTHOR_FALLBACK,
-  AuthorData,
-  commitCache,
-  cacheAuthorData,
-  getFileCommitHashSafe,
-} from "./src/utils/authorUtils";
-import { preview, deploymentID } from "./src/utils/pagesUtils";
-import {env} from "process";
 
-cacheAuthorData(preview || env.NODE_ENV === "development");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -28,30 +18,6 @@ const config = {
 
   markdown: {
     mermaid: true,
-    parseFrontMatter: async (params) => {
-      const result = await params.defaultParseFrontMatter(params);
-      let author = {
-        ...AUTHOR_FALLBACK,
-      };
-      if (process.env.NODE_ENV !== "development") {
-        const data = await getFileCommitHashSafe(params.filePath);
-        if (data) {
-          const username = commitCache.get(data.commit);
-          author = {
-            commit: data.commit,
-            username: username ?? AUTHOR_FALLBACK.username,
-          };
-        }
-      }
-
-      return {
-        ...result,
-        frontMatter: {
-          ...result.frontMatter,
-          author: author,
-        },
-      };
-    }
   },
 
   title: '笨蛋 MC 开服教程',
