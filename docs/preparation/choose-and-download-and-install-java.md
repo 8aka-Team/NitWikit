@@ -46,7 +46,7 @@ MOD 服务端
 | 1.16.5          | Java 8  | Java 11 |
 | 1.18.2          | Java 17 | Java 17 |
 
-#### MohistMC
+#### Mohist
 | Minecraft 版本   | 最低版本 | 推荐版本 |
 |-----------------|---------|---------|
 | 1.7.10          | Java 8  | Java 8  |
@@ -63,7 +63,7 @@ MOD 服务端
 |---------|----------------------------------------------------------------------------------------------------------------------------------------|
 | Java 8  | [Dragonwell 8](https://dragonwell.oss-cn-shanghai.aliyuncs.com/8.19.20/Alibaba_Dragonwell_Extended_8.19.20_x64_windows.zip)            |
 | Java 11 | [Dragonwell 11](https://dragonwell.oss-cn-shanghai.aliyuncs.com/11.0.23.20.9/Alibaba_Dragonwell_Extended_11.0.23.20.9_x64_windows.zip) |
-| Java 17 | [Azul Zulu](https://cdn.azul.com/zulu/bin/zulu22.32.15-ca-jdk22.0.2-win_x64.zip)                                                       |
+| Java 17 | [Azul Zulu](https://www.azul.com/core-post-download/?endpoint=zulu&uuid=e5cf71d2-4ea2-4de7-b9e0-aaea20374fe8)                                                |
 | Java 21 | [GraalVM EE](https://download.oracle.com/graalvm/21/latest/graalvm-jdk-21_windows-x64_bin.zip)                                         |
 
 :::danger
