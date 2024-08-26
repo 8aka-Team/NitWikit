@@ -13,7 +13,7 @@ sidebar_label: 多世界 - Multiverse
 
 `Bukkit` https://dev.bukkit.org/projects/multiverse-core
 
-`modrinth` https://modrinth.com/plugin/multiverse-core
+`Modrinth` https://modrinth.com/plugin/multiverse-core
 
 `插件百科` https://mineplugin.org/Multiverse-Core
 
