@@ -76,7 +76,7 @@ tm 通常指 TitleManager
 
 tab 通常指 Nemzamy 的 Tab Reborn
 
-qs 一般指 ~~鬼畜畜~~creatorfromhell 现行维护的 QuickShop-Reremake
+qs 一般指 ~~鬼畜畜~~creatorfromhell 现行维护的 QuickShop-Hikari
 
 we 通常指 WorldEdit
 
