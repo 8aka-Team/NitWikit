@@ -14,32 +14,32 @@ sidebar_position: 100
 ## 准备工作
 
 - [x] 基础知识 - 服务端结构
-- [x] 基础知识 - 什么是 mod
+- [x] 基础知识 - 什么是 Mod
 - [x] 基础知识 - 如何查看日志并分享报错
 - [x] 基础知识 - 什么是权限
-- [x] java 为什么jar包是个白纸
-- [x] java 怎么做绿色版以及绿色版怎么使用
+- [x] Java 为什么 JAR 包是个白纸
+- [x] Java 怎么做绿色版以及绿色版怎么使用
 - [x] 可能用到的网站 像素云黑
 
 ## 开始开服
 
-- [x] windows server 放行端口
+- [x] Windows Server 放行端口
 - [x] 申请域名
 - [ ] 搭建官网
 - [x] 服务端文件讲解
-- [x] 备份 背包备份InventoryRollbackPlus
+- [x] 备份 背包备份 InventoryRollbackPlus
 - [x] 开服器开服
-- [ ] 维护-二分法插件排除法
-- [x] 维护-插件命名推荐
-- [x] 搭建翼龙面板？mcsm？
-- [x] 资源包托管 gitee github gitlab 直链网盘
+- [ ] 维护 - 二分法插件排除法
+- [x] 维护 - 插件命名推荐
+- [x] 搭建翼龙面板？MCSM？
+- [x] 资源包托管 Gitee GitHub GitLab 直链网盘
 
 ## 建设阶段
 
 - [ ] 新增文案教程，和美术教程折叠在侧边栏同一项下面
 > - 统一文字排版，风格
 > - 统一语言，不要让玩家看到还没汉化的信息
-> - 统一写法，如：同时有ia，mm，某物品库，应该选择其中一个来写物品
+> - 统一写法，如：同时有 ia，mm，某物品库，应该选择其中一个来写物品
 
 ## 维护
 
@@ -48,53 +48,53 @@ sidebar_position: 100
 
 ## 插件
 
-- [x] Skript简单教程
-- [ ] papi list 扩展：插件自己挂钩 自己下载扩展 不需要插件的扩展
+- [x] Skript 简单教程
+- [ ] Papi List 扩展：插件自己挂钩 自己下载扩展 不需要插件的扩展
 - [x] 全息图（浮空字）插件
 - [x] AskyBlock BentoBox（BskyBlock）
-- [ ] 替换ess方案 huskhomes + XConomy
-- [x] 资源包插件 ia oraxen介绍
+- [ ] 替换 ess 方案 Huskhomes + XConomy
+- [x] 资源包插件 ia oraxen 介绍
 - [ ] 龙核/萌芽 介绍
 - [ ] mv 多世界 禁用 地狱/末地门 不生成默认地狱和末地
 - [ ] p2 地皮案例 做建筑服
 - [x] 皮肤插件 SkinsRestorer
 - [x] 插件管理 如 PlugManX
-- [x] res刷钱漏洞提醒
+- [x] res 刷钱漏洞提醒
 - [x] 怎么重载插件
 - [ ] 大厅插件
 
 ## 反作弊
 
 - [x] 排版
-- [x] 提示不适用混合端和geyser
-- [x] 反作弊和via兼容性
-- [x] RNG相关
+- [x] 提示不适用混合端和 Geyser
+- [x] 反作弊和 Via 兼容性
+- [x] RNG 相关
 
 ## 跨服端
 
 - [ ] 教程 怎么做登录服
 - [x] 反压测 反假人
-- [x] 讲解via skin等装在跨服端有什么缺点
-- [x] bc的语义扩大
+- [x] 讲解 Via Skin 等装在跨服端有什么缺点
+- [x] bc 的语义扩大
 
 ## 手机玩家支持
 
-- [x] ❌手机直装模板
+- [x] ❌ 手机直装模板
 - [x] 基岩版客户端下载
 
 ## 扩展阅读
 
-- [ ] 命名空间 命令 mod物品 材质包物品
+- [ ] 命名空间 命令 Mod 物品 材质包物品
 - [x] MySQL 小皮 宝塔
-- [x] plugin.yml讲解
-- [X] §和&和RGB颜色 格式化代码
+- [x] plugin.yml 讲解
+- [X] `§` 和 `&` 和 RGB 颜色 格式化代码
 - [x] 驿站的机器人的命令
-- [ ] docker开服?
-- [ ] git管理服务端?
+- [ ] Docker 开服？
+- [ ] Git 管理服务端？
 - [x] 二分法和控制变量法排查问题
-- [x] Q机器人教程?
-- [ ] 搭建 Frp
-- [x] Minimessage简单讲解
+- [x] Q 机器人教程？
+- [ ] 搭建 FRP
+- [x] Minimessage 简单讲解
 - [x] 怎么支持中文名的玩家
 - [x] 编码问题以及如何解决
 
@@ -105,7 +105,7 @@ sidebar_position: 100
 ### 玩家管理
 - [ ] 服务器群
 - [ ] 白名单制度
-- [ ] 我的世界wiki
+- [ ] 我的世界 Wiki
 - [ ] Chunkbase
 - [ ] 服务器规则
 - [ ] 公告
