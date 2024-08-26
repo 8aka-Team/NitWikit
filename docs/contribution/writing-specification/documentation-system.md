@@ -50,7 +50,7 @@ sidebar_position: 7
 正确：troubleshooting.md
 ```
 
-为了醒目，某些说明文件的文件名，可以使用大写字母，比如`README`、`LICENSE`。
+为了醒目，某些说明文件的文件名，可以使用大写字母，比如 `README`、`LICENSE`。
 
 文件名包含多个单词时，单词之间建议使用半角的连词线（`-`）分隔。
 

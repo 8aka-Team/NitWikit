@@ -55,7 +55,7 @@ sidebar_position: 6
 只要活着，我们每一个人，都会面临苦难。   
 ```
 
-可以在vscode安装 [Trailing Spaces](https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces&ssr=false#review-details) 插件来高亮空格
+可以在 vscode 安装 [Trailing Spaces](https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces&ssr=false#review-details) 插件来高亮空格
 
 ## 空行
 

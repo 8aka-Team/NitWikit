@@ -8,21 +8,21 @@ import TabItem from '@theme/TabItem';
 
 # 如何保持服务器在 Linux 服务器中后台运行
 
-由于Linux的会话机制，在ssh断开连接之后手动启动的服务端会停止运行，而我们需要服务端保持后台运行。
+由于 Linux 的会话机制，在 ssh 断开连接之后手动启动的服务端会停止运行，而我们需要服务端保持后台运行。
 
-## 方法一 screen(推荐)
+## 方法一 screen（推荐）
 
-使用screen创建一个虚拟的窗口运行服务端，首先安装screen，在终端输入：
+使用 screen 创建一个虚拟的窗口运行服务端，首先安装 screen，在终端输入：
 
-确保你的系统上有`screen`包，没有的话安装它们：
+确保你的系统上有 `screen` 包，没有的话安装它们：
 
 <Tabs>
-    <TabItem value="debian" label="Debian/Ubuntu Linux" default>
+    <TabItem value="debian" label="Debian / Ubuntu Linux" default>
         ```bash
         apt-get install screen
         ```
     </TabItem>
-    <TabItem value="redhat" label="CentOS/Redhat Linux">
+    <TabItem value="redhat" label="CentOS / Redhat Linux">
         ```bash
         yum install screen
         ```
@@ -45,7 +45,7 @@ screen -S xxx -X quit # 删除 xxx 窗口（在 screen 中输入 exit 也可以�
 ```
 
 :::info
-重新连接到screen时可以使用 `screen -Dr xxx`指令，意为踢出正在使用 xxx 窗口的用户并回到 xxx 窗口
+重新连接到 screen 时可以使用 `screen -Dr xxx` 指令，意为踢出正在使用 xxx 窗口的用户并回到 xxx 窗口
 :::
 
 在 screen 中启动服务端，在 screen 中时，按快捷键 `Ctrl + A + D` 即可返回原窗口。
@@ -94,7 +94,7 @@ systemctl --user start mc.service
 systemctl --user enable mc.service
 ```
 
-_可以通过`systemctl --user status mc.service`查看服务运行状态。_
+_可以通过 `systemctl --user status mc.service` 查看服务运行状态。_
 
 [详细设置说明](https://blog.csdn.net/WHQ78164/article/details/132956725)
 
@@ -104,32 +104,32 @@ _可以通过`systemctl --user status mc.service`查看服务运行状态。_
 
 缺点：无法进入控制台打指令
 
-## 方法四 nohup和&
+## 方法四 nohup 和 &
 
-&：在启动时后面加一个&
+&：在启动时后面加一个 &
 
-例如：./start.sh &
+例如：`./start.sh &`
 
 nohup：在启动时前面加上这个
 
-例如：nohup ./start.sh > run.log 2>&1 &
+例如：`nohup ./start.sh > run.log 2>&1 &`
 
 详细参数：
 
 :::tip
 
-Start.sh: 你需要后台运行的程序
+`Start.sh`: 你需要后台运行的程序
 
->: 日志文件追加到文件中
+`>`：日志文件追加到文件中
 
-run.log: 运行的日志，或你的文件的输出内容
+`run.log`：运行的日志，或你的文件的输出内容
 
-& 是一个描述符，如果1或2前不加&，会被当成一个普通文件。
+& 是一个描述符，如果 1 或 2 前不加 &，会被当成一个普通文件。
 
-1>&2 意思是把标准输出重定向到标准错误.
+`1>&2`：把标准输出重定向到标准错误.
 
-2>&1 意思是把标准错误输出重定向到标准输出。
+`2>&1`：把标准错误输出重定向到标准输出。
 
-&>filename 意思是把标准输出和标准错误输出都重定向到文件filename中
+`&>filename`：把标准输出和标准错误输出都重定向到文件 filename 中
 
 :::
