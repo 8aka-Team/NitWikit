@@ -67,6 +67,8 @@ LightingLuminol 是 Luminol 的分支，旨在修复对 BukkitAPI 的破坏，�
 
 Luminol 另一个好处就是可以开启生电配置
 
+打开 Luminol 的配置文件
+
 - fixes.allow_void_trading 虚空交易
 - fixes.allow_unsafe_teleportation 刷沙
 - fixes.use_vanilla_random_source RNG操作

@@ -10,7 +10,7 @@ sidebar_position: 3
 
 `GitHub` https://github.com/frankheijden/serverutils
 
-`modrinth` https://modrinth.com/plugin/serverutils
+`Modrinth` https://modrinth.com/plugin/serverutils
 
 :::
 
