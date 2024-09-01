@@ -7,13 +7,13 @@ sidebar_position: 1
 
 很好,相信你已经在[可能用到的网站](/docs-java/preparation/websites.md)看到了很多链接,面对成千上万的插件我们应该如何进行选择呢？
 
-我们在此以 spigot.org 为例(假设你已经注册成功),讲解如何选择插件。
+我们在此以 spigotmc.org 为例(假设你已经注册成功),讲解如何选择插件。
 
-1. (_可选,推荐_)安装一个 spigot 专用的[搜索引擎](https://fof1092.de/Plugins/SSE/Redirect/),作为浏览器插件安装即可。
+1. (_可选,推荐_)安装一个 SpigotMC 专用的[搜索引擎](https://fof1092.de/Plugins/SSE/Redirect/),作为浏览器插件安装即可。
 
-   使用 spigot search engine(spigot 搜索引擎)后, 你能得到比 spigot 自带的搜索相关性强得多的搜索结果。
+   使用 SpigotSearchEngine(SpigotMC 搜索引擎)后, 你能得到比 SpigotMC 自带的搜索相关性强得多的搜索结果。
 
-2. (_可选_)如果你觉得大量的英语很头大,请打开你的浏览器自带的翻译器,如 edge/chrome。
+2. (_可选_)如果你觉得大量的英语很头大,请打开你的浏览器自带的翻译器,如 Edge/Chrome。
 
 ![](_images/概览/浏览器翻译.png)
 

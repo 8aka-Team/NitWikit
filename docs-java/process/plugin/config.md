@@ -22,16 +22,16 @@ sidebar_position: 2
 <details>
     <summary>插件自己动♂</summary>
 
-像 Luckperms、 EssentialX 等,只要你的服务器和客户端的语言为简体中文,它们会自动设置为中文。
+像 LuckPerms、 EssentialX 等,只要你的服务器和客户端的语言为简体中文,它们会自动设置为中文。
 
 </details>
 
 <details>
     <summary>配置文件改语言</summary>
 
-像 HoloMobHealth、 Gsit 等,你可以在插件配置文件中(一般在 config.yml 中)找到 Language , lang 等字眼。
+像 HoloMobHealth、 GSit 等,你可以在插件配置文件中(一般在 config.yml 中)找到 Language , lang 等字眼。
 
-然后把语言项改成 zhcn、 chinese 等,具体应该写什么这地方。插件配置的注释可能提到,没提到那得靠你自己寻找了。
+然后把语言项改成 zh_CN、 Chinese 等,具体应该写什么这地方。插件配置的注释可能提到,没提到那得靠你自己寻找了。
 
 **有时**可以用压缩软件打开插件 jar 文件找找：
 

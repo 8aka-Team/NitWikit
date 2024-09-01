@@ -235,7 +235,7 @@ GitHub 汉化插件：https://github.com/maboloshi/github-chinese
     </td>
   </tr>
 
-插件搜索引擎比 spigot 强了好几倍。
+插件搜索引擎比 SpigotMC 强了好几倍。
 
 因为是新兴资源站,某些资源并未在此发布,但是足够你用了。
 
@@ -243,9 +243,9 @@ GitHub 汉化插件：https://github.com/maboloshi/github-chinese
 
 </details>
 
-# PaperMC
+# Hangar
 
-Paper 的现代化的插件平台,目前正在 Beta 阶段,插件相对较新较少,但是都经过 Paper 官方验证,并且可以找到支持 Folia 和 Velocity 的插件。
+PaperMC 的现代化的插件平台,目前正在 Beta 阶段,插件相对较新较少,但是都经过 PaperMC 官方验证,并且可以找到支持 Folia 和 Velocity 的插件。
 
 <details>
   <summary>点击展开</summary>
@@ -257,12 +257,12 @@ Paper 的现代化的插件平台,目前正在 Beta 阶段,插件相对较新较
           src="https://docs.papermc.io/assets/images/papermc-logomark-512-f125384f3367cd4d9291ca983fcb7334.png"
           width="100px;"
           alt=""
-        /><br /><sub><b>PaperMC</b></sub>
+        /><br /><sub><b>Hangar</b></sub>
       </a>
     </td>
   </tr>
 
-插件搜索引擎比 spigot 强了好几倍。
+插件搜索引擎比 SpigotMC 强了好几倍。
 
 地址：https://hangar.papermc.io/
 
@@ -307,6 +307,6 @@ MOTD 是玩家进入服务器之前最先看到的东西,决定了玩家对一�
 
 例如：
 
-paper核心的使用情况：https://bstats.org/plugin/server-implementation/Paper/580
+Paper核心的使用情况：https://bstats.org/plugin/server-implementation/Paper/580
 
 PlaceHolderAPI插件使用情况：https://bstats.org/plugin/bukkit/PlaceholderAPI/438
