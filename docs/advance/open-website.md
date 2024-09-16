@@ -17,13 +17,13 @@ sidebar_position: 8
 
 进入github.com，点击sign up
 
-![屏幕截图 2024-08-11 163001.png](https://imgos.cn/2024/08/11/66b8765b6bcd8.png)
+![屏幕截图 2024-09-16 082129.png](https://image.dooo.ng/c/2024/09/16/66e77a1f926ed.webp)
 
 进入后按照提示完成注册(看不懂自己用翻译)
 
 进入主页后点击左上的new(绿色的)
 
-![屏幕截图 2024-08-11 163405.png](https://imgos.cn/2024/08/11/66b876de014f8.png)
+![屏幕截图 2024-09-16 082239.png](https://image.dooo.ng/c/2024/09/16/66e77a62129d2.webp)
 
 会跳转到一个界面
 
@@ -32,13 +32,13 @@ Repository name填 你的用户名.github.io
 如果不会git的话就勾选Add a README
 
 然后点Create repository
-![微信图片_20240811163744.png](https://imgos.cn/2024/08/11/66b877b934816.png)
+![微信图片_20240916082548.png](https://image.dooo.ng/c/2024/09/16/66e77b19a55fd.webp)
 
 会直接到创建的项目主页
 
 点Add file 会出来两个选项点Upload files
 
-![屏幕截图 2024-08-11 163900.png](https://imgos.cn/2024/08/11/66b8780401ac8.png)
+![微信图片_20240916082915.png](https://image.dooo.ng/c/2024/09/16/66e77be956da5.webp)
 
 会来到上传界面，上传你的网站源码(首页的名字要改成index)
 
@@ -46,13 +46,14 @@ Repository name填 你的用户名.github.io
 
 上传完后点Commit changes
 
-![微信图片_20240811164435.png](https://imgos.cn/2024/08/11/66b879592f5bb.png)
+![微信图片_20240916083119.png](https://image.dooo.ng/c/2024/09/16/66e77c63cfbc1.webp)
 
 然后你访问 你的用户名.github.io就可以访问了
 
 如果你做到这一步至此你的网站已经是搭建完成了。但是由于某些特别的原因，大陆访问 Github Pages 服务比较困难。为了保证不懂技术的普通玩家们顺利访你的服务器官网，可以选择以下方式
 
 ### 2\.cloudflare saas回源
+注意!如果想要域名访问要先在github项目的settings-pages-Custom domain 添加域名
 
 先将你的回源域名绑定到cloudflare
 
@@ -62,22 +63,22 @@ Repository name填 你的用户名.github.io
 
 你的用户名.github.io 选择开启小黄云 点保存
 
-![微信图片_20240811165109.png](https://imgos.cn/2024/08/11/66b87ad8100c1.png)
+![微信图片_20240916091413.png](https://image.dooo.ng/c/2024/09/16/66e787097296c.webp)
 
 然后来到ssl/tls-自定义主机名
 
 然后选择开通,如果它提示你要绑卡的话,如果你没有卡,你可以上闲鱼买一个15块的代绑
 
 开通完成后,先在回退源那输入你刚刚创建的DNS记录origin.你的回源域名
-![微信图片_20240811165404.png](https://imgos.cn/2024/08/11/66b87b8629e25.png)
+![微信图片_20240916091834.png](https://image.dooo.ng/c/2024/09/16/66e78777d3cb1.webp)
 
 等待到那里显示生效后 点击添加自定义主机名
-![屏幕截图 2024-08-11 165519.png](https://imgos.cn/2024/08/11/66b87bd9426cf.png)
+![微信图片_20240916092036.png](https://image.dooo.ng/c/2024/09/16/66e787f2550a8.webp)
 
 自定义主机名填你的用来开网站的域名
 
 填完后点击添加
-![微信图片_20240811165712.png](https://imgos.cn/2024/08/11/66b87c41ed2bb.png)
+![微信图片_20240916092238.png](https://image.dooo.ng/c/2024/09/16/66e7886977c18.webp)
 
 然后按照提示完成txt授权
 
@@ -85,7 +86,7 @@ Repository name填 你的用户名.github.io
 
 添加一个类型为CNAME 名称为cdn 内容为
 cf-cname.xingpingcn.top 不需要开启小黄云
-![微信图片_20240811170024.png](https://imgos.cn/2024/08/11/66b87d02bf0fb.png)
+![微信图片_20240916092435.png](https://image.dooo.ng/c/2024/09/16/66e788e814078.webp)
 
 
 然后来到你的主域名 添加DNS记录
@@ -149,8 +150,6 @@ cf-cname.xingpingcn.top 不需要开启小黄云
 
 在控制台输入apt install nginx
 
-![屏幕截图 2024-08-11 170304.png](https://imgos.cn/2024/08/11/66b87db46ee00.png
-
 然后找到var-www-html将网站源码上传上去
 
 随后在 nginx 安装目录中执行 `./nginx` 即可运行服务。
@@ -161,29 +160,19 @@ cf-cname.xingpingcn.top 不需要开启小黄云
 
 在浏览器中输入 https://nginx.org/en/
 
-![屏幕截图 2024-08-11 170434.png](https://imgos.cn/2024/08/11/66b87dffb19c8.png)
-
 然后点击右边的download
-
-![屏幕截图 2024-08-11 170519.png](https://imgos.cn/2024/08/11/66b87e2c21176.png)
 
 进入后点击你电脑适合的版本
 
 选择下载要下载带有windows这个词的
 
-![屏幕截图 2024-08-11 170643.png](https://imgos.cn/2024/08/11/66b87e80b7120.png)
-
 下载完之后解压文件
 
 解压后进入文件夹，找到名字为html的文件夹
 
-![屏幕截图 2024-08-11 170738.png](https://imgos.cn/2024/08/11/66b87ec105cb1.png)
-
 将你的源码上传上去。记住先把原来里面的文件给删掉再放
 
 然后双击启动nginx.exe
-
-![屏幕截图 2024-08-11 170845.png](https://imgos.cn/2024/08/11/66b87efdb500b.png)
 
 为了保证网站时刻开启，建议为 nginx 设置开机自启。
 
