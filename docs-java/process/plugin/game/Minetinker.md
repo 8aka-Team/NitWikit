@@ -3,7 +3,7 @@ title: Minetinker
 sidebar_position: 2
 ---
 
-# Nova
+# Minetinker
 
 :::info
 
