@@ -12,6 +12,7 @@ sidebar_position: 2
 `Github(官方)` https://github.com/Flo56958/MineTinker
 
 `MineBBS` https://www.minebbs.com/resources/1-17-minetinker-60-_.9318/
+
 :::
 
 一个受匠魂模组启发的功能性插件，旨在取代原版的附魔系统以达成更好的效果。
