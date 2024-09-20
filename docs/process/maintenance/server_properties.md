@@ -4,15 +4,21 @@ sidebar_position: 8
 ---
 
 # 什么是server.properties文件?
+
 server.properties 文件是 Minecraft Java 版的服务器配置文件。
+
 无论你使用的是 Bukkit、Spigot 或其他类似的服务端架构，这个文件都用于定义服务器的各种配置选项。
+
 它通常位于服务器的根目录下，并包含多种设置，影响服务器的运行方式。
 
 #### 以下是该文件中每个可配置选项(大部分)的详解
+
 #### 请你根据自身服务器的情况对其进行配置
 
 :::tip
+
 在常规情况下，**true**代表**开启**，**false**代表**关闭**
+
 :::
 
 ### 1. **`allow-flight`**
