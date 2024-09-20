@@ -25,7 +25,7 @@ sidebar_position: 100
 
 - [x] windows server 放行端口
 - [x] 申请域名
-- [ ] 搭建官网
+- [x] 搭建官网
 - [x] 服务端文件讲解
 - [x] 备份 背包备份InventoryRollbackPlus
 - [x] 开服器开服
