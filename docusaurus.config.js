@@ -224,6 +224,10 @@ const config = {
                 label: 'CSKB 日冕知识库',
                 href: 'https://kb.corona.studio',
               },
+              {
+                label: 'McRes 灵依资源站',
+                href: 'https://mcres.cn/',
+              },
             ],
           },
         ],
