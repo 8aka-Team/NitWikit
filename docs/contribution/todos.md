@@ -25,7 +25,7 @@ sidebar_position: 100
 
 - [x] windows server 放行端口
 - [x] 申请域名
-- [x] 搭建官网
+- [ ] 搭建官网
 - [x] 服务端文件讲解
 - [x] 备份 背包备份InventoryRollbackPlus
 - [x] 开服器开服
@@ -93,7 +93,7 @@ sidebar_position: 100
 - [ ] git管理服务端?
 - [x] 二分法和控制变量法排查问题
 - [x] Q机器人教程?
-- [x] 搭建 Frp
+- [ ] 搭建 Frp
 - [x] Minimessage简单讲解
 - [x] 怎么支持中文名的玩家
 - [x] 编码问题以及如何解决
