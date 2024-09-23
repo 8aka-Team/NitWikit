@@ -94,18 +94,6 @@ import TabItem from '@theme/TabItem';
 | 下载 | [Github 下载](https://github.com/EndstoneMC/endstone/releases) |
 | 支持的 MC 版本 | 1.20.71 - 1.21.2(已存档)[^Archived] |
 </TabItem>
-<TabItem value="bdsx" label="BDSX">
-| 插件加载器 | 别名：BDSX |
-| --- | --- |
-| 名称 | [bdsx](https://github.com/bdsx/bdsx) |
-| 作者 | [bdsx](https://github.com/bdsx) |
-| 介绍 | BDSX 是一个支持 node.js 的 Minecraft 基岩版专用服务器(BDS)修改版本。基于官方 BDS 实现,包含了原版 Minecraft 的所有特性,并支持 Hook 函数与网络数据包以添加或修改服务器的功能与表现。 |
-| 推荐与否 | 不推荐 |
-| 理由 | 官方决定在将来仅提供给 LiteDev 开发团队 PDB 文件,LiteDev 仅被授权向社区分发将 PDB 封装后产生的 "Magic Blob" 文件,而 BDSX 大概率在后续不会跟进对利用 "Magic Blob" 来 Hook 函数的支持。 |
-| 下载 | [克隆源代码下载](https://github.com/bdsx/bdsx) |
-| 插件下载 | [npm源](https://www.npmjs.com/search?q=%40bdsx%2F)<br />[Github](https://github.com/topics/bdsx-plugins) |
-| 支持的 MC 版本 | 1.12 - 最新(目前保持更新) |
-</TabItem>
 </Tabs>
 
 ## 相关历史
