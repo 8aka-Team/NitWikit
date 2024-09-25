@@ -4,7 +4,7 @@ sidebar_position: 1
 ---
 :::info
 
-作者：[雪风先生](https://github.com/Virgil692)
+作者：[雪风先生](https://github.com/virgil698)
 
 :::
 
