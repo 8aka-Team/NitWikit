@@ -162,12 +162,12 @@ https://hhhhhy.gitbook.io/trmenu-v3/usage/shortcuts
       name: '两个钻石换三个绿宝石'
       material: stone
     actions:
-      - condition: 'papi %checkitem_mat:diamond，amt:2%'
+      - condition: 'papi %checkitem_mat:diamond,amt:2%'
         actions:
-          - 'papi %checkitem_remove_mat:diamond，amt:2%'
-          - 'papi %checkitem_give_mat:emerald，amt:3%'
+          - 'papi %checkitem_remove_mat:diamond,amt:2%'
+          - 'papi %checkitem_give_mat:emerald,amt:3%'
         deny:
-          - 'tell inline "物品不够，你有{{papi %checkitem_amount_mat:diamond，amt:2%}}个，还差{{math 2 - papi %checkitem_amount_mat:diamond，amt:2%}}个"'
+          - 'tell inline "物品不够，你有{{papi %checkitem_amount_mat:diamond,amt:2%}}个，还差{{math 2 - papi %checkitem_amount_mat:diamond,amt:2%}}个"'
   '写法2':
     display:
       name: '两个钻石换三个绿宝石'
@@ -176,7 +176,7 @@ https://hhhhhy.gitbook.io/trmenu-v3/usage/shortcuts
       - if papi %checkitem_mat:diamond，amt:2% then {
           papi %checkitem_remove_mat:diamond，amt:2%
           papi %checkitem_give_mat:emerald，amt:3%
-        } else tell inline "物品不够，你有{{papi %checkitem_amount_mat:diamond，amt:2%}}个，还差{{math 2 - papi %checkitem_amount_mat:diamond，amt:2%}}个"
+        } else tell inline "物品不够，你有{{papi %checkitem_amount_mat:diamond,amt:2%}}个，还差{{math 2 - papi %checkitem_amount_mat:diamond,amt:2%}}个"
 ```
 
 #### 购买
@@ -190,7 +190,7 @@ https://hhhhhy.gitbook.io/trmenu-v3/usage/shortcuts
       - condition: 'money 10'
         actions:
           - 'take-money: 10'
-          - 'papi %checkitem_give_mat:emerald，amt:3%'
+          - 'papi %checkitem_give_mat:emerald,amt:3%'
         deny:
           - tell inline "钱不够，你有{{papi %vault_eco_balance%}}块，还差{{math 10 - papi %vault_eco_balance%}}块"
   '写法2':
@@ -200,7 +200,7 @@ https://hhhhhy.gitbook.io/trmenu-v3/usage/shortcuts
     actions:
       - if money 10 then {
           command inline"money take {{player name}} 10"
-          papi %checkitem_give_mat:emerald，amt:3%
+          papi %checkitem_give_mat:emerald,amt:3%
         } else tell inline "钱不够，你有{{papi %vault_eco_balance%}}块，还差{{math 10 - papi %vault_eco_balance%}}块"
 ```
 
@@ -232,7 +232,7 @@ https://hhhhhy.gitbook.io/trmenu-v3/usage/shortcuts
           - data set papi %trmenu_meta_KEY% to join [ math data get meta get KEY - 1 ]
           - tell join [ "剩余限购次数：" data get meta get KEY " 剩的钱：" papi %vault_eco_balance% ]
           # 给货
-          - papi %checkitem_give_mat:emerald，amt:3%
+          - papi %checkitem_give_mat:emerald,amt:3%
         deny:
           - tell inline 钱不够，你有{{papi %vault_eco_balance%}}块，还差{{math papi %trmenu_meta_单价% - papi %vault_eco_balance%}}块 {condition=not money meta get 单价}
           - tell inline 限购次数用完了 {condition=check data get meta get KEY == 0}
