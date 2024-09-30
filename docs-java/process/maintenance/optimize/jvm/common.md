@@ -19,7 +19,7 @@ java -Xlog:gc+init -XX:+UseLargePages -Xmx1g -version
 如果出现了以下字样，那么说明不完全兼容：
 
 ```shell
-UseLargePages disabled， no large pages configured and available on the system.
+UseLargePages disabled, no large pages configured and available on the system.
 ```
 
 那么就说明当前系统并不支持大页，不过不要急，可以试一下这一行命令：
