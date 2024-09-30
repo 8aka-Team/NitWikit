@@ -94,13 +94,13 @@ java2bedrock.sh(俗称转换器)是一个自动资源包转换工具，可以将
 
 ```
 {
-  "format_version": "1"，
+  "format_version": "1",
   "items": {
     //这里填物品的ID
     "minecraft:paper": [
       {
-        "name": "ITEM_LSXZ"， //物品的名字可以随便填
-        "allow_offhand": true， //是否允许将物品放在副手
+        "name": "ITEM_LSXZ", //物品的名字可以随便填
+        "allow_offhand": true, //是否允许将物品放在副手
         "custom_model_data": 10534 //这里填CMD值
       }
     ]
@@ -130,8 +130,8 @@ json文件不允许有注释，如果你要复制过去记得删除注释
 
 ```
 {
-  "resource_pack_name": "这里填资源包名字"，
-  "texture_name": "atlas.items"，
+  "resource_pack_name": "这里填资源包名字",
+  "texture_name": "atlas.items",
   "texture_data": {
         //填你在 test_item.json 填写的物品名称
 		"ITEM_LSXZ":
