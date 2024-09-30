@@ -40,6 +40,7 @@ MOD 服务端
 ### 混合服务端(CatServer 等)
 
 #### CatServer
+
 | Minecraft 版本   | 最低版本 | 推荐版本 |
 |-----------------|---------|---------|
 | 1.12.2          | Java 8  | Java 8  |
@@ -47,6 +48,7 @@ MOD 服务端
 | 1.18.2          | Java 17 | Java 17 |
 
 #### Mohist
+
 | Minecraft 版本   | 最低版本 | 推荐版本 |
 |-----------------|---------|---------|
 | 1.7.10          | Java 8  | Java 8  |
@@ -54,13 +56,13 @@ MOD 服务端
 | 1.18.2 - 1.20.2 | Java 17 | Java 17 |
 
 #### SpongeForge
+
 | Minecraft 版本   | 最低版本 | 推荐版本 |
 |-----------------|---------|---------|
 | 1.8 - 1.12.2    | Java 8  | Java 8  |
 | 1.16.5(吐槽:就你特殊) | Java 17 | Java 17 |
 | 1.19.4          | Java 17 | Java 17 |
 | 1.20.6， 1.21.1  | Java 21 | Java 21 |
-
 
 ## 直接下载
 
@@ -107,7 +109,7 @@ MOD 服务端
 
 你可以在下方链接直接下载 Java 8：
 
-https://www.java.com/zh-CN/download/
+<https://www.java.com/zh-CN/download/>
 </details>
 
 如果你想进行 JVM 优化，请看 [JVM 优化](https://yizhan.wiki/NitWikit/Java/optimize/jvm)
@@ -139,11 +141,12 @@ java -version
 <details>
 <summary>食用方式：</summary>
 
-1. 打开此链接下载 AJI: https://github.com/Lafcadia/AJI/releases/download/v0.0.2/main.exe
+1. 打开此链接下载 AJI: <https://github.com/Lafcadia/AJI/releases/download/v0.0.2/main.exe>
 2. 下好了，右键选择以管理员权限打开(如果不以管理员权限打开就无法绑定 Java 环境变量，虽然不给管理员权限程序也能正常运行，并安装 Java，但可能会在后续阶段出现问题)
 3. ![示意图](https://github.com/user-attachments/assets/28035c47-d34b-4b38-b895-29f38366bef9)
 4. 选择合适的版本的 Java，点击 `Install Java`，下载。
 5. 不要关闭窗口，直到下方的提示栏从 `Installing...` 变为 `Complete.`
+
 </details>
 
 ## FAQ

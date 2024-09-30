@@ -51,6 +51,7 @@ Repository name填 你的用户名.github.io
 如果你做到这一步至此你的网站已经是搭建完成了。但是由于某些特别的原因，大陆访问 Github Pages 服务比较困难。为了保证不懂技术的普通玩家们顺利访你的服务器官网，可以选择以下方式
 
 ### 2\.cloudflare saas回源
+
 :::warning
 
 注意!如果想要域名访问要先在github项目的settings-pages-Custom domain 添加域名
@@ -89,7 +90,6 @@ Repository name填 你的用户名.github.io
 cf-cname.xingpingcn.top 不需要开启小黄云
 ![微信图片_20240916092435.png](_images/open-web-photo/close-yellow-cloud.png)
 
-
 然后来到你的主域名 添加DNS记录
 
 添加一个类型为CNAME 名称为输入你刚刚在自定义主机名时输入的前缀 内容为cdn.你的回源域名
@@ -102,7 +102,7 @@ cf-cname.xingpingcn.top 不需要开启小黄云
 
 :::warning
 
-不要使用自己家里的宽带搭建服务器官网！由于家宽无固定 IP，无法进行备案。目前已有因使用家宽建站而受到运营商警告的案例，详见 https://www.zhihu.com/question/440645939/answer/3228728304
+不要使用自己家里的宽带搭建服务器官网！由于家宽无固定 IP，无法进行备案。目前已有因使用家宽建站而受到运营商警告的案例，详见 <https://www.zhihu.com/question/440645939/answer/3228728304>
 
 :::
 
@@ -115,6 +115,7 @@ cf-cname.xingpingcn.top 不需要开启小黄云
 #### 准备工作
 
 要为网站备案，需要进行以下准备：
+
 1. 一台拥有固定 IP 的云服务器，或一条拥有固定 IP 的商用宽带
 2. 已经实名认证、用于网站访问的域名
 3. 服务器的经营许可证等相关证件或自己的身份证等证件。
@@ -133,7 +134,7 @@ cf-cname.xingpingcn.top 不需要开启小黄云
 
 提交后，需要经过一段时间的审核，全程在 1 到 22 天。部分服务器运营商会自行先对你的信息进行审核，确保其能够顺利通过管局审核后再提交到管局。审核通过后，你将会获得 **ICP 备案号**作为服务器官网的备案证明。
 
-备案通过后网站上线时，你需要根据相关规定在网站上标注备案信息。并链接至工信部备案网址 http://www.beian.miit.gov.cn 供用户查询。技术上可通过以下方法实现：
+备案通过后网站上线时，你需要根据相关规定在网站上标注备案信息。并链接至工信部备案网址 <http://www.beian.miit.gov.cn> 供用户查询。技术上可通过以下方法实现：
 
 在网站首页的 html 文件中，在`<body>`标签内最底部添加以下代码：
 
@@ -159,7 +160,7 @@ cf-cname.xingpingcn.top 不需要开启小黄云
 
 ### 在 Windows 系统上搭建网站服务
 
-在浏览器中输入 https://nginx.org/en/
+在浏览器中输入 <https://nginx.org/en/>
 
 然后点击右边的download
 
@@ -225,7 +226,3 @@ cf-cname.xingpingcn.top 不需要开启小黄云
 在这里附上源码下载[点击下载](https://b2.mcdogserver.top/1.zip)
 
 如果你觉得这个源码不适合你，或者是你不想用别人的源码，你可以尝试去自学。这里就不附上自学的教程了
-
-
-
-
