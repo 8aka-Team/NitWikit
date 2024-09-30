@@ -11,8 +11,8 @@
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "test": "docusaurus build && docusaurus serve",
-    "format": "markdownlint-cli2 --fix docs*/**/*.md",
-    "format:check": "markdownlint-cli2 docs*/**/*.md",
+    "format": "markdownlint-cli2 --fix --glob 'docs*/**/*.md'",
+    "format:check": "markdownlint-cli2 --glob 'docs*/**/*.md'",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids"
   },
