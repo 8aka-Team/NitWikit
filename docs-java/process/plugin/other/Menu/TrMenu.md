@@ -130,13 +130,13 @@ https://hhhhhy.gitbook.io/trmenu-v3/usage/shortcuts
       deny: 'return'
 ```
 
-### 每日签到
+<!-- ### 每日签到
 
 [查看配置](https://github.com/postyizhan/NitWikit/blob/main/docs-java/process/plugin/other/Menu/demo/trmv3-每日签到.yml)
 
 据作者所说重启服务器会丢数据
 
-不过这些配置主要是用来学习的，不会有人直接cv过去用吧
+不过这些配置主要是用来学习的，不会有人直接cv过去用吧 -->
 
 ### 商店
 
