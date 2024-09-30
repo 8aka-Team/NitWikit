@@ -99,6 +99,7 @@ tar -zxf mcsmanager_linux_release.tar.gz
 
 :::
 
+
 ```shell
 # 安装依赖库
 ./install.sh
