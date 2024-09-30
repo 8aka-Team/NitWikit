@@ -56,7 +56,7 @@ sidebar_position: 4
 
 用来更详细的指明你需要的操作
 
-例如：`%checkitem_remove_mat:diamond，amt:10%`
+例如：`%checkitem_remove_mat:diamond,amt:10%`
 
 作用是收取10个钻石
 
@@ -66,7 +66,7 @@ sidebar_position: 4
 
 不同修饰符使用英文逗号“，”来连接
 
-如同上面的 `%checkitem_remove_mat:diamond，amt:10%`
+如同上面的 `%checkitem_remove_mat:diamond,amt:10%`
 
 同时使用了 mat 和 amt 两个修饰符
 
@@ -100,7 +100,7 @@ sidebar_position: 4
 收取指定ia物品的指定数量
 
 ```
-%checkitem_remove_nbtstrings:itemsadder..id..data=ia物品ID，amt:数量%
+%checkitem_remove_nbtstrings:itemsadder..id..data=ia物品ID,amt:数量%
 ```
 
 使用了两个修饰符
@@ -108,7 +108,7 @@ sidebar_position: 4
 - nbtstrings
 - amt
 
-其他物品库多数也会像ia一样给物品打上自己的nbt标签，照着改改就好
+其他物品库多数也会像ia一样给物品打上自己的nbt标签,照着改改就好
 
 ## 启用give和remove
 
