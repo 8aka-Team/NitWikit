@@ -3,6 +3,8 @@ title: 服务器类型
 sidebar_position: 2
 ---
 
+<!-- markdownlint-disable no-duplicate-heading -->
+
 :::tip
 本篇文档已完成编写！<br />
 支持后续 PR
@@ -35,7 +37,7 @@ sidebar_position: 2
 - 喜欢传统 Minecraft 游戏体验的玩家。
 - 腐竹希望专注于提供稳定和公平的游戏环境。
 
-## 2. Addon 服(仅 BDS)
+## 2. Addon 服(仅 BDS)z
 
 ### 定义
 

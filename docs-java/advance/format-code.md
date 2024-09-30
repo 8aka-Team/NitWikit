@@ -29,7 +29,7 @@ sidebar_position: 8
 
 比如下面这个 TrMenu 菜单例子：
 
-```
+```yaml
 Icons:
   test:
     display:

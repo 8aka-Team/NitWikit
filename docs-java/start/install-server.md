@@ -13,7 +13,9 @@ sidebar_position: 3
 
 全篇以 1.20.4 Mod 服务端安装为例子
 
-如果你看不懂可以使用[笨蛋脚本](https://github.com/lilingfengdev/NitWiki-Script/releases/download/windows-latest/select-server.exe)，目前不支持 Fabric
+如果你看不懂可以使用
+[笨蛋脚本](https://github.com/lilingfengdev/NitWiki-Script/releases/download/windows-latest/select-server.exe)，
+目前不支持 Fabric
 
 ## Forge
 
@@ -31,11 +33,8 @@ sidebar_position: 3
 
 然后你就成功下载了 Forge Installer，但还没有完!，继续
 
-在浏览器中输入以下链接
-
-```
-https://bmclapi2.bangbang93.com/version/这里填你的MC版本/server
-```
+在浏览器中输入链接
+`https://bmclapi2.bangbang93.com/version/这里填你的MC版本/server`
 
 比如我 1.20.4 服务器应该是 `https://bmclapi2.bangbang93.com/version/1.20.4/server`
 

@@ -68,6 +68,8 @@ EasyBot 开发者目前没有撰写关于消息同步的教程，但由于网页
 
 ### [MiraiMC](https://github.com/DreamVoid/MiraiMC)
 
-MiraiMC 是一款能够作为服务器插件加载的机器人框架。它非常适合仅有一个服务端，尤其是使用面板开服的 **小型服务器** 使用。MiraiMC 的大多数排障方法和特性都与 Mirai 相同，遇到问题时你可以参考 [Mirai](../../advance/bot/framework#mirai) 框架的使用文档。<!--[点击跳转](https://github.com/DreamVoid/MiraiMC)-->
+MiraiMC 是一款能够作为服务器插件加载的机器人框架。它非常适合仅有一个服务端，尤其是使用面板开服的 **小型服务器** 使用。
+MiraiMC 的大多数排障方法和特性都与 Mirai 相同，遇到问题时你可以参考 [Mirai](../../advance/bot/framework#mirai) 框架的使用文档。
 
-MiraiMC 已添加了 [对 Overflow 的支持附属插件](https://github.com/DreamVoid/MiraiMC/issues/510)，因此你可以使用 Overflow 协助登录。这也帮助了许多停更的基于 MiraiMC 的老机器人插件。
+MiraiMC 已添加了 [对 Overflow 的支持附属插件](https://github.com/DreamVoid/MiraiMC/issues/510)，因此你可以使用 Overflow 协助登录。
+这也帮助了许多停更的基于 MiraiMC 的老机器人插件。

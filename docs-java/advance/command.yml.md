@@ -12,7 +12,7 @@ commands.yml 是一个配置文件，用于为 CraftBukkit 服务器定义自定
 
 Bukkit 在默认情况下提供了一个命令覆盖系统。
 
-### 优先级
+## 优先级
 
 Aliases(自定义命令)＞ Plugin Commands(插件命令)＞ Bukkit Commands(Bukkit 命令)＞ Mojang Commands(Mojang 命令)。
 
@@ -28,7 +28,7 @@ Mojang Commands(Mojang 命令)：如果没有找到匹配的 Bukkit 命令，作
 
 # Command.yml 内容
 
-```
+```yaml
 command-block-overrides: []
 
 aliases:
@@ -36,16 +36,17 @@ aliases:
     - "version $1-"
 ```
 
-### 关于 command-block-overrides 部分
+## 关于 command-block-overrides 部分
 
 表明当前没有对命令方块的覆盖进行设置。
-这个部分的作用是控制命令方块覆盖功能。在 Bukkit 的历史中，曾提供过一些与 Minecraft 原本不同版本的命令。通过这个设置，可以强制服务器专门为命令方块使用 Mojang 提供的版本的命令 (MC 原版命令)。而在命令方块之外使用的命令，将按照正常情况使用 Bukkit(或插件)版本的命令。
+这个部分的作用是控制命令方块覆盖功能。在 Bukkit 的历史中，曾提供过一些与 Minecraft 原本不同版本的命令。通过这个设置，可以强制服务器专门为命令方块使用 Mojang 提供的版本的命令 (MC 原版命令)。
+而在命令方块之外使用的命令，将按照正常情况使用 Bukkit(或插件)版本的命令。
 
 **命令覆盖：**
 
 当你需要命令方块执行 Mojang 命令 (MC 原版命令) 而不是被插件覆盖的命令覆盖时，您可以将这个命令加入到 `command-block-overrides` 中，以下使用 give 命令举例 :
 
-```
+```yaml
 command-block-overrides:
     - "give"
 ```
@@ -54,7 +55,7 @@ command-block-overrides:
 
 当你需要命令方块执行大量 Mojang 命令 (MC 原版命令) 而不被插件等覆盖时，您可以将这个命令加入到 `command-block-overrides` 中，以下指令会覆盖命令方块中所有的命令使用 MC 原版命令 :
 
-```
+```yaml
 command-block-overrides:
     - "*"
 ```
@@ -67,6 +68,8 @@ command-block-overrides:
 **自定义命令：**
 
 这一部分允许您为服务器上的命令定义自定义命令。从本质上讲，自定义命令允许您创建可以同时执行多个功能的自定义命令。这是一个强大的工具，允许您为服务器玩家定义更容易记住的命令。
+
+<!--markdownlint-disable line-length-->
 
 | **修饰语**             | **描述**                                                                                                                                                                                                                                                                                                                                                        | **例子**       |
 | ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- |
@@ -89,3 +92,5 @@ command-block-overrides:
 | 接受所有参数                         | 创建一个名为 `broadcast` 的自定义命令，该自定义命令将执行 `say` 命令并接受传递给它的任何参数。                                                                                        | 输入 `/broadcast <message>`，其中 `<message>` 为要广播的消息。                                          | aliases:<br/> broadcast:<br/> \- "say $$1\-"                                                |
 | 需要第一个参数，同时使第二个参数可选 | 覆盖内置的 `ban` 命令，这个自定义命令需要第一个参数(这里是玩家的名字)，同时支持可选的封禁理由。当使用该自定义命令时，玩家将被封禁，并广播一条消息通知服务器上的其他人有人被封禁了。 | 输入 `/ban <player> [optional reason]`，其中 `<player>` 为玩家名称，`[optional reason]` 为可选的封禁理由 | aliases:<br/> ban:<br/> \- "bukkit:ban $$1 $2\-"<br/> \- "say Banned $$1\. Reason: $2\-"    |
 | 在命令中使用$符号                    | 创建一个名为 `dollar` 的自定义命令，该自定义命令会向服务器广播消息 “That will be 200，thanks！'' 由于字符用于表示参数，所以在创建自定义命令时需要用反斜杠(\\)对其进行转义。         | 输入 `/dollar`                                                                                      | aliases:<br/> dollar:<br/> \- "say That will be \\$200， thanks\!"                           |
+
+<!--markdownlint-enable line-length-->

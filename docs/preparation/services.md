@@ -98,7 +98,7 @@ sidebar_position: 5
 
 用法：
 
-```
+```text
 mcping <服务器地址>
 ```
 

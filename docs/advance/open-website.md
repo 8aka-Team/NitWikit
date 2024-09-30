@@ -138,7 +138,7 @@ cf-cname.xingpingcn.top 不需要开启小黄云
 
 在网站首页的 html 文件中，在`<body>`标签内最底部添加以下代码：
 
-```
+```html
 <a href="http://www.beian.miit.gov.cn/">备案号</a>
 ```
 

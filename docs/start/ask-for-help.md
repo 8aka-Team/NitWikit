@@ -64,6 +64,8 @@ sidebar_position: 7
 - 发言不友好：`你不知道可以不说话，别在这浪费我时间`
 - 斥责他人：`你是不不会写插件啊，这插件怎么能开服就报错呢`
 
+<!--markdownlint-disable ol-prefix-->
+
 3. 明确遇到的问题，到**对应群**里问
 
 例如，你应该：
@@ -90,6 +92,8 @@ sidebar_position: 7
 - 仅附上报错信息却没有给出任何服务端版本、加载器版本、插件列表等信息：`有没有大佬能帮我看看这个崩服是为什么，什么也不干跑一跑图就崩，ll加载器`
 
 5. 给出合理的日志 - [详细说明](#给出日志)
+
+<!--markdownlint-enablke ol-prefix-->
 
 ## 看完 Wiki 再问
 
@@ -125,11 +129,18 @@ Wiki 就是让你解决常见问题的，不看这玩意儿就在那瞎问只会
 
 ### 笨蛋脚本
 
-使用此[脚本](https://github.com/lilingfengdev/NitWiki-Script/releases/download/windows-latest/update-log.exe)，会将日志自动上传到 mclo.gs (默认上传的日志是 `logs/latest.log`)
+使用此[脚本](https://github.com/lilingfengdev/NitWiki-Script/releases/download/windows-latest/update-log.exe)，
+会将日志自动上传到 <https://mclo.gs> (默认上传的日志是 `logs/latest.log`)
 
 ### 如何上传
 
-当你询问问题的时候，发出你的报错日志(推荐一个网站 [Mclogs](https://mclo.gs/)，很方便的上传日志，
+当你询问问题的时候，发出你的报错日志
+
+:::tip
+
+推荐一个网站 [Mclogs](https://mclo.gs/)，它允许你很方便地上传日志。
+
+:::
 
 你需要明白你面对的是群友而不是道友，没有人可以在没有日志的情况下帮你解决问题，
 

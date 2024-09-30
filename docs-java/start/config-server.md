@@ -26,7 +26,7 @@ sidebar_position: 5
 
 在 **server.properties** 中找到此项
 
-```
+```properties
 online-mode=true
 ```
 
@@ -46,7 +46,7 @@ online-mode=true
 
 在 **server.properties** 中找到此项
 
-```
+```properties
 max-players=20
 ```
 
@@ -56,7 +56,7 @@ max-players=20
 
 在 **server.properties** 中找到此项
 
-```
+```properties
 level-seed=
 ```
 
@@ -82,7 +82,7 @@ level-seed=
 
 在 `server.properties` 中
 
-```
+```properties
 enable-command-block=false
 ```
 
@@ -90,7 +90,7 @@ enable-command-block=false
 
 ## 设置难度
 
-```
+```properties
 difficulty=hard
 ```
 
@@ -103,7 +103,7 @@ difficulty=hard
 
 ## 出生点保护
 
-```
+```properties
 spawn-protection=16
 ```
 
@@ -113,7 +113,7 @@ spawn-protection=16
 
 ## 允许玩家前往地狱/生成地狱世界
 
-```
+```properties
 allow-nether=true
 ```
 
@@ -121,7 +121,7 @@ allow-nether=true
 
 ## 默认游戏模式
 
-```
+```properties
 gamemode=survival
 ```
 
@@ -134,7 +134,7 @@ gamemode=survival
 
 ## 强制游戏模式
 
-```
+```properties
 force-gamemode=false
 ```
 
@@ -142,7 +142,7 @@ force-gamemode=false
 
 ## 结构生成
 
-```
+```properties
 generate-structures=true
 ```
 
@@ -156,13 +156,13 @@ generate-structures=true
 
 ## 允许玩家互相攻击
 
-```
+```properties
 pvp=true
 ```
 
 ## 允许飞行
 
-```
+```properties
 allow-flight=true
 ```
 

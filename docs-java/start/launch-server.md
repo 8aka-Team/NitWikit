@@ -62,7 +62,7 @@ sidebar_position: 4
 
 用你前面下的文本编辑器编辑这个文件，写入以下信息并保存，然后双击 `start.bat`
 
-```
+```shell
 java -Xms2G -Xmx2G -jar 核心名.jar --nogui
 ```
 
@@ -72,7 +72,7 @@ java -Xms2G -Xmx2G -jar 核心名.jar --nogui
 
 一旦下载完成，他会提示：
 
-```
+```text
 You need to agree to the EULA in order to run the server. Go to eula.txt for more info.
 ```
 
@@ -82,7 +82,7 @@ eula 就像是用户协议一样的东西，你想知道讲了啥，点 [这里]
 
 改好之后重新开启服务器，当出现以下字样说明服务器已经成功开启。
 
-```
+```text
 Done (6.554s)! For help， type "help"
 ```
 
@@ -102,7 +102,7 @@ Done (6.554s)! For help， type "help"
 
 如果你的服务器卡在：
 
-```
+```text
 Downloading mojang_x.x.x.jar
 ```
 

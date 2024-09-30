@@ -12,11 +12,17 @@ sidebar_position: 1
 <details>
   <summary>JRE 和 JDK 是什么? 我该怎么选择?</summary>
 
-JRE (Java Runtime Enviroment) 是 Java 的运行环境。面向 Java 程序的使用者，而不是开发者。如果你仅下载并安装了 JRE，那么你的系统只能运行 Java 程序。JRE 是运行 Java 程序所必须环境的集合，包含 JVM 标准实现及 Java 核心类库。它包括 Java 虚拟机、Java 平台核心类和支持文件。它不包含开发工具(编译器、调试器等)
+JRE (Java Runtime Enviroment) 是 Java 的运行环境。面向 Java 程序的使用者，而不是开发者。如果你仅下载并安装了 JRE，那么你的系统只能运行 Java 程序。
+JRE 是运行 Java 程序所必须环境的集合，包含 JVM 标准实现及 Java 核心类库。它包括 Java 虚拟机、Java 平台核心类和支持文件。它不包含开发工具(编译器、调试器等)
 
-JDK (Java Development Kit) 又称 J2SDK (Java2 Software Development Kit)，是 Java 开发工具包，它提供了 Java 的开发环境 (提供了编译器 javac 等工具，用于将 java 文件编译为 class 文件) 和运行环境 (提供了 JVM 和 Runtime 辅助包，用于解析 class 文件使其得到运行)。如果你下载并安装了 JDK，那么你不仅可以开发 Java 程序，也同时拥有了运行 Java 程序的平台。JDK 是整个 Java 的核心，包括了 Java 运行环境 (JRE)，一堆 Java 工具 tools.jar 和 Java 标准类库 (rt.jar)
+JDK (Java Development Kit) 又称 J2SDK (Java2 Software Development Kit)，是 Java 开发工具包，它提供了 Java 的开发环境
+(提供了编译器 javac 等工具，用于将 java 文件编译为 class 文件)
+和运行环境 (提供了 JVM 和 Runtime 辅助包，用于解析 class 文件使其得到运行)。
+如果你下载并安装了 JDK，那么你不仅可以开发 Java 程序，也同时拥有了运行 Java 程序的平台。JDK 是整个 Java 的核心，包括了 Java 运行环境 (JRE)，一堆 Java 工具 tools.jar 和
+Java 标准类库 (rt.jar)
 
-**总结: 只开服务端下载 JRE 即可，JDK 也没问题**
+总结: 只开服务端下载 JRE 即可，JDK 也没问题
+
 </details>
 
 ## 选择版本
@@ -70,12 +76,16 @@ MOD 服务端
 此处下载链接可能不是最新版，如需下载最新版请跳转至 [手动下载](#%E6%89%8B%E5%8A%A8%E4%B8%8B%E8%BD%BD)
 :::
 
+<!--markdownlint-disable line-length-->
+
 | Java 版本 | 下载链接                                                                                                                                   |
 |---------|----------------------------------------------------------------------------------------------------------------------------------------|
 | Java 8  | [Dragonwell 8](https://dragonwell.oss-cn-shanghai.aliyuncs.com/8.19.20/Alibaba_Dragonwell_Extended_8.19.20_x64_windows.zip)            |
 | Java 11 | [Dragonwell 11](https://dragonwell.oss-cn-shanghai.aliyuncs.com/11.0.23.20.9/Alibaba_Dragonwell_Extended_11.0.23.20.9_x64_windows.zip) |
 | Java 17 | [Azul Zulu](https://www.azul.com/core-post-download/?endpoint=zulu&uuid=e5cf71d2-4ea2-4de7-b9e0-aaea20374fe8)                                                |
 | Java 21 | [GraalVM EE](https://download.oracle.com/graalvm/21/latest/graalvm-jdk-21_windows-x64_bin.zip)                                         |
+
+<!--markdownlint-enable line-length-->
 
 :::danger
 
@@ -124,7 +134,7 @@ https://www.java.com/zh-CN/download/
 
 输入：
 
-```
+```shell
 java -version
 ```
 
