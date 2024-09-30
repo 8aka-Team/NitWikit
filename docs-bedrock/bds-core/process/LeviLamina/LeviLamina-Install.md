@@ -11,11 +11,11 @@ sidebar_position: 1
 
 # 方法零: 使用笨蛋脚本
 
-首先下载[安装脚本](https://github.com/lilingfengdev/NitWiki-Script/releases/download/windows-latest/liteloaderbds-install.exe),下载完后右键**以管理员启动**即可
+首先下载[安装脚本](https://github.com/lilingfengdev/NitWiki-Script/releases/download/windows-latest/liteloaderbds-install.exe)，下载完后右键**以管理员启动**即可
 
 :::tip
 
-你甚至不需要安装VC运行库,自动脚本会自行安装常用运行库,还会自动配置 Lip 镜像以加速下载
+你甚至不需要安装VC运行库，自动脚本会自行安装常用运行库，还会自动配置 Lip 镜像以加速下载
 
 :::
 
@@ -24,15 +24,15 @@ sidebar_position: 1
 
 ### 准备工作-安装 Lip
 
-首先,从 [GitHub](https://github.com/lippkg/lip/releases/latest) 下载 Lip 的最新版本的应用
+首先，从 [GitHub](https://github.com/lippkg/lip/releases/latest) 下载 Lip 的最新版本的应用
 
-然后,解压文件到你想要安装 Lip 的位置。
+然后，解压文件到你想要安装 Lip 的位置。
 
-最后,将该位置添加到 PATH 环境变量中。
+最后，将该位置添加到 PATH 环境变量中。
 
-要检查是否成功安装 Lip ,请在终端中运行 `lip --version`。你应该看到刚刚安装的lip的版本。
+要检查是否成功安装 Lip ，请在终端中运行 `lip --version`。你应该看到刚刚安装的lip的版本。
 
-如果你使用的是 Windows 系统,你也可以在 GitHub 中下载 `.exe` 后缀的安装程序来安装。
+如果你使用的是 Windows 系统，你也可以在 GitHub 中下载 `.exe` 后缀的安装程序来安装。
 
 
 ### 安装
@@ -49,7 +49,7 @@ Lip 会自动下载 BDS 并配置 LeviLamina 加载器
 
 :::info
 
-如果因网络问题无法下载 GO 模块或 LeviLamina 及其依赖,可以运行命令
+如果因网络问题无法下载 GO 模块或 LeviLamina 及其依赖，可以运行命令
 
 ```
 lip config GoModuleProxyURL <url>
@@ -67,11 +67,11 @@ lip config GitHubMirrorURL <url>
 
 :::info
 
-如果因网络问题无法下载 BDS 服务端文件可以去其他地方寻找文件下载,并将压缩包放在 `your-folder\.cache\bdsdown`中
+如果因网络问题无法下载 BDS 服务端文件可以去其他地方寻找文件下载，并将压缩包放在 `your-folder\.cache\bdsdown`中
 
 :::
 
-现在,你已成功安装了 LeviLamina 了,要启动它,请运行命今
+现在，你已成功安装了 LeviLamina 了，要启动它，请运行命今
 
 ```
 bedrock_server_mod.exe
@@ -80,7 +80,7 @@ bedrock_server_mod.exe
 
 # 方法二: 手动安装(不推荐)
 
-只有想要调试新版本的开发人员才会手动安装,手动安装只会安装允许 LeviLamina 运行的基本部件,它缺少 CrashLogger、I18N 等组件。
+只有想要调试新版本的开发人员才会手动安装，手动安装只会安装允许 LeviLamina 运行的基本部件，它缺少 CrashLogger、I18N 等组件。
 
 ### 下载必要的文件
 
@@ -90,7 +90,7 @@ bedrock_server_mod.exe
    * 从所选版本Release中下载文件 `levilamina-windows-x64.zip`
 2. ​**下载 BDS(Minecraft服务器)**​：
    * 访问 [Minecraft 的服务器下载页面](https://www.minecraft.net/en-us/download/server/bedrock)。
-   * 获取与你的 LeviLamina 版本相对应的 Bedrock 专用服务器 (BDS) 版本,名为 
+   * 获取与你的 LeviLamina 版本相对应的 Bedrock 专用服务器 (BDS) 版本，名为 
    `bedrock-server-<version>.zip`
 3. ​**获取 PeEditor 和 PreLoader**​：
    * 前往他们各自的 GitHub 发布页面：[PeEditor Releases](https://github.com/LiteLDev/PeEditor/releases) 和 [PreLoader Releases](https://github.com/LiteLDev/PreLoader/releases)。
@@ -98,7 +98,7 @@ bedrock_server_mod.exe
 
 :::warning
 
-​**注意**​：通常,最新版本的 LeviLamina 与最新版本的 PeEditor 和 PreLoader 保持一致。确保它们与你的 BDS 版本兼容。
+​**注意**​：通常，最新版本的 LeviLamina 与最新版本的 PeEditor 和 PreLoader 保持一致。确保它们与你的 BDS 版本兼容。
 
 :::
 
@@ -113,9 +113,9 @@ bedrock_server_mod.exe
    * 将文件夹放入BDS同一目录中
 4. ​**运行 PeEditor**​：
    * 双击 `PeEditor.exe` 并等待配置完成
-   * 然后,你可以在目录中找到一个名为 `bedrock_server_mod.exe` 的新文件,原始文件 `bedrock_server.exe` 将重命名为 `bedrock_server.exe.bak`
+   * 然后，你可以在目录中找到一个名为 `bedrock_server_mod.exe` 的新文件，原始文件 `bedrock_server.exe` 将重命名为 `bedrock_server.exe.bak`
 
-现在,你已成功安装了 LeviLamina 了,要启动它,请运行命今
+现在，你已成功安装了 LeviLamina 了，要启动它，请运行命今
 
 ```
 bedrock_server_mod.exe
