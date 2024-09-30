@@ -9,9 +9,7 @@ sidebar_position: 8
 
 在 Minecraft 中，可以以分节符号(`§`)产生带色文字。
 
-
 ![](_images/格式化代码/Minecraft_Formatting.gif)
-
 
 你也可以用 [颜色代码生成器](https://mcg.tuanzi.ink/) 来生成它。
 

@@ -108,7 +108,7 @@ Downloading mojang_x.x.x.jar
 
 请尝试使用科学上网。
 
-### 我不会在命令行界面 (CMD / 终端 / Powershell) 使用科学上网！
+### 我不会在命令行界面 (CMD / 终端 / Powershell) 使用科学上网
 
 :::tip
 

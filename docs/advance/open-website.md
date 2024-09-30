@@ -51,6 +51,7 @@ Repository name填 你的用户名.github.io
 如果你做到这一步至此你的网站已经是搭建完成了。但是由于某些特别的原因，大陆访问 Github Pages 服务比较困难。为了保证不懂技术的普通玩家们顺利访你的服务器官网，可以选择以下方式
 
 ### 2\.cloudflare saas回源
+
 :::warning
 
 注意!如果想要域名访问要先在github项目的settings-pages-Custom domain 添加域名
@@ -89,7 +90,6 @@ Repository name填 你的用户名.github.io
 cf-cname.xingpingcn.top 不需要开启小黄云
 ![微信图片_20240916092435.png](_images/open-web-photo/close-yellow-cloud.png)
 
-
 然后来到你的主域名 添加DNS记录
 
 添加一个类型为CNAME 名称为输入你刚刚在自定义主机名时输入的前缀 内容为cdn.你的回源域名
@@ -115,6 +115,7 @@ cf-cname.xingpingcn.top 不需要开启小黄云
 #### 准备工作
 
 要为网站备案，需要进行以下准备：
+
 1. 一台拥有固定 IP 的云服务器，或一条拥有固定 IP 的商用宽带
 2. 已经实名认证、用于网站访问的域名
 3. 服务器的经营许可证等相关证件或自己的身份证等证件。
@@ -225,7 +226,3 @@ cf-cname.xingpingcn.top 不需要开启小黄云
 在这里附上源码下载[点击下载](https://b2.mcdogserver.top/1.zip)
 
 如果你觉得这个源码不适合你，或者是你不想用别人的源码，你可以尝试去自学。这里就不附上自学的教程了
-
-
-
-

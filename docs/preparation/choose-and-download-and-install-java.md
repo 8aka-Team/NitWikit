@@ -40,6 +40,7 @@ MOD 服务端
 ### 混合服务端(CatServer 等)
 
 #### CatServer
+
 | Minecraft 版本   | 最低版本 | 推荐版本 |
 |-----------------|---------|---------|
 | 1.12.2          | Java 8  | Java 8  |
@@ -47,6 +48,7 @@ MOD 服务端
 | 1.18.2          | Java 17 | Java 17 |
 
 #### Mohist
+
 | Minecraft 版本   | 最低版本 | 推荐版本 |
 |-----------------|---------|---------|
 | 1.7.10          | Java 8  | Java 8  |
@@ -54,13 +56,13 @@ MOD 服务端
 | 1.18.2 - 1.20.2 | Java 17 | Java 17 |
 
 #### SpongeForge
+
 | Minecraft 版本   | 最低版本 | 推荐版本 |
 |-----------------|---------|---------|
 | 1.8 - 1.12.2    | Java 8  | Java 8  |
 | 1.16.5(吐槽:就你特殊) | Java 17 | Java 17 |
 | 1.19.4          | Java 17 | Java 17 |
 | 1.20.6， 1.21.1  | Java 21 | Java 21 |
-
 
 ## 直接下载
 
@@ -144,6 +146,7 @@ java -version
 3. ![示意图](https://github.com/user-attachments/assets/28035c47-d34b-4b38-b895-29f38366bef9)
 4. 选择合适的版本的 Java，点击 `Install Java`，下载。
 5. 不要关闭窗口，直到下方的提示栏从 `Installing...` 变为 `Complete.`
+
 </details>
 
 ## FAQ

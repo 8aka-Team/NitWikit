@@ -36,7 +36,6 @@ Mod 服最开始就必须选好核心，也就是 Forge 还是 Fabric 的问题�
 
 高版本一般推荐使用 Fabric ，因为 Fabric 优化 Mod 多效果比较好，但是最重要的还是：如果有什么 Mod 只有 Fabric / Forge 版本而你又非玩不可，只能选择相应的核心。
 
-
 ## 插件服
 
 性能较好，是初学者最适合开的服务器，拓展性较强，配置性强，但坏处就是有的插件需自行配置后使用，客户端无需安装 Mod 。我个人推荐插件服使用 Purpur，
@@ -231,7 +230,6 @@ leaves基本完全支持客户端生电 Mod ，包括但不限于carpet，pca，
 - [官方](https://github.com/HomoMC/Beast)
 - [McRes](https://vip.123pan.cn/1821558579/6492155)
 
-
 </TabItem>
 </Tabs>
 
@@ -286,4 +284,3 @@ leaves基本完全支持客户端生电 Mod ，包括但不限于carpet，pca，
 | [Cardboard](https://cardboardpowered.org/)               | 支持的版本较多，支持1.16.5-1.20.4                 | -    | [McRes](https://mcres.cn/downloads/carboard.html)                                                              |
 
 ![](_images/那些服务端有后门吗.png)
-

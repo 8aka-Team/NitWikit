@@ -166,7 +166,6 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 <TabItem value="drive" label="直链网盘">
 
-
 ia的文档教了如何使用 [Google Drive](https://itemsadder.devs.beer/v/chinese/plugin-usage/resourcepack-hosting/google-drive-1.17.1+) 和 [OneDrive](https://itemsadder.devs.beer/v/chinese/plugin-usage/resourcepack-hosting/onedrive) 进行材质托管
 
 :::tip

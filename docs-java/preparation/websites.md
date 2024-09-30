@@ -87,6 +87,7 @@ SpigotMC 应该是目前 Minecraft 开服圈最大的插件网站了，最大的
 这是由于 GitHub 是开放的外国网站，网站上时不时会有一些不能在此讨论的内容，所以运营商会刻意地屏蔽这个网站，在很多时候都不能正常访问。具体的表现如下：[只要Github域名指向任意IP，该IP的443端口就会超时3分钟](https://blog.csdn.net/weixin_43659597/article/details/118882176)。
 
 有以下几种解决办法：
+
 1. 魔法
 2. [改hosts](https://www.cnblogs.com/eudaimonia/p/16001981.html#1034247326)
 3. [Watt Toolkit](https://steampp.net/)：下载安装完成后，在左侧侧边栏切换到**网络加速**，点击**平台加速(免费)**，往下翻勾上GitHub，然后点击**一键加速**，随后就可以正常访问GitHub了

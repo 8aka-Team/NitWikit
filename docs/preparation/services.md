@@ -4,7 +4,7 @@ slug: /services
 sidebar_position: 5
 ---
 
-# 笨蛋服务!
+# 笨蛋服务
 
 这些服务由赛博菩萨 cloudflare 和 lilingfeng 搭建，完全免费提供!
 
@@ -28,30 +28,30 @@ sidebar_position: 5
 <details>
 <summary>公共域名列表</summary>
 
-* mcfun.us.kg 
-* nitwikit.us.kg 
-* yizhan.us.kg 
-* playmc.imc.rip 
-* mc.imc.rip 
-* llf.myredirect.us
-* mc.lookin.at
-* mcfun.findhere.org
-* mcfun.lookin.at
-* nitwikit.myfw.us
-* playmc.lookin.at
-* playmc.myfw.us
-* playmc.rr.nu
-* yizhan.findhere.org
-* yizhan.myfw.us
-* yizhan.rr.nu
-* (还有更多!)
+- mcfun.us.kg
+- nitwikit.us.kg
+- yizhan.us.kg
+- playmc.imc.rip
+- mc.imc.rip
+- llf.myredirect.us
+- mc.lookin.at
+- mcfun.findhere.org
+- mcfun.lookin.at
+- nitwikit.myfw.us
+- playmc.lookin.at
+- playmc.myfw.us
+- playmc.rr.nu
+- yizhan.findhere.org
+- yizhan.myfw.us
+- yizhan.rr.nu
+- (还有更多!)
 
 </details>
 
 <details>
 <summary>限制注册公共域名</summary>
 
-* wsdj.in
+- wsdj.in
 
 需要群等级50级以上才可以注册
 
@@ -73,8 +73,8 @@ sidebar_position: 5
 
 然后联系lilingfeng(3644147215)，将你要的域名，子域名，以及需要解析到的目标(SRV需要端口)发过来，请确保你需要的子域名满足以下条件
 
-* 只有数字和字母
-* 没被别人用
+- 只有数字和字母
+- 没被别人用
 
 然后静待llf回复，**不要问好了没有这些无意义话语**
 
