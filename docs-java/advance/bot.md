@@ -19,7 +19,7 @@ sidebar_position: 12
 
 ### [EasyBot](https://www.minebbs.com/resources/easyBot-minecraft.7918/)
 
-<!--[EasyBot MineBBS 链接](https://www.minebbs.com/resources/easyBot-minecraft.7918/)--> 
+<!--[EasyBot MineBBS 链接](https://www.minebbs.com/resources/easyBot-minecraft.7918/)-->
 
 :::warning
 

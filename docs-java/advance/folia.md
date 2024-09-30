@@ -69,8 +69,8 @@ Luminol 另一个好处就是可以开启生电配置
 
 打开 Luminol 的配置文件
 
-- fixes.allow_void_trading 虚空交易
-- fixes.allow_unsafe_teleportation 刷沙
-- fixes.use_vanilla_random_source RNG操作
+* fixes.allow_void_trading 虚空交易
+* fixes.allow_unsafe_teleportation 刷沙
+* fixes.use_vanilla_random_source RNG操作
 
 其它特性请阅读 Paper 文档

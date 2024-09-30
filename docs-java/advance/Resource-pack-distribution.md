@@ -27,7 +27,7 @@ mc服务端自己就有这个材质包分发功能
 
 **例子**
 
-我们拿到slimefun的资源包直链地址是: https://github.com/xMikux/Slimefun-Resourcepack/releases/download/latest-build/Slimefun-ResourcePack.zip ，然后我们打开`server.properties`，找到以下内容
+我们拿到slimefun的资源包直链地址是: <https://github.com/xMikux/Slimefun-Resourcepack/releases/download/latest-build/Slimefun-ResourcePack.zip> ，然后我们打开`server.properties`，找到以下内容
 
 ```
 resource-pack=
@@ -57,7 +57,7 @@ require-resource-pack=false
 
 ## 使用 ItemsAdder
 
-https://itemsadder.devs.beer/v/chinese/plugin-usage/resourcepack-hosting
+<https://itemsadder.devs.beer/v/chinese/plugin-usage/resourcepack-hosting>
 
 ## 使用 Oraxen
 
@@ -73,7 +73,7 @@ import TabItem from '@theme/TabItem';
 <Tabs queryString="store">
 <TabItem value="r2" label="Cloudflare R2">
 
-官网: https://cloudflare.com
+官网: <https://cloudflare.com>
 
 著名赛博佛祖，免费的 Cloudflare R2 提供 10 GB 的免费空间，只不过需要**绑定银行卡或者 PayPal**(不会花钱)，非常推荐
 
@@ -81,7 +81,7 @@ import TabItem from '@theme/TabItem';
 
 > 无域名方案:完成上一步后，打开设置，找到`R2.dev 子域`，点击`允许访问`即可使用CF提供的免费域名
 
-图文教程: https://juejin.cn/post/7331584783611281444
+图文教程: <https://juejin.cn/post/7331584783611281444>
 
 **优势**：
 
@@ -98,7 +98,7 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 <TabItem value="github" label="GitHub">
 
-官网: https://github.com
+官网: <https://github.com>
 
 国内的网络环境不建议用这个
 
@@ -106,9 +106,9 @@ import TabItem from '@theme/TabItem';
 
 > 方案二：首先创建一个新的仓库，接着上传资源包文件到仓库中，点击你上传的文件，复制这单个文件的下载链接
 
-创建新仓库：https://docs.github.com/zh/repositories/creating-and-managing-repositories/creating-a-new-repository
+创建新仓库：<https://docs.github.com/zh/repositories/creating-and-managing-repositories/creating-a-new-repository>
 
-创建发行版：https://docs.github.com/zh/repositories/releasing-projects-on-github/managing-releases-in-a-repository?tool=webui
+创建发行版：<https://docs.github.com/zh/repositories/releasing-projects-on-github/managing-releases-in-a-repository?tool=webui>
 
 **优势**：
 
@@ -121,7 +121,7 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 <TabItem value="gitee" label="Gitee">
 
-官网: https://gitee.com
+官网: <https://gitee.com>
 
 国内的代码托管平台，访问速度快，推荐使用
 
@@ -129,7 +129,7 @@ import TabItem from '@theme/TabItem';
 
 > 方案二：首先创建一个新的仓库，接着上传资源包文件到仓库中，点击你上传的文件，复制这单个文件的下载链接
 
-创建发行版：https://help.gitee.com/repository/release/create#%E5%A6%82%E4%BD%95%E5%88%9B%E5%BB%BA%E5%8F%91%E8%A1%8C%E7%89%88
+创建发行版：<https://help.gitee.com/repository/release/create#%E5%A6%82%E4%BD%95%E5%88%9B%E5%BB%BA%E5%8F%91%E8%A1%8C%E7%89%88>
 
 **优势**：
 
@@ -143,7 +143,7 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 <TabItem value="gitlab" label="GitLab">
 
-官网: https://gitlab.com
+官网: <https://gitlab.com>
 
 国内访问比较稳定的代码托管平台
 
@@ -151,9 +151,9 @@ import TabItem from '@theme/TabItem';
 
 > 方案二：首先创建一个新的仓库，接着上传资源包文件到仓库中，点击你上传的文件，复制这单个文件的下载链接
 
-创建仓库：https://www.bookstack.cn/read/gitlab-doc-zh/docs-150.md#2rp8yq
+创建仓库：<https://www.bookstack.cn/read/gitlab-doc-zh/docs-150.md#2rp8yq>
 
-创建发行版：https://www.bookstack.cn/read/gitlab-doc-zh/docs-149.md#chaa1u
+创建发行版：<https://www.bookstack.cn/read/gitlab-doc-zh/docs-149.md#chaa1u>
 
 **优势**：
 
@@ -165,7 +165,6 @@ import TabItem from '@theme/TabItem';
 
 </TabItem>
 <TabItem value="drive" label="直链网盘">
-
 
 ia的文档教了如何使用 [Google Drive](https://itemsadder.devs.beer/v/chinese/plugin-usage/resourcepack-hosting/google-drive-1.17.1+) 和 [OneDrive](https://itemsadder.devs.beer/v/chinese/plugin-usage/resourcepack-hosting/onedrive) 进行材质托管
 
@@ -189,7 +188,7 @@ ia的文档教了如何使用 [Google Drive](https://itemsadder.devs.beer/v/chin
 </TabItem>
 <TabItem value="self" label="自托管">
 
-使用 ItemsAdder，可以直接在服务器上托管资源包：https://itemsadder.devs.beer/v/chinese/plugin-usage/resourcepack-hosting/resourcepack-self-hosting
+使用 ItemsAdder，可以直接在服务器上托管资源包：<https://itemsadder.devs.beer/v/chinese/plugin-usage/resourcepack-hosting/resourcepack-self-hosting>
 
 或者自己搭建个直链下载站来用
 

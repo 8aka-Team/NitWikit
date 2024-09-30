@@ -96,10 +96,10 @@ difficulty=hard
 
 支持以下值
 
-* peaceful(0) - 和平
-* easy(1) - 简单
-* normal(2) - 普通
-* hard(3) - 困难 
+- peaceful(0) - 和平
+- easy(1) - 简单
+- normal(2) - 普通
+- hard(3) - 困难
 
 ## 出生点保护
 
@@ -127,10 +127,10 @@ gamemode=survival
 
 支持以下模式
 
-* 生存 - survival 或 0
-* 创造 - creative 或 1
-* 冒险 - adventure 或 2
-* 旁观 - spectator 或 3
+- 生存 - survival 或 0
+- 创造 - creative 或 1
+- 冒险 - adventure 或 2
+- 旁观 - spectator 或 3
 
 ## 强制游戏模式
 

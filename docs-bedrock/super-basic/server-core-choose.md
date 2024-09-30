@@ -7,12 +7,13 @@ sidebar_position: 1
 本篇文档已完成编写！<br />
 支持后续 PR
 
-# Biggest SUCCESS!!!
+# Biggest SUCCESS
 
 作者：[梦涵LOVE](https://github.com/MengHanLOVE1027)
 :::
 
 # 服务器核心选择
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -42,7 +43,7 @@ import TabItem from '@theme/TabItem';
 - 定制性有限：与一些第三方服务器端软件相比，BDS 的定制性和扩展性可能 **较为有限**，**不支持插件系统**，限制了服务器的个性化。
 - 性能优化：虽然 BDS 性能稳定，但可能在某些方面(如多核优化)不如专门的第三方服务器端软件。它的生物运算运行在一个线程上。意味着你的服务器的流畅度主要取决于 **CPU 的单核性能**。这使得地图越大，服务器就越 [卡顿](https://yizhan.wiki/NitWikit/start/basic/what-is-caton)，不如 Java 版服务端流畅，因为 Java 版服务端 **支持多核运行**。
 - 高级功能缺失：BDS 可能不支持一些高级功能，如自定义世界生成、高级权限管理等，这些通常需要第三方软件才能实现。
-- 内存泄漏：内存占用会 *缓慢* 增加，有时严重的还会导致 **内存泄漏**。如果强行进行 **内存清理** 的话，会导致玩家在进入 **装有 材质包 / Addon 的服务器** 时 **该玩家客户端无法下载对应内容**，致使下载进度条卡条，只能让腐竹重启服务器解决。
+- 内存泄漏：内存占用会 _缓慢_ 增加，有时严重的还会导致 **内存泄漏**。如果强行进行 **内存清理** 的话，会导致玩家在进入 **装有 材质包 / Addon 的服务器** 时 **该玩家客户端无法下载对应内容**，致使下载进度条卡条，只能让腐竹重启服务器解决。
 
 总体来说，Bedrock Dedicated Server 适合那些希望获得官方支持、稳定性和兼容性的服务器管理员。如果你的服务器不需要复杂的定制或高级功能，BDS 是一个可靠的选择。然而，对于那些需要更多自定义选项和高级功能的用户，可能需要考虑使用第三方服务器端软件。
 
@@ -55,7 +56,7 @@ import TabItem from '@theme/TabItem';
 
 ![Nukkit 运行时的样子](_images/nukkit-core-running.png)
 
-它的名字，很像 Java 版服务端的 Bukkit。没错，它就是 *意图* 创作出来类似 Bukkit 的基岩版服务端，编写语言正是 **Java**。
+它的名字，很像 Java 版服务端的 Bukkit。没错，它就是 _意图_ 创作出来类似 Bukkit 的基岩版服务端，编写语言正是 **Java**。
 
 **优势**：
 
@@ -80,7 +81,9 @@ import TabItem from '@theme/TabItem';
 <TabItem value="pnx" label="PowerNukkitX(PNX)">
 
 :::danger [此核心短时间内不再可用]
+
 # RIP<br />
+
 ![PNX 短时间内不再更新](_images/powernukkitx-core-rip.png)
 :::
 
@@ -118,6 +121,7 @@ import TabItem from '@theme/TabItem';
 ![PNX 运行时的样子](_images/pocketminemp-core-running.png)
 
 **优势**：
+
 - 插件生态丰富：PocketMine-MP 拥有一个 **庞大的插件生态系统**，用户可以找到各种插件来增强服务器的功能和玩家体验。
 - 跨平台兼容性：PocketMine-MP **支持多个操作系统**，包括 Windows、Linux 和 macOS，便于在不同环境下部署。
 - PHP 编程语言：使用 PHP 编写插件，对于熟悉 PHP 的开发者来说，入门门槛相对较低。
@@ -125,6 +129,7 @@ import TabItem from '@theme/TabItem';
 - 自定义性：服务器管理员可以自由地定制服务器，包括游戏规则、世界生成和玩家互动等。
 
 **劣势**：
+
 - 性能问题：PocketMine-MP 在处理高玩家负载时 **可能存在性能瓶颈**，尤其是在内存管理和 CPU 效率方面。
 - 更新滞后：PocketMine-MP 可能不会立即跟进 **Minecraft 基岩版** 的最新更新，导致玩家无法体验最新的游戏内容。
 - 稳定性：由于插件系统的开放性，服务器在运行多个插件时 **可能会遇到稳定性问题**。
