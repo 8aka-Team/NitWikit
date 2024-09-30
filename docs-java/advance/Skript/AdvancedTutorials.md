@@ -173,7 +173,7 @@ import:
 
 command /example:
     trigger:
-        message JavaString.format("Hello %%s"， sender)
+        message JavaString.format("Hello %%s", sender)
 ```
 
 :::info
@@ -192,7 +192,7 @@ command /example:
 
 由于 **Minecraft** 1.17 以下版
     trigger:
-        message JavaString.format("Hello %%s"， sender)
+        message JavaString.format("Hello %%s", sender)
 
 ```
 
@@ -317,7 +317,7 @@ player.giveExpLevels({_levels})
 ```sk
 System.out.println[Object]({_something})
 
-Math.max[int， int](0， {_value})
+Math.max[int, int](0, {_value})
 ```
 
 ##### _调用字段_
