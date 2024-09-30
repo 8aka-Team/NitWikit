@@ -36,7 +36,7 @@ Skript 是一个脚本插件，取名来自 "script"。是一个面向 Bukkit �
 @EventHandler
 public void onPlayerJoin(PlayerJoinEvent evt) {
     Player player = evt.getPlayer(); // 玩家加入
-    ItemStack itemstack = new ItemStack(Material.DIAMOND， 64); // 定义钻石
+    ItemStack itemstack = new ItemStack(Material.DIAMOND, 64); // 定义钻石
     if (player.hasPermission("xxx")) { // 权限判断
         inventory.addItem(itemstack); // 给予钻石
         player.sendMessage("欢迎你加入服务器!你获得了64枚钻石!");
