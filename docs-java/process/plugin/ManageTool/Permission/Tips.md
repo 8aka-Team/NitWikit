@@ -14,7 +14,7 @@ lp editor
 
 ## 日志
 
-可以实时打印权限检查情况,方便排查问题。
+可以实时打印权限检查情况，方便排查问题。
 
 ```
 lp verbose <on|record|off|upload> [filter]
@@ -25,7 +25,7 @@ lp verbose <on|record|off|upload> [filter]
 - `on` - 开启权限检查。
 - `off` - 关闭权限检查。
 - `record` - 记录日志。
-- `paste` - 停止记录,显示日志。
+- `paste` - 停止记录，显示日志。
 
 #### on
 
@@ -48,7 +48,7 @@ lp verbose on !Luck & !anticheat
 
 ## 执行命令
 
-让玩家执行命令,并打印此命令的权限检查。
+让玩家执行命令，并打印此命令的权限检查。
 
 ```
 /lp verbose command <me|player> <command>

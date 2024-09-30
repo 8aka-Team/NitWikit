@@ -8,22 +8,22 @@ sidebar_position: 2
 为什么常规的反作弊插件不会包括部分作弊类型？
 
 * 矿物透视与种子破解其实是很难从服务器所收到的玩家行为包分析得到的。
-* 插件往往术语有专攻,一个过于齐全的插件会像 ESS / CMI 一样累赘。
+* 插件往往术语有专攻，一个过于齐全的插件会像 ESS / CMI 一样累赘。
 * 插件对于"种子"这种相当底层的特征的修改并不如核心稳定高效。
 
 ## 矿物透视与种子破解
 
 矿物透视是作弊客户端通过材质包、透明渲染非矿物方块等方式实现的对服务器矿物的快速搜索。
 
-而 Minecraft 的结构和矿物等的生成均由种子决定,因此也可以进行种子反推了解服务器结构位置。
+而 Minecraft 的结构和矿物等的生成均由种子决定，因此也可以进行种子反推了解服务器结构位置。
 
-矿物透视和种子破解会导致玩家在非常短的时间内获取大量物资,这会影响大多数服务器的平衡和经济。
+矿物透视和种子破解会导致玩家在非常短的时间内获取大量物资，这会影响大多数服务器的平衡和经济。
 
 ### 延长种子反推
 
 #### 自动版
 
-请使用[笨蛋脚本](https://github.com/lilingfengdev/NitWiki-Script/releases/download/windows-latest/auto-antiseedcracker.exe),在服务器根目录执行即可自动配置!!
+请使用[笨蛋脚本](https://github.com/lilingfengdev/NitWiki-Script/releases/download/windows-latest/auto-antiseedcracker.exe)，在服务器根目录执行即可自动配置!!
 
 #### 特征使用随机种子
 
@@ -35,9 +35,9 @@ sidebar_position: 2
 feature-seeds:
   generate-random-seeds-for-all: true
 ```
-> 这是对每个建筑使用随机种子,防止你的世界种子轻易的被破解
+> 这是对每个建筑使用随机种子，防止你的世界种子轻易的被破解
 
-> 如果发现你的 `spigot.yml` 中出现了类似以下的配置配置就成功了,你可以修改其中的种子。(但其实不改也完全没问题)
+> 如果发现你的 `spigot.yml` 中出现了类似以下的配置配置就成功了，你可以修改其中的种子。(但其实不改也完全没问题)
 
 ```yaml
     seed-village: 10387312
@@ -66,15 +66,15 @@ feature-seeds:
 
 #### Matter 安全种子
 
-如果你使用包含 Matter 安全种子补丁的分支(目前仅存在 Leaf),那么恭喜你,你可以体验到安全功能种子,
+如果你使用包含 Matter 安全种子补丁的分支(目前仅存在 Leaf)，那么恭喜你，你可以体验到安全功能种子，
 
-地形和生物群落的生成保持不变,但所有矿石和结构都是用 1024 位种子生成的,而不是通常的 64 位种子。
+地形和生物群落的生成保持不变，但所有矿石和结构都是用 1024 位种子生成的，而不是通常的 64 位种子。
 
-这种种子几乎不可能破解,因为所需的破解时间和资源极长无比,如果你正在使用,那么你基本不用担心种子破解。
+这种种子几乎不可能破解，因为所需的破解时间和资源极长无比，如果你正在使用，那么你基本不用担心种子破解。
 
 :::danger[特别注意]
 
-开启 Leaf 安全种子之前,你要明白这玩意儿是**不能关闭的**,也就是说,你开启后,除非你删档重开,不然必须使用安全种子
+开启 Leaf 安全种子之前，你要明白这玩意儿是**不能关闭的**，也就是说，你开启后，除非你删档重开，不然必须使用安全种子
 
 :::
 
@@ -82,11 +82,11 @@ feature-seeds:
 
 #### 插件
 
-使用插件 [AntiSeedCracker](https://www.spigotmc.org/resources/antiseedcracker-1-20-4.81495/) ,这个插件会发送一个虚假的种子到客户端,客户端仍然可以通过分析地形来破解,但难度会大大增强
+使用插件 [AntiSeedCracker](https://www.spigotmc.org/resources/antiseedcracker-1-20-4.81495/) ，这个插件会发送一个虚假的种子到客户端，客户端仍然可以通过分析地形来破解，但难度会大大增强
 
 #### 重置资源世界
 
-如果你还是害怕长期推演导致的种子反推。你可以在使用以上一种或多种方法的前提下重置世界,但是这往往只适用于资源世界等。
+如果你还是害怕长期推演导致的种子反推。你可以在使用以上一种或多种方法的前提下重置世界，但是这往往只适用于资源世界等。
 
 ### 设置假矿
 
@@ -94,7 +94,7 @@ feature-seeds:
 
 #### 自动版
 
-使用[笨蛋脚本](https://github.com/lilingfengdev/NitWiki-Script/releases/download/windows-latest/auto_antixray.exe),在服务器根目录执行脚本即可自动配置!!
+使用[笨蛋脚本](https://github.com/lilingfengdev/NitWiki-Script/releases/download/windows-latest/auto_antixray.exe)，在服务器根目录执行脚本即可自动配置!!
 
 ⚠警告：`engine-mode: 3` 在 `paper 1.19.3` 往后的版本才添加⚠
 
@@ -107,7 +107,7 @@ feature-seeds:
 :::
 
 <details>
-  <summary>配置 Ⅰ - *带宽消耗较大,效果非常好*</summary>
+  <summary>配置 Ⅰ - *带宽消耗较大，效果非常好*</summary>
 
 ```yaml
 anticheat:
@@ -166,7 +166,7 @@ anticheat:
 </details>
 
 <details>
-  <summary>配置Ⅱ - *带宽消耗中等,效果中等</summary>
+  <summary>配置Ⅱ - *带宽消耗中等，效果中等</summary>
 
 ```yaml
 anticheat:
@@ -224,7 +224,7 @@ anticheat:
 </details>
 
 <details>
-  <summary>配置Ⅲ - *降低带宽消耗,效果较差*</summary>
+  <summary>配置Ⅲ - *降低带宽消耗，效果较差*</summary>
 
 ```yaml
 anticheat:
@@ -268,7 +268,7 @@ anticheat:
 将下列你喜欢的配置进行复制粘贴即可
 
 <details>
-  <summary>下界配置 Ⅰ - *带宽压力翻倍,效果好,客户端 FPS 可能下降*</summary>
+  <summary>下界配置 Ⅰ - *带宽压力翻倍，效果好，客户端 FPS 可能下降*</summary>
 
 ```yaml
 anticheat:
@@ -302,7 +302,7 @@ anticheat:
 </details>
 
 <details>
-  <summary>下界配置 Ⅱ - *带宽占用略微降低,效果一般(但下届合金一定会被隐藏)*</summary>
+  <summary>下界配置 Ⅱ - *带宽占用略微降低，效果一般(但下届合金一定会被隐藏)*</summary>
 
 ```yaml
 anticheat:
@@ -326,7 +326,7 @@ anticheat:
 </details>
 
 <details>
-  <summary>下界配置 Ⅲ - *带宽占用较大提升,效果较好*</summary>
+  <summary>下界配置 Ⅲ - *带宽占用较大提升，效果较好*</summary>
 
 ```yaml
 anticheat:
@@ -359,7 +359,7 @@ anticheat:
 
 </details>
 
-在末地由于没有矿物,我们推荐将 `world_the_end/paper.world.yml` 进行以下配置即可。
+在末地由于没有矿物，我们推荐将 `world_the_end/paper.world.yml` 进行以下配置即可。
 
 ```yaml
 anticheat:
@@ -367,13 +367,13 @@ anticheat:
     enabled: false
 ```
 
-注意,如果你需要隐藏暴露在空气中的方块,需要将 `air` 添加到 `hidden-blocks` 和 `replacement-blocks` ,但这非常影响性能,不推荐。
+注意，如果你需要隐藏暴露在空气中的方块，需要将 `air` 添加到 `hidden-blocks` 和 `replacement-blocks` ，但这非常影响性能，不推荐。
 
 :::info
 
-将配置文件复制到对应 `.yml` 文件中时,如果已经存在,请相应的进行覆盖而不是简单复制到最后。
+将配置文件复制到对应 `.yml` 文件中时，如果已经存在，请相应的进行覆盖而不是简单复制到最后。
 
-如果并不存在类似的文本,那么请直接复制到对应世界 `.yml` 中。
+如果并不存在类似的文本，那么请直接复制到对应世界 `.yml` 中。
 
 :::
 
@@ -381,25 +381,25 @@ anticheat:
 
 #### RayTraceAntiXray
 
-[RayTraceAntiXray](https://builtbybit.com/resources/raytraceantixray.24914/),[开源](https://github.com/stonar96/RayTraceAntiXray)付费且仅售 7 美元。
+[RayTraceAntiXray](https://builtbybit.com/resources/raytraceantixray.24914/)，[开源](https://github.com/stonar96/RayTraceAntiXray)付费且仅售 7 美元。
 
 是一款用于隐藏 paper 服务器中使用 `engine-mode: 1` 时暴露在空气中的未隐藏方块的插件。
 
-其使用了异步多线程光线追踪,判断玩家是否能看到目标方块,从而在玩家能够看到目标方块时发送真实方块信息。
+其使用了异步多线程光线追踪，判断玩家是否能看到目标方块，从而在玩家能够看到目标方块时发送真实方块信息。
 
-可以优化自带的 Anti-Xray ,减小服务器的带宽开销(甚至比不使用Anti-Xray的宽带占用还低!),如需构建请自行构建。
+可以优化自带的 Anti-Xray ，减小服务器的带宽开销(甚至比不使用Anti-Xray的宽带占用还低!)，如需构建请自行构建。
 
 #### RaytraceAntiXray
 
-一个功能非常多的反X光插件,支持隐藏方块(并且支持XMat命名),隐藏,箱子,刷怪笼之类的,作者现在正在编写结构隐藏
+一个功能非常多的反X光插件，支持隐藏方块(并且支持XMat命名)，隐藏，箱子，刷怪笼之类的，作者现在正在编写结构隐藏
 
 [购买链接](https://builtbybit.com/resources/raytraceantixray-ores-entities-tiles.41896/) 有点小贵
 
 #### Xrai (服务器在国内不推荐)
 
-Xrai 通过 AI 分析玩家是否开启 XRay,并在发现时运行指定操作来帮助您管理您的服务器。
+Xrai 通过 AI 分析玩家是否开启 XRay，并在发现时运行指定操作来帮助您管理您的服务器。
 
-但是该插件的服务器位于国外,所以国内访问会较慢
+但是该插件的服务器位于国外，所以国内访问会较慢
 
 :::warning
 

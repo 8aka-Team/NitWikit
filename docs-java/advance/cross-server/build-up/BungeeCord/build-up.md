@@ -49,7 +49,7 @@ servers:
     restricted: false
 ```
 
-照着把你的子服都写上去,就像这样
+照着把你的子服都写上去，就像这样
 
 ```yaml
 servers:

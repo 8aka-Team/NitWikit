@@ -27,13 +27,13 @@ sidebar_position: 1
 
 :::
 
-这是 BungeeCord 版本的 AuthMe 。如果你的登录服使用 AuthMe 登录,请务必在 BungeeCord 上安装此插件,以增加登录系统的安全性和完整性,这可以为你避免一些不必要的麻烦
+这是 BungeeCord 版本的 AuthMe 。如果你的登录服使用 AuthMe 登录，请务必在 BungeeCord 上安装此插件，以增加登录系统的安全性和完整性，这可以为你避免一些不必要的麻烦
 
-如果你不安装此插件,在玩家登录时很可能乘此跳到其他子服务器来跳过登录,以此获取管理员账号来炸服
+如果你不安装此插件，在玩家登录时很可能乘此跳到其他子服务器来跳过登录，以此获取管理员账号来炸服
 
 # 可安装在跨服端或子服
 
-这一分类中的插件有单端版和跨服端版,你可以删除单端版使用跨服端版。
+这一分类中的插件有单端版和跨服端版，你可以删除单端版使用跨服端版。
 
 ## MiniMOTD
 
@@ -67,7 +67,7 @@ sidebar_position: 1
 
 比如 %viaversion_player_protocol_version% 来查看玩家客户端版本
 
-不利于任何反作弊的运行,因为后端服务器中的反作弊将认为玩家均来自于服务版本,这会导致**大量的误判**。
+不利于任何反作弊的运行，因为后端服务器中的反作弊将认为玩家均来自于服务版本，这会导致**大量的误判**。
 
 :::
 
@@ -100,7 +100,7 @@ sidebar_position: 1
 
 # 装在跨服端或+子服端
 
-这类插件可以只装在跨服端,但同时在子服安装可以有更多的功能。
+这类插件可以只装在跨服端，但同时在子服安装可以有更多的功能。
 
 ## PlayerBalancer
 
@@ -114,7 +114,7 @@ sidebar_position: 1
 
 :::
 
-可以用来设置多个子大厅,设置主大厅,并按照你配置的方式发送玩家到子服。
+可以用来设置多个子大厅，设置主大厅，并按照你配置的方式发送玩家到子服。
 
 ## ServerUtils
 
@@ -146,8 +146,8 @@ sidebar_position: 1
 
 :::
 
-PAPIProxyBridge 是安装在后端和代理服务器上的库桥插件,它允许代理端插件使用 PlaceholderAPI 占位符设置文本格式
+PAPIProxyBridge 是安装在后端和代理服务器上的库桥插件，它允许代理端插件使用 PlaceholderAPI 占位符设置文本格式
 
-在 Spigot (1.16.5+) 上安装最新版本的插件以及 [PlaceholderAPI](https://www.spigotmc.org/resources/placeholderapi.6245/) 插件,或在 Fabric (1.19.3+) 服务器上安装 [PlaceholderAPI mod](https://placeholders.pb4.eu/),然后在 BungeeCord 或 Velocity 代理服务器上安装该插件
+在 Spigot (1.16.5+) 上安装最新版本的插件以及 [PlaceholderAPI](https://www.spigotmc.org/resources/placeholderapi.6245/) 插件，或在 Fabric (1.19.3+) 服务器上安装 [PlaceholderAPI mod](https://placeholders.pb4.eu/)，然后在 BungeeCord 或 Velocity 代理服务器上安装该插件
 
-请注意,此插件不能替代 PlaceholderAPI。你仍然需要在 Spigot/Fabric 服务器上安装 PlaceholderAPI
+请注意，此插件不能替代 PlaceholderAPI。你仍然需要在 Spigot/Fabric 服务器上安装 PlaceholderAPI

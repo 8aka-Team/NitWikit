@@ -49,7 +49,7 @@ set:
   previous_signin: &previous_signin
     if: papi %checkitem_nbtstrings:NeigeItems..id..data=signin_card%
     then:
-      - papi %checkitem_remove_nbtstrings:NeigeItems..id..data=signin_card,amt:1%
+      - papi %checkitem_remove_nbtstrings:NeigeItems..id..data=signin_card，amt:1%
         tell "&a&l! &7补签成功!"
       - *signin
     else:
@@ -126,7 +126,7 @@ icons:
 generator:
   output:
     material: barrier
-    name: '错误,请联系管理员'
+    name: '错误，请联系管理员'
     amount: '{{if &itemAmount then element *id else 1}}'
     sub:
       # 空

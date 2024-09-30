@@ -37,6 +37,6 @@ sidebar_position: 6
 
 ## 更多
 
-如果你想让玩家自行设置私有地标,公开地标,甚至导航到地标等
+如果你想让玩家自行设置私有地标，公开地标，甚至导航到地标等
 
 或许你可以看看 [Waypoints](https://www.minebbs.com/resources/.9062) 插件

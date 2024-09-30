@@ -17,7 +17,7 @@ sidebar_label: 查包 - InvSee++
 
 InvSee++ 可以查看和编辑其他玩家的物品栏和末影箱。
 
-[Essentials](/Java/process/plugin/ManageTool/BasicPlugins/EssentialsX/) 也有这个功能,但 InvSee 可以：
+[Essentials](/Java/process/plugin/ManageTool/BasicPlugins/EssentialsX/) 也有这个功能，但 InvSee 可以：
 
 - 拿走或替换玩家的装备
 - 查询离线玩家的背包
@@ -28,8 +28,8 @@ InvSee++ 可以查看和编辑其他玩家的物品栏和末影箱。
 - 查看和编辑其他玩家的物品栏和末影宝箱。
 - 包括玩家的盔甲内容和副手物品。
 - 包括玩家的合成/工作台/铁砧/锻造台/石匠/磨石/织布机/附魔台/商人物品以及玩家光标中的物品。
-- 支持离线玩家,甚至支持从未登录过服务器的玩家。
-- 当玩家重新登录时,物品栏会自动重新加载。
+- 支持离线玩家，甚至支持从未登录过服务器的玩家。
+- 当玩家重新登录时，物品栏会自动重新加载。
 - (可选)与 PerWorldInventory 集成。这需要在其配置中加入 `load-data-on-join： true` 。
 
 ## 命令

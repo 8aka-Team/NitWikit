@@ -31,7 +31,7 @@ sidebar_position: 3
 
 ![](_images/Math/1.png)
 
-发现输出的结果有三位小数,你可以在 `plugins\PlaceholderAPI\config.yml` 中找到
+发现输出的结果有三位小数，你可以在 `plugins\PlaceholderAPI\config.yml` 中找到
 
 ```
   math:
@@ -72,4 +72,4 @@ sidebar_position: 3
 
 ![](_images/Math/4.png)
 
-我本地测试服务器里就我自己一个人,所以 1+1=2
+我本地测试服务器里就我自己一个人，所以 1+1=2

@@ -6,7 +6,7 @@ sidebar_position: 3
 
 # 概览
 
-记录玩家放置,破坏,存储物品等使用 [CoreProtect](CoreProtect.md) 或 [PrismRefracted](PrismRefracted.md)。
+记录玩家放置，破坏，存储物品等使用 [CoreProtect](CoreProtect.md) 或 [PrismRefracted](PrismRefracted.md)。
 
 可以依据记录让插件把一定区域回滚到某个时间点。
 

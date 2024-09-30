@@ -55,6 +55,6 @@ sidebar_position: 1
 
 ## 存储方式
 
-LuckPerms 可以使用 yml 文件存储数据,易于编辑,但我推荐使用 h2(默认) 或者连接数据库使用
+LuckPerms 可以使用 yml 文件存储数据，易于编辑，但我推荐使用 h2(默认) 或者连接数据库使用
 
-如果你想更改存储方式,可见：https://snowcutieowo.github.io/LuckPerms/#/configuration?id=storage-method
+如果你想更改存储方式，可见：https://snowcutieowo.github.io/LuckPerms/#/configuration?id=storage-method

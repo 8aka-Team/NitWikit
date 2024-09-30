@@ -22,9 +22,9 @@ sidebar_position: 2
 
 老牌登录插件 Authme
 
-建议使用[电棍的fork](https://github.com/HaHaWTH/AuthMeReReloaded),这是它的[中文介绍](https://github.com/HaHaWTH/AuthMeReReloaded/blob/master/README-zh.md)
+建议使用[电棍的fork](https://github.com/HaHaWTH/AuthMeReReloaded)，这是它的[中文介绍](https://github.com/HaHaWTH/AuthMeReReloaded/blob/master/README-zh.md)
 
-如果你也使用了跨服端,请在跨服端安装对应的 AuthMe
+如果你也使用了跨服端，请在跨服端安装对应的 AuthMe
 
 [AuthMeBungee](https://www.spigotmc.org/resources/.50219/)
 

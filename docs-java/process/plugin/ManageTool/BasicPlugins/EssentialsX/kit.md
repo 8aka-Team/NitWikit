@@ -15,7 +15,7 @@ sidebar_position: 5
 
 他会将你背包中所有物品保存到这个 kit 礼包中
 
-值得一提的是,如果冷却写 -1 ,那么这个礼包只能被领取一次
+值得一提的是，如果冷却写 -1 ，那么这个礼包只能被领取一次
 
 可用于制作新手礼包
 
@@ -35,7 +35,7 @@ sidebar_position: 5
 
 ![](_images/kit_3.png)
 
-是的,除了 `essentials.kit` 我们还需要给予 `essentials.kits.<kit名字>` 玩家才能领取
+是的，除了 `essentials.kit` 我们还需要给予 `essentials.kits.<kit名字>` 玩家才能领取
 
 ## 删除礼包
 
@@ -51,7 +51,7 @@ sidebar_position: 5
 
 ### kit 执行命令
 
-是的,你能在里面写命令
+是的，你能在里面写命令
 
 ```yaml
   iloveyizhan:

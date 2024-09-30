@@ -21,4 +21,4 @@ sidebar_label: 领地 - GriefDefender
 
 ![](_images/GriefDefender-github.png)
 
-它开源的代码只到2021年,往隔壁 Residence 旁边一站简直是卧龙凤雏
+它开源的代码只到2021年，往隔壁 Residence 旁边一站简直是卧龙凤雏

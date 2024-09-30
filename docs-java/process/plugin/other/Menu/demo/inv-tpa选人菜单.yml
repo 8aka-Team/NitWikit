@@ -49,7 +49,7 @@ nodes:
           false
         }
       }
-  tellraw: 'tellraw {{&tpaname}} [{"text":"&7[&a接受&7]","clickEvent":{"action":"run_command","value":"/tpaccept"}},{"text":"&7[&c拒绝&7]","clickEvent":{"action":"run_command","value":"/tpdeny"}}]'
+  tellraw: 'tellraw {{&tpaname}} [{"text":"&7[&a接受&7]"，"clickEvent":{"action":"run_command"，"value":"/tpaccept"}}，{"text":"&7[&c拒绝&7]"，"clickEvent":{"action":"run_command"，"value":"/tpdeny"}}]'
 
 
 

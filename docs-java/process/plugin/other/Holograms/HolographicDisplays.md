@@ -14,10 +14,10 @@ sidebar_position: 3
 
 :::
 
-老牌全息图插件,不过咱建议用 [DecentHolograms](DecentHolograms.md)
+老牌全息图插件，不过咱建议用 [DecentHolograms](DecentHolograms.md)
 
 # 停更
 
 ![](_images/hd已经归档.png)
 
-目前项目已经归档,这意味着此仓库将不会再有新的代码提交
+目前项目已经归档，这意味着此仓库将不会再有新的代码提交

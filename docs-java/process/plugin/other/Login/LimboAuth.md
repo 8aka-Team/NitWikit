@@ -28,4 +28,4 @@ sidebar_position: 4
 
 前置：[LimboAPI](https://github.com/Elytrium/LimboAPI)
 
-[LimboFilter](https://github.com/Elytrium/LimboFilter) 此插件可以该插件提供更好的兼容性. 如果要准备使用该登录插件, 推荐优先选择该反机器人插件.
+[LimboFilter](https://github.com/Elytrium/LimboFilter) 此插件可以该插件提供更好的兼容性. 如果要准备使用该登录插件， 推荐优先选择该反机器人插件.

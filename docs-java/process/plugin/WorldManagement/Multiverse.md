@@ -19,9 +19,9 @@ sidebar_label: 多世界 - Multiverse
 
 :::
 
-老牌多世界管理插件,可以新建,删除,导入世界(维度)等
+老牌多世界管理插件，可以新建，删除，导入世界(维度)等
 
-值得一提的是,在 [GitHub releases](https://github.com/Multiverse/Multiverse-Core/releases) 上的版本比在 SpigotMC 上能下载到的版本要新
+值得一提的是，在 [GitHub releases](https://github.com/Multiverse/Multiverse-Core/releases) 上的版本比在 SpigotMC 上能下载到的版本要新
 
 # 附属
 
@@ -40,9 +40,9 @@ sidebar_label: 多世界 - Multiverse
 
 [Multiverse-Portals](https://github.com/Multiverse/Multiverse-Portals/wiki) 是类似于 Multiverse 1 类型的传送门。
 
-如果你使用过它的话,你可能很想要本插件。
+如果你使用过它的话，你可能很想要本插件。
 
-它们的大部分是一样的,只是有一些新特性。
+它们的大部分是一样的，只是有一些新特性。
 
 本插件能够让你：
 
@@ -52,11 +52,11 @@ sidebar_label: 多世界 - Multiverse
 
 ## Multiverse-NetherPortals
 
-[Multiverse-NetherPortals](https://github.com/Multiverse/Multiverse-NetherPortals/wiki) 起到了 Multiverse 1 插件中 splike 的作用,但改善了许多。
+[Multiverse-NetherPortals](https://github.com/Multiverse/Multiverse-NetherPortals/wiki) 起到了 Multiverse 1 插件中 splike 的作用，但改善了许多。
 
-本插件是为了能够让你们有更加真实的体验而设计,允许玩家创建能够带他们去指定世界的地狱传送门。
+本插件是为了能够让你们有更加真实的体验而设计，允许玩家创建能够带他们去指定世界的地狱传送门。
 
-所有在 X 世界的传送门都会去 Y 世界,但是这可以在游戏中配置。
+所有在 X 世界的传送门都会去 Y 世界，但是这可以在游戏中配置。
 
 本插件能够让你：
 
@@ -69,9 +69,9 @@ sidebar_label: 多世界 - Multiverse
 
 > Fix issue where special chars cause PatternSyntaxException leading to a server crash.
 
-Multiverse-Core [4.3.1](https://www.spigotmc.org/resources/multiverse-core.390/update?update=424085) 版本已经修复此问题,请更新到最新版
+Multiverse-Core [4.3.1](https://www.spigotmc.org/resources/multiverse-core.390/update?update=424085) 版本已经修复此问题，请更新到最新版
 
-如果你因为某些原因不能更新到最新版,可以使用修复补丁
+如果你因为某些原因不能更新到最新版，可以使用修复补丁
 
 补丁(只需安装其中一个)：
 
@@ -106,11 +106,11 @@ https://mineplugin.org/Multiverse-Core#%E6%88%91%E4%B8%8D%E8%83%BD%E8%AF%BB%E5%8
 
 https://mineplugin.org/Multiverse-Core#%E6%9C%89%E8%83%BD%E5%A4%9F%E5%88%86%E5%89%B2%E4%B8%8D%E5%90%8C%E4%B8%96%E7%95%8C%E7%89%A9%E5%93%81%E6%A0%8F%E7%9A%84%E6%96%B9%E6%B3%95%E5%90%97%EF%BC%9F
 
-## 在使用 MultiInv 后,某个玩家会在某个特殊的世界一直死亡！
+## 在使用 MultiInv 后，某个玩家会在某个特殊的世界一直死亡！
 
 https://mineplugin.org/Multiverse-Core#%E5%9C%A8%E4%BD%BF%E7%94%A8_MultiInv_%E5%90%8E%EF%BC%8C%E6%9F%90%E4%B8%AA%E7%8E%A9%E5%AE%B6%E4%BC%9A%E5%9C%A8%E6%9F%90%E4%B8%AA%E7%89%B9%E6%AE%8A%E7%9A%84%E4%B8%96%E7%95%8C%E4%B8%80%E7%9B%B4%E6%AD%BB%E4%BA%A1%EF%BC%81
 
-## Multiverse 的消息提示因为不安全,不能带我去某个地方！我知道它是安全的！
+## Multiverse 的消息提示因为不安全，不能带我去某个地方！我知道它是安全的！
 
 https://mineplugin.org/Multiverse-Core#Multiverse_%E7%9A%84%E6%B6%88%E6%81%AF%E6%8F%90%E7%A4%BA%E5%9B%A0%E4%B8%BA%E4%B8%8D%E5%AE%89%E5%85%A8%EF%BC%8C%E4%B8%8D%E8%83%BD%E5%B8%A6%E6%88%91%E5%8E%BB%E6%9F%90%E4%B8%AA%E5%9C%B0%E6%96%B9%EF%BC%81%E6%88%91%E7%9F%A5%E9%81%93%E5%AE%83%E6%98%AF%E5%AE%89%E5%85%A8%E7%9A%84%EF%BC%81
 
@@ -122,7 +122,7 @@ https://mineplugin.org/Multiverse-Core#1.8%EF%BC%9A%E6%80%8E%E4%B9%88%E8%AE%A9_M
 
 https://mineplugin.org/Multiverse-Core#%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%A0%E4%B8%8D%E7%94%A8%E7%AE%80%E5%8D%95%E4%BA%9B%E7%9A%84%E4%BC%A0%E9%80%81%E6%9D%83%E9%99%90%E5%91%A2%EF%BC%9F
 
-## 当玩家首次登入时,出生点的位置不对！
+## 当玩家首次登入时，出生点的位置不对！
 
 https://mineplugin.org/Multiverse-Core#%E5%BD%93%E7%8E%A9%E5%AE%B6%E9%A6%96%E6%AC%A1%E7%99%BB%E5%85%A5%E6%97%B6%EF%BC%8C%E5%87%BA%E7%94%9F%E7%82%B9%E7%9A%84%E4%BD%8D%E7%BD%AE%E4%B8%8D%E5%AF%B9%EF%BC%81
 
@@ -191,7 +191,7 @@ worlds:
 ```
 
 解释：
-- worlds        - 插件检索的YAML节点,不用管
+- worlds        - 插件检索的YAML节点，不用管
 - world         - 主世界的默认本名(可在server.properties修改)
 - world_nether  - 地狱的默认本名
 - world_the_end - 末地的默认本名
@@ -215,6 +215,6 @@ worlds:
 
 将变量 `%multiverse_world_alias%` 写到你想展示世界别名的插件配置里
 
-当然,这个插件要支持使用papi变量
+当然，这个插件要支持使用papi变量
 
 接着 **重载那个插件**

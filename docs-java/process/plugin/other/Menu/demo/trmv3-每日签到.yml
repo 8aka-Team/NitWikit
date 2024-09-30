@@ -5,7 +5,7 @@
 # Date: 2022-01-13 16:55:21
 
 # 强制重置某玩家的本月签到: /trmenu action 玩家 set-data: 签到重置节点 0  
-# 强制修改某玩家的某日签到状态: /trmenu action 玩家 set-data: 签到-[日期] 0/1     [日期]:假如12号就填12,不含中括号；后面0为未签到,1为已签到
+# 强制修改某玩家的某日签到状态: /trmenu action 玩家 set-data: 签到-[日期] 0/1     [日期]:假如12号就填12，不含中括号；后面0为未签到，1为已签到
 # 强制修改某玩家的签到总数: /trmenu action 玩家 set-data: 总签到 [数值]
 # 强制修改某玩家的本月签到数: /trmenu action 玩家 set-data: 本月签到 [数值]
 
@@ -22,7 +22,7 @@ Layout:
 OPTIONS:
   TRANSFER-ARGS: true
   Min-Click-Delay: 200
-  Depend-Expansions: ['server', 'player', 'progress', 'math']
+  Depend-Expansions: ['server'， 'player'， 'progress'， 'math']
 
 Events:
   Open:
@@ -31,7 +31,7 @@ Events:
       - 'setargs: %server_time_M% %server_time_d% %player_name% %server_time_H% %server_time_m%'
     - condition: 'check papi *%trmenu_data_签到重置节点% != papi *%server_time_M%'
       actions:
-      - 'tell: &a检测到你是本月首次签到,正在准备数据...'
+      - 'tell: &a检测到你是本月首次签到，正在准备数据...'
       - 'set-data: 签到重置节点 %server_time_M%'
       - 'set-data: 签到01 0;签到02 0;签到03 0;签到04 0;签到05 0;签到06 0;签到07 0;签到08 0;签到09 0;签到010 0'
       - 'set-data: 签到011 0;签到012 0;签到013 0;签到014 0;签到015 0;签到016 0;签到017 0;签到018 0;签到019 0;签到020 0'
@@ -125,7 +125,7 @@ Icons:
             - 'GIVE-ECO: 1000'
             - 'Tell: &a ▪ 你获得了1000金币。'
             - 'title: `&a领取完成` `&3 奖励已发送至你的背包 `'
-            - 'giveitem: material:diamond,amount:2'
+            - 'giveitem: material:diamond，amount:2'
             - 'Tell: &a ▪ 你获得了2个钻石。'
             - 'set-data: 签到礼包A 1' 
       - condition: 'check papi *%trmenu_data_本月签到% < *3'
@@ -187,7 +187,7 @@ Icons:
             - 'GIVE-ECO: 5000'
             - 'Tell: &a ▪ 你获得了5000金币。'
             - 'title: `&a领取完成` `&3 奖励已发送至你的背包 `'
-            - 'giveitem: material:diamond,amount:8'
+            - 'giveitem: material:diamond，amount:8'
             - 'Tell: &a ▪ 你获得了8个钻石。'
             - 'set-data: 签到礼包B 1'  
       - condition: 'check papi *%trmenu_data_本月签到% < *7'
@@ -249,7 +249,7 @@ Icons:
             - 'GIVE-ECO: 20000'
             - 'Tell: &a ▪ 你获得了20000金币。'
             - 'title: `&a领取完成` `&3 奖励已发送至你的背包 `'
-            - 'giveitem: material:diamond,amount:16'
+            - 'giveitem: material:diamond，amount:16'
             - 'Tell: &a ▪ 你获得了16个钻石。'
             - 'set-data: 签到礼包C 1'  
       - condition: 'check papi *%trmenu_data_本月签到% < *15'
@@ -313,7 +313,7 @@ Icons:
             - 'GIVE-ECO: 30000'
             - 'Tell: &a ▪ 你获得了30000金币。'
             - 'title: `&a领取完成` `&3 奖励已发送至你的背包 `'
-            - 'giveitem: material:diamond,amount:32'
+            - 'giveitem: material:diamond，amount:32'
             - 'Tell: &a ▪ 你获得了32个钻石。'
             - 'console: give {2} netherite_ingot 16'
             - 'Tell: &a ▪ 你获得了16个合金锭。'

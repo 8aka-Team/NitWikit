@@ -7,43 +7,43 @@ sidebar_position: 3
 
 ## 布尔值(boolean)
 
-它只有两个取值,即 **真(true)** 和 **假(false)**
+它只有两个取值，即 **真(true)** 和 **假(false)**
 
-或者说,**是(true)** 和 **否(false)**
+或者说，**是(true)** 和 **否(false)**
 
 ## 权限判断(Permission)
 
 > https://kether.tabooproject.org/list.html#Permission
 
-判断玩家是否拥有某权限,如果是,则返回 **true** ,否,则返回 **false**
+判断玩家是否拥有某权限，如果是，则返回 **true** ，否，则返回 **false**
 
 ![](_images/vul-perm.png)
 
-我是op,所以我拥有此权限,返回了 true
+我是op，所以我拥有此权限，返回了 true
 
-同 [PlaceholderAPI](basic.md#变量placeholderapi) 一样,**Permission** 也有一个简写 **perm**
+同 [PlaceholderAPI](basic.md#变量placeholderapi) 一样，**Permission** 也有一个简写 **perm**
 
 ## 判断为否(Not)
 
-上面是判断拥有此权限,那么我如何判断不拥有此权限呢？
+上面是判断拥有此权限，那么我如何判断不拥有此权限呢？
 
 ![](_images/vul-permNot_1.png)
 
 ![](_images/正经笑.jpg)
 
-咳咳,开玩笑的,驿站怎么可能用过这么傻逼的写法呢
+咳咳，开玩笑的，驿站怎么可能用过这么傻逼的写法呢
 
 ![](_images/冒汗.jpg)
 
 > https://kether.tabooproject.org/list.html#Not
 
-> 判断动作的返回值是否为否,即否定动作的结果。
+> 判断动作的返回值是否为否，即否定动作的结果。
 
 ![](_images/vul-permNot_2.png)
 
-因为我拥有此权限,所以 perm 判断是 true
+因为我拥有此权限，所以 perm 判断是 true
 
-接着因为 not,最后的结果是 false
+接着因为 not，最后的结果是 false
 
 perm -> not
 
@@ -84,11 +84,11 @@ check 动作1 {symbol} 动作2
 
 条件判断为 **true** 则执行 then 后面的动作
 
-注：这里的条件也是指动作,即 动作的返回值为 **true** 则执行 then 后面的动作
+注：这里的条件也是指动作，即 动作的返回值为 **true** 则执行 then 后面的动作
 
 ![](_images/if_1.png)
 
-上面只是执行单个动作,那么,如何让他判断 **true** 后执行多行动作？
+上面只是执行单个动作，那么，如何让他判断 **true** 后执行多行动作？
 
 ```
 if 条件 then {
@@ -210,7 +210,7 @@ all [ 动作1 动作2 动作3 更多 ]
 /vul eval if all [ perm vulpecula.command not perm luckperms.editor ] then tell 通过 else 不通过
 ```
 
-玩家拥有权限 vulpecula.command 没有权限 luckperms.editor 则通过,否则不通过
+玩家拥有权限 vulpecula.command 没有权限 luckperms.editor 则通过，否则不通过
 
 ![](_images/if_2.png)
 
@@ -254,7 +254,7 @@ any [
 
 ####  判断null字符串
 
-如果一个动作,变量,或者其他什么东西会有输出null的情况,而你想判断这个情况
+如果一个动作，变量，或者其他什么东西会有输出null的情况，而你想判断这个情况
 
 但是 `null` 是一个已有的动作：https://kether.tabooproject.org/list.html#Null
 

@@ -16,6 +16,6 @@ sidebar_position: 4
 
 :::
 
-老牌经济插件,和 Vault 不同的经济体系,即可以与 Vault 系经济共存。
+老牌经济插件，和 Vault 不同的经济体系，即可以与 Vault 系经济共存。
 
 常被用作点卷(而 Vault 则是“金币”)

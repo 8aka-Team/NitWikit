@@ -44,7 +44,7 @@ generator:
   output:
     enhancedLore: true
     material: bedrock
-    name: '&c&l判断错误,请联系管理'
+    name: '&c&l判断错误，请联系管理'
     sub:
       - if: check element source == mc
         material: '{{element mat}}'

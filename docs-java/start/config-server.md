@@ -5,11 +5,11 @@ sidebar_position: 5
 
 # 配置服务端
 
-开启后,你需要进行一些简单配置,比如修改服务器端口,正版验证等
+开启后，你需要进行一些简单配置，比如修改服务器端口，正版验证等
 
 ## 笨蛋脚本
 
-[下载](https://github.com/lilingfengdev/NitWiki-Script/releases/download/windows-latest/config-eazy.exe),我们会询问一些问题,帮你**自动配置**
+[下载](https://github.com/lilingfengdev/NitWiki-Script/releases/download/windows-latest/config-eazy.exe)，我们会询问一些问题，帮你**自动配置**
 
 目前可以配置的
 
@@ -20,7 +20,7 @@ sidebar_position: 5
 
 ## 正版验证
 
-正版验证默认被开启,不关闭正版验证的话盗版玩家是不能加入游戏的。如果你没有用正版启动游戏,那么加入服务器会出现：
+正版验证默认被开启，不关闭正版验证的话盗版玩家是不能加入游戏的。如果你没有用正版启动游戏，那么加入服务器会出现：
 
 ![](_images/无效会话.png)
 
@@ -30,17 +30,17 @@ sidebar_position: 5
 online-mode=true
 ```
 
-如果你想关闭正版验证,将 `true` 改为 `false` ,保存,重启服务端
+如果你想关闭正版验证，将 `true` 改为 `false` ，保存，重启服务端
 
 :::danger
 
-**不要开服开到一半去改正版验证!** 这会造成 UUID 混乱,玩家数据丢失,当然你可以转换 UUID 来解决这个问题 [查看解决方法](https://dodo939.love/2024/06/20/mc-online-conv-tool/)
+**不要开服开到一半去改正版验证!** 这会造成 UUID 混乱，玩家数据丢失，当然你可以转换 UUID 来解决这个问题 [查看解决方法](https://dodo939.love/2024/06/20/mc-online-conv-tool/)
 
-如果需要更多的验证方式(如 **皮肤站**/**统一认证** 等),请在服务器 **公测前** 确定,具体请参考[更多验证方式](/docs-java/advance/loginchoices.md)
+如果需要更多的验证方式(如 **皮肤站**/**统一认证** 等)，请在服务器 **公测前** 确定，具体请参考[更多验证方式](/docs-java/advance/loginchoices.md)
 
 :::
 
-注意,在离线模式下,玩家大概率没皮肤,你需要 [SkinsRestorer](/docs-java/process/plugin/other/SkinsRestorer.md),根据需求选择 SkinsRestorer 的版本。
+注意，在离线模式下，玩家大概率没皮肤，你需要 [SkinsRestorer](/docs-java/process/plugin/other/SkinsRestorer.md)，根据需求选择 SkinsRestorer 的版本。
 
 ## 最大玩家数
 
@@ -64,7 +64,7 @@ level-seed=
 
 :::note
 
-你可能会发现一些结构,比如村庄的生成,并不会遵循种子,是由于 `Spigot` 及其下游服务端加入了随机种子,地形的生成也会出现一些偏差
+你可能会发现一些结构，比如村庄的生成，并不会遵循种子，是由于 `Spigot` 及其下游服务端加入了随机种子，地形的生成也会出现一些偏差
 
 一些服务端也会添加一些地形生成优化补丁，通常会小范围改变地形生成
 
@@ -74,9 +74,9 @@ level-seed=
 
 ## 启用命令方块？
 
-服务器中命令方块默认关闭,**并且不建议开启**。
+服务器中命令方块默认关闭，**并且不建议开启**。
 
-**命令方块是性能低下的,并且所有功能都可以用插件替代。**
+**命令方块是性能低下的，并且所有功能都可以用插件替代。**
 
 如何开启：
 
@@ -107,7 +107,7 @@ difficulty=hard
 spawn-protection=16
 ```
 
-出生点的保护范围,在保护范围中只有OP可以破坏或者放置
+出生点的保护范围，在保护范围中只有OP可以破坏或者放置
 
 设置为0可以禁用
 
@@ -138,7 +138,7 @@ gamemode=survival
 force-gamemode=false
 ```
 
-如果设置为`true`,玩家加入后将会被强制改为默认游戏模式
+如果设置为`true`，玩家加入后将会被强制改为默认游戏模式
 
 ## 结构生成
 
@@ -168,7 +168,7 @@ allow-flight=true
 
 :::warning
 
-最好将此值设为`true`,无论你是否需要飞行,如果你需要反飞行,请查看反作弊一章
+最好将此值设为`true`，无论你是否需要飞行，如果你需要反飞行，请查看反作弊一章
 
 :::
 
@@ -178,15 +178,15 @@ allow-flight=true
 
 ## 游戏规则
 
-这一部分的配置需要使用`/gamerule`来完成,而非`server.properties`
+这一部分的配置需要使用`/gamerule`来完成，而非`server.properties`
 
 [全部](https://minecraft.fandom.com/zh/wiki/%E6%B8%B8%E6%88%8F%E8%A7%84%E5%88%99#%E6%B8%B8%E6%88%8F%E8%A7%84%E5%88%99%E5%88%97%E8%A1%A8)
 
 :::tip
 
-请注意,默认情况下`/gamerule`所设置的游戏规则**只会在**执行命令的世界**生效**
+请注意，默认情况下`/gamerule`所设置的游戏规则**只会在**执行命令的世界**生效**
 
-[Ultimate Gamerules Manager](https://www.spigotmc.org/resources/ultimate-gamerules-manager-1-13-1-20-3.102215/) 是个不错的插件,适合新手
+[Ultimate Gamerules Manager](https://www.spigotmc.org/resources/ultimate-gamerules-manager-1-13-1-20-3.102215/) 是个不错的插件，适合新手
 
 :::
 

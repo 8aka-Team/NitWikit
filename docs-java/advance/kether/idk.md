@@ -9,7 +9,7 @@ sidebar_position: 6
 
 ## inline
 
-inline是在一段文本中插入语句,实际上会创造一个新的 kether 环境
+inline是在一段文本中插入语句，实际上会创造一个新的 kether 环境
 
 例如这个 TrMenu 例子中：
 ```yaml
@@ -25,15 +25,15 @@ inline是在一段文本中插入语句,实际上会创造一个新的 kether �
 
 而第二个 tell 打印了空值
 
-因为第二个 tell 后面是一个新的 kether 环境,里面没有原 kether 环境里的变量
+因为第二个 tell 后面是一个新的 kether 环境，里面没有原 kether 环境里的变量
 
-同时,你也不能使用原插件提供的 kether 私有语句,不过你可以尝试 [导入语句](https://www.yuque.com/sacredcraft/kether/namespace#zVbkg)
+同时，你也不能使用原插件提供的 kether 私有语句，不过你可以尝试 [导入语句](https://www.yuque.com/sacredcraft/kether/namespace#zVbkg)
 
 ![](_images/inline.png)
 
 ## join
 
-join 是拼接多个语句,不会像 inline 那样创造新的环境,所以没有上述特性,join 里的语句会使用原 kether 环境
+join 是拼接多个语句，不会像 inline 那样创造新的环境，所以没有上述特性，join 里的语句会使用原 kether 环境
 
 ## 行内复合文本
 

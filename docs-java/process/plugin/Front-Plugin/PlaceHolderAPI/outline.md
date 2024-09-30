@@ -13,15 +13,15 @@ sidebar_position: 1
 
 `Wiki` https://wiki.placeholderapi.com/
 
-`插件百科(不推荐,老掉牙了)` https://mineplugin.org/PlaceholderAPI(%E6%97%A7)
+`插件百科(不推荐，老掉牙了)` https://mineplugin.org/PlaceholderAPI(%E6%97%A7)
 
 :::
 
-PlaceHolderAPI是一个广泛使用的变量插件,它可以做到 Math(数学运算) Checkitem(操作玩家物品) JavaScript(执行js) Progress(制作进度条) 显示变量 等
+PlaceHolderAPI是一个广泛使用的变量插件，它可以做到 Math(数学运算) Checkitem(操作玩家物品) JavaScript(执行js) Progress(制作进度条) 显示变量 等
 
 ## 什么是变量?
 
-这里指的变量是形似 `%player_name%`, 即 `%xxx%` 的占位符
+这里指的变量是形似 `%player_name%`， 即 `%xxx%` 的占位符
 
 它们用来显示一些信息
 
@@ -41,7 +41,7 @@ boolean:
 
 将yes和no改为true false
 
-不改也没事,就是改成true false会更方便判断
+不改也没事，就是改成true false会更方便判断
 
 ## 在哪寻找我要的变量?
 

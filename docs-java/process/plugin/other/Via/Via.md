@@ -6,17 +6,17 @@ sidebar_position: 4
 
 # 什么是跨版本
 
-跨版本就是可以让不同于服务器版本的客户端版本进入服务器,比如服务器版本为 1.20.1,安装跨版本之后可以让 1.19.4 进入服务器
+跨版本就是可以让不同于服务器版本的客户端版本进入服务器，比如服务器版本为 1.20.1，安装跨版本之后可以让 1.19.4 进入服务器
 
 :::danger
 
-跨版本不适合模组服,代理端,Leaves！！会出很多问题！！
+跨版本不适合模组服，代理端，Leaves！！会出很多问题！！
 
 :::
 
 :::danger
 
-跨版本不宜太大,除非你有能力使低版本玩家获得更好的游戏体验(最简单的例子:1.17 以下的玩家一进入 1.17+服务器的 y 小于 0,就会疯狂回弹,严重影响游戏体验)
+跨版本不宜太大，除非你有能力使低版本玩家获得更好的游戏体验(最简单的例子:1.17 以下的玩家一进入 1.17+服务器的 y 小于 0，就会疯狂回弹，严重影响游戏体验)
 
 :::
 
@@ -36,7 +36,7 @@ ViaRewind:1.7-1.8(进入高版本服务器)
 
 ViaVersion+ViaBackwards+ViaRewind
 
-这三个支持的服务器是1.17～1.21(Via*插件剔除了Java8支持,需要在[Via官方构建站](https://ci.viaversion.com)获取支持Java8的1.8～1.21插件)
+这三个支持的服务器是1.17～1.21(Via*插件剔除了Java8支持，需要在[Via官方构建站](https://ci.viaversion.com)获取支持Java8的1.8～1.21插件)
 
 ### 独立版(ViaProxy)
 
@@ -44,7 +44,7 @@ ViaVersion+ViaBackwards+ViaRewind
 - Beta (b1.0 - b1.8.1)
 - Alpha (a1.0.15 - a1.2.6)
 - Classic (c0.0.15 - c0.30 包含 [CPE](https://wiki.vg/Classic_Protocol_Extension))
-- 愚人节快照 (3D Shareware, 20w14infinite)
+- 愚人节快照 (3D Shareware， 20w14infinite)
 - 战斗测试快照 (Combat Test 8c)
 - 基岩版服务器 1.20.70 ([某些功能缺失](https://github.com/RaphiMC/ViaBedrock#features))
 
@@ -53,13 +53,13 @@ ViaVersion+ViaBackwards+ViaRewind
 - Release (1.7.2 - 1.21)
 - 基岩版 (需要[Geyser 插件](https://geysermc.org/download))
 
-你没看错,ViaProxy 可以让 1.20.4 客户端进入 Classic 版本的服务器(后者大概发布于十年前),
+你没看错，ViaProxy 可以让 1.20.4 客户端进入 Classic 版本的服务器(后者大概发布于十年前)，
 
-也可以让一个 JAVA 版玩家进入基岩版服务器,或者基岩版玩家进入 JAVA 版服务器！
+也可以让一个 JAVA 版玩家进入基岩版服务器，或者基岩版玩家进入 JAVA 版服务器！
 
 ## 笨蛋脚本
 
-[下载](https://github.com/lilingfengdev/NitWiki-Script/releases/download/windows-latest/via-setup.exe),为你自动配置 Via
+[下载](https://github.com/lilingfengdev/NitWiki-Script/releases/download/windows-latest/via-setup.exe)，为你自动配置 Via
 
 ## FAQ
 
@@ -67,40 +67,40 @@ ViaVersion+ViaBackwards+ViaRewind
 
 [Via 套件选择](https://jo0001.github.io/ViaSetup/?lang=en)
 
-### 用高版本进入低版本服务器,可用高版本的物品吗？
+### 用高版本进入低版本服务器，可用高版本的物品吗？
 
-会用材质差不多的低版本物品替换显示,但享受不到大部分高版本物品功能
+会用材质差不多的低版本物品替换显示，但享受不到大部分高版本物品功能
 
 ### 低版本显示不了高版本的材质怎么办？
 
-原版插件不支持,但是可以通过手段绕过后面会讲(仅支持 1.16+)
+原版插件不支持，但是可以通过手段绕过后面会讲(仅支持 1.16+)
 
-### 如果我拥有代理端,我应该将 Via 安装到哪里？
+### 如果我拥有代理端，我应该将 Via 安装到哪里？
 
-Bungeecord、Velocity 和各种 Minecraft 服务端均可以安装 Via。但如果你有反作弊、反假人等,
+Bungeecord、Velocity 和各种 Minecraft 服务端均可以安装 Via。但如果你有反作弊、反假人等，
 
-对数据包进行大量操作的插件,后端服务器获取的玩家版本为代理端的版本,并非玩家客户端版本,
+对数据包进行大量操作的插件，后端服务器获取的玩家版本为代理端的版本，并非玩家客户端版本，
 
-容易引起兼容性问题,请谨慎将 Via 套件安装在代理端。
+容易引起兼容性问题，请谨慎将 Via 套件安装在代理端。
 
 ### Via 的版本选择
 
-如果选择同时安装 viaversion 和 viabackward ,他们的版本尽量选择相同的。
+如果选择同时安装 viaversion 和 viabackward ，他们的版本尽量选择相同的。
 
-### 为什么我在服务器安装 Via 后,仍然显示版本不支持？
+### 为什么我在服务器安装 Via 后，仍然显示版本不支持？
 
-下载更新版本的代理端后,需要更新 Via 套件到最新版。
+下载更新版本的代理端后，需要更新 Via 套件到最新版。
 
-即使不使用代理端,我们仍然建议你至少每个月更新一次 Via
+即使不使用代理端，我们仍然建议你至少每个月更新一次 Via
 
 ### 我无法使用新版本的方块、功能
 
-Via 的目的是允许兼容,但不打算添加新的项目、方块和功能。
+Via 的目的是允许兼容，但不打算添加新的项目、方块和功能。
 
 ### 我的玩家因为发送太多数据包而被踢？
 
-如果你没有使用 paper fork 可以在配置中增加 max-pps,如果使用paper fork,
+如果你没有使用 paper fork 可以在配置中增加 max-pps，如果使用paper fork，
 
-如果使用 paper fork,请直接将其调整为 -1,并调整 paper 的 pps 限制。
+如果使用 paper fork，请直接将其调整为 -1，并调整 paper 的 pps 限制。
 
-(尝试增加到玩家没有问题,不要全部禁用,这会导致服务器被玩家恶意使用数据包卡顿)
+(尝试增加到玩家没有问题，不要全部禁用，这会导致服务器被玩家恶意使用数据包卡顿)

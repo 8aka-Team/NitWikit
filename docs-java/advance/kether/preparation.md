@@ -5,9 +5,9 @@ sidebar_position: 1
 
 # 安装教学插件
 
-在本篇教程中,我将使用 [Vulpecula](https://www.yuque.com/lanscarlos/vulpecula-wiki-v2)
+在本篇教程中，我将使用 [Vulpecula](https://www.yuque.com/lanscarlos/vulpecula-wiki-v2)
 
-你可以点击 [此处](https://github.com/Lanscarlos/Vulpecula) 跳转到 GitHub ,从 Actions 中下载
+你可以点击 [此处](https://github.com/Lanscarlos/Vulpecula) 跳转到 GitHub ，从 Actions 中下载
 
 或者加入他的 QQ交流群 759705478 从群文件下载
 
@@ -25,7 +25,7 @@ sidebar_position: 1
 
 **别的插件执行kether？**
 
-好吧,如果你已经安装了其他可以用命令调试kether的插件......
+好吧，如果你已经安装了其他可以用命令调试kether的插件......
 
 **TrMenu v3**
 

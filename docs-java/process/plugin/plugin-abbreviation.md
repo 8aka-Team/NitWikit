@@ -5,7 +5,7 @@ sidebar_position: 4
 
 # 部分插件缩写
 
-***如果你不确定或不知道缩写该是什么,请不要随便使用缩写！***
+***如果你不确定或不知道缩写该是什么，请不要随便使用缩写！***
 
 下面列出了常用插件的缩写：
 
@@ -40,7 +40,7 @@ gm 通常指 GroupManager
 
 萌芽 通常指 萌芽引擎
 
-ds 不常见,通常指 bbs内没有的 屌丝系列插件
+ds 不常见，通常指 bbs内没有的 屌丝系列插件
 
 dp 通常指楠木的 DungeonPlus
 
@@ -58,7 +58,7 @@ ess/essx 通常指 Essentials/EssentialsX
 
 ae 通常指 AdvancedEnchantments
 
-eco 通常指 EcoEnchants,腐竹圈只对 Auxlior 家的附魔感兴趣,大部分没有接触过他的其他插件
+eco 通常指 EcoEnchants，腐竹圈只对 Auxlior 家的附魔感兴趣，大部分没有接触过他的其他插件
 
 hd 通常指 HolographicDisplays
 
@@ -84,13 +84,13 @@ wg 通常指 WorldGuard
 
 fawe 通常指 FasyAsyncWorldEdit
 
-vs 通常指 VoxelSnipper,少见
+vs 通常指 VoxelSnipper，少见
 
 papi 通常指 PlaceholderAPI
 
 ps 通常指 PlotSquared
 
-pm 通常指 PlayMoney,部分神奇宝贝服会用到
+pm 通常指 PlayMoney，部分神奇宝贝服会用到
 
 pp 通常指 PlayerPoints
 

@@ -8,7 +8,7 @@ sidebar_position: 11
 
 :::warning
 
-本文档大量参考了其他作者的教程,目前属于 **不可读** 状态
+本文档大量参考了其他作者的教程，目前属于 **不可读** 状态
 
 引用的内容主要来源于
 
@@ -18,17 +18,17 @@ TUCAOEVER 在 mcbbs 的教程
 
 :::
 
-Skript 是一个脚本插件,取名来自 "script"。是一个面向 Bukkit 的编程语言,缩写为 SK。
+Skript 是一个脚本插件，取名来自 "script"。是一个面向 Bukkit 的编程语言，缩写为 SK。
 
-因为其语法简单而受到很多中小型服主的青睐,很多人多多少少对这块有一些了解,
+因为其语法简单而受到很多中小型服主的青睐，很多人多多少少对这块有一些了解，
 
-但是毕竟受众人群小,很多时候也会出现想学却无从下手,有问题却无处可问的尴尬境地。
+但是毕竟受众人群小，很多时候也会出现想学却无从下手，有问题却无处可问的尴尬境地。
 
 ## 特点
 
 ### 简单易上手
 
-举一个简单的例子,为了实现玩家每次进入服务器就给有 "xxx" 权限的玩家 64 钻石的功能。
+举一个简单的例子，为了实现玩家每次进入服务器就给有 "xxx" 权限的玩家 64 钻石的功能。
 
 使用 Java 时的代码:
 
@@ -36,7 +36,7 @@ Skript 是一个脚本插件,取名来自 "script"。是一个面向 Bukkit 的�
 @EventHandler
 public void onPlayerJoin(PlayerJoinEvent evt) {
     Player player = evt.getPlayer(); // 玩家加入
-    ItemStack itemstack = new ItemStack(Material.DIAMOND, 64); // 定义钻石
+    ItemStack itemstack = new ItemStack(Material.DIAMOND， 64); // 定义钻石
     if (player.hasPermission("xxx")) { // 权限判断
         inventory.addItem(itemstack); // 给予钻石
         player.sendMessage("欢迎你加入服务器!你获得了64枚钻石!");
@@ -53,17 +53,17 @@ on join:
         give 64 diamond to player // 给予钻石
 ```
 
-在大多数情况下, Skript 不会在意大小写、定冠词 "the",只需要符合英语语法和基本的缩进。
+在大多数情况下， Skript 不会在意大小写、定冠词 "the"，只需要符合英语语法和基本的缩进。
 
-即使使用了错误的语法,报错时也基本会提示具体错误类型。
+即使使用了错误的语法，报错时也基本会提示具体错误类型。
 
 ### 拓展插件多
 
-使用 Skript 时如果遇到 Skript 不包含的语法,可以使用其他拓展插件如 [Skbee](https://github.com/ShaneBeee/SkBee)、[Skript-reflect](https://github.com/SkriptLang/skript-reflect) 等插件拓展。
+使用 Skript 时如果遇到 Skript 不包含的语法，可以使用其他拓展插件如 [Skbee](https://github.com/ShaneBeee/SkBee)、[Skript-reflect](https://github.com/SkriptLang/skript-reflect) 等插件拓展。
 
 ### 性能较低
 
-相较使用 Java 编写的插件,进行相同的操作时, Skript 的性能会略低于 Java。
+相较使用 Java 编写的插件，进行相同的操作时， Skript 的性能会略低于 Java。
 
 但大多数情况下性能和代码本身的质量有巨大的关系。代码质量差对于性能的影响远大于使用 Skript 对性能的影响。
 
