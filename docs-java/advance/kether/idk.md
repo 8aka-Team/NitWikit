@@ -12,6 +12,7 @@ sidebar_position: 6
 inline是在一段文本中插入语句，实际上会创造一个新的 kether 环境
 
 例如这个 TrMenu 例子中：
+
 ```yaml
   'A':
     display:
@@ -21,6 +22,7 @@ inline是在一段文本中插入语句，实际上会创造一个新的 kether 
       - tell &a
       - tell inline {{&a}}
 ```
+
 第一个 tell 打印了 1
 
 而第二个 tell 打印了空值

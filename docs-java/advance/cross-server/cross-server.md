@@ -40,7 +40,7 @@ BungeeCord / Velocity 端(或他们的 Fork )在这里我们称为`跨服端`(�
 
 3. 对单个服务器，在内存有一点点富裕的情况下(通常不到 1GB )，仍推荐使用代理端，服务端对于反假人攻击的性能不如代理端，如果你被攻击了，更换成代理端再说;
 
-4. 有些插件是代理端才能安装的，而在 Bukkit 系下可能不稳定(如[ MultiLogin ](https://github.com/CaaMoe/MultiLogin)).
+4. 有些插件是代理端才能安装的，而在 Bukkit 系下可能不稳定(如[MultiLogin](https://github.com/CaaMoe/MultiLogin)).
 
 # 推荐用什么?
 

@@ -17,7 +17,7 @@ ServerCtrl 是一个非常好用的远程管理工具，支持 Windows，Linux�
 
 像这样(可以切换中文)
 
-![](_image/Android-3.png) ![](_image/Android-2.png) ![](_image/Android-1.png) 
+![](_image/Android-3.png) ![](_image/Android-2.png) ![](_image/Android-1.png)
 
 [在此](https://github.com/blitzdose/ServerCtrl/releases) 下载
 

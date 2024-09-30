@@ -68,6 +68,7 @@ LiteLoaderQQNT 是 [利用 NTQQ 特性](https://github.com/Mrs4s/go-cqhttp/issue
 OpenShamrock 是运行在安卓手机 QQ 上的 OneBot 框架，相当于安卓版的 LiteLoaderQQNT + LLOneBot。
 
 也就是说，你必须已经拥有一台 **和服务器连接到同一局域网下** 的安卓手机。有两种方式来部署一台这样的安卓手机：
+
 1. 使用闲置的旧手机
 2. 服务器内存足够的情况下部署安卓模拟器
 

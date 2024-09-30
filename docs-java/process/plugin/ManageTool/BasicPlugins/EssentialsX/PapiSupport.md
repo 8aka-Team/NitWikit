@@ -12,6 +12,7 @@ sidebar_position: 4
 :::
 
 ## 安装此扩展
+
 ```
 /papi ecloud download Essentials
 /papi reload

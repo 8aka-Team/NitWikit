@@ -102,5 +102,6 @@ skin-hashes：
 `/headgetter save` 导出头颅base64
 
 **使用流程**
+
 - 先用前三个命令获取头颅
 - 完事之后使用导出命令

@@ -29,8 +29,11 @@ sidebar_position: 2
 ![](_images/3.PNG)
 
 ### 启动 PojavLauncher
+
 打开牛蛙助手，点击 JIT，使用 JIT 启动 PojavLauncher
+
 ### 补充
+
 安装完之后若点击程序出现未受信任的提示
 ![](_images/trollstone_i.png)
 请打开设置 → 通用 → VPN 与设备管理，
@@ -38,6 +41,7 @@ sidebar_position: 2
 
 若牛蛙提示下图，就按它说的打开牛蛙的 VPN
 ![](_images/4.PNG)
+
 ## 方法二: 使用 TrollStore
 
 :::warning
@@ -58,6 +62,7 @@ sidebar_position: 2
 安装 TrollStore 的方法因设备而异，这里简单分类了 TrollStore 的辅助工具。(iOS 版本号和 iPadOS 版本号按照相同版本号计算)
 
 如果你是：
+
 - iOS14-beta2～iOS14.8.1 的系统(A8～A11 处理器)
 - iOS15.5 系统(A9～A11 处理器)
 - iOS15.6 beta4～iOS15.6.1(A9～A11 处理器)
@@ -69,6 +74,7 @@ sidebar_position: 2
 那么 [点此查看](https://ios.cfw.guide/installing-trollstore-trollinstallerx/) TrollInstallerX 的安装方法。**(非常之复杂，怕麻烦的，没电脑的，没有苹果官方 Type C 转 Lighting 或者 C2C 的线的，但是又只能用这个方法安装 TrollStore 的劝退)**
 
 如果你是：
+
 - iOS14-beta2～iOS14.8.1的系统(A12 以上，M1～M2处理器)
 - iOS15～iOS15.5 beta4(A8 以上，M1～M2 处理器)
 - iOS15.5 系统(A12 以上，M1～M2 处理器)
@@ -80,18 +86,21 @@ sidebar_position: 2
 以此安装 TrollHelperOTA，然后**按顺序**点击 Register Persistence Helper 和 Install TrollStore 即可安装。**(期间可能黑屏或重启。)**
 
 如果你是：
+
 - iOS16.7RC(A9～A11 处理器)
 - iOS17 beta5～iOS17.0(A9～A11 处理器)
 
 那么你需要一个**已经越狱了**的苹果设备按照 [这个教程](https://ios.cfw.guide/installing-trollstore-trollhelper/) 使用 TrollHelper 安装 TrollStore。~~(你手机都越狱了还用 TrollStore 干嘛，直接用其他 ipa/dpkg 包管理安装 Pojav~~
 
 如果你是：
+
 - iOS15.5(A8 处理器)
 - iOS15.6 beta4～iOS15.6.1(A8 处理器)
 
 那么 [点此查看](https://ios.cfw.guide/installing-trollstore-trollinstallermdc/) TrollInstallerMDC 的安装方法。**(较复杂，怕麻烦的，没电脑的，没有苹果官方 Type C 转Lighting 或者 C2C 的线的，但是又只能用这个方法安装 TrollStore 的劝退)**
 
 如果你是：
+
 - iOS15.7.2～iOS15.8.2(A8处理器)
 
 那么 [点此查看](https://ios.cfw.guide/installing-trollstore-trollmisaka) TrollMisaka 的安装方法。**(也挺复杂，怕麻烦的，没电脑的，没有苹果官方 Type C 转 Lighting 或者 C2C 的线的，但是又只能用这个方法安装 TrollStore 的劝退)**

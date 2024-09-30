@@ -45,6 +45,7 @@ TODO
 #### 设置
 
 > https://kether.tabooproject.org/list.html#Variable_Set
+
 ```
 set {token} {token} | set {token} to {action}
 ```
@@ -105,6 +106,7 @@ get {token} | &{token}
 > 将动作列表的所有返回值作为集合返回。
 
 语法：
+
 ```
 array [ 动作1 动作2 动作3 更多 ]
 ```

@@ -34,6 +34,7 @@ sidebar_label: 领地 - Residence
 Residence 需要 CMIlib 作为前置插件
 
 下载:
+
 * [SpigotMC](https://www.spigotmc.org/resources/cmilib.87610/)
 * [Zrips 官网](https://www.zrips.net/cmilib/)
 
@@ -86,6 +87,7 @@ build.xml就已不能正常完成构建 Residence 的任务了，不过，也有
 若你由于一些原因无法使用新版本，可以考虑禁用相关功能的权限
 
 此处有两个权限需要禁用:
+
 * residence.command.bank
 * residence.command.market
 

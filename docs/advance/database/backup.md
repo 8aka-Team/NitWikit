@@ -19,6 +19,7 @@ sidebar_position: 4
    ```
 
    例如：
+
    ```
    mysqldump -u root -p mydb > mydb_backup.sql
    ```
@@ -28,6 +29,7 @@ sidebar_position: 4
 4. 备份完成后，你会在当前目录下看到生成的 .sql 文件。
 
 注意事项:
+
 - 确保已安装 MySQL 客户端工具。
 - 如果数据库很大，备份过程可能需要一些时间。
 - 建议定期进行备份，并将备份文件存储在安全的位置。

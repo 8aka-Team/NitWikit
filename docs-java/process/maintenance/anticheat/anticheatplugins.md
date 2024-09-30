@@ -106,13 +106,13 @@ Matrix 是由国人 RE 编写的一款反作弊插件，当年诞生是用于取
 ## AntiCheatAddition
 
 添加了其他反作弊不会反的部分，目前添加了以下：
-* 一键整理
-* 自动钓鱼
-* 自动进食
-* 自动药水
-* 自动工具
-* 分析不可能发送的数据包
-* (以及更多)
+- 一键整理
+- 自动钓鱼
+- 自动进食
+- 自动药水
+- 自动工具
+- 分析不可能发送的数据包
+- (以及更多)
 
 [查看地址](https://www.spigotmc.org/resources/anticheataddition.33590/)
 
@@ -129,6 +129,7 @@ Matrix 是由国人 RE 编写的一款反作弊插件，当年诞生是用于取
 [查看地址](https://www.spigotmc.org/resources/clientdetectorplus-now-in-alpha-testing.90375/)
 
 ---
+
 ## 只有这几个？
 
 你难道想让我把 Intave Karhu Polar那些什么全部都列出来吗，

@@ -19,7 +19,6 @@ sidebar_position: 5
 
 :::
 
-
 你只需要在启动参数最后加上`--forceUpgrade`就行了，像这样
 
 ```shell

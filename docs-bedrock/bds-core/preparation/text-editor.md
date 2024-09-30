@@ -7,7 +7,7 @@ sidebar_position: 2
 本篇文档已完成编写！<br />
 支持后续 PR
 
-# Biggest SUCCESS!!!
+# Biggest SUCCESS
 
 作者：[梦涵LOVE](https://github.com/MengHanLOVE1027)
 :::

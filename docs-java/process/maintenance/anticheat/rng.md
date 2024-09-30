@@ -55,4 +55,3 @@ use-vanilla-random: false
 ```
 
 如果你使用 Gale、Leaf 等核心，你甚至无需为此担心，因为他们的 RNG 算法已经经过改良，不再是原版的 RNG 。
-

@@ -128,6 +128,7 @@ if动作的连续使用
 ```
 
 多行语句
+
 ```
 if 条件1 then {
     动作1
@@ -146,6 +147,7 @@ if 条件1 then {
 > https://kether.tabooproject.org/list.html#Case_&_When
 
 #### 单动作
+
 ```
 if check player name == postyizhan then tell "是驿站！"
 else if check player name == lilingfeng then tell "是驿站的黑奴"
@@ -165,6 +167,7 @@ case player name [
 ```
 
 #### 多动作
+
 当然他也可以写多行动作
 
 ```
@@ -180,9 +183,11 @@ case player name [
 ```
 
 #### 逻辑判断
+
 他还可以进行逻辑判断！
 
 单动作和多动作放一起展示了
+
 ```
 case 1 [
     when < 10 -> {
@@ -206,6 +211,7 @@ all [ 动作1 动作2 动作3 更多 ]
 ```
 
 例如：
+
 ```
 /vul eval if all [ perm vulpecula.command not perm luckperms.editor ] then tell 通过 else 不通过
 ```
@@ -252,7 +258,7 @@ any [
 ]
 ```
 
-####  判断null字符串
+#### 判断null字符串
 
 如果一个动作，变量，或者其他什么东西会有输出null的情况，而你想判断这个情况
 

@@ -24,6 +24,7 @@ sidebar_position: 6
 子图标的 material 改成 air 就可以做点击后消失了
 
 案例(TrMenu)：
+
 ```yaml
   'A':
     display:
@@ -112,6 +113,7 @@ sidebar_position: 6
 实现(kether)：
 
 搓命令：
+
 ```yaml
 inline "lp user {{sender}} permission settemp nitwikit.demo true {{math 24 - time as HH}}h{{math 60 - time as mm}}m{{math 60 - time as ss}}s"
 ```
@@ -121,6 +123,7 @@ tell搓出来的看看
 ![](_images/memory_6.png)
 
 执行命令：
+
 ```yaml
 command inline "lp user {{sender}} permission settemp nitwikit.demo true {{math 24 - time as HH}}h{{math 60 - time as mm}}m{{math 60 - time as ss}}s" as console
 ```

@@ -15,6 +15,7 @@ sidebar_position: 3
 :::
 
 ## 安装此扩展
+
 ```
 /papi ecloud download Math
 /papi reload
@@ -27,6 +28,7 @@ sidebar_position: 3
 ```
 %math_你的算式%
 ```
+
 **如：**
 
 ![](_images/Math/1.png)

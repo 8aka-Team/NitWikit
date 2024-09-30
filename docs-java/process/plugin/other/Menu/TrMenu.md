@@ -107,6 +107,7 @@ https://hhhhhy.gitbook.io/trmenu-v3/usage/shortcuts
 此处为右键玩家打开名为 Profile 的菜单
 
 找到
+
 ```yaml
 Right-Click-Player: 'open: Profile'
 ```

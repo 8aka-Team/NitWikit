@@ -103,4 +103,3 @@ Can't connect to server lobby： This server requires you to connect with Veloci
 有大佬提出了关于这个问题的 [PR](https://github.com/PaperMC/Velocity/pull/1357)
 
 可以坐等合并了，合并之后就可以给各个不同的子服配置不同的转发模式啦
-

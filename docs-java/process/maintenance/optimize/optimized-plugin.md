@@ -236,5 +236,3 @@ Paper 酱为你在 `/config/paper-world-default.yml` 中准备了爆炸优化。
 此插件是一个高性能的用来扫描世界红石加以限制的插件，爆杀大部分限制插件
 
 [下载链接](https://modrinth.com/plugin/insights)
-
-

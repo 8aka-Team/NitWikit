@@ -37,13 +37,13 @@ InventoryRollbackPlus 插件可以备份玩家的背包。
 
 #### [MCServerBackup](https://github.com/OblivionOcean/MCServerBackup)
 
-MCServerBackup 是由 (玄云海 OblivionOcean)[https://github.com/OblivionOcean] 自主研发的一款 Minecraft Java 服务器自动备份软件，主要用于区块备份 (但也可以用于服务器整体备份)。
+MCServerBackup 是由 [玄云海 OblivionOcean](https://github.com/OblivionOcean) 自主研发的一款 Minecraft Java 服务器自动备份软件，主要用于区块备份 (但也可以用于服务器整体备份)。
 
 即将推出一个带有简易 GUI 的版本，更加方便使用，目前使用仍略有难度。
 
 支持将一段时间内所有变动的文件(区块、玩家信息等)全部打包为 `zip` 或 `tar.gz` 格式的压缩包或文件夹。
 
-##### 用法：
+##### 用法
 
 ```python
 python main.py [相对/绝对目录] [时长] [类型]
@@ -96,4 +96,3 @@ Linux 使用指令 ```tar -czvf backup_date.tar.gz /[path]/``` (如果使用7zip
 如 NPC 插件可能仍然会尝试在相同名字的世界中尝试生成 NPC，即使他们已经不在原来的位置上。
 
 一些服务端可能将维度拆分成单个文件夹存放至根目录，你需要全部删除才能重置所有维度。
-

@@ -134,12 +134,12 @@ json文件不允许有注释，如果你要复制过去记得删除注释
   "texture_name": "atlas.items",
   "texture_data": {
         //填你在 test_item.json 填写的物品名称
-		"ITEM_LSXZ":
+  "ITEM_LSXZ":
         {
-			"textures": [
-				"textures/items/item/LSXZ" //填你纹理贴图的位置，不需要填png后缀
-			]
-		}
+   "textures": [
+    "textures/items/item/LSXZ" //填你纹理贴图的位置，不需要填png后缀
+   ]
+  }
     }
 }
 ```

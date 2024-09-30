@@ -10,18 +10,15 @@ sidebar_position: 1
 
 # BDSX 安装教程
 
-
-
-## 前提要求：
+## 前提要求
 
 你需要在电脑上准备：
+
 - 最新版[node.js](https://nodejs.org/zh-cn)
 - [VSCode](https://code.visualstudio.com/)编辑器
 - 可选：[git](https://git-scm.com/download)
 
 当前教程假设操作环境：Windows
-
-
 
 ## 方法一：直接下载启动
 
@@ -49,8 +46,6 @@ git clone https://github.com/bdsx/bdsx.git
 
 需要开服也是右键 `bdsx.bat` 使用管理员权限运行即可
 
-
-
 ## 方法二：使用 VSCode 调试与运行
 
 :::danger
@@ -69,4 +64,3 @@ git clone https://github.com/bdsx/bdsx.git
 4.运行 `npm i` 来安装 NPM 包与 BDS
 5.按下 `F5` 以构建并运行
 ```
-

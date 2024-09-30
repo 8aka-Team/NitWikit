@@ -35,6 +35,7 @@ sidebar_position: 2
 feature-seeds:
   generate-random-seeds-for-all: true
 ```
+
 > 这是对每个建筑使用随机种子，防止你的世界种子轻易的被破解
 
 > 如果发现你的 `spigot.yml` 中出现了类似以下的配置配置就成功了，你可以修改其中的种子。(但其实不改也完全没问题)
@@ -220,6 +221,7 @@ anticheat:
     update-radius: 2
     use-permission: false
 ```
+
 ![test](_images/anticheat/antixray-mode3-1.png)
 </details>
 
@@ -258,6 +260,7 @@ anticheat:
     use-permission: false
 
 ```
+
 ![test](_images/anticheat/antixray-mode1-1.png)
 </details>
 
@@ -297,6 +300,7 @@ anticheat:
     update-radius: 2
     use-permission: false
 ```
+
 ![test](_images/anticheat/antixray-nether-mode2.png)
 
 </details>
@@ -406,4 +410,3 @@ Xrai 通过 AI 分析玩家是否开启 XRay，并在发现时运行指定操作
 在使用 Paper 及其 Fork 时。请停止使用 [Orebfuscator](https://modrinth.com/plugin/orebfuscator) 等假矿插件。换用 Paper 自带的 Anti-Xray。
 
 :::
-

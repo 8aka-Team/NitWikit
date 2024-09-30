@@ -17,6 +17,7 @@ sidebar_position: 4
 :::
 
 ## 安装此扩展
+
 ```
 /papi ecloud download CheckItem
 /papi reload
@@ -25,6 +26,7 @@ sidebar_position: 4
 ## 教程
 
 ![](_images/CheckItem/remove-item.png)
+
 ```
 /papi parse me %checkitem_remove_diamond%
 ```
@@ -118,4 +120,5 @@ expansions:
     give_enabled: false
     remove_enabled: false
 ```
+
 将两个`false`改为`true` 接着 `/papi reload`

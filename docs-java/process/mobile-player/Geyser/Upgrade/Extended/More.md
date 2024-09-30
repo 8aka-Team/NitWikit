@@ -12,6 +12,7 @@ sidebar_position: 4
 强制基岩版玩家使用**JE OfflinePlayer UUID**(实现数据互通)
 
 [注意事项]
+
 - 不要使用允许基岩版绕过的登录插件
 - 一定要启动 own-linking 关闭 global-linking
 

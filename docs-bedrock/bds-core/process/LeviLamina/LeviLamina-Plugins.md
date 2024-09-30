@@ -7,11 +7,13 @@ sidebar_position: 1
 作者：[星凌QAQ](https://github.com/XingLingQAQ)
 
 :::
+
 # 插件安装教程
 
 ## 插件的结构
 
 LeviLamina 的插件是以文件夹的格式存在的。通常插件文件夹中包含以下内容：
+
 ```c
 插件文件夹
 ├─manifest.json             // 插件元数据文件，该文件必须存在并格式正确才能被 LeviLamina 识别
@@ -28,6 +30,7 @@ LeviLamina 的插件是以文件夹的格式存在的。通常插件文件夹中
 要使用 Lip 安装插件，你必须确保该插件**支持通过 Lip 安装** 。如果插件文档没有写明任何使用 Lip 安装的方法或命令，你就不应该使用 Lip 安装该插件。
 
 通常情况下，一个 Lip 插件的安装命令会像这样：
+
 ```shell
 lip install <一个URL>
 ```

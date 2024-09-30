@@ -9,9 +9,11 @@ slug: /Geyser/Upgrade
 让基岩版玩家拥有更加接近原生基岩版服务器的体验
 
 ## 进阶配置
+
 通过 [此处](https://docs.superiormc.cn/v/geyser-wiki/user-guide/li-jie-pei-zhi) 教程对Geyser配置文件进行更精细的配置
 
 ## 资源包安装
+
 你可以像Java版玩家一样给基岩版玩家发送服务器资源包
 但与Java版玩家不同的是， 基岩版玩家可以接受并加载多个资源包
 

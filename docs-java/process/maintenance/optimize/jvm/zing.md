@@ -53,7 +53,3 @@ C4 是 Zing 中唯一的垃圾收集器，取代了 OpenJDK 中可用的其他�
 [官方安装教程](https://docs.azul.com/prime/zst/installation)
 
 使用`-XX:+UseZST` 开启
-
-
-
-

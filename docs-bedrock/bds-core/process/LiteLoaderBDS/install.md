@@ -24,6 +24,7 @@ LiteLoaderBDS 仅适配了 BDS 的1.20.32 及以下版本。对于更高版本�
 ## 安装 LiteLoaderBDS
 
 下载好 `LiteLoaderBDS.zip` 后，解压该压缩包，其中包含四个文件/文件夹：
+
 - LiteLoader.dll
 - LLPreLoader.dll
 - PreEditor.exe

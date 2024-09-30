@@ -534,7 +534,6 @@ ticks-per:
 
 覆盖 [spigot.yml] 中的同名项。它让你决定一个实体可以同时处理多少次碰撞。`0`将导致无法推动其他实体，包括玩家。`2`应该可以处理大部分情况。 值得注意的是，这将会破坏 maxEntityCramming gamerule 也就是生物堆叠窒息。
 
-
 #### fix-climbing-bypassing-cramming-rule
 
 在 `paper-world-default.yml`
@@ -752,7 +751,6 @@ tick-inactive-villagers: true
 禁用此项将减少寻路次数，从而提高性能。在某些情况下，这会导致生物看起来更加迟钝；
 
 它们只会每 5 个 tick(0.25 秒)被动更新一次路径。
-
 
 ### 掉落物及经验
 
@@ -981,7 +979,7 @@ settings:
 
 ![](https://paper-chan.moe/content/images/2022/06/PaperServerSquareIcon-1.png)
 
-# 还有Folia!
+# 还有Folia
 
 ![](https://paper-chan.moe/content/images/2023/03/foliabannerorignal-1.png)
 

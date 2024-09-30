@@ -6,6 +6,7 @@ sidebar_position: 5
 # 小妙招
 
 ## 网页版可视化编辑器
+
 ```
 lp editor
 ```
@@ -42,6 +43,7 @@ lp verbose on !Luck & !anticheat
 - `anticheat & !anticheat.check` - 匹配以'anticheat' 开头 但不匹配 'anticheat.check' 开头的权限检查。
 
 #### paste
+
 ![](_images/paste-1.png)
 
 ![](_images/paste-2.png)

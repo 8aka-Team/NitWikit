@@ -17,6 +17,7 @@ sidebar_position: 4
   <summary>Windows远程桌面连接</summary>
 
 ### Windows
+
 按下 `win键` + `R键`
 
 ![](_images/连接服务器/1.png)
@@ -38,7 +39,6 @@ sidebar_position: 4
 ![](_images/连接服务器/2.png)
 
 ![](_images/连接服务器/3.png)
-
 
 ### MacOS 和手机
 

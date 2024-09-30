@@ -50,6 +50,7 @@ generator:
 ```
 
 #### vault经济与PlayerPoints经济
+
 ```yaml
   'A':
     head: stone
@@ -68,6 +69,7 @@ generator:
 ```
 
 #### ctx与persist与&
+
 ```yaml
 items:
   '1':
@@ -190,6 +192,3 @@ https://www.minebbs.com/resources/invero-tpa.9240/
 #### 个人限售
 
 #### 全服限售
-
-
-

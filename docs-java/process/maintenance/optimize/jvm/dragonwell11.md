@@ -47,5 +47,3 @@ Wisp在JVM上提供了一种用户态的线程实现。开启Wisp2后，Java线�
 **仅支持Linux x64**
 
 添加参数`-XX:+UnlockExperimentalVMOptions -XX:+UseWisp2`
-
-

@@ -41,7 +41,7 @@ JWarmup的基本原理: 根据前一次程序运行的情况，记录下热点�
 
 ### 使用步骤
 
-#### 记录阶段(一般是beta环境)，在5分钟后生成profiling data：
+#### 记录阶段(一般是beta环境)，在5分钟后生成profiling data
 
 添加参数`-XX:-ClassUnloading -XX:-CMSClassUnloadingEnabled -XX:-ClassUnloadingWithConcurrentMark -XX:CompilationWarmUpLogfile=jwarmup.log -XX:+CompilationWarmUpRecording -XX:CompilationWarmUpRecordTime=300`
 

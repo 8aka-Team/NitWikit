@@ -7,7 +7,7 @@ sidebar_position: 3
 
 ## 一 手机运行 Java
 
-### Android      
+### Android
 
 [Pojav_Android](Pojav_Android.md)
 

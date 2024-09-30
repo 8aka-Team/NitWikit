@@ -7,7 +7,9 @@ sidebar_position: 2
 # 安装
 
 ## 版本
+
 Geyser 有以下版本类型:
+
 * Spigot
 * Bungeecord
 * Velocity
@@ -27,9 +29,9 @@ Fabric 和 NeoForge 版本 可以作为模组安装在这些模组端上
 Standalone 版本 可以作为一个独立的代理端启动
 
 ## 挑选版本
+
 在安装前，你需要找到合适的Geyser版本，你可以参考下图:
 ![version](_image/VersionChoose.png)
-
 
 * 1、运行独立版**仍需要Java16**及以上环境，只不过你可以将其和目标服务器所处的 Java 环境隔开 此外**在任何情况下**，你都可使用独立版，甚至独立版可以和其目标不在同一服务器上
 * 2、你可以通过ViaVersion插件来适配版本，这会允许不同版本的玩家进入服务器，不过问题不大
@@ -40,9 +42,13 @@ Standalone 版本 可以作为一个独立的代理端启动
 你可以在此处下载 [Geyser](https://geysermc.org/download#geyser) 的对应版本
 
 ## 安装
+
 ### 其他版本
+
 作为插件或模组安装到对应文件夹即可
+
 ### 独立版
+
 独立版作为一个单独的服务端，你可以参考 [此处](/docs-java/start/launch-server.md) 的开启方法
 
 ## 配置
@@ -75,6 +81,7 @@ bedrock:
   # proxy-protocol-whitelisted-ips：[ "127.0.0.1","172.18.0.0/16" ]
 
 ```
+
 ```yaml
 remote:
   address: auto
@@ -84,7 +91,9 @@ remote:
   use-proxy-protocol: false
   forward-hostname: false
 ```
+
 ### Bedrock 项
+
 **`port`**：其代表你向基岩版玩家所开放的端口，在设置端口时请不要低于 10000
 
 **`motd1`** 和 **`motd2`**：其代表向基岩版玩家所显示的 MOTD，可根据你的喜好配置，仅支持最基础的颜色符号
@@ -100,6 +109,7 @@ remote:
 **`auth-type`**：有 offline/online 和 floodgate 模式，offline 和 online 分别对应离线和正版，你目标服务器用的什么就选什么，floodgate 会在后续教程中解释
 
 ### 其他项
+
 再往下翻你会注意到不少其他乱七八糟的项
 
 这里挑几个重点
@@ -133,6 +143,7 @@ above-bedrock-nether-building: false
 :::
 
 ## Floodagte
+
 为进一步兼容，你需要安装 [floodgate](https://geysermc.org/download#floodgate)
 
 floodgate 可作为一个插件安装到 Spigot 及其分支的核心上或 BungeeCord、Velocity 之类的代理上
@@ -143,6 +154,7 @@ Floodgate 是一个允许 **Minecraft 基岩版** 帐号加入 **Minecraft Java�
 但 **不止于此**
 
 它还允许:
+
 * 让 Java 版玩家看到基岩版玩家的皮肤
 * 向基岩版玩家发送 BE Form UI (基岩版独有的一种菜单格式)
 * 允许基岩版玩家与 Java 版玩家进行账号数据间的连接
@@ -154,6 +166,7 @@ Floodgate 是一个允许 **Minecraft 基岩版** 帐号加入 **Minecraft Java�
 此外，Floodgate 有个小缺点，在安装之后你无法直接使基岩版玩家和 Java 版玩家数据互通，这将在进阶教程中给出两个可行的解决办法
 
 ### 基础配置
+
 :::warning
 
 由于 Floodgate 在设计时并未考虑离线服务器
@@ -182,6 +195,7 @@ username-prefix: "."
 
 **但是**
 这在离线服中，有几个问题:
+
 * 离线服玩家名是可以任意修改的，所以 Java 玩家一样可以使用相同前缀进入服务器
 * 部分登录插件会禁止诸如带有 `.` 玩家名的玩家进入服务器，这会导致基岩版玩家无法进入服务器
 
@@ -199,6 +213,7 @@ username-prefix: "BE_"
 ```
 
 ### 独立版Geyser配置
+
 首先，按照基础配置在目标服务器安装 Floodgate，然后注意到 Floodgate 配置文件夹下，理应会生成一个叫 `key.pem` 的文件，将其复制到独立版 Geyser 配置文件夹下
 
 然后来到 Geyser 配置文件
@@ -209,9 +224,11 @@ username-prefix: "BE_"
 remote:
 auth-type: floodgate
 ```
+
 若 Geyser 已开启，则重启 Geyser 即可完成配置
 
 ### 群组服配置
+
 首先，在群组端安装 Floodgate，并按照基础配置完成安装
 
 :::warning
@@ -237,7 +254,6 @@ send-floodgate-data: true
 下载[脚本](https://github.com/lilingfengdev/NitWiki-Script/releases/download/windows-latest/geyser-egg.exe)，为你自动生成 Geyser 环境，免于配置
 
 即使不用配置，你仍然需要看完 wiki，**明白你在做什么**
-
 
 ## 结尾
 

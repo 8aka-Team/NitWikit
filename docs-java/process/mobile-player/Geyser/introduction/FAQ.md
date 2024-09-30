@@ -17,7 +17,7 @@ sidebar_position: 3
 
 Java版和基岩版的UUID不一致，请查阅进阶教程
 
-### 有时，世界跑的很远以后客户端会很卡.
+### 有时，世界跑的很远以后客户端会很卡
 
 这是 **基岩版** 客户端的问题。具体请 [查看这里](https://minecraft.fandom.com/zh/wiki/%E5%9F%BA%E5%B2%A9%E7%89%88%E8%B7%9D%E7%A6%BB%E7%8E%B0%E8%B1%A1)
 

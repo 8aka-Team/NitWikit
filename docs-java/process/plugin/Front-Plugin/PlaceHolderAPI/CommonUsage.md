@@ -10,7 +10,9 @@ sidebar_position: 2
 这几个变量老是有人问
 
 ## Player
+>
 > https://wiki.placeholderapi.com/users/placeholder-list/#player
+
 ```
 /papi ecloud download Player
 ```
@@ -24,7 +26,9 @@ sidebar_position: 2
 ```
 
 ## Server
+>
 > https://wiki.placeholderapi.com/users/placeholder-list/#server
+
 ```
 /papi ecloud download Server
 ```
@@ -41,7 +45,9 @@ sidebar_position: 2
 ```
 
 ## Vault
+>
 > https://wiki.placeholderapi.com/users/placeholder-list/#vault
+
 ```
 /papi ecloud download Vault
 ```
@@ -51,7 +57,9 @@ sidebar_position: 2
 ```
 
 ## Multiverse
+>
 > https://wiki.placeholderapi.com/users/placeholder-list/#multiverse-core
+
 ```
 /papi ecloud download multiverse
 ```

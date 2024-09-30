@@ -7,6 +7,7 @@ sidebar_position: 1
 作者：[星凌QAQ](https://github.com/XingLingQAQ)
 
 :::
+
 # LeviLamina 安装教程
 
 # 方法零: 使用笨蛋脚本
@@ -21,7 +22,6 @@ sidebar_position: 1
 
 # 方法一: 使用 Lip 进行一键配置
 
-
 ### 准备工作-安装 Lip
 
 首先，从 [GitHub](https://github.com/lippkg/lip/releases/latest) 下载 Lip 的最新版本的应用
@@ -33,7 +33,6 @@ sidebar_position: 1
 要检查是否成功安装 Lip ，请在终端中运行 `lip --version`。你应该看到刚刚安装的lip的版本。
 
 如果你使用的是 Windows 系统，你也可以在 GitHub 中下载 `.exe` 后缀的安装程序来安装。
-
 
 ### 安装
 
@@ -77,7 +76,6 @@ lip config GitHubMirrorURL <url>
 bedrock_server_mod.exe
 ```
 
-
 # 方法二: 手动安装(不推荐)
 
 只有想要调试新版本的开发人员才会手动安装，手动安装只会安装允许 LeviLamina 运行的基本部件，它缺少 CrashLogger、I18N 等组件。
@@ -90,7 +88,7 @@ bedrock_server_mod.exe
    * 从所选版本Release中下载文件 `levilamina-windows-x64.zip`
 2. ​**下载 BDS(Minecraft服务器)**​：
    * 访问 [Minecraft 的服务器下载页面](https://www.minecraft.net/en-us/download/server/bedrock)。
-   * 获取与你的 LeviLamina 版本相对应的 Bedrock 专用服务器 (BDS) 版本，名为 
+   * 获取与你的 LeviLamina 版本相对应的 Bedrock 专用服务器 (BDS) 版本，名为
    `bedrock-server-<version>.zip`
 3. ​**获取 PeEditor 和 PreLoader**​：
    * 前往他们各自的 GitHub 发布页面：[PeEditor Releases](https://github.com/LiteLDev/PeEditor/releases) 和 [PreLoader Releases](https://github.com/LiteLDev/PreLoader/releases)。
@@ -120,4 +118,3 @@ bedrock_server_mod.exe
 ```
 bedrock_server_mod.exe
 ```
-

@@ -10,11 +10,13 @@ sidebar_position: 7
 ## 使用现成的内网穿透提供商
 
 笔者无法在这里推荐运营商，因为目前在开服方面还没有受到广泛认可的内网穿透运营商。不同的运营商收费不同，限量不同，节点也不同。上网搜索“内网穿透”就能找到大量内网穿透的运营商，但是在选购的时候非常建议多家对比，找到最适合自己使用的运营商。下面是选择过程中除了价格外尤其需要注意的地方：
-1. 正规性：最好能在运营商的官网最下面看到网站备案信息，并且运营商也介绍了自己的公司名称，公司名称上网也能查得到。 
+
+1. 正规性：最好能在运营商的官网最下面看到网站备案信息，并且运营商也介绍了自己的公司名称，公司名称上网也能查得到。
 2. 流量：小服务器每月只能用掉几G，但是大服务器每月能用掉几百G甚至几T的流量。你需要确定对流量的收费是否适合自己。如果不确定多少流量适合自己，你可以先找一家运营商用一个月，看看自己要花掉乐多少流量。
 3. 带宽：一些内网穿透运营商只会给每个服务器几M的带宽，对于大型服务器完全不够用。注意，一般不限流量的内网穿透运营商带宽都很低。
 4. 隧道数：内网穿透每映射一个端口出去就叫一条隧道。每个服务端都可能需要占用一条隧道，你还需要一些隧道用来管理服务器等。一般新手有一个隧道就够，但是后面你可能需要远程桌面等要用到更多隧道。
 5. 节点：由于内网穿透是客户端向节点发送数据后节点再向服务器发送数据，和客户端与服务器直接通信相比，数据需要在节点上绕一下，这样一来延迟到来到了客户端到节点的延迟和服务端到节点延迟的总和。
+
 <details>
   <summary>如何选择合适的节点？</summary>
 
@@ -109,7 +111,6 @@ import TabItem from '@theme/TabItem';
 
 </Tabs>
 
-
 ### 配置 Frp
 
 <Tabs>
@@ -165,8 +166,7 @@ import TabItem from '@theme/TabItem';
         </TabItem>
 </Tabs>
 
-
-### 开启 Frp：
+### 开启 Frp
 
 为了保证 frp 在后台运行，这里有两种方法：
 
@@ -302,7 +302,8 @@ import TabItem from '@theme/TabItem';
 [SakuraFrp](https://doc.natfrp.com/bestpractice/realip.html#proxy-protocol)  
 [OpenFrp](https://openfrp.wiki/use/proxy-protocol.html#%E8%8E%B7%E5%8F%96%E8%AE%BF%E9%97%AE%E8%80%85%E7%9A%84%E7%9C%9F%E5%AE%9E-ip)  
 
-如果是自建内网穿透，那么如果是 ini 配置文件，就在frpc隧道对应的配置(位于frpc.ini中)中加入一行`proxy_protocol_version = `，如果是协议 v1 就写等于 v1 ， v2 就写等于 v2 。例如：  
+如果是自建内网穿透，那么如果是 ini 配置文件，就在frpc隧道对应的配置(位于frpc.ini中)中加入一行`proxy_protocol_version =`，如果是协议 v1 就写等于 v1 ， v2 就写等于 v2 。例如：  
+
 ```ini
 [mc]
 type = tcp
@@ -310,7 +311,9 @@ local_port = 25565
 # 目前支持 v1 和 v2 两个版本的 proxy protocol 协议。
 proxy_protocol_version = v2
 ```
-如果是 toml 配置文件，就在 frpc 隧道对应的配置(位于 frpc.toml 中)中加入一行`transport.proxyProtocolVersion = `，如果是协议v1就写等于v1，v2就写等于v2。例如：
+
+如果是 toml 配置文件，就在 frpc 隧道对应的配置(位于 frpc.toml 中)中加入一行`transport.proxyProtocolVersion =`，如果是协议v1就写等于v1，v2就写等于v2。例如：
+
 ```toml
 [[proxies]]
 name = "mc"
@@ -318,6 +321,7 @@ type = "tcp"
 localPort = 25565
 transport.proxyProtocolVersion = "v2"
 ```
+
 **frps的frps.ini或frps.toml不用动。**
 
 至于如何选择 v1 和 v2 ，你需要根据对应服务器对 proxy protocol 的支持情况进行选择。例如 Paper 服务端目前只支持 v2。

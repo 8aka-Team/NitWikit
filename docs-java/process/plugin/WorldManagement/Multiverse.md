@@ -98,7 +98,7 @@ https://mineplugin.org/Multiverse-Core#%E4%B8%BA%E4%BB%80%E4%B9%88%E5%9C%A8%E6%8
 
 https://mineplugin.org/Multiverse-Core#MultiVerse_%E5%89%A9%E4%B8%8B%E7%9A%84%E9%83%A8%E5%88%86%E5%8F%91%E7%94%9F%E4%BA%86%E4%BB%80%E4%B9%88%E5%91%A2%EF%BC%9F
 
-## 我不能读取我的空岛世界！
+## 我不能读取我的空岛世界
 
 https://mineplugin.org/Multiverse-Core#%E6%88%91%E4%B8%8D%E8%83%BD%E8%AF%BB%E5%8F%96%E6%88%91%E7%9A%84%E7%A9%BA%E5%B2%9B%E4%B8%96%E7%95%8C%EF%BC%81
 
@@ -106,11 +106,11 @@ https://mineplugin.org/Multiverse-Core#%E6%88%91%E4%B8%8D%E8%83%BD%E8%AF%BB%E5%8
 
 https://mineplugin.org/Multiverse-Core#%E6%9C%89%E8%83%BD%E5%A4%9F%E5%88%86%E5%89%B2%E4%B8%8D%E5%90%8C%E4%B8%96%E7%95%8C%E7%89%A9%E5%93%81%E6%A0%8F%E7%9A%84%E6%96%B9%E6%B3%95%E5%90%97%EF%BC%9F
 
-## 在使用 MultiInv 后，某个玩家会在某个特殊的世界一直死亡！
+## 在使用 MultiInv 后，某个玩家会在某个特殊的世界一直死亡
 
 https://mineplugin.org/Multiverse-Core#%E5%9C%A8%E4%BD%BF%E7%94%A8_MultiInv_%E5%90%8E%EF%BC%8C%E6%9F%90%E4%B8%AA%E7%8E%A9%E5%AE%B6%E4%BC%9A%E5%9C%A8%E6%9F%90%E4%B8%AA%E7%89%B9%E6%AE%8A%E7%9A%84%E4%B8%96%E7%95%8C%E4%B8%80%E7%9B%B4%E6%AD%BB%E4%BA%A1%EF%BC%81
 
-## Multiverse 的消息提示因为不安全，不能带我去某个地方！我知道它是安全的！
+## Multiverse 的消息提示因为不安全，不能带我去某个地方！我知道它是安全的
 
 https://mineplugin.org/Multiverse-Core#Multiverse_%E7%9A%84%E6%B6%88%E6%81%AF%E6%8F%90%E7%A4%BA%E5%9B%A0%E4%B8%BA%E4%B8%8D%E5%AE%89%E5%85%A8%EF%BC%8C%E4%B8%8D%E8%83%BD%E5%B8%A6%E6%88%91%E5%8E%BB%E6%9F%90%E4%B8%AA%E5%9C%B0%E6%96%B9%EF%BC%81%E6%88%91%E7%9F%A5%E9%81%93%E5%AE%83%E6%98%AF%E5%AE%89%E5%85%A8%E7%9A%84%EF%BC%81
 
@@ -122,7 +122,7 @@ https://mineplugin.org/Multiverse-Core#1.8%EF%BC%9A%E6%80%8E%E4%B9%88%E8%AE%A9_M
 
 https://mineplugin.org/Multiverse-Core#%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%A0%E4%B8%8D%E7%94%A8%E7%AE%80%E5%8D%95%E4%BA%9B%E7%9A%84%E4%BC%A0%E9%80%81%E6%9D%83%E9%99%90%E5%91%A2%EF%BC%9F
 
-## 当玩家首次登入时，出生点的位置不对！
+## 当玩家首次登入时，出生点的位置不对
 
 https://mineplugin.org/Multiverse-Core#%E5%BD%93%E7%8E%A9%E5%AE%B6%E9%A6%96%E6%AC%A1%E7%99%BB%E5%85%A5%E6%97%B6%EF%BC%8C%E5%87%BA%E7%94%9F%E7%82%B9%E7%9A%84%E4%BD%8D%E7%BD%AE%E4%B8%8D%E5%AF%B9%EF%BC%81
 
@@ -134,11 +134,11 @@ https://mineplugin.org/Multiverse-Core#%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E4%B
 
 https://mineplugin.org/Multiverse-Core#%E4%B8%BA%E4%BB%80%E4%B9%88%E6%89%80%E6%9C%89%E7%9A%84_Multiverse_%E7%9A%84%E5%91%BD%E4%BB%A4%E9%83%BD%E5%87%BA%E9%94%99%E4%BA%86%EF%BC%9F
 
-## 当我在调整重生点的时候 Multiverse 让我的服务器崩溃了！快停下来！
+## 当我在调整重生点的时候 Multiverse 让我的服务器崩溃了！快停下来
 
 https://mineplugin.org/Multiverse-Core#%E5%BD%93%E6%88%91%E5%9C%A8%E8%B0%83%E6%95%B4%E9%87%8D%E7%94%9F%E7%82%B9%E7%9A%84%E6%97%B6%E5%80%99_Multiverse_%E8%AE%A9%E6%88%91%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%B4%A9%E6%BA%83%E4%BA%86%EF%BC%81%E5%BF%AB%E5%81%9C%E4%B8%8B%E6%9D%A5%EF%BC%81
 
-## 协管/OP/玩家在切换世界时游戏模式也切换了！
+## 协管/OP/玩家在切换世界时游戏模式也切换了
 
 https://mineplugin.org/Multiverse-Core#%E5%8D%8F%E7%AE%A1/OP/%E7%8E%A9%E5%AE%B6%E5%9C%A8%E5%88%87%E6%8D%A2%E4%B8%96%E7%95%8C%E6%97%B6%E6%B8%B8%E6%88%8F%E6%A8%A1%E5%BC%8F%E4%B9%9F%E5%88%87%E6%8D%A2%E4%BA%86%EF%BC%81
 
@@ -171,6 +171,7 @@ https://mineplugin.org/Multiverse-Core#%E4%BD%A0%E8%83%BD%E8%AE%A9%E6%AF%8F%E4%B
 编辑 `plugins/Multiverse-Core/worlds.yml`
 
 下方展示部分配置
+
 ```yaml
 worlds:
   world:
@@ -191,6 +192,7 @@ worlds:
 ```
 
 解释：
+
 - worlds        - 插件检索的YAML节点，不用管
 - world         - 主世界的默认本名(可在server.properties修改)
 - world_nether  - 地狱的默认本名
@@ -200,6 +202,7 @@ worlds:
 我们在 **alias: ''** 中 `''` 填入这个世界的别名
 
 如：
+
 ```yaml
 worlds:
   world:

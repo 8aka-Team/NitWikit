@@ -47,7 +47,6 @@ replace-adventure: false
 
 max-book-pages： 100
 
-
 #### 在客户被踢出前，书籍页面 json (!) 字符串的最大字符数
 
 max-book-page-length: 5000
@@ -56,7 +55,7 @@ max-book-page-length: 5000
 
 emulate-world-border: true
 
-####  为 1.7.x 客户端显示 1.8+ 世界边界的粒子
+#### 为 1.7.x 客户端显示 1.8+ 世界边界的粒子
 
 参见 https://wiki.vg/index.php?title=Protocol&oldid=7368#Particle_2
 

@@ -12,7 +12,6 @@ sidebar_position: 6
 
 数据包是存放于我的世界存档目录下 `world/datapacks` 它既可以是文件夹亦可以是压缩包。当你加入时数据包将为该世界启用。
 
-
 # 数据包注意事项
 
 数据包是存在加载顺序的，在数据包各个功能同一个分类下不同的加载顺序会导致不同的结果也就是不同的覆盖产生。这个顺序存储在 `world/level.dat` 。您可以通过单人创建存档时调整数据包的位置决定数据包的加载顺序
@@ -23,7 +22,6 @@ sidebar_position: 6
 
 **常见数据包的下载**：
 
-
 | 名称                                                      | 介绍                                    |
 |-----------------------------------------------------------|-----------------------------------------|
 | [PlanetMinecraft](https://www.planetminecraft.com/data-packs/) | 比较老牌的我的世界资源网站了，东西比较全   |
@@ -32,7 +30,6 @@ sidebar_position: 6
 
 **数据包工具及扩展资源**：
 
-
 | 名称                                                      | 介绍                                    |
 |-----------------------------------------------------------|-----------------------------------------|
 | [Datapack Upgrader](https://misode.github.io/upgrader/) | 自动升级数据包版本，未测试    |
@@ -40,7 +37,6 @@ sidebar_position: 6
 | [Datapack Maker](https://misode.github.io/) | 数据包生成器，适用于大部分环境 |
 | [vanilla tweaks](https://vanillatweaks.net/picker/datapacks/) | 常用数据包的结合体，可以集成下载 |
 | [MCCreator](https://mcreator.net/about) | 生成/制作初级数据包的不二之选，推荐 |
-
 
 # 数据包结构
 
