@@ -43,7 +43,7 @@ SpigotMC 应该是目前 Minecraft 开服圈最大的插件网站了，最大的
 
 </details>
 
-地址：<https://www.spigotmc.org/>
+地址：https://www.spigotmc.org/
 
 </details>
 
@@ -87,7 +87,6 @@ SpigotMC 应该是目前 Minecraft 开服圈最大的插件网站了，最大的
 这是由于 GitHub 是开放的外国网站，网站上时不时会有一些不能在此讨论的内容，所以运营商会刻意地屏蔽这个网站，在很多时候都不能正常访问。具体的表现如下：[只要Github域名指向任意IP，该IP的443端口就会超时3分钟](https://blog.csdn.net/weixin_43659597/article/details/118882176)。
 
 有以下几种解决办法：
-
 1. 魔法
 2. [改hosts](https://www.cnblogs.com/eudaimonia/p/16001981.html#1034247326)
 3. [Watt Toolkit](https://steampp.net/)：下载安装完成后，在左侧侧边栏切换到**网络加速**，点击**平台加速(免费)**，往下翻勾上GitHub，然后点击**一键加速**，随后就可以正常访问GitHub了
@@ -100,17 +99,17 @@ SpigotMC 应该是目前 Minecraft 开服圈最大的插件网站了，最大的
 
 使用魔法或者用加速地址：
 
-<https://gitmirror.com/files.html>
+https://gitmirror.com/files.html
 
-<https://moeyy.cn/gh-proxy>
+https://moeyy.cn/gh-proxy
 
-<https://ghps.cc/>
+https://ghps.cc/
 
 </details>
 
-GitHub 汉化插件：<https://github.com/maboloshi/github-chinese>
+GitHub 汉化插件：https://github.com/maboloshi/github-chinese
 
-地址：<https://github.com>
+地址：https://github.com
 
 </details>
 
@@ -133,9 +132,9 @@ GitHub 汉化插件：<https://github.com/maboloshi/github-chinese>
     </td>
   </tr>
 
-插件板块：<https://www.minebbs.com/forums/mcjeplugin/>
+插件板块：https://www.minebbs.com/forums/mcjeplugin/
 
-同时，本教程在 MineBBS 也有搬运贴：<https://www.minebbs.com/threads/nitwikit-geyser.26356/>
+同时，本教程在 MineBBS 也有搬运贴：https://www.minebbs.com/threads/nitwikit-geyser.26356/
 
 </details>
 
@@ -165,7 +164,7 @@ GitHub 汉化插件：<https://github.com/maboloshi/github-chinese>
 此外，此网站和 CurseForge 一样并不只有 Minecraft 相关资源，请注意识别别看错了。
 
 *链接已重定向到 Minecraft 相关资源区*
-地址：<https://builtbybit.com/resources/categories/minecraft-plugins.1/>
+地址：https://builtbybit.com/resources/categories/minecraft-plugins.1/
 
 </details>
 
@@ -188,7 +187,7 @@ GitHub 汉化插件：<https://github.com/maboloshi/github-chinese>
     </td>
   </tr>
 
-地址：<https://polymart.org>
+地址：https://polymart.org
 
 </details>
 
@@ -213,7 +212,7 @@ GitHub 汉化插件：<https://github.com/maboloshi/github-chinese>
 
 开一些低版本服务器可能用得到。
 
-地址：<https://dev.bukkit.org/bukkit-plugins>
+地址：https://dev.bukkit.org/bukkit-plugins
 
 </details>
 
@@ -240,7 +239,7 @@ GitHub 汉化插件：<https://github.com/maboloshi/github-chinese>
 
 因为是新兴资源站，某些资源并未在此发布，但是足够你用了。
 
-地址：<https://modrinth.com/>
+地址：https://modrinth.com/
 
 </details>
 
@@ -265,7 +264,7 @@ PaperMC 的现代化的插件平台，目前正在 Beta 阶段，插件相对较
 
 插件搜索引擎比 SpigotMC 强了好几倍。
 
-地址：<https://hangar.papermc.io/>
+地址：https://hangar.papermc.io/
 
 </details>
 
@@ -308,6 +307,6 @@ MOTD 是玩家进入服务器之前最先看到的东西，决定了玩家对一
 
 例如：
 
-Paper核心的使用情况：<https://bstats.org/plugin/server-implementation/Paper/580>
+Paper核心的使用情况：https://bstats.org/plugin/server-implementation/Paper/580
 
-PlaceHolderAPI插件使用情况：<https://bstats.org/plugin/bukkit/PlaceholderAPI/438>
+PlaceHolderAPI插件使用情况：https://bstats.org/plugin/bukkit/PlaceholderAPI/438

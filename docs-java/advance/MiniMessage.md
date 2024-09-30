@@ -74,6 +74,5 @@ Icons:
 关于实际使用格式详见 [标准标签](https://docs.advntr.dev/minimessage/format.html#standard-tags)。
 
 ### 参考
-
-- <https://docs.advntr.dev/minimessage/format.html>
-- <https://docs.advntr.dev/platform/native.html>
+- https://docs.advntr.dev/minimessage/format.html
+- https://docs.advntr.dev/platform/native.html
