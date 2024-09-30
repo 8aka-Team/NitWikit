@@ -85,7 +85,7 @@ on join:
     set `{playerIP::%player%}` to ip of player
     set `{playername::%player%}` to name of player
     # 将玩家的名字存储到变量`{playerName}``{playerIP}`中
-    broadcast "玩家名字为: %`{playerName%，IP为：`{playerIP::%player%}`}`!"
+    broadcast "玩家名字为: %`{playerName%,IP为：`{playerIP::%player%}`}`!"
     # 广播玩家的名字和 IP
 ```
 
@@ -117,13 +117,13 @@ on bed enter:
 ```skript
 on elytra boost:
     # 鞘翅加速时(skbee拓展)
-    set `{_vector1}` to vector(0， 1， 0)
+    set `{_vector1}` to vector(0, 1, 0)
     # 设置局部变量为向量(向上)
 	push player `{_vector1}`
     # 以设定向量推动玩家向上
 ```
 
-此处的 `world(xxx)` 和 `vector(0， 1， 0)` 为 Functions - 功能。
+此处的 `world(xxx)` 和 `vector(0, 1, 0)` 为 Functions - 功能。
 
 ### Sections - 部分
 
@@ -156,13 +156,13 @@ on tool break:
 options:
     servername: myserver
     # option 中定义 `{@xxx}` 的值
-function welcome(msg: text，p: player):
+function welcome(msg: text,p: player):
     broadcast `{_msg}`
     # 广播消息
     message "欢迎 %`{_p}`% 来到`{@servername}`服务器！"
-    # 定义了 welcome(参数1:type， 参数2:type)，使用option中的变量 `{@servername}`
+    # 定义了 welcome(参数1:type, 参数2:type),使用option中的变量 `{@servername}`
 on join:
-    bcd("欢迎玩家加入游戏"，player)
+    bcd("欢迎玩家加入游戏",player)
 ```
 
 此处的 `options` 和 `function` 为 Structures - 结构。
@@ -227,7 +227,7 @@ on join:
 
 ##### `(x|y|z)`
 
-表示这部分可以从 `x`、`y`、`z` 中选择一个值，`x`、`y`、`z` 可以是空格或者空(也就是左右可以直接连起来)，
+表示这部分可以从 `x`、`y`、`z` 中选择一个值，`x`、`y`、`z` 可以是空格或者空(也就是左右可以直接连起来)
 
 例如 `[mouse(| |-)]click` 代表着：`mouseclick` `mouse-click` `mouse click` 这三者有相同的含义。
 
@@ -492,17 +492,17 @@ TODO
 
 ```
         if arg-1 is world "world_the_end":
-            teleport player to location(player's x-coord / 8， player's y-coord， player's z-coord / 8， world "world_the_end")
+            teleport player to location(player's x-coord / 8, player's y-coord, player's z-coord / 8, world "world_the_end")
         if arg-1 is world "world_nether":
             if player's world is "world_the_end":
-                teleport player to location(player's x-coord / 8， player's y-coord， player's z-coord / 8， world "world_nether")
+                teleport player to location(player's x-coord / 8, player's y-coord, player's z-coord / 8, world "world_nether")
             if player's world is "world":
-                teleport player to location(player's x-coord， player's y-coord， player's z-coord， world "world_nether")
+                teleport player to location(player's x-coord, player's y-coord, player's z-coord, world "world_nether")
         if arg-1 is world "world":
             if player's world is world "world_nether":
-                teleport player to location(player's x-coord * 8， player's y-coord， player's z-coord * 8， world "world")
+                teleport player to location(player's x-coord * 8, player's y-coord, player's z-coord * 8, world "world")
             else:
-                teleport player to location(player's x-coord， player's y-coord， player's z-coord， world "world")
+                teleport player to location(player's x-coord, player's y-coord, player's z-coord, world "world")
 ```
 
 :::warning[为什么这是不好的]
@@ -540,10 +540,10 @@ command /world <world>:
                 #如果玩家从其他地方到地狱，将暂存的 x z 坐标除以 8
                 set {_x} to {_x}/8
                 set {_z} to {_z}/8
-                teleport player to location({_x}，{_y}，{_z}，world "world_nether")
+                teleport player to location({_x},{_y},{_z},world "world_nether")
                 #传送到地狱
             else:
-                teleport player to location({_x}，{_y}，{_z}，world "%arg-1%")
+                teleport player to location({_x},{_y},{_z},world "%arg-1%")
                 #传送到指令对应世界
 ```
 
@@ -866,7 +866,7 @@ Loop 即 循环结构，是 Skript 里非常常用的结构语句，主要用于
 
 ```Java
 @Override
-public boolean onCommand(final CommandSender sender， Command cmd， String label， String[] arg)`{
+public boolean onCommand(final CommandSender sender, Command cmd, String label, String[] arg)`{
         if (cmd.getName().equalsIgnoreCase("自定义指令"))`{
         代码段落
         }`
@@ -1042,7 +1042,7 @@ function 方法名(参数名:参数类型， 参数名:参数类型， ...):
 套用公式 我们可以把上面的代码段转换成方法段
 
 ```skript
-function SG_writeFile(variableName: text， value: text， fileDir: text):
+function SG_writeFile(variableName: text, value: text, fileDir: text):
     file "plugins/SUPERGUILDS/%{_fileDir}%.yml" does not exists:
         create file "plugins/SUPERGUILDS/%{_fileDir}%.yml"
     yaml "plugins/SUPERGUILDS/%{_fileDir}%.yml" is not loaded:
@@ -1101,7 +1101,7 @@ function 方法名(参数名:参数类型， 参数名:参数类型， ...) :: �
 计算机更是这样。所以这时候就需要参数类型来规范我们运算中的这些值，以下是一份示例。
 
 ```skript
-function SI_isSlotAvaliable(s: integer， z: integer) :: boolean:
+function SI_isSlotAvaliable(s: integer, z: integer) :: boolean:
     set {_m} to {_z} * 9 - 1
     {_s} is not between 0 and {_m}:
         return false
