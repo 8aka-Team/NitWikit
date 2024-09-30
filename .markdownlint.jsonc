@@ -1,5 +1,7 @@
 {
     "default": true,
+    "line-length": {"line_length": 120},
+    "single-h1": false,
     "no-bare-urls": false,
     "no-inline-html": false,
     "no-alt-text": false
