@@ -12,14 +12,14 @@ sidebar_position: 2
 ### 对象
 键值对的集合。
 
-形如 `key: value` ， 也可以形如 `key1: {key1: value1，  key2: value2，  ...}` 。
+形如 `key: value` ， 也可以形如 `key1: {key1: value1, key2: value2, ...}` 。
 
 比如这里 `key` 是键， `value` 是这个键的值 `: `(冒号后有个空格)被称为 `映射标记` 。
 
 ### 数组
 以 `-` 开头的行表示构成一个数组，数组是一组按次序排列的值。
 
-YAML 支持多维数组，可以使用行内表示：`key: [value1，  value2，  ...]` 。
+YAML 支持多维数组，可以使用行内表示：`key: [value1, value2, ...]` 。
 
 这个写法相当于：
 ```yaml
@@ -59,11 +59,11 @@ websites:
 转换为 JSON 为：
 ```json
 {
-  languages: [ 'Ruby'，  'Perl'，  'Python']， 
+  languages: [ 'Ruby', 'Perl', 'Python'],
   websites: {
-    YAML: 'yaml.org'， 
-    Ruby: 'ruby-lang.org'， 
-    Python: 'python.org'， 
+    YAML: 'yaml.org',
+    Ruby: 'ruby-lang.org',
+    Python: 'python.org',
     Perl: 'use.perl.org'
   }
 }
