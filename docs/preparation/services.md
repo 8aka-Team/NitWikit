@@ -6,24 +6,24 @@ sidebar_position: 5
 
 # 笨蛋服务!
 
-这些服务由赛博菩萨 cloudflare 和 lilingfeng 搭建,完全免费提供!
+这些服务由赛博菩萨 cloudflare 和 lilingfeng 搭建，完全免费提供!
 
 目前包括
 
-- [笨蛋 AI](https://ai.yizhan.wiki) - AI 聊天,文字生成图片
+- [笨蛋 AI](https://ai.yizhan.wiki) - AI 聊天，文字生成图片
 - [笨蛋镜像](https://mirror.yizhan.wiki) - 加速网站的访问(为没有 VPN 的人准备)
-- [笨蛋图床](https://image.yizhan.wiki) - 简洁,免费的图床
+- [笨蛋图床](https://image.yizhan.wiki) - 简洁，免费的图床
 - [笨蛋粘贴板](https://paste.yizhan.wiki) - 上传文件/创建 Paste!(不要当网盘)
-- [笨蛋笔记本](https://notepad.yizhan.wiki) - 免费笔记本,支持密码,Markdown 和分享
+- [笨蛋笔记本](https://notepad.yizhan.wiki) - 免费笔记本，支持密码，Markdown 和分享
 - [笨蛋短链](https://url.yizhan.wiki) - 缩短链接
 
 ## 规则
 
-**不要滥用,不要上传违法文件!!!!!**
+**不要滥用，不要上传违法文件!!!!!**
 
 # 免费域名
 
-为那些没有域名的可怜人准备的,目前提供:
+为那些没有域名的可怜人准备的，目前提供:
 
 <details>
 <summary>公共域名列表</summary>
@@ -55,7 +55,7 @@ sidebar_position: 5
 
 需要群等级50级以上才可以注册
 
-已开启 DNSSEC,允许为子域名开启CF保护,允许为子域名创建 NS 记录到别的DNS(支持 DnsPod),子域名字符支持所有字符（前提是DNS支持）
+已开启 DNSSEC，允许为子域名开启CF保护，允许为子域名创建 NS 记录到别的DNS(支持 DnsPod)，子域名字符支持所有字符（前提是DNS支持）
 
 </details>
 
@@ -65,24 +65,24 @@ sidebar_position: 5
 
 :::
 
-> 支持 IPV4,IPV6,CNAME,SRV 解析
+> 支持 IPV4，IPV6，CNAME，SRV 解析
 
 ## 使用方法
 
-首先选择你需要的域名,比如我选择`mcfun.us.kg`,然后想好你需要的子域名,比如我想要`yizhan`,那么最后我的域名就是`yizhan.mcfun.us.kg`
+首先选择你需要的域名，比如我选择`mcfun.us.kg`，然后想好你需要的子域名，比如我想要`yizhan`，那么最后我的域名就是`yizhan.mcfun.us.kg`
 
-然后联系lilingfeng(3644147215),将你要的域名,子域名,以及需要解析到的目标(SRV需要端口)发过来,请确保你需要的子域名满足以下条件
+然后联系lilingfeng(3644147215)，将你要的域名，子域名，以及需要解析到的目标(SRV需要端口)发过来，请确保你需要的子域名满足以下条件
 
 * 只有数字和字母
 * 没被别人用
 
-然后静待llf回复,**不要问好了没有这些无意义话语**
+然后静待llf回复，**不要问好了没有这些无意义话语**
 
 :::warning
 
-不保证这些域名永久可用,有可能忘记续订而更换域名
+不保证这些域名永久可用，有可能忘记续订而更换域名
 
-每个QQ号只接受一个域名申请(不成功不算),且必须加入笨蛋文档的QQ群
+每个QQ号只接受一个域名申请(不成功不算)，且必须加入笨蛋文档的QQ群
 
 :::
 

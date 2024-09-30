@@ -5,28 +5,28 @@ sidebar_position: 2
 
 # 连接服务器
 
-Linux 系统上有一个工具被业界广泛使用,它就是 `ssh`。它虽然不能远程控制桌面,但是可以远程登录服务器的命令行,并让服务器执行一些命令。由于 `ssh` 非常常用,现在很多Linux发行版都已经默认集成了这个命令,目前使用最广的提供 ssh 命令的软件是 **OpenSSH**。
+Linux 系统上有一个工具被业界广泛使用，它就是 `ssh`。它虽然不能远程控制桌面，但是可以远程登录服务器的命令行，并让服务器执行一些命令。由于 `ssh` 非常常用，现在很多Linux发行版都已经默认集成了这个命令，目前使用最广的提供 ssh 命令的软件是 **OpenSSH**。
 
 ## 开启ssh服务
-为了让客户能顺利连接服务器,云服务器的sshd服务一般默认开启。如果你使用的是家里云,或者云服务器的sshd服务确实没有开启(比如你是只能通过服务商提供的VNC或者第三方远控软件连接的服务器,无法使用ssh),那么你可能需要先开启sshd服务才能连接到服务器。在主流的使用 Systemd 的Linux发行版中,执行`systemctl start sshd`命令即可开启 sshd 服务,如果这些命令都报错,证明 sshd 服务存在问题,你可以把报错复制粘贴到搜索引擎上查询怎么修复这个问题。开启 sshd 服务后,你就可以连接到这台服务器了。
+为了让客户能顺利连接服务器，云服务器的sshd服务一般默认开启。如果你使用的是家里云，或者云服务器的sshd服务确实没有开启(比如你是只能通过服务商提供的VNC或者第三方远控软件连接的服务器，无法使用ssh)，那么你可能需要先开启sshd服务才能连接到服务器。在主流的使用 Systemd 的Linux发行版中，执行`systemctl start sshd`命令即可开启 sshd 服务，如果这些命令都报错，证明 sshd 服务存在问题，你可以把报错复制粘贴到搜索引擎上查询怎么修复这个问题。开启 sshd 服务后，你就可以连接到这台服务器了。
 
-成功开启ssh服务后,如果要从公网连接,你还需要把ssh服务的端口`22`开放到公网。开放的方法与开放 Windows 的远程桌面端口的方式完全相同,但是协议只需要 TCP 即可。
+成功开启ssh服务后，如果要从公网连接，你还需要把ssh服务的端口`22`开放到公网。开放的方法与开放 Windows 的远程桌面端口的方式完全相同，但是协议只需要 TCP 即可。
 
 ::: warn
 
 为了安全请不要在服务器上允许 root 用户登录 ssh！如果 ssh 被暴力破解的话会产生非常严重的后果！
 
-最好可以禁用密码登录,仅允许密钥登录
+最好可以禁用密码登录，仅允许密钥登录
 
-关于配置你服务器的 ssh 使其更安全,可以查看[Arch Linux Wiki 的这篇文章](https://wiki.archlinuxcn.org/wiki/OpenSSH#%E4%BF%9D%E6%8A%A4)
+关于配置你服务器的 ssh 使其更安全，可以查看[Arch Linux Wiki 的这篇文章](https://wiki.archlinuxcn.org/wiki/OpenSSH#%E4%BF%9D%E6%8A%A4)
 
 :::
 
 :::danger
 
-配置直接在公网使用22端口连接服务器ssh**会导致严重的安全性问题**,详见[如何抵御网络攻击](../../process/maintenance/how-to-defend-against-cyber-attacks.md)。
+配置直接在公网使用22端口连接服务器ssh**会导致严重的安全性问题**，详见[如何抵御网络攻击](../../process/maintenance/how-to-defend-against-cyber-attacks.md)。
 
-另外除非有明确需求,不要随意配置 UDP 协议端口映射,包括上文中提到的**不需要UDP协议**的 ssh,否则可能导致你的服务器被 DDoS！详见[如何抵御网络攻击](../../process/maintenance/how-to-defend-against-cyber-attacks.md)。
+另外除非有明确需求，不要随意配置 UDP 协议端口映射，包括上文中提到的**不需要UDP协议**的 ssh，否则可能导致你的服务器被 DDoS！详见[如何抵御网络攻击](../../process/maintenance/how-to-defend-against-cyber-attacks.md)。
 
 :::
 
@@ -34,29 +34,29 @@ Linux 系统上有一个工具被业界广泛使用,它就是 `ssh`。它虽然�
 
 ### Linux的ssh命令
 
-就像 Windows 不用安装任何软件就能连接 Windows 的远程桌面一样, Linux 也内置了连接 ssh 的方式,直接执行 ssh 命令即可连接。它的语法如下：
+就像 Windows 不用安装任何软件就能连接 Windows 的远程桌面一样， Linux 也内置了连接 ssh 的方式，直接执行 ssh 命令即可连接。它的语法如下：
 
 ```shell
 ssh <username>@<address> [-p port]
 ```
 
-如何要指定端口,你需要指定端口参数。在一些操作系统上这个参数是`-p`,例如`ssh root@yizhan.wiki -p 48291`,有一些工具上则是直接在后面输入端口,例如 Xshell 是`ssh root@yizhan.wiki 48291`。你需要根据不同的工具的使用方式来确定ssh的命令格式。比如,你可以仅执行 `ssh` 命令(等价于 `ssh --help`),然后让 ssh 工具提示你如何使用当前工具的这个命令,如果需要更详细的说明可以输入命令 `man ssh`
+如何要指定端口，你需要指定端口参数。在一些操作系统上这个参数是`-p`，例如`ssh root@yizhan.wiki -p 48291`，有一些工具上则是直接在后面输入端口，例如 Xshell 是`ssh root@yizhan.wiki 48291`。你需要根据不同的工具的使用方式来确定ssh的命令格式。比如，你可以仅执行 `ssh` 命令(等价于 `ssh --help`)，然后让 ssh 工具提示你如何使用当前工具的这个命令，如果需要更详细的说明可以输入命令 `man ssh`
 
-在输入完这行命令后,服务器通常会要求你输入该用户的密码。
+在输入完这行命令后，服务器通常会要求你输入该用户的密码。
 
-如果你不想手动输密码,可以使用**密钥登录**,这种方法更安全且通常更难以被破解,其步骤为：
+如果你不想手动输密码，可以使用**密钥登录**，这种方法更安全且通常更难以被破解，其步骤为：
 
 1. 使用 `ssh-keygen` 命令生成你的 ssh 密钥。
 
 2. 使用如 `cat .ssh/id_xxxx.pub` 命令来获取你生成的 ssh 公钥(此命令中`xxxx`的值通常取决于你生成密钥对时选择的算法)
 
-3. 在服务器对应用户的家目录下创建 `./ssh/authorized_keys`,编辑它,将你的公钥粘贴进去,每个公钥独占一行
+3. 在服务器对应用户的家目录下创建 `./ssh/authorized_keys`，编辑它，将你的公钥粘贴进去，每个公钥独占一行
 
-4. 执行上面的命令,你会发现连接时不再需要密码而是直接弹出 shell
+4. 执行上面的命令，你会发现连接时不再需要密码而是直接弹出 shell
 
 ### 使用工具连接
 
-其他操作系统也可以使用工具连接至服务器,在这里举出几个工具：
+其他操作系统也可以使用工具连接至服务器，在这里举出几个工具：
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -72,7 +72,7 @@ Windows 系统自带的 Powershell
 
 随后在其中输入 `ssh -p <port> <username>@<hostname>` 即可连接 Linux 服务器。
 
-此时会弹出是否保存服务器密钥,选择接受并保存,之后就不会再弹出。
+此时会弹出是否保存服务器密钥，选择接受并保存，之后就不会再弹出。
 
 :::tip
 
@@ -98,7 +98,7 @@ https://github.com/kingToolbox/WindTerm
 
 ![finalshell终端](_images/Linux开服/连接服务器/2.png)
 
-FinalShell是一体化的的服务器,网络管理软件,不仅是ssh客户端,还是功能强大的开发,运维工具,充分满足开发,运维需求.
+FinalShell是一体化的的服务器，网络管理软件，不仅是ssh客户端，还是功能强大的开发，运维工具，充分满足开发，运维需求.
 
   </TabItem>
   <TabItem value="xshell" label="Xshell">
@@ -110,9 +110,9 @@ FinalShell是一体化的的服务器,网络管理软件,不仅是ssh客户端,�
   </TabItem>
   <TabItem value="termux" lable="安卓手机(termux)">
 
-你需要安装 termux 这个软件。你可以去 Google Play 下载,也可以去[它的开源地址](https://github.com/termux/termux-app)下载。
+你需要安装 termux 这个软件。你可以去 Google Play 下载，也可以去[它的开源地址](https://github.com/termux/termux-app)下载。
 
-安装好之后,打开软件就是命令行,随后直接使用 ssh 命令即可连接。
+安装好之后，打开软件就是命令行，随后直接使用 ssh 命令即可连接。
 
 ![termux终端](_images/Linux开服/连接服务器/termux_screenshot.jpg)
 
@@ -120,16 +120,16 @@ FinalShell是一体化的的服务器,网络管理软件,不仅是ssh客户端,�
 
   <TabItem value="zsh" lable="macOS(zsh)">
 
-macOS 内置 ssh 命令,我们可以用终端来执行它。要打开macos上的终端,可以使用以下方式：
+macOS 内置 ssh 命令，我们可以用终端来执行它。要打开macos上的终端，可以使用以下方式：
 
-- (如果终端app没有被移动过)打开启动台,打开第一页的其他文件夹,点击终端。或者你也可以在应用文件夹(入口默认固定在访达侧边栏上)里找到它。
+- (如果终端app没有被移动过)打开启动台，打开第一页的其他文件夹，点击终端。或者你也可以在应用文件夹(入口默认固定在访达侧边栏上)里找到它。
 
-- 按下command+空格或键盘上的搜索键唤起 spotlight ,输入“终端”,然后它就会显示在下面。
+- 按下command+空格或键盘上的搜索键唤起 spotlight ，输入“终端”，然后它就会显示在下面。
 
 ![macos终端](_images/Linux开服/连接服务器/macOS_terminal.png)
 
-打开终端后,使用上文中提到的ssh命令即可连接到服务器。
+打开终端后，使用上文中提到的ssh命令即可连接到服务器。
   </TabItem>
 </Tabs>
 
-<!--除了ssh之外,还有一种远程桌面叫VNC。VNC是一种远程桌面协议,在Linux上的使用尤其广泛,也可以用作包括Windows在内的其他系统。由于VNC没有业界采用极其广泛的具体软件,这里不介绍广泛使用的软件,具体要使用可以上网搜索相关的软件和教程。 -->
+<!--除了ssh之外，还有一种远程桌面叫VNC。VNC是一种远程桌面协议，在Linux上的使用尤其广泛，也可以用作包括Windows在内的其他系统。由于VNC没有业界采用极其广泛的具体软件，这里不介绍广泛使用的软件，具体要使用可以上网搜索相关的软件和教程。 -->

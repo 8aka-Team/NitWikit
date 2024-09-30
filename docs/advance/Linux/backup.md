@@ -11,7 +11,7 @@ sidebar_position: 8
 sudo vim /root/backup.sh
 ```
 
-然后将以下内容粘贴到文件中,按实际情况与需要修改(如果你是Linux新手请不要修改)：
+然后将以下内容粘贴到文件中，按实际情况与需要修改(如果你是Linux新手请不要修改)：
 
 ```bash
 #!/bin/bash
@@ -111,7 +111,7 @@ crontab -e
 
 ```bash
 0 3 * * * /bin/bash /root/backup.sh -s /path/to/server -b /path/to/backup -m 5
-# 如果你有多台服务器,可以添加多个备份任务
+# 如果你有多台服务器，可以添加多个备份任务
 # 0 3 * * * /bin/bash /root/backup.sh -s /path/to/server2 -b /path/to/backup2 -m 5
 # 0 3 * * * /bin/bash /root/backup.sh -s /path/to/server3 -b /path/to/backup3 -m 5
 # 以此类推...
@@ -125,7 +125,7 @@ crontab -e
 
 > 如何获得服务器目录的绝对路径？对应目录下执行 `pwd` 命令即可获得当前目录的绝对路径。
 
-上面这个例子表示每天凌晨 3 点执行备份脚本,这里的 `0 3 * * *` 是 cron 表达式。有关 cron 表达式的更多信息,请参阅 [Linux crontab 命令](https://www.runoob.com/linux/linux-comm-crontab.html)。
+上面这个例子表示每天凌晨 3 点执行备份脚本，这里的 `0 3 * * *` 是 cron 表达式。有关 cron 表达式的更多信息，请参阅 [Linux crontab 命令](https://www.runoob.com/linux/linux-comm-crontab.html)。
 
 我在这里提供几个常用的 cron 表达式：
 
