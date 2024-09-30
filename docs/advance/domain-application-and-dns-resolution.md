@@ -175,7 +175,6 @@ SRV 记录，使用二级域名记录了端口的信息，使用 SRV 可以隐�
 
 :::
 
-
 ## AAAA 记录
 
 将域名指向一个 IPV6 地址。和 A 记录的不同之处是，AAAA 记录专门用来指向 IPv6 地址，不能指向 IPv4 地址。同理，A 记录也只能指向 IPv4 地址，不能指向 IPv6 地址，这也意味着你如果要为服务器的IPv6地址也绑定一个域名，你就必须要再创建一条 AAAA 记录。
@@ -231,7 +230,7 @@ DDNS 服务必须需要一个域名才能开始搭建。运行 DDNS 服务的软
 
 由于读者可能使用各种各样的域名注册商，而且限于篇幅，本文仅提供 Windows 系统、腾讯云 DNS(DNSPod)和 ddns-go 配合使用的教程。其他注册商和操作系统的配置方法大同小异，读者们灵活变通即可，有不懂的地方善用搜索引擎搜索。
 
-1. 前往 https://github.com/jeessy2/ddns-go/releases 下载最新版的 ddns-go 安装包。
+1. 前往 <https://github.com/jeessy2/ddns-go/releases> 下载最新版的 ddns-go 安装包。
 2. 将安装包(就是下载的那个压缩包)解压到一个不会被自己误删除的位置(如果你不知道哪里自己不会误删除，就直接解压到文件管理器左侧的文档那个文件夹)。
 3. 在 `ddns-go.exe` 所在的同级目录[打开 Powershell](https://www.bing.com/search?q=windows%E6%80%8E%E4%B9%88%E5%9C%A8%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%AD%E6%89%93%E5%BC%80powershell&qs=n&form=QBRE&sp=-1&lq=0&pq=windows%E6%80%8E%E4%B9%88%E5%9C%A8%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%AD%E6%89%93%E5%BC%80powershell&sc=0-26&sk=&cvid=ED4A3EA564234CA2A72F233F64580905&ghsh=0&ghacc=0&ghpl=)。
 4. 执行 `./ddns-go.exe`。

@@ -54,10 +54,12 @@ sidebar_position: 7
 2. 礼貌用语
 
 例如，你应该：
+
 - 使用一定的称呼：`请问大佬们我的 xxx 插件报错 NullPointerException 该怎么办呢？`
 - 使用敬语：`打扰一下，我最近服务器总是报错 The server has not responded for 35 seconds! 请问有人知道怎么回事吗？`
 
 而不能：
+
 - 开门见山：`服务器报错是这个 C++ Exception: std::optional<class std::system_error> 是啥情况`
 - 发言不友好：`你不知道可以不说话，别在这浪费我时间`
 - 斥责他人：`你是不不会写插件啊，这插件怎么能开服就报错呢`
@@ -65,10 +67,12 @@ sidebar_position: 7
 3. 明确遇到的问题，到**对应群**里问
 
 例如，你应该：
+
 - 某插件出现不适配问题后在名为“我的世界服主交流群”的开服综合交流群里提问 `请问在升级 paper1.20.4 之后遇到 xxx 插件不适配应该怎么办？`
 - 某小众插件与 Leaves 核心出现兼容性问题后在该插件官方交流群里提问 `作者大大，你的 xxx 插件和 leaves 核心是不是有兼容性问题呢？`
 
 而不能：
+
 - PowerNukkitX 核心相关问题到 LeviLemina 交流群里提问
 - 路由器配置相关问题到某插件官方交流群里提问
 - 卡服问题到其他游戏交流群里提问
@@ -76,10 +80,12 @@ sidebar_position: 7
 4. 提到服务器环境
 
 例如，你应该：
+
 - `大佬们我是 1.16.5 catserver 服务器，遇到了 xxx 问题`
 - `最近我升级到了 1.21 paper 核心，玩家反应 xxx 有人有类似的问题吗？`
 
 而不能：
+
 - 仅给出插件名和报错却不给出服务端版本等信息：`大佬们有没有人知道我这个 xxx 插件怎么加载不了，报错 NoClassDefFoundError？`
 - 仅附上报错信息却没有给出任何服务端版本、加载器版本、插件列表等信息：`有没有大佬能帮我看看这个崩服是为什么，什么也不干跑一跑图就崩，ll加载器`
 
@@ -87,9 +93,10 @@ sidebar_position: 7
 
 ## 看完 Wiki 再问
 
-Wiki 就是让你解决常见问题的，不看这玩意儿就在那瞎问只会获得 `滚过去看 wiki ` 回复。
+Wiki 就是让你解决常见问题的，不看这玩意儿就在那瞎问只会获得 `滚过去看 wiki` 回复。
 
 几乎所有的软件都会附上 Wiki，它们一般位于：
+
 - 插件的 README 文件(GitHub 主页往下翻一般就是)
 - 插件作者在社交媒体发布的视频文章等或自行搭建的网站(入口一般可以在插件的论坛介绍页、官网、 README 中找到)
 - 插件作者在即时通讯软件上发布的视频文章等(比如有的插件作者会让你加他的 QQ 群，之后把使用文档放在群文件或群公告里)
@@ -154,22 +161,22 @@ Wiki 就是让你解决常见问题的，不看这玩意儿就在那瞎问只会
 <details>
   <summary>其他可用的网站</summary>
 
-- https://pastes.dev/
-- https://paste.fastmirror.net/
-- https://n0paste.tk/
-- https://www.paste.lv/
-- https://nekobin.com/
-- https://note.ms/dwlg
-- https://paste.gg/
-- https://bytebin.lucko.me/
-- https://netcut.cn/
-- https://cl1p.cn/
-- https://jiantieban.cn/
-- https://www.verybin.com/
-- https://ykjtb.com/
-- https://airportal.cn/
-- https://toolight.cn/text/paste
-- https://nick-running.github.io/easy-tools/clipboard.html
+- <https://pastes.dev/>
+- <https://paste.fastmirror.net/>
+- <https://n0paste.tk/>
+- <https://www.paste.lv/>
+- <https://nekobin.com/>
+- <https://note.ms/dwlg>
+- <https://paste.gg/>
+- <https://bytebin.lucko.me/>
+- <https://netcut.cn/>
+- <https://cl1p.cn/>
+- <https://jiantieban.cn/>
+- <https://www.verybin.com/>
+- <https://ykjtb.com/>
+- <https://airportal.cn/>
+- <https://toolight.cn/text/paste>
+- <https://nick-running.github.io/easy-tools/clipboard.html>
 
 </details>
 
@@ -179,7 +186,7 @@ Wiki 就是让你解决常见问题的，不看这玩意儿就在那瞎问只会
 
 :::
 
-**经典如何提问: https://settingdust.gitbook.io/stop-ask-questions-the-stupid-ways/**
+**经典如何提问: <https://settingdust.gitbook.io/stop-ask-questions-the-stupid-ways/>**
 
 ## 经典老图
 
