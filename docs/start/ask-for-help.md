@@ -130,7 +130,7 @@ Wiki 就是让你解决常见问题的，不看这玩意儿就在那瞎问只会
 ### 笨蛋脚本
 
 使用此[脚本](https://github.com/lilingfengdev/NitWiki-Script/releases/download/windows-latest/update-log.exe)，
-会将日志自动上传到 <https://mclo.gs> (默认上传的日志是 `logs/latest.log`)
+会将日志自动上传到 `https://mclo.gs` (默认上传的日志是 `logs/latest.log`)
 
 ### 如何上传
 
