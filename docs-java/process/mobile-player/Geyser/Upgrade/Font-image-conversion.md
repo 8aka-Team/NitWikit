@@ -15,7 +15,7 @@ sidebar_position: 6
 
 :::
 
-#### 如何使用
+### 如何使用
 
 - 跟[这里](https://yizhan.wiki/NitWikit/process/mobile-player/Geyser/Upgrade/Custom-item-model-map#%E5%9C%A8%E7%BA%BF%E8%BD%AC%E6%8D%A2)基本没有区别
 

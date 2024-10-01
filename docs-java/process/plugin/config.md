@@ -48,11 +48,15 @@ sidebar_position: 2
 
 ### GPT汉化？
 
-口令参考
+口令参考：
 
-```
+<!--markdownlint-disable line-length-->
+
+```text
 请将我给出的以 yml 格式存储的 Minecraft 插件的配置文件汉化，且不改变本身的可执行性，其中被两个 % 包裹的为变量请不要翻译，请翻译时不要带翻译腔，而是要翻译得自然、流畅和地道，使用优美和高雅的表达方式并代入 Minecraft 游戏内进行翻译，翻译后请以 markdown 代码块的格式发送
 ```
+
+<!--markdownlint-enable line-length-->
 
 备注：本教程并非推荐服主通过 GPT 等 AI 进行机翻，我们不对服主利用 AI 产生文本的行为及其内容负责。
 

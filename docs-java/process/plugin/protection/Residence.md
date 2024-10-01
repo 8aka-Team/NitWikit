@@ -93,6 +93,6 @@ build.xml就已不能正常完成构建 Residence 的任务了，不过，也有
 
 以下是 [LuckPerms](../ManageTool/Permission/WhatIsPermission.md) 权限插件禁用相关权限的命令示例:
 
-```
+```text
 lp group default permission set residence.command.bank false
 ```

@@ -13,7 +13,7 @@ sidebar_position: 3
 
 示例:
 
-```
+```yaml
 #玩家加入服务器后执行事件
 on join:
     trigger:

@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # CheckItem
 
-**有关 CheckItem 的相关链接**
+## 有关 CheckItem 的相关链接
 
 :::info
 
@@ -18,7 +18,7 @@ sidebar_position: 4
 
 ## 安装此扩展
 
-```
+```text
 /papi ecloud download CheckItem
 /papi reload
 ```
@@ -27,7 +27,7 @@ sidebar_position: 4
 
 ![](_images/CheckItem/remove-item.png)
 
-```
+```text
 /papi parse me %checkitem_remove_diamond%
 ```
 
@@ -101,7 +101,7 @@ sidebar_position: 4
 
 收取指定ia物品的指定数量
 
-```
+```text
 %checkitem_remove_nbtstrings:itemsadder..id..data=ia物品ID,amt:数量%
 ```
 
@@ -114,7 +114,7 @@ sidebar_position: 4
 
 ## 启用give和remove
 
-```
+```yaml
 expansions:
   checkitem:
     give_enabled: false

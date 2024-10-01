@@ -3,6 +3,8 @@ title: 调服务端配置
 sidebar_position: 4
 ---
 
+<!--markdownlint-disable no-duplicate-heading-->
+
 # 调服务端配置
 
 没有适用于所有服务器的设置。你应该理解每个配置选项，并根据服务器的最佳参数与服务器硬件、玩家数量和服务器性质等调整参数。
@@ -187,9 +189,11 @@ simulate-distance: 8
 
 如果你使用的默认 10 chunks 的模拟距离，这会非常影响性能，可以酌情减少，
 
-```
-推荐值：3 - 8
-```
+:::tip
+
+推荐值： 3 ~ 8
+
+:::
 
 ##### 自动调整
 
@@ -218,15 +222,19 @@ chunk-loading-basic:
 
 此时大量跑图的玩家可能会觉得服务器有一些滞后，但是能够保证大多数玩家的游戏体验，这是值得的。
 
-```
+:::tip
+
 推荐值：20 - 40
-```
+
+:::
 
 #### prevent-moving-into-unloaded-chunks
 
-```
-推荐值: true
-```
+:::tip
+
+推荐值：true
+
+:::
 
 防止玩家进入未加载的区块，以避免同步加载区块造成的主线程卡顿。view-distance视距越小，玩家进入未加载区块的可能性就越大。
 
@@ -238,9 +246,11 @@ chunk-loading-basic:
 
 降低该值可减少大量弹射物造成的区块负载，但可能会导致末影珍珠等出现问题。
 
-```
-推荐值: 8
-```
+:::tip
+
+推荐值：8
+
+:::
 
 ### 调整区块卸载速度
 
@@ -271,7 +281,7 @@ chunks:
 
 在 `paper-world-defaults.yml` 中的参数，用于控制世界保存速度。
 
-```
+```yaml
 max-auto-save-chunks-per-tick: 24
 ```
 
@@ -339,9 +349,11 @@ chunks:
 
 在 `paper-world-default.yml` 中的参数，决定服务器是否生成藏宝图。
 
-```
+:::tip
+
 推荐值: false
-```
+
+:::
 
 #### treasure-maps.find-already-discovered
 
@@ -365,9 +377,11 @@ chunks:
 
 设置为 true 禁用搜索。
 
-```
+:::tip
+
 推荐值: true
-```
+
+:::
 
 ## 实体
 
@@ -491,36 +505,39 @@ ticks-per:
 
 在 paper
 
-```
-推荐值:
+推荐值：
 
-      ambient:
-        hard: 72
-        soft: 30
-      axolotls:
-        hard: 72
-        soft: 30
-      creature:
-        hard: 72
-        soft: 30
-      misc:
-        hard: 72
-        soft: 30
-      monster:
-        hard: 72
-        soft: 30
-      underground_water_creature:
-        hard: 72
-        soft: 30
-      water_ambient:
-        hard: 72
-        soft: 30
-      water_creature:
-        hard: 72
-        soft: 30
+```yaml
+ambient:
+    hard: 72
+    soft: 30
+axolotls:
+    hard: 72
+    soft: 30
+creature:
+    hard: 72
+    soft: 30
+misc:
+    hard: 72
+    soft: 30
+monster:
+    hard: 72
+    soft: 30
+underground_water_creature:
+    hard: 72
+    soft: 30
+water_ambient:
+    hard: 72
+    soft: 30
+water_creature:
+    hard: 72
+    soft: 30
 ```
 
-此项可以调整各种生物的消失范围(方块为单位)。降低这些值可以更快地清除远离玩家的生物。 你应该将 soft 软距离设置为约`30`，然后将 hard 硬性距离设置的稍微大于 simulation-distance，这样当玩家刚刚跑出区块时，生物不会立即消失(你可以一并调整 [paper-world configuration] 中的`delay-chunk-unloads-by`)。 当一个生物离开了 hard 距离，该生物会立刻消失。 当一个生物处于 soft 和 hard 距离之间，该生物将有概率消失。 你的 hard 距离应该大于 soft 距离。你应该根据模拟距离调整此项：`(simulation-distance * 16) + 8`。 此项还可能造成玩家经过后，区块不卸载的情况(因为生物还没消失)。
+此项可以调整各种生物的消失范围(方块为单位)。降低这些值可以更快地清除远离玩家的生物。
+你应该将 soft 软距离设置为约`30`，然后将 hard 硬性距离设置的稍微大于 simulation-distance，这样当玩家刚刚跑出区块时，生物不会立即消失
+(你可以一并调整 [paper-world configuration] 中的`delay-chunk-unloads-by`)。当一个生物离开了 hard 距离，该生物会立刻消失。
+当一个生物处于 soft 和 hard 距离之间，该生物将有概率消失。 你的 hard 距离应该大于 soft 距离。你应该根据模拟距离调整此项：`(simulation-distance * 16) + 8`。 此项还可能造成玩家经过后，区块不卸载的情况(因为生物还没消失)。
 
 ### 碰撞箱
 
@@ -528,9 +545,11 @@ ticks-per:
 
 在 `paper-world-default.yml`
 
-```
+:::tip
+
 推荐值: 2
-```
+
+:::
 
 覆盖 [spigot.yml] 中的同名项。它让你决定一个实体可以同时处理多少次碰撞。`0`将导致无法推动其他实体，包括玩家。`2`应该可以处理大部分情况。 值得注意的是，这将会破坏 maxEntityCramming gamerule 也就是生物堆叠窒息。
 
@@ -538,9 +557,11 @@ ticks-per:
 
 在 `paper-world-default.yml`
 
-```
+:::tip
+
 推荐值: true
-```
+
+:::
 
 是否修复实体在攀爬时不受实体挤压影响的问题。这将防止大量生物在攀爬时堆叠在狭小空间内(例如蜘蛛)。
 
@@ -578,9 +599,11 @@ ticks-per:
 
 在 `pufferfish.yml` 中的关于生物目标选择的配置
 
-```
+:::tip
+
 推荐值: true
-```
+
+:::
 
 在实体非活动时限制其目标选择器，让非活动实体每 `20 tick` 更新一次其目标选择器，
 
@@ -623,15 +646,17 @@ dab:
 
 在 `spigot.yml` 中关于刷怪笼 AI 的参数。
 
-```
+```yaml
 nerf-spawner-mobs: false
 ```
 
 打开此项可以卸载刷怪笼生成的生物的 AI，被卸载 AI 的生物将不会做任何事情。
 
-```
+:::tip
+
 推荐值: true
-```
+
+:::
 
 这一项打开时候会大幅影响刷怪塔及游戏体验，因此 paper 为此做了[更加人性化的选项](#spawner-nerfed-mobs-should-jump)。
 
@@ -639,23 +664,27 @@ nerf-spawner-mobs: false
 
 在 `paper-world-defaults.yml` 中控制刷怪笼 AI 的参数。
 
-```
+```yaml
 spawner-nerfed-mobs-should-jump: false
 ```
 
 这个参数控制了刷怪笼刷出的生物是否能给在水中跳跃，这修复了 `nerf-spawner-mobs` 导致的刷怪塔问题。
 
-```
+:::tip
+
 推荐值: true
-```
+
+:::
 
 ##### tick-rates.mob-spawner
 
 在 `paper-world-defaults.yml` 中控制刷怪笼刷新速度的参数。
 
-```
+:::tip
+
 推荐值: 2 - 3
-```
+
+:::
 
 此项调整刷怪笼的刷新频率，如果服务器有大量刷怪笼，调高刷新间隙这会很有助。
 
@@ -673,9 +702,11 @@ tick-inactive-villagers: true
 
 禁用此功能将有助于提高性能，但在某些情况下会让远处的村民更蠢，此项还会降低刷铁机等的效率。
 
-```
-推荐值：false
-```
+:::tip
+
+推荐值: false
+
+:::
 
 ##### zombie.aggressive-towards-villager-when-lagging
 
@@ -685,17 +716,21 @@ tick-inactive-villagers: true
 
 大量村民被僵尸恐吓时会造成卡顿，当 TPS 低于`purpur.yml` 中设置的 `lagging-threshold` 值时，启用此项会阻止僵尸追赶村民。
 
-```
+:::tip
+
 推荐值: false
-```
+
+:::
 
 ##### villager.lobotomize.enabled
 
 在 `purpur.yml` 中控制村民 AI 的配置。
 
-```
+:::tip
+
 推荐值: true
-```
+
+:::
 
 > 仅当村民造成服务器卡顿时才应启用此项！否则，村民寻路会出现问题。
 
@@ -705,11 +740,11 @@ tick-inactive-villagers: true
 
 在 `purpur.yml` 中控制村民寻路范围的配置。该项可以调整村民尝试搜索工作方块和床的半径。
 
-```
 推荐值:
 
-          acquire-poi: 16
-          nearest-bed-sensor: 16
+```yaml
+acquire-poi: 16
+nearest-bed-sensor: 16
 ```
 
 降低这个值会大大提高了村民的性能，但会阻止他们探测到比设定值更远的工作方块或床。
@@ -718,20 +753,20 @@ tick-inactive-villagers: true
 
 在 `paper-world-default.yml` 中决定了触发 AI 行为间隔
 
-```
 推荐值:
 
-  behavior:
+```yaml
+behavior:
     villager:
-      validatenearbypoi: 60
-      acquirepoi: 120
-  sensor:
+        validatenearbypoi: 60
+        acquirepoi: 120
+sensor:
     villager:
-      secondarypoisensor: 80
-      nearestbedsensor: 80
-      villagerbabiessensor: 40
-      playersensor: 40
-      nearestlivingentitysensor: 40
+        secondarypoisensor: 80
+        nearestbedsensor: 80
+        villagerbabiessensor: 40
+        playersensor: 40
+        nearestlivingentitysensor: 40
 ```
 
 > 当 [Pufferfish's DAB](#dab) 启用时，不建议修改该项任何默认值。
@@ -744,9 +779,11 @@ tick-inactive-villagers: true
 
 在 `paper-world-default.yml` 控制生物寻路。
 
-```
+:::tip
+
 推荐值: false
-```
+
+:::
 
 禁用此项将减少寻路次数，从而提高性能。在某些情况下，这会导致生物看起来更加迟钝；
 
@@ -758,11 +795,11 @@ tick-inactive-villagers: true
 
 在 `paper-world-default.yml` 中可以为每个单独的掉落物控制消失时间。
 
-```
-推荐值:
+推荐值：
 
-      enabled: true
-      items:
+```yaml
+enabled: true
+    items:
         cobblestone: 300
         netherrack: 300
         sand: 300
@@ -797,9 +834,9 @@ tick-inactive-villagers: true
 
 在 `spigot.yml` 中设置同类物品和经验球合并堆叠的距离。
 
-```
-推荐值:
+推荐值：
 
+```yaml
       item: 3.5
       exp: 4.0
 ```
@@ -814,17 +851,15 @@ tick-inactive-villagers: true
 
 #### non-player-arrow-despawn-rate
 
-```
-推荐值: 20
-```
-
 怪物射出的箭消失的时间(以 tick 为单位)。因为玩家无法捡起这些箭，所以你不妨将其设置为`20`(1 秒)之类的值。
 
 #### creative-arrow-despawn-rate
 
-```
+:::tip
+
 推荐值: 20
-```
+
+:::
 
 创造模式玩家射出的箭消失的时间(以 tick 为单位)。因为玩家无法捡起这些箭，所以你不妨将其设置为`20`(1 秒)之类的值。
 
@@ -834,9 +869,11 @@ tick-inactive-villagers: true
 
 #### armor-stands.tick
 
-```
+:::tip
+
 推荐值: false
-```
+
+:::
 
 在大部分情况下，将该项设置为 `false` 是安全的。如果你使用盔甲架或任何相关的插件时遇到了问题，请重新启用它。
 
@@ -844,9 +881,11 @@ tick-inactive-villagers: true
 
 #### armor-stands.do-collision-entity-lookups
 
-```
+:::tip
+
 推荐值: false
-```
+
+:::
 
 是否启用盔甲架碰撞。如果你有很多盔甲架，并且不想它们与任何东西发生碰撞，这将有所帮助。
 
@@ -858,9 +897,7 @@ tick-inactive-villagers: true
 
 在 `paper-world-default.yml` 中控制红石系统使用的引擎。
 
-```
-推荐值: ALTERNATE_CURRENT
-```
+推荐值：ALTERNATE_CURRENT
 
 将红石系统替换为优化版本，减少冗余更新，降低服务器必须计算的逻辑量。可能会对个别的红石机器产生影响，
 
@@ -874,9 +911,11 @@ tick-inactive-villagers: true
 
 在 `paper-world-default.yml` 中控制漏斗的一个繁重的事件。
 
-```
+:::tip
+
 推荐值: false
-```
+
+:::
 
 仅当有插件监听 `InventoryMoveItemEvent` 时才会触发该事件。
 
@@ -886,17 +925,21 @@ tick-inactive-villagers: true
 
 在 `paper-world-default.yml` 中控制漏斗是否会忽略完整方块内的容器。
 
-```
+:::tip
+
 推荐值: true
-```
+
+:::
 
 降低沙子或沙砾中的漏斗矿车之类的情况，启用该项可能会破坏一些红石装置。
 
 ### tick-per
 
-    ticks-per:
-      hopper-transfer: 8
-      hopper-check: 1
+```yaml
+ticks-per:
+    hopper-transfer: 8
+    hopper-check: 1
+```
 
 `hopper-transfer` 控制了漏斗多少 tick 传输一次物品；
 
@@ -925,9 +968,11 @@ tick-inactive-villagers: true
 
 将此项设为`true`可以将原版爆炸算法替换成优化版本，略微牺牲非常小的爆炸伤害换取爆炸时的大量性能提升。
 
-```
+:::tip
+
 推荐值: true
-```
+
+:::
 
 # 杂项优化
 

@@ -28,7 +28,7 @@ sidebar_position: 1
 
 2.如果安装了git，请使用 `cmd` cd到一个空白文件夹后使用以下指令安装。
 
-```
+```shell
 git clone https://github.com/bdsx/bdsx.git
 ```
 
@@ -36,7 +36,7 @@ git clone https://github.com/bdsx/bdsx.git
 
 显示以下内容即代表安装成功(本人当前安装node.js版本为10.8.1)：
 
-```
+```text
 10.8.1
 ```
 
@@ -57,10 +57,8 @@ git clone https://github.com/bdsx/bdsx.git
 
 如果需要使用 VSCode 启动 BDSX，您需要
 
-```
-1.使用 VSCode 打开此项目
-2.安装 Node Debug (legacy)。您可以在右下方看到建议通知框。
-3.打开终端（Ctrl+Shift+｀）
-4.运行 `npm i` 来安装 NPM 包与 BDS
-5.按下 `F5` 以构建并运行
-```
+1. 使用 VSCode 打开此项目
+2. 安装 Node Debug (legacy)。您可以在右下方看到建议通知框。
+3. 打开终端（Ctrl+Shift+｀）
+4. 运行 `npm i` 来安装 NPM 包与 BDS
+5. 按下 `F5` 以构建并运行

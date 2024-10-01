@@ -80,7 +80,11 @@ Multiverse-Core [4.3.1](https://www.spigotmc.org/resources/multiverse-core.390/u
 
 # 常见问答(FAQ)
 
-**此部分来自插件百科**
+:::warning
+
+此部分来自插件百科
+
+:::
 
 ## 进入世界权限
 
@@ -162,11 +166,9 @@ https://mineplugin.org/Multiverse-Core#%E4%BD%A0%E8%83%BD%E8%AE%A9%E6%AF%8F%E4%B
 - [TAB和计分板插件](../other/TAB&Scoreboard/Tab&Scoreboard.md)
 - 其他你想展示中文世界名的插件
 
-**安装papi的 Multiverse 扩展**
+安装 [papi 的 Multiverse 扩展](../Front-Plugin/PlaceHolderAPI/CommonUsage.md#multiverse)
 
-[点击此处](../Front-Plugin/PlaceHolderAPI/CommonUsage.md#multiverse)
-
-**设置别名**
+### 设置别名
 
 编辑 `plugins/Multiverse-Core/worlds.yml`
 
@@ -214,7 +216,7 @@ worlds:
 
 然后 `/mv reload`
 
-**使用别名**
+### 使用别名
 
 将变量 `%multiverse_world_alias%` 写到你想展示世界别名的插件配置里
 

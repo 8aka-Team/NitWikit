@@ -187,7 +187,7 @@ Skript 仍然是编程语言，所有的编程语言都必须在拥有理论基�
 
 在 `/plugins/Skripts/scripts` 目录下创建一个名为 `test.sk` 的文件，并打开粘贴以下代码。
 
-```
+```skript
 on join:
     send "Hello World" to event-player
 ```
@@ -218,7 +218,7 @@ on join:
 
 举一个例子，点击事件的语法是这样的：
 
-```
+```text
 [on] [(right|left)(| |-)][mouse(| |-)]click[ing] (with|using|holding) %itemtype% on %entitydata/itemtype%
 ```
 
@@ -290,7 +290,7 @@ on command "/op":
 要注意，事件的监听是有优先级的，其中有六个优先级，其中执行顺序为**从上到下**分别为：
 
 |优先级| Priority|
--------- | -----
+|---|---|
 |最低| Lowest|
 |低 |Low|
 |正常(默认)|Normal|
@@ -306,7 +306,7 @@ Bukkit 的事件就是这样的，所以 Skript 也继承了这个抽象名字�
 
 我们来简单假设一个条件，我们想要写一个脚本禁止管理使用 tp 指令传送玩家到其他地方，我们会这样写：
 
-```
+```skript
 on teleport with priority lowest:
     teleport cause is command
     #判断 tp 原因是否为指令 tp
@@ -329,7 +329,7 @@ on teleport with priority lowest:
 
 查询 [skhub](https://skripthub.net/docs/) 或 [skunity](https://docs.skunity.com/syntax) ，根据直觉选择，与时间和睡觉有关系的事件可能有这些：
 
-```
+```skript
 every 10 seconds:
 at 00:00:
 on bed enter:
@@ -338,8 +338,8 @@ on bed leave:
 
 我们分别使用这些事件写以下几个脚本：
 
-```
-脚本1
+```skript
+# 脚本1
 every 1 second:
     loop all players:
         if loop-player is not sleeping:
@@ -355,8 +355,8 @@ every 1 second:
 
 在这里，我们可以改写为：
 
-```
-脚本1改
+```skript
+# 脚本1改
 every 1 second:
     if time in world is between 00:00 and 6:00:
         loop all players:
@@ -368,8 +368,8 @@ every 1 second:
 
 仅仅只是交换两行代码顺序，就能起到提升性能的效果。(这里举例是非常轻量的例子，不足以产生任何性能问题)
 
-```
-脚本2
+```skript
+# 脚本2
 on bed leave:
     set {%player%::sleep} to false
 on bed enter:
@@ -388,8 +388,8 @@ at 00:00 in world "world":
 
 属于错误使用了监听事件，因为玩家是否在睡觉不需要我们自行使用事件判断，而是有直接的条件语法。
 
-```
-脚本2改
+```skript
+# 脚本2改
 at 00:00 in world "world":
     while time in world is between 00:00 and 6:00:
         loop all players:
@@ -411,8 +411,8 @@ at 00:00 in world "world":
 
 不刷新怪物的事件建议去掉，直接设置**难度为和平**。
 
-```
-不推荐，即使这是有用的！
+```skript
+# 不推荐，即使这是有用的！
 on spawn of any monster:
     cancel event
 on food level change:
@@ -440,12 +440,12 @@ on place with priority lowest::
 
 在这里，以下两种写法是等价的。
 
-```
+```skript
 if player do not have permission "lobby.admin":
     cancel event
 ```
 
-```
+```skript
 if player has permission "lobby.admin":
     xxx
 else:
@@ -454,7 +454,7 @@ else:
 
 如果只需要判断是或不是，可以灵活选用更简洁的方法，简化为：
 
-```
+```skript
 on place:
     player do not have permission "lobby.admin"
     cancel event
@@ -490,19 +490,19 @@ TODO
 
 如果你是新手，很有可能会写出类似以下的脚本：
 
-```
-        if arg-1 is world "world_the_end":
-            teleport player to location(player's x-coord / 8, player's y-coord, player's z-coord / 8, world "world_the_end")
-        if arg-1 is world "world_nether":
-            if player's world is "world_the_end":
-                teleport player to location(player's x-coord / 8, player's y-coord, player's z-coord / 8, world "world_nether")
-            if player's world is "world":
-                teleport player to location(player's x-coord, player's y-coord, player's z-coord, world "world_nether")
-        if arg-1 is world "world":
-            if player's world is world "world_nether":
-                teleport player to location(player's x-coord * 8, player's y-coord, player's z-coord * 8, world "world")
-            else:
-                teleport player to location(player's x-coord, player's y-coord, player's z-coord, world "world")
+```skript
+if arg-1 is world "world_the_end":
+    teleport player to location(player's x-coord / 8, player's y-coord, player's z-coord / 8, world "world_the_end")
+if arg-1 is world "world_nether":
+    if player's world is "world_the_end":
+        teleport player to location(player's x-coord / 8, player's y-coord, player's z-coord / 8, world "world_nether")
+    if player's world is "world":
+        teleport player to location(player's x-coord, player's y-coord, player's z-coord, world "world_nether")
+if arg-1 is world "world":
+    if player's world is world "world_nether":
+        teleport player to location(player's x-coord * 8, player's y-coord, player's z-coord * 8, world "world")
+    else:
+        teleport player to location(player's x-coord, player's y-coord, player's z-coord, world "world")
 ```
 
 :::warning[为什么这是不好的]
@@ -517,7 +517,7 @@ TODO
 
 最后根据计算出的量直接使用 `teleport player to [location]` 传送即可。
 
-```
+```skript
 command /world <world>:
     permission: command.world
     trigger:
@@ -596,7 +596,8 @@ command /world <world>:
 
 这里我们拿最常用的一个条件作示例，判断玩家是否有权限。
 
-权限的英文是什么? "permission" 我们通过翻阅侧边栏可以得知与 "permission" 相关的只有 "Has Permission" 一条，官方对这个条件的解释为："Test whether a player has a certain permission."，翻译过来就是 "检测一个玩家是否拥有某一权限"。即我们所需要的：判断玩家是否有权限，那么我们又该如何使用呢 "Has Permssion" 条件呢?
+权限的英文是什么? "permission" 我们通过翻阅侧边栏可以得知与 "permission" 相关的只有 "Has Permission" 一条，官方对这个条件的解释为：
+"Test whether a player has a certain permission."，翻译过来就是 "检测一个玩家是否拥有某一权限"。即我们所需要的：判断玩家是否有权限，那么我们又该如何使用呢 "Has Permssion" 条件呢?
 
 在 "Has Permission" 下 "Patterns" 给了我们两种标准格式用法：
 
@@ -655,7 +656,7 @@ on command "/op":
 
 我们把两个条件判断句替换为条件1和条件2，那么这段代码就可以理解为：
 
-```
+```text
 指令监听 "/op":
         事件-发送者类别 是 玩家
         条件1:
@@ -680,10 +681,14 @@ on command "/op":
 
 我们需要知道的是 #EffSendTitle 的用法。关于怎么用，这里本质上和学习Conditions(条件)一样，我们将注意点放在 "Patterns" 上。
 
-``` skript
+<!--markdownlint-disable line-length-->
+
+``` text
 send title %text% [with subtitle %text%] [to %players%] [for %time span%] [with fade[(-| )]in %time span%] [(and|with) fade[(-| )]out %time span%]
 send subtitle %text% [to %players%] [for %time span%] [with fade[(-| )]in %time span%] [(and|with) fade[(-| )]out %time span%]
 ```
+
+<!--markdownlint-enable line-length-->
 
 按照我们提到的原则：
 
@@ -695,6 +700,8 @@ send subtitle %text% [to %players%] [for %time span%] [with fade[(-| )]in %time 
 `send title "..." with subtitle "..." to player for ... seconds with fade-in ... seconds and fade-out ... seconds`
 
 将其带入进我们的伪代码：
+
+<!--markdownlint-disable line-length-->
 
 ```skript
 指令监听 "/op":
@@ -710,6 +717,8 @@ send subtitle %text% [to %players%] [for %time span%] [with fade[(-| )]in %time 
                 cancel event
                 send "false" to event-player
 ```
+
+<!--markdownlint-enable line-length-->
 
 通过以上三种方式，我们都能成功的发送了 Title 信息。
 
@@ -1033,7 +1042,8 @@ file "plugins/SUPERGUILDS/%{_fileDir}%.yml" does not exists:
 
 首先对于一个 5000+ 以上的插件来说，你需要关注的东西很多：一个是代码优化，一个是代码可读性。
 
-就拿 SUPERGUILDS 来说，它有 7000 多行。我所有的数据读取和存储都是通过方法完成，单一个数据写入方法我就使用了 100 多次，(也就是以上的代码)。如果我们把它都像上面一样全部展开，我的脚本将立即增加 600+ 行。但是我们在写脚本的时候真正需要的是这些么? 不，我们需要的是效果，是功能，不是数据处理的流程。
+就拿 SUPERGUILDS 来说，它有 7000 多行。我所有的数据读取和存储都是通过方法完成，单一个数据写入方法我就使用了 100 多次，(也就是以上的代码)。如果我们把它都像上面一样全部展开，我的脚本将立即增加 600+ 行。
+但是我们在写脚本的时候真正需要的是这些么? 不，我们需要的是效果，是功能，不是数据处理的流程。
 
 每次写入数据都需要白白多占 6 行，既不方便后期维护，又要因为要兼顾路径正确与否，浪费很多时间在查错上面，不划算。
 

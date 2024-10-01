@@ -9,7 +9,7 @@ sidebar_position: 6
 
 ## 创建地标
 
-```
+```text
 /setwarp <地标名>
 ```
 
@@ -17,7 +17,7 @@ sidebar_position: 6
 
 ## 传送地标
 
-```
+```text
 /warp <地标名>
 ```
 
@@ -29,7 +29,7 @@ sidebar_position: 6
 
 ## 删除地标
 
-```
+```text
 /delwarp <地标名>
 ```
 

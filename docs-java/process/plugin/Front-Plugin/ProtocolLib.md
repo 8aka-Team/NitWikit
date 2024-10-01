@@ -26,7 +26,7 @@ sidebar_position: 5
 
 在 `plugins\ProtocolLib\config.yml` 中
 
-```
+```yaml
 global:
   # Settings for the automatic version updater
   auto updater:

@@ -23,9 +23,11 @@ sidebar_position: 4
 
 推荐两个备份插件(高效的备份，无需停服即可备份)：
 
-[ebackup](https://www.spigotmc.org/resources/ebackup-simple-and-reliable-backups-for-your-server-supports-ftp-sftp.69917/) 可设置黑名单不备份某些文件，FTP 远程备份支持
+[ebackup](https://www.spigotmc.org/resources/ebackup-simple-and-reliable-backups-for-your-server-supports-ftp-sftp.69917/)
+可设置黑名单不备份某些文件，FTP 远程备份支持
 
-[serverbackup](https://www.spigotmc.org/resources/server-backup-ingame-dropbox-ftp-backup-1-8-1-20-multithreaded.79320/) 可支持动态备份(即只备份最近变更过的文件)，占用空间更小
+[serverbackup](https://www.spigotmc.org/resources/server-backup-ingame-dropbox-ftp-backup-1-8-1-20-multithreaded.79320/)
+可支持动态备份(即只备份最近变更过的文件)，占用空间更小
 
 ## 存档存储空间优化
 

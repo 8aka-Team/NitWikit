@@ -27,7 +27,7 @@ sidebar_position: 3
 
 其作用是在有玩家使用 **EssentialsX** 的 tpa 尝试`/tpa lilingfeng`时阻止这件事
 
-```sk
+```skript
 import:
     net.ess3.api.events.TPARequestEvent   # 导入java类
 
@@ -43,7 +43,7 @@ on TPARequestEvent:
 
 下面来逐行解析
 
-```sk
+```skript
 import:
     net.ess3.api.events.TPARequestEvent
 ```
@@ -56,13 +56,13 @@ import:
 
 通过`import:`块导入类后， **skript-reflect** 将创建一个 **Expressions** ，允许你通过其名称轻易地引用 Java 类。
 
-```sk
+```skript
 on TPARequestEvent:
 ```
 
 这行代码意为注册监听`TPARequestEvent`事件，与普通 sk 里注册事件的语法没啥区别。
 
-```sk
+```skript
     set {_ess_IUser} to event.getTarget()   # 获取IUser对象
     set {_player} to {_ess_IUser}.getBase()   # 获取Player对象
 ```
@@ -71,7 +71,7 @@ on TPARequestEvent:
 
 这个`IUser`是 EssentialsX 的一个**接口**，`User`类**实现**了它，可以在[essentialsx 的 javadoc](https://jd-v2.essentialsx.net/net/ess3/api/iuser)里查看。
 
-```sk
+```skript
     if {_player} is player("lilingfeng"):
         send "&cliliangfeng是我的不准tpa到她那里🥵"
         cancel event
@@ -121,7 +121,7 @@ on TPARequestEvent:
 
 开始编写程序
 
-```sk
+```skript
 import:
     org.leavesmc.leaves.event.bot.BotJoinEvent   #导入类
 
@@ -132,7 +132,8 @@ on BotJoinEvent:
     {_bot}.setPlayerListName("假的%{_bot_name}%")   # 修改假人在tab列表里的名字
 ```
 
-这一过程也可适用于其他插件，比如[zimzaza4大蛇](https://github.com/zimzaza4)的 [Skript-Floodgate-Api](https://github.com/zimzaza4/Skript-Floodgate-Api) ，
+这一过程也可适用于其他插件，比如[zimzaza4大蛇](https://github.com/zimzaza4)的
+[Skript-Floodgate-Api](https://github.com/zimzaza4/Skript-Floodgate-Api) ，
 就是利用 **skript-reflect** 来调用 [Floodagate API](https://wiki.geysermc.org/floodgate/api/) 的。
 
 可以查看下面的教程来详细学习 **skript-reflect** 的基础功能(对，下面这一大坨只是基础)
@@ -157,7 +158,7 @@ on BotJoinEvent:
 
 :::
 
-```sk
+```skript
 import:
     java.lang.System
 
@@ -167,33 +168,13 @@ command /example:
         System.out.println("test")
 ```
 
-```sk
+```skript
 import:
     java.lang.String as JavaString
 
 command /example:
     trigger:
         message JavaString.format("Hello %%s", sender)
-```
-
-:::info
-
-别名必须是有效的 Java 标识符！
-
-:::
-
-###### 在低于 1.17 的 Minecraft 版本上导入 NMS 类
-
-由于 **Minecraft** 1.17 以下版
-
-:::
-
-###### 在低于 1.17 的 Minecraft 版本上导入 NMS 类
-
-由于 **Minecraft** 1.17 以下版
-    trigger:
-        message JavaString.format("Hello %%s", sender)
-
 ```
 
 :::info
@@ -214,13 +195,13 @@ command /example:
 
 语法：
 
-```sk
+```skript
 [the] [java] class %text%
 ```
 
 示例：
 
-```sk
+```skript
 on script load:
     set {Player} to the class "org.bukkit.entity.Player"
     message "%{Player}%" # org.bukkit.entity.Player
@@ -230,14 +211,14 @@ on script load:
 
 语法：
 
-```sk
+```skript
 [the] [java] class[es] of %objects%
 %objects%'[s] [java] class[es]
 ```
 
 示例：
 
-```sk
+```skript
 command /example:
     executable by: players
     trigger:
@@ -249,7 +230,7 @@ command /example:
 
 由于导入块在 effect 命令中不可用，因此你可以使用 import effect(仅在 effect 命令中可用)：
 
-```sk
+```skript
 import <fully qualified name> [as <alias>]
 ```
 
@@ -263,14 +244,14 @@ import <fully qualified name> [as <alias>]
 
 内部类通常比其周围的类具有更通用的名称，因此应在别名下导入这些名称：
 
-```sk
+```skript
 import:
     org.bukkit.entity.EnderDragon$Phase as EnderDragonPhase
 ```
 
 导入这些类的另一种方法是只导入它们的封闭类：
 
-```sk
+```skript
 import:
     org.bukkit.entity.EnderDragon
 
@@ -284,19 +265,20 @@ on load:
 
 语法：
 
-```sk
+```skript
 %object%.<method name>(%objects%)
 ```
 
 示例：
 
-```sk
+```skript
 event-block.breakNaturally()
 (last spawned creeper).setPowered(true)
 player.giveExpLevels({_levels})
 ```
 
-方法可以用作 **Effects** 、 **Expressions** 和 **Conditions** 。如果用作**Conditions**，则只要方法的返回值不是 `false` 、`null`或`0` ，这个 **Conditions** 就会通过。
+方法可以用作 **Effects** 、 **Expressions** 和 **Conditions** 。如果用作**Conditions**，则只要方法的返回值不是 `false` 、`null`或`0`，
+这个 **Conditions** 就会通过。
 
 ###### 调用非公共方法
 
@@ -304,17 +286,17 @@ player.giveExpLevels({_levels})
 
 语法：
 
-```sk
+```skript
 {_arraylist}.[ArrayList]fastRemove(1)
 ```
 
-###### 调用重载的方法
+###### 调用Overload的方法
 
-通常， **skript-reflect** 可以从运行时传递的参数中推断出要调用的正确的重载方法。如果需要使用某个方法的某种实现，可以在方法名称的末尾附加一个逗号分隔的列表，并用括号括起来。
+通常， **skript-reflect** 可以从运行时传递的参数中推断出要调用的正确的Overload方法。如果需要使用某个方法的某种实现，可以在方法名称的末尾附加一个逗号分隔的列表，并用括号括起来。
 
 语法：
 
-```sk
+```skript
 System.out.println[Object]({_something})
 
 Math.max[int, int](0, {_value})
@@ -324,7 +306,7 @@ Math.max[int, int](0, {_value})
 
 语法：
 
-```sk
+```skript
 %object%.<descriptor>
 ```
 
@@ -334,7 +316,7 @@ Math.max[int, int](0, {_value})
 
 示例：
 
-```sk
+```skript
 {_hashmap}.[HashMap]modCount
 ```
 
@@ -342,13 +324,13 @@ Math.max[int, int](0, {_value})
 
 语法：
 
-```sk
+```skript
 [a] new %javatype%(%objects%)
 ```
 
 示例：
 
-```sk
+```skript
 new Location(player's world， 0， 0， 0)
 ```
 
@@ -358,7 +340,7 @@ new Location(player's world， 0， 0， 0)
 
 你可以通过引用导入的类来收听任何基于 Bukkit 的事件(包括其他插件添加的事件)。例如，如果要收听 `org.bukkit.event.entity.EnderDragonChangePhaseEvent`：
 
-```sk
+```skript
 import:
   org.bukkit.event.entity.EnderDragonChangePhaseEvent
 
@@ -376,7 +358,7 @@ on EnderDragonChangePhaseEvent:
 
 你还可以使用同一处理程序侦听多个事件。这些事件不必相关，但如果尝试访问在一个事件中可用但在另一个事件中不可用的方法，则应采取适当的预防措施。例如，如果要同时侦听`org.bukkit.event.entity.ProjectileLaunchEvent`和`org.bukkit.event.entity.ProjectileHitEvent`：
 
-```sk
+```skript
 import:
   org.bukkit.event.entity.ProjectileLaunchEvent
   org.bukkit.event.entity.ProjectileHitEvent
@@ -391,13 +373,13 @@ on ProjectileLaunchEvent and ProjectileHitEvent:
 
 语法：
 
-```sk
+```skript
 [the] event
 ```
 
 示例：
 
-```sk
+```skript
 import:
   org.bukkit.event.entity.EnderDragonChangePhaseEvent
   org.bukkit.entity.EnderDragon$Phase as EnderDragonPhase
@@ -419,7 +401,7 @@ on EnderDragonChangePhaseEvent:
 
 示例：
 
-```sk
+```skript
 import:
   org.bukkit.event.entity.EnderDragonChangePhaseEvent
 
@@ -431,14 +413,12 @@ on EnderDragonChangePhaseEvent with priority highest:
 
 事件优先级：
 
-```
-lowest
-low
-normal
-high
-highest
-monitor
-```
+- lowest
+- low
+- normal
+- high
+- highest
+- monitor
 
 ##### 处理已取消的事件
 
@@ -446,7 +426,7 @@ monitor
 
 示例：
 
-```sk
+```skript
 import:
   org.bukkit.event.block.BlockBreakEvent
 
@@ -458,7 +438,7 @@ on all BlockBreakEvent:
 
 ##### Collect
 
-```sk
+```skript
 [%objects%]
 [%objects% as %javatype%]
 ```
@@ -473,7 +453,7 @@ on all BlockBreakEvent:
 
 ##### Spread
 
-```sk
+```skript
 ...%object%
 ```
 
@@ -481,13 +461,13 @@ on all BlockBreakEvent:
 
 实例：
 
-```sk
+```skript
 set {_list::*} to ...{_array}
 ```
 
 ##### 创建数组
 
-```sk
+```skript
 new %javatype%[%integer%]
 ```
 
@@ -501,7 +481,7 @@ new %javatype%[%integer%]
 
 ##### 通过索引获取数组的值
 
-```sk
+```skript
 %array%[%integer%]
 ```
 
@@ -517,7 +497,7 @@ new %javatype%[%integer%]
 
 ##### Null
 
-```sk
+```skript
 null
 ```
 
@@ -525,7 +505,7 @@ null
 
 ##### Bits
 
-```sk
+```skript
 [the] (bit %number%|bit(s| range) [from] %number%( to |[ ]-[ ])%number%) of %numbers%
 %numbers%'[s] (bit %number%|1¦bit(s| range) [from] %number%( to |[ ]-[ ])%number%)
 ```
@@ -536,7 +516,7 @@ null
 
 ##### Raw Expression
 
-```sk
+```skript
 [the] raw %objects%
 ```
 
@@ -546,7 +526,7 @@ null
 
 与 [Expression](https://tpgamesnl.gitbook.io/skript-reflect/advanced/custom-syntax#expression) 一起使用时，可以将其设置为一个值，这将更改该参数的输入值。这可用于将数据存储在调用触发器的变量中。
 
-```sk
+```skript
 import:
  ch.njol.skript.lang.Variable
 
@@ -562,7 +542,7 @@ effect put %objects% in %objects%:
 
 ##### 成员
 
-```sk
+```skript
 [the] (fields|methods|constructors) of %objects%
 %objects%'[s] (fields|methods|constructors)
 ```
@@ -573,7 +553,7 @@ effect put %objects% in %objects%:
 
 ##### 成员的名字
 
-```sk
+```skript
 [the] (field|method) names of %objects%
 %objects%'[s] (field|method) names
 ```
@@ -582,7 +562,7 @@ effect put %objects% in %objects%:
 
 ##### 判断对象是否是某个类的实例
 
-```sk
+```skript
 %objects% (is|are) [a[n]] instance[s] of %javatypes%
 %objects% (is not|isn't|are not|aren't) [a[n]] instance[s] of %javatypes%
 ```
@@ -591,7 +571,7 @@ effect put %objects% in %objects%:
 
 ##### 类引用
 
-```sk
+```skript
 %javatype%.class
 ```
 
@@ -599,7 +579,7 @@ effect put %objects% in %objects%:
 
 ##### 插件实例
 
-```sk
+```skript
 [(an|the)] instance of [the] plugin %javatype/string%
 ```
 

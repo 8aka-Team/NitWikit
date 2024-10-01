@@ -33,7 +33,7 @@ PlaceHolderAPI是一个广泛使用的变量插件，它可以做到 Math(数学
 
 在 `plugins\PlaceholderAPI\config.yml` 中找到
 
-```
+```yaml
 boolean:
   'true': 'yes'
   'false': 'no'
@@ -57,7 +57,7 @@ boolean:
 
 ## 下载变量扩展
 
-```
+```text
 /papi ecloud download 扩展名
 ```
 

@@ -12,4 +12,9 @@ sidebar_position: 2
 
 大部分基础插件还提供了经济功能，如果你没有跨服需求，也可以尝试使用。
 
-现有的两个较常用的基础插件，分别是 [EssentialsX](https://essentialsx.net/downloads.html) 和 [CMI](https://www.spigotmc.org/resources/cmi-298-commands-insane-kits-portals-essentials-economy-mysql-sqlite-much-more.3742/) 。
+<!--markdownlint-disable line-length-->
+
+现有的两个较常用的基础插件，分别是 [EssentialsX](https://essentialsx.net/downloads.html) 和
+[CMI](https://www.spigotmc.org/resources/cmi-298-commands-insane-kits-portals-essentials-economy-mysql-sqlite-much-more.3742/) 。
+
+<!--markdownlint-enable line-length-->

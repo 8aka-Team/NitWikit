@@ -39,7 +39,7 @@ Minecraft 后端服务器一般是不会对 Ping 进行过滤和记录的，这�
 
 但是对于 Velocity / BungeeCord 等反向代理服务端，默认 Ping 服务器的行为是会被记录的，类似于：
 
-```
+```text
 [/127.0.0.1:61647] <-> InitialHandler has pinged
 ```
 
@@ -94,7 +94,7 @@ Minecraft JAVA 服务端采用 TCP 作为通信协议，所以你可能会遭受
 
 但对于 Velocity / BungeeCord 等代理服务器，它们被设计为允许接受大量连接，且反向代理自带单个 IP 多次重新连接的配置：
 
-```
+```yaml
 connection_throttle: 4000
 connection_throttle_limit: 3
 ```
@@ -107,6 +107,8 @@ connection_throttle_limit: 3
 
 以下是推荐的反机器人插件列表
 
+<!--markdownlint-disable line-length-->
+
 | 名称                                                       | 介绍                             | 支持平台                              | 缺点                            |
 |----------------------------------------------------------|--------------------------------|-----------------------------------|-------------------------------|
 | [Sonar](https://github.com/jonesdevelopment/sonar)       | 轻量级反机器人，皆在检测和移除机器人，而不影响任何真正的玩家 | Velocity， BungeeCord              | 暂时没有？                         |
@@ -114,6 +116,8 @@ connection_throttle_limit: 3
 | [nAntiBot](https://en.docs.nickuc.com/v/nantibot)        | 一个高效反机器人插件                     | Spigot， Velocity， BungeeCord      | 依赖云服务，无法在服务器网络不好的情况下使用该插件。    |
 | [EpicGuard](https://github.com/4drian3d/EpicGuard)       | 基于事件的反机器人和反VPN插件               | Waterfall (停止维护)， Paper， Velocity | 容易绕过(但没那么烦人)，且只支持特定的Paper服务端。 |
 | [AntiAttackRL](https://github.com/AntiAttackMC/AATRL_Public) | 支持多平台的AntiBot插件 | Bukkit， BungeeCord， Folia， Sponge， Velocity与它们的分支 | 受攻击时新玩家无法直接进入，需要管理员操作; 防御方案过时 |
+
+<!--markdownlint-enable line-length-->
 
 :::warning
 
@@ -127,7 +131,8 @@ connection_throttle_limit: 3
 
 ### 付费防御核心
 
-如果你非常有钱，你可以打开跨服端[核心选择](https://yizhan.wiki/NitWikit/Java/advance/cross-server/server-core-choose)，选择那些付费的跨服端核心，NullCordX 是一个较好的选择。
+如果你非常有钱，你可以打开跨服端[核心选择](https://yizhan.wiki/NitWikit/Java/advance/cross-server/server-core-choose)，选择那些付费的跨服端核心，
+NullCordX 是一个较好的选择。
 
 但在没有想好的情况下，**不建议为反假人付费**。
 
@@ -211,7 +216,10 @@ connection_throttle_limit: 3
 
 :::danger
 
-除非迫不得已，不要使用这种方法防御攻击。就算被迫使用这种方法防御攻击，也千万不要告诉任何人，最好对于自己的服务器管理员也闭口不谈，只说“攻击的事我暂时解决了，让玩家进服吧”。因为在开服圈子的任何一处这种方法都是一种十分自私、对同行极不负责任的行为。你的行为可能会导致相应的内网穿透运营商突然出现大量额外支出，并影响大量使用同一节点的人正常使用服务(如果节点被打死了，那么攻击者就是在攻击你的过程中误伤了大量其他无辜用户)。不要因为你图省事的想法牵连无辜的陌生人。  
+除非迫不得已，不要使用这种方法防御攻击。就算被迫使用这种方法防御攻击，也千万不要告诉任何人，最好对于自己的服务器管理员也闭口不谈，只说“攻击的事我暂时解决了，让玩家进服吧”。
+因为在开服圈子的任何一处这种方法都是一种十分自私、对同行极不负责任的行为。
+你的行为可能会导致相应的内网穿透运营商突然出现大量额外支出，并影响大量使用同一节点的人正常使用服务(如果节点被打死了，那么攻击者就是在攻击你的过程中误伤了大量其他无辜用户)。不要因为你图省事的想法牵连无辜的陌生人。
+
 <!--![](_images/angryopenfrp.jpg)  -->
 
 :::
@@ -244,6 +252,7 @@ IPv4 地址的数量是极其有限的， 不管是租赁还是托管， 服务�
 作为替代，你的节点会承受攻击， 达到阈值依然会导致玩家无法进服， 此方法仅可让你在攻击下可快速恢复访问， 而无需等待黑洞封禁时间结束。
 
 使用这个方法，需要你能找到满足以下特点的云服务器来作为节点， 条件可能较为苛刻， 没有高防服务器那么烧钱但价格也不太便宜。
+
 - 在中国大陆境内 (尤为重要，除非你想玩家延迟 `200ms+`)
 - 稳定
 - 相对便宜

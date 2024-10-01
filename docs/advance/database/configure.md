@@ -244,12 +244,16 @@ innodb_lock_wait_timeout = 120
 
 :::info
 
+<!--markdownlint-disable line-length-->
+
 |配置名称       |   作用         |       默认值           |    推荐值      |
 |---------------|----------------|-----------------|------------|
-|`wait_timeout` |     此项设置 MySQL 在关闭一个非交互的连接之前所要等待的秒数，也就是一项连接如果空闲时间超过设置的值，连接就会被自动关闭，这时候你的插件就会疯狂报错烦死你，建议调大一点。但是太大也不行，否则会严重拖累性能           |      `wait_timeout=28800`        |  86400
+|`wait_timeout` |     此项设置 MySQL 在关闭一个非交互的连接之前所要等待的秒数，也就是一项连接如果空闲时间超过设置的值，连接就会被自动关闭，这时候你的插件就会疯狂报错烦死你，建议调大一点。但是太大也不行，否则会严重拖累性能           |      `wait_timeout=28800`        |  86400 |
 |`interactive_timeout` |   此项设置 MySQL 关闭一个交互的连接之前所要等待的秒数，需要注意的是， `wait_timeout` 和 `interactive_timeout` 需要同时设置，否则不会生效  | `interactive_timeout=28800`|  86400 |
 |`max_allowed_packet`   | 有时候你的插件会告诉你 `Package for query is too large` 那么这个时候你就需要调大这个值了，这一项规定了 MySQL 传输过程中最大允许的包的大小 | `max_allowed_packet=1M`  | 看情况 |
 |`max_connections`  |   这一项设置 MySQL 的最大连接数，如果连接数到达这个数值，就无法创建新的连接，这个时候你的插件通常会报错，告诉你 `max_connections` 满了  |   `max_connections=90`   |   32768 |
+
+<!--markdownlint-enable line-length-->
 
 :::
 

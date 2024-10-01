@@ -4,6 +4,8 @@ slug: /Sundry/Advance/management/player-management/whitelist
 sidebar_position: 4
 ---
 
+<!--markdownlint-disable no-duplicate-heading-->
+
 # 白名单制度
 
 为了保证服务器中所有的玩家都可信，你可能需要为服务器配置白名单。没有白名单的服务器将面临以下风险：

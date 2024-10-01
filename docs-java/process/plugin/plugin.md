@@ -12,7 +12,7 @@ sidebar_position: 1
 
 ![](_images/概览/餐叉.jpg)
 
-**建议阅读**
+建议阅读：
 
 - [YAML 语法](/docs-java/advance/YAML/YAML.md) - 了解大部分插件配置文件的语法。
 - [插件特征文件](/docs-java/process/plugin/plugin-signature-file.md) - 了解插件的一些信息。

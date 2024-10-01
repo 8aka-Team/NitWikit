@@ -100,7 +100,7 @@ Invero 俗称 TrMenu v4
 
 这是 TrMenu 的一个默认案例
 
-**右键玩家执行动作**
+#### 右键玩家执行动作
 
 https://hhhhhy.gitbook.io/trmenu-v3/usage/shortcuts
 
@@ -112,7 +112,7 @@ https://hhhhhy.gitbook.io/trmenu-v3/usage/shortcuts
 Right-Click-Player: 'open: Profile'
 ```
 
-**玩家信息菜单**
+#### 玩家信息菜单
 
 https://github.com/Dreeam-qwq/TrMenu/blob/stable/v3/plugin/src/main/resources/menus/Profile.yml
 
@@ -120,7 +120,7 @@ https://github.com/Dreeam-qwq/TrMenu/blob/stable/v3/plugin/src/main/resources/me
 
 或者说 shift+F 打开菜单？
 
-**蹲下+替换副手执行动作**
+#### 蹲下+替换副手执行动作
 
 https://hhhhhy.gitbook.io/trmenu-v3/usage/shortcuts
 
@@ -215,6 +215,8 @@ https://hhhhhy.gitbook.io/trmenu-v3/usage/shortcuts
 - [妙妙写法](#妙妙写法)
 - [\{condition=\}条件](https://hhhhhy.gitbook.io/trmenu-v3/menu/action/option#tiao-jian)
 
+<!--markdownlint-disable line-length-->
+
 ```yaml
   'C':
     display:
@@ -238,6 +240,8 @@ https://hhhhhy.gitbook.io/trmenu-v3/usage/shortcuts
           - tell inline 钱不够，你有{{papi %vault_eco_balance%}}块，还差{{math papi %trmenu_meta_单价% - papi %vault_eco_balance%}}块 {condition=not money meta get 单价}
           - tell inline 限购次数用完了 {condition=check data get meta get KEY == 0}
 ```
+
+<!--markdownlint-enable line-length-->
 
 #### 全服限购
 

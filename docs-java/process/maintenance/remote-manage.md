@@ -31,13 +31,13 @@ ServerCtrl 是一个非常好用的远程管理工具，支持 Windows，Linux�
 
 把插件安装到服务端并启动，首先你会看到
 
-```
+```text
 [ServerCtrl] Admin account created. Username: admin Password: TEkL341LPMPU
 ```
 
 这里的`admin`是用户名，`TEkL341LPMPU`是初始密码，你可以后续进行更改，接下来你会看到
 
-```
+```text
 [ServerCtrl] Webserver started on Port: 5718
 ```
 

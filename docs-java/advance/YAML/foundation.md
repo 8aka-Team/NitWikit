@@ -34,7 +34,7 @@ key1:
 
 一个相对复杂的例子：
 
-```
+```yaml
 companies:
     - id: 1
       name: company1
@@ -90,7 +90,7 @@ websites:
 
 例子：
 
-```
+```yaml
 boolean:
     - TRUE  # true， True 都可以。
     - FALSE  # false， False 都可以。
@@ -120,7 +120,7 @@ datetime:
 
 如：
 
-```
+```yaml
 options:
   enable: true
   check: false
@@ -141,7 +141,7 @@ guide:
 
 在同一缩进下不允许出现相同的键，如：
 
-```
+```yaml
 options:
   enable: true
   enable: false
@@ -152,7 +152,7 @@ options:
 
 不在同一缩进下则可以出现相同的键，如：
 
-```
+```yaml
 options:
   enable: true
   check: false

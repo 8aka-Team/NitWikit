@@ -3,6 +3,8 @@ title: 其他作弊类型
 sidebar_position: 2
 ---
 
+<!--markdownlint-disable no-duplicate-heading-->
+
 # 其他作弊类型
 
 为什么常规的反作弊插件不会包括部分作弊类型？
@@ -37,7 +39,6 @@ feature-seeds:
 ```
 
 > 这是对每个建筑使用随机种子，防止你的世界种子轻易的被破解
-
 > 如果发现你的 `spigot.yml` 中出现了类似以下的配置配置就成功了，你可以修改其中的种子。(但其实不改也完全没问题)
 
 ```yaml
@@ -385,7 +386,8 @@ anticheat:
 
 #### RayTraceAntiXray
 
-[RayTraceAntiXray](https://builtbybit.com/resources/raytraceantixray.24914/)，[开源](https://github.com/stonar96/RayTraceAntiXray)付费且仅售 7 美元。
+[RayTraceAntiXray](https://builtbybit.com/resources/raytraceantixray.24914/)，
+[开源](https://github.com/stonar96/RayTraceAntiXray)付费且仅售 7 美元。
 
 是一款用于隐藏 paper 服务器中使用 `engine-mode: 1` 时暴露在空气中的未隐藏方块的插件。
 

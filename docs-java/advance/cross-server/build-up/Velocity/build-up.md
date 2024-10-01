@@ -15,7 +15,8 @@ sidebar_position: 2
 
 并且使用参数启动以生成初始文件
 
-如果想进一步优化可以使用 JVM 参数 [Velocity 官方](https://docs.papermc.io/velocity/getting-started#launching-velocity-under-windows)有推荐的 Flags
+如果想进一步优化可以使用 JVM 参数
+[Velocity 官方](https://docs.papermc.io/velocity/getting-started#launching-velocity-under-windows)有推荐的 Flags
 
 ```bash
 java -Xms1024M -Xmx1024M -jar 核心名字.jar
@@ -84,7 +85,8 @@ Velocity 支持将玩家信息(如 IP 地址、UUID 和皮肤)转发到你的服
 - **BungeeCord 转发**(也称为*传统转发*)，它有更好的兼容性但安全性较低。
 - **BungeeGuard**，与传统 BungeeCord 转发相同，但包含了一个密钥。它比单独的 BungeeCord 转发更好，但不如 Velocitymodern 转发理想。
 
-你只能选择这些转发格式中的一种。目前不可能“混合匹配”转发模式或同时使用所有转发格式。一般来说，如果你只支持使用 Minecraft 1.13 及更新版本的客户端，请使用 Velocity Modern 转发；否则，你必须使用 BungeeCord 转发。
+你只能选择这些转发格式中的一种。目前不可能“混合匹配”转发模式或同时使用所有转发格式。一般来说，如果你只支持使用 Minecraft 1.13 及更新版本的客户端，请使用 Velocity Modern 转发；
+否则，你必须使用 BungeeCord 转发。
 
 ### 配置现代转发(Modern Forwarding)
 
@@ -93,9 +95,11 @@ Velocity 支持将玩家信息(如 IP 地址、UUID 和皮肤)转发到你的服
 
 **`modern` 转发** 是 Velocity 的原生格式，以高效的二进制格式转发所有玩家信息，并采用 MAC 代码增加安全性，使非法服务器难以绕过你的 Velocity 代理。但它**仅支持 Minecraft 1.13 或更高版本**。
 
-#### 警告
+::: warning
 
 - `modern` 转发与 **Minecraft 1.13 以下版本** 和 **ProtocolSupport 插件** 不兼容。如果使用这些，你需要使用传统的 BungeeCord 兼容转发。
+
+:::
 
 #### 配置步骤
 
@@ -136,7 +140,7 @@ Velocity 支持将玩家信息(如 IP 地址、UUID 和皮肤)转发到你的服
 <details>
   <summary>点击展开</summary>
 
-#### 警告
+:::warning
 
 - 传统转发 **本质上是不安全的**。如果必须使用，应了解如何正确保护你的服务器。
 
@@ -144,6 +148,8 @@ Velocity 支持将玩家信息(如 IP 地址、UUID 和皮肤)转发到你的服
 2. 它广泛支持且兼容性强，但 **不安全**。
 3. 在 `velocity.toml` 中将 `player-info-forwarding` 设置为 `legacy`。
 4. 确保服务器能接受 Velocity 发送的转发玩家数据。
+
+:::
 
 #### 增加安全性
 

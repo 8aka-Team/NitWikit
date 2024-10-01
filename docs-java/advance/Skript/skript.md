@@ -46,7 +46,7 @@ public void onPlayerJoin(PlayerJoinEvent evt) {
 
 使用 Skript 时的代码:
 
-```
+```skript
 on join:
     if player has permission "xxx": // 权限判断
         message "欢迎你加入服务器!你获得了64枚钻石!" // 发送消息
@@ -59,7 +59,8 @@ on join:
 
 ### 拓展插件多
 
-使用 Skript 时如果遇到 Skript 不包含的语法，可以使用其他拓展插件如 [Skbee](https://github.com/ShaneBeee/SkBee)、[Skript-reflect](https://github.com/SkriptLang/skript-reflect) 等插件拓展。
+使用 Skript 时如果遇到 Skript 不包含的语法，可以使用其他拓展插件如
+[Skbee](https://github.com/ShaneBeee/SkBee)、[Skript-reflect](https://github.com/SkriptLang/skript-reflect) 等插件拓展。
 
 ### 性能较低
 

@@ -4,7 +4,7 @@ sidebar_position: 2
 ---
 
 
-# 安装
+# 安装 Geyser
 
 ## 版本
 
@@ -63,7 +63,8 @@ Standalone 版本 可以作为一个独立的代理端启动
 
 :::
 
-第一眼你可能会被全是英文的配置文件镇住，别急，善用翻译来理解配置文件中的注释，**在完成本教程的基础配置配置后，若需进阶，请参考 [此处](https://docs.superiormc.cn/v/geyser-wiki/user-guide/li-jie-pei-zhi) 的配置参考**
+第一眼你可能会被全是英文的配置文件镇住，别急，善用翻译来理解配置文件中的注释，
+**在完成本教程的基础配置配置后，若需进阶，请参考 [此处](https://docs.superiormc.cn/v/geyser-wiki/user-guide/li-jie-pei-zhi) 的配置参考**
 
 接下来，回到配置，映入你眼帘的应该是 bedrock 和 remote 两个大项:
 
@@ -191,7 +192,8 @@ username-prefix: "."
 
 为什么?
 
-因为在安装 Floodgate 后，基岩版玩家的 UUID 将会和 Java 版玩家有很大不同，若是遇到重名，则会出现一个ID拥有两个完全不同的UUID，这可能会发生一些无法预知的错误，而使用 `.` 前缀是因为 Java 正版玩家名中不可使用 `.`
+因为在安装 Floodgate 后，基岩版玩家的 UUID 将会和 Java 版玩家有很大不同。
+若是遇到重名，则会出现一个ID拥有两个完全不同的UUID，这可能会发生一些无法预知的错误，而使用 `.` 前缀是因为 Java 正版玩家名中不可使用 `.`
 
 **但是**
 这在离线服中，有几个问题:
@@ -245,7 +247,8 @@ send-floodgate-data: true
 
 这样子服就可以接收到来自群组服的基岩版玩家数据了，请注意在开启此项后，若子服不安装 Floodgate 则基岩版玩家则无法进入子服，但是此项很重要，若不开启，则在子服中 Floodgate 不起效果
 
-接下来，在子服一一安装 Floodgate 并确保和群组服的 Floodgate 配置一致，然后注意到群组端 Floodgate 配置文件夹下，理应会生成一个叫 `key.pem` 的文件，用群组服的 `key.pem` 将子服中的 `key.pem` 覆盖，确保 `key.pem` 完全相同
+接下来，在子服一一安装 Floodgate 并确保和群组服的 Floodgate 配置一致，然后注意到群组端 Floodgate 配置文件夹下，理应会生成一个叫 `key.pem` 的文件。
+用群组服的 `key.pem` 将子服中的 `key.pem` 覆盖，确保两个文件完全相同
 
 即可完成群组端配置
 

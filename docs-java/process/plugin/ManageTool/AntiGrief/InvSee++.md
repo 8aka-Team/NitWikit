@@ -3,6 +3,8 @@ sidebar_position: 4
 sidebar_label: 查包 - InvSee++
 ---
 
+<!--markdownlint-disable no-duplicate-heading-->
+
 # InvSee++
 
 :::info

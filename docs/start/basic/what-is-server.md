@@ -33,7 +33,8 @@ sidebar_position: 1
 
 由于原版 **Minecraft Server** 拓展性及性能不足，社区衍生出了多种提供 *多人游戏* 的 **服务端**，
 
-这些提供 *多人游戏* 服务的 **程序/软件** 常被人称为 **核心**，大致可分为 **[Mod](https://yizhan.wiki/NitWikit/Java/start/basic/what-is-mod)** 服务端和 **[插件](what-is-plugin.md)** 服务端。
+这些提供 *多人游戏* 服务的 **程序/软件** 常被人称为 **核心**，大致可分为
+**[Mod](https://yizhan.wiki/NitWikit/Java/start/basic/what-is-mod)** 服务端和 **[插件](what-is-plugin.md)** 服务端。
 
 常见的 **Mod** 服务端有 **Forge** 和 **Fabric** 等。
 

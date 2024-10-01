@@ -9,14 +9,14 @@ sidebar_position: 6
 
 正确：
 
-```
+```text
 请提交一个 [Issue](链接) 并分配给相关同事。
 访问我们网站的最新动态，请 点击这里 进行订阅！
 ```
 
 错误：
 
-```
+```text
 请提交一个[Issues](链接)并分配给相关同事。
 访问我们网站的最新动态，请点击这里进行订阅！
 ```
@@ -27,14 +27,14 @@ sidebar_position: 6
 
 正确：
 
-```
+```text
 修复了一个 **内存泄露** 问题，该问题由 someone 在 版本 v0.1.1 中引入。
 **测试文本**，这是测试。
 ```
 
 错误：
 
-```
+```text
 修复了一个**内存泄露**问题，该问题由someone在版本 v0.1.1中引入。
 **测试文本** ，这是测试。
 ```
@@ -43,19 +43,19 @@ sidebar_position: 6
 
 正确：
 
-```
+```text
 怎样解决苦难？
 只要活着，我们每一个人，都会面临苦难。
 ```
 
 错误：
 
-```
+```text
 怎样解决苦难？   
 只要活着，我们每一个人，都会面临苦难。   
 ```
 
-可以在vscode安装 [Trailing Spaces](https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces&ssr=false#review-details) 插件来高亮空格
+可以在 VSCode `查看 > 外观 > 显示空格` 处启用空格高亮的功能。
 
 ## 空行
 

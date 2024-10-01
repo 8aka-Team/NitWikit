@@ -143,6 +143,10 @@ crontab -e
 2. 将备份文件解压：`tar -zxvf 备份文件名.tar.gz`；
 3. 将解压后的文件覆盖到服务器目录：`cp -r 解压后的文件路径/* 服务器目录`。
 
+<!--markdownlint-disable line-length-->
+
 > 如果你恢复存档后启动服务器报错：
 > `[main/FATAL]: Failed to start the minecraft server net.minecraft.util.SessionLock$ExceptionWorldConfict: /home/minecraft/lobby/./world/session.lock: already locked (possibly by other Minecraft instance?)`
 > 请检查 `world` 存档下是否存在 `session.lock` 文件,如果存在请删除,然后重启服务器。
+
+<!--markdownlint-enable line-length--

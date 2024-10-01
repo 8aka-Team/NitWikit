@@ -2,6 +2,8 @@
 sidebar_position: 2
 ---
 
+# SX-Item
+
 :::info
 
 `SpigotMC` https://www.spigotmc.org/resources/.119751/

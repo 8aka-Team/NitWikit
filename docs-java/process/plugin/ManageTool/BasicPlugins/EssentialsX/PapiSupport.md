@@ -13,14 +13,14 @@ sidebar_position: 4
 
 ## 安装此扩展
 
-```
+```text
 /papi ecloud download Essentials
 /papi reload
 ```
 
 ## 变量
 
-```
+```text
 %essentials_afk%
 %essentials_afk_reason%
 %essentials_fly%

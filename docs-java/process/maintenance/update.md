@@ -7,9 +7,13 @@ sidebar_position: 5
 
 在某些时候我们需要更改服务端版本(比如 1.20 -> 1.21)，然后就会
 
-```
+<!--markdownlint-disable line-length-->
+
+```text
 [Configurations] Loading a newer configuration than is supported (31 > 30)! You may have to backup & delete the world config file to start the server.
 ```
+
+<!--markdownlint-enable line-length-->
 
 当然，可爱的 Paper 为我们准备了区块版本升级/降级工具
 

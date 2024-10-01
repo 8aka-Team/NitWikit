@@ -21,6 +21,8 @@ sidebar_position: 3
 
 配置文件位于 Geyser 的配置文件夹中，结构如下
 
+<!--markdownlint-disable line-length-->
+
 ```yaml
 #--------------------------------
 # Geyser 自定义头骨配置文件
@@ -51,8 +53,9 @@ player-profiles：
 # Minecraft 皮肤服务器上皮肤的哈希值
 skin-hashes：
  - a90790c57e181ed13aded14c47ee2f7c8de3533e017ba957af7bdf9df1bde94f
-
 ```
+
+<!--markdownlint-enable line-length-->
 
 你只需要提取出你所需要显示的头颅，根据类别添加到配置文件中，然后**重启服务端**，就可以显示
 
@@ -68,12 +71,17 @@ skin-hashes：
 
 头可以通过自定义玩家头部的 NBT 中的纹理字符串在此部分注册。除非手动更改该值，否则这些值不会在间歇泉启动时更新。因此，如果玩家的用户名或皮肤发生变化，它们不会改变。数据只是 base64 编码的 JSON。
 
-如果在Paper服务器上，则可以通过将项目握在手中并运行命令来获取头骨的此数据。这会将项目的 NBT 数据输出到聊天和控制台。纹理字符串位于```SkullOwner```标签下、```Properties```标签下、```textures```标签下。例如：/paper dumpitem
+如果在Paper服务器上，则可以通过将项目握在手中并运行命令来获取头骨的此数据。这会将项目的 NBT 数据输出到聊天和控制台。
+纹理字符串位于```SkullOwner```标签下、```Properties```标签下、```textures```标签下。例如：/paper dumpitem
 
-```
+<!--markdownlint-disable line-length-->
+
+```text
 [05:58:07 INFO]: .KastleFirefox issued server command: /paper dumpitem
 [05:58:07 INFO]: minecraft:player_head{display: {Name: '{"text":"Test"}'}， SkullOwner: {Properties: {textures: [{Value: "ewogICJ0aW1lc3RhbXAiIDogMTY1NzMyMjIzOTgzMywKICAicHJvZmlsZUlkIiA6ICJjZGRiZTUyMGQwNDM0YThiYTFjYzlmYzkyZmRlMmJjZiIsCiAgInByb2ZpbGVOYW1lIiA6ICJkYXZjaG9vIiwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2E5MDc5MGM1N2UxODFlZDEzYWRlZDE0YzQ3ZWUyZjdjOGRlMzUzM2UwMTdiYTk1N2FmN2JkZjlkZjFiZGU5NGYiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ"}]}， Id: [I; -229048314, -553040501, -1407961158, 465313087]}}
 ```
+
+<!--markdownlint-enable line-length-->
 
 ### 皮肤哈希
 
@@ -91,7 +99,7 @@ skin-hashes：
 
 [下载地址](https://github.com/lilingfengdev/PlayerHeadGetterBuild/releases/tag/latest)
 
-**Command**
+### 命令
 
 `/headgetter hand` 获取手上头颅base64
 
@@ -101,7 +109,7 @@ skin-hashes：
 
 `/headgetter save` 导出头颅base64
 
-**使用流程**
+### 使用流程
 
 - 先用前三个命令获取头颅
 - 完事之后使用导出命令

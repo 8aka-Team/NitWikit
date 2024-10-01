@@ -5,24 +5,26 @@ sidebar_position: 2
 
 # 自动更新
 
-**1.修改附属的配置**
+<!--markdownlint-disable ol-prefix-->
+
+1. 修改附属的配置
 
 将**所有附属插件**的更新关闭
 
 以 Bump 附属为例：
 
-```
+```yaml
 options:
   auto-update: false
 ```
 
 将 auto-update 设置为 false
 
-**2.安装 GuizhanLibPlugin 插件**
+2. 安装 GuizhanLibPlugin 插件
 
 地址：https://builds.guizhanss.com/ybw0014/GuizhanLibPlugin/master
 
-**3.修改 GuizhanLibPlugin 的更新配置**
+3. 修改 GuizhanLibPlugin 的更新配置
 
 将 auto-update 设置为 true
 
@@ -32,7 +34,7 @@ options:
 
 下方配置供你参考
 
-```
+```yaml
 # Whether to enable auto update module (see updater.yml for details)
 # 是否开启自动更新模块(详见 updater.yml)
 auto-update: true
@@ -58,3 +60,5 @@ updater:
 # 是否在控制台输出调试信息。
 debug: false
 ```
+
+<!--markdownlint-enable ol-prefix-->

@@ -1,12 +1,12 @@
 ---
-title: 开服
+title: 启动服务器
 sidebar_position: 3
 ---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# 开服
+# 启动服务器
 
 开服之前，请检查服务器是否安装了 Java，在终端输入
 
@@ -14,7 +14,7 @@ import TabItem from '@theme/TabItem';
 
 如果你看到类似以下的输出，那么服务器中已经安装了 Java
 
-```
+```text
 openjdk version "21.0.2" 2024-01-16 LTS
 OpenJDK Runtime Environment Zulu21.32+17-CA (build 21.0.2+13-LTS)
 OpenJDK 64-Bit Server VM Zulu21.32+17-CA (build 21.0.2+13-LTS， mixed mode， sharing)
@@ -113,7 +113,7 @@ OpenJDK 64-Bit Server VM Zulu21.32+17-CA (build 21.0.2+13-LTS， mixed mode， s
 
 `vim ~/.bashrc` 在这个文件末尾追加
 
-```
+```shell
 # java
 alias java8='/usr/lib/jvm/zulu-8/bin/java'
 alias java17='/usr/lib/jvm/zulu-17/bin/java'
@@ -123,11 +123,15 @@ alias java17='/usr/lib/jvm/zulu-17/bin/java'
 
 - 使用 Java8 开服：
 
-        java8 -jar example.jar
+```shell
+java8 -jar example.jar
+```
 
 - 使用 Java17 开服：
 
-        java17 -jar example.jar
+```shell
+java17 -jar example.jar
+```
 
 ## 开服
 
@@ -145,7 +149,7 @@ TODO - 完善和排版
 
 使用 chmod 命令给脚本增加运行权限
 
-```
+```shell
 chmod +x example.sh
 ```
 

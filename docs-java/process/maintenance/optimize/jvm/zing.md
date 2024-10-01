@@ -10,7 +10,7 @@ slug: /optimize/jvm/zing
 
 ## 一步到位
 
-```
+```text
 -XX:ProfileLogIn=readynow -XX:ProfileLogOut=readynow -XX:+FalconUseCompileStashing -XX:+CompactStrings
 ```
 

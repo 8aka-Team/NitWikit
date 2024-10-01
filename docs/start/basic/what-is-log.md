@@ -17,13 +17,17 @@ sidebar_position: 6
 
 日志一般是由 "[时间] [线程 / 日志级别]: 日志内容" 组成的，如下：
 
-```
+<!--markdownlint-disable line-length-->
+
+```text
 [00:01:32] [Server thread/WARN]: [PvPManager] Error loading Vault! No Economy plugin found
 [00:02:34] [Craft Scheduler Thread - 5300 - InteractiveChat/INFO]: MangGuo_Pi: www
 [00:47:53] [Server thread/ERROR]: Error occurred (in the plugin loader) while disabling ExcellentShop v4.3.12 (Is it up to date?)
 [00:47:55] [Server thread/INFO]: Radiation_pi issued server command: /lp user Radiation_pi permission set rtp.use true
 [00:47:55] [luckperms-command-executor/INFO]: [LP] LOG > (Radiation_pi) [U] (radiation_pi)
 ```
+
+<!--markdownlint-enable line-length-->
 
 ### 时间
 
@@ -63,7 +67,7 @@ sidebar_position: 6
 
 例：
 
-```
+```text
 [00:47:55] [Server thread/INFO]: Radiation_pi issued server command: /lp user Radiation_pi permission set rtp.use true
 [00:47:55] [luckperms-command-executor/INFO]: [LP] LOG > (Radiation_pi) [U] (radiation_pi)
 ```
@@ -74,7 +78,7 @@ sidebar_position: 6
 
 插件版本有不兼容风险、配置文件或数据出现问题，暂时可控，可能导致进一步报错，如：
 
-```
+```text
 [00:01:32] [Server thread/WARN]: [PvPManager] Error loading Vault! No Economy plugin found
 ```
 

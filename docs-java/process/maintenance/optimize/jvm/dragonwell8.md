@@ -11,29 +11,37 @@ slug: /optimize/jvm/dragonwell8
 
 ## 基础
 
-```shell
+<!--markdownlint-disable line-length-->
+
+```text
 -XX:+UnlockExperimentalVMOptions -XX:+UnlockDiagnosticVMOptions -XX:+AlwaysActAsServerClassMachine -XX:+ParallelRefProcEnabled -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:+PerfDisableSharedMem -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -XX:MaxInlineLevel=15 -XX:MaxVectorSize=32 -XX:+UseCompressedOops -XX:ThreadPriorityPolicy=1 -XX:+UseDynamicNumberOfGCThreads -XX:NmethodSweepActivity=1 -XX:ReservedCodeCacheSize=350M -XX:-DontCompileHugeMethods -XX:MaxNodeLimit=240000 -XX:NodeLimitFudgeFactor=8000 -XX:+UseFPUForSpilling
 ```
+
+<!--markdownlint-enable line-length-->
 
 这些是基础参数
 
 x86 Java 8 用户可以添加以下附加参数：
 
-```shell
+```text
 -XX:+UseXMMForArrayCopy
 ```
 
 如果使用的是从 GitHub 下载的预览版可以添加
 
-```shell
+```text
 -XX:+UseBigDecimalOpt
 ```
 
 ## G1GC 参数
 
-```shell
+<!--markdownlint-disable line-length-->
+
+```text
 -XX:+UseG1GC -XX:MaxGCPauseMillis=130 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1NewSizePercent=28 -XX:G1HeapRegionSize=16M -XX:G1ReservePercent=20 -XX:G1MixedGCCountTarget=3 -XX:InitiatingHeapOccupancyPercent=10 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=0 -XX:SurvivorRatio=32 -XX:MaxTenuringThreshold=1 -XX:G1SATBBufferEnqueueingThresholdPercent=30 
 ```
+
+<!--markdownlint-enable line-length-->
 
 ## JWarmup
 
@@ -43,7 +51,11 @@ JWarmup的基本原理: 根据前一次程序运行的情况，记录下热点�
 
 #### 记录阶段(一般是beta环境)，在5分钟后生成profiling data
 
+<!--markdownlint-disable line-length-->
+
 添加参数`-XX:-ClassUnloading -XX:-CMSClassUnloadingEnabled -XX:-ClassUnloadingWithConcurrentMark -XX:CompilationWarmUpLogfile=jwarmup.log -XX:+CompilationWarmUpRecording -XX:CompilationWarmUpRecordTime=300`
+
+<!--markdownlint-enable line-length-->
 
 #### 使用阶段(一般是生产环境)
 
@@ -61,7 +73,11 @@ Wisp在JVM上提供了一种用户态的线程实现。开启Wisp2后，Java线�
 
 只需添加JVM参数即可开启Wisp2，无需更改程序！！
 
-**仅支持Linux x64**
+:::tip
+
+仅支持Linux x64
+
+:::
 
 添加参数`-XX:+UnlockExperimentalVMOptions -XX:+UseWisp2`
 
@@ -69,6 +85,6 @@ Wisp在JVM上提供了一种用户态的线程实现。开启Wisp2后，Java线�
 
 G1ElasticHeap 是一种 GC 功能，用于将 Java 堆的内存返回给操作系统，以减少 Java 进程的内存占用。要启用此功能，你需要通过以下选项使用 G1 GC：
 
-```shell
+```text
 -XX:+G1ElasticHeap -XX:+ElasticHeapPeriodicUncommit
 ```

@@ -61,7 +61,9 @@ TODO
 
 指只有一个 .js/.lua/.py 代码文件的插件。
 
-首先将插件文件放入 `plugins` 文件夹，然后启动或重启一次服务器。此时服务器将警告 `WARN [legacy-script-engine-quickjs] Legacy plugins have been migrated， please restart the server to load them!`。**此时插件并未被加载，你需要再次重启服务器** ，之后插件就能加载了。
+首先将插件文件放入 `plugins` 文件夹，然后启动或重启一次服务器。
+此时服务器将警告 `WARN [legacy-script-engine-quickjs] Legacy plugins have been migrated， please restart the server to load them!`。
+**此时插件并未被加载，你需要再次重启服务器** ，之后插件就能加载了。
 
 #### nodejs、python 多文件
 

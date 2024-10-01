@@ -5,6 +5,8 @@ sidebar_position: 1
 
 # 命令
 
+<!--markdownlint-disable line-length-->
+
 | 命令 | 权限 | 描述 |
 | --- | --- |--- |
 | `/alert` | `bungeecord.command.alert` | 发送一条整个群组的公告，会显示在所有的子服务器内。颜色符是&，使用&h 可以清除所有默认的格式 |
@@ -18,3 +20,5 @@ sidebar_position: 1
 | `/perms` | `N/A` | 显示你拥有的权限和所在权限组 |
 | `/send` | `bungeecord.command.send` | 将指定玩家移动到目标子服务器，使用“current”将会把你所在服务器的所有玩家移动到目标服务器，使用“all”将会把整个群组下的玩家移动到目标服务器。子服务器名就是你在“config.yml”的“servers”下面设置的服务器名 |
 | `/server` | `bungeecord.command.server` | 送到指定子服务器，这个权限默认是高于Bukkit插件权限的，也就是说玩家可以在未登录之前使用此命令跳转到另外一个服务器，如果另外的服务器没登陆插件，那么通过此方法就可以使用到OP账号 |
+
+<!--markdownlint-enable line-length-->

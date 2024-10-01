@@ -3,7 +3,9 @@ title: config.yml
 sidebar_position: 3
 ---
 
-```
+<!--markdownlint-disable line-length-->
+
+```text
 #-驿站忆行(185839426)
 #-驿站忆行(185839426)
 # |                       Notes                          | #

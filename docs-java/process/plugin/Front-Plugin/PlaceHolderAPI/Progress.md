@@ -2,6 +2,8 @@
 sidebar_position: 7
 ---
 
+# 进度条
+
 :::info
 
 `eCloud` https://api.extendedclip.com/expansions/progress/

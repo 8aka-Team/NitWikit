@@ -11,7 +11,8 @@ sidebar_position: 1
 
 请一定要使用小号来搭建 QQ 机器人，否则如果登录不成功或是成功后被检测，将有大概率导致封号。
 
-使用如 go-cqhttp 的 [签名服务](https://mirai.mamoe.net/topic/2373/%E5%85%B3%E4%BA%8E%E7%AD%BE%E5%90%8D%E6%9C%8D%E5%8A%A1) 不稳定并且非常容易导致封号，推荐使用 LLOneBot 这类通过 hook 官方客户端而跳过使用签名服务登录的方案。
+使用如 go-cqhttp 的 [签名服务](https://mirai.mamoe.net/topic/2373/%E5%85%B3%E4%BA%8E%E7%AD%BE%E5%90%8D%E6%9C%8D%E5%8A%A1) 不稳定并且非常容易导致封号。
+推荐使用 LLOneBot 这类通过 hook 官方客户端而跳过使用签名服务登录的方案。
 
 :::
 
@@ -26,7 +27,8 @@ sidebar_position: 1
 |原理|破解 QQ 客户端|
 |---|:---|
 
-LiteLoaderQQNT 是 [利用 NTQQ 特性](https://github.com/Mrs4s/go-cqhttp/issues/2471) 实现的 QQ **插件加载器**。它本身并不具备QQ机器人功能，你需要**为其安装 LLOneBot 插件**才能开始使用 QQ 机器人功能。
+LiteLoaderQQNT 是 [利用 NTQQ 特性](https://github.com/Mrs4s/go-cqhttp/issues/2471) 实现的 QQ **插件加载器**。
+它本身并不具备QQ机器人功能，你需要**为其安装 LLOneBot 插件**才能开始使用 QQ 机器人功能。
 
 :::warning
 
@@ -36,7 +38,8 @@ LiteLoaderQQNT 是 [利用 NTQQ 特性](https://github.com/Mrs4s/go-cqhttp/issue
 
 前往 [LiteLoaderQQNT官网](https://liteloaderqqnt.github.io/) ，根据其教程下载安装该框架。
 
-安装完成后，根据 [LiteLoaderQQNT 文档安装插件方法](https://liteloaderqqnt.github.io/guide/plugins.html) 为框架安装插件：[LLOneBot](https://github.com/LLOneBot/LLOneBot/tree/main)。如果你已经在使用该框架并且已安装了 [插件列表查看](https://github.com/ltxhhz/LL-plugin-list-viewer/tree/main) 插件，也可以直接使用该插件进行安装。
+安装完成后，根据 [LiteLoaderQQNT 文档安装插件方法](https://liteloaderqqnt.github.io/guide/plugins.html) 为框架安装插件：[LLOneBot](https://github.com/LLOneBot/LLOneBot/tree/main)。
+如果你已经在使用该框架并且已安装了 [插件列表查看](https://github.com/ltxhhz/LL-plugin-list-viewer/tree/main) 插件，也可以直接使用该插件进行安装。
 
 安装完成后，进入 QQ 设置，在侧边栏中找到 LLOneBot 点击切换到其设置页，然后 **根据机器人给出的文档** 进行配置。
 
@@ -87,7 +90,8 @@ Mirai 原生由于本身为协议库原理，近期因不可抗力导致难以�
 
 :::
 
-如果发现 Mirai 的 **帐号登录** 对于你的服务器来说难以使用和维护，可以使用 [Overflow(OneBot)](https://github.com/MrXiaoM/Overflow) 将 Mirai 接入其他 OneBot 框架，而不是直接通过 Mirai 登录。
+如果发现 Mirai 的 **帐号登录** 对于你的服务器来说难以使用和维护，可以使用 [Overflow(OneBot)](https://github.com/MrXiaoM/Overflow)
+将 Mirai 接入其他 OneBot 框架，而不是直接通过 Mirai 登录。
 
 **[Overflow 使用方法](https://github.com/MrXiaoM/Overflow/blob/main/docs/UserManual.md)**
 

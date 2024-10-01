@@ -10,7 +10,7 @@ sidebar_position: 1
 
 # LeviLamina 安装教程
 
-# 方法零: 使用笨蛋脚本
+## 方法零: 使用笨蛋脚本
 
 首先下载[安装脚本](https://github.com/lilingfengdev/NitWiki-Script/releases/download/windows-latest/liteloaderbds-install.exe)，下载完后右键**以管理员启动**即可
 
@@ -20,7 +20,7 @@ sidebar_position: 1
 
 :::
 
-# 方法一: 使用 Lip 进行一键配置
+## 方法一: 使用 Lip 进行一键配置
 
 ### 准备工作-安装 Lip
 
@@ -40,7 +40,7 @@ sidebar_position: 1
 
 然后运行命令
 
-```
+```shell
 lip install github.com/LiteLDev/LeviLamina
 ```
 
@@ -50,13 +50,13 @@ Lip 会自动下载 BDS 并配置 LeviLamina 加载器
 
 如果因网络问题无法下载 GO 模块或 LeviLamina 及其依赖，可以运行命令
 
-```
+```shell
 lip config GoModuleProxyURL <url>
 ```
 
 和
 
-```
+```shell
 lip config GitHubMirrorURL <url>
 ```
 
@@ -72,11 +72,11 @@ lip config GitHubMirrorURL <url>
 
 现在，你已成功安装了 LeviLamina 了，要启动它，请运行命今
 
-```
+```shell
 bedrock_server_mod.exe
 ```
 
-# 方法二: 手动安装(不推荐)
+## 方法二: 手动安装(不推荐)
 
 只有想要调试新版本的开发人员才会手动安装，手动安装只会安装允许 LeviLamina 运行的基本部件，它缺少 CrashLogger、I18N 等组件。
 
@@ -115,6 +115,6 @@ bedrock_server_mod.exe
 
 现在，你已成功安装了 LeviLamina 了，要启动它，请运行命今
 
-```
+```shell
 bedrock_server_mod.exe
 ```

@@ -11,7 +11,7 @@ sidebar_position: 3
 
 ## `/server` 命令
 
-```
+```text
 /server [配置中设置的子服名字]
 ```
 
@@ -31,7 +31,7 @@ sidebar_position: 3
 
 https://wiki.citizensnpcs.co/NPC_Commands#Bungee
 
-```
+```text
 /npc command add -p server MyServerName
 ```
 
@@ -41,8 +41,8 @@ ady 没有跨服动作，你可以导入其他插件的跨服动作来使用
 
 如安装 Invero 插件后：
 
-```
-kether: import invero connect 子服名
+```kether
+import invero connect 子服名
 ```
 
 或者使用 command...
@@ -51,7 +51,7 @@ kether: import invero connect 子服名
 
 https://github.com/gonalez/znpcs/wiki/Commands#server
 
-```
+```text
 /znpcs action [id] add SERVER [server]
 ```
 
@@ -64,7 +64,7 @@ https://github.com/gonalez/znpcs/wiki/Commands#server
 
 https://filoghost.me/docs/chest-commands/actions
 
-```
+```yaml
 ACTIONS:
   - 'server: hub'
 ```
@@ -73,7 +73,7 @@ ACTIONS:
 
 https://wiki.helpch.at/helpchat-plugins/deluxemenus/files
 
-```
+```yaml
 - '[connect] <serverName>'
 ```
 
@@ -81,7 +81,7 @@ https://wiki.helpch.at/helpchat-plugins/deluxemenus/files
 
 https://hhhhhy.gitbook.io/trmenu-v3/menu/action/types#kua-fu-chuan-song
 
-```
+```yaml
 - 'server: Lobby'
 ```
 
@@ -89,6 +89,6 @@ https://hhhhhy.gitbook.io/trmenu-v3/menu/action/types#kua-fu-chuan-song
 
 文档没写
 
-```
+```yaml
 - 'connect 子服名'
 ```

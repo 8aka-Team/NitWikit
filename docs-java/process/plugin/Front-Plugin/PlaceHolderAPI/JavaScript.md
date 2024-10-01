@@ -2,6 +2,8 @@
 sidebar_position: 5
 ---
 
+# JavaScript
+
 :::info
 
 `eCloud` https://api.extendedclip.com/expansions/javascript

@@ -9,13 +9,13 @@ sidebar_position: 2
 
 ## 传送
 
-```
+```yaml
 teleport-cooldown: 0
 ```
 
 传送功能的冷却时间(以秒为单位)，如/home， /tp， etc 等命令。
 
-```
+```yaml
 teleport-delay: 0
 ```
 
@@ -45,7 +45,7 @@ use-nbt-serialization-in-createkit: false
 
 ## AFK - 使用命令 /afk 暂时离开
 
-```
+```yaml
 auto-afk: 300
 ```
 
@@ -53,7 +53,7 @@ auto-afk: 300
 此功能需要玩家拥有 essentials.afk.auto 权限。
 设置为 -1 表示不会超时。
 
-```
+```yaml
 auto-afk-kick: -1
 ```
 
@@ -61,7 +61,7 @@ auto-afk-kick: -1
 拥有 essentials.afk.kickexempt 权限可以避免被踢出。
 设置为 -1 表示不会超时。
 
-```
+```yaml
 afk-list-name: "挂机中"
 ```
 
@@ -69,13 +69,13 @@ afk-list-name: "挂机中"
 
 ## 杂项
 
-```
+```yaml
 death-messages: true
 ```
 
 你可以在此处禁用原版的死亡消息。
 
-```
+```yaml
 custom-join-message: "&e[&a+&e]&6比驿站丑的 {USERNAME} 加入了游戏"
 custom-quit-message: "&e[&c-&e]&6比驿站丑的 {USERNAME} 退出了游戏"
 custom-new-username-message: "&e[&a+&e]&6比驿站丑的新玩家 {USERNAME} 加入了游戏"
@@ -87,7 +87,7 @@ custom-new-username-message: "&e[&a+&e]&6比驿站丑的新玩家 {USERNAME} 加
 
 ## 家
 
-```
+```yaml
 spawn-if-no-home: true
 ```
 
@@ -99,7 +99,7 @@ spawn-if-no-home: true
 
 ## 经济
 
-```
+```yaml
 starting-balance: 0
 ```
 
@@ -109,13 +109,13 @@ starting-balance: 0
 
 注意：你需要安装 EssentialsX Spawn 才可以使用。
 
-```
+```yaml
 announce-format: '&7[&b驿站&7]&a欢迎大傻蛋来服务器！'
 ```
 
 设置玩家进服的欢迎语。
 
-```
+```yaml
 kit: tools
 ```
 
@@ -127,7 +127,7 @@ kit: tools
 
 注意：你需要安装 EssentialsX Chat 才可以使用，推荐用别的聊天插件...
 
-```
+```yaml
 format: '<{DISPLAYNAME}> {MESSAGE}'
 ```
 

@@ -11,6 +11,8 @@ GitHub Action 下载
 
 如果你想在正式发布前测试最新、最好的版本，可以从 GitHub Actions 获取副本。
 
+<!--markdownlint-disable ol-prefix-->
+
 1. 首先进入 [PojavLauncher](https://github.com/PojavLauncherTeam/PojavLauncher) 软件仓库，然后切换到 `Actions` 选项卡。
 
 ![](https://pojavlauncherteam.github.io/assets/img/Android-Actions-1.96a0b3c7.png)
@@ -28,5 +30,7 @@ GitHub Action 下载
     - 大多数人都会选择 `app-debug`。
 
 ![](https://pojavlauncherteam.github.io/assets/img/Android-Actions-4.07b1b65e.png)
+
+<!--markdownlint-enable ol-prefix-->
 
 下载完 Actions 版本后，就可以解压缩并像安装其他 .apk 文件一样进行安装了。

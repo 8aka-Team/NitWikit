@@ -36,7 +36,7 @@ sidebar_position: 7
 
 <!-- 文件名必须使用半角字符，不得使用全角字符。这也意味着，中文不能用于文件名。 -->
 
-```
+```text
 错误：名词 解释.md
 
 正确：名词解释.md
@@ -44,7 +44,7 @@ sidebar_position: 7
 
 文件名建议只使用小写字母，不使用大写字母。
 
-```
+```text
 错误：TroubleShooting.md
 
 正确：troubleshooting.md
@@ -54,7 +54,7 @@ sidebar_position: 7
 
 文件名包含多个单词时，单词之间建议使用半角的连词线(`-`)分隔。
 
-```
+```text
 不佳：advanced_usage.md
 
 正确：advanced-usage.md

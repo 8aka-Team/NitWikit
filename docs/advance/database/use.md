@@ -4,6 +4,8 @@ slug: /database/manage
 sidebar_position: 2
 ---
 
+<!--markdownlint-disable no-duplicate-heading-->
+
 ## 数据库管理
 
 ## 使用数据库管理软件管理
@@ -28,7 +30,7 @@ sidebar_position: 2
 
 **Navicat** 是一款企业级的简单易用的数据库管理软件
 
-**优势**
+#### 优势
 
 - 简单易用，并且功能齐全
 
@@ -36,11 +38,11 @@ sidebar_position: 2
 
 - premium 版本支持多种数据库的管理，如 MySQL 、 MangoDB 等
 
-**劣势**
+#### 劣势
 
 - 收费，而且不便宜
 
-**教程**
+#### 教程
 
 <details>
   <summary>连接数据库</summary>
@@ -118,7 +120,7 @@ GitHub https://github.com/HeidiSQL/HeidiSQL
 
 **HeidiSQL** 是一款开源的简易数据库管理软件
 
-**优势**
+#### 优势
 
 - 简单好用，基本功能齐全
 
@@ -126,17 +128,17 @@ GitHub https://github.com/HeidiSQL/HeidiSQL
 
 - 支持多种数据库的管理，如 MySQL 、 MangoDB 等
 
-**劣势**
+#### 劣势
 
 - 没有?
 
-**教程**
+#### 教程
 
 TODO
 
 ### 小皮数据库
 
-**教程**
+#### 教程
 
 <details>
   <summary>配置数据库</summary>
@@ -151,7 +153,7 @@ TODO
 
 推荐 Linux 用户使用
 
-**教程**
+#### 教程
 
 <details>
   <summary>配置数据库</summary>
@@ -172,7 +174,8 @@ PS: 这年头谁还用指令管理数据库啊
 CREATE DATABASE <数据库名称> CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 ```
 
-解释: `CHARACTER SET utf8mb4` 将数据库字符集设置为 utf8mb4， 能够存储包括表情符号在内的所有 Unicode 字符。 `utf8mb4_general_ci` 是一种不区分大小写(case-insensitive)的排序规则，如果你想区分大小写，可以改为 `utf8mb4_bin`，`_bin` 意为以二进制方式比较字符。
+解释: `CHARACTER SET utf8mb4` 将数据库字符集设置为 utf8mb4， 能够存储包括表情符号在内的所有 Unicode 字符。
+`utf8mb4_general_ci` 是一种不区分大小写(case-insensitive)的排序规则，如果你想区分大小写，可以改为 `utf8mb4_bin`，`_bin` 意为以二进制方式比较字符。
 
 :::
 
@@ -190,7 +193,8 @@ TODO
 
 我们来一一介绍他们的用途
 
-- enabled: 是否启用 MySQL 存储数据？如果是请填 true ，否则填 false ，默认是 false ，而且有些插件是直接让你填写数据库类型的，默认是 SQLite ，对于这种配置文件，请把 SQLite 改成 MySQL 或者其他你使用的数据库名
+- enabled: 是否启用 MySQL 存储数据？如果是请填 true ，否则填 false ，默认是 false ，而且有些插件是直接让你填写数据库类型的，默认是 SQLite 。
+对于这种配置文件，请把 SQLite 改成 MySQL 或者其他你使用的数据库名。
 
 - host: 也就是主机地址，如果数据库在本地，请填 localhost
 

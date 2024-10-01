@@ -109,7 +109,7 @@ sidebar_position: 3
 
 如果插件的 `plugin.yml` 里没有此项，你可以试着手动添加。
 
-```
+```yaml
 folia-supported: true
 ```
 

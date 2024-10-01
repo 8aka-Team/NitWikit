@@ -13,8 +13,8 @@ sidebar_position: 2
 
 此插件可以修复:
 
-* 卡在竹子和滴水石锥中无法移动
-* 骑乘实体时无法正确控制方向， 在需要使用钓竿的实体上影响尤为明显
+- 卡在竹子和滴水石锥中无法移动
+- 骑乘实体时无法正确控制方向， 在需要使用钓竿的实体上影响尤为明显
 
 :::warning
 
@@ -53,26 +53,29 @@ BedrockSkinUtility仅支持 Fabric 1.20.2 以下的版本
 GeyserOptionalPack是一个可选资源包
 它通过资源包来实现一些Java版中独有的功能或特性
 
-你可以在 [此处](https://download.geysermc.org/v2/projects/geyseroptionalpack/versions/latest/builds/latest/downloads/geyseroptionalpack) 下载
+你可以在 [此处](https://download.geysermc.org/v2/projects/geyseroptionalpack/versions/latest/builds/latest/downloads/geyseroptionalpack)
+下载。
 
 此资源包实现了:
-* 盔甲架底座武器/底板可见性
-* 盔甲架姿势
-* 幻术师
-* 部分缺失的粒子
-* 副手动画
-* 潜影贝隐形平等性
-* 发光箭实体纹理 (没有实体描边渲染(基岩版本身就没有)，只有箭矢纹理)
-* 提供超过记分板字符限制的绕过方式
-* 隐藏在Java版中没有的UI元素，例如：
-  * 制图台中的文本输入字段
-  * 创造模式下的2x2工作台
-  * 命令方块菜单中的时钟延迟和重命名字段
-  * Java版中不存在的结构方块选项
+
+- 盔甲架底座武器/底板可见性
+- 盔甲架姿势
+- 幻术师
+- 部分缺失的粒子
+- 副手动画
+- 潜影贝隐形平等性
+- 发光箭实体纹理 (没有实体描边渲染(基岩版本身就没有)，只有箭矢纹理)
+- 提供超过记分板字符限制的绕过方式
+- 隐藏在Java版中没有的UI元素，例如：
+  - 制图台中的文本输入字段
+  - 创造模式下的2x2工作台
+  - 命令方块菜单中的时钟延迟和重命名字段
+  - Java版中不存在的结构方块选项
 
 ## 箱子优化
 
-BedrockChestUI是一个用于实现自定义基岩版箱子UI行数的插件 ，由于基岩版原生不支持1，2，4，5行的箱子，所以本插件基于 ProtocolLib + 基岩版资源包实现 ，此插件需要Floodgate和ProtocolLib作为前置，支持Minecraft版本 1.17.1-1.19.4
+BedrockChestUI是一个用于实现自定义基岩版箱子UI行数的插件 ，由于基岩版原生不支持1，2，4，5行的箱子，所以本插件基于 ProtocolLib + 基岩版资源包实现 。
+此插件需要Floodgate和ProtocolLib作为前置，支持Minecraft版本 1.17.1-1.19.4
 
 [下载](https://gitee.com/xi-bohan/BedrockChestUI/releases/tag/BedrockChestUI)
 
@@ -88,8 +91,8 @@ BedrockChestUI是一个用于实现自定义基岩版箱子UI行数的插件 ，
 
 修复了以下问题
 
-* 基岩玩家现在可以看到末影龙头嘴动画和猪灵头耳动画(当使用红石时)
-* 横扫之刃现在可以在铁砧中使用
+- 基岩玩家现在可以看到末影龙头嘴动画和猪灵头耳动画(当使用红石时)
+- 横扫之刃现在可以在铁砧中使用
 
 [下载](https://github.com/tbyt/BedrockParity/releases/tag/release)
 
@@ -107,15 +110,15 @@ BedrockChestUI是一个用于实现自定义基岩版箱子UI行数的插件 ，
 
 还有!:
 
-* Java 冷却指示器
-* Java 战斗声音(横扫攻击、暴击、击退)
-* 地狱顶部雾颜色修复
-* 自动重新连接
-* 基岩表情聊天
-* 资源包加载
-* 快捷菜单
-* 块重影修复
-* 玩家名单(类似于TAB，但是BE Form)
+- Java 冷却指示器
+- Java 战斗声音(横扫攻击、暴击、击退)
+- 地狱顶部雾颜色修复
+- 自动重新连接
+- 基岩表情聊天
+- 资源包加载
+- 快捷菜单
+- 块重影修复
+- 玩家名单(类似于TAB，但是BE Form)
 
 [项目地址](https://github.com/GeyserExtras/GeyserExtras)
 

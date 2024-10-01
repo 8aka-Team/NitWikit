@@ -9,7 +9,7 @@ sidebar_position: 5
 
 详细请查看：https://www.yuque.com/sacredcraft/kether/action-math
 
-```
+```kether
 /* 加法运算：等价于 1+2+3 = 6 */
 math add [ 1 2 3 ]
 math + [ 1 2 3 ]
@@ -32,14 +32,14 @@ math / [ 6 2 ]
 
 除了上面几种用法，Math 还有一种比较舒服的写法：
 
-```
+```text
 ​/* 计算 1 + 3 x 6 ÷ 3 - 2 */
 math 1 + 3 * 5 / 6 - 2
 ```
 
 当然也可以用上一节学到的变量来运算
 
-```
+```text
 /vul eval set a to 1 set b to 2 math &a - &b
 ```
 

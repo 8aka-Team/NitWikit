@@ -7,7 +7,7 @@ sidebar_position: 5
 
 ## 创建礼包
 
-```
+```text
 /kitcreate <kit名字> 冷却
 ```
 
@@ -21,13 +21,13 @@ sidebar_position: 5
 
 ## 获得礼包
 
-```
+```text
 /kit <kit名字>
 ```
 
 ![](_images/kit_2.png)
 
-**权限**
+### 权限
 
 普通玩家需要 `essentials.kit` 才可使用礼包功能
 
@@ -39,7 +39,7 @@ sidebar_position: 5
 
 ## 删除礼包
 
-```
+```text
 /deletekit <kit名字>
 ```
 
@@ -68,7 +68,7 @@ sidebar_position: 5
 
 [点击此处](PapiSupport.md)
 
-```
+```text
 %essentials_has_kit_<kitname>%                  - 是否有XX工具包
 %essentials_kit_is_available_<kitname>%         - 是否可以获得XX工具包
 %essentials_kit_time_until_available_<kitname>% - 礼包冷却时间

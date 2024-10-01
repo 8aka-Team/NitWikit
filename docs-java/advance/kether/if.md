@@ -3,6 +3,8 @@ title: 逻辑判断
 sidebar_position: 3
 ---
 
+<!--markdownlint-disable no-duplicate-heading-->
+
 # 逻辑判断
 
 ## 布尔值(boolean)
@@ -36,7 +38,6 @@ sidebar_position: 3
 ![](_images/冒汗.jpg)
 
 > https://kether.tabooproject.org/list.html#Not
-
 > 判断动作的返回值是否为否，即否定动作的结果。
 
 ![](_images/vul-permNot_2.png)
@@ -51,7 +52,7 @@ perm -> not
 
 > https://kether.tabooproject.org/list.html#Check
 
-```
+```kether
 check 动作1 {symbol} 动作2
 ```
 
@@ -78,7 +79,7 @@ check 动作1 {symbol} 动作2
 
 ### 单分支
 
-```
+```text
 /vul eval if 条件 then 执行的动作
 ```
 
@@ -90,7 +91,7 @@ check 动作1 {symbol} 动作2
 
 上面只是执行单个动作，那么，如何让他判断 **true** 后执行多行动作？
 
-```
+```text
 if 条件 then {
     语句1
     语句2
@@ -100,7 +101,7 @@ if 条件 then {
 
 ### 双分支
 
-```
+```text
 /vul eval if 条件 then true执行的动作 else false执行的动作
 ```
 
@@ -109,7 +110,7 @@ if 条件 then {
 
 执行多行动作
 
-```
+```text
 if 条件 then {
     语句1
     语句2
@@ -123,13 +124,13 @@ if 条件 then {
 
 if动作的连续使用
 
-```
+```text
 /vul evel if 条件1 then 动作1 else if 条件2 then 动作2 else if 条件3 then 动作3
 ```
 
 多行语句
 
-```
+```text
 if 条件1 then {
     动作1
     动作2
@@ -146,9 +147,9 @@ if 条件1 then {
 
 > https://kether.tabooproject.org/list.html#Case_&_When
 
-#### 单动作
+### 单动作
 
-```
+```kether
 if check player name == postyizhan then tell "是驿站！"
 else if check player name == lilingfeng then tell "是驿站的黑奴"
 else if check player name == MC_jiaolong then tell "这也是黑奴"
@@ -157,7 +158,7 @@ else tell"这谁啊"
 
 上面的改成 Case & When 就是
 
-```
+```kether
 case player name [
   when postyizhan -> tell "是驿站！"
   when lilingfeng -> tell "是驿站的黑奴"
@@ -166,11 +167,11 @@ case player name [
 ]
 ```
 
-#### 多动作
+### 多动作
 
 当然他也可以写多行动作
 
-```
+```kether
 case player name [
   when postyizhan -> {
     tell "是驿站！"
@@ -182,13 +183,13 @@ case player name [
 ]
 ```
 
-#### 逻辑判断
+### 逻辑判断
 
 他还可以进行逻辑判断！
 
 单动作和多动作放一起展示了
 
-```
+```kether
 case 1 [
     when < 10 -> {
         tell "这个数比10小"
@@ -203,16 +204,15 @@ case 1 [
 ### 全部满足(All)
 
 > https://kether.tabooproject.org/list.html#All
-
 > 判断动作列表的所有返回值是否均为是。
 
-```
+```kether
 all [ 动作1 动作2 动作3 更多 ]
 ```
 
 例如：
 
-```
+```text
 /vul eval if all [ perm vulpecula.command not perm luckperms.editor ] then tell 通过 else 不通过
 ```
 
@@ -223,16 +223,15 @@ all [ 动作1 动作2 动作3 更多 ]
 ### 一个满足(Any)
 
 > https://kether.tabooproject.org/list.html#Any
-
 > 判断动作列表的所有返回值是否含有是。
 
-```
+```kether
 any [ 动作1 动作2 动作3 更多 ]
 ```
 
 例如：
 
-```
+```text
 /vul eval if any [ perm vulpecula.command not perm luckperms.editor ] then tell 通过 else 不通过
 ```
 
@@ -244,7 +243,7 @@ any [ 动作1 动作2 动作3 更多 ]
 
 #### all_any多行
 
-```
+```kether
 all [ 条件1 条件2 ]
 any [ 条件1 条件2]
 ### 等价于

@@ -148,6 +148,7 @@ sidebar_position: 1
 
 PAPIProxyBridge 是安装在后端和代理服务器上的库桥插件，它允许代理端插件使用 PlaceholderAPI 占位符设置文本格式
 
-在 Spigot (1.16.5+) 上安装最新版本的插件以及 [PlaceholderAPI](https://www.spigotmc.org/resources/placeholderapi.6245/) 插件，或在 Fabric (1.19.3+) 服务器上安装 [PlaceholderAPI mod](https://placeholders.pb4.eu/)，然后在 BungeeCord 或 Velocity 代理服务器上安装该插件
+在 Spigot (1.16.5+) 上安装最新版本的插件以及 [PlaceholderAPI](https://www.spigotmc.org/resources/placeholderapi.6245/) 插件，
+或在 Fabric (1.19.3+) 服务器上安装 [PlaceholderAPI mod](https://placeholders.pb4.eu/)，然后在 BungeeCord 或 Velocity 代理服务器上安装该插件
 
 请注意，此插件不能替代 PlaceholderAPI。你仍然需要在 Spigot/Fabric 服务器上安装 PlaceholderAPI

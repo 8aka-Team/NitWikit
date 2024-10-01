@@ -7,7 +7,7 @@ sidebar_position: 5
 
 ## 网页版可视化编辑器
 
-```
+```text
 lp editor
 ```
 
@@ -17,7 +17,7 @@ lp editor
 
 可以实时打印权限检查情况，方便排查问题。
 
-```
+```text
 lp verbose <on|record|off|upload> [filter]
 ```
 
@@ -34,7 +34,7 @@ lp verbose <on|record|off|upload> [filter]
 
 #### 例子
 
-```
+```text
 lp verbose on !Luck & !anticheat
 ```
 
@@ -52,7 +52,7 @@ lp verbose on !Luck & !anticheat
 
 让玩家执行命令，并打印此命令的权限检查。
 
-```
+```text
 /lp verbose command <me|player> <command>
 ```
 

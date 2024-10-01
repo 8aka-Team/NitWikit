@@ -70,5 +70,3 @@ Fabric 拥有大量的优化效果较好的 Mod ，较为出名的有元素周�
 Bukkit + Forge = Catserver
 
 Paper(部分) + Forge = Mohist
-
-_WIP_

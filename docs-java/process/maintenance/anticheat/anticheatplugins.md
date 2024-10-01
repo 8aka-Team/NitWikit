@@ -106,6 +106,7 @@ Matrix 是由国人 RE 编写的一款反作弊插件，当年诞生是用于取
 ## AntiCheatAddition
 
 添加了其他反作弊不会反的部分，目前添加了以下：
+
 - 一键整理
 - 自动钓鱼
 - 自动进食
@@ -170,6 +171,5 @@ GitHub：https://github.com/TalentsRC/Talents-AntiCheat-Config
 
 高版本组合参考：
 
-> Matrix + GrimAC
-
-> NoChestPlus + GrimAC
+- Matrix + GrimAC
+- NoChestPlus + GrimAC

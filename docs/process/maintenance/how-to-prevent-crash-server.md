@@ -32,7 +32,7 @@ title: 如何预防崩服
 <details>
   <summary>黑名单指令</summary>
 
-```
+```yaml
       # WorldEdit exploit
       - "//calc"
       - "//calculate"

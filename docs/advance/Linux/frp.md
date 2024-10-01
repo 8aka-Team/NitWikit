@@ -18,7 +18,7 @@ sidebar_position: 7
 5. 节点：由于内网穿透是客户端向节点发送数据后节点再向服务器发送数据，和客户端与服务器直接通信相比，数据需要在节点上绕一下，这样一来延迟到来到了客户端到节点的延迟和服务端到节点延迟的总和。
 
 <details>
-  <summary>如何选择合适的节点？</summary>
+<summary>如何选择合适的节点？</summary>
 
 根据三角形两边之和大于第三边的定理，节点距离客户端或服务端越近，游戏延迟就越小。然而你无法确定客户端的地理位置，毕竟玩家来自大江南北。那么只有缩短节点与服务器之间的距离，才能保证所有玩家的延迟都最低。例如服务器位于河北，有两个节点分别位于山东枣庄和江苏宿迁，有两个玩家分别位于广东和辽宁，那么当选择离服务器更近的枣庄节点时，假设辽宁玩家到节点为20ms，广东玩家到节点为50ms，服务器到节点为10ms，那么辽宁玩家的游戏延迟就是20+10=30ms，广东玩家的游戏延迟就是50ms+10ms=60ms。当选择离服务器更远的宿迁节点时，假设辽宁玩家到节点为40ms，广东玩家到节点为30ms，服务器到节点为30ms，那么辽宁玩家的游戏延迟就是50+30=70ms，广东玩家的游戏延迟就是40+30=60ms。选择宿迁节点时虽然广东玩家的延迟不变，但是辽宁玩家连接服务器时，数据从更远的宿迁绕了一圈再回来，延迟高了很多。因此选择运营商时，优先选择拥有离自己近的节点的运营商。
 </details>
@@ -37,133 +37,152 @@ import TabItem from '@theme/TabItem';
 
 ### 安装 Frp
 
+<!--markdownlint-disable ol-prefix-->
+
 1. 首先确保服务器所有软件包是最新的：
 
 不同的 Linux 发行版更新方法大同小异
 
 <Tabs>
-  <TabItem value="debian" label="Debian/Ubuntu Linux" default>
-    ```bash
-    apt-get update && apt-get upgrade -y
-    ```
-  </TabItem>
-  <TabItem value="redhat" label="CentOS/Redhat Linux">
-    ```bash
-    yum -y update
-    ```
-  </TabItem>
-  <TabItem value="arch" label="Arch Linux">
-    ```bash
-    pacman -Syu
-    ```
-  </TabItem>
+<TabItem value="debian" label="Debian/Ubuntu Linux" default>
+
+```bash
+apt-get update && apt-get upgrade -y
+```
+
+</TabItem>
+<TabItem value="redhat" label="CentOS/Redhat Linux">
+
+```bash
+yum -y update
+```
+
+</TabItem>
+<TabItem value="arch" label="Arch Linux">
+
+```bash
+pacman -Syu
+```
+
+</TabItem>
 </Tabs>
 
 2. 将`frp.go`软件安装到系统中：
 
 <Tabs>
-    <TabItem value="others" label="deb和rht系的 Linux" default>
-        手动下载frp软件包：
+<TabItem value="others" label="deb和rht系的 Linux" default>
+手动下载frp软件包：
 
-        ```bash
-        cd ~
-        wget https：//github.com/fatedier/frp/releases/download/v0.58.1/frp_0.58.1_linux_amd64.tar.gz
-        ```
+```bash
+cd ~
+wget https：//github.com/fatedier/frp/releases/download/v0.58.1/frp_0.58.1_linux_amd64.tar.gz
+```
 
-        解压：
+解压：
 
-        ```bash
-        tar -xzvf frp_0.58.1_linux_amd64.tar.gz
-        ```
+```bash
+tar -xzvf frp_0.58.1_linux_amd64.tar.gz
+```
 
-        安装：
+安装：
 
-        <Tabs>
-            <TabItem value="server" label="服务端" default>
-                ```bash
-                cd ~/frp_0.58.1_linux_amd64/
-                cp frps /usr/bin/
-                mkdir -p /etc/frp
-                cp frps.toml /etc/frp/
-                ```
-            </TabItem>
-            <TabItem value="client" label="客户端" default>
-                ```bash
-                cd ~/frp_0.58.1_linux_amd64/
-                cp frpc /usr/bin/
-                mkdir -p /etc/frp
-                cp frpc.toml /etc/frp/
-                ```
-            </TabItem>
-        </Tabs>
+<Tabs>
+<TabItem value="server" label="服务端" default>
 
-    </TabItem>
-    <TabItem value="arch" label="Arch Linux">
+```bash
+cd ~/frp_0.58.1_linux_amd64/
+cp frps /usr/bin/
+mkdir -p /etc/frp
+cp frps.toml /etc/frp/
+```
 
-        在 Arch Linux 下可以直接用aur助手通过包管理器安装frp
+</TabItem>
+<TabItem value="client" label="客户端" default>
 
-        ```bash
-        # 使用你的aur助手，这里列举了paru的
-        paru -Sy frps # 服务器上运行这个
-        paru -Sy frpc # 客户机上运行这个
-        ```
-    </TabItem>
+```bash
+cd ~/frp_0.58.1_linux_amd64/
+cp frpc /usr/bin/
+mkdir -p /etc/frp
+cp frpc.toml /etc/frp/
+```
+
+</TabItem>
+</Tabs>
+
+</TabItem>
+<TabItem value="arch" label="Arch Linux">
+
+在 Arch Linux 下可以直接用aur助手通过包管理器安装frp：
+
+```bash
+# 使用你的aur助手，这里列举了paru的
+paru -Sy frps # 服务器上运行这个
+paru -Sy frpc # 客户机上运行这个
+```
+
+</TabItem>
 
 </Tabs>
+
+<!--markdownlint-enable ol-prefix-->
 
 ### 配置 Frp
 
 <Tabs>
-    <TabItem value="server" label="服务端" default>
-        ```bash
-        vim /etc/frp/frps.toml
-        ```
+<TabItem value="server" label="服务端" default>
 
-        写入如下内容：
+```bash
+vim /etc/frp/frps.toml
+```
 
-        ```toml
-        bindPort = 7000 # frps监听的端口
+写入如下内容：
 
-        log.to = "/var/log/frps.log" # 日志存放路径，一般不用改
-        log.level = "info" # 日志等级，不用改
-        log.maxDays = 3
+```toml
+bindPort = 7000 # frps监听的端口
 
-        auth.token = "example" # 身份验证令牌，frpc要与frps一致
-        ```
-    </TabItem>
-    <TabItem value="client" label="客户端">
-        ```bash
-        vim ~/frp_0.58.1_linux_amd64/frpc.toml
-        ```
+log.to = "/var/log/frps.log" # 日志存放路径，一般不用改
+log.level = "info" # 日志等级，不用改
+log.maxDays = 3
 
-        输入以下内容：
+auth.token = "example" # 身份验证令牌，frpc要与frps一致
+```
 
-        ```toml
-        serverAddr = "x.x.x.x" # 你frps服务器的ip地址
-        serverPort = 7000 # 你frps服务开在的端口
+</TabItem>
+<TabItem value="client" label="客户端">
 
-        log.to = "/var/log/frps.log" # 日志存放路径，一般不用改
-        log.level = "info" # 日志等级，不用改
-        log.maxDays = 3
+```bash
+vim ~/frp_0.58.1_linux_amd64/frpc.toml
+```
 
-        auth.token = "example" # 令牌，与公网服务端保持一致
+输入以下内容：
 
-        [[proxies]]
-        name = "mc je"
-        type = "tcp" # java版使用tcp协议通信，不可更改
-        localIP = "127.0.0.1" # 默认不用改
-        localPort = 25565 # mc服务端开在哪个端口？
-        remotePort = 25565 # 暴露服务的公网入口
+```toml
+serverAddr = "x.x.x.x" # 你frps服务器的ip地址
+serverPort = 7000 # 你frps服务开在的端口
 
-        # 如果你开了互通，要基岩支持
-        [[proxies]]
-        name = "mc be"
-        type = "udp" # 基岩版使用udp协议通信，不可更改
-        localIP = "127.0.0.1"
-        localPort = 19132
-        remotePort = 19132
-        ```
-        </TabItem>
+log.to = "/var/log/frps.log" # 日志存放路径，一般不用改
+log.level = "info" # 日志等级，不用改
+log.maxDays = 3
+
+auth.token = "example" # 令牌，与公网服务端保持一致
+
+[[proxies]]
+name = "mc je"
+type = "tcp" # java版使用tcp协议通信，不可更改
+localIP = "127.0.0.1" # 默认不用改
+localPort = 25565 # mc服务端开在哪个端口？
+remotePort = 25565 # 暴露服务的公网入口
+
+# 如果你开了互通，要基岩支持
+[[proxies]]
+name = "mc be"
+type = "udp" # 基岩版使用udp协议通信，不可更改
+localIP = "127.0.0.1"
+localPort = 19132
+remotePort = 19132
+```
+
+</TabItem>
 </Tabs>
 
 ### 开启 Frp
@@ -175,125 +194,144 @@ import TabItem from '@theme/TabItem';
 2. systemd   省心，有点复杂
 
 <Tabs>
-    <TabItem value="screen" label="Screen" default>
+<TabItem value="screen" label="Screen" default>
 
-        确保你的系统上有`screen`包，没有的话安装它们：
+确保你的系统上有`screen`包，没有的话安装它们：
 
-        <Tabs>
-            <TabItem value="debian" label="Debian/Ubuntu Linux" default>
-                ```bash
-                apt-get install screen
-                ```
-            </TabItem>
-            <TabItem value="redhat" label="CentOS/Redhat Linux">
-                ```bash
-                yum install screen 
-                ```
-            </TabItem>
-            <TabItem value="arch" label="Arch Linux">
-                ```bash
-                pacman -Sy screen
-                ```
-            </TabItem>    
-        </Tabs>
+<Tabs>
+<TabItem value="debian" label="Debian/Ubuntu Linux" default>
 
-        启动：
+```bash
+apt-get install screen
+```
 
-        ```bash
-        screen -dR frps frps # 服务端
-        screen -dR frpc frpc # 客户端
-        # 键盘上按Ctrl+A+D退出
-        ```
-    </TabItem>
-    <TabItem value="systemd" label="Systemd">
+</TabItem>
+<TabItem value="redhat" label="CentOS/Redhat Linux">
 
-        在 Linux 系统下，使用 systemd 可以方便地控制 frps 服务端的启动、停止、配置后台运行以及开机自启动。
+```bash
+yum install screen
+```
 
-        <Tabs>
-            <TabItem value="server" label="服务端" default>
-            1. 创建 systemd 单元文件：
+</TabItem>
+<TabItem value="arch" label="Arch Linux">
 
-            ```bash
-            vim /etc/systemd/system/frps.service
-            ```
+```bash
+pacman -Sy screen
+```
 
-            ```
-            [Unit]
-            # 服务名称，可自定义
-            Description = frp server
-            After = network.target syslog.target
-            Wants = network.target
+</TabItem>
+</Tabs>
 
-            [Service]
-            Type = simple
-            ExecStart = /usr/bin/frps -c /etc/frp/frps.toml
+启动：
 
-            [Install]
-            WantedBy = multi-user.target
-            ```
+```bash
+screen -dR frps frps # 服务端
+screen -dR frpc frpc # 客户端
+# 键盘上按Ctrl+A+D退出
+```
 
-            2. 使用 systemd 命令管理 frps 服务
+</TabItem>
+<TabItem value="systemd" label="Systemd">
 
-            ```bash
-            # 启动frp
-            sudo systemctl start frps
-            # 停止frp
-            sudo systemctl stop frps
-            # 重启frp
-            sudo systemctl restart frps
-            # 查看frp状态
-            sudo systemctl status frps
-            ```
+在 Linux 系统下，使用 systemd 可以方便地控制 frps 服务端的启动、停止、配置后台运行以及开机自启动。
 
-            3. 设置 frps 开机自启动
+<Tabs>
+<TabItem value="server" label="服务端" default>
 
-            ```bash
-            sudo systemctl enable frps
-            ```
-            </TabItem>
-            <TabItem value="client" label="客户端" default>
-            1. 创建 systemd 单元文件：
+<!--markdownlint-disable ol-prefix-->
 
-            ```bash
-            vim /etc/systemd/system/frpc.service
-            ```
+1. 创建 systemd 单元文件：
 
-            ```
-            [Unit]
-            # 服务名称，可自定义
-            Description = frp client
-            After = network.target syslog.target
-            Wants = network.target
+```bash
+vim /etc/systemd/system/frps.service
+```
 
-            [Service]
-            Type = simple
-            ExecStart = /usr/bin/frpc -c /etc/frp/frpc.toml
+```ini
+[Unit]
+# 服务名称，可自定义
+Description = frp server
+After = network.target syslog.target
+Wants = network.target
 
-            [Install]
-            WantedBy = multi-user.target
-            ```
+[Service]
+Type = simple
+ExecStart = /usr/bin/frps -c /etc/frp/frps.toml
 
-            2. 使用 systemd 命令管理 frpc 服务
+[Install]
+WantedBy = multi-user.target
+```
 
-            ```bash
-            # 启动frp
-            sudo systemctl start frpc
-            # 停止frp
-            sudo systemctl stop frpc
-            # 重启frp
-            sudo systemctl restart frpc
-            # 查看frp状态
-            sudo systemctl status frpc
-            ```
+2. 使用 systemd 命令管理 frps 服务
 
-            3. 设置 frpc 开机自启动
+```bash
+# 启动frp
+sudo systemctl start frps
+# 停止frp
+sudo systemctl stop frps
+# 重启frp
+sudo systemctl restart frps
+# 查看frp状态
+sudo systemctl status frps
+```
 
-            ```bash
-            sudo systemctl enable frpc
-            ```
-            </TabItem>
-        </Tabs>
-    </TabItem>
+3. 设置 frps 开机自启动
+
+```bash
+sudo systemctl enable frps
+```
+
+<!--markdownlint-enable ol-prefix-->
+
+</TabItem>
+<TabItem value="client" label="客户端" default>
+
+<!--markdownlint-disable ol-prefix-->
+
+1. 创建 systemd 单元文件：
+
+```bash
+vim /etc/systemd/system/frpc.service
+```
+
+```ini
+[Unit]
+# 服务名称，可自定义
+Description = frp client
+After = network.target syslog.target
+Wants = network.target
+
+[Service]
+Type = simple
+ExecStart = /usr/bin/frpc -c /etc/frp/frpc.toml
+
+[Install]
+WantedBy = multi-user.target
+```
+
+2. 使用 systemd 命令管理 frpc 服务
+
+```bash
+# 启动frp
+sudo systemctl start frpc
+# 停止frp
+sudo systemctl stop frpc
+# 重启frp
+sudo systemctl restart frpc
+# 查看frp状态
+sudo systemctl status frpc
+```
+
+3. 设置 frpc 开机自启动
+
+```bash
+sudo systemctl enable frpc
+```
+
+<!--markdownlint-enable ol-prefix-->
+
+</TabItem>
+</Tabs>
+</TabItem>
 </Tabs>
 
 ### 配置proxy protocol
@@ -302,7 +340,7 @@ import TabItem from '@theme/TabItem';
 [SakuraFrp](https://doc.natfrp.com/bestpractice/realip.html#proxy-protocol)  
 [OpenFrp](https://openfrp.wiki/use/proxy-protocol.html#%E8%8E%B7%E5%8F%96%E8%AE%BF%E9%97%AE%E8%80%85%E7%9A%84%E7%9C%9F%E5%AE%9E-ip)  
 
-如果是自建内网穿透，那么如果是 ini 配置文件，就在frpc隧道对应的配置(位于frpc.ini中)中加入一行`proxy_protocol_version =`，如果是协议 v1 就写等于 v1 ， v2 就写等于 v2 。例如：  
+如果是自建内网穿透，那么如果是 ini 配置文件，就在frpc隧道对应的配置(位于frpc.ini中)中加入一行`proxy_protocol_version =`，如果是协议 v1 就写等于 v1 ， v2 就写等于 v2 。例如：
 
 ```ini
 [mc]

@@ -13,11 +13,11 @@ sidebar_position: 2
 >
 > https://wiki.placeholderapi.com/users/placeholder-list/#player
 
-```
+```text
 /papi ecloud download Player
 ```
 
-```
+```text
 %player_name%  - 玩家名称
 %player_exp%   - 玩家的exp
 %player_ping%  - 玩家的延迟
@@ -29,11 +29,11 @@ sidebar_position: 2
 >
 > https://wiki.placeholderapi.com/users/placeholder-list/#server
 
-```
+```text
 /papi ecloud download Server
 ```
 
-```
+```text
 %server_online%         - 服务器在线人数
 %server_max_players%    - 服务器最大在线人数
 %server_tps%            - 服务器tps
@@ -48,11 +48,11 @@ sidebar_position: 2
 >
 > https://wiki.placeholderapi.com/users/placeholder-list/#vault
 
-```
+```text
 /papi ecloud download Vault
 ```
 
-```
+```text
 %vault_eco_balance% - 玩家的钱数
 ```
 
@@ -60,11 +60,11 @@ sidebar_position: 2
 >
 > https://wiki.placeholderapi.com/users/placeholder-list/#multiverse-core
 
-```
+```text
 /papi ecloud download multiverse
 ```
 
-```
+```text
 %multiverse_world_alias% - 显示世界别名
 ```
 

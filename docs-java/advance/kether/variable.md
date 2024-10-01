@@ -3,6 +3,8 @@ title: 数据相关
 sidebar_position: 4
 ---
 
+<!--markdownlint-disable no-duplicate-heading-->
+
 # 数据相关
 
 ## 数据类型
@@ -18,7 +20,7 @@ sidebar_position: 4
 
 > https://kether.tabooproject.org/list.html#Type
 
-```
+```kether
 type {token} | type {type} {action}
 ```
 
@@ -46,7 +48,7 @@ TODO
 
 > https://kether.tabooproject.org/list.html#Variable_Set
 
-```
+```kether
 set {token} {token} | set {token} to {action}
 ```
 
@@ -60,7 +62,7 @@ set {token} {token} | set {token} to {action}
 
 > https://kether.tabooproject.org/list.html#Variable_Get
 
-```
+```kether
 get {token} | &{token}
 ```
 
@@ -78,7 +80,7 @@ get {token} | &{token}
 
 正确做法：
 
-```
+```text
 /vul eval set yizhan to 114514 tell get yizhan
 ```
 
@@ -107,7 +109,7 @@ get {token} | &{token}
 
 语法：
 
-```
+```kether
 array [ 动作1 动作2 动作3 更多 ]
 ```
 
@@ -121,7 +123,7 @@ array [ 动作1 动作2 动作3 更多 ]
 
 接下来，我们把数组存进变量里
 
-```
+```kether
 set yizhan to array [ HelloWord! player name 0.0 ]
 ```
 
@@ -138,7 +140,6 @@ set yizhan to array [ HelloWord! player name 0.0 ]
 #### element
 
 > https://kether.tabooproject.org/list.html#Element
-
 > 将动作的返回值作为列表获取指定元素。
 
 除了上面的 `&变量名[标号]`
