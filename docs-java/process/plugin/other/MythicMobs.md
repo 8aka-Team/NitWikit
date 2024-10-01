@@ -8,17 +8,19 @@ sidebar_label: 实体 - MythicMobs
 
 :::info
 
+`mythiccraft` https://mythiccraft.io/index.php?resources/.1/
+
 `Bukkit` https://dev.bukkit.org/projects/mythicmobs
 
 `SpigotMC` https://www.spigotmc.org/resources/.5702/
 
 `Modrinth` https://modrinth.com/plugin/mythicmobs
 
-`mythiccraft` https://mythiccraft.io/index.php?resources/.1/
-
 `文档(英文)` https://git.mythiccraft.io/mythiccraft/MythicMobs/-/wikis/home
 
 `文档(中文)` https://gitlab.com/TranslatedByShark/Mythic-Manual-CN/-/wikis/home
+
+`插件百科` https://mineplugin.org/MythicMobs/Mobs
 
 :::
 
