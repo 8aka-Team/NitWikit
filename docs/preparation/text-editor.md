@@ -31,7 +31,7 @@ sidebar_position: 2
 
 官网链接：https://code.visualstudio.com/
 
-**记得保存文件**
+你要 **记得保存文件**
 
 发现有人第一次用文本编辑器不知道编辑完后保存。
 
