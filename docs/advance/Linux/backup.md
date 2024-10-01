@@ -149,4 +149,4 @@ crontab -e
 > `[main/FATAL]: Failed to start the minecraft server net.minecraft.util.SessionLock$ExceptionWorldConfict: /home/minecraft/lobby/./world/session.lock: already locked (possibly by other Minecraft instance?)`
 > 请检查 `world` 存档下是否存在 `session.lock` 文件,如果存在请删除,然后重启服务器。
 
-<!--markdownlint-enable line-length--
+<!--markdownlint-enable line-length-->
