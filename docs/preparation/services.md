@@ -21,7 +21,7 @@ sidebar_position: 5
 
 **不要滥用，不要上传违法文件!!!!!**
 
-# 免费域名
+## 免费域名
 
 为那些没有域名的可怜人准备的，目前提供:
 
@@ -67,7 +67,7 @@ sidebar_position: 5
 
 > 支持 IPV4，IPV6，CNAME，SRV 解析
 
-## 使用方法
+### 使用方法
 
 首先选择你需要的域名，比如我选择`mcfun.us.kg`，然后想好你需要的子域名，比如我想要`yizhan`，那么最后我的域名就是`yizhan.mcfun.us.kg`
 
@@ -86,13 +86,13 @@ sidebar_position: 5
 
 :::
 
-# 机器人命令
+## 机器人命令
 
 在群内发送消息即可使用！
 
 ![](_images/机器人命令/mcping.png)
 
-## `mcping`
+### `mcping`
 
 打印 mc 服务器信息。
 
@@ -102,7 +102,7 @@ sidebar_position: 5
 mcping <服务器地址>
 ```
 
-## 消息回复
+### 消息回复
 
 消息回复关键词要加前缀 `#`
 
