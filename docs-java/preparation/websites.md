@@ -11,7 +11,7 @@ sidebar_position: 3
 
 以下是一些可供参考的推荐网站：
 
-# SpigotMC
+## SpigotMC
 
 Minecraft 最大的插件网站，***建议注册账号并安装 [Spigot Search Engine](https://www.spigotmc.org/resources/spigotsearchengine.54108/)***
 
@@ -47,7 +47,7 @@ SpigotMC 应该是目前 Minecraft 开服圈最大的插件网站了，最大的
 
 </details>
 
-# GitHub
+## GitHub
 
 全球最大的代码托管平台 ***建议注册账号***。
 
@@ -114,7 +114,7 @@ GitHub 汉化插件：https://github.com/maboloshi/github-chinese
 
 </details>
 
-# MineBBS
+## MineBBS
 
 国内较为知名的综合性 Minecraft 论坛。曾以基岩版开服内容为主，MCBBS 关闭后其 Java 版相关内容丰富了许多。
 
@@ -139,7 +139,7 @@ GitHub 汉化插件：https://github.com/maboloshi/github-chinese
 
 </details>
 
-# Builtbybit
+## Builtbybit
 
 一个综合交易平台，其中的 Minecraft 插件大多数都是付费的。
 
@@ -169,7 +169,7 @@ GitHub 汉化插件：https://github.com/maboloshi/github-chinese
 
 </details>
 
-# Polymart
+## Polymart
 
 一个 Minecraft 服务器付费插件资源平台。
 
@@ -192,7 +192,7 @@ GitHub 汉化插件：https://github.com/maboloshi/github-chinese
 
 </details>
 
-# Bukkit
+## Bukkit
 
 一个相对 SpigotMC 更加古老的插件发布网站，一般用于寻找远古插件。
 
@@ -217,7 +217,7 @@ GitHub 汉化插件：https://github.com/maboloshi/github-chinese
 
 </details>
 
-# Modrinth
+## Modrinth
 
 现代化的 Minecraft 新兴资源站，插件相对较新较少，而且大部分都开源。
 
@@ -244,7 +244,7 @@ GitHub 汉化插件：https://github.com/maboloshi/github-chinese
 
 </details>
 
-# Hangar
+## Hangar
 
 PaperMC 的现代化的插件平台，目前正在 Beta 阶段，插件相对较新较少，但是都经过 PaperMC 官方验证，并且可以找到支持 Folia 和 Velocity 的插件。
 
@@ -269,16 +269,42 @@ PaperMC 的现代化的插件平台，目前正在 Beta 阶段，插件相对较
 
 </details>
 
-# MOTD 生成网站
+## MCMOD
+
+国人的 MC mod 收录网站，资源很丰富，并且详细列出 mod 之间的关系（如前置，联动，附属等）
+
+<details>
+  <summary>点击展开</summary>
+
+![](https://img.fastmirror.net/s/2024/10/01/66fbe12c6bb07.png)
+
+https://www.mcmod.cn
+
+</details>
+
+## MCBBS
+
+曾经最大的综合性我的世界中文论坛，已经关站，但有个网站可以翻旧帖子
+
+<details>
+  <summary>点击展开</summary>
+
+![](https://www.mcbbs2.net/template/mcbbs_v2/images/logo.png)
+
+在这可以翻旧帖子 https://archive.mcbbs.run
+
+https://www.mcmod.cn
+
+</details>
+
+## MOTD 生成网站
 
 MOTD 就是 Minecraft 客户端在尝试连接服务器之前，服务器对客户端发送的一条短消息，这通常包含1-3行文字和一张图片。
 
-<details>
-  <summary>听不懂描述就展开看图</summary>
-
 ![](_images/motd.png)
 
-</details>
+<details>
+  <summary>点击展开</summary>
 
 MOTD 是玩家进入服务器之前最先看到的东西，决定了玩家对一个服务器的第一印象，所以，请任选一个 MOTD 生成器生成个性化 MOTD：
 
@@ -288,13 +314,23 @@ MOTD 是玩家进入服务器之前最先看到的东西，决定了玩家对一
 
 [Minecraft MOTD tool](https://minecraft.tools/en/motd.php)
 
-# Minecraft 工具箱
+</details>
+
+## Minecraft 工具箱
 
 有时候你项要加三两个数据包形式的自定义合成，自定义超平坦地图，烟花，文本生成等，但苦恼不会使用？
 
+<details>
+  <summary>点击展开</summary>
+
 请选择 [Minecraft 工具箱](https://minecraft.tools/)，自动生成各种 Minecraft 指令、数据包等。
 
-# 像素云黑
+</details>
+
+## 像素云黑
+
+<details>
+  <summary>点击展开</summary>
 
 指像素论坛的[失信人员名单页面](https://www.pixelbbs.cn/f-50-1.html)。
 
@@ -302,12 +338,23 @@ MOTD 是玩家进入服务器之前最先看到的东西，决定了玩家对一
 
 能为你避开 90% 诈骗坑的[防骗小技巧](https://www.pixelbbs.cn/t-1377-1-1.html)。
 
-# bStats
+</details>
+
+## bStats
 
 常用的统计数据网站，不少开发者会在自己的插件中写统计数据功能(一般默认开启)
+
+<details>
+  <summary>点击展开</summary>
 
 例如：
 
 Paper核心的使用情况：https://bstats.org/plugin/server-implementation/Paper/580
 
 PlaceHolderAPI插件使用情况：https://bstats.org/plugin/bukkit/PlaceholderAPI/438
+
+DecentHolograms 插件统计：
+
+![](https://bstats.org/signatures/bukkit/DecentHolograms.svg)
+
+</details>
