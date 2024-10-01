@@ -14,9 +14,9 @@ sidebar_position: 4
 
 :::info
 
-`文档` https://temp-17.gitbook.io/trmenu/v/chinese
-
 `SpigotMC` https://www.spigotmc.org/resources/.83120/
+
+`文档` https://temp-17.gitbook.io/trmenu/v/chinese
 
 :::
 
@@ -24,19 +24,19 @@ sidebar_position: 4
 
 :::info
 
+`MineBBS` https://www.minebbs.com/resources/trmenu-bug.9080/
+
+`GitHub(不推荐，已停止维护)` https://github.com/TrPlugins/TrMenu/tree/stable/v3
+
+`GitHub(推荐，社区维护)` https://github.com/Dreeam-qwq/TrMenu
+
 `文档(新)` https://hhhhhy.gitbook.io/trmenu-v3
 
 `文档(旧)` https://trmenu.trixey.cc/
 
 `如何支持1.8` https://hhhhhy.gitbook.io/trmenu-v3/appendix/v3-guide#datasource.yml-dui-yu-1.8-fu-wu-duan
 
-`GitHub(不推荐，已停止维护)` https://github.com/TrPlugins/TrMenu/tree/stable/v3
-
-`GitHub(推荐，社区维护)` https://github.com/Dreeam-qwq/TrMenu
-
 `vscode插件-trm语法提示` https://marketplace.visualstudio.com/items?itemName=hhhhhy.trmenu-helper
-
-`MineBBS` https://www.minebbs.com/resources/trmenu-bug.9080/
 
 :::
 

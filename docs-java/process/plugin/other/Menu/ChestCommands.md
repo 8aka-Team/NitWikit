@@ -6,13 +6,13 @@ sidebar_position: 2
 
 :::info
 
-`文档(英文)` https://filoghost.me/docs/chest-commands
-
-`文档(中文)` https://postyizhan.github.io/Chest-Commands-Wiki-CN/intro
-
 `Bukkit` https://dev.bukkit.org/projects/chest-commands
 
 `GitHub` https://github.com/filoghost/ChestCommands
+
+`文档(英文)` https://filoghost.me/docs/chest-commands
+
+`文档(中文)` https://postyizhan.github.io/Chest-Commands-Wiki-CN/intro
 
 :::
 
