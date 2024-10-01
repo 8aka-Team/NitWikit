@@ -78,11 +78,11 @@ MOD 服务端
 
 <!--markdownlint-disable line-length-->
 
-| Java 版本 | 下载链接                                                                                                                                   |
+| Java 版本 | 下载链接                                                                                                                              |
 |---------|----------------------------------------------------------------------------------------------------------------------------------------|
 | Java 8  | [Dragonwell 8](https://dragonwell.oss-cn-shanghai.aliyuncs.com/8.19.20/Alibaba_Dragonwell_Extended_8.19.20_x64_windows.zip)            |
 | Java 11 | [Dragonwell 11](https://dragonwell.oss-cn-shanghai.aliyuncs.com/11.0.23.20.9/Alibaba_Dragonwell_Extended_11.0.23.20.9_x64_windows.zip) |
-| Java 17 | [Azul Zulu](https://www.azul.com/core-post-download/?endpoint=zulu&uuid=e5cf71d2-4ea2-4de7-b9e0-aaea20374fe8)                                                |
+| Java 17 | [Azul Zulu](https://www.azul.com/core-post-download/?endpoint=zulu&uuid=e5cf71d2-4ea2-4de7-b9e0-aaea20374fe8)                          |
 | Java 21 | [GraalVM EE](https://download.oracle.com/graalvm/21/latest/graalvm-jdk-21_windows-x64_bin.zip)                                         |
 
 <!--markdownlint-enable line-length-->
