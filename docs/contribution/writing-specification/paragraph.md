@@ -33,3 +33,35 @@ One man’s constant is another man’s variable. — Alan Perlis
 ```text
 本文部分图片来自 Wikipedia
 ```
+
+## 插件 info
+
+如无特殊情况，在插件的 info 中遵循这样的顺序
+
+:::info
+
+`官网` https://xxx
+
+`Bukkit` https://dev.bukkit.org/projects
+
+`PaperMC` https://hangar.papermc.io
+
+`Modrinth` https://modrinth.com
+
+`MineBBS` https://www.minebbs.com
+
+`GitHub` https://github.com
+
+`文档(英文)` https://xxx
+
+`文档(中文)` https://xxx
+
+`插件百科` https://mineplugin.org
+
+:::
+
+如果插件没有在某网站有信息，跳过不写那一行
+
+如果文档只有一个，不需要标注是中文还是英文
+
+明确**大小写**，完全按照此页中的大小写样式
