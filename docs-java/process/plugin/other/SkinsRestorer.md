@@ -8,9 +8,15 @@ sidebar_label: 皮肤 - skinsRestorer
 
 :::info
 
-`SpigotMC` https://www.spigotmc.org/resources/.2124/
+`官网` https://skinsrestorer.net
+
+`SpigotMC` https://www.spigotmc.org/resources/.2124
+
+`PaperMC` https://hangar.papermc.io/SRTeam/SkinsRestorer
 
 `GitHub` https://github.com/SkinsRestorer/SkinsRestorer
+
+`文档` https://skinsrestorer.net/docs
 
 :::
 
