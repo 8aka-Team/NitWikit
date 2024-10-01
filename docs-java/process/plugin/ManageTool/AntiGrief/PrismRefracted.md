@@ -7,9 +7,9 @@ sidebar_label: 记录 - PrismRefracted
 
 :::info
 
-`GitHub` https://github.com/prism/PrismRefracted
+`SpigotMC` https://www.spigotmc.org/resources/prism.99397
 
-`SpigotMC` https://www.spigotmc.org/resources/prism.99397/
+`GitHub` https://github.com/prism/PrismRefracted
 
 `GitHub(汉化版)` https://github.com/Rothes/PrismRefracted
 
