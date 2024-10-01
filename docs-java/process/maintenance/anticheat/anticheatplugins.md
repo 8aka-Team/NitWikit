@@ -3,6 +3,8 @@ title: 反作弊插件
 sidebar_position: 1
 ---
 
+# 反作弊
+
 :::tip[写在最前]
 
 混合端**不要**用下面所列的反作弊插件，建议使用 [次元反作弊](https://www.mcmod.cn/class/6578.html) 或 [猫反作弊](https://www.wxmwl.com/?p=95)
@@ -11,7 +13,7 @@ sidebar_position: 1
 
 :::
 
-# 选择反作弊插件
+## 选择反作弊插件
 
 好的反作弊插件通过对玩家行为进行分析从而找出违规者可能的违规行为，从而限制甚至封禁。
 
@@ -27,7 +29,7 @@ sidebar_position: 1
 
 :::
 
-## Matrix(推荐)
+### Matrix(推荐)
 
 Matrix 是由国人 RE 编写的一款反作弊插件，当年诞生是用于取代 AAC 这款反作弊插件，
 
@@ -53,7 +55,7 @@ Matrix 是由国人 RE 编写的一款反作弊插件，当年诞生是用于取
 
 > 官网: matrix.rip
 
-## NoCheatPlus-Update
+### NoCheatPlus-Update
 
 非常经典的老牌反作弊，拥有悠久历史且和作弊者们对抗许久，但目前并不积极的进行更新，
 
@@ -71,7 +73,7 @@ Matrix 是由国人 RE 编写的一款反作弊插件，当年诞生是用于取
 
 > https://github.com/Dreeam-qwq/NoCheatPlus
 
-## GrimAC 2.0
+### GrimAC 2.0
 
 一个不错的实验性反作弊，支持避免检查来自 Geyser 的玩家，移动检测虽然强大但有很多误判。
 
@@ -83,7 +85,7 @@ Matrix 是由国人 RE 编写的一款反作弊插件，当年诞生是用于取
 
 > GitHub: https://github.com/GrimAnticheat/Grim
 
-## Vulcan
+### Vulcan
 
 老牌火神反作弊，虽然在几个版本存在十分严重的漏洞，但并不影响他一些检测强力的事实，尽管他的配置文件非常脑淤血，但还是深受多人喜爱。
 
@@ -91,7 +93,7 @@ Matrix 是由国人 RE 编写的一款反作弊插件，当年诞生是用于取
 
 > SpigotMC: https://www.spigotmc.org/resources/vulcan-anti-cheat-advanced-cheat-detection-1-7-1-20-4.83626/
 
-## 不推荐 - Spartan
+### 不推荐 - Spartan
 
 老牌垃圾反作弊，性能拉胯误判多，有很多无用和多余的检测，不如其它开源或具有相同价格的反作弊。
 
@@ -103,7 +105,7 @@ Matrix 是由国人 RE 编写的一款反作弊插件，当年诞生是用于取
 
 > SpigotMC: https://www.spigotmc.org/resources/spartan-anti-cheat-advanced-cheat-hack-detection-1-7-1-20-4-33-off.25638/
 
-## AntiCheatAddition
+### AntiCheatAddition
 
 添加了其他反作弊不会反的部分，目前添加了以下：
 
@@ -117,13 +119,13 @@ Matrix 是由国人 RE 编写的一款反作弊插件，当年诞生是用于取
 
 [查看地址](https://www.spigotmc.org/resources/anticheataddition.33590/)
 
-## AntiCheatObfuscator
+### AntiCheatObfuscator
 
 此插件会 "混淆 你的服务器上的反作弊，可以避免作弊者发现你的反作弊组合而针对性绕过
 
 [下载地址](https://www.minebbs.com/resources/anticheatobfuscator-1-8-1-20.9251/)
 
-## ClientDetectorPlus
+### ClientDetectorPlus
 
 一个可以用来查端的插件，可以检测客户端是什么类型的客户端，可以检测到部分模组。
 
@@ -139,9 +141,13 @@ Matrix 是由国人 RE 编写的一款反作弊插件，当年诞生是用于取
 
 后面想试试非主流反作弊请自己去官网购买就好了捏。
 
-# 反作弊配置
+## 反作弊配置
 
-## Talent 先生的反作弊配置
+![](./_images/anticheat/talentsaclogo.png)
+
+🛡人才反作弊配置🛡
+
+> “别人在倚老卖老但我在以老带新，只为了给名利场刮点清风。”
 
 一款面向萌新的主流反作弊配置，对配置有任何问题骚扰 Talents 先生项目的 Issues 即可解决！
 
@@ -157,7 +163,7 @@ GitHub：https://github.com/TalentsRC/Talents-AntiCheat-Config
 
 [自动为你配置反作弊，下载!](https://github.com/lilingfengdev/NitWiki-Script/releases/download/windows-latest/config-anticheat.exe)
 
-# 组合反作弊
+## 组合反作弊
 
 一般个人建议是一个服务器的反作弊两个足够，一个的话容易被绕，
 
