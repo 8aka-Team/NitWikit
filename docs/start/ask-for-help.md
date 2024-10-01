@@ -3,7 +3,7 @@ title: 如何向大佬求助
 sidebar_position: 7
 ---
 
-# 如何向大佬求助
+## 如何向大佬求助
 
 首先明确，你是求助者不是少爷，第二，大多数人还是愿意互帮互助的。
 
@@ -13,7 +13,7 @@ sidebar_position: 7
 
 :::
 
-## 错误问问题的方式
+### 错误问问题的方式
 
 一般来说，入门任何的领域会遇到问题，都需要问问题，但大家基本都不欢迎以下的问题：
 
@@ -45,7 +45,7 @@ sidebar_position: 7
 
 :::
 
-# 我应该怎么做？
+## 我应该怎么做？
 
 为避免无效问题，问问题最好需要符合以下几个基础原则：
 
@@ -95,7 +95,7 @@ sidebar_position: 7
 
 <!--markdownlint-enablke ol-prefix-->
 
-## 看完 Wiki 再问
+### 看完 Wiki 再问
 
 Wiki 就是让你解决常见问题的，不看这玩意儿就在那瞎问只会获得 `滚过去看 wiki` 回复。
 
@@ -115,24 +115,24 @@ Wiki 就是让你解决常见问题的，不看这玩意儿就在那瞎问只会
 
 对于不是网站形式的 Wiki 来说，也有许多种办法来搜索：
 
-### docx(Word 文档)
+#### docx(Word 文档)
 
 按下 `Ctrl + F` (Windows)或 `Command + F` (macOS)即可启动 Microsoft Word 或 WPS 的搜索功能，搜索当前文档。
 
-### txt
+#### txt
 
 按下 `Ctrl + F` 即可启动 Windows 记事本的搜索功能；按下 `Command + F` 即可启动 macOS 文本编辑 app 的搜索功能。
 
 **只有最后你尝试各种办法都没能在 Wiki 中找到你想要的内容时，证明 Wiki 中确实没有写入相关内容，这时才能进行提问。**
 
-## 给出日志
+### 给出日志
 
-### 笨蛋脚本
+#### 笨蛋脚本
 
 使用此[脚本](https://github.com/lilingfengdev/NitWiki-Script/releases/download/windows-latest/update-log.exe)，
 会将日志自动上传到 `https://mclo.gs` (默认上传的日志是 `logs/latest.log`)
 
-### 如何上传
+#### 如何上传
 
 当你询问问题的时候，发出你的报错日志
 
@@ -199,7 +199,7 @@ Wiki 就是让你解决常见问题的，不看这玩意儿就在那瞎问只会
 
 **经典如何提问: https://settingdust.gitbook.io/stop-ask-questions-the-stupid-ways/**
 
-## 经典老图
+### 经典老图
 
 ![](_images/问问题的技巧/经典老图-1.jpg)
 
@@ -207,7 +207,7 @@ Wiki 就是让你解决常见问题的，不看这玩意儿就在那瞎问只会
 
 ![](_images/问问题的技巧/经典老图-3.jpg)
 
-## 真正的傻逼
+### 真正的傻逼
 
 ![](_images/问问题的技巧/林然-1.png)
 
