@@ -6,11 +6,11 @@ sidebar_position: 3
 
 :::info
 
-`文档(英文)` https://filoghost.me/docs/holographic-displays
-
 `Bukkit` https://dev.bukkit.org/projects/holographic-displays
 
 `GitHub` https://github.com/filoghost/HolographicDisplays
+
+`文档` https://filoghost.me/docs/holographic-displays
 
 :::
 

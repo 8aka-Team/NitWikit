@@ -6,17 +6,19 @@ sidebar_position: 2
 
 :::info
 
-`文档(英文)` https://wiki.decentholograms.eu/
-
 `SpigotMC` https://www.spigotmc.org/resources/.96927/
-
-`GitHub` https://github.com/DecentSoftware-eu/DecentHolograms
 
 `Modrinth` https://modrinth.com/plugin/decentholograms
 
-`插件百科` https://mineplugin.org/Tab
+`GitHub` https://github.com/DecentSoftware-eu/DecentHolograms
 
-`MineBBS` https://www.minebbs.com/resources/decentholograms.9059/
+`MineBBS` https://www.minebbs.com/resources/.9059
+
+`文档(英文)` https://wiki.decentholograms.eu
+
+`文档(中文)` https://snowcutieowo.github.io/DecentHolograms/#/
+
+`插件百科` https://mineplugin.org/Tab
 
 :::
 
