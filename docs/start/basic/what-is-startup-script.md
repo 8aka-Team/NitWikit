@@ -3,7 +3,7 @@ title: 什么是启动脚本？
 sidebar_position: 4
 ---
 
-# 什么是启动脚本？
+## 什么是启动脚本？
 
 启动脚本主要部分就是设置 Java 参数设置。
 
@@ -11,19 +11,19 @@ sidebar_position: 4
 
 `sh` 和 `bat` 是两种不同操作系统环境下用于执行脚本的文件扩展名，它们的主要区别在于运行环境、语法的不同：
 
-## SH (Shell Script)(Linux)
+### SH (Shell Script)(Linux)
 
 * 语法: SH脚本使用Shell命令和控制结构，支持条件判断、循环、函数定义等高级编程特性。
 * 执行方式: 在终端通过 `./script.sh` 或 `sh script.sh` 来执行(确保脚本具有执行权限)。
 
-## BAT (Batch File)(Windows)
+### BAT (Batch File)(Windows)
 
 * 语法: BAT脚本包含一系列DOS命令和批处理命令，支持简单的条件判断和循环，但相比SH脚本，其功能和灵活性较低。
 * 执行方式: 双击文件或者在命令提示符下输入 `script.bat` 来执行。
 
 注意:Windows和Linux的启动脚本不能通用，不是改一下后缀名就可以
 
-# 什么是启动参数
+## 什么是启动参数
 
 启动参数(也称 Flag)主要分为3类：
 
@@ -31,7 +31,7 @@ sidebar_position: 4
 * 非标准参数(-X)：默认 JVM 实现这些参数的功能，但是并不保证所有 JVM 实现都满足，且不保证向后兼容；
 * 非Stable参数(-XX)：此类参数各个 JVM 实现会有所不同，将来可能会随时取消，需要慎重使用；
 
-## 基础
+### 基础
 
 ```bash
 java -Xms12G -Xmx12G -jar 核心名.jar nogui
@@ -71,7 +71,7 @@ java -Xms12G -Xmx12G -jar 核心名.jar nogui
 
 :::
 
-## 如何设置自动重启
+### 如何设置自动重启
 
 对于 Windows `start.bat` 可参考的脚本如下：
 
