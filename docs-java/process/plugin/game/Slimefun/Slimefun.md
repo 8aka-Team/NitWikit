@@ -8,6 +8,10 @@ sidebar_position: 1
 
 :::info
 
+`Bukkit(旧)` https://dev.bukkit.org/projects/slimefun
+
+`MineBBS` https://www.minebbs.com/resources/1-16-1-20-slimefun.7287
+
 `GitHub(官方)` https://github.com/Slimefun/Slimefun4
 
 `GitHub(中文)` https://github.com/SlimefunGuguProject/Slimefun4
@@ -16,7 +20,7 @@ sidebar_position: 1
 
 `中文附属插件表` https://slimefun-wiki.guizhanss.cn/Addons
 
-`MineBBS` https://www.minebbs.com/resources/1-16-1-20-slimefun.7287/
+`插件百科` https://www.mineplugin.org/SlimeFun4
 
 :::
 

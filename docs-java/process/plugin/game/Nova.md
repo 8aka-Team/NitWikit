@@ -7,11 +7,11 @@ sidebar_position: 2
 
 :::info
 
-`GitHub(官方)` https://github.com/xenondevs/Nova
-
 `Modrinth` https://modrinth.com/plugin/nova-framework
 
-`MineBBS` https://www.minebbs.com/resources/nova.9084/
+`MineBBS` https://www.minebbs.com/resources/nova.9084
+
+`GitHub` https://github.com/xenondevs/Nova
 
 :::
 
