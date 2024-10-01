@@ -14,10 +14,20 @@ jobs:
           fetch-depth: 0
       - name: "setup pnpm"
         uses: "pnpm/action-setup@v4"
-      - name: "setup node"
 
+      - name: "setup node"
         uses: "actions/setup-node@v4"
         with:
           node-version: 20
-      - name: Install and Build
-        run: pnpm install && pnpm run --parallel build
+
+      - name: "Install"
+        run: "pnpm install"
+
+      - name: "MarkdownLint Check"
+        uses: DavidAnson/markdownlint-cli2-action@v17
+        with:
+          fix: true
+          globs: 'docs*/**/*.md'
+
+      - name: "Build"
+        run: "pnpm run --parallel build"
