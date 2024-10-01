@@ -3,8 +3,12 @@ sidebar_position: 3
 ---
 
 # CatSeedLogin
->
-> `GitHub` :https://github.com/CatSeed/CatSeedLogin
+
+:::info
+
+`GitHub` https://github.com/CatSeed/CatSeedLogin
+
+:::
 
 ~~选择~~它的四大理由
 
