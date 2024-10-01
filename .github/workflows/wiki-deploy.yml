@@ -29,17 +29,30 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+  
       - name: "setup pnpm"
         uses: "pnpm/action-setup@v4"
+
       - name: "setup node"
         uses: "actions/setup-node@v4"
         with:
           node-version: 20
-      # 安装 Npm 并构建
+
+      # 安装 npm 包
       - name: Install
         run: pnpm install
+
+      # MarkdownLint 检查
+      - name: "MarkdownLint Check"
+        uses: "DavidAnson/markdownlint-cli2-action@v17"
+        with:
+          fix: true
+          globs: 'docs*/**/*.md'
+
+      # 构建
       - name: Build
         run: pnpm run --parallel build
+
       # 部署
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
