@@ -18,7 +18,20 @@ sidebar_position: 2
 
 :::
 
-# 记得保存文件
+## Visual Studio Code
+
+<details>
+  <summary>点击展开</summary>
+
+![官网图片](https://code.visualstudio.com/assets/home/home-screenshot-win-lg.png)
+
+全能型文本编辑器，**非常非常推荐**，支持简体中文 / 繁体中文 / 英文，仅支持 `Windows 10 +`。
+
+缺点是启动速度可能不是很快，不过非常适合新手使用。(已经算是比较快的了。)
+
+官网链接：https://code.visualstudio.com/
+
+**记得保存文件**
 
 发现有人第一次用文本编辑器不知道编辑完后保存。
 
@@ -32,20 +45,7 @@ VSCode 会在未保存的文件后标记一个白点，提示你这个文件编�
 
 开启自动保存(绿色箭头)。
 
-~~当年 TrMenu 的自动重载治好了我的 autosave~~  
-
-## Visual Studio Code
-
-<details>
-  <summary>点击展开</summary>
-
-![官网图片](https://code.visualstudio.com/assets/home/home-screenshot-win-lg.png)
-
-全能型文本编辑器，**非常非常推荐**，支持简体中文 / 繁体中文 / 英文，仅支持 `Windows 10 +`。
-
-缺点是启动速度可能不是很快，不过非常适合新手使用。(已经算是比较快的了。)
-
-官网链接：https://code.visualstudio.com/
+~~当年 TrMenu 的自动重载治好了我的 autosave~~
 
 [下载龟速怎么办](https://cn.bing.com/search?q=vscode%E4%B8%8B%E8%BD%BD%E9%BE%9F%E9%80%9F%E6%80%8E%E4%B9%88%E5%8A%9E)
 
