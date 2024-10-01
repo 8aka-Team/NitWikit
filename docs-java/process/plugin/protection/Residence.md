@@ -7,17 +7,15 @@ sidebar_label: 领地 - Residence
 
 :::info
 
-`SpigotMC` https://www.spigotmc.org/resources/.11480/
+`Bukkit(旧)` https://dev.bukkit.org/projects/residence
+
+`SpigotMC` https://www.spigotmc.org/resources/.11480
 
 `GitHub` https://github.com/Zrips/Residence
 
-`文档`https://www.zrips.net/residence/
+`文档`https://www.zrips.net/residence
 
 `插件百科` https://mineplugin.org/Residence
-
-`Bukkit(已过时，只能下载旧版)` https://dev.bukkit.org/projects/residence
-
-`CurseForge(已过时，只能下载旧版)` https://www.curseforge.com/minecraft/bukkit-plugins/residence
 
 :::
 
