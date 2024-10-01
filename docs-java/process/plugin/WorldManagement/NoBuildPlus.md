@@ -7,7 +7,9 @@ sidebar_label: 保护 - NoBuildPlus
 
 :::info
 
-`SpigotMC` https://www.spigotmc.org/resources/nobuildplus.101815/
+`SpigotMC` https://www.spigotmc.org/resources/nobuildplus.101815
+
+`MineBBS` https://www.minebbs.com/resources/.8101
 
 `GitHub` https://github.com/Ez4p1xEL/NoBuildPlus
 

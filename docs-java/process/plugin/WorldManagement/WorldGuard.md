@@ -7,17 +7,19 @@ sidebar_label: 保护 - WorldGuard
 
 :::info
 
+`Bukkit` https://dev.bukkit.org/projects/worldguard
+
+`Modrinth` https://modrinth.com/plugin/worldguard
+
+`MineBBS` https://www.minebbs.com/resources/.9074/
+
+`GitHub` https://github.com/EngineHub/WorldGuard
+
 `文档(英文)` https://worldguard.enginehub.org/en/latest/index.html
 
 `文档(中文)` https://snowcutieowo.github.io/WorldGuard
 
-`Bukkit` https://dev.bukkit.org/projects/worldguard
-
-`GitHub` https://github.com/EngineHub/WorldGuard
-
-`CurseForge` https://www.curseforge.com/minecraft/bukkit-plugins/worldguard
-
-`MineBBS` https://www.minebbs.com/resources/.9074/
+`插件百科` https://mineplugin.org/Worldguard
 
 :::
 

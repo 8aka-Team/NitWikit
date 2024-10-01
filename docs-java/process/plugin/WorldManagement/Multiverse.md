@@ -7,13 +7,19 @@ sidebar_label: 多世界 - Multiverse
 
 :::info
 
-`GitHub` https://github.com/Multiverse/Multiverse-Core
+`Bukkit` https://dev.bukkit.org/projects/multiverse-core
 
 `SpigotMC` https://www.spigotmc.org/resources/.390/
 
-`Bukkit` https://dev.bukkit.org/projects/multiverse-core
+`PaperMC` https://hangar.papermc.io/Multiverse/Multiverse-Core
 
 `Modrinth` https://modrinth.com/plugin/multiverse-core
+
+`MineBBS` https://www.minebbs.com/resources/.8889
+
+`GitHub` https://github.com/Multiverse/Multiverse-Core
+
+`文档` https://github.com/Multiverse/Multiverse-Core/wiki
 
 `插件百科` https://mineplugin.org/Multiverse-Core
 
