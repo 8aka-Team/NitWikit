@@ -6,11 +6,11 @@ sidebar_position: 4
 
 :::info
 
+`Bukkit(旧)` https://dev.bukkit.org/projects/playerpoints
+
 `SpigotMC` https://www.spigotmc.org/resources/playerpoints.80745/
 
 `GitHub` https://github.com/Rosewood-Development/PlayerPoints
-
-`Bukkit(太老了不要用)` https://dev.bukkit.org/projects/playerpoints
 
 `插件百科` https://mineplugin.org/PlayerPoints
 

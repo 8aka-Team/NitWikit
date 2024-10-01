@@ -14,9 +14,9 @@ sidebar_position: 3
 
 `SpigotMC` https://www.spigotmc.org/resources/.75669/
 
-`文档` https://xc.itzdrli.com/
-
 `GitHub` https://github.com/YiC200333/XConomy
+
+`文档` https://xc.itzdrli.com/
 
 :::
 
