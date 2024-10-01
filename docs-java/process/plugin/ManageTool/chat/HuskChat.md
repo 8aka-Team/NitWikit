@@ -15,7 +15,7 @@ sidebar_position: 2
 
 `GitHub` https://github.com/WiIIiam278/HuskChat
 
-`文档(英文)` https://william278.net/docs/HuskChat
+`文档` https://william278.net/docs/HuskChat
 
 :::
 
