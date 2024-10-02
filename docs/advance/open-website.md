@@ -264,26 +264,26 @@ PHP 7.4、8.0或8.1（推荐），具有以下扩展：
 
 :::
 先在网站-php项目点添加站点
-![微信图片_20240921114806.png](_images/open-web-photo/baotadianj.png)
+![](_images/open-web-photo/baotadianj.png)
 然后按以下选择
-![微信图片_20240921114806.png](_images/open-web-photo/mysql.png)
+![](_images/open-web-photo/mysql.png)
 
 创建完成后点图片圈的地方
-![微信图片_20240921114806.png](_images/open-web-photo/dianji.png)
+![](_images/open-web-photo/dianji.png)
 
 然后删除默认文件
-![微信图片_20240921114806.png](_images/open-web-photo/removeindex.png)
+![](_images/open-web-photo/removeindex.png)
 然
 后上传源文件[点击下载](https://b2.mcdogserver.top/nameless-deps-dist.zip)
-![微信图片_20240921114806.png](_images/open-web-photo/upload.png)
+![](_images/open-web-photo/upload.png)
 
 然后解压
-![微信图片_20240921114806.png](_images/open-web-photo/unzip.png)
+![](_images/open-web-photo/unzip.png)
 
 然后将文件夹的东西复制到根目录
 
 然后访问你的公网ip来到安装界面
-![微信图片_20240921114806.png](_images/open-web-photo/install.png)
+![](_images/open-web-photo/install.png)
 
 然后点击Continue 下一步
 
@@ -294,12 +294,12 @@ PHP 7.4、8.0或8.1（推荐），具有以下扩展：
 
 :::
 完成后会跳转到仪表盘,然后记得去把API开一下，到时候可以直接和你的MC服务器连接
-![微信图片_20240921114806.png](_images/open-web-photo/api.png)
+![](_images/open-web-photo/api.png)
 
 然后它会出现连接地址和API密钥,到时候输入你插件的配置文件里面就可以实现联通了,这里就不做演示了
 
 然后主页面就长这样子
-![微信图片_20240921114806.png](_images/open-web-photo/index.png)
+![](_images/open-web-photo/index.png)
 
 如果你看到这个界面那么如果你是第1次使用宝塔面板搭建网站，那么恭喜你，你成功了
 
