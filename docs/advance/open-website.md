@@ -239,9 +239,9 @@ namelessmc的配置要求原文要求的是
 
 PHP 7.4、8.0或8.1（推荐），具有以下扩展：
  
- php curl（可选）
+ php curl
  
- php-exif（可选）
+ php-exif
  
  php-gd支持png和jpeg
  
@@ -256,7 +256,7 @@ PHP 7.4、8.0或8.1（推荐），具有以下扩展：
 
 还有一台安装了Apache或NGINX或Caddy的服务器
 
-这些宝塔面板都有(处php插件外)
+这些宝塔面板都有(除php插件外)
 #### 正式开始
 :::warning
 
