@@ -226,3 +226,60 @@ cf-cname.xingpingcn.top 不需要开启小黄云
 在这里附上源码下载[点击下载](https://b2.mcdogserver.top/1.zip)
 
 如果你觉得这个源码不适合你，或者是你不想用别人的源码，你可以尝试去自学。这里就不附上自学的教程了
+
+## 使用NamelessMC搭建网站服务
+### 使用宝塔面板搭建
+:::warning
+
+如果你的域名没有备案的话，请不要购买国内的服务器
+
+:::
+#### 要准备的
+namelessmc的配置要求原文要求的是
+PHP 7.4、8.0或8.1（推荐），具有以下扩展：
+ php curl（可选）
+ php-exif（可选）
+ php-gd支持png和jpeg
+ php mbstring
+ php-mysql或php-mysqlnd
+ php pdo
+ php xml
+还有MySQL 5.7.22或更高 或 MariaDB 10.2或更高
+还有一台安装了Apache或NGINX或Caddy的服务器
+这些宝塔面板都有(处php插件外)
+#### 正式开始
+:::warning
+
+接下来的教程都默认你安装了所有依赖和有公网ip
+
+:::
+先在网站-php项目点添加站点
+![微信图片_20240921114806.png](_images/open-web-photo/baotadianj.png)
+然后按以下选择
+![微信图片_20240921114806.png](_images/open-web-photo/mysql.png)
+创建完成后点图片圈的地方
+![微信图片_20240921114806.png](_images/open-web-photo/dianji.png)
+然后删除默认文件
+![微信图片_20240921114806.png](_images/open-web-photo/removeindex.png)
+然后上传源文件[点击下载](https://b2.mcdogserver.top/nameless-deps-dist.zip)
+![微信图片_20240921114806.png](_images/open-web-photo/upload.png)
+然后解压
+![微信图片_20240921114806.png](_images/open-web-photo/unzip.png)
+然后将文件夹的东西复制到根目录
+然后访问你的公网ip来到安装界面
+![微信图片_20240921114806.png](_images/open-web-photo/install.png)
+然后点击Continue 下一步
+然后按照提示完成安装
+:::warning
+
+有时候安装完之后可能会识别不出来重启一下php就可以解决了
+
+:::
+完成后会跳转到仪表盘,然后记得去把API开一下，到时候可以直接和你的MC服务器连接
+![微信图片_20240921114806.png](_images/open-web-photo/api.png)
+然后它会出现连接地址和API密钥,到时候输入你插件的配置文件里面就可以实现联通了,这里就不做演示了
+然后主页面就长这样子
+![微信图片_20240921114806.png](_images/open-web-photo/index.png)
+如果你看到这个界面那么如果你是第1次使用宝塔面板搭建网站，那么恭喜你，你成功了
+
+
