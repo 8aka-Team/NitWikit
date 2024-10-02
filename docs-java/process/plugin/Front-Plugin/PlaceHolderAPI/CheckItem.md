@@ -103,7 +103,7 @@ sidebar_position: 4
 
 用来获取玩家指定背包位置的物品信息
 
-```
+```text
 %checkitem_getinfo:<槽位>_<修饰符1>,<修饰符2>,<...>%
 ```
 
