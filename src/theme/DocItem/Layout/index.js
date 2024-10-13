@@ -11,12 +11,9 @@ import DocItemTOCDesktop from '@theme/DocItem/TOC/Desktop';
 import DocItemContent from '@theme/DocItem/Content';
 import DocBreadcrumbs from '@theme/DocBreadcrumbs';
 import ContentVisibility from '@theme/ContentVisibility';
-import type {Props} from '@theme/DocItem/Layout';
+import styles from './styles.module.css';
 import { FloatButton, Modal } from 'antd';
 import { FilePdfOutlined, PrinterOutlined } from '@ant-design/icons';
-
-
-import styles from './styles.module.css';
 
 /**
  * Decide if the toc should be rendered, on mobile or desktop viewports
@@ -24,27 +21,25 @@ import styles from './styles.module.css';
 function useDocTOC() {
   const {frontMatter, toc} = useDoc();
   const windowSize = useWindowSize();
-
   const hidden = frontMatter.hide_table_of_contents;
   const canRender = !hidden && toc.length > 0;
-
   const mobile = canRender ? <DocItemTOCMobile /> : undefined;
-
   const desktop =
     canRender && (windowSize === 'desktop' || windowSize === 'ssr') ? (
       <DocItemTOCDesktop />
     ) : undefined;
-
   return {
     hidden,
     mobile,
     desktop,
   };
 }
-
-export default function DocItemLayout({children}: Props): JSX.Element {
+export default function DocItemLayout({children}) {
   const docTOC = useDocTOC();
   const {metadata} = useDoc();
+  const printArticle = () => {
+    window.print();
+  };
   const downloadPDF = () => {
     Modal.info({
       title: '下载PDF',
@@ -59,9 +54,6 @@ export default function DocItemLayout({children}: Props): JSX.Element {
         setTimeout(()=>window.print(), 1000);
       },
     })
-  };
-  const printArticle = () => {
-    window.print();
   };
   return (
     <div className="row">
@@ -81,9 +73,9 @@ export default function DocItemLayout({children}: Props): JSX.Element {
       </div>
       {docTOC.desktop && <div className="col col--3">{docTOC.desktop}</div>}
       <FloatButton.Group shape="circle" style={{right: 24}} className="article-float-buttons">
+        <FloatButton.BackTop visibilityHeight={0}/>
         <FloatButton icon={<PrinterOutlined/>} title="打印文档" onClick={printArticle}/>
         <FloatButton icon={<FilePdfOutlined/>} title="下载PDF" onClick={downloadPDF}/>
-        <FloatButton.BackTop visibilityHeight={0}/>
       </FloatButton.Group>
     </div>
   );
