@@ -242,25 +242,18 @@ cf-cname.xingpingcn.top 不需要开启小黄云
 namelessmc的配置要求原文要求的是
 
 PHP 7.4、8.0或8.1（推荐），具有以下扩展：
-
-  php curl
-
-  php-exif
-
-  php-gd支持png和jpeg
-
-  php mbstring
-
-  php-mysql或php-mysqlnd
-
-  php pdo
-
-  php xml
+* php curl
+* php-exif
+* php-gd支持png和jpeg
+* php mbstring
+* php-mysql或php-mysqlnd
+* php pdo
+* php xml
 还有MySQL 5.7.22或更高 或 MariaDB 10.2或更高
 
 还有一台安装了Apache或NGINX或Caddy的服务器
 
-这些宝塔面板都有(除php插件外)
+这些宝塔面板都有
 
 #### 正式开始
 
