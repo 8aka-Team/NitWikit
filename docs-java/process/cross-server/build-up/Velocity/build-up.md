@@ -7,7 +7,7 @@ sidebar_position: 2
 
 ## 下载
 
-在 [核心选择](/docs-java/advance/cross-server/server-core-choose.md) 找到 Velocity 然后下载
+在 [核心选择](/docs-java/process/cross-server/server-core-choose.md) 找到 Velocity 然后下载
 
 ## 启动
 
@@ -181,4 +181,4 @@ Velocity 支持将玩家信息(如 IP 地址、UUID 和皮肤)转发到你的服
 
 ## 加入
 
-见 [加入服务器](/docs-java/advance/cross-server/join-server.md)
+见 [加入服务器](/docs-java/process/cross-server/join-server.md)

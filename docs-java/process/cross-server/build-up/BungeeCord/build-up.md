@@ -7,7 +7,7 @@ sidebar_position: 2
 
 ## 下载
 
-前往 [核心选择](/docs-java/advance/cross-server/server-core-choose.md)
+前往 [核心选择](/docs-java/process/cross-server/server-core-choose.md)
 
 1.7.10 用 BungeeCord 的 [构建 1119](https://ci.md-5.net/job/BungeeCord/1119/)
 
@@ -79,4 +79,4 @@ bungeecord: false
 
 ## 加入
 
-见 [加入服务器](/docs-java/advance/cross-server/join-server.md)
+见 [加入服务器](/docs-java/process/cross-server/join-server.md)
