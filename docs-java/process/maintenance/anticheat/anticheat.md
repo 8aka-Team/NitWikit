@@ -6,7 +6,7 @@ slug: /anticheat
 
 # 概览
 
-在各种各样的 Minecraft 服务器中都存在各种各样的 **Hacker Client User**(作弊端用户)
+在各种各样的 Minecraft 服务器中都存在各种各样的 **Hacker Client User** (作弊端用户)
 
 作弊者通过作弊软件获取其他合法玩家无法取得的优势，从而影响游戏平衡性。
 
