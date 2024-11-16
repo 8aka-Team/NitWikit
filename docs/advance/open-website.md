@@ -86,7 +86,7 @@ Repository name填 你的用户名.github.io
 
 然后回到DNS记录
 
-添加一个类型为CNAME 名称为cdn 内容为
+添加一个类型为 CNAME 名称为cdn 内容为
 cf-cname.xingpingcn.top 不需要开启小黄云
 ![微信图片_20240916092435.png](_images/open-web-photo/close-yellow-cloud.png)
 
@@ -249,9 +249,9 @@ PHP 7.4、8.0或8.1（推荐），具有以下扩展：
 * php-mysql或php-mysqlnd
 * php pdo
 * php xml
-还有MySQL 5.7.22或更高 或 MariaDB 10.2或更高
+还有 MySQL 5.7.22 或更高 或 MariaDB 10.2 或更高
 
-还有一台安装了Apache或NGINX或Caddy的服务器
+还有一台安装了 Apache 或 NGINX 或 Caddy 的服务器
 
 这些宝塔面板都有
 
@@ -302,15 +302,17 @@ PHP 7.4、8.0或8.1（推荐），具有以下扩展：
 
 如果你看到这个界面那么如果你是第1次使用宝塔面板搭建网站，那么恭喜你，你成功了
 
-## 使用vercel搭建网站服务
+## 使用 vercel 搭建网站服务
 
 此方法在我看来是最简单的方法，他的加载速度加上优选IP之后可以比cloudflare saas后还快(没有设置缓存的情况下)，而且比cloudflare saas要简单许多
+
+如果你无法正常访问 vercel 请下载 [Watt Toolkit](https://steampp.net) 并在最下面的其他服务内勾选的加速vercel.app
 
 ### 要准备的东西
 * 一个 Github 账号
 * 一个邮箱
 
-### 注册vercel账号
+### 注册 vercel 账号
 
 首先进入[vercel](https://vercel.com)
 
@@ -331,10 +333,10 @@ PHP 7.4、8.0或8.1（推荐），具有以下扩展：
 
 完成之后，点击最下面那个黑色的按钮
 
-然后来到管理网站的仪表盘然后点击settings-domains
+然后来到管理网站的仪表盘然后点击 settings-domains
 ![](_images/open-web-photo/dom.png)
 
-然后再最上面的那个框那里输入你要绑定的域名，然后点击add
+然后再最上面的那个框那里输入你要绑定的域名，然后点击 add
 
 这时他会提示你要添加一个 cname 记录，千万不要使用这个地址，要使用其他人制作的优选IP 优选IP是vercel.182682.xyz
 
