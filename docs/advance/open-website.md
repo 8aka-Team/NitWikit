@@ -312,7 +312,7 @@ PHP 7.4、8.0或8.1（推荐），具有以下扩展：
 * 一个 Github 账号
 * 一个邮箱
 
-### 注册 vercel 账号
+#### 注册 vercel 账号
 
 首先进入[vercel](https://vercel.com)
 
@@ -337,11 +337,13 @@ PHP 7.4、8.0或8.1（推荐），具有以下扩展：
 ![](_images/open-web-photo/dom.png)
 
 然后再最上面的那个框那里输入你要绑定的域名，然后点击 add
+![](_images/open-web-photo/add.png)
 
 这时他会提示你要添加一个 cname 记录，千万不要使用这个地址，要使用其他人制作的优选IP 优选IP是vercel.182682.xyz
+![](_images/open-web-photo/cname.png)
 
 添加完之后等待它自动检查检查完成并签发完证书之后然后访问你绑定的域名就可以访问到你的网站了
 
-### 一些弊端
+#### 一些弊端
 
 不知为何 vercel 在构建本站文档的时候，出现了一点奇怪的错误，我尝试了其他的构建网站可是都没有问题
