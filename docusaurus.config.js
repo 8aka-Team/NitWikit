@@ -307,21 +307,9 @@ const config = {
   ],
   scripts: [
     {
-        // 看板娘
-      src: 'https://cdn.jsdmirror.com/gh/stevenjoezhang/live2d-widget@latest/autoload.js',
-      defer: true,  // 延迟加载
+      src: '/autoload.js',
+      defer: true,
     },
-
-    {
-      src: 'https://cpython666.github.io/js/clickjs/fireworks.js',  //鼠标爆炸效果
-      defer: true,  // 延迟加载
-    },
-    {
-      src: 'https://cpython666.github.io/js/clickjs/anime.min.js',  //鼠标爆炸效果
-      defer: true,  // 延迟加载
-    },
-
-
   ],
 };
 
