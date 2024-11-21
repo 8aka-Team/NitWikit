@@ -133,6 +133,13 @@ const config = {
         category: 'Announcements',
         categoryId: 'DIC_kwDOLkVR-M4CkTAe'
       },
+      zoom: {
+        selector: '.markdown :not(em) > img',
+        background: {
+          light: 'rgb(255, 255, 255)',
+          dark: 'rgb(50, 50, 50)',
+        },
+      },
       // 标题渲染范围
       tableOfContents: {
         minHeadingLevel: 2,
@@ -156,7 +163,7 @@ const config = {
           alt: 'Logo',
           src: 'img/book.png',
         },
-        hideOnScroll: false,
+        hideOnScroll: true,
         items: [
           {
             type: 'doc',
@@ -196,6 +203,11 @@ const config = {
           // },
         ],
       },
+      stylesheets: [
+        'https://cdn.jsdmirror.com/npm/misans@4.0.0/lib/Normal/MiSans-Normal.min.css',
+        'https://cdn.jsdmirror.com/npm/misans@4.0.0/lib/Normal/MiSans-Medium.min.css',
+        'https://cdn.jsdmirror.com/npm/misans@4.0.0/lib/Normal/MiSans-Semibold.min.css',
+      ],
       // 底部链接
       footer: {
         style: 'dark',
@@ -285,6 +297,24 @@ const config = {
 
   themes: [
     '@docusaurus/theme-mermaid'
+  ],
+  scripts: [
+    {
+        // 看板娘
+      src: 'https://cdn.jsdmirror.com/gh/stevenjoezhang/live2d-widget@latest/autoload.js',
+      defer: true,  // 延迟加载
+    },
+
+    {
+      src: 'https://cpython666.github.io/js/clickjs/fireworks.js',  //鼠标爆炸效果
+      defer: true,  // 延迟加载
+    },
+    {
+      src: 'https://cpython666.github.io/js/clickjs/anime.min.js',  //鼠标爆炸效果
+      defer: true,  // 延迟加载
+    },
+
+
   ],
 };
 
