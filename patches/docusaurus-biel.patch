@@ -1,0 +1,22 @@
+diff --git a/build/index.js b/build/index.js
+index f44beab0b1abcad46966cb258157263f039b25af..b533422b3d0155aa220a6d9e609c308bd5a63013 100644
+--- a/build/index.js
++++ b/build/index.js
+@@ -88,7 +88,7 @@ module.exports = function (_context, options) {
+                         tagName: 'link',
+                         attributes: {
+                             rel: 'stylesheet',
+-                            href: "https://cdn.jsdelivr.net/npm/biel-search@".concat(version, "/dist/biel-search/biel-search.css"),
++                            href: "https://cdn.jsdmirror.com/npm/biel-search@".concat(version, "/dist/biel-search/biel-search.css"),
+                         },
+                     },
+                 ],
+@@ -97,7 +97,7 @@ module.exports = function (_context, options) {
+                         tagName: 'script',
+                         attributes: {
+                             type: 'module',
+-                            src: "https://cdn.jsdelivr.net/npm/biel-search@".concat(version, "/dist/biel-search/biel-search.esm.js"),
++                            src: "https://cdn.jsdmirror.com/npm/biel-search@".concat(version, "/dist/biel-search/biel-search.esm.js"),
+                         },
+                     },
+                     {
