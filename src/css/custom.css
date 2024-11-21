@@ -514,25 +514,6 @@ div[class^="announcementBar_"] {
 
 
 /* 分割线================================================================================================================================== */
-/* 返回顶部按钮样式 */
-[class*="backToTopButton"] {
-  /* 全局样式覆盖 */
-  outline: none !important;
-  box-shadow: none !important;
-  background-color: transparent !important;
-  background-image: url(/static/img/back-top.svg) !important;
-  background-size: cover !important;
-  transition: transform 0.8s ease-in-out !important;
-}
-
-[class*="backToTopButton"]:hover {
-  background-color: transparent !important;
-  transform: scale(1.2) !important;
-}
-
-[class*="backToTopButton"]::after {
-  background-color: transparent !important;
-}
 
 
 

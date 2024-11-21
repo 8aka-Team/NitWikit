@@ -70,6 +70,7 @@ const config = {
     ],
   ],
   plugins: [
+      'docusaurus-plugin-image-zoom',
     [
       '@docusaurus/plugin-content-docs',
       {
@@ -297,6 +298,7 @@ const config = {
 
   themes: [
     '@docusaurus/theme-mermaid'
+
   ],
   scripts: [
     {
