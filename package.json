@@ -19,6 +19,7 @@
   "dependencies": {
     "@ant-design/icons": "^5.5.1",
     "@docusaurus/core": "^3.6.1",
+    "@docusaurus/faster": "^3.6.2",
     "@docusaurus/plugin-content-docs": "^3.6.1",
     "@docusaurus/plugin-debug": "^3.6.1",
     "@docusaurus/plugin-pwa": "^3.6.1",
