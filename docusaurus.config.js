@@ -68,13 +68,16 @@ const config = {
         },
         blog: false,
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: [
+              require.resolve('./src/css/custom.css'),
+          ],
         },
       }),
     ],
   ],
   plugins: [
       'docusaurus-plugin-image-zoom',
+      'docusaurus-plugin-sass',
       ['docusaurus-biel',{
             project: 'jzpi7b11et',
             headerTitle: 'NitWikit AI',
@@ -214,11 +217,7 @@ const config = {
           // },
         ],
       },
-      stylesheets: [
-        'https://cdn.jsdmirror.com/npm/misans@4.0.0/lib/Normal/MiSans-Normal.min.css',
-        'https://cdn.jsdmirror.com/npm/misans@4.0.0/lib/Normal/MiSans-Medium.min.css',
-        'https://cdn.jsdmirror.com/npm/misans@4.0.0/lib/Normal/MiSans-Semibold.min.css',
-      ],
+
       // 底部链接
       footer: {
         style: 'dark',
