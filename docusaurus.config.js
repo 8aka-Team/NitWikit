@@ -78,7 +78,8 @@ const config = {
       ['docusaurus-biel',{
             project: 'jzpi7b11et',
             headerTitle: 'NitWikit AI',
-            version: 'latest'
+            version: 'latest',
+            bielButtonText: '询问 AI',
         }],
     [
       '@docusaurus/plugin-content-docs',
