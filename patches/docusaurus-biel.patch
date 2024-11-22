@@ -1,5 +1,5 @@
 diff --git a/build/index.js b/build/index.js
-index f44beab0b1abcad46966cb258157263f039b25af..b533422b3d0155aa220a6d9e609c308bd5a63013 100644
+index f44beab0b1abcad46966cb258157263f039b25af..c102cd70cd0bb532525357ff8ccda9a10007ffe1 100644
 --- a/build/index.js
 +++ b/build/index.js
 @@ -88,7 +88,7 @@ module.exports = function (_context, options) {
@@ -7,7 +7,7 @@ index f44beab0b1abcad46966cb258157263f039b25af..b533422b3d0155aa220a6d9e609c308b
                          attributes: {
                              rel: 'stylesheet',
 -                            href: "https://cdn.jsdelivr.net/npm/biel-search@".concat(version, "/dist/biel-search/biel-search.css"),
-+                            href: "https://cdn.jsdmirror.com/npm/biel-search@".concat(version, "/dist/biel-search/biel-search.css"),
++                            href: "https://cdn.jsdmirror.cn/npm/biel-search@".concat(version, "/dist/biel-search/biel-search.css"),
                          },
                      },
                  ],
@@ -16,7 +16,7 @@ index f44beab0b1abcad46966cb258157263f039b25af..b533422b3d0155aa220a6d9e609c308b
                          attributes: {
                              type: 'module',
 -                            src: "https://cdn.jsdelivr.net/npm/biel-search@".concat(version, "/dist/biel-search/biel-search.esm.js"),
-+                            src: "https://cdn.jsdmirror.com/npm/biel-search@".concat(version, "/dist/biel-search/biel-search.esm.js"),
++                            src: "https://cdn.jsdmirror.cn/npm/biel-search@".concat(version, "/dist/biel-search/biel-search.esm.js"),
                          },
                      },
                      {
