@@ -8,9 +8,9 @@ sidebar_position: 2
 
 [点此跳转到官方英文文档](https://docs.papermc.io/velocity)
 
-# 关于 Velocity 的介绍
+## 关于 Velocity 的介绍
 
-## 什么是 Velocity ？
+### 什么是 Velocity ？
 
 velocity 可以说是目前最优秀的**Minecraft代理端**之一，由经验丰富的PaperMC团队研发，Velocity 拥有先进的转发方式和极高的安全性。与此同时，Velocity 也有优秀的性能表现
 

@@ -10,7 +10,7 @@ sidebar_position: 2
 
 ChestCommands < DuluxeMenus < TrMenu
 
-# 不要问有没有可视化编辑器
+## 不要问有没有可视化编辑器
 
 自己照着文档，用文本编辑器写就行了
 

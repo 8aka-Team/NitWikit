@@ -17,7 +17,7 @@ sidebar_position: 3
 
 老牌全息图插件，不过咱建议用 [DecentHolograms](DecentHolograms.md)
 
-# 停更
+## 停更
 
 ![](_images/hd已经归档.png)
 

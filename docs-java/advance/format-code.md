@@ -49,6 +49,6 @@ Icons:
 
 可以去看 [MiniMessage](MiniMessage.md) 部分。
 
-# 参考
+## 参考
 
 - https://zh.minecraft.wiki/w/%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%BB%A3%E7%A0%81

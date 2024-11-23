@@ -7,9 +7,9 @@ sidebar_position: 3
 
 在客户端点击加入服务器，输入你的跨服端的地址，连接即可。
 
-# 连接到子服
+## 连接到子服
 
-## `/server` 命令
+### `/server` 命令
 
 ```text
 /server [配置中设置的子服名字]
@@ -25,9 +25,9 @@ sidebar_position: 3
 
 :::
 
-## npc
+### npc
 
-### Citizens2
+#### Citizens2
 
 https://wiki.citizensnpcs.co/NPC_Commands#Bungee
 
@@ -35,7 +35,7 @@ https://wiki.citizensnpcs.co/NPC_Commands#Bungee
 /npc command add -p server MyServerName
 ```
 
-### Adyeshach
+#### Adyeshach
 
 ady 没有跨服动作，你可以导入其他插件的跨服动作来使用
 
@@ -47,7 +47,7 @@ import invero connect 子服名
 
 或者使用 command...
 
-### ZNPCs
+#### ZNPCs
 
 https://github.com/gonalez/znpcs/wiki/Commands#server
 
@@ -58,9 +58,9 @@ https://github.com/gonalez/znpcs/wiki/Commands#server
 - [id] 是 NPC 的 id.
 - [server] 是子服名字.
 
-## 菜单
+### 菜单
 
-### ChestCommands
+#### ChestCommands
 
 https://filoghost.me/docs/chest-commands/actions
 
@@ -69,7 +69,7 @@ ACTIONS:
   - 'server: hub'
 ```
 
-### DeluxeMenus
+#### DeluxeMenus
 
 https://wiki.helpch.at/helpchat-plugins/deluxemenus/files
 
@@ -77,7 +77,7 @@ https://wiki.helpch.at/helpchat-plugins/deluxemenus/files
 - '[connect] <serverName>'
 ```
 
-### TrMenu
+#### TrMenu
 
 https://hhhhhy.gitbook.io/trmenu-v3/menu/action/types#kua-fu-chuan-song
 
@@ -85,7 +85,7 @@ https://hhhhhy.gitbook.io/trmenu-v3/menu/action/types#kua-fu-chuan-song
 - 'server: Lobby'
 ```
 
-### Invero
+#### Invero
 
 文档没写
 

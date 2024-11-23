@@ -20,21 +20,21 @@ RNG 是 **随机数生成器** 的简写。
 - [clientcommands](https://www.mcmod.cn/class/4239.html)
 - [EnchantmentCracker](https://github.com/Earthcomputer/EnchantmentCracker)
 
-# 能干啥？
+## 能干啥？
 
-## 指定附魔
+### 指定附魔
 
 玩家可以百分百附出满级附魔。
 
-## 耐久无损耗
+### 耐久无损耗
 
 耐久附魔不是增加物品的耐久，而是有概率不消耗耐久。
 
-## 钓鱼出指定宝藏
+### 钓鱼出指定宝藏
 
 同理，玩家可以想钓出什么，就能钓出什么。
 
-# 如何防御 RNG 漏洞
+## 如何防御 RNG 漏洞
 
 [Paper](https://papermc.io) 核心(包括它们的分支)，可以防止玩家破解 RNG 。
 

@@ -3,15 +3,6 @@ title: 服务器核心选择
 sidebar_position: 1
 ---
 
-:::tip
-本篇文档已完成编写！<br />
-支持后续 PR
-
-# Biggest SUCCESS
-
-作者：[梦涵LOVE](https://github.com/MengHanLOVE1027)
-:::
-
 # 服务器核心选择
 
 import Tabs from '@theme/Tabs';
@@ -85,8 +76,6 @@ import TabItem from '@theme/TabItem';
 <TabItem value="pnx" label="PowerNukkitX(PNX)">
 
 :::danger [此核心短时间内不再可用]
-
-# RIP<br />
 
 ![PNX 短时间内不再更新](_images/powernukkitx-core-rip.png)
 :::

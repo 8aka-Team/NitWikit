@@ -3,15 +3,6 @@ title: 插件加载器选择
 sidebar_position: 2
 ---
 
-:::tip
-本篇文档已完成编写！<br />
-支持后续 PR
-
-# Biggest SUCCESS
-
-作者：[梦涵LOVE](https://github.com/MengHanLOVE1027)
-:::
-
 # BDS 社区开发者编写的插件加载器
 
 import Tabs from '@theme/Tabs';

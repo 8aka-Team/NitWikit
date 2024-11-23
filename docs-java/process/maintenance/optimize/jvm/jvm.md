@@ -45,7 +45,7 @@ flowchart TD
 
 :::tip 兼容性
 
-根据我们的测试，GraalVM，Dragonwell，Zulu 目前都没有被报告过不兼容
+根据我们的测试,GraalVM,Dragonwell,Zulu 目前都没有被报告过不兼容
 
 Zing 与 LuckPerms 以及一些特殊插件会有一点不兼容
 
@@ -80,7 +80,7 @@ GraalVM 分为 Community Edition(CE) 和 Enterprise Edition(EE)，除非你服�
 
 :::tip
 
-Oracle 官网同样提供 GraalVM，但是上面的 GraalVM EE 包含了企业版套件，这些MC根本用不到，只需要企业版编译器就可以了
+Oracle 官网同样提供 GraalVM,但是上面的 GraalVM EE 包含了企业版套件,这些MC根本用不到,只需要企业版编译器就可以了
 
 :::
 
@@ -89,10 +89,25 @@ Oracle 官网同样提供 GraalVM，但是上面的 GraalVM EE 包含了企业�
 
 Azul Zing 不能直接被下载，需要填写试用申请表，但我们通过神秘手段搞到了安装包
 
-- [RPM](https://cdn.azul.com/zing-zvm/ZVM24.07.0.0/zing24.07.0.0-3-jdk21.0.3.0.101-linux.x86_64.rpm)
-- [TAR.GZ](https://cdn.azul.com/zing-zvm/ZVM24.07.0.0/zing24.07.0.0-3-jdk21.0.3.0.101-linux_x64.tar.gz)
-- [DEB](https://cdn.azul.com/zing-zvm/ZVM24.07.0.0/zing24.07.0.0-3-jdk21.0.3.0.101-linux_amd64.deb)
-- [官网](https://www.azul.com/downloads/#prime)
+JDK 21:
+
+- [RPM](https://cdn.azul.com/zing-zvm/ZVM24.10.0.0/zing24.10.0.0-4-jdk21.0.4.0.101-linux.x86_64.rpm)
+- [TAR.GZ](https://cdn.azul.com/zing-zvm/ZVM24.10.0.0/zing24.10.0.0-4-jdk21.0.4.0.101-linux_x64.tar.gz)
+- [DEB](https://cdn.azul.com/zing-zvm/ZVM24.10.0.0/zing24.10.0.0-4-jdk21.0.4.0.101-linux_amd64.deb)
+
+JDK 17:
+
+- [RPM](https://cdn.azul.com/zing-zvm/ZVM24.10.0.0/zing24.10.0.0-4-jdk17.0.12.0.101-linux.x86_64.rpm)
+- [TAR.GZ](https://cdn.azul.com/zing-zvm/ZVM24.10.0.0/zing24.10.0.0-4-jdk17.0.12.0.101-linux_x64.tar.gz)
+- [DEB](https://cdn.azul.com/zing-zvm/ZVM24.10.0.0/zing24.10.0.0-4-jdk17.0.12.0.101-linux_amd64.deb)
+
+JDK 8:
+
+- [RPM](https://cdn.azul.com/zing-zvm/ZVM24.10.0.0/zing24.10.0.0-4-jdk8.0.431-linux.x86_64.rpm)
+- [TAR.GZ](https://cdn.azul.com/zing-zvm/ZVM24.10.0.0/zing24.10.0.0-4-jdk8.0.431-linux_x64.tar.gz)
+- [DEB](https://cdn.azul.com/zing-zvm/ZVM24.10.0.0/zing24.10.0.0-4-jdk8.0.431-linux_amd64.deb)
+
+[官网](https://www.azul.com/downloads/#prime)
 
 </TabItem>
 <TabItem value="zulu" label="Azul Zulu">

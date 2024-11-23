@@ -17,7 +17,7 @@ sidebar_label: 保护 - NoBuildPlus
 
 和下面WorldGuard相比更简单易上手的世界保护插件
 
-# 傻逼
+## 傻逼
 
 ![](_images/孤独论nbp.png)
 

@@ -5,7 +5,7 @@ sidebar_position: 4
 
 <!--markdownlint-disable no-duplicate-heading-->
 
-# 调服务端配置
+## 调服务端配置
 
 没有适用于所有服务器的设置。你应该理解每个配置选项，并根据服务器的最佳参数与服务器硬件、玩家数量和服务器性质等调整参数。
 
@@ -17,15 +17,15 @@ sidebar_position: 4
 
 适用于 Paper 版本 1.20 +
 
-# 更简单的
+## 更简单的
 
 自动优化脚本，[下载](https://dl.yizhan.wiki/windows-latest/auto-optimize.exe)，在服务器根目录执行，目前支持CraftBukkit，Spigot，Paper，PufferFish，Purpur，Gale，Leaf
 
-# 网络优化
+## 网络优化
 
 网络优化主要目的是解决服务器上行带宽占用导致的玩家 **Ping**(即网络延迟)过高导致的糟糕游戏体验。
 
-## 降低服务器视野距离
+### 降低服务器视野距离
 
 :::warning
 
@@ -33,7 +33,7 @@ sidebar_position: 4
 
 :::
 
-### 手动调整
+#### 手动调整
 
 在 `spigot.yml` 或 `server.properties` 中可以设置服务器的视野距离，其中 `spigot.yml` 会覆盖 `server.properties` 的值。
 
@@ -43,7 +43,7 @@ view-distance: 8  #视野距离为 8 chunks
 
 如果你使用的默认 10 chunks 的视野距离，可能对于带宽来说有一定的压力，可以酌情减少，
 
-### 自动调整
+#### 自动调整
 
 安装 [View Distance Tweaks](https://www.spigotmc.org/resources/view-distance-tweaks.75164/) 实现自动调整视野距离使得玩家增多时自动减少视野，玩家减少时自动增加视野。
 
@@ -799,33 +799,33 @@ sensor:
 
 ```yaml
 enabled: true
-    items:
-        cobblestone: 300
-        netherrack: 300
-        sand: 300
-        red_sand: 300
-        gravel: 300
-        dirt: 300
-        short_grass: 300
-        pumpkin: 300
-        melon_slice: 300
-        kelp: 300
-        bamboo: 300
-        sugar_cane: 300
-        twisting_vines: 300
-        weeping_vines: 300
-        oak_leaves: 300
-        spruce_leaves: 300
-        birch_leaves: 300
-        jungle_leaves: 300
-        acacia_leaves: 300
-        dark_oak_leaves: 300
-        mangrove_leaves: 300
-        cactus: 300
-        diorite: 300
-        granite: 300
-        andesite: 300
-        scaffolding: 600
+items:
+      cobblestone: 300
+      netherrack: 300
+      sand: 300
+      red_sand: 300
+      gravel: 300
+      dirt: 300
+      short_grass: 300
+      pumpkin: 300
+      melon_slice: 300
+      kelp: 300
+      bamboo: 300
+      sugar_cane: 300
+      twisting_vines: 300
+      weeping_vines: 300
+      oak_leaves: 300
+      spruce_leaves: 300
+      birch_leaves: 300
+      jungle_leaves: 300
+      acacia_leaves: 300
+      dark_oak_leaves: 300
+      mangrove_leaves: 300
+      cactus: 300
+      diorite: 300
+      granite: 300
+      andesite: 300
+      scaffolding: 600
 ```
 
 此项可以设置指定物品消失的时间(tick 为单位)， 建议用此项替代扫地姬或 `merge-radius` 来提高性能。

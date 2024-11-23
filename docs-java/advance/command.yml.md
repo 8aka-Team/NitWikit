@@ -9,11 +9,11 @@ commands.yml 是一个配置文件，用于为 CraftBukkit 服务器定义自定
 
 命令覆盖系统可强制服务器对特定命令方块使用 Mojang 提供的命令，而别名系统允许管理员定义自定义命令并强制使用特定版本的命令。
 
-# 命令覆盖系统
+## 命令覆盖系统
 
 Bukkit 在默认情况下提供了一个命令覆盖系统。
 
-## 优先级
+### 优先级
 
 Aliases(自定义命令)＞ Plugin Commands(插件命令)＞ Bukkit Commands(Bukkit 命令)＞ Mojang Commands(Mojang 命令)。
 
@@ -27,7 +27,7 @@ Mojang Commands(Mojang 命令)：如果没有找到匹配的 Bukkit 命令，作
 
 每个 fallback 都有相应的权限控制，除插件命令外，Bukkit 命令的权限为 `bukkit.command.*`，Mojang 命令的权限为 `minecraft.command.*`
 
-# Command.yml 内容
+## Command.yml 内容
 
 ```yaml
 command-block-overrides: []
@@ -37,7 +37,7 @@ aliases:
     - "version $1-"
 ```
 
-## 关于 command-block-overrides 部分
+### 关于 command-block-overrides 部分
 
 表明当前没有对命令方块的覆盖进行设置。
 这个部分的作用是控制命令方块覆盖功能。在 Bukkit 的历史中，曾提供过一些与 Minecraft 原本不同版本的命令。通过这个设置，可以强制服务器专门为命令方块使用 Mojang 提供的版本的命令 (MC 原版命令)。
@@ -61,7 +61,7 @@ command-block-overrides:
     - "*"
 ```
 
-### 关于 aliases 部分
+#### 关于 aliases 部分
 
 在这个配置中，定义了一个自定义命令为 `icanhasbukkit` 。
 对应的命令为"version $1-"，这意味着当玩家输入 `icanhasbukkit` 这个命令时，实际上会执行 `version $1-` 这个命令

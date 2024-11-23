@@ -9,7 +9,7 @@ sidebar_position: 3
 
 如 XConomy
 
-# XConomy
+## XConomy
 
 :::info
 
@@ -29,7 +29,7 @@ sidebar_position: 3
 
 > Vault 是这些经济插件的前置，但本身并不提供经济
 
-## 连接数据库
+### 连接数据库
 
 如果你使用的是**MySQL 8**，并且无法正常连接到数据库，请下载 [DatabaseDrivers](https://github.com/YiC200333/DatabaseDrivers/releases) (1.17.X 以上版本服务器不需要)
 

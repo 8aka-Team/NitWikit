@@ -18,30 +18,30 @@ sidebar_position: 1
 - 拥有一台能够**正常游玩 Minecraft** 的电脑。
 - 具有一定的**英语基础**
 
-# 教程适合的群体
+## 教程适合的群体
 
 - 渴望学习如何开设服务器并运营良好的人；
 - 寻求解决如何解决服务器的常见问题的人；
 - 希望深化对服务器基础知识理解的人。
 
-# 教程不适合的群体
+## 教程不适合的群体
 
 - 意图通过开设服务器进行欺诈谋利的人；
 - 忽视插件文档，频繁依赖他人解答的人；
 - 头脑简单、狂妄自大、懒惰无能的人。
 
-# 开始你的旅程
+## 开始你的旅程
 
 ![:NitWikit](https://count.kjchmc.cn/get/@:NitWikit)
 
 如果你确定你符合条件，请点击一侧的目录开始阅读文档。
 
-# 更多
+## 更多
 
 对于文档中的错误请进入 [GitHub](https://github.com/postyizhan/NitWikit) 提出 Issue 或提交 Pr。
 
 欢迎加入 [企鹅群 🐧611076407](https://qm.qq.com/q/lEnfzgzxjq)。
 
-# 本节视频教程
+## 本节视频教程
 
 [**点此前往B站**: 笨蛋级MC开服教程-第一集:服主的基本要求](https://www.bilibili.com/video/BV16W421R7tm/?share_source=copy_web&vd_source=53975e70eabfc1d6563221a670d4021a)

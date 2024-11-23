@@ -53,9 +53,6 @@ sidebar_position: 2
 点击查看 [TrollStore 的安装流程](https://ios.cfw.guide/installing-trollstore/)
 ![](_images/trollstone_v.png)
 
-~~我手机安装不了巨魔，接下来怎么做等待有缘人~~
-(有缘人：我 tm 来啦)
-
 <details>
   <summary>各苹果机型对应的 TrollStore 安装方法</summary>
 
