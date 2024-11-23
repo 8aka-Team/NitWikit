@@ -3,6 +3,8 @@ title: 服务器类型
 sidebar_position: 2
 ---
 
+<!-- markdownlint-disable no-duplicate-heading -->
+
 # 服务器类型
 
 > 目前有五类主流的选择： 纯净服(又名原版服)，Addon 服(仅 BDS)，插件服，小游戏服(插件服的一种)，Addon 和 插件混合服(仅 BDS)。
