@@ -2,11 +2,6 @@
 title: LeviLamina 安装教程
 sidebar_position: 1
 ---
-:::info
-
-作者：[星凌QAQ](https://github.com/XingLingQAQ)
-
-:::
 
 # LeviLamina 安装教程
 

@@ -3,15 +3,6 @@ title: 服务端结构
 sidebar_position: 1
 ---
 
-:::tip
-本篇文档已完成编写！<br />
-支持后续 PR
-
-# Biggest SUCCESS
-
-作者：[梦涵LOVE](https://github.com/MengHanLOVE1027)
-:::
-
 # 服务端结构
 
 我们先来简单看一眼 BDS **开服后** 的文件夹结构：

@@ -3,15 +3,6 @@ title: 可能用到的网站
 sidebar_position: 1
 ---
 
-:::tip
-本篇文档已完成编写！<br />
-支持后续 PR
-
-# Biggest SUCCESS
-
-作者：[梦涵LOVE](https://github.com/MengHanLOVE1027)
-:::
-
 # 可能用到的网站
 
 开服不能只是从某一网站或者简单百度、Bing、谷歌获取资源，这样获取的资源种类非常贫乏。

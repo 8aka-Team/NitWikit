@@ -2,11 +2,6 @@
 title: 插件安装教程
 sidebar_position: 1
 ---
-:::info
-
-作者：[星凌QAQ](https://github.com/XingLingQAQ)
-
-:::
 
 # 插件安装教程
 

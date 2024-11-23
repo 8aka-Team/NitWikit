@@ -2,11 +2,6 @@
 title: BDSX 安装教程
 sidebar_position: 1
 ---
-:::info
-
-作者：[雪风先生](https://github.com/virgil698)
-
-:::
 
 # BDSX 安装教程
 
