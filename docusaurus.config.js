@@ -78,12 +78,6 @@ const config = {
   plugins: [
       'docusaurus-plugin-image-zoom',
       'docusaurus-plugin-sass',
-      ['docusaurus-biel',{
-            project: 'jzpi7b11et',
-            headerTitle: 'NitWikit AI',
-            version: 'latest',
-            bielButtonText: '询问 AI',
-        }],
     [
       '@docusaurus/plugin-content-docs',
       {
