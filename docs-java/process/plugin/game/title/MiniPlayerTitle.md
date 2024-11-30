@@ -18,11 +18,6 @@ https://ssl.lunadeer.cn:14446/zhangyuheng/MiniPlayerTitle
 
 :::
 
-<div align="center">
-  
-<img src="https://ssl.lunadeer.cn:14437/i/2024/03/28/6604de7db2e6f.png" alt="" width="70%">
-</div>
-
 ## MiniPlayerTitle - 青春版 PlayerTitle 玩家称号插件。
 
 [PlayerTitle](https://ricedoc.handyplus.cn/wiki/PlayerTitle/) 青春版
