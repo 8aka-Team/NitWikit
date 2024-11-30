@@ -156,7 +156,7 @@ cf-cname.xingpingcn.top 不需要开启小黄云
 
 随后在 nginx 安装目录中执行 `./nginx` 即可运行服务。
 
-为了保证网站时刻开启，建议为 nginx 设置开机自启。
+为了保证网站时刻开启，建议为 nginx 设置[开机自启](../process/maintenance/auto-restart#开机自启)。
 
 ### 在 Windows 系统上搭建网站服务
 
@@ -176,7 +176,7 @@ cf-cname.xingpingcn.top 不需要开启小黄云
 
 然后双击启动nginx.exe
 
-为了保证网站时刻开启，建议为 nginx 设置开机自启。
+为了保证网站时刻开启，建议为 nginx 设置[开机自启](../process/maintenance/auto-restart#开机自启)。
 
 <!--
 然后如果你的服务器有公网IP的话，现在的浏览器输入你的公网IP就可以看到你的网站了
