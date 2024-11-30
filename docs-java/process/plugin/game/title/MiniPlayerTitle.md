@@ -5,28 +5,14 @@ sidebar_position: 1
 
 # MiniPlayerTitle
 
-:::info
-
-`PaperMC` https://hangar.papermc.io/zhangyuheng/MiniPlayerTitle
-
-`MineBBS` https://www.minebbs.com/resources/.7930
-
-`文档` https://ssl.lunadeer.cn:14448/doc/2
-
-`开源地址`
-https://ssl.lunadeer.cn:14446/zhangyuheng/MiniPlayerTitle
-
-:::
-
-## MiniPlayerTitle - 青春版 PlayerTitle 玩家称号插件。
 [![](https://github.com/DeerGiteaMirror/MiniPlayerTitle)
 [![](https://ssl.lunadeer.cn:14446/zhangyuheng/MiniPlayerTitle)
 
 ```text
+一个简化版的称号插件
+```
 
 [PlayerTitle](https://ricedoc.handyplus.cn/wiki/PlayerTitle/) 青春版
-
-![image-20240111093304074](https://ssl.lunadeer.cn:14437/i/2024/01/11/659f455088092.png)
 
 ## 说明
 
@@ -54,3 +40,17 @@ https://ssl.lunadeer.cn:14446/zhangyuheng/MiniPlayerTitle
 Mail: [zhangyuheng@lunadeer.cn](mailto:zhangyuheng@lunadeer.cn)
 
 QQ群：309428300
+
+## 链接
+:::info
+
+`PaperMC` https://hangar.papermc.io/zhangyuheng/MiniPlayerTitle
+
+`MineBBS` https://www.minebbs.com/resources/.7930
+
+`文档` https://ssl.lunadeer.cn:14448/doc/2
+
+`开源地址`
+https://ssl.lunadeer.cn:14446/zhangyuheng/MiniPlayerTitle
+
+:::
