@@ -19,6 +19,10 @@ https://ssl.lunadeer.cn:14446/zhangyuheng/MiniPlayerTitle
 :::
 
 ## MiniPlayerTitle - 青春版 PlayerTitle 玩家称号插件。
+[![](https://github.com/DeerGiteaMirror/MiniPlayerTitle)
+[![](https://ssl.lunadeer.cn:14446/zhangyuheng/MiniPlayerTitle)
+
+```text
 
 [PlayerTitle](https://ricedoc.handyplus.cn/wiki/PlayerTitle/) 青春版
 
