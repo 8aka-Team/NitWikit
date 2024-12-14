@@ -15,15 +15,18 @@ sidebar_position: 4
 
 准备好你的脑子，以下的推荐参数仅作为参考，具体数字请自行尝试:
 
-适用于 Paper 版本 1.20 +
+:::tip
+
+没有一种单一的设置适用于每个服务器。您应该阅读并理解每个可用的配置选项，并根据您自己的独特情况进行调整
+
+:::
 
 ## 更简单的
 
-自动优化脚本，[下载](https://dl.yizhan.wiki/windows-latest/auto-optimize.exe)，在服务器根目录执行，目前支持CraftBukkit，Spigot，Paper，PufferFish，Purpur，Gale，Leaf
+自动优化脚本，[下载](https://dl.yizhan.wiki/windows-latest/auto-optimize.exe)
+，在服务器根目录执行，目前支持CraftBukkit，Spigot，Paper，PufferFish，Purpur，Gale，Leaf
 
 :::tip
-
-以下教程的优化项并不全面(比如没有 Leaf 配置项),如果你希望了解所有的优化配置项
 
 你可以看看**笨蛋脚本的源代码**或**服务器核心的文档**
 
@@ -31,54 +34,13 @@ sidebar_position: 4
 
 ## 网络优化
 
-网络优化主要目的是解决服务器上行带宽占用导致的玩家 **Ping**(即网络延迟)过高导致的糟糕游戏体验。
-
-### 降低服务器视野距离
-
-:::warning
-
-请注意视野距离和玩家体验相关性也较大，除非特殊情况否则不建议大幅压缩视野换取带宽占用。
-
-:::
-
-#### 手动调整
-
-在 `spigot.yml` 或 `server.properties` 中可以设置服务器的视野距离，其中 `spigot.yml` 会覆盖 `server.properties` 的值。
-
-```yaml
-view-distance: 8  #视野距离为 8 chunks
-```
-
-如果你使用的默认 10 chunks 的视野距离，可能对于带宽来说有一定的压力，可以酌情减少，
-
-#### 自动调整
-
-安装 [View Distance Tweaks](https://www.spigotmc.org/resources/view-distance-tweaks.75164/) 实现自动调整视野距离使得玩家增多时自动减少视野，玩家减少时自动增加视野。
-
-## 降低区块加载速度
-
-在 `/config/paper-global.yml` 中有关于区块生成的一些参数
-
-```yaml
-chunk-loading-basic:
-  #注：以下的单位均为 chunks / seconds
-  player-max-chunk-generate-rate: -1.0
-  #为每个玩家生成区块的最大速率，设置为-1 则禁用。
-  player-max-chunk-load-rate: 100
-  #任何单个玩家加载区块的最大速率，设置为-1 则禁用。
-  player-max-chunk-send-rate: 75
-  #服务器发送给单个玩家的最大速率。设置为-1 则禁用。
-```
-
-其中 player-max-chunk-send-rate 对应服务器每秒钟最多向玩家发送多少区块包，设置得越低玩家收到完整的地图信息越慢，
-
-服务器虽然总是会发送几乎同样多的区块信息，但由于发送速度降低，这会降低上行带宽的最大占用率，从而避免大量跑图导致的顿卡。
 
 ## 控制实体数量
 
 Minecraft 服务端会将每个实体的行为实时发送给附近的玩家客户端，这个包通常来说占用是很少的，但是大量玩家处于实体密集型区域时将出现大量带宽占用。
 
-bukkit.yml 以及 config/paper-world-default.yml 中对于 spawn-limits 做了限制(若二者均有值时取 Paper 的，若 Paper 中为 -1 时取 Bukkit)
+bukkit.yml 以及 config/paper-world-default.yml 中对于 spawn-limits 做了限制(若二者均有值时取 Paper 的，若 Paper 中为 -1
+时取 Bukkit)
 
 ```yaml
 spawn-limits:
@@ -105,7 +67,8 @@ spawn-limits:
 
 ```
 
-高版本的 config/paper-world-default.yml 中将 `animals` 改为了 `creature`，将 `water-animals` 改为了 `water-creature`，可参考这份配置文件：
+高版本的 config/paper-world-default.yml 中将 `animals` 改为了 `creature`，将 `water-animals` 改为了 `water-creature`
+，可参考这份配置文件：
 
 ```yaml
 spawn-limits:
@@ -153,9 +116,7 @@ entity-tracking-range:
 
 使用 Paper 矿物混淆时候，尽量不要在 **非主世界** 开启 `mode 2` 或 `mode 3`
 
-## 心跳连接
 
-在`purpur.yml`中打开选项`use-alternate-keepalive`
 
 ---
 
@@ -163,189 +124,7 @@ entity-tracking-range:
 
 性能优化主要是针对低 TPS 和高 MPST 导致的服务器顿卡或长期不流畅。
 
-## 区块
 
-### 模拟距离
-
-#### simulate-distance
-
-:::tip
-
-在此之前，你必须了解的是模拟距离(Simulate distance)和视野距离(View distance)区别(下文用 SDT和 VDT 分别指代)。
-
-模拟距离指的是玩家在这个范围内的游戏行为正常进行，如动物、怪物等 AI 的寻路，生物生成，草地扩散，水流流动等。
-
-视野距离指的是服务器将发送给玩家的区块的数据包的距离，在这个范围内，游戏行为不一定会继续发生(这取决于 SDT)
-
-当玩家移动导致一个区域不在玩家的 SDT 中而又在 VDT 中，那么服务器只会读取这个区域的方块信息并发送给玩家。
-
-而不会对这个区域进行加载。这是各种游戏常见的处理方式，弱化远处的计算能够使得服务器更加流畅。
-
-:::
-
-你可以在末地设置更高的 `view-distance` ，这可以让鞘翅飞的更舒服而不会占用很多资源。
-
-另外，应该鼓励你的玩家安装 Bobby 或 Farsight 等 mod，可以在本地缓存区块，这不会对服务器性能造成任何影响！
-
-##### 手动调整
-
-在 `spigot.yml` 中可以设置服务器的模拟距离：
-
-```yaml
-simulate-distance: 8
-```
-
-如果你使用的默认 10 chunks 的模拟距离，这会非常影响性能，可以酌情减少，
-
-:::tip
-
-推荐值： 3 ~ 8
-
-:::
-
-##### 自动调整
-
-安装 [View Distance Tweaks](https://www.spigotmc.org/resources/view-distance-tweaks.75164/) 实现自动调整视野距离使得玩家增多时自动减少视野，玩家减少时自动增加视野。
-
-### 区块生成和加载
-
-#### chunk-loading-basic
-
-服务器生成区块非常消耗资源，希望你服务器进行了预生成，如果没有进行的话请阅读 [预生成](/docs-java/process/maintenance/optimize/optimize.md#第二步---预生成)
-
-在 `/config/paper-global.yml` 中有关于区块生成的一些参数
-
-```yaml
-chunk-loading-basic:
-  #注：以下的单位均为 chunks / seconds
-  player-max-chunk-generate-rate: -1.0
-  #为每个玩家生成分块的最大速率，设置为-1 则禁用。
-  player-max-chunk-load-rate: 100
-  #任何单个玩家加载块的最大速率，设置为-1 则禁用。
-  player-max-chunk-send-rate: 75
-  #服务器发送给单个玩家的最大速率。设置为-1 则禁用。
-```
-
-其中 `player-max-chunk-generate-rate` 对应服务器每秒钟最多为玩家生成多少区块，设置得越低区块生成越慢。
-
-此时大量跑图的玩家可能会觉得服务器有一些滞后，但是能够保证大多数玩家的游戏体验，这是值得的。
-
-:::tip
-
-推荐值：20 - 40
-
-:::
-
-#### prevent-moving-into-unloaded-chunks
-
-:::tip
-
-推荐值：true
-
-:::
-
-防止玩家进入未加载的区块，以避免同步加载区块造成的主线程卡顿。view-distance视距越小，玩家进入未加载区块的可能性就越大。
-
-#### max-loads-per-projectile
-
-在 Minecraft 中，射出的箭、扔出的末影珍珠等可以加载一定距离的区块。
-
-在 `pufferfish.yml` 中可以调整弹射物最多加载的区块数量。
-
-降低该值可减少大量弹射物造成的区块负载，但可能会导致末影珍珠等出现问题。
-
-:::tip
-
-推荐值：8
-
-:::
-
-### 调整区块卸载速度
-
-#### delay-chunk-unloads-by
-
-区块的反复大量加载和卸载区块是很消耗性能的，而长期加载无效的区块也是浪费性能。
-
-在 `paper-world-defaults.yml` 中可以调整玩家离开后多久开始卸载区块。
-
-```yaml
-chunks:
-  delay-chunk-unloads-by: 10s
-```
-
-这有助于避免玩家来回移动时，服务器不断加载和卸载相同的区块。过高的值可能会导致一次加载太多区块。
-
-在玩家频繁传送或加载的区域，可以考虑让该区域永久加载。这可以减轻服务器不小的负担。
-
-| 推荐值 | 服务器类型                         |
-| ------ | ---------------------------------- |
-| 5s     | 开荒期、玩家会大范围跑图时         |
-| 10s    | 普通服务器                         |
-| >15s   | 服务器玩法决定玩家不会大范围移动时 |
-
-### 世界保存
-
-#### max-auto-save-chunks-per-tick
-
-在 `paper-world-defaults.yml` 中的参数，用于控制世界保存速度。
-
-```yaml
-max-auto-save-chunks-per-tick: 24
-```
-
-这个值是每个 tick 最多可以保存的区块数量，通过降低世界区块保存速度可以提高平均性能。
-
-如果一个 tick 加载区块超过本设定值，将在下一个 tick 继续保存剩余的待保存区块。
-
-这个值应该与需要保存的区块及玩家人数相匹配，当人数更多有更多区块需要保存时应该适当增加。
-
-保存区块的速度快意味着保存时负载高，但保存时间更短。如果遭遇断电、突然死机等情况时，
-
-使用更高的保存速度是有利于降低丢失区块数据的可能性的。
-
-| 推荐值 | 服务器人数        |
-| ------ | ----------------- |
-| 4      | 长期不到 10 人    |
-| 8      | 20 人左右(默认) |
-| 12     | 30 人左右         |
-| >24    | 长期大于 50       |
-
-#### entity-per-chunk-save-limit
-
-在保存区块时，服务器会一并保存区块对应位置的实体。
-
-在 `paper-world-defaults.yml` 中的参数，用于控制世界保存时最大保存的某种实体数量。
-
-推荐值：
-
-```yaml
-chunks:
-  entity-per-chunk-save-limit:
-    area_effect_cloud: 8
-    arrow: 16
-    dragon_fireball: 3
-    egg: 8
-    ender_pearl: 8
-    experience_bottle: 3
-    experience_orb: 16
-    eye_of_ender: 8
-    fireball: 8
-    firework_rocket: 8
-    llama_spit: 3
-    potion: 8
-    shulker_bullet: 8
-    small_fireball: 8
-    snowball: 8
-    spectral_arrow: 16
-    trident: 16
-    wither_skull: 4
-```
-
-此项可以设置区块卸载后从内存保存到硬盘时每个区块最大的实体数量，可为每种实体规定一个限制，
-
-以避免服务器尝试保存大量弹射物时崩溃，你还可以根据名称将其他实体添加到该列表中。
-
-从而缓解某些玩家使用大量实体卡服。**并不适用于阻止玩家建造大型生物农场。**
 
 ### 藏宝图
 
@@ -369,13 +148,13 @@ chunks:
 
 ```yaml
 推荐值:
-      loot-tables: true
-      villager-trade: true
+  loot-tables: true
+  villager-trade: true
 ```
 
 由于这些未探索的结构通常位于尚未生成的区块中，这可能会滞后服务器。
 
- `villager-trade` 影响村民交易的地图。
+`villager-trade` 影响村民交易的地图。
 
 `loot-tables` 影响任何生成战利品的容器，如宝箱等。
 
@@ -429,15 +208,15 @@ spawn-limits:
 
 下表推荐了三种不同情况的推荐值，请结合服务器卡顿程度和玩法选择合适的值：
 
-| 生物类型                   | 推荐最小值 | 推荐值 | 推荐最大值 |
-| -------------------------- | ---------- | ------ | ---------- |
-| monster                    | 18         | 30     | 45         |
-| animal                     | 5          | 8      | 10         |
-| water-animals              | 2          | 3      | 5          |
-| water-ambient              | 2          | 3      | 5          |
-| water-underground-creature | 3          | 4      | 5          |
-| axolotls                   | 3          | 4      | 5          |
-| ambient                    | 0          | 1      | 1          |
+| 生物类型                       | 推荐最小值 | 推荐值 | 推荐最大值 |
+|----------------------------|-------|-----|-------|
+| monster                    | 18    | 30  | 45    |
+| animal                     | 5     | 8   | 10    |
+| water-animals              | 2     | 3   | 5     |
+| water-ambient              | 2     | 3   | 5     |
+| water-underground-creature | 3     | 4   | 5     |
+| axolotls                   | 3     | 4   | 5     |
+| ambient                    | 0     | 1   | 1     |
 
 #### mob-spawn-range
 
@@ -453,13 +232,13 @@ mob-spawn-range: 8
 
 推荐值：
 
-| `spawn-limit` 值 | 对应 `mob-spawn-range`推荐值 | 实际生物量  |
-| :--------------: | :--------------------------: | :---------: |
-|    70 (默认)     |           8(默认)           | 100% (默认) |
-|        56        |             6-7              |     90%     |
-|        42        |             5-6              |     78%     |
-|        28        |             4-5              |     65%     |
-|        14        |             3-4              |     48%     |
+| `spawn-limit` 值 | 对应 `mob-spawn-range`推荐值 |   实际生物量   |
+|:---------------:|:-----------------------:|:---------:|
+|     70 (默认)     |          8(默认)          | 100% (默认) |
+|       56        |           6-7           |    90%    |
+|       42        |           5-6           |    78%    |
+|       28        |           4-5           |    65%    |
+|       14        |           3-4           |    48%    |
 
 :::tip
 
@@ -490,13 +269,13 @@ ticks-per:
 
 ```yaml
 推荐值:
-    monster-spawns: 9
-    animal-spawns: 399
-    water-spawns: 199
-    water-ambient-spawns: 399
-    water-underground-creature-spawns: 399
-    axolotl-spawns: 399
-    ambient-spawns: 999
+  monster-spawns: 9
+  animal-spawns: 399
+  water-spawns: 199
+  water-ambient-spawns: 399
+  water-underground-creature-spawns: 399
+  axolotl-spawns: 399
+  ambient-spawns: 999
 ```
 
 :::tip
@@ -517,35 +296,37 @@ ticks-per:
 
 ```yaml
 ambient:
-    hard: 72
-    soft: 30
+  hard: 72
+  soft: 30
 axolotls:
-    hard: 72
-    soft: 30
+  hard: 72
+  soft: 30
 creature:
-    hard: 72
-    soft: 30
+  hard: 72
+  soft: 30
 misc:
-    hard: 72
-    soft: 30
+  hard: 72
+  soft: 30
 monster:
-    hard: 72
-    soft: 30
+  hard: 72
+  soft: 30
 underground_water_creature:
-    hard: 72
-    soft: 30
+  hard: 72
+  soft: 30
 water_ambient:
-    hard: 72
-    soft: 30
+  hard: 72
+  soft: 30
 water_creature:
-    hard: 72
-    soft: 30
+  hard: 72
+  soft: 30
 ```
 
 此项可以调整各种生物的消失范围(方块为单位)。降低这些值可以更快地清除远离玩家的生物。
 你应该将 soft 软距离设置为约`30`，然后将 hard 硬性距离设置的稍微大于 simulation-distance，这样当玩家刚刚跑出区块时，生物不会立即消失
 (你可以一并调整 [paper-world configuration] 中的`delay-chunk-unloads-by`)。当一个生物离开了 hard 距离，该生物会立刻消失。
-当一个生物处于 soft 和 hard 距离之间，该生物将有概率消失。 你的 hard 距离应该大于 soft 距离。你应该根据模拟距离调整此项：`(simulation-distance * 16) + 8`。 此项还可能造成玩家经过后，区块不卸载的情况(因为生物还没消失)。
+当一个生物处于 soft 和 hard 距离之间，该生物将有概率消失。 你的 hard 距离应该大于 soft
+距离。你应该根据模拟距离调整此项：`(simulation-distance * 16) + 8`。 此项还可能造成玩家经过后，区块不卸载的情况(
+因为生物还没消失)。
 
 ### 碰撞箱
 
@@ -559,7 +340,8 @@ water_creature:
 
 :::
 
-覆盖 [spigot.yml] 中的同名项。它让你决定一个实体可以同时处理多少次碰撞。`0`将导致无法推动其他实体，包括玩家。`2`应该可以处理大部分情况。 值得注意的是，这将会破坏 maxEntityCramming gamerule 也就是生物堆叠窒息。
+覆盖 [spigot.yml] 中的同名项。它让你决定一个实体可以同时处理多少次碰撞。`0`将导致无法推动其他实体，包括玩家。`2`应该可以处理大部分情况。
+值得注意的是，这将会破坏 maxEntityCramming gamerule 也就是生物堆叠窒息。
 
 #### fix-climbing-bypassing-cramming-rule
 
@@ -577,7 +359,8 @@ water_creature:
 
 `推荐值: true`
 
-此项将检查速率限制为伤害超时来优化窒息检查(检查生物是否在方块内以及它们是否应该受到窒息伤害)。除非你是生电玩家，能够使用精确计时窒息杀死实体的时间，否则这种优化应该是不可能注意到的。
+此项将检查速率限制为伤害超时来优化窒息检查(检查生物是否在方块内以及它们是否应该受到窒息伤害)
+。除非你是生电玩家，能够使用精确计时窒息杀死实体的时间，否则这种优化应该是不可能注意到的。
 
 ### 实体 AI
 
@@ -593,14 +376,14 @@ water_creature:
 
 ```yaml
 推荐值:
-    entity-activation-range:
-      animals: 16
-      monsters: 24
-      raiders: 48
-      misc: 8
-      water: 8
-      villagers: 16
-      flying-monsters: 48
+  entity-activation-range:
+    animals: 16
+    monsters: 24
+    raiders: 48
+    misc: 8
+    water: 8
+    villagers: 16
+    flying-monsters: 48
 ```
 
 ##### inactive-goal-selector-throttle
@@ -627,7 +410,7 @@ dab:
   start-distance: 12
   max-tick-freq: 30
   activation-dist-mod: 7
-  blacklisted-entities: []
+  blacklisted-entities: [ ]
 ```
 
 `dab` 是什么？这是一个生物 AI 控制算法，以梯度降低远处生物的 AI 运行，因为远处生物相对不重要。
@@ -642,11 +425,11 @@ dab:
 
 不同情况下的推荐值：
 
-| 选项                | 牺牲 AI 换取性能 | 推荐 | 更接近原版 |
-| ------------------- | ---------------- | ---- | ---------- |
-| start-distance      | 8 - 10           | 12   | 20         |
-| max-tick-freq       | 30 - 40          | 20   | 10         |
-| activation-dist-mod | 7 - 8            | 7    | 6 -7       |
+| 选项                  | 牺牲 AI 换取性能 | 推荐 | 更接近原版 |
+|---------------------|------------|----|-------|
+| start-distance      | 8 - 10     | 12 | 20    |
+| max-tick-freq       | 30 - 40    | 20 | 10    |
+| activation-dist-mod | 7 - 8      | 7  | 6 -7  |
 
 #### 刷怪笼相关
 
@@ -765,16 +548,16 @@ nearest-bed-sensor: 16
 
 ```yaml
 behavior:
-    villager:
-        validatenearbypoi: 60
-        acquirepoi: 120
+  villager:
+    validatenearbypoi: 60
+    acquirepoi: 120
 sensor:
-    villager:
-        secondarypoisensor: 80
-        nearestbedsensor: 80
-        villagerbabiessensor: 40
-        playersensor: 40
-        nearestlivingentitysensor: 40
+  villager:
+    secondarypoisensor: 80
+    nearestbedsensor: 80
+    villagerbabiessensor: 40
+    playersensor: 40
+    nearestlivingentitysensor: 40
 ```
 
 > 当 [Pufferfish's DAB](#dab) 启用时，不建议修改该项任何默认值。
@@ -808,32 +591,32 @@ sensor:
 ```yaml
 enabled: true
 items:
-      cobblestone: 300
-      netherrack: 300
-      sand: 300
-      red_sand: 300
-      gravel: 300
-      dirt: 300
-      short_grass: 300
-      pumpkin: 300
-      melon_slice: 300
-      kelp: 300
-      bamboo: 300
-      sugar_cane: 300
-      twisting_vines: 300
-      weeping_vines: 300
-      oak_leaves: 300
-      spruce_leaves: 300
-      birch_leaves: 300
-      jungle_leaves: 300
-      acacia_leaves: 300
-      dark_oak_leaves: 300
-      mangrove_leaves: 300
-      cactus: 300
-      diorite: 300
-      granite: 300
-      andesite: 300
-      scaffolding: 600
+  cobblestone: 300
+  netherrack: 300
+  sand: 300
+  red_sand: 300
+  gravel: 300
+  dirt: 300
+  short_grass: 300
+  pumpkin: 300
+  melon_slice: 300
+  kelp: 300
+  bamboo: 300
+  sugar_cane: 300
+  twisting_vines: 300
+  weeping_vines: 300
+  oak_leaves: 300
+  spruce_leaves: 300
+  birch_leaves: 300
+  jungle_leaves: 300
+  acacia_leaves: 300
+  dark_oak_leaves: 300
+  mangrove_leaves: 300
+  cactus: 300
+  diorite: 300
+  granite: 300
+  andesite: 300
+  scaffolding: 600
 ```
 
 此项可以设置指定物品消失的时间(tick 为单位)， 建议用此项替代扫地姬或 `merge-radius` 来提高性能。
@@ -945,26 +728,27 @@ items:
 
 ```yaml
 ticks-per:
-    hopper-transfer: 8
-    hopper-check: 1
+  hopper-transfer: 8
+  hopper-check: 1
 ```
 
 `hopper-transfer` 控制了漏斗多少 tick 传输一次物品；
 
 `hopper-check` 控制了漏斗一次运输多少物品。
 
-在漏斗特别多的服务器中，合理搭配`hopper-transfer` 和 `hopper-check` 可以降低漏斗占用。(但可能略微影响一些机器的行为，如分类机)
+在漏斗特别多的服务器中，合理搭配`hopper-transfer` 和 `hopper-check` 可以降低漏斗占用。(
+但可能略微影响一些机器的行为，如分类机)
 
 另外，使用更高的 `hopper-check` 能够增加漏斗在单位时间的物品传输效率，
 
 降低同样数量物品的漏斗使用时间，进一步降低漏斗占用。
 
 | 漏斗速度 | 服务器占用 | hopper-transfer | hopper-check |
-| -------- | ---------- | --------------- | ------------ |
-| 50%      | 中低       | 16              | 1            |
-| 100%     | 中高       | 8               | 1            |
-| 100%     | 低         | 16              | 2            |
-| 200%     | 中         | 8               | 2            |
+|------|-------|-----------------|--------------|
+| 50%  | 中低    | 16              | 1            |
+| 100% | 中高    | 8               | 1            |
+| 100% | 低     | 16              | 2            |
+| 200% | 中     | 8               | 2            |
 
 ---
 
