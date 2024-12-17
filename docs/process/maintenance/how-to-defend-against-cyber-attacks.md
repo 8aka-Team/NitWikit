@@ -132,7 +132,7 @@ Minecraft JAVA 服务端采用 TCP 作为通信协议，所以你可能会遭受
 
 :::tip
 
-可以通过 `service iptables status` 命令查看 Linux 系统的防火墙开启情况
+Linux 可以通过 `service iptables status` 命令查看 Linux 系统的防火墙开启情况
 
 :::
 
