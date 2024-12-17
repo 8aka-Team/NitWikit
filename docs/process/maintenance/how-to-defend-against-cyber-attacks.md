@@ -121,16 +121,14 @@ Minecraft JAVA 服务端采用 TCP 作为通信协议，所以你可能会遭受
 
 #### 如何开启
 
-##### Windows：
-
-- 打开 Windows Defender 防火墙（Win + R 输入 `Firewall.cpl`）
-- 点击侧边栏中的 启用或关闭 Windows Defender 防火墙
-- 把专用网络设置和公用网络设置都调成“启用 Windows Defender 防火墙”，
+- Windows：
+    - 打开 Windows Defender 防火墙（Win + R 输入 `Firewall.cpl`）
+    - 点击侧边栏中的 启用或关闭 Windows Defender 防火墙
+    - 把专用网络设置和公用网络设置都调成“启用 Windows Defender 防火墙”，
 去掉“阻止所有传入连接，包括位于允许列表中的应用”的勾，
 勾上如果“Windows Defender 防火墙阻止新应用时通知我”。
-- 点击下面的确定
-
-##### Linux
+    - 点击下面的确定
+- Linux：执行命令 `service iptables start` 开启防火墙
 
 :::tip
 
@@ -138,7 +136,7 @@ Minecraft JAVA 服务端采用 TCP 作为通信协议，所以你可能会遭受
 
 :::
 
-执行命令 `service iptables start` 开启防火墙
+
 
 #### 注意事项
 
