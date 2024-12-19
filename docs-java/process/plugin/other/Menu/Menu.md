@@ -8,7 +8,7 @@ sidebar_position: 2
 
 以功能从弱到强排序
 
-ChestCommands < DuluxeMenus < TrMenu
+ChestCommands < DeluxeMenus < TrMenu
 
 ## 不要问有没有可视化编辑器
 
