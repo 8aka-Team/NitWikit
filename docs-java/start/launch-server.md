@@ -129,6 +129,13 @@ set http_proxy=http://127.0.0.1:7890
 set https_proxy=http://127.0.0.1:7890
 ```
 
+如果在 Linux 下则是这样的：
+
+```bash
+export HTTP_PROXY=http://127.0.0.1:7890
+export HTTPS_PROXY=http://127.0.0.1:7890
+```
+
 其中 `7980` 是你的科学上网软件设置的端口，若有不同，请替换。
 
 注：输入之后仅对这个命令行窗口有效，`开启新的 / 关闭它` 之后要重新输入。
