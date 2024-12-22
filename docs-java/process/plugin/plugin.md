@@ -15,7 +15,6 @@ sidebar_position: 1
 - [颜色代码](./more/color-message.md) - 改变服务器中文本的颜色
 - [什么是乱码](https://nitwikit.yizhan.wiki/start/basic/what-is-messy-code) - 了解文本文件中的字符有时为什么会变得奇奇怪怪。
 
-
 ## 基本操作
 
 ### 重载插件

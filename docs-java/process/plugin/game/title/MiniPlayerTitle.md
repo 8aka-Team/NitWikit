@@ -46,6 +46,7 @@ Mail: [zhangyuheng@lunadeer.cn](mailto:zhangyuheng@lunadeer.cn)
 QQ群：309428300
 
 ## 链接
+
 :::info
 
 `PaperMC` https://hangar.papermc.io/zhangyuheng/MiniPlayerTitle

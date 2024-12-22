@@ -71,14 +71,14 @@ MiniMessage 的实质是一个叫 Adventure 的库，这是它的 [文档](https
 | Minestom | Build 7494725                      | 内容有点杂，详见[minestom wiki](https://wiki.minestom.net/feature/adventure) |
 | Fabric   | `adventure-platform-fabric` 5.3.0* | 虽然不是一个东西(?)，但是体验是一样的                                                 |
 
-*详情可以参阅 [Adventure 本机支持](https://docs.advntr.dev/platform/native.html)*
+_详情可以参阅 [Adventure 本机支持](https://docs.advntr.dev/platform/native.html)_
 
 :::note
 
 平台原生支持 ≠ 使用此平台开发的模组/插件支持！！！
 
 举个例子，仔细观察上述列表，你会发现bukkit并没有支持 MiniMessage ，所以你会发现大部分基于 Bukkit 开发的插件没有 MiniMessage 这一功能(如 EssentialsX)，
-*除非他们自身引入了 Adventure 库(如PlaceholderAPI)。*
+_除非他们自身引入了 Adventure 库(如PlaceholderAPI)。_
 
 而基于 Paper 开发的大部分插件都引入了这一功能，所以不要发现一个新奇玩意就到处瞎套。
 

@@ -12,9 +12,11 @@ sidebar_position: 1
 ![201](./imgs/2-1.png)
 
 ### [pip源](https://pypi.org/search/?q=endstone) （EndStone绝大多数插件都在这里发布了）
+
 ![202](./imgs/2-2.png)
 
 ### [Bedrinth下载站](https://bedrinth.com/?platform=endstone) （除了pip外另一个比较知名的下载源，网速较慢，不太推荐）
+
 ![203](./imgs/2-3.png)
 
 ## 第二步、如何安装？
@@ -43,7 +45,8 @@ whl格式本质上是一个压缩包，里面包含了py文件，以及经过编
 
 #### 第一步、下载插件
 
-在MineBBS以及其他论坛或者QQ群等渠道下载的文件，你可能会获得 
+在MineBBS以及其他论坛或者QQ群等渠道下载的文件，你可能会获得
+
 - whl 文件
 - 或者 zip一类 压缩包
 
@@ -58,6 +61,7 @@ whl格式本质上是一个压缩包，里面包含了py文件，以及经过编
 关闭服务器（**别告诉我你不会，小心我【语言激动，已省略】**）
 
 ##### 如果是 whl 文件
+
 1、打开 bedrock_server 文件夹，你会惊奇的发现：什么时候多了个plugins文件夹？！！
 
 ![205](./imgs/2-5.png)
