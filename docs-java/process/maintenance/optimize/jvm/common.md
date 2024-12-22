@@ -115,7 +115,7 @@ java -Xlog:gc+init -XX:+UseTransparentHugePages -Xmx1g -version
 -Dpaper.playerconnection.keepalive=60
 ```
 
-如果你的网络不好，可以适当延长 keepalive 时间，打开[alternate-keepalive](/docs-java/process/maintenance/optimize/go.md#心跳连接)
+如果你的网络不好，可以适当延长 keepalive 时间，打开[alternate-keepalive](/docs-java/process/maintenance/optimize/go/go.md#心跳连接)
 
 ## 禁用文件夹遍历和符号链接验证
 
