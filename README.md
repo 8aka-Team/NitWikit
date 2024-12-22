@@ -208,6 +208,13 @@
                 </a>
             </td>
             <td align="center">
+                <a href="https://github.com/serverbread-DEV">
+                    <img src="https://avatars.githubusercontent.com/u/176056410?v=4" width="50;" alt="serverbread-DEV"/>
+                    <br />
+                    <sub><b>SB-Reborn</b></sub>
+                </a>
+            </td>
+            <td align="center">
                 <a href="https://github.com/FallenCrystal">
                     <img src="https://avatars.githubusercontent.com/u/71176602?v=4" width="50;" alt="FallenCrystal"/>
                     <br />
@@ -219,13 +226,6 @@
                     <img src="https://avatars.githubusercontent.com/u/107293677?v=4" width="50;" alt="MSWorkerl"/>
                     <br />
                     <sub><b>MSWorkerl</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/serverbread-DEV">
-                    <img src="https://avatars.githubusercontent.com/u/176056410?v=4" width="50;" alt="serverbread-DEV"/>
-                    <br />
-                    <sub><b>SB-Reborn</b></sub>
                 </a>
             </td>
 		</tr>
