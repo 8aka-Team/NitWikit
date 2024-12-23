@@ -1,6 +1,6 @@
-> [!CAUTION]分支说明
-这是存在于 NitWikit 仓库的独立分支。<br>
-该分支用于探索笨蛋 wiki 的 VuePress 实现，并定期从 main 分支拉取文档内容。
+> [!CAUTION]
+> 这是存在于 NitWikit 仓库的独立分支。<br>
+> 该分支用于探索笨蛋 wiki 的 VuePress 实现，并定期从 main 分支拉取文档内容。
 
 
 <div align="center">
