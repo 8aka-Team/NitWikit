@@ -242,6 +242,7 @@ cf-cname.xingpingcn.top 不需要开启小黄云
 namelessmc的配置要求原文要求的是
 
 PHP 7.4、8.0或8.1（推荐），具有以下扩展：
+
 * php curl
 * php-exif
 * php-gd支持png和jpeg
@@ -309,6 +310,7 @@ PHP 7.4、8.0或8.1（推荐），具有以下扩展：
 如果你无法正常访问 vercel 请下载 [Watt Toolkit](https://steampp.net) 并在最下面的其他服务内勾选的加速vercel.app
 
 ### 要准备的东西
+
 * 一个 Github 账号
 * 一个邮箱
 

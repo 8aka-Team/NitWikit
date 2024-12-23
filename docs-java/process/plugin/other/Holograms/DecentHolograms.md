@@ -82,10 +82,12 @@ sidebar_position: 2
 :::
 
 ## 贡献 ![](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)
+
 ​
 欢迎提交 pr ！但对于重大的更改，请先创建一个 issues 来讨论此更改
 
 ## 构建
+
 ​
 你需要使用 JDK 8+, Gradle, Git 和 IDE 或 命令行 二选一
 
@@ -124,6 +126,7 @@ sidebar_position: 2
     </dependency>
 </dependencies>
 ```
+
 </details>
 
 <details>

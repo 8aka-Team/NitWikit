@@ -23,7 +23,6 @@ Lumina 目前在官网上不提供下载,你可以选择自己去编译,或使�
 
 [下载(1.20.6)](https://vip.123pan.cn/1821558579/Lingyi/aaa/lumina/Lumina-1.20.6-mcres.jar)
 
-
 ## DeerFolia
 
 一个专注于还原特性的分支,不会加其他的功能,更新速度快
@@ -55,4 +54,3 @@ Lumina 目前在官网上不提供下载,你可以选择自己去编译,或使�
 * [1.20.1](https://vip.123pan.cn/1821558579/Lingyi/kaiiju-paperclip-1.20.1-R0.1-SNAPSHOT-reobf.jar)
 * [1.19.4](https://dl.yizhan.wiki/plugins/kaiiju-paperclip-1.19.4-R0.1-SNAPSHOT-reobf.jar)
 * [1.19.3](https://dl.yizhan.wiki/plugins/kaiiju-paperclip-1.19.3-R0.1-SNAPSHOT-reobf.jar)
-
