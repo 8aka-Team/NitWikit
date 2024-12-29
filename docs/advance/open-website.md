@@ -364,3 +364,34 @@ PHP 7.4、8.0或8.1（推荐），具有以下扩展：
 不知为何 vercel 在构建本站文档的时候，出现了一点奇怪的错误，我尝试了其他的构建网站可是都没有问题(已解决)
 
 ### 开启 vercel 缓存
+
+开启vercel缓存很简单，只需要先创建一个名为vercel.json的文件，然后将以下代码复制进入文件内再上传到网站的根目录下，然后等待vercel自动更新部署成功就可以使用了
+
+```bash
+
+{
+    "headers": [
+      {
+        "source": "/sw.js",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=0, must-revalidate"
+          }
+        ]
+      },
+      {
+        "source": "(.*)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, s-maxage=86400, max-age=86400"
+          }, {
+            "key": "Vercel-CDN-Cache-Control",
+            "value": "max-age=3600"
+          }
+        ]
+      }
+    ]
+  }
+```
