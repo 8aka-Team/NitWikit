@@ -31,7 +31,6 @@ Repository name填 你的用户名.github.io
 如果不会git的话就勾选Add a README
 
 然后点Create repository
-![微信图片_20240916082548.png](_images/open-web-photo/xingjianxiangm.png)
 
 会直接到创建的项目主页
 
