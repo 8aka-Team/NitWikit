@@ -1,4 +1,3 @@
-![image](https://github.com/user-attachments/assets/a1bdb25c-cc42-4abd-8e67-258d47c19626)﻿---
 title: 搭建官网
 sidebar_position: 8
 ---
