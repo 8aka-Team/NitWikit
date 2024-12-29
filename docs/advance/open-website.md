@@ -36,7 +36,7 @@ Repository name填 你的用户名.github.io
 
 点Add file 会出来两个选项点Upload files
 
-![微信图片_20240916082915.png](_images/open-web-photo/add.png)
+
 
 会来到上传界面，上传你的网站源码(首页的名字要改成index)
 
