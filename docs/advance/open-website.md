@@ -1,4 +1,4 @@
-﻿---
+![image](https://github.com/user-attachments/assets/a1bdb25c-cc42-4abd-8e67-258d47c19626)﻿---
 title: 搭建官网
 sidebar_position: 8
 ---
@@ -95,6 +95,23 @@ cf-cname.xingpingcn.top 不需要开启小黄云
 添加一个类型为CNAME 名称为输入你刚刚在自定义主机名时输入的前缀 内容为cdn.你的回源域名
 
 并等待DNS记录生效，生效后就可以正常使用你的域名访问了
+
+### 3.开启 Cloudflare 缓存
+
+
+先登录[Cloudflare](https://dash.cloudflare.com/)
+
+来到面板主页之后点击进入你自己的域名，然后点击缓存-Cache Rules-创建规则
+![huanc-1](_images/open-web-photo/huanc-1.png)
+
+来到创建规则页面后点击最上面的缓存所有内容
+![huanc-2](_images/open-web-photo/huanc-2.png)
+然后添加边缘 TTL设置按照图片选择
+![huanc-3](_images/open-web-photo/huanc-3.png)
+然后添加浏览器 TTL设置按照图片选择
+![huanc-4](_images/open-web-photo/huanc-4.png)
+完成后点下面的部署，缓存就设置完成了
+
 
 ## 使用服务器搭建
 
