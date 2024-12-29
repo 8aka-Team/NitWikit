@@ -395,3 +395,22 @@ PHP 7.4、8.0或8.1（推荐），具有以下扩展：
     ]
   }
 ```
+
+## 对比
+
+开设这个对比是为了让没有服务器的建站新手更好的选择到底是使用cloudflare saas回源还是使用vercel
+
+:::warning
+
+此测试仅做参考，不代表这两个平台完全真实的测试结果
+:::
+### itdog 在线ping测试
+Cloudflare
+![cloudflare-ping](_images/open-web-photo/cloudflare-ping.png)
+vercel
+![vercel-ping](_images/open-web-photo/vercel-ping.png)
+### itdog 网站测试
+Cloudflare
+![cloudflare-test](_images/open-web-photo/cloudflare-test.png)
+vercel
+![vercel-test](_images/open-web-photo/vercel-test.png)
