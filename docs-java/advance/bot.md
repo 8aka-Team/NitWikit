@@ -5,7 +5,8 @@ sidebar_position: 10
 
 # 机器人搭建
 
-## QQ机器人
+## QQ 机器人
+
 <!--## 使用已存在的机器人插件方案
 
 :::info
@@ -15,40 +16,44 @@ sidebar_position: 10
 如果你不是专业开发者，非常推荐直接使用已存在的机器人插件实现。
 
 :::-->
+
 目前比较推荐的方案：
 
 ### [EasyBot](https://www.minebbs.com/resources/easyBot-minecraft.7918/)
 
-<!--[EasyBot MineBBS 链接](https://www.minebbs.com/resources/easyBot-minecraft.7918/)-->
+> EasyBot 是一个基于 Blazor 开发的跨平台群服互通框架,旨在优化您的游戏社区体验。  
+> 它不仅提供了消息同步功能，还具备自定义命令、绑定管理、高级权限控制以及群组互动等多种实用特性。
 
-:::warning
+- [文档](https://docs.hualib.com/) - 主页
 
-EasyBot 的更新程序貌似存在漏洞，如果突然终止或是因为某些意料之外的原因，
+- [自定义命令教程](https://docs.hualib.com/%E5%91%BD%E4%BB%A4%E5%88%97%E8%A1%A8.html) - 简单地通过自定义命令实现查看服务器 TPS，玩家数据等。
 
-在从旧版本更新到新版本后，浏览器编辑器的消息同步有概率无法显示，这种情况请删除 EasyBot *主程序* (不是插件!)的 *所有* 文件后重新安装
+- [消息同步](https://docs.hualib.com/%E6%B6%88%E6%81%AF%E5%90%8C%E6%AD%A5.html) - 教程
 
-(记得保留配置)
-
-:::
-
-<!--[EasyBot 实现账号绑定教程](https://www.yuque.com/miuxue/cgyipv/vng1gtu9wk71xtg6)
-
-EasyBot 可简单地通过自定义命令实现查看服务器TPS，玩家数据等。 [EasyBot 自定义命令教程](https://www.yuque.com/miuxue/cgyipv/vng1gtu9wk71xtg6)-->
-1. [账号绑定](https://www.yuque.com/miuxue/cgyipv/vng1gtu9wk71xtg6) - 介绍
-
-2. [自定义命令教程](https://www.yuque.com/miuxue/cgyipv/vng1gtu9wk71xtg6) - 简单地通过自定义命令实现查看服务器 TPS，玩家数据等。
-
-EasyBot 开发者目前没有撰写关于消息同步的教程，但由于网页编辑器而非配置非常容易上手，在此不做赘述。
-
-:::warning
-
-不推荐使用 EasyBot 的群组服务器内消息同步功能，使用 TrChat 等插件可以更好的实现它们。
-
-:::
+- [图片模板](https://docs.hualib.com/market/template.html) - 概念
 
 优点：配置简单，网页编辑器方便新手，轻量。
 
-缺点：功能上不如 XinxinBot 丰富。
+<details>
+  <summary>一些EasyBot功能的截图</summary>
+
+#### 宣传图
+
+![](_images/easybot.png)
+
+#### 主页
+
+![](_images/easybot_home.png)
+
+#### 服务器管理
+
+![](_images/easybot_rcon.png)
+
+#### 玩家管理
+
+![](_images/easybot_player.png)
+
+</details>
 
 ### [XinxinBot 系列](https://www.minebbs.com/threads/xinxinBotapi-qq-1-8-x-1-20-x.24540/)
 
