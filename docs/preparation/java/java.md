@@ -24,4 +24,10 @@ Java 标准类库 (rt.jar)
 
 总结: 只开服务端下载 JRE 即可，JDK 也没问题
 
+对于初学者，只需要阅读 [选择、下载和安装 Java](./choose-and-download-and-install-java.md) 部分，其余为扩展知识。
+
 </details>
+
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList />
