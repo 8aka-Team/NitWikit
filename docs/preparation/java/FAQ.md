@@ -1,6 +1,6 @@
 ---
 title: FAQ
-sidebar_position: 5
+sidebar_position: 4
 ---
 
 # FAQ
@@ -15,4 +15,4 @@ sidebar_position: 5
 
 下载 Java 时下载 `.zip` 或 `.tar.gz` 结尾的压缩包，将压缩包解压到任意位置。
 
-随后可以修改环境变量 `JAVA_HOME` 即可，如果不懂看[这篇文章](https://blog.csdn.net/MrsHorse/article/details/82695353)
+随后可以修改环境变量 `JAVA_HOME` 即可，如果不懂看 [这篇文章](https://blog.csdn.net/MrsHorse/article/details/82695353)
