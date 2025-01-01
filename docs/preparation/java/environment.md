@@ -61,6 +61,32 @@ TODO
 
 ![](./_images/environment-2.png)
 
+## 新增环境变量
+
+首先，找到你的 Java 路径，我的是 `C:\Program Files\Zulu\zulu-21\bin`。
+
+:::tip
+
+你的路径应是包含 “**java.exe**” 文件的文件夹，此处为 “**bin**” 文件夹。
+
+:::
+
+点击 “**新建**”，在 2 处输入你的 Java 路径，接着回车，可以看到像 3 一样写入了。
+
+![](./_images/environment-new-1.png)
+
+接着 **重新打开** 一个终端。
+
+:::warning
+
+注意，这里一定要重新打开一个终端来刷新环境变量。
+
+:::
+
+重新打印 Java 版本。
+
+![](./_images/environment-new-2.png)
+
 ## 优先级
 
 可以看到，在名为 “**编辑环境变量**” 的界面中，我安装包安装的两个 Java（zulu 8 和 zulu 21）都有环境变量（红框部分）。
