@@ -103,4 +103,4 @@ sidebar_position: 7
 
 ### 错误示范
 
-![wrong1.jpeg](_image/help-others/wrong1.jpeg)
+![wrong1.jpg](_images/help-others/wrong1.jpg)
