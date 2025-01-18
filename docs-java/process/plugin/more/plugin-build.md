@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/a742a03b-6a4e-4fd1-8d02-df1d73caafd4)---
+---
 title: 构建插件
 sidebar_position: 6
 ---
