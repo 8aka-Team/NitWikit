@@ -1,513 +1,349 @@
----
+![image](https://github.com/user-attachments/assets/a742a03b-6a4e-4fd1-8d02-df1d73caafd4)---
 title: 构建插件
 sidebar_position: 6
 ---
 
 # 构建插件
 
-## 构建工具安装（使用idea请直接跳过此步骤）
+## 概述
 
-### Gradle 安装方法 
+在开始构建插件之前,让我们先了解一些基础知识:
 
-#### Windows 系统下安装 Gradle
-1. **下载 Gradle**
-   - 访问 [Gradle 官网下载页面](https://gradle.org/releases/)
-   - 下载最新的二进制版本（binary-only）zip 文件
+### 什么是构建?
+构建就是将源代码转换成可以运行的插件(jar文件)的过程。就像把散落的零件组装成一个完整的机器一样。
 
-2. **解压文件**
-   - 将下载的 zip 文件解压到指定目录，如 `C:\Gradle`
-   - 解压后的目录结构应类似：`C:\Gradle\gradle-x.x.x`
+### 构建工具选择
+目前主流的构建工具有两种:
+- **Maven**: 更传统,配置简单,学习曲线平缓
+- **Gradle**: 更现代,功能强大,但配置相对复杂
 
-3. **配置环境变量**
-   - 右键 "此电脑" → "属性" → "高级系统设置" → "环境变量"
-   - 在系统变量中新建 `GRADLE_HOME`，值为解压目录（如 `C:\Gradle\gradle-x.x.x`）
-   - 编辑系统变量 `Path`，添加 `%GRADLE_HOME%\bin`
+**如何选择?**
+- 如果你是新手,建议使用 Maven
+- 如果项目本身使用 Gradle,就继续用 Gradle
+- 如果你需要更灵活的构建配置,可以选择 Gradle
 
-4. **验证安装**
-   - 打开命令提示符（cmd）
-   - 输入 `gradle -v` 检查版本信息
+### 构建方式选择
+有三种主要的构建方式:
+1. **IDEA**: 最推荐的方式,图形界面操作,适合所有人
+2. **终端**: 命令行操作,适合熟悉命令行的用户
+3. **GitHub Actions**: 自动构建,适合需要频繁更新的项目
 
-#### macOS 系统下安装 Gradle
-1. **使用 Homebrew 安装（推荐）**
-   ```bash
-   brew install gradle
-   ```
+## 查看和理解源码
 
-2. **手动安装**
-   - 下载 Gradle 二进制包
-   - 解压到指定目录：
-     ```bash
-     mkdir /opt/gradle
-     unzip -d /opt/gradle gradle-x.x.x-bin.zip
-     ```
-   - 配置环境变量，编辑 `~/.zshrc` 或 `~/.bash_profile`：
-     ```bash
-     export GRADLE_HOME=/opt/gradle/gradle-x.x.x
-     export PATH=$PATH:$GRADLE_HOME/bin
-     ```
-   - 使环境变量生效：
-     ```bash
-     source ~/.zshrc  # 或 source ~/.bash_profile
-     ```
+在开始构建之前,我们需要先了解项目结构:
 
-#### Linux 系统下安装 Gradle
-1. **使用包管理器（Ubuntu/Debian）**
-   ```bash
-   sudo apt update
-   sudo apt install gradle
-   ```
+### 1. 识别构建工具
+- 如果在源码目录下看到 `pom.xml` 文件 → 使用 Maven
+- 如果在源码目录下看到 `build.gradle` 文件 → 使用 Gradle
+- 如果在源码目录下看到 `gradlew` 或 `gradlew.bat` → 使用 Gradle Wrapper
 
-2. **手动安装**
-   ```bash
-   # 下载 Gradle
-   wget https://services.gradle.org/distributions/gradle-x.x.x-bin.zip
-   
-   # 解压到 /opt/gradle
-   sudo mkdir /opt/gradle
-   sudo unzip -d /opt/gradle gradle-x.x.x-bin.zip
-   
-   # 配置环境变量
-   echo 'export GRADLE_HOME=/opt/gradle/gradle-x.x.x' >> ~/.bashrc
-   echo 'export PATH=$PATH:$GRADLE_HOME/bin' >> ~/.bashrc
-   source ~/.bashrc
-   ```
-
-### Maven 安装方法
-
-#### Windows 系统下安装 Maven
-1. **下载 Maven**
-   - 访问 [Maven 官网下载页面](https://maven.apache.org/download.cgi)
-   - 下载最新的二进制版本（Binary zip archive）
-
-2. **解压文件**
-   - 将下载的 zip 文件解压到指定目录，如 `C:\Maven`
-   - 解压后的目录结构应类似：`C:\Maven\apache-maven-x.x.x`
-
-3. **配置环境变量**
-   - 右键 "此电脑" → "属性" → "高级系统设置" → "环境变量"
-   - 在系统变量中新建 `MAVEN_HOME`，值为解压目录
-   - 编辑系统变量 `Path`，添加 `%MAVEN_HOME%\bin`
-
-4. **验证安装**
-   - 打开命令提示符（cmd）
-   - 输入 `mvn -v` 检查版本信息
-
-#### macOS 系统下安装 Maven
-1. **使用 Homebrew 安装（推荐）**
-   ```bash
-   brew install maven
-   ```
-
-2. **手动安装**
-   - 下载 Maven 二进制包
-   - 解压到指定目录：
-     ```bash
-     sudo mkdir /opt/maven
-     sudo tar xf apache-maven-*.tar.gz -C /opt/maven
-     ```
-   - 配置环境变量，编辑 `~/.zshrc` 或 `~/.bash_profile`：
-     ```bash
-     export MAVEN_HOME=/opt/maven/apache-maven-x.x.x
-     export PATH=$PATH:$MAVEN_HOME/bin
-     ```
-   - 使环境变量生效：
-     ```bash
-     source ~/.zshrc  # 或 source ~/.bash_profile
-     ```
-
-#### Linux 系统下安装 Maven
-1. **使用包管理器（Ubuntu/Debian）**
-   ```bash
-   sudo apt update
-   sudo apt install maven
-   ```
-
-2. **手动安装**
-   ```bash
-   # 下载 Maven
-   wget https://downloads.apache.org/maven/maven-3/3.x.x/binaries/apache-maven-3.x.x-bin.tar.gz
-   
-   # 解压到 /opt/maven
-   sudo mkdir /opt/maven
-   sudo tar xf apache-maven-*.tar.gz -C /opt/maven
-   
-   # 配置环境变量
-   echo 'export MAVEN_HOME=/opt/maven/apache-maven-x.x.x' >> ~/.bashrc
-   echo 'export PATH=$PATH:$MAVEN_HOME/bin' >> ~/.bashrc
-   source ~/.bashrc
-   ```
-
-### 配置镜像源（可选但推荐）
-
-#### Maven 配置国内镜像
-1. 找到 Maven 的 `settings.xml` 文件：
-   - Windows: `%USER_HOME%\.m2\settings.xml`
-   - Linux/macOS: `~/.m2/settings.xml`
-
-2. 添加阿里云镜像配置：
-```xml
-<mirrors>
-    <mirror>
-        <id>aliyun</id>
-        <mirrorOf>central</mirrorOf>
-        <name>阿里云公共仓库</name>
-        <url>https://maven.aliyun.com/repository/public</url>
-    </mirror>
-</mirrors>
+### 2. 了解项目结构
+```
+项目根目录
+├── src/                    # 源代码目录
+│   ├── main/java          # Java 代码
+│   └── main/resources     # 配置文件
+├── pom.xml                # Maven 配置文件
+└── build.gradle           # Gradle 配置文件
 ```
 
-#### Gradle 配置国内镜像
-在项目的 `build.gradle` 文件中添加：
-```groovy
-repositories {
-    maven {
-        url 'https://maven.aliyun.com/repository/public'
-    }
-    mavenCentral()
-}
-```
+### 3. 检查依赖配置
+- Maven: 查看 `pom.xml` 中的 `<dependencies>` 部分
+- Gradle: 查看 `build.gradle` 中的 `dependencies` 块
 
-## 终端
+## 使用 IDEA 构建(推荐方式)
 
-### Gradle 构建方法
+IDEA 是最友好的构建方式,特别适合新手。
 
-1. **打开终端**
-   - Windows: 按 `Win + R`，输入 `cmd` 打开命令提示符
-   - macOS/Linux: 打开终端应用
-
-2. **进入项目目录**
-   ```bash
-   cd 你的项目路径
-   ```
-
-3. **执行构建命令**
-   - Windows:
-     ```bash
-     gradlew.bat clean build
-     ```
-   - macOS/Linux:
-     ```bash
-     ./gradlew clean build
-     ```
-
-4. **查找构建结果**
-   - 构建完成后，插件 jar 文件将位于 `build/libs` 目录下
-   - 通常文件名格式为 `项目名-版本号.jar`
-
-注意事项：
-- 首次运行可能需要下载 Gradle，请保持网络连接
-- 如果遇到权限问题，Linux/macOS 用户可能需要执行：
-  ```bash
-  chmod +x ./gradlew
-  ```
-- 如果需要跳过测试，可以使用：
-  ```bash
-  ./gradlew clean build -x test
-  ```
-
-### Maven 构建方法
-
-1. **确保安装了 Maven**
-   - 检查是否安装：`mvn -version`
-   - 如未安装，请先从 [Maven官网](https://maven.apache.org/download.cgi) 下载安装
-
-2. **进入项目目录**
-   ```bash
-   cd 你的项目路径
-   ```
-
-3. **执行构建命令**
-   ```bash
-   mvn clean package
-   ```
-
-4. **查找构建结果**
-   - 构建完成后，插件 jar 文件将位于 `target` 目录下
-   - 通常文件名格式为 `项目名-版本号.jar`
-
-注意事项：
-- 首次运行会下载依赖，请保持网络连接
-- 如果需要跳过测试，可以使用：
-  ```bash
-  mvn clean package -DskipTests
-  ```
-- 如果需要同时跳过测试编译，使用：
-  ```bash
-  mvn clean package -Dmaven.test.skip=true
-  ```
-
-常见问题解决：
-1. **构建失败**
-   - 检查 `pom.xml` 或 `build.gradle` 文件配置是否正确
-   - 确保所有依赖都能正常下载
-   - 查看错误信息，根据提示修复问题
-
-2. **依赖下载慢**
-   - 可以考虑使用国内镜像源
-   - Maven: 修改 settings.xml
-   - Gradle: 修改 build.gradle 中的 repositories
-
-3. **Java 版本问题**
-   - 确保使用了正确的 Java 版本
-   - 检查 JAVA_HOME 环境变量是否正确设置
-
-## IDEA
-
-### IntelliJ IDEA 的下载与安装
-
-1. 访问 [IntelliJ IDEA 官网](https://www.jetbrains.com/idea/download/) 下载
-2. 选择社区版（Community Edition，免费）或旗舰版（Ultimate，付费）
-3. 下载完成后运行安装程序，按照提示完成安装
-
-### 使用 IDEA 构建插件
-
-#### 从 GitHub 克隆项目
+### 1. 导入项目
 1. 打开 IDEA
-2. 点击 "Get from VCS"（从版本控制获取）
-![从VCS获取](https://docs.superiormc.cn/~gitbook/image?url=https%3A%2F%2F400373137-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FFlP4xP4pRQ4Bt9AMcMkX%252Fuploads%252FxGCXbpHQGXg03LA6JZXG%252Fimage.png%3Falt%3Dmedia%26token%3D1a1d8928-c7c7-4b00-a278-d202b6c3cbbe&width=300&dpr=2&quality=100&sign=3cb698d8&sv=2)
-3. 在 URL 栏输入 GitHub 项目地址
-4. 点击 Clone 克隆项目
+2. 选择 "Open" 或 "Get from VCS"(如果从 GitHub 克隆)![image](https://github.com/user-attachments/assets/1ce19e32-dffd-45d2-9b31-887692d7baf0)
+3. 选择或输入项目路径
+4. ![image](https://github.com/user-attachments/assets/eda05fa1-8830-4de7-a2c1-4ee8eddc21e8)
 
-#### 等待项目初始化
-- IDEA 会自动开始下载依赖并构建项目
-- 如果没有自动开始，可以点击右侧 Maven 或 Gradle 工具栏进行构建
-![构建项目](https://docs.superiormc.cn/~gitbook/image?url=https%3A%2F%2F400373137-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FFlP4xP4pRQ4Bt9AMcMkX%252Fuploads%252FWFUJ1DWEdVunjScQZnCq%252FInked%25E5%25B1%258F%25E5%25B9%2595%25E6%2588%25AA%25E5%259B%25BE%25202023-04-08%2520183921.jpg%3Falt%3Dmedia%26token%3D235735c4-0634-4050-b47d-e7e91db96189&width=768&dpr=4&quality=100&sign=be40d02e&sv=2)
-- 等待右下角进度条完成
+5. 等待 IDEA 导入完成
 
-#### 处理依赖问题
-如果下载依赖出现问题，可以尝试以下解决方案：
+### 2. 处理依赖问题
+如果遇到依赖下载失败:
+1. 添加国内镜像源(推荐阿里云)
+2. 确保网络连接正常
+3. 必要时配置代理
 
-1. **使用镜像源**
-   - Maven: 参考上文的 Maven 镜像配置
-   - Gradle: 参考上文的 Gradle 镜像配置
+### 3. 执行构建
+1. **Maven 项目**:
+   - 打开右侧 Maven 工具窗口
+   - 点击 `clean`(清理旧文件)
+   - 点击 `package`(打包)
+     ![image](https://github.com/user-attachments/assets/996e072f-c3cb-4dc0-8002-5741fdc82d8c)
+     ![image](https://github.com/user-attachments/assets/64e94828-2273-4acb-9258-3608e3c6d046)
+   - 在 `target` 文件夹找到生成的 jar 文件
 
-2. **使用代理**
-   - 如果使用 Clash，需要开启 TUN 模式
-   - 在 IDEA 设置中配置代理（Settings → HTTP Proxy）
+2. **Gradle 项目**:
+   - 打开右侧 Gradle 工具窗口
+   - 点击 `clean`(清理旧文件)
+   - 点击 `build`(构建)
+     ![image](https://github.com/user-attachments/assets/86aa0306-61e4-4008-87b0-f4917ecff4a3)
+     ![image](https://github.com/user-attachments/assets/57734018-0dd1-4ce6-91dd-e9a27a0c9555)
+   - 在 `build/libs` 文件夹找到生成的 jar 文件
 
-#### 构建项目
+## 使用终端构建
 
-1. **使用 Maven 构建**
-   - 点击右侧 Maven 工具栏
-   - 展开 Lifecycle
-   - 依次点击 clean 和 package
-   - 构建完成后在 target 目录找到生成的 jar 文件
+在某些情况下,你可能需要使用终端构建:
+- 服务器环境下没有图形界面
+- 需要编写自动化脚本
+- IDEA 出现问题时的备选方案
 
-2. **使用 Gradle 构建**
-   - 点击右侧 Gradle 工具栏
-   - 展开 build
-   - 依次点击 clean 和 build
-   - 构建完成后在 build/libs 目录找到生成的 jar 文件
+### Maven 命令
+```bash
+# 进入项目目录
+cd 项目路径
 
-3. **使用运行配置构建**
-   - 点击顶部工具栏的 "添加配置"（Add Configuration）
-   ![添加配置](https://docs.superiormc.cn/~gitbook/image?url=https%3A%2F%2F400373137-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FFlP4xP4pRQ4Bt9AMcMkX%252Fuploads%252FTWIOOdAHWmGlYp4rpwm9%252F%25E5%25B1%258F%25E5%25B9%2595%25E6%2588%25AA%25E5%259B%25BE%25202023-04-08%2520185042.png%3Falt%3Dmedia%26token%3D5cda798d-2496-4b69-8758-5960a6cf6130&width=768&dpr=4&quality=100&sign=788ae3aa&sv=2)
-   - 点击左上角 + 号
-   - Maven 项目选择 Maven，Gradle 项目选择 Gradle
-   - 在 Command line 中：
-     - Maven 项目输入：`clean package`
-     - Gradle 项目输入：`clean build`
-   - 点击确定保存配置
-   - 点击运行按钮开始构建
-   - 打包完成![打包完成](https://docs.superiormc.cn/~gitbook/image?url=https%3A%2F%2F400373137-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FFlP4xP4pRQ4Bt9AMcMkX%252Fuploads%252F0w62rEOPvZDt0ewH5os6%252F%25E5%25B1%258F%25E5%25B9%2595%25E6%2588%25AA%25E5%259B%25BE%25202023-04-08%2520185206.png%3Falt%3Dmedia%26token%3D80955d55-1bd9-4d9e-b0b2-c683342dc7d4&width=768&dpr=4&quality=100&sign=9a2a5dbf&sv=2)
-   - 在 OutPut 中可以看到构建结果
-
-### 添加本地依赖
-
-如果项目需要本地 jar 包作为依赖，可以按照以下步骤操作：
-
-#### Maven 项目
-1. 在项目根目录创建 `libs` 文件夹
-2. 将依赖的 jar 文件放入该文件夹
-3. 在 `pom.xml` 中添加依赖：
-```xml
-<dependency>
-    <groupId>插件组织名</groupId>
-    <artifactId>插件名称</artifactId>
-    <version>版本号</version>
-    <scope>system</scope>
-    <systemPath>${project.basedir}/libs/插件文件名.jar</systemPath>
-</dependency>
+# 执行构建
+mvn clean package
 ```
 
-#### Gradle 项目
-1. 在项目根目录创建 `libs` 文件夹
-2. 将依赖的 jar 文件放入该文件夹
-3. 在 `build.gradle` 中添加：
-```groovy
-dependencies {
-    compileOnly fileTree(dir: 'libs', include: ['*.jar'])
-}
+### Gradle 命令
+```bash
+# 进入项目目录
+cd 项目路径
+
+# Windows
+gradlew.bat clean build
+
+# Linux/macOS
+./gradlew clean build
 ```
 
-### 常见问题解决
+## 使用 GitHub Actions 自动构建
 
-1. **项目导入失败**
-   - 检查 JDK 版本是否正确
-   - 确保网络连接正常
-   - 尝试使用镜像源或代理
+GitHub Actions 是 GitHub 提供的自动化工具。简单来说,它就像一个机器人,可以帮你自动完成构建工作。每当你更新代码时,它都会自动帮你构建新的插件文件。
 
-2. **构建失败**
-   - 查看 IDEA 底部的 "Build" 或 "Problems" 窗口查看具体错误
-   - 检查依赖配置是否正确
-   - 确保所有本地依赖都已正确添加
+### 适用场景
+- 需要频繁更新插件
+- 多人协作开发
+- 想要自动化发布流程
+- 不想每次都手动构建
 
-3. **运行配置问题**
-   - 确保选择了正确的构建工具（Maven/Gradle）
-   - 检查命令行参数是否正确
-   - 验证 JDK 配置是否正确
+### 配置步骤
 
-4. **依赖冲突**
-   - 检查 `pom.xml` 或 `build.gradle` 中的依赖版本
-   - 使用 IDEA 的依赖分析工具查看冲突
-   - 必要时手动排除冲突的依赖
+1. **创建工作流文件**
+   - 在你的项目中创建这个目录: `.github/workflows/`
+   - 在该目录下创建文件: `build.yml`
+   - 可以直接在 GitHub 网站上操作:
+     1. 打开你的项目
+     2. 点击 "Actions" 标签
+     3. 点击 "New workflow"
+     4. 选择 "set up a workflow yourself"
 
-## GitHub Action
+2. **配置构建流程**
+   将以下内容复制到 `build.yml` 文件中:
+   ```yaml
+   # 工作流名称
+   name: Build Plugin
+   
+   # 触发条件
+   on:
+     push:
+       branches: [ main ]    # 当推送代码到 main 分支时触发
+     pull_request:
+       branches: [ main ]    # 当有人提交 pull request 到 main 分支时触发
+     release:
+       types: [created]      # 当创建新的发布版本时触发
+   
+   # 具体任务
+   jobs:
+     build:
+       runs-on: ubuntu-latest    # 使用 Ubuntu 系统运行
+       
+       steps:
+       # 第一步：下载代码
+       - name: 下载代码
+         uses: actions/checkout@v3
+       
+       # 第二步：设置 Java 环境
+       - name: 设置 Java
+         uses: actions/setup-java@v3
+         with:
+           java-version: '17'    # 使用 Java 17，可以根据需要修改
+           distribution: 'temurin'
+           
+       # 第三步：构建项目
+       - name: 使用 Maven 构建
+         run: mvn clean package    # 如果是 Maven 项目使用这个
+         # 如果是 Gradle 项目，使用：
+         # run: ./gradlew build
+         
+       # 第四步：上传构建文件
+       - name: 上传构建文件
+         uses: actions/upload-artifact@v3
+         with:
+           name: Plugin    # 文件名
+           path: target/*.jar    # Maven项目用这个路径
+           # Gradle项目用：build/libs/*.jar
+   ```
 
-GitHub Action 可以帮助我们自动构建插件。每次推送代码或创建新的发布时，它都会自动构建并生成插件文件。
+3. **添加自动发布配置**
+   如果你想在发布新版本时自动附加构建文件,需要在 `build.yml` 文件的最后添加以下内容:
+   ```yaml
+   # 第五步：发布版本（只在创建新版本时运行）
+   - name: 发布版本
+     if: startsWith(github.ref, 'refs/tags/')    # 当创建新标签时触发
+     uses: softprops/action-gh-release@v1
+     with:
+       files: target/*.jar    # Maven项目用这个
+       # Gradle项目用：build/libs/*.jar
+     env:
+       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # 使用 GitHub 自动提供的 token
+   ```
 
-### 配置方法
+   **配置说明:**
+   - `if: startsWith(github.ref, 'refs/tags/')`: 表示只在创建新标签(tag)时才执行这一步
+   - `files`: 指定要上传的文件
+   - `GITHUB_TOKEN`: GitHub 会自动提供这个 token,用于验证权限
 
-1. 在项目根目录创建 `.github/workflows` 文件夹
-2. 在该文件夹中创建 `build.yml` 文件（文件名可自定义）
+### 发布新版本的完整步骤
 
-#### Maven 项目配置
-```yaml
-name: Java CI with Maven
+1. **准备发布**
+   - 确保代码已经完成修改并测试
+   - 确保所有更改都已提交到 GitHub
 
-on:
-  push:
-    branches: [ "main" ]  # 可根据需要修改分支名
-  pull_request:
-    branches: [ "main" ]
-  release:
-    types: [created]  # 创建新的发布时触发
+2. **创建新版本**
+   1. 打开你的 GitHub 项目页面
+   2. 点击右侧的 "Releases"
+   3. 点击 "Create a new release"
+   4. 在 "Choose a tag" 中输入版本号(例如: `v1.0.0`)
+      - 如果标签不存在,会自动创建
+      - 版本号建议使用 `v` 开头,如 `v1.0.0`, `v1.0.1`
+   5. 在 "Release title" 中输入版本标题
+   6. 在描述框中详细写明:
+      - 新增了什么功能
+      - 修复了什么问题
+      - 有什么重要变化
+   7. 如果是测试版本,可以勾选 "This is a pre-release"
+   8. 点击 "Publish release" 发布
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
+3. **等待自动构建**
+   1. 发布后,GitHub Actions 会自动开始构建
+   2. 点击项目顶部的 "Actions" 标签查看进度
+   3. 等待构建完成(通常需要 3-5 分钟)
 
-    steps:
-    - uses: actions/checkout@v3
-    
-    - name: Set up JDK
-      uses: actions/setup-java@v3
-      with:
-        java-version: '17'  # 根据项目需求修改 Java 版本
-        distribution: 'temurin'
-        cache: maven
-        
-    - name: Build with Maven
-      run: mvn clean package
-      
-    - name: Upload artifact
-      uses: actions/upload-artifact@v3
-      with:
-        name: Plugin-JAR
-        path: target/*.jar
-```
+4. **确认发布结果**
+   1. 返回 "Releases" 页面
+   2. 找到你刚才发布的版本
+   3. 检查是否已自动添加了构建好的插件文件
+   4. 文件名通常是 `项目名-版本号.jar`
 
-#### Gradle 项目配置
-```yaml
-name: Java CI with Gradle
+5. **处理可能的问题**
+   如果构建文件没有自动添加到发布页面:
+   - 检查 Actions 页面的构建日志
+   - 确认 `build.yml` 文件配置正确
+   - 验证文件路径是否正确:
+     - Maven: `target/*.jar`
+     - Gradle: `build/libs/*.jar`
+   - 检查仓库的 Actions 权限设置
 
-on:
-  push:
-    branches: [ "main" ]  # 可根据需要修改分支名
-  pull_request:
-    branches: [ "main" ]
-  release:
-    types: [created]  # 创建新的发布时触发
+### 发布版本的注意事项
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
+1. **版本号规范**
+   - 建议遵循语义化版本规范(Semantic Versioning)
+   - 格式: `主版本号.次版本号.修订号`
+   - 例如: `v1.0.0`, `v1.1.0`, `v1.1.1`
 
-    steps:
-    - uses: actions/checkout@v3
-    
-    - name: Set up JDK
-      uses: actions/setup-java@v3
-      with:
-        java-version: '17'  # 根据项目需求修改 Java 版本
-        distribution: 'temurin'
-        
-    - name: Setup Gradle
-      uses: gradle/gradle-build-action@v2
-    
-    - name: Execute Gradle build
-      run: ./gradlew build
-      
-    - name: Upload artifact
-      uses: actions/upload-artifact@v3
-      with:
-        name: Plugin-JAR
-        path: build/libs/*.jar
-```
+2. **更新说明的写法**
+   - 使用清晰的分类,如:
+     ```
+     新增功能:
+     - 添加了xxx功能
+     - 新增了xxx选项
+     
+     问题修复:
+     - 修复了xxx问题
+     - 解决了xxx错误
+     
+     其他改动:
+     - 优化了xxx性能
+     - 更新了xxx依赖
+     ```
 
-### 自动发布配置
+3. **测试版本**
+   - 如果是测试版本,建议:
+     1. 在版本号后加上 `-beta` 或 `-alpha`
+     2. 勾选 "This is a pre-release"
+     3. 在说明中注明这是测试版本
 
-如果想在创建新的发布时自动上传构建的文件，可以添加以下步骤：
+4. **文件检查**
+   - 发布完成后检查:
+     1. 文件是否成功上传
+     2. 文件大小是否正常
+     3. 文件是否可以下载
 
-```yaml
-    - name: Upload to release
-      if: github.event_name == 'release'
-      uses: softprops/action-gh-release@v1
-      with:
-        files: |
-          target/*.jar    # Maven 项目
-          build/libs/*.jar  # Gradle 项目
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-```
+### 使用方法
 
-### 使用说明
+1. **日常使用**
+   - 直接推送代码到 GitHub
+   - GitHub Actions 会自动开始构建
+   - 在 Actions 页面可以看到构建过程
+   - 构建完成后可以下载生成的文件
 
-1. **启用 GitHub Actions**
-   - 在项目的 GitHub 页面中
-   - 点击 "Actions" 标签页
-   - 如果是第一次使用，需要点击 "I understand my workflows, go ahead and enable them"
+2. **发布新版本**
+   1. 在 GitHub 项目页面点击 "Releases"
+   2. 点击 "Create a new release"
+   3. 填写版本号(如 v1.0.0)
+   4. 填写更新说明
+   5. 点击 "Publish release"
+   6. 等待自动构建完成
+   7. 构建好的插件文件会自动添加到发布页面
 
-2. **查看构建结果**
-   - 在 Actions 标签页可以看到所有的构建记录
-   - 点击具体的构建可以查看详细日志
-   - 在 "Artifacts" 部分可以下载构建的文件
+### 查看构建结果
 
-3. **创建发布**
-   - 在 GitHub 仓库页面点击 "Releases"
-   - 点击 "Create a new release"
-   - 填写版本号和说明
-   - 发布后会自动触发构建并上传文件
+1. **查看构建过程**
+   - 点击项目的 "Actions" 标签
+   - 查看最新的构建记录
+   - 如果有红色 ❌ 表示失败
+   - 如果有绿色 ✅ 表示成功
+
+2. **下载构建文件**
+   - 点击成功的构建记录
+   - 在页面底部找到 "Artifacts" 部分
+   - 点击 "Plugin" 下载构建好的文件
 
 ### 常见问题
 
 1. **构建失败**
-   - 检查 Action 日志中的错误信息
-   - 确保 Java 版本配置正确
-   - 验证项目的构建脚本（pom.xml/build.gradle）是否有误
+   - 检查 Actions 日志中的错误信息
+   - 确认 Java 版本是否正确
+   - 验证构建命令是否正确(Maven/Gradle)
 
-2. **权限问题**
-   - 确保仓库设置中已启用 Actions
-   - 检查 GITHUB_TOKEN 权限设置
-   - 必要时在仓库设置中配置 Actions 权限
+2. **找不到构建文件**
+   - 检查文件路径是否正确
+   - Maven: `target/*.jar`
+   - Gradle: `build/libs/*.jar`
 
-3. **文件上传失败**
-   - 检查构建输出路径是否正确
-   - 确保文件名匹配规则正确
-   - 验证 release 权限设置
+3. **权限问题**
+   - 确保仓库启用了 Actions 功能
+   - 检查仓库的 Actions 权限设置
+   - 必要时联系仓库管理员
 
-4. **缓存问题**
-   - 如果依赖下载过慢，可以启用缓存
-   - Maven 项目默认启用缓存
-   - Gradle 项目可以添加缓存配置：
-     ```yaml
-     - name: Cache Gradle packages
-       uses: actions/cache@v3
-       with:
-         path: |
-           ~/.gradle/caches
-           ~/.gradle/wrapper
-         key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
-         restore-keys: |
-           ${{ runner.os }}-gradle-
-     ```
+## 常见问题解决
+
+### 1. 构建失败
+- 检查依赖配置是否正确
+- 确保 Java 版本匹配
+- 查看错误日志定位问题
+
+### 2. 依赖下载慢
+- 配置国内镜像源
+- 使用代理加速
+- 检查网络连接
+
+### 3. 版本兼容
+- 确保 Java 版本正确
+- 检查插件 API 版本
+- 验证依赖版本兼容性
+
+## 小贴士
+1. 始终保持项目结构清晰
+2. 定期清理构建文件(clean)
+3. 保存好构建配置文件
+4. 记录常用的构建命令
+5. 建议使用版本控制(Git)管理代码
