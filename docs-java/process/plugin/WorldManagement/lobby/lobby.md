@@ -16,3 +16,7 @@ sidebar_label: 大厅插件
 - 物品栏菜单
 - 掉虚空返回
 - 阻止丢出物品
+
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList />

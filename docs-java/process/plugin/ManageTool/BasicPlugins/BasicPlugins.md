@@ -17,4 +17,6 @@ sidebar_position: 2
 现有的两个较常用的基础插件，分别是 [EssentialsX](https://essentialsx.net/downloads.html) 和
 [CMI](https://www.spigotmc.org/resources/cmi-298-commands-insane-kits-portals-essentials-economy-mysql-sqlite-much-more.3742/) 。
 
-<!--markdownlint-enable line-length-->
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList />

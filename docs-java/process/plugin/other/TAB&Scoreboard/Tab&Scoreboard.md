@@ -17,3 +17,7 @@ sidebar_position: 1
 计分板，积分板，都是指一个东西
 
 ![](_images/啥是计分板.png)
+
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList />

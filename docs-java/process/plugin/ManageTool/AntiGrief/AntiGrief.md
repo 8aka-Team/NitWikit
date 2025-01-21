@@ -13,3 +13,7 @@ sidebar_position: 3
 ~~就像 TT2 协议一样~~ 就像范围回溯时间的魔法。
 
 查玩家背包用 [InvSee++](InvSee++.md)。
+
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList />

@@ -13,3 +13,7 @@ sidebar_position: 1
 ![](_images/holo.png)
 
 全息图用途很广，很多服务器都会使用全息图插件。
+
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList />

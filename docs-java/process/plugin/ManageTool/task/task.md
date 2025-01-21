@@ -4,6 +4,8 @@ slug: /task
 sidebar_position: 9
 ---
 
+# 任务插件
+
 ## 同类插件比较
 
 <!--markdownlint-disable line-length-->
@@ -24,4 +26,6 @@ sidebar_position: 9
 | 沉浸式任务追踪   | ✅ 追踪组件 (Track Addon)      | ❌ 任务手册 (Journal) | ❌          | ❌           | ❌         | ❌        |  ❌ |
 | 自定义通知系统   | ✅ 脚本代理 (Kether)           | ✅ Notify IO | ❌    | ❌          | ❌           | ❌         | ❌        |
 
-<!--markdownlint-disable line-length-->
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList />

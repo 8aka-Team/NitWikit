@@ -15,3 +15,7 @@ ChestCommands < DeluxeMenus < TrMenu
 自己照着文档，用文本编辑器写就行了
 
 在一些群里问有没有可视化编辑器是要被笑话的
+
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList />
