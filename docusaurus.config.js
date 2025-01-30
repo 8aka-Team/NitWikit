@@ -120,7 +120,7 @@ const config = {
             {
                 id: 'ad-1',
                 path: 'ad-1',
-                routeBasePath: '广告位-1',
+                routeBasePath: 'ad-1',
                 editUrl: 'https://github.com/8aka-Team/NitWikit/tree/main',
                 sidebarPath: require.resolve('./sidebars.js'),
                 editCurrentVersion: true,
@@ -194,7 +194,7 @@ const config = {
                         type: 'docSidebar',
                         sidebarId: 'tutorialSidebar',
                         position: 'left',
-                        label: 'ad-1',
+                        label: '林枫云服务器',
                         docsPluginId: 'ad-1'
                     },
                     // 搜索框
