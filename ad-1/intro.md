@@ -21,7 +21,7 @@ sidebar_position: 1
 
 除了游戏云，我们还提供**高性能业务云服务器**，满足你对网站建设、数据分析、人工智能等各类业务场景的需求。林枫云，致力于为你提供**高质量、稳定可靠**的云计算服务！
 
-立即访问林枫云官网：[https://www.dkdun.cn/aff/LECDFEQA](https://www.dkdun.cn/aff/LECDFEQA)，开启你的MC服！
+立即访问林枫云官网：[www.dkdun.cn](www.dkdun.cn)，开启你的MC服！
 
 ## 林枫云，给你更快的速度，更稳的体验！
 
