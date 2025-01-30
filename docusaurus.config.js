@@ -194,7 +194,7 @@ const config = {
                         type: 'docSidebar',
                         sidebarId: 'tutorialSidebar',
                         position: 'left',
-                        label: '林枫云服务器',
+                        label: '广告位招租',
                         docsPluginId: 'ad-1'
                     },
                     // 搜索框
