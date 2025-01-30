@@ -108,7 +108,20 @@ const config = {
                 id: 'docs-bedrock',
                 path: 'docs-bedrock',
                 routeBasePath: 'Bedrock',
-                editUrl: 'https://github.com/postyizhan/NitWikit/tree/main',
+                editUrl: 'https://github.com/8aka-Team/NitWikit/tree/main',
+                sidebarPath: require.resolve('./sidebars.js'),
+                editCurrentVersion: true,
+                showLastUpdateAuthor: true,
+                showLastUpdateTime: true,
+            },
+        ],
+        [
+            '@docusaurus/plugin-content-docs',
+            {
+                id: 'ad-1',
+                path: 'ad-1',
+                routeBasePath: '广告位-1',
+                editUrl: 'https://github.com/8aka-Team/NitWikit/tree/main',
                 sidebarPath: require.resolve('./sidebars.js'),
                 editCurrentVersion: true,
                 showLastUpdateAuthor: true,
@@ -176,6 +189,13 @@ const config = {
                         position: 'left',
                         label: 'Bedrock',
                         docsPluginId: 'docs-bedrock'
+                    },
+                    {
+                        type: 'docSidebar',
+                        sidebarId: 'tutorialSidebar',
+                        position: 'left',
+                        label: 'ad-1',
+                        docsPluginId: 'ad-1'
                     },
                     // 搜索框
                     {
