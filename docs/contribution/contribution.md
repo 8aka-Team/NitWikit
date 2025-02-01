@@ -1,6 +1,6 @@
 ---
 title: 文档贡献
-sidebar_position: 10
+sidebar_position: 100
 slug: /contribution
 ---
 
