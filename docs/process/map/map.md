@@ -8,7 +8,7 @@ sidebar_position: 7
 
 :::warning
 
-此处教程需要您阅读完`创作美术资源`的教程
+此处教程需要你阅读完`创作美术资源`的教程
 
 :::
 
@@ -100,7 +100,7 @@ sidebar_position: 7
 
 ### 使用非完整方块
 
-> 以下建筑实例图片采样于 [laobaitu156](https://space.bilibili.com/252415332) 
+> 以下建筑实例图片采样于 [laobaitu156](https://space.bilibili.com/252415332)
 
 常见的非完整方块有台阶、楼梯、活板门和围墙
 
@@ -132,7 +132,7 @@ sidebar_position: 7
 
 ![](_images/Grettzzz-2.png)
 
-混合像素需要您不断地尝试练习，请相信您的直觉。
+混合像素需要你不断地尝试练习，请相信你的直觉。
 
 ### 光源设计
 
@@ -164,39 +164,39 @@ sidebar_position: 7
 
 免费：
 
-**[FastAsyncWorldEdit](https://modrinth.com/plugin/fastasyncworldedit/)**
+- [FastAsyncWorldEdit](https://modrinth.com/plugin/fastasyncworldedit)
 
-**[FastAsyncVoxelSniper](https://modrinth.com/plugin/fastasyncvoxelsniper)**
+- [FastAsyncVoxelSniper](https://modrinth.com/plugin/fastasyncvoxelsniper)
 
-**[goBrush](https://www.spigotmc.org/resources/gobrush.23118/)**
+- [goBrush](https://www.spigotmc.org/resources/gobrush.23118)
 
-**[goPaint](https://www.spigotmc.org/resources/gopaint.27717/)** 或 **[goPaintAdvanced](https://modrinth.com/plugin/gopaintadvanced)**
+- [goPaint](https://www.spigotmc.org/resources/gopaint.27717) 或 [goPaintAdvanced](https://modrinth.com/plugin/gopaintadvanced)
 
-**[BuildBuddy](https://www.spigotmc.org/resources/buildbuddy.103139/)**
+- [BuildBuddy](https://www.spigotmc.org/resources/buildbuddy.103139)
 
-**[BuilderUtilities](https://modrinth.com/plugin/buildersutilities)**
+- [BuilderUtilities](https://modrinth.com/plugin/buildersutilities)
 
-**[HeadDB](https://www.spigotmc.org/resources/headdb.84967/)**
+- [HeadDB](https://www.spigotmc.org/resources/headdb.84967)
 
 订阅：
 
-**[Arceon](https://www.patreon.com/arcaniax)**
+- [Arceon](https://www.patreon.com/arcaniax)
 
-**[ezEdit](https://www.patreon.com/ezedits)**
+- [ezEdit](https://www.patreon.com/ezedits)
 
 ### 客户端模组
 
-**[Axiom](https://modrinth.com/mod/axiom/)**
+- [Axiom](https://modrinth.com/mod/axiom)
 
-**[KleeSlabs](https://modrinth.com/mod/kleeslabs/)**
+- [KleeSlabs](https://modrinth.com/mod/kleeslabs)
 
-**[LotTweaks](https://www.curseforge.com/minecraft/mc-mods/lottweaks)**
+- [LotTweaks](https://www.curseforge.com/minecraft/mc-mods/lottweaks)
 
-**[ModernKeyBinding](https://modrinth.com/mod/modernkeybinding)**
+- [ModernKeyBinding](https://modrinth.com/mod/modernkeybinding)
 
-**[WorldEditCUI](https://modrinth.com/mod/worldedit-cui)**
+- [WorldEditCUI](https://modrinth.com/mod/worldedit-cui)
 
-**[WorldEdit](https://modrinth.com/plugin/worldedit)**
+- [WorldEdit](https://modrinth.com/plugin/worldedit)
 
 :::warning
 
@@ -208,13 +208,13 @@ sidebar_position: 7
 
 :::info
 
-若您是用于非盈利项目，Axiom 是可以在单人协作上免费使用，并且可以在 [Discord 频道](https://discord.gg/axiomtool) 上申请 30 天白名单用于多人协作
+若你是用于非盈利项目，Axiom 是可以在单人协作上免费使用，并且可以在 [Discord 频道](https://discord.gg/axiomtool) 上申请 30 天白名单用于多人协作
 
-若您是盈利项目，请在 [Axiom 官网](https://axiom.moulberry.com/) 订阅许可证
+若你是盈利项目，请在 [Axiom 官网](https://axiom.moulberry.com) 订阅许可证
 
-若您喜欢 Axiom 并且想体验更多测试功能，请在 [Axiom 官网](https://axiom.moulberry.com/) 订阅许可证
+若你喜欢 Axiom 并且想体验更多测试功能，请在 [Axiom 官网](https://axiom.moulberry.com) 订阅许可证
 
-搭建多人协作插件服需要用到 **[AxiomPaper](https://modrinth.com/plugin/axiom-paper-plugin/)**
+搭建多人协作插件服需要用到 **[AxiomPaper](https://modrinth.com/plugin/axiom-paper-plugin)**
 
 :::
 

@@ -43,22 +43,42 @@ java -Xms2G -Xmx2G -jar server.jar --nogui --forceUpgrade
 
 ## Chunker.app
 
+:::info
+
+`官网` https://www.chunker.app
+
+`GitHub` https://github.com/HiveGamesOSS/Chunker
+
+`文档` https://learn.microsoft.com/en-us/minecraft/creator/documents/chunkeroverview?view=minecraft-bedrock-stable
+
+:::
+
 Chunker.app 是一个多功能的转换工具,支持基岩版和 Java 之间的转换,在转换大版本的时候也推荐使用
+
+他还有一个网页版本：https://web.chunker.app
 
 目前不支持实体和玩家背包
 
-[下载地址](https://www.chunker.app/) [文档](https://learn.microsoft.com/en-us/minecraft/creator/documents/chunkeroverview?view=minecraft-bedrock-stable)
-
 ## Amulet
+
+:::info
+
+`官网` https://www.amuletmc.com
+
+`` https://github.com/Amulet-Team/Amulet-Map-Editor
+
+`文档` https://learn.microsoft.com/en-us/minecraft/creator/documents/chunkeroverview?view=minecraft-bedrock-stable
+
+:::
 
 一个非常高级的地图编辑工具,支持 Java 1.12+ 和基岩版 1.7+ 所有地图格式
 
-[下载地址](https://www.amuletmc.com/)
-
-:::warning
+:::tip
 
 Amulet 可用于高版本地图转低版本，但在地图转换后可能出现光源问题
 
-使用 **[FastAsyncWorldEdit](https://modrinth.com/plugin/fastasyncworldedit/)** 选择光源异常区域，先 //removelight 再 //fixlighting
+使用 [FastAsyncWorldEdit](https://nitwikit.8aka.org/Java/process/plugin/WorldManagement/FastAsyncWorldEdit)
+
+选择光源异常区域，先 //removelight 再 //fixlighting
 
 :::

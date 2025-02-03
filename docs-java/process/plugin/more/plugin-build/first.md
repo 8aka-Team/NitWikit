@@ -1,9 +1,9 @@
 ---
-title: 构建插件概述
+title: 概述
 sidebar_position: 2
 ---
 
-# 构建插件概述
+# 概述
 
 ## 什么是构建？
 构建就是将源代码转换成可以运行的插件（jar文件）的过程。就像把散落的零件组装成一个完整的机器一样。
@@ -87,6 +87,7 @@ sidebar_position: 2
 ├── target/                                    # 构建输出目录
 ├── pom.xml                                    # Maven项目配置文件
 └── README.md                                  # 项目说明文件
+```
 
 #### Gradle项目结构
 

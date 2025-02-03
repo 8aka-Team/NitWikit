@@ -1,5 +1,5 @@
 ---
-title: 使用IDEA构建
+title: 使用 IDEA
 sidebar_position: 4
 ---
 

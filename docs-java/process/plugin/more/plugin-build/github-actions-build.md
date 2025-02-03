@@ -1,9 +1,9 @@
 ---
-title: 使用GitHub Actions构建
+title: 使用 GitHub Actions
 sidebar_position: 6
 ---
 
-# 使用 GitHub Actions 构建
+# 使用 GitHub Actions
 
 ## 什么是 GitHub Actions？
 GitHub Actions 是 GitHub 提供的自动化工具，可以自动执行构建、测试和部署等任务。使用它可以让你的插件在每次代码更新时自动构建。
