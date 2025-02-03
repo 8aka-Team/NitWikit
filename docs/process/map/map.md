@@ -316,7 +316,7 @@ sidebar_position: 7
 
 ### BDS
 
-#### 局部导入
+#### BDS 局部导入
 
 在 JAVA 版做完建筑，使用 [Chunker](https://chunker.app/) 转换存档
 
@@ -336,7 +336,7 @@ sidebar_position: 7
 
 :::
 
-#### 存档导入
+#### BDS 存档导入
 
 在java版做完建筑，使用 [Chunker](https://chunker.app/) 转换存档
 
@@ -346,7 +346,7 @@ sidebar_position: 7
 
 ### NukkitX
 
-#### 局部导入
+#### NKX 局部导入
 
 在 JAVA 版做完建筑，使用 [WE](https://modrinth.com/plugin/worldedit) / [FAWE](https://modrinth.com/plugin/fastasyncworldedit) 选区导出 .schematic 文件
 
@@ -360,6 +360,6 @@ schematic 导入粘贴可能会出现方块状态不正确的情况，例如楼�
 
 :::
 
-#### 存档导入
+#### NKX 存档导入
 
 NukkitX 通用 JAVA 版 1.12.2 的世界，可直接替换进去
