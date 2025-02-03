@@ -266,6 +266,14 @@ sidebar_position: 7
 
 - [WorldMachine](https://www.world-machine.com/)
 
+:::info
+
+这两款软件均为专业的工作软件，可用于地形、环境建设
+
+如何与 Minecraft 地图建设配合请自行摸索
+
+:::
+
 ## 建筑须知
 
 ### 关于建筑类型与风格
