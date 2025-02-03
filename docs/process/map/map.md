@@ -350,7 +350,7 @@ sidebar_position: 7
 
 在 JAVA 版做完建筑，使用 [WE](https://modrinth.com/plugin/worldedit) / [FAWE](https://modrinth.com/plugin/fastasyncworldedit) 选区导出 .schematic 文件
 
-于 NK 服务端内使用 [FastAsyncWorldEdit-Nukkit](https://cloudburstmc.org/resources/fastasyncworldedit.30/) 导入 .schematic 文件粘贴到指定位置
+于 NKX 服务端内使用 [FastAsyncWorldEdit-Nukkit](https://cloudburstmc.org/resources/fastasyncworldedit.30/) 导入 .schematic 文件粘贴到指定位置
 
 :::warning
 
