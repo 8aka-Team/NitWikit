@@ -5,29 +5,35 @@ sidebar_position: 2
 
 # 其他分支
 
-在 Folia 的开发历史上,还有许多其他分支,太多了,这里只列出了一些可能有用的
+在 Folia 的开发历史上，还有许多其他分支，太多了，这里只列出了一些可能有用的
 
 ## Lumina
 
-Lumina 是 LeavesMC 开发的一个 Folia 分支,旨在遵循原版生电特性的同时 Folia 的功能
+Lumina 是 LeavesMC 开发的一个 Folia 分支，旨在遵循原版生电特性的同时 Folia 的功能
 
 :::tip
 
-目前 Lumina 处于早期开发阶段,暂时不完善,推荐去使用 Luminol
+目前 Lumina 处于早期开发阶段，暂时不完善，推荐去使用 Luminol
 
 :::
 
 ### 下载
 
-Lumina 目前在官网上不提供下载,你可以选择自己去编译,或使用第三方预编译版本
+Lumina 目前在官网上不提供下载，你可以选择自己去编译，或使用第三方预编译版本
 
 [下载(1.20.6)](https://vip.123pan.cn/1821558579/Lingyi/aaa/lumina/Lumina-1.20.6-mcres.jar)
 
 ## DeerFolia
 
-一个专注于还原特性的分支,不会加其他的功能,更新速度快
+:::info
 
-[MineBBS贴](https://www.minebbs.com/resources/deerfolia-mc-folia.7931/)
+`GitHub` https://github.com/DeerGiteaMirror/DeerFolia
+
+`MineBBS` https://www.minebbs.com/resources/.793
+
+:::
+
+一个专注于还原特性的分支，不会加其他的功能，更新速度快
 
 下载(官方):
 
@@ -38,7 +44,13 @@ Lumina 目前在官网上不提供下载,你可以选择自己去编译,或使�
 
 ## DirtyFolia
 
-一个类似于 DirtyMolia 的 Folia fork,不过有 1.19.4 版本,现在不更新了
+:::info
+
+`GitHub` https://github.com/pluralitycn/DirtyFolia
+
+:::
+
+一个类似于 DirtyMolia 的 Folia fork，不过有 1.19.4 版本，现在不更新了
 
 下载镜像:
 
@@ -47,7 +59,13 @@ Lumina 目前在官网上不提供下载,你可以选择自己去编译,或使�
 
 ## Kaiiju
 
-一个非常早的 Folia 分支,加入了许多优化和功能
+:::info
+
+`GitHub` https://github.com/KaiijuMC/Kaiiju
+
+:::
+
+一个非常早的 Folia 分支，加入了许多优化和功能
 
 下载镜像:
 
