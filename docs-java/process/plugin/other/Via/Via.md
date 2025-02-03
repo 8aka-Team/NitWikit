@@ -48,7 +48,7 @@ sidebar_position: 4
 
 ViaVersion + ViaBackwards + ViaRewind
 
-这 3 个插件支持的服务端版本为 1.17～1.21
+这 3 个插件支持的服务端版本为 1.7 ~ 1.21
 
 :::tip
 
@@ -60,9 +60,9 @@ Via* 插件剔除了 Java8 支持，这导致你不能在更低的服务端版�
 
 :::
 
-### 独立版(ViaProxy)
+## 独立版(ViaProxy)
 
-- Release (1.0.0 - 1.20.5)
+- Release (所有版本)
 - Beta (b1.0 - b1.8.1)
 - Alpha (a1.0.15 - a1.2.6)
 - Classic (c0.0.15 - c0.30 包含 [CPE](https://wiki.vg/Classic_Protocol_Extension))
@@ -70,14 +70,21 @@ Via* 插件剔除了 Java8 支持，这导致你不能在更低的服务端版�
 - 战斗测试快照 (Combat Test 8c)
 - 基岩版服务器 1.20.70 ([某些功能缺失](https://github.com/RaphiMC/ViaBedrock#features))
 
-## 支持的客户端
+### 支持的客户端
 
 - Release (1.7.2 - 1.21)
+- Beta 1.7.3 (需要 [ViaProxyBeta2Release](https://github.com/ViaVersionAddons/ViaProxyBeta2Release))
 - 基岩版 (需要 [Geyser](/docs-java/process/mobile-player/Geyser/geyser.md) 插件)
 
 你没看错，ViaProxy 可以让 1.20.4 客户端进入 Classic 版本的服务器(后者大概发布于十年前)
 
 也可以让一个 JAVA 版玩家进入基岩版服务器，或者基岩版玩家进入 JAVA 版服务器！
+
+### 下载
+
+官方发布页面:[GitHub Release](https://github.com/ViaVersion/ViaProxy/releases)
+
+你也可以在[Jenkins](https://build.lenni0451.net/job/ViaProxy/) 下载最新版本
 
 ## 笨蛋脚本
 
@@ -107,7 +114,7 @@ Bungeecord、Velocity 和各种 Minecraft 服务端均可以安装 Via。但如�
 
 ### Via 的版本选择
 
-如果选择同时安装 viaversion 和 viabackward ，他们的版本尽量选择相同的。
+如果选择同时安装 ViaVersion 和 ViaBackward ，他们的版本尽量选择相同的。
 
 ### 为什么我在服务器安装 Via 后，仍然显示版本不支持？
 

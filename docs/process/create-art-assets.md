@@ -1,5 +1,5 @@
 ---
-title: 模型与纹理
+title: 创作美术资源
 sidebar_position: 1
 ---
 

@@ -7,15 +7,6 @@ sidebar_position: 4
 
 让基岩版玩家体验到跟多功能
 
-## ForcePlayerLink
-
-强制基岩版玩家使用**JE OfflinePlayer UUID**(实现数据互通)
-
-[注意事项]
-
-- 不要使用允许基岩版绕过的登录插件
-- 一定要启动 own-linking 关闭 global-linking
-
 ## GeyserUpdater
 
 [下载地址](https://www.spigotmc.org/resources/geyserupdater.88555/)

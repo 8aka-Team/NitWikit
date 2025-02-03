@@ -38,7 +38,8 @@ const config = {
         locales: ['zh-Hans'],
     },
     clientModules: [
-        require.resolve('./src/clientModules/routeModules.js')
+        require.resolve('./src/clientModules/routeModules.js'),
+        require.resolve('./src/clientModules/adsModules.js'),
     ],
 
     presets: [
@@ -57,6 +58,8 @@ const config = {
                 theme: {
                     customCss: [
                         require.resolve('./src/css/custom.css'),
+                        require.resolve('./src/css/github.css'),
+                        require.resolve('./src/css/ad.css'),
                     ],
                 },
             }),
@@ -248,6 +251,10 @@ const config = {
                             {
                                 label: 'Tinksp 资源站',
                                 href: 'https://www.tinksp.com',
+                            },
+                            {
+                                label: 'MCNav',
+                                href: 'https://www.mcnav.net',
                             },
                         ],
                     },

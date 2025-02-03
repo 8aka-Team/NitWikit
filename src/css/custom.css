@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 桌面端广告间距调整 */
+.navbar__items--right .ad-container {
+  margin-left: 1.5rem;
+}
+
+/* 移动端侧边栏底部定位 */
+.menu__list .mobile-ad {
+  position: sticky;
+  bottom: 0;
+  background: var(--ifm-background-color);
+  z-index: 1;
+}
+
 @layer base {
   :root {
 

@@ -164,7 +164,7 @@ sidebar_position: 7
 
 免费：
 
-**[FastAsynWorldEdit](https://modrinth.com/plugin/fastasyncworldedit/)**
+**[FastAsyncWorldEdit](https://modrinth.com/plugin/fastasyncworldedit/)**
 
 **[FastAsyncVoxelSniper](https://modrinth.com/plugin/fastasyncvoxelsniper)**
 

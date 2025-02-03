@@ -1,9 +1,9 @@
 ---
-title: 地图定制
+title: 地图定制/购买
 sidebar_position: 3
 ---
 
-# 地图定制
+## 地图定制
 
 当你需要制作一些复杂的地图而自己比较菜的时候,可以选择向其他人寻求帮助或者雇佣建筑师
 
@@ -45,7 +45,7 @@ sidebar_position: 3
 
 :::
 
-:::info
+### FAQ
 
 问：在建筑定制中可以直接用这个价格交易吗？
 
@@ -67,4 +67,10 @@ sidebar_position: 3
 
 答：是，您用PS修图片难道是一个像素一个像素改的吗？
 
-:::
+## 地图购买/白嫖
+
+[BreadBuilds](https://www.breadbuilds.com/) 是最大的地图网站,里面有很多优质的**免费/付费**地图
+
+![](_images/bb.png)
+
+通常来说,在 BreadBuilds 上购买的地图平均价格为 70 ~ 100 RMB,相对来说会比定制省钱

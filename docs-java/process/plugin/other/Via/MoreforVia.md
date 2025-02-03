@@ -101,6 +101,6 @@ sidebar_position: 5
 * 与 Minecraft 1.8 及更高版本兼容 Spigot/Velocity/Bungeecord，包括最新版本。
 * 自动从 Jenkins 下载 ViaVersion、ViaBackwards、ViaRewind 和 ViaRewind-Legacy-Support 的成功版本及其开发版本。
 * config.yml允许你指定要更新的 Via 以及是否使用每个插件的开发版本。
-* /updatevias 命令强制更新检查器对所有 Via！(autoviaupdater.admin 权限！)
+* /updatevias 命令强制更新检查器对所有 Via(需要 autoviaupdater.admin 权限)
 
 [下载地址](https://www.spigotmc.org/resources/autoviaupdater.109331/)

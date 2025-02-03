@@ -1,0 +1,19 @@
+/* 广告链接样式 */
+.ad-item {
+    margin-left: 1rem !important;
+    font-weight: 500;
+    display: inline-flex !important;
+    align-items: center;
+    transition: opacity 0.2s;
+}
+
+.ad-item:hover {
+    opacity: 0.8;
+    text-decoration: none !important;
+}
+
+.ad-item::before {
+    content: "🔹";
+    margin-right: 0.3em;
+    opacity: 0.7;
+}
