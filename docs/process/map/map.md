@@ -30,7 +30,7 @@ sidebar_position: 7
 
 ## 场景规划
 
-场景规划与功能设计有什么不同 ?
+场景规划与功能设计有什么不同？
 
 功能设计的目的是找到需求与功能，而场景规划则是为功能的实现区域进行划分，例如：
 
@@ -66,13 +66,13 @@ sidebar_position: 7
 
 在走廊附近有高伤穿透的狙击枪的购买点
 
-在这条走廊内，怪物的攻击距离刚好占走廊宽度的 1/3 - 2/3 ，使玩家进行游戏是操作变得穷迫、急迫
+在这条走廊内，怪物的攻击距离刚好占走廊宽度的 1/3 - 2/3 ，使玩家进行游戏时操作变得穷迫、急迫
 
 ![](_images/僵尸末日-4.png)
 
 ![](_images/僵尸末日-5.png)
 
-地图中的天台存放着整局游戏的关键性机关发电机，玩家若是想超过25回合，就必须往天台走
+地图中的天台存放着整局游戏的关键性机关发电机，玩家若是想超过 25 回合，就必须往天台走
 
 天台的布局宽阔，拥有范围武器火箭筒的购买点，在应对大量怪物时提供足够的空间，而高度差也可以缓冲怪物群
 
@@ -146,7 +146,7 @@ sidebar_position: 7
 
 ### 使用头颅、盔甲架和展示实体
 
-头颅和盔甲就可以为你的服务器增加更多的细节，特别是低版本的服务器
+头颅和盔甲可以为你的服务器增加更多的细节，特别是低版本的服务器
 
 ![](_images/僵尸末日-2.png)
 
@@ -160,9 +160,15 @@ sidebar_position: 7
 
 ## 工具选取
 
+:::info
+
+工具不过多赘述，请自行点击查看
+
+:::
+
 ### 服务端插件
 
-免费：
+#### 免费
 
 - [FastAsyncWorldEdit](https://modrinth.com/plugin/fastasyncworldedit)
 
@@ -178,7 +184,7 @@ sidebar_position: 7
 
 - [HeadDB](https://www.spigotmc.org/resources/headdb.84967)
 
-订阅：
+#### 订阅
 
 - [Arceon](https://www.patreon.com/arcaniax)
 
@@ -218,7 +224,59 @@ sidebar_position: 7
 
 :::
 
-## 关于建筑类型与风格
+### 基岩版插件
+
+#### Addon
+
+- [WorldEdit-Addon](https://mcpedl.com/worldedit-be-addon/)
+
+#### NukkitX 插件
+
+- [FastAsyncWorldEdit-Nukkit](https://cloudburstmc.org/resources/fastasyncworldedit.30/)
+
+#### PocketMine-MP 插件
+
+- [WorldEdit-PMMP](https://github.com/ryuzaki01/pocketmine-WorldEditor)
+
+:::warning
+
+由于基岩版生态的问题，为了保证效率和质量，你应该在 JAVA 版完成建筑再将其转移到基岩版，而不是使用有限的工具折磨自己
+
+若你无法使用 Minecraft JE ，尝试使用 **[Geyser](https://geysermc.org/)** 来进入为自己搭建的 JAVA 版工程服
+
+**[点击转跳到`将地图转移到基岩版`](#将地图转移到基岩版)**
+
+:::
+
+### 软件
+
+#### MC工具
+
+- [Amulet](https://www.amuletmc.com/)
+
+- [MCedit](https://www.mcedit.net/)
+
+- [WorldPainter](https://www.worldpainter.net/)
+
+- [Chunker](https://chunker.app/)
+
+#### 专业软件
+
+- [Blender](https://www.blender.org/)
+
+- [WorldMachine](https://www.world-machine.com/)
+
+:::info
+
+这两款软件均为专业的工作软件，可用于地形、环境建设
+
+如何与 Minecraft 地图建设配合请自行摸索
+
+:::
+
+## 建筑须知
+
+### 关于建筑类型与风格
 
 常见的建筑类型有现代、中式、欧式、中世纪等，根据风格的不同又有正统、西方幻想、中式玄幻等，细分太多在此不过多赘述。
 
@@ -233,3 +291,75 @@ sidebar_position: 7
 > 欧式，采样于 z_wuxin
 
 ![](_images/z_wuxin-2.png)
+
+### 关于世界规则
+
+大量使用树叶，又不想关闭随机刻？请使用 persistent=true 的树叶
+
+使用浮空植物？请关闭随机刻放置方块更新
+
+:::info
+
+以上问题可使用 **[WorldGuard](https://modrinth.com/plugin/worldguard/)** 插件的 /stoplag 指令停止物理事件
+
+基岩版的不腐烂树叶是 persistent_bit=true
+
+:::
+
+## 将地图转移到基岩版
+
+:::warning
+
+此处属于危险操作，请备份服务端存档，此处教学如有错误请在提出问题
+
+:::
+
+### BDS
+
+#### BDS 局部导入
+
+在 JAVA 版做完建筑，使用 [Chunker](https://chunker.app/) 转换存档
+
+将建筑存档与服务端存档导入本地基岩版客户端
+
+使用 [WorldEdit-Addon](https://mcpedl.com/worldedit-be-addon/) 在建筑存档内选择区域导出结构文件，并用其将结构文件粘贴到服务端存档
+
+导出修改过的服务端存档，去除其中的 WorldEdit-Addon，再将修改过的存档覆盖服务端存档
+
+具体使用方法请看官方文档，这里不过多赘述
+
+[WE-Addon 结构的使用](https://worldedit-be-docs.readthedocs.io/en/stable/usage/structures/)
+
+:::info
+
+若你有电脑，则不需要上述繁琐的步骤，可以直接使用 [Amulet](https://www.amuletmc.com/) 进行建筑存档存档转换，选区粘贴到服务端存档
+
+:::
+
+#### BDS 存档导入
+
+在java版做完建筑，使用 [Chunker](https://chunker.app/) 转换存档
+
+将转换好的存档导入服务器
+
+这种方法应用于导入无数据的新世界，例如小游戏大厅
+
+### NukkitX
+
+#### NKX 局部导入
+
+在 JAVA 版做完建筑，使用 [WE](https://modrinth.com/plugin/worldedit) / [FAWE](https://modrinth.com/plugin/fastasyncworldedit) 选区导出 .schematic 文件
+
+于 NKX 服务端内使用 [FastAsyncWorldEdit-Nukkit](https://cloudburstmc.org/resources/fastasyncworldedit.30/) 导入 .schematic 文件粘贴到指定位置
+
+:::warning
+
+NukkitX 不支持超过 1.12.2 的方块，建造地图时需注意
+
+schematic 导入粘贴可能会出现方块状态不正确的情况，例如楼梯统一朝向
+
+:::
+
+#### NKX 存档导入
+
+NukkitX 通用 JAVA 版 1.12.2 的世界，可直接替换进去
