@@ -16,8 +16,9 @@ Koishi 是一个跨平台、可扩展、高性能的聊天机器人框架，支�
 框架链接：https://github.com/koishijs/koishi
 
 ## Mirai
-Mirai 是一个在全平台下运行，提供 QQ Android 协议支持的高效率机器人库。
-**Mirai不原生支持 QQNT** 相对其他框架，Mirai具有较强的插件生态。可搭配 [Overflow](https://github.com/MrXiaoM/overflow) 与其他框架以支持QQNT。
+Mirai 是一个在全平台下运行，提供 QQ Android 协议支持的高效率机器人库。**Mirai不原生支持 QQNT**
+
+相对其他框架，Mirai具有较强的插件生态。可搭配 [Overflow](https://github.com/MrXiaoM/overflow) 与其他框架以支持QQNT。
 
 框架链接：https://github.com/mamoe/mirai
 
