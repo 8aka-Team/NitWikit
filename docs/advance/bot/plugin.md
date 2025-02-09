@@ -33,9 +33,7 @@ MiraiMC 是一个基于 Mirai 的 Minecraft 服务端插件，能够让你在 Mi
 
 https://github.com/DreamVoid/MiraiMC
 
-下面介绍几个依赖MiraiMC的Minecraft插件。
-#### CatSero (停更)
-#### Amazingbot 3 (停更)
+MiraiMC 的附属插件众多，请自行在各大论坛搜索。
 
 ## Bedrock
 ### SparkBridge
