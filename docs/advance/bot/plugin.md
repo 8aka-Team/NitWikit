@@ -29,6 +29,16 @@ https://github.com/Xinxin-ent/XinxinBotApi
 ### MiraiMC
 MiraiMC 是一个基于 Mirai 的 Minecraft 服务端插件，能够让你在 Minecraft 服务器上使用 Mirai QQ 机器人程序，同时提供一些 API 帮助开发者简单的调用机器人接口为自己的插件实现多样的功能。
 
+:::tip
+
+MiraiMC 插件**自身不支持 Onebot 协议**。
+
+你应该使用 [Mirai](framework.md#Mirai) 框架与其对接
+
+或者使用[这个扩展](https://github.com/DreamVoid/MiraiMCAddon-Overflow)来给 MiraiMC 添加 Onebot 协议支持。
+
+:::
+
 该插件仅提供API，需要附属插件实现具体功能。
 
 https://github.com/DreamVoid/MiraiMC
