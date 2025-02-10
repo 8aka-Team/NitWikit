@@ -9,6 +9,8 @@ sidebar_position: 1
 
 每个服务器可能有自己的卡顿原因，在这部分先做最基础的通用优化，如果你使用后作用不大请参考性能分析板块。
 
+> "过早的优化是万恶之源",过早优化会让服务端不稳定,甚至 10x slower
+
 在此之前，请一定查看 [优化误区](optimized-plugin.md)，停止此类无效"优化"，然后根据下面的步骤进行操作。
 
 ## 第一步 - Java 优化
@@ -16,12 +18,6 @@ sidebar_position: 1
 为什么选择 Java 优化作为第一步 - 几乎任何情况下，服务器都会因为合适的 Java 受益，
 
 仅仅需要你下载一个小小的 Java 安装程序，或者更改 JVM 参数(大白话来说就是开服参数)。
-
-### 选择合适的 Java
-
-参考[选择、下载和安装 Java](https://nitwikit.8aka.org/preparation/java/choose-and-download-and-install-java)安装合适的 Java
-
-### JVM 参数优化
 
 参见 [JVM 优化](https://nitwikit.8aka.org/Java/optimize/jvm)
 
@@ -48,29 +44,7 @@ sidebar_position: 1
 
 :::
 
-<details>
-
-<summary>选择更换的服务器核心</summary>
-
-此处只是作为最基础的核心选择推荐，完整版请查看[核心选择](/docs-java/start/server-core-choose/server-core-choose.md)
-
-### Paper - 追求极致稳定 _推荐度 ★★★★☆_
-
-如果是第一次开服，或者追求稳定，请使用 Paper 。任何时候想更换其他核心可以随时更换如 Purpur / Leaf 等核心。
-
-### Purpur - 稳定性与性能最佳选择 _推荐度 ★★★★★_
-
-如果你并不是追求更极致的性能，Purpur 你最好的选择，只需要替换掉核心就可以，Purpur 兼容全部插件!!
-
-### Leaf - 极致性能 _推荐度 ★★★★☆_
-
-前往 Leaf 的 GitHub Action 下载最新核心，然后替换!!，Leaf 兼容你的绝大部分插件(已知仅有一个不兼容，但在插件的分支解决)
-
-### Folia - 硬件利用率超高的高性能，但兼容性较差 _推荐度 ★★★☆☆_
-
-如果你的服务器对插件的需求不大，或者你的插件已全部兼容 Folia ，那你就可以选择切换到这个核心，你的 tps 有绝对巨大的提升(甚至超过了 Leaf )
-
-</details>
+完整版请查看[核心选择](/docs-java/start/server-core-choose/server-core-choose.md)
 
 ## 第四步 - 调整服务端配置
 
@@ -96,6 +70,8 @@ sidebar_position: 1
 ## 第六步 - 更换操作系统
 
 无论在性能还是稳定性， Linux 都比 Windows 更适合用于开服，对于 Linux 根据自己的使用经验选择即可，如果没有使用经验可以先使用 Ubuntu 等主流系统。
+
+切换到 Linux 后,你还可以进行 [内核优化](kernel.md)
 
 如果想要了解更多请前往进阶 [Linux 开服教程](https://nitwikit.8aka.org/Sundry/Advance/Linux)
 
