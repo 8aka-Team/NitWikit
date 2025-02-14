@@ -4,13 +4,11 @@ sidebar_position: 10
 sidebar_label: 商店 - QuickShop
 ---
 
-import Image from '@theme/IdealImage';
-
 <!--markdownlint-disable line-length-->
 
 一张图秒懂
 
-<Image img={require('_images/QuickShop.jpg')} alt="" />
+![](_images/QuickShop.jpg)
 
 ~~用此插件做系统商店的通常是些新手服主或半吊子人~~
 

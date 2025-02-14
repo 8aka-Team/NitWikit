@@ -3,8 +3,6 @@ title: 颜色代码
 sidebar_position: 7
 ---
 
-import Image from '@theme/IdealImage';
-
 # 颜色代码
 
 改变你服务器中信息的颜色！
@@ -47,7 +45,7 @@ Icons:
         - '&aa &bb &cc'
 ```
 
-<Image img={require('_images/color-message/游戏内.png')} alt="" />
+![](_images/color-message/游戏内.png)
 
 :::
 
@@ -107,7 +105,7 @@ Icons:
         - '<rainbow>Hello world'
 ```
 
-<Image img={require('_images/color-message/展示.png')} alt="" />
+![](_images/color-message/展示.png)
 
 记住 MiniMessage 语言使用标签，也就是说你所做的一切都将使用标签进行定义。
 

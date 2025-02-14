@@ -3,8 +3,6 @@ title: 数学运算
 sidebar_position: 5
 ---
 
-import Image from '@theme/IdealImage';
-
 # 数学运算
 
 ## Math
@@ -45,7 +43,7 @@ math 1 + 3 * 5 / 6 - 2
 /vul eval set a to 1 set b to 2 math &a - &b
 ```
 
-<Image img={require('_images/math_1.png')} alt="" />
+![](_images/math_1.png)
 
 ## calc
 
@@ -60,4 +58,4 @@ math 1 + 3 * 5 / 6 - 2
 
 当然也可以使用括号：
 
-<Image img={require('_images/括号.png')} alt="" />
+![](_images/括号.png)

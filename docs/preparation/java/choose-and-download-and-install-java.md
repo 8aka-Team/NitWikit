@@ -3,8 +3,6 @@ title: 选择、下载和安装 Java
 sidebar_position: 1
 ---
 
-import Image from '@theme/IdealImage';
-
 # 选择、下载和安装 Java
 
 ## 选择版本
@@ -94,14 +92,14 @@ MOD 服务端
 <details>
   <summary>怎么找到官网并从官网下载</summary>
 
-<Image img={require('_images/Oracle-1.png')} alt="" />
-<Image img={require('_images/Oracle-2.png')} alt="" />
-<Image img={require('_images/Oracle-3.png')} alt="" />
-<Image img={require('_images/Oracle-4.png')} alt="" />
+![](_images/Oracle-1.png)
+![](_images/Oracle-2.png)
+![](_images/Oracle-3.png)
+![](_images/Oracle-4.png)
 
 如果再往下翻的话可以看到 Java 8 / 11。
 
-<Image img={require('_images/Oracle-5.png')} alt="" />
+![](_images/Oracle-5.png)
 
 但是在这里 Java 8 需要登录才能下载。
 
@@ -118,7 +116,7 @@ https://www.java.com/zh-CN/download/
 
 [怎么打开 Windows 终端](https://cn.bing.com/search?q=%E6%80%8E%E4%B9%88%E6%89%93%E5%BC%80windows%E6%8E%A7%E5%88%B6%E5%8F%B0)
 
-<Image img={require('_images/cmd-1.png')} alt="" />
+![](_images/cmd-1.png)
 
 输入：
 
@@ -128,7 +126,7 @@ java -version
 
 并回车：
 
-<Image img={require('_images/cmd-2.png')} alt="" />
+![](_images/cmd-2.png)
 
 > 返回类似的消息即为 Java 已安装
 

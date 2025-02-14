@@ -3,8 +3,6 @@ title: 插件下载
 sidebar_position: 1
 ---
 
-import Image from '@theme/IdealImage';
-
 # 插件下载
 
 ## 选择插件
@@ -21,7 +19,7 @@ import Image from '@theme/IdealImage';
 
 2. (_可选_)如果你觉得大量的英语很头大，请打开你的浏览器自带的翻译器，如 Edge/Chrome。
 
-<Image img={require('_images/浏览器翻译.png')} alt="" />
+![](_images/浏览器翻译.png)
 
 1. 就像逛淘宝一样，根据你的需求将你认为有用的插件收藏起来。
    最好是分门别类放在一起，我们以随机 TP 插件为例，我们在此搜索 RTP ：
@@ -29,7 +27,7 @@ import Image from '@theme/IdealImage';
 <details>
     <summary>安装搜索引擎后应该长啥样？</summary>
 
-<Image img={require('_images/Spigot搜索.png')} alt="" />
+![](_images/Spigot搜索.png)
 
 </details>
 
@@ -51,7 +49,7 @@ import Image from '@theme/IdealImage';
 
    每个服务器可根据自己的需求自行评价，下图只是一个抛砖引玉的作用，根据自己的需求选择其中一个即可：
 
-<Image img={require('_images/同类插件评分选择.png')} alt="" />
+![](_images/同类插件评分选择.png)
 
 <!--markdownlint-enable ol-prefix-->
 
@@ -77,27 +75,27 @@ import TabItem from '@theme/TabItem';
 <Tabs queryString="download-history-plugin">
 <TabItem value="bukkit" label="Bukkit">
 
-<Image img={require('_images/历史版本-bukkit-1.png')} alt="" />
+![](_images/历史版本-bukkit-1.png)
 
 点击左侧文字可以查看详细内容：
 
-<Image img={require('_images/历史版本-bukkit-2.png')} alt="" />
+![](_images/历史版本-bukkit-2.png)
 
 这里是更新日志：
 
-<Image img={require('_images/历史版本-bukkit-3.png')} alt="" />
+![](_images/历史版本-bukkit-3.png)
 
 </TabItem>
 
 <TabItem value="spigotmc" label="SpigotMC">
 
-<Image img={require('_images/历史版本-spigotmc.png')} alt="" />
+![](_images/历史版本-spigotmc.png)
 
 </TabItem>
 
 <TabItem value="modrinth" label="Modrinth">
 
-<Image img={require('_images/历史版本-modrinth.png')} alt="" />
+![](_images/历史版本-modrinth.png)
 
 </TabItem>
 
@@ -105,13 +103,13 @@ import TabItem from '@theme/TabItem';
 
 在 Releases 中往下翻：
 
-<Image img={require('_images/历史版本-GitHub-1.png')} alt="" />
+![](_images/历史版本-GitHub-1.png)
 
 或者这样子：
 
-<Image img={require('_images/历史版本-GitHub-2.png')} alt="" />
+![](_images/历史版本-GitHub-2.png)
 
-<Image img={require('_images/历史版本-GitHub-3.png')} alt="" />
+![](_images/历史版本-GitHub-3.png)
 
 </TabItem>
 </Tabs>

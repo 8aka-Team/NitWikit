@@ -3,13 +3,11 @@ sidebar_position: 1
 sidebar_label: 常见问题1
 ---
 
-import Image from '@theme/IdealImage';
-
 # 常见问题1
 
 ## 中文世界名乱码
 
-<Image img={require('_images/中文世界名乱码.png')} alt="" />
+![](_images/中文世界名乱码.png)
 
 不要用中文作为世界的名字，用英文。
 
@@ -17,9 +15,9 @@ import Image from '@theme/IdealImage';
 
 ## 世界别名
 
-<Image img={require('_images/中文世界名-1.png')} alt="" />
+![](_images/中文世界名-1.png)
 
-<Image img={require('_images/中文世界名-2.png')} alt="" />
+![](_images/中文世界名-2.png)
 
 所需插件：
 

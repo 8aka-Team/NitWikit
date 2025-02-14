@@ -67,14 +67,6 @@ const config = {
     ],
     plugins: [
         'docusaurus-plugin-image-zoom',
-        [
-            '@docusaurus/plugin-ideal-image',
-            {
-                quality: 70,
-                max: 1030,
-                min: 640,
-            }
-        ],
         'docusaurus-plugin-sass',
         [
             "@gracefullight/docusaurus-plugin-microsoft-clarity",

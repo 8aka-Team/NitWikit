@@ -4,8 +4,6 @@ title: 跨版本
 sidebar_position: 4
 ---
 
-import Image from '@theme/IdealImage';
-
 # 什么是跨版本
 
 跨版本就是可以让不同于服务器版本的客户端版本进入服务器，比如服务器版本为 1.20.1，安装跨版本之后可以让 1.19.4 的客户端进入服务器
@@ -30,7 +28,7 @@ import Image from '@theme/IdealImage';
 
 插件版本的 via 支持以下版本进入服务器
 
-<Image img={require('_images/版本兼容图.png')} alt="" />
+![](_images/版本兼容图.png)
 
 - ViaVersion - 向上兼容
 

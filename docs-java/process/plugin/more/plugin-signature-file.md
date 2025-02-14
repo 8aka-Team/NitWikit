@@ -3,17 +3,15 @@ title: 特征文件
 sidebar_position: 3
 ---
 
-import Image from '@theme/IdealImage';
-
 # plugin.yml
 
 用解压缩软件打开插件的jar文件就可以看到 `plugin.yml`：
 
-<Image img={require('_images/plugin.yml/拆开jar.png')} alt="" />
+![](_images/plugin.yml/拆开jar.png)
 
 用文本编辑器可以打开它：
 
-<Image img={require('_images/plugin.yml/plugin.yml.png')} alt="" />
+![](_images/plugin.yml/plugin.yml.png)
 
 其实只有 `name` 和 `main` 是必填的，其他可写可不写。
 

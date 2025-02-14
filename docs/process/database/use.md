@@ -4,8 +4,6 @@ slug: /database/manage
 sidebar_position: 2
 ---
 
-import Image from '@theme/IdealImage';
-
 <!--markdownlint-disable no-duplicate-heading-->
 
 ## 数据库管理
@@ -51,7 +49,7 @@ import Image from '@theme/IdealImage';
 
 点击连接，并选择你想要连接的数据库的类型
 
-<Image img={require('_images/25.png')} alt="" />
+![](_images/25.png)
 
 然后分别填写:
 
@@ -65,13 +63,13 @@ import Image from '@theme/IdealImage';
 
 - 密码: 即登录数据库的密码，你在安装数据库的时候就已经设置过了，自己要记好！
 
-<Image img={require('_images/26.png')} alt="" />
+![](_images/26.png)
 
 填写完毕后点击确定即可
 
 顺利的话，点开数据库后会显示一个绿色图标的海豚，并列出内部的数据库
 
-<Image img={require('_images/27.png')} alt="" />
+![](_images/27.png)
 
 否则他会报错
 
@@ -94,7 +92,7 @@ import Image from '@theme/IdealImage';
 
 右键数据库图标，点击新建数据库
 
-<Image img={require('_images/28.png')} alt="" />
+![](_images/28.png)
 
 然后分别填写:
 
@@ -104,7 +102,7 @@ import Image from '@theme/IdealImage';
 
 - 排列规则: 可以选择 `utf8mb4_general_ci` 或者 `utf8mb4_bin`
 
-<Image img={require('_images/29.png')} alt="" />
+![](_images/29.png)
 
 然后点击确定即可创建数据库
 
@@ -191,7 +189,7 @@ TODO
 
 这是一般插件的数据库配置项
 
-<Image img={require('_images/30.png')} alt="" />
+![](_images/30.png)
 
 我们来一一介绍他们的用途
 

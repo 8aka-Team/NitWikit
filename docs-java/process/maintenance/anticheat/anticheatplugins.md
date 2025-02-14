@@ -3,8 +3,6 @@ title: 反作弊插件
 sidebar_position: 1
 ---
 
-import Image from '@theme/IdealImage';
-
 # 反作弊
 
 :::tip[写在最前]
@@ -185,7 +183,7 @@ ISeeYou 是一个免费的录制插件,可以录制玩家的一举一动
 
 ## 反作弊配置
 
-<Image img={require('./_images/anticheat/talentsaclogo.png')} alt="" />
+![](./_images/anticheat/talentsaclogo.png)
 
 🛡人才反作弊配置🛡
 

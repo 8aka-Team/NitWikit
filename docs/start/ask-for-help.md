@@ -3,8 +3,6 @@ title: 如何向大佬求助
 sidebar_position: 7
 ---
 
-import Image from '@theme/IdealImage';
-
 ## 如何向大佬求助
 
 首先明确，你是求助者不是少爷，第二，大多数人还是愿意互帮互助的。
@@ -45,7 +43,7 @@ import Image from '@theme/IdealImage';
 
 :::warning
 
-<Image img={require('_images/不要截图这个啊.png')} alt="" />
+![](_images/不要截图这个啊.png)
 
 这段话是告诉你去控制台看报错，你把这段话截图给群发干什么？群友是控制台？
 
@@ -157,11 +155,11 @@ Wiki 就是让你解决常见问题的，不看这玩意儿就在那瞎问只会
 
 > https://log.8aka.org
 
-<Image img={require('_images/屏幕截图%202025-02-07%20182759.png')} alt="" />
+![](_images/屏幕截图%202025-02-07%20182759.png)
 
 服务器 log 文件在服务端根目录的 logs 文件夹，一般上传 latest.log (服务端最新的日志)即可
 
-<Image img={require('_images/屏幕截图%202025-02-07%20182930.png')} alt="" />
+![](_images/屏幕截图%202025-02-07%20182930.png)
 
 把这个链接复制粘贴发给大佬
 
@@ -170,17 +168,17 @@ Wiki 就是让你解决常见问题的，不看这玩意儿就在那瞎问只会
 <details>
   <summary>如何使用 Mclogs </summary>
 
-<Image img={require('_images/问问题的技巧/如何使用Mclogs-1.png')} alt="" />
+![](_images/问问题的技巧/如何使用Mclogs-1.png)
 
 服务器 log 文件在服务端根目录的 logs 文件夹，一般上传 latest.log (服务端最新的日志)即可
 
-<Image img={require('_images/问问题的技巧/如何使用Mclogs-2.png')} alt="" />
+![](_images/问问题的技巧/如何使用Mclogs-2.png)
 
 把这个链接复制粘贴发给大佬
 
 :::tip
 
-<Image img={require('_images/qnmd_raw.png')} alt="" />
+![](_images/qnmd_raw.png)
 
 不要点右上角的Raw进行分享，那是API接口链接，给开发人员提供的，不是分享链接的，不能用于分享日志使用
 
@@ -226,18 +224,18 @@ Wiki 就是让你解决常见问题的，不看这玩意儿就在那瞎问只会
 
 ### 经典老图
 
-<Image img={require('_images/问问题的技巧/经典老图-1.jpg')} alt="" />
+![](_images/问问题的技巧/经典老图-1.jpg)
 
-<Image img={require('_images/问问题的技巧/经典老图-2.jpg')} alt="" />
+![](_images/问问题的技巧/经典老图-2.jpg)
 
-<Image img={require('_images/问问题的技巧/经典老图-3.jpg')} alt="" />
+![](_images/问问题的技巧/经典老图-3.jpg)
 
-<Image img={require('_images/问问题的技巧/没事不要免费帮人.jpg')} alt="" />
+![](_images/问问题的技巧/没事不要免费帮人.jpg)
 
 ### 真正的傻逼
 
-<Image img={require('_images/问问题的技巧/林然-1.png')} alt="" />
+![](_images/问问题的技巧/林然-1.png)
 
-<Image img={require('_images/问问题的技巧/林然-2.png')} alt="" />
+![](_images/问问题的技巧/林然-2.png)
 
 对不起大佬，是我疏忽了，没说明服务器没停也是会输出日志到 `latest.log` 的

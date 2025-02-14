@@ -4,8 +4,6 @@ slug: /lava/overview
 sidebar_position: 1
 ---
 
-import Image from '@theme/IdealImage';
-
 # Java 相关
 
 你的服务端和客户端都需要安装 Java 才能运行。各个游戏版本需要安装的 Java 版本不同。
@@ -41,4 +39,4 @@ import DocCardList from '@theme/DocCardList';
 
 <DocCardList />
 
-<Image img={require('_images/lava.jpg')} alt="" />
+![](_images/lava.jpg)

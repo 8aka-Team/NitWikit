@@ -3,8 +3,6 @@ title: 其他作弊类型
 sidebar_position: 2
 ---
 
-import Image from '@theme/IdealImage';
-
 <!--markdownlint-disable no-duplicate-heading-->
 
 # 其他作弊类型
@@ -170,7 +168,7 @@ anticheat:
     use-permission: false
 ```
 
-<Image img={require('_images/anticheat/antixray-mode2-1.png')} alt="test" />
+![test](_images/anticheat/antixray-mode2-1.png)
 </details>
 
 <details>
@@ -229,7 +227,7 @@ anticheat:
     use-permission: false
 ```
 
-<Image img={require('_images/anticheat/antixray-mode3-1.png')} alt="test" />
+![test](_images/anticheat/antixray-mode3-1.png)
 </details>
 
 <details>
@@ -268,7 +266,7 @@ anticheat:
 
 ```
 
-<Image img={require('_images/anticheat/antixray-mode1-1.png')} alt="test" />
+![test](_images/anticheat/antixray-mode1-1.png)
 </details>
 
 ---
@@ -308,7 +306,7 @@ anticheat:
     use-permission: false
 ```
 
-<Image img={require('_images/anticheat/antixray-nether-mode2.png')} alt="test" />
+![test](_images/anticheat/antixray-nether-mode2.png)
 
 </details>
 
@@ -332,7 +330,7 @@ anticheat:
     use-permission: false
 ```
 
-<Image img={require('_images/anticheat/antixray-nerher-mode1.png')} alt="test" />
+![test](_images/anticheat/antixray-nerher-mode1.png)
 
 </details>
 
@@ -366,7 +364,7 @@ anticheat:
     use-permission: false
 ```
 
-<Image img={require('_images/anticheat/antixray-nerher-mode3.png')} alt="test" />
+![test](_images/anticheat/antixray-nerher-mode3.png)
 
 </details>
 

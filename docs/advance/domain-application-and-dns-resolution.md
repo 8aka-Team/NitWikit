@@ -3,8 +3,6 @@ title: 域名申请与解析
 sidebar_position: 5
 ---
 
-import Image from '@theme/IdealImage';
-
 # 申请域名
 
 域名不但是服务器的招牌，也是老玩家重新找回的一个重要渠道，一个好的域名应该够短(太长了没人记得住)、有记忆点(最好是和 Minecraft 或玩法相关)，那么准备好一点小钱钱和待选的名字开始吧。
@@ -51,11 +49,11 @@ import Image from '@theme/IdealImage';
 
 以阿里云的[万网](https://domain.aliyun.com/)为例，打开网站，来到如下页面：
 
-<Image img={require('_images/申请域名/1.png')} alt="" />
+![](_images/申请域名/1.png)
 
 搜索你想要的域名
 
-<Image img={require('_images/申请域名/2.png')} alt="" />
+![](_images/申请域名/2.png)
 
 :::warning
 
@@ -73,7 +71,7 @@ import Image from '@theme/IdealImage';
 
 登录后点击域名旁边的加入清单，然后点批量注册旁边的域名清单，更改域名购买时间后，最好底下什么套餐都不要选，直接点立即购买。
 
-<Image img={require('_images/申请域名/3.png')} alt="" />
+![](_images/申请域名/3.png)
 
 跳转后这个页面立即购买是点不动的，滑动到下方，点击创建信息模板来实名验证。
 

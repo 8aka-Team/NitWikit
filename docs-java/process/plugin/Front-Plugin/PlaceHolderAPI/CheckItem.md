@@ -3,8 +3,6 @@ title: CheckItem
 sidebar_position: 4
 ---
 
-import Image from '@theme/IdealImage';
-
 # CheckItem
 
 ## 有关 CheckItem 的相关链接
@@ -28,7 +26,7 @@ import Image from '@theme/IdealImage';
 
 ## 教程
 
-<Image img={require('_images/CheckItem/remove-item.png')} alt="" />
+![](_images/CheckItem/remove-item.png)
 
 ```text
 /papi parse me %checkitem_remove_diamond%
@@ -40,7 +38,7 @@ import Image from '@theme/IdealImage';
 
 如果没有 **remove** 那么这个变量就会判断玩家是否拥有这个物品
 
-<Image img={require('_images/CheckItem/checkitem.png')} alt="" />
+![](_images/CheckItem/checkitem.png)
 
 这里返回了 yes
 
@@ -120,9 +118,9 @@ import Image from '@theme/IdealImage';
 
 下方是使用案例
 
-<Image img={require('./_images/CheckItem/getinfo_1.png')} alt="" />
+![](./_images/CheckItem/getinfo_1.png)
 
-<Image img={require('./_images/CheckItem/getinfo_2.png')} alt="" />
+![](./_images/CheckItem/getinfo_2.png)
 
 ### 例子：收取ia物品
 

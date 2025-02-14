@@ -3,8 +3,6 @@ title: 搭建官网
 sidebar_position: 8
 ---
 
-import Image from '@theme/IdealImage';
-
 # 搭建官网
 
 ## 使用 Github + Cloudflare saas 回源
@@ -19,13 +17,13 @@ import Image from '@theme/IdealImage';
 
 进入github.com，点击sign up
 
-<Image img={require('_images/open-web-photo/114514.png')} alt="114514.png" />
+![114514.png](_images/open-web-photo/114514.png)
 
 进入后按照提示完成注册(看不懂自己用翻译)
 
 进入主页后点击左上的new(绿色的)
 
-<Image img={require('_images/open-web-photo/dian-new.png')} alt="屏幕截图 2024-09-16 082239.png" />
+![屏幕截图 2024-09-16 082239.png](_images/open-web-photo/dian-new.png)
 
 会跳转到一个界面
 
@@ -45,7 +43,7 @@ Repository name填 你的用户名.github.io
 
 上传完后点Commit changes
 
-<Image img={require('_images/open-web-photo/add-web.png')} alt="微信图片_20240916083119.png" />
+![微信图片_20240916083119.png](_images/open-web-photo/add-web.png)
 
 然后你访问 你的用户名.github.io就可以访问了
 
@@ -66,22 +64,22 @@ Repository name填 你的用户名.github.io
 
 你的用户名.github.io 选择开启小黄云 点保存
 
-<Image img={require('_images/open-web-photo/origin.png')} alt="微信图片_20240916091413.png" />
+![微信图片_20240916091413.png](_images/open-web-photo/origin.png)
 
 然后来到ssl/tls-自定义主机名
 
 然后选择开通，如果它提示你要绑卡的话，如果你没有卡，你可以上闲鱼买一个15块的代绑
 
 开通完成后，先在回退源那输入你刚刚创建的DNS记录origin.你的回源域名
-<Image img={require('_images/open-web-photo/tianjiahuiy.png')} alt="微信图片_20240916091834.png" />
+![微信图片_20240916091834.png](_images/open-web-photo/tianjiahuiy.png)
 
 等待到那里显示生效后 点击添加自定义主机名
-<Image img={require('_images/open-web-photo/tianjiazdy.png')} alt="微信图片_20240916092036.png" />
+![微信图片_20240916092036.png](_images/open-web-photo/tianjiazdy.png)
 
 自定义主机名填你的用来开网站的域名
 
 填完后点击添加
-<Image img={require('_images/open-web-photo/zidingy.png')} alt="微信图片_20240916092238.png" />
+![微信图片_20240916092238.png](_images/open-web-photo/zidingy.png)
 
 然后按照提示完成txt授权
 
@@ -89,7 +87,7 @@ Repository name填 你的用户名.github.io
 
 添加一个类型为 CNAME 名称为cdn 内容为
 cf-cname.xingpingcn.top 不需要开启小黄云
-<Image img={require('_images/open-web-photo/close-yellow-cloud.png')} alt="微信图片_20240916092435.png" />
+![微信图片_20240916092435.png](_images/open-web-photo/close-yellow-cloud.png)
 
 然后来到你的主域名 添加DNS记录
 
@@ -103,14 +101,14 @@ cf-cname.xingpingcn.top 不需要开启小黄云
 先登录[Cloudflare](https://dash.cloudflare.com/)
 
 来到面板主页之后点击进入你自己的域名，然后点击缓存-Cache Rules-创建规则
-<Image img={require('_images/open-web-photo/huanc-1.png')} alt="huanc-1" />
+![huanc-1](_images/open-web-photo/huanc-1.png)
 
 来到创建规则页面后点击最上面的缓存所有内容
-<Image img={require('_images/open-web-photo/huanc-2.png')} alt="huanc-2" />
+![huanc-2](_images/open-web-photo/huanc-2.png)
 然后添加边缘 TTL设置按照图片选择
-<Image img={require('_images/open-web-photo/huanc-3.png')} alt="huanc-3" />
+![huanc-3](_images/open-web-photo/huanc-3.png)
 然后添加浏览器 TTL设置按照图片选择
-<Image img={require('_images/open-web-photo/huanc-4.png')} alt="huanc-4" />
+![huanc-4](_images/open-web-photo/huanc-4.png)
 完成后点下面的部署，缓存就设置完成了
 
 
@@ -219,25 +217,25 @@ cf-cname.xingpingcn.top 不需要开启小黄云
 以[星辰云](https://starxn.com/)的虚拟主机为例
 
 购买后点击一键登录进入面板
-<Image img={require('_images/open-web-photo/xn-login.png')} alt="微信图片_20240921113640.png" />
+![微信图片_20240921113640.png](_images/open-web-photo/xn-login.png)
 
 进入后点击文件管理
 
-<Image img={require('_images/open-web-photo/wenjianguanli.png')} alt="微信图片_20240921113814.png" />
+![微信图片_20240921113814.png](_images/open-web-photo/wenjianguanli.png)
 
 点击上传上传源码
-<Image img={require('_images/open-web-photo/shangcwenjian.png')} alt="微信图片_20240921114159.png" />
+![微信图片_20240921114159.png](_images/open-web-photo/shangcwenjian.png)
 
 然后点击解压
-<Image img={require('_images/open-web-photo/jieyazip.png')} alt="微信图片_20240921114409.png" />
+![微信图片_20240921114409.png](_images/open-web-photo/jieyazip.png)
 
 然后将解压出来的文件夹里面的源码全部复制出来
 
 然后来到域名管理
-<Image img={require('_images/open-web-photo/ymguanli.png')} alt="微信图片_20240921114622.png" />
+![微信图片_20240921114622.png](_images/open-web-photo/ymguanli.png)
 
 在添加域名那里输入你自己的域名
-<Image img={require('_images/open-web-photo/tianxym.png')} alt="微信图片_20240921114806.png" />
+![微信图片_20240921114806.png](_images/open-web-photo/tianxym.png)
 
 然后按照上面的域名解析解析好之后你就可以访问你的域名，看到你的网站了
 
@@ -282,26 +280,26 @@ PHP 7.4、8.0或8.1（推荐），具有以下扩展：
 
 :::
 先在网站-php项目点添加站点
-<Image img={require('_images/open-web-photo/baotadianj.png')} alt="" />
+![](_images/open-web-photo/baotadianj.png)
 然后按以下选择
-<Image img={require('_images/open-web-photo/mysql.png')} alt="" />
+![](_images/open-web-photo/mysql.png)
 
 创建完成后点图片圈的地方
-<Image img={require('_images/open-web-photo/dianji.png')} alt="" />
+![](_images/open-web-photo/dianji.png)
 
 然后删除默认文件
-<Image img={require('_images/open-web-photo/removeindex.png')} alt="" />
+![](_images/open-web-photo/removeindex.png)
 然
 后上传源文件[点击下载](https://b2.mcdogserver.top/nameless-deps-dist.zip)
-<Image img={require('_images/open-web-photo/upload.png')} alt="" />
+![](_images/open-web-photo/upload.png)
 
 然后解压
-<Image img={require('_images/open-web-photo/unzip.png')} alt="" />
+![](_images/open-web-photo/unzip.png)
 
 然后将文件夹的东西复制到根目录
 
 然后访问你的公网ip来到安装界面
-<Image img={require('_images/open-web-photo/install.png')} alt="" />
+![](_images/open-web-photo/install.png)
 
 然后点击Continue 下一步
 
@@ -312,12 +310,12 @@ PHP 7.4、8.0或8.1（推荐），具有以下扩展：
 
 :::
 完成后会跳转到仪表盘，然后记得去把API开一下，到时候可以直接和你的MC服务器连接
-<Image img={require('_images/open-web-photo/api.png')} alt="" />
+![](_images/open-web-photo/api.png)
 
 然后它会出现连接地址和API密钥，到时候输入你插件的配置文件里面就可以实现联通了，这里就不做演示了
 
 然后主页面就长这样子
-<Image img={require('_images/open-web-photo/index.png')} alt="" />
+![](_images/open-web-photo/index.png)
 
 如果你看到这个界面那么如果你是第1次使用宝塔面板搭建网站，那么恭喜你，你成功了
 
@@ -337,15 +335,15 @@ PHP 7.4、8.0或8.1（推荐），具有以下扩展：
 首先进入[vercel](https://vercel.com)
 
 然后可以点击图片上的这两个，那个黑色的是注册那个圈起来的白色的是登录，如果你已经有了github账号可以直接登录
-<Image img={require('_images/open-web-photo/vercel-login.png')} alt="" />
+![](_images/open-web-photo/vercel-login.png)
 
 登录完之后去 Github 新建一个仓库，上传你的网站源码(这里前面讲过如何新建仓库并上传源码，这里就不讲了)
 
 上传完之后在 vercel 里的主页，点击 add new
-<Image img={require('_images/open-web-photo/add-new.png')} alt="" />
+![](_images/open-web-photo/add-new.png)
 
 然后选择第2个
-<Image img={require('_images/open-web-photo/choose-second.png')} alt="" />
+![](_images/open-web-photo/choose-second.png)
 
 进入之后找到你刚刚创建并上传了源码的仓库，然后点击那个仓库旁的 import ，然后再点 deploy
 
@@ -354,13 +352,13 @@ PHP 7.4、8.0或8.1（推荐），具有以下扩展：
 完成之后，点击最下面那个黑色的按钮
 
 然后来到管理网站的仪表盘然后点击 settings-domains
-<Image img={require('_images/open-web-photo/dom.png')} alt="" />
+![](_images/open-web-photo/dom.png)
 
 然后再最上面的那个框那里输入你要绑定的域名，然后点击 add
-<Image img={require('_images/open-web-photo/add.png')} alt="" />
+![](_images/open-web-photo/add.png)
 
 这时他会提示你要添加一个 cname 记录，千万不要使用这个地址，要使用其他人制作的优选IP 优选IP是vercel.182682.xyz
-<Image img={require('_images/open-web-photo/cname.png')} alt="" />
+![](_images/open-web-photo/cname.png)
 
 添加完之后等待它自动检查检查完成并签发完证书之后然后访问你绑定的域名就可以访问到你的网站了
 
@@ -411,11 +409,11 @@ PHP 7.4、8.0或8.1（推荐），具有以下扩展：
 :::
 ### itdog 在线ping测试
 Cloudflare
-<Image img={require('_images/open-web-photo/cloudflare-ping.png')} alt="cloudflare-ping" />
+![cloudflare-ping](_images/open-web-photo/cloudflare-ping.png)
 vercel
-<Image img={require('_images/open-web-photo/vercel-ping.png')} alt="vercel-ping" />
+![vercel-ping](_images/open-web-photo/vercel-ping.png)
 ### itdog 网站测试
 Cloudflare
-<Image img={require('_images/open-web-photo/cloudflare-test.png')} alt="cloudflare-test" />
+![cloudflare-test](_images/open-web-photo/cloudflare-test.png)
 vercel
-<Image img={require('_images/open-web-photo/vercel-test.png')} alt="vercel-test" />
+![vercel-test](_images/open-web-photo/vercel-test.png)

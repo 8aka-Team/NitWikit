@@ -4,11 +4,9 @@ slug: /Multiverse
 sidebar_label: 多世界 - Multiverse
 ---
 
-import Image from '@theme/IdealImage';
-
 # Multiverse
 
-<Image img={require('_images/multiverse2-long.png')} alt="" />
+![](_images/multiverse2-long.png)
 
 <a href="https://modrinth.com/plugin/multiverse-core">
   <img src="https://cdn.jsdmirror.cn/npm/@intergrav/devins-badges@3/assets/cozy/available/modrinth_vector.svg" class="stylish-image" alt="Modrinth" />

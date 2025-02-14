@@ -3,23 +3,21 @@ title: EndStone 插件安装教程
 sidebar_position: 1
 ---
 
-import Image from '@theme/IdealImage';
-
 ## 第一步、EndStone插件来源
 
 目前插件来源：
 
 ### [MineBBS论坛](https://www.minebbs.com/resources/categories/bdserver.38/)（发展国内基岩版社区的你敢说没有？）
 
-<Image img={require('./imgs/2-1.png')} alt="201" />
+![201](./imgs/2-1.png)
 
 ### [pip源](https://pypi.org/search/?q=endstone) （EndStone绝大多数插件都在这里发布了）
 
-<Image img={require('./imgs/2-2.png')} alt="202" />
+![202](./imgs/2-2.png)
 
 ### [Bedrinth下载站](https://bedrinth.com/?platform=endstone) （除了pip外另一个比较知名的下载源，网速较慢，不太推荐）
 
-<Image img={require('./imgs/2-3.png')} alt="203" />
+![203](./imgs/2-3.png)
 
 ## 第二步、如何安装？
 
@@ -43,7 +41,7 @@ whl格式本质上是一个压缩包，里面包含了py文件，以及经过编
 常玩 Java 版的话，你可以理解为它是 **Python版 的 .jar 文件**，只是运行环境由 *Java* 改为 *Python*（可以这么想吧）
 :::
 
-<Image img={require('./imgs/2-4.png')} alt="204" />
+![204](./imgs/2-4.png)
 
 #### 第一步、下载插件
 
@@ -66,23 +64,23 @@ whl格式本质上是一个压缩包，里面包含了py文件，以及经过编
 
 1、打开 bedrock_server 文件夹，你会惊奇的发现：什么时候多了个plugins文件夹？！！
 
-<Image img={require('./imgs/2-5.png')} alt="205" />
+![205](./imgs/2-5.png)
 
 2、打开 plugins 文件夹，将下载的 whl 插件文件拽入该文件夹中
 
 3、启动！当CMD显示插件名称时说明插件已加载成功！
 
-<Image img={require('./imgs/2-6.png')} alt="206" />
+![206](./imgs/2-6.png)
 
 4、如果你真不知道如何辨别插件是否加载，请在后台输入 `plugins` 指令
 
-<Image img={require('./imgs/2-7.png')} alt="207" />
+![207](./imgs/2-7.png)
 
 ##### 如果是压缩包文件
 
 比如下面这个赖皮家伙（不是）
 
-<Image img={require('./imgs/2-8.png')} alt="208" />
+![208](./imgs/2-8.png)
 
 教你三招：
 
@@ -92,17 +90,17 @@ whl格式本质上是一个压缩包，里面包含了py文件，以及经过编
 
 3、启动！享受插件便利！
 
-<Image img={require('./imgs/2-9.png')} alt="209" />
+![209](./imgs/2-9.png)
 
 ##### 插件配置
 
 有的会在下载的压缩文件中提前准备好
 
-<Image img={require('./imgs/2-8.png')} alt="208" />
+![208](./imgs/2-8.png)
 
 有的会在启动一次服务器后自动生成
 
-<Image img={require('./imgs/2-10.png')} alt="2010" />
+![2010](./imgs/2-10.png)
 
 编辑他们很简单，打开相应插件的文件夹，然后使用 VSCode 或者 Nodepad-- 一类编辑器对插件进行配置
 
@@ -118,6 +116,6 @@ whl格式本质上是一个压缩包，里面包含了py文件，以及经过编
 pip install 插件名
 ```
 
-<Image img={require('./imgs/2-11.png')} alt="2011" />
+![2011](./imgs/2-11.png)
 
 然后重启服务器，插件会自动安装完毕啦~

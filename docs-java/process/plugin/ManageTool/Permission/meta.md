@@ -3,8 +3,6 @@ title: 数据存储
 sidebar_position: 6
 ---
 
-import Image from '@theme/IdealImage';
-
 <!--markdownlint-disable no-duplicate-heading-->
 
 # 数据存储
@@ -19,9 +17,9 @@ import Image from '@theme/IdealImage';
 
 设置权限：
 
-<Image img={require('_images/memory_1.png')} alt="" />
+![](_images/memory_1.png)
 
-<Image img={require('_images/memory_2.png')} alt="" />
+![](_images/memory_2.png)
 
 ### 只能按一次的按钮
 
@@ -83,13 +81,13 @@ import Image from '@theme/IdealImage';
 
 :::
 
-<Image img={require('_images/memory_3.png')} alt="" />
+![](_images/memory_3.png)
 
 ### 按钮冷却
 
 案例(TrMenu)：
 
-<Image img={require('_images/memory_4.png')} alt="" />
+![](_images/memory_4.png)
 
 ```yaml
   'A':
@@ -121,7 +119,7 @@ import Image from '@theme/IdealImage';
 
 图中执行了三次相同的命令
 
-<Image img={require('_images/memory_5.png')} alt="" />
+![](_images/memory_5.png)
 
 :::tip
 
@@ -155,7 +153,7 @@ inline "lp user {{sender}} permission settemp nitwikit.demo true {{math 24 - tim
 
 tell搓出来的看看
 
-<Image img={require('_images/memory_6.png')} alt="" />
+![](_images/memory_6.png)
 
 执行命令：
 
@@ -183,17 +181,17 @@ command inline "lp user {{sender}} permission settemp nitwikit.demo true {{math 
 
 然后框框设♂就行
 
-<Image img={require('_images/memory_7.png')} alt="" />
+![](_images/memory_7.png)
 
-<Image img={require('_images/memory_8.png')} alt="" />
+![](_images/memory_8.png)
 
-<Image img={require('_images/memory_9.png')} alt="" />
+![](_images/memory_9.png)
 
 ```text
 %luckperms_meta_键名%
 ```
 
-<Image img={require('_images/memory_10.png')} alt="" />
+![](_images/memory_10.png)
 
 此方法op不受影响，但适用性没权限广，因为一些插件只支持判断权限
 
@@ -218,7 +216,7 @@ memory 键名 to 值 using lp
 
 存meta
 
-<Image img={require('_images/memory_11.png')} alt="" />
+![](_images/memory_11.png)
 
 ```text
 memory 键名 using lp
@@ -226,9 +224,9 @@ memory 键名 using lp
 
 取meta
 
-<Image img={require('_images/memory_12.png')} alt="" />
+![](_images/memory_12.png)
 
-<Image img={require('_images/正经笑+手.jpg')} alt="" />
+![](_images/正经笑+手.jpg)
 
 ### 案例
 

@@ -3,17 +3,15 @@ sidebar_position: 3
 sidebar_label: 保护 - NoBuildPlus
 ---
 
-import Image from '@theme/IdealImage';
-
 # NoBuildPlus
 
-## <Image img={require('_images/NoBuildPlus/banner_nobuildplus_zh_CN.png')} alt="概览" />
+## ![概览](_images/NoBuildPlus/banner_nobuildplus_zh_CN.png)
 
-<Image img={require('_images/NoBuildPlus/banner_type_nobuildplus_zh_CN.png')} alt="" />
+![](_images/NoBuildPlus/banner_type_nobuildplus_zh_CN.png)
 
-<Image img={require('_images/NoBuildPlus/banner_deny_nobuildplus_zh_CN.png')} alt="" />
+![](_images/NoBuildPlus/banner_deny_nobuildplus_zh_CN.png)
 
-<Image img={require('_images/NoBuildPlus/banner_compat_nobuildplus_zh_CN.png')} alt="" />
+![](_images/NoBuildPlus/banner_compat_nobuildplus_zh_CN.png)
 
 ## 链接
 

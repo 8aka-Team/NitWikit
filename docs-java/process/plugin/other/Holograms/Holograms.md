@@ -4,15 +4,13 @@ slug: /Plugins/OtherPlugin/Holograms
 sidebar_position: 1
 ---
 
-import Image from '@theme/IdealImage';
-
 # 啥是全息图?
 
 如图，图中的悬浮字，还有包括展示的实体和物品，都算全息图。
 
 > 全息图也被很多人称作浮空字
 
-<Image img={require('_images/holo.png')} alt="" />
+![](_images/holo.png)
 
 全息图用途很广，很多服务器都会使用全息图插件。
 

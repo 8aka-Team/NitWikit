@@ -3,8 +3,6 @@ title: TAB
 sidebar_position: 2
 ---
 
-import Image from '@theme/IdealImage';
-
 # TAB
 
 <a href="https://github.com/NEZNAMY/TAB/releases">
@@ -32,7 +30,7 @@ TAB 是一个用于在不同位置显示信息的多功能插件，旨在在功�
 
 ### TAB（HEADER FOOTER）
 
-<Image img={require('_images/TAB/TAB-1.png')} alt="" />
+![](_images/TAB/TAB-1.png)
 
 [点我查看文档](https://docs.superiormc.cn/v/tab-wiki/core-features/tab-de-ding-bu-he-di-bu)
 
@@ -44,7 +42,7 @@ TAB 是一个用于在不同位置显示信息的多功能插件，旨在在功�
 
 ### 排列（SORTING）
 
-<Image img={require('_images/TAB/TAB-2.png')} alt="" />
+![](_images/TAB/TAB-2.png)
 
 [点我查看文档](https://docs.superiormc.cn/v/tab-wiki/core-features/pai-lie)
 
@@ -52,7 +50,7 @@ TAB 是一个用于在不同位置显示信息的多功能插件，旨在在功�
 
 完全可定制的 TAB 列表格式，支持自定义前缀、名称和后缀
 
-<Image img={require('_images/TAB/TAB-3.png')} alt="" />
+![](_images/TAB/TAB-3.png)
 
 [点我查看文档](https://docs.superiormc.cn/v/tab-wiki/core-features/tab-lie-biao-ming-cheng-yang-shi)
 
@@ -60,9 +58,9 @@ TAB 是一个用于在不同位置显示信息的多功能插件，旨在在功�
 
 此功能允许您在列表中显示某变量数字或血量
 
-<Image img={require('_images/TAB/TAB-4.png')} alt="" />
+![](_images/TAB/TAB-4.png)
 
-<Image img={require('_images/TAB/TAB-5.png')} alt="" />
+![](_images/TAB/TAB-5.png)
 
 [点我查看文档](https://docs.superiormc.cn/v/tab-wiki/core-features/huang-se-shu-zi)
 
@@ -70,13 +68,13 @@ TAB 是一个用于在不同位置显示信息的多功能插件，旨在在功�
 
 此功能可以在玩家姓名标签下方显示数字和静态文本
 
-<Image img={require('_images/TAB/TAB-6.png')} alt="" />
+![](_images/TAB/TAB-6.png)
 
 [点我查看文档](https://docs.superiormc.cn/v/tab-wiki/core-features/ming-cheng-biao-qian-xia-fang)
 
 ### BOSS条（BOSSBAR）
 
-<Image img={require('_images/TAB/TAB-7.png')} alt="" />
+![](_images/TAB/TAB-7.png)
 
 [点我查看文档](https://docs.superiormc.cn/v/tab-wiki/core-features/boss-tiao)
 
@@ -90,13 +88,13 @@ TAB 是一个用于在不同位置显示信息的多功能插件，旨在在功�
 
 这个功能允许你配置所有 80 个 TAB 列表槽位。目前不支持显示小于 4 列
 
-<Image img={require('_images/TAB/TAB-8.png')} alt="" />
+![](_images/TAB/TAB-8.png)
 
 [点我查看文档](https://docs.superiormc.cn/v/tab-wiki/core-features/bu-ju)
 
 ### 计分板（SCOREBOARD）
 
-<Image img={require('_images/TAB/TAB-9.png')} alt="" />
+![](_images/TAB/TAB-9.png)
 
 [点我查看文档](https://docs.superiormc.cn/v/tab-wiki/core-features/ji-fen-ban)
 

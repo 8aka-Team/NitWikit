@@ -3,8 +3,6 @@ title: 数据相关
 sidebar_position: 4
 ---
 
-import Image from '@theme/IdealImage';
-
 <!--markdownlint-disable no-duplicate-heading-->
 
 # 数据相关
@@ -26,7 +24,7 @@ import Image from '@theme/IdealImage';
 type {token} | type {type} {action}
 ```
 
-<Image img={require('_images/type_1.png')} alt="" />
+![](_images/type_1.png)
 
 ### 自动类型转换
 
@@ -56,7 +54,7 @@ set {token} {token} | set {token} to {action}
 
 注意上面的语法，前者只能输入固定内容，后者可以把动作的返回值传入变量
 
-<Image img={require('_images/var_1.png')} alt="" />
+![](_images/var_1.png)
 
 接着我们获取下这个变量
 
@@ -68,7 +66,7 @@ set {token} {token} | set {token} to {action}
 get {token} | &{token}
 ```
 
-<Image img={require('_images/var_2.png')} alt="" />
+![](_images/var_2.png)
 
 啪！空的！
 
@@ -86,13 +84,13 @@ get {token} | &{token}
 /vul eval set yizhan to 114514 tell get yizhan
 ```
 
-<Image img={require('_images/var_3.png')} alt="" />
+![](_images/var_3.png)
 
 成功得到了变量里的内容！
 
 对于获取变量，我们有个更简单的办法 `&{token}`
 
-<Image img={require('_images/var_4.png')} alt="" />
+![](_images/var_4.png)
 
 看到这里，你就应该知道，为什么前面讲 [彩色(color Text)](basic.md#彩色color-text) 动作的时候会说
 
@@ -117,7 +115,7 @@ array [ 动作1 动作2 动作3 更多 ]
 
 我们搓一个出来玩玩
 
-<Image img={require('_images/var_5.png')} alt="" />
+![](_images/var_5.png)
 
 在这个集合中，数据被英文 `，` 分割开来，我们称为 **元素**
 
@@ -135,7 +133,7 @@ set yizhan to array [ HelloWord! player name 0.0 ]
 
 我们给每个元素都标上号，然后获取指定号数的就好啦！`&变量名[标号]`
 
-<Image img={require('_images/var_6.png')} alt="" />
+![](_images/var_6.png)
 
 注意！标号是从 **0** 开始的
 
@@ -148,7 +146,7 @@ set yizhan to array [ HelloWord! player name 0.0 ]
 
 我们还有一种办法获取到指定元素的值，那就是 `element` 动作
 
-<Image img={require('_images/var_7.png')} alt="" />
+![](_images/var_7.png)
 
 ## TrMenu
 

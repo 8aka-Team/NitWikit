@@ -4,8 +4,6 @@ slug: /map
 sidebar_position: 7
 ---
 
-import Image from '@theme/IdealImage';
-
 # 地图建设
 
 :::warning
@@ -50,7 +48,7 @@ import Image from '@theme/IdealImage';
 
 整张地图的大小不超过 200*200 ，玩家路线为首尾相通的环状结构，既避免了怪物路线判断死角找不到玩家的情景，也在一定程度上避免了玩家找不到关键机器的情况
 
-<Image img={require('_images/僵尸末日-1.png')} alt="" />
+![](_images/僵尸末日-1.png)
 
 玩家的初始位置一共放置了 4 个出怪口，避免出现经济不均衡的情况
 
@@ -58,11 +56,11 @@ import Image from '@theme/IdealImage';
 
 玩家在初始位置大约可以撑到 10-15 回合，是游戏前期的舒适圈
 
-<Image img={require('_images/僵尸末日-2.png')} alt="" />
+![](_images/僵尸末日-2.png)
 
 在地图的办公室中，出怪口采用隔墙死角的方式来遮挡玩家的视野，实现类似巷战的效果，并在旅馆内设置了霰弹枪的购买点
 
-<Image img={require('_images/僵尸末日-3.png')} alt="" />
+![](_images/僵尸末日-3.png)
 
 在地图的旅馆中，设计了一条狭长的走廊，途中有多个出怪口，可以产生聚怪的效果
 
@@ -70,9 +68,9 @@ import Image from '@theme/IdealImage';
 
 在这条走廊内，怪物的攻击距离刚好占走廊宽度的 1/3 - 2/3 ，使玩家进行游戏时操作变得穷迫、急迫
 
-<Image img={require('_images/僵尸末日-4.png')} alt="" />
+![](_images/僵尸末日-4.png)
 
-<Image img={require('_images/僵尸末日-5.png')} alt="" />
+![](_images/僵尸末日-5.png)
 
 地图中的天台存放着整局游戏的关键性机关发电机，玩家若是想超过 25 回合，就必须往天台走
 
@@ -82,9 +80,9 @@ import Image from '@theme/IdealImage';
 
 整个游戏的环状结构也是在此刻完全地映射出「穷途末路」的背景渲染
 
-<Image img={require('_images/僵尸末日-6.png')} alt="" />
+![](_images/僵尸末日-6.png)
 
-<Image img={require('_images/僵尸末日-7.png')} alt="" />
+![](_images/僵尸末日-7.png)
 
 ### 视距
 
@@ -108,13 +106,13 @@ import Image from '@theme/IdealImage';
 
 在 Minecraft 建筑中，我们通常会使用这些非完整方块来拼凑出完整方块达不到的弧度或模拟形状，如下图亭子的宝顶和脊瓦：
 
-<Image img={require('_images/laobaitu156-1.png')} alt="" />
+![](_images/laobaitu156-1.png)
 
 特别是在中式建筑中，经常会出现用漏斗或楼梯模拟斗拱的拱、用台阶、活版门制作飞檐部分以及用各种非完整方块做雕刻的情况
 
-<Image img={require('_images/laobaitu156-2.png')} alt="" />
+![](_images/laobaitu156-2.png)
 
-<Image img={require('_images/laobaitu156-3.png')} alt="" />
+![](_images/laobaitu156-3.png)
 
 ### 混合像素
 
@@ -124,15 +122,15 @@ import Image from '@theme/IdealImage';
 
 颜色相近有深浅关系的方块可以形成「层」的递进效果
 
-<Image img={require('_images/Grettzzz-1.JPG')} alt="" />
+![](_images/Grettzzz-1.JPG)
 
 颜色相近纹路不同的方块可以在山体形成「糙」的细节效果
 
-<Image img={require('_images/Grettzzz-3.png')} alt="" />
+![](_images/Grettzzz-3.png)
 
 颜色反差大纹路相近的方块可以形成「明暗」的光影效果
 
-<Image img={require('_images/Grettzzz-2.png')} alt="" />
+![](_images/Grettzzz-2.png)
 
 混合像素需要你不断地尝试练习，请相信你的直觉。
 
@@ -150,7 +148,7 @@ import Image from '@theme/IdealImage';
 
 头颅和盔甲可以为你的服务器增加更多的细节，特别是低版本的服务器
 
-<Image img={require('_images/僵尸末日-2.png')} alt="" />
+![](_images/僵尸末日-2.png)
 
 :::warning
 
@@ -284,15 +282,15 @@ import Image from '@theme/IdealImage';
 
 > 中世纪，采样于 z_wuxin
 
-<Image img={require('_images/z_wuxin-1.png')} alt="" />
+![](_images/z_wuxin-1.png)
 
 > 中式玄幻，采样于 Grettzzz
 
-<Image img={require('_images/Grettzzz-1.JPG')} alt="" />
+![](_images/Grettzzz-1.JPG)
 
 > 欧式，采样于 z_wuxin
 
-<Image img={require('_images/z_wuxin-2.png')} alt="" />
+![](_images/z_wuxin-2.png)
 
 ### 关于世界规则
 

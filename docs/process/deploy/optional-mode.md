@@ -3,8 +3,6 @@ title: 可选方式
 sidebar_position: 3
 ---
 
-import Image from '@theme/IdealImage';
-
 # 可选方式
 
 :::warning
@@ -24,11 +22,11 @@ import Image from '@theme/IdealImage';
 
 MCSManager:
 
-<Image img={require('_images/mcsm.png')} alt="" />
+![](_images/mcsm.png)
 
 翼龙:
 
-<Image img={require('_images/翼龙面板.png')} alt="" />
+![](_images/翼龙面板.png)
 
 </details>
 

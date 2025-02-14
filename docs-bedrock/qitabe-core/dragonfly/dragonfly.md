@@ -3,9 +3,7 @@ title: Dragonfly 核心介绍
 sidebar_position: 1
 ---
 
-import Image from '@theme/IdealImage';
-
-<Image img={require('./dragonfly.png')} alt="DragonflyLogo" />
+![DragonflyLogo](./dragonfly.png)
 
 ## 什么是 Dragonfly
 

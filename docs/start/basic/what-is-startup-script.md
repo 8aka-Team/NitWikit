@@ -3,8 +3,6 @@ title: 什么是启动脚本？
 sidebar_position: 4
 ---
 
-import Image from '@theme/IdealImage';
-
 ## 什么是启动脚本？
 
 启动脚本主要部分就是设置 Java 参数设置。
@@ -59,7 +57,7 @@ java -Xms12G -Xmx12G -jar 核心名.jar nogui
 
 不显示类似下面的GUI
 
-<Image img={require('_images/nogui.jpg')} alt="" />
+![](_images/nogui.jpg)
 
 真的，这个GUI一点用没有，别开它了
 

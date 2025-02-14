@@ -4,25 +4,23 @@ slug: /PlaceHolderAPI
 sidebar_position: 1
 ---
 
-import Image from '@theme/IdealImage';
-
 <!--markdownlint-disable line-length-->
 
 # PlaceHolderAPI
 
-<Image img={require('_images/PlaceHolderAPI/1.png')} alt="" />
+![](_images/PlaceHolderAPI/1.png)
 
 <div align="center">
 
-<Image img={require('_images/PlaceHolderAPI/2.png')} alt="" />
+![](_images/PlaceHolderAPI/2.png)
 
-[<Image img={require('_images/PlaceHolderAPI/3.png')} alt="" />](https://snowcutieowo.github.io/PlaceholderAPI)
-[<Image img={require('_images/PlaceHolderAPI/4.png')} alt="" />](https://snowcutieowo.github.io/PlaceholderAPI/user-guides.placeholder-list.html)
-[<Image img={require('_images/PlaceHolderAPI/5.png')} alt="" />](https://api.extendedclip.com/home)
+[![](_images/PlaceHolderAPI/3.png)](https://snowcutieowo.github.io/PlaceholderAPI)
+[![](_images/PlaceHolderAPI/4.png)](https://snowcutieowo.github.io/PlaceholderAPI/user-guides.placeholder-list.html)
+[![](_images/PlaceHolderAPI/5.png)](https://api.extendedclip.com/home)
 
 </div>
 
-## <Image img={require('_images/PlaceHolderAPI/6.png')} alt="介绍" />
+## ![介绍](_images/PlaceHolderAPI/6.png)
 
 PlaceholderAPI 是适用于 Spigot 及其衍生服务端的插件，它允许服务器管理者以固定的格式替换占位符 (俗称变量) 为各种插件的信息。
 
@@ -32,11 +30,11 @@ PlaceholderAPI 是适用于 Spigot 及其衍生服务端的插件，它允许服
 
 PlaceholderAPI 已破 170 万下载量，同时使用本插件的服务器数已超过 4.5 万，成为了各规模各类型服务器的必需品。
 
-## <Image img={require('_images/PlaceHolderAPI/7.png')} alt="安装" />
+## ![安装](_images/PlaceHolderAPI/7.png)
 
-<Image img={require('_images/PlaceHolderAPI/8.png')} alt="" />
+![](_images/PlaceHolderAPI/8.png)
 
-## <Image img={require('_images/PlaceHolderAPI/9.png')} alt="在其他插件使用" />
+## ![在其他插件使用](_images/PlaceHolderAPI/9.png)
 
 默认你已安装 player 变量扩展。
 
@@ -57,7 +55,7 @@ PlaceholderAPI 已破 170 万下载量，同时使用本插件的服务器数已
 
 `%math_2_{player_health}%`
 
-## <Image img={require('_images/PlaceHolderAPI/10.png')} alt="配置文件" />
+## ![配置文件](_images/PlaceHolderAPI/10.png)
 
 配置文件 `config.yml` 有核心插件的个性化设置，也有专门为扩展预留的设置选项。
 
@@ -90,7 +88,7 @@ debug: false
 
 </details>
 
-## <Image img={require('_images/PlaceHolderAPI/11.png')} alt="权限列表" />
+## ![权限列表](_images/PlaceHolderAPI/11.png)
 
 <details>
   <summary>点击展开</summary>
@@ -184,7 +182,7 @@ permissions:
 
 </details>
 
-## <Image img={require('_images/PlaceHolderAPI/12.png')} alt="插件命令" />
+## ![插件命令](_images/PlaceHolderAPI/12.png)
 
 解析命令 (`me` 代表自己)
 

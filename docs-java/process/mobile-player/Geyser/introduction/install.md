@@ -3,8 +3,6 @@ title: 安装
 sidebar_position: 2
 ---
 
-import Image from '@theme/IdealImage';
-
 
 # 安装 Geyser
 
@@ -33,7 +31,7 @@ Standalone 版本 可以作为一个独立的代理端启动
 ## 挑选版本
 
 在安装前，你需要找到合适的Geyser版本，你可以参考下图:
-<Image img={require('_image/VersionChoose.png')} alt="version" />
+![version](_image/VersionChoose.png)
 
 * 1、运行独立版**仍需要Java16**及以上环境，只不过你可以将其和目标服务器所处的 Java 环境隔开 此外**在任何情况下**，你都可使用独立版，甚至独立版可以和其目标不在同一服务器上
 * 2、你可以通过ViaVersion插件来适配版本，这会允许不同版本的玩家进入服务器，不过问题不大

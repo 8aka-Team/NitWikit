@@ -3,8 +3,6 @@ title: 自定义物品模型映射
 sidebar_position: 5
 ---
 
-import Image from '@theme/IdealImage';
-
 # 自定义物品模型映射
 
 Geyser提供了自定义物品映射功能，可以为CustomModelData物品注册基岩版行为，以实现自定义物品
@@ -74,11 +72,11 @@ java2bedrock.sh(俗称转换器)是一个自动资源包转换工具，可以将
 
 这是一个律师勋章，我想让他在基岩版上也显示
 
-<Image img={require('./_image/CIMM1.jpg')} alt="" />
+![](./_image/CIMM1.jpg)
 
 我们来到 `服务端/plugins/geyser/custom_mappings` 目录，创建一个json文件用于Geyser映射自定义物品
 
-<Image img={require('./_image/CIMM2.jpg')} alt="" />
+![](./_image/CIMM2.jpg)
 
 名字可以根据自己喜好起，我这里命名为 `test_item.json`。
 
@@ -86,7 +84,7 @@ java2bedrock.sh(俗称转换器)是一个自动资源包转换工具，可以将
 
 回到游戏，手持律师勋章，执行 `/iatag` 指令
 
-<Image img={require('./_image/CIMM3.jpg')} alt="" />
+![](./_image/CIMM3.jpg)
 
 我们看到他的 `ID` 是 `minecraft:paper`，以及 `CustomModelData(简称CMD)` 值是 10534
 
@@ -126,7 +124,7 @@ json文件不允许有注释，如果你要复制过去记得删除注释
 
 现在在 `资源包/textures` 目录下，创建个 `item_textures.json` 文件用于指定物品的纹理
 
-<Image img={require('./_image/CIMM4.jpg')} alt="" />
+![](./_image/CIMM4.jpg)
 
 在 `item_textures.json` 中写入
 

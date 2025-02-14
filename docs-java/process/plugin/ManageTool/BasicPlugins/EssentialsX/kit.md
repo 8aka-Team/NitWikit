@@ -3,8 +3,6 @@ title: kit 礼包
 sidebar_position: 5
 ---
 
-import Image from '@theme/IdealImage';
-
 # kit 礼包
 
 ## 创建礼包
@@ -13,7 +11,7 @@ import Image from '@theme/IdealImage';
 /kitcreate <kit名字> 冷却
 ```
 
-<Image img={require('_images/kit_1.png')} alt="" />
+![](_images/kit_1.png)
 
 他会将你背包中所有物品保存到这个 kit 礼包中
 
@@ -27,7 +25,7 @@ import Image from '@theme/IdealImage';
 /kit <kit名字>
 ```
 
-<Image img={require('_images/kit_2.png')} alt="" />
+![](_images/kit_2.png)
 
 ### 权限
 
@@ -35,7 +33,7 @@ import Image from '@theme/IdealImage';
 
 但只给 `essentials.kit` 会提示：
 
-<Image img={require('_images/kit_3.png')} alt="" />
+![](_images/kit_3.png)
 
 是的，除了 `essentials.kit` 我们还需要给予 `essentials.kits.<kit名字>` 玩家才能领取
 
@@ -64,7 +62,7 @@ import Image from '@theme/IdealImage';
     - /say 1
 ```
 
-<Image img={require('_images/kit_4.png')} alt="" />
+![](_images/kit_4.png)
 
 ### 变量
 

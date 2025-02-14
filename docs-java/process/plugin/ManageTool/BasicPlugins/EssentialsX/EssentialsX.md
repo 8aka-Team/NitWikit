@@ -3,13 +3,11 @@ title: EssentialsX
 sidebar_position: 1
 ---
 
-import Image from '@theme/IdealImage';
-
 <!--markdownlint-disable line-length-->
 
 # 概览
 
-<Image img={require('_images/banner.png')} alt="" />
+![](_images/banner.png)
 
 EssentialsX 是一个基于 Spigot 服务端的基础插件，为从大到小的服务器提供核心功能。这些功能包括：
 
@@ -58,8 +56,8 @@ Essentials插件分为两个版本：
 <details>
 <summary>怎么找到官网并从官网下载essx</summary>
 
-<Image img={require('_images/1.png')} alt="" />
-<Image img={require('_images/2.png')} alt="" />
+![](_images/1.png)
+![](_images/2.png)
 > 建议选择`稳定版本`
 >
 > Stable release 稳定版本
@@ -67,7 +65,7 @@ Essentials插件分为两个版本：
 > Development build 开发版本
 >
 > 真的有那么多人不知道自己下的开发版。。。
-<Image img={require('_images/3.png')} alt="" />
+![](_images/3.png)
 
 </details>
 

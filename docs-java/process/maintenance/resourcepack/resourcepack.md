@@ -4,8 +4,6 @@ title: 资源包
 slug: /resourcepack
 ---
 
-import Image from '@theme/IdealImage';
-
 # 资源包
 
 :::tip
@@ -31,31 +29,31 @@ import Image from '@theme/IdealImage';
 
 全新的武器装备：
 
-<Image img={require('_images/1.png')} alt="" />
+![](_images/1.png)
 
 独特的装扮：
 
-<Image img={require('_images/2.png')} alt="" />
+![](_images/2.png)
 
 新的 GUI 界面：
 
-<Image img={require('_images/3.png')} alt="" />
+![](_images/3.png)
 
 称号或表情包：
 
-<Image img={require('_images/4.png')} alt="" />
+![](_images/4.png)
 
-<Image img={require('_images/5.png')} alt="" />
+![](_images/5.png)
 
 家具或装饰：
 
-<Image img={require('_images/6.png')} alt="" />
+![](_images/6.png)
 
 新的生物或 boss：
 
-<Image img={require('_images/7.png')} alt="" />
+![](_images/7.png)
 
-<Image img={require('_images/8.png')} alt="" />
+![](_images/8.png)
 
 以及更多你想不到的内容...
 

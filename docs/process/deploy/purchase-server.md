@@ -3,8 +3,6 @@ title: 购置服务器
 sidebar_position: 2
 ---
 
-import Image from '@theme/IdealImage';
-
 # 购置服务器
 
 :::danger
@@ -41,7 +39,7 @@ import Image from '@theme/IdealImage';
 
 #### CPU 单核性能
 
-<Image img={require('_images/购置服务器/cpu.jpg')} alt="" />
+![](_images/购置服务器/cpu.jpg)
 
 一般的，当你搭建是纯净的、不含模组的服务器时，对单核性能的要求较低；当你搭建是含模组的服务器时，对单核性能的要求较高。
 

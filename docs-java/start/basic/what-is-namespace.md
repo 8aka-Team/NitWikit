@@ -3,15 +3,13 @@ title: 什么是命名空间？
 sidebar_position: 8
 ---
 
-import Image from '@theme/IdealImage';
-
 ## 概念
 
 > 命名空间ID（Namespaced identifier，或译为命名空间标识符）、资源路径（Resource location）、资源标识符（Resource identifier）或命名空间字符串（Namespaced string）是用来指明和识别游戏中特定对象而又能避免潜在的歧义和冲突的一种方式。
 
 如果比喻一下的话，就像是
 
-<Image img={require('_images/妙妙比喻.png')} alt="" />
+![](_images/妙妙比喻.png)
 
 你的 "桌面" 上有几个命名空间（文件夹），这几个命名空间不能重名，命名空间里的东西可以重名
 
@@ -38,19 +36,19 @@ import Image from '@theme/IdealImage';
 
 例如，当你安装 EssentialsX 之后，原版 tp 命令会被覆盖
 
-<Image img={require('_images/command-1.png')} alt="" />
+![](_images/command-1.png)
 
 而同时安装 EssentialsX 和 HuskHomes 之后，使用 tp 是 HuskHomes 提供的
 
-<Image img={require('_images/command-2.png')} alt="" />
+![](_images/command-2.png)
 
 如果此时你想使用 EssentialsX 的而不是 HuskHomes 的，可以使用命名空间
 
-<Image img={require('_images/command-3.png')} alt="" />
+![](_images/command-3.png)
 
 当然，你也可以使用原版命令，原版命名空间是 `minecraft`
 
-<Image img={require('_images/command-4.png')} alt="" />
+![](_images/command-4.png)
 
 通常，你作为用户不能调整优先级，这是插件开发者才能做的事
 

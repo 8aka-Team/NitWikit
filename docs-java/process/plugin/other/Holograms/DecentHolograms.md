@@ -3,8 +3,6 @@ title: DecentHolograms
 sidebar_position: 2
 ---
 
-import Image from '@theme/IdealImage';
-
 # DecentHolograms
 
 <a href="https://github.com/DecentSoftware-eu/DecentHolograms/releases">
@@ -26,25 +24,25 @@ import Image from '@theme/IdealImage';
 
 ## 照片
 
-<Image img={require('_images/DecentHolograms/DecentHolograms_1.png')} alt="" />
+![](_images/DecentHolograms/DecentHolograms_1.png)
 
-<Image img={require('_images/DecentHolograms/DecentHolograms_2.png')} alt="" />
+![](_images/DecentHolograms/DecentHolograms_2.png)
 
-<Image img={require('_images/DecentHolograms/DecentHolograms_3.png')} alt="" />
+![](_images/DecentHolograms/DecentHolograms_3.png)
 
-<Image img={require('_images/DecentHolograms/DecentHolograms_4.png')} alt="" />
+![](_images/DecentHolograms/DecentHolograms_4.png)
 
 ### 伤害显示
 
 启用：`/dh feature on healing_display`
 
-<Image img={require('_images/DecentHolograms/DecentHolograms_5.png')} alt="" />
+![](_images/DecentHolograms/DecentHolograms_5.png)
 
 ### 回血显示
 
 启用：`/dh feature on damage_display`
 
-<Image img={require('_images/DecentHolograms/DecentHolograms_6.png')} alt="" />
+![](_images/DecentHolograms/DecentHolograms_6.png)
 
 ## 支持
 

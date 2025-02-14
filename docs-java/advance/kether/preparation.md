@@ -3,8 +3,6 @@ title: 准备
 sidebar_position: 1
 ---
 
-import Image from '@theme/IdealImage';
-
 # 安装教学插件
 
 在本篇教程中，我将使用 [Vulpecula](https://www.yuque.com/lanscarlos/vulpecula-wiki-v2)
@@ -19,7 +17,7 @@ import Image from '@theme/IdealImage';
 
 你只需要知道他可以 `/vul eval` 来执行 kether 和用他来注册命令
 
-<Image img={require('_images/vul-tell.png')} alt="" />
+![](_images/vul-tell.png)
 
 :::
 

@@ -3,8 +3,6 @@ title: 基础教程
 sidebar_position: 2
 ---
 
-import Image from '@theme/IdealImage';
-
 # 基础教程
 
 ## 了解 "八大类"
@@ -214,7 +212,7 @@ on join:
 
 在侧边栏中选中(Skript 和 Events)后，在搜索栏中输入 "on command"，得到以下结果。
 
-<Image img={require('_images/SkriptBasic1.png')} alt="" />
+![](_images/SkriptBasic1.png)
 
 #### 语法
 

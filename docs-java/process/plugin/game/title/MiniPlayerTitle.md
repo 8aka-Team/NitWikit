@@ -3,11 +3,9 @@ title: MiniPlayerTitle
 sidebar_position: 1
 ---
 
-import Image from '@theme/IdealImage';
-
 # MiniPlayerTitle
 
-<Image img={require('_images/MiniPlayerTitle/MiniPlayerTitle-1.png')} alt="" />
+![](_images/MiniPlayerTitle/MiniPlayerTitle-1.png)
 
 [![](https://img.shields.io/github/languages/code-size/DeerGiteaMirror/MiniPlayerTitle)](https://github.com/DeerGiteaMirror/MiniPlayerTitle)
 [![](https://img.shields.io/github/license/DeerGiteaMirror/MiniPlayerTitle)](https://github.com/DeerGiteaMirror/MiniPlayerTitle/blob/main/LICENSE)
@@ -25,7 +23,7 @@ import Image from '@theme/IdealImage';
 - 本插件为 [PlayerTitle](https://ricedoc.handyplus.cn/wiki/PlayerTitle/) 的简易版，基本实现了其大部分功能
 - 由于历史原因 PlayerTitle 使用玩家名称而非 UUID 作为数据库主键，因此玩家改名后称号会丢失，本插件使用 UUID 作为主键，不会出现该问题
 
-<Image img={require('_images/MiniPlayerTitle/MiniPlayerTitle-2.png')} alt="" />
+![](_images/MiniPlayerTitle/MiniPlayerTitle-2.png)
 
 ## 功能介绍
 

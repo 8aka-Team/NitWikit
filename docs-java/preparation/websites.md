@@ -3,8 +3,6 @@ title: 可能用到的网站
 sidebar_position: 3
 ---
 
-import Image from '@theme/IdealImage';
-
 # 可能用到的网站
 
 开服不能只是从某一网站或者简单百度、谷歌获取资源，这样获取的资源种类非常贫乏。
@@ -120,7 +118,7 @@ SpigotMC 是目前 Minecraft 开服圈最大的插件网站，最大的问题是
 <details>
   <summary>注册问题</summary>
 
-<Image img={require('_images/spigotmc.png')} alt="" />
+![](_images/spigotmc.png)
 
 使用魔法就可以看到验证了，而不是傻呵呵的跟人说。
 
@@ -388,7 +386,7 @@ DecentHolograms 插件统计：
 
   <TabItem value="motd" label="MOTD">
 
-<Image img={require('_images/motd.png')} alt="" />
+![](_images/motd.png)
 
 MOTD 就是 Minecraft 客户端在尝试连接服务器之前，服务器对客户端发送的一条短消息，这通常包含1-3行文字和一张图片。
 

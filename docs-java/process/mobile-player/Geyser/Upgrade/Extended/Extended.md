@@ -4,8 +4,6 @@ sidebar_position: 1
 slug: /Geyser/Upgrade
 ---
 
-import Image from '@theme/IdealImage';
-
 # 插件
 
 这里是进阶教程， 你可以通过进阶教程获得更好的基岩版兼容
@@ -48,6 +46,6 @@ GeyserUtils是zimzaza4开发的Geyser扩展工具
 
 将`geyserutils-geyser`放入geyser的`extensions`文件夹
 
-<Image img={require('_image/Geyser5.png')} alt="" />
+![](_image/Geyser5.png)
 
 这样就安装好了

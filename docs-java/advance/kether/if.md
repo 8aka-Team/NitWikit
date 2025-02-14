@@ -3,8 +3,6 @@ title: 逻辑判断
 sidebar_position: 3
 ---
 
-import Image from '@theme/IdealImage';
-
 <!--markdownlint-disable no-duplicate-heading-->
 
 # 逻辑判断
@@ -21,7 +19,7 @@ import Image from '@theme/IdealImage';
 
 判断玩家是否拥有某权限，如果是，则返回 **true** ，否，则返回 **false**
 
-<Image img={require('_images/vul-perm.png')} alt="" />
+![](_images/vul-perm.png)
 
 我是op，所以我拥有此权限，返回了 true
 
@@ -31,18 +29,18 @@ import Image from '@theme/IdealImage';
 
 上面是判断拥有此权限，那么我如何判断不拥有此权限呢？
 
-<Image img={require('_images/vul-permNot_1.png')} alt="" />
+![](_images/vul-permNot_1.png)
 
-<Image img={require('_images/正经笑.jpg')} alt="" />
+![](_images/正经笑.jpg)
 
 咳咳，开玩笑的，驿站怎么可能用过这么傻逼的写法呢
 
-<Image img={require('_images/冒汗.jpg')} alt="" />
+![](_images/冒汗.jpg)
 
 > https://kether.tabooproject.org/list.html#Not
 > 判断动作的返回值是否为否，即否定动作的结果。
 
-<Image img={require('_images/vul-permNot_2.png')} alt="" />
+![](_images/vul-permNot_2.png)
 
 因为我拥有此权限，所以 perm 判断是 true
 
@@ -73,7 +71,7 @@ check 动作1 {symbol} 动作2
 9. 右含左(in)：左侧 action A 的返回值是否属于右侧 action B 返回值的内容之一
 10. 左含右(has)：左侧 action A 是否含有右侧 action B 内容
 
-<Image img={require('_images/vul-check.png')} alt="" />
+![](_images/vul-check.png)
 
 ## 分支判断(if esle)
 
@@ -89,7 +87,7 @@ check 动作1 {symbol} 动作2
 
 注：这里的条件也是指动作，即 动作的返回值为 **true** 则执行 then 后面的动作
 
-<Image img={require('_images/if_1.png')} alt="" />
+![](_images/if_1.png)
 
 上面只是执行单个动作，那么，如何让他判断 **true** 后执行多行动作？
 
@@ -220,7 +218,7 @@ all [ 动作1 动作2 动作3 更多 ]
 
 玩家拥有权限 vulpecula.command 没有权限 luckperms.editor 则通过，否则不通过
 
-<Image img={require('_images/if_2.png')} alt="" />
+![](_images/if_2.png)
 
 ### 一个满足(Any)
 
@@ -239,7 +237,7 @@ any [ 动作1 动作2 动作3 更多 ]
 
 *玩家拥有权限 vulpecula.command* 和 *没有权限 luckperms.editor* 满足其中一个或多个就通过
 
-<Image img={require('_images/if_3.png')} alt="" />
+![](_images/if_3.png)
 
 ### 妙妙写法
 

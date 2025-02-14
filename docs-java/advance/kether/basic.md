@@ -3,8 +3,6 @@ title: 基础
 sidebar_position: 2
 ---
 
-import Image from '@theme/IdealImage';
-
 # 基础
 
 > 动作，又称语句，每个动作都功能明确，如：Tell(输出文本)
@@ -17,7 +15,7 @@ import Image from '@theme/IdealImage';
 
 > https://kether.tabooproject.org/list.html#Tell
 
-<Image img={require('_images/vul-tell.png')} alt="" />
+![](_images/vul-tell.png)
 
 这个动作的作用是给玩家发送一条信息(图中的 1 )
 
@@ -27,7 +25,7 @@ import Image from '@theme/IdealImage';
 
 非调试(/vul evel)是不会看到这个的
 
-<Image img={require('_images/result.png')} alt="" />
+![](_images/result.png)
 
 也就是说你的玩家在用你写好的配置时是不会看到这个信息的
 
@@ -35,7 +33,7 @@ import Image from '@theme/IdealImage';
 
 然而，他不能搞颜色
 
-<Image img={require('_images/vul-tell_noColor.png')} alt="" />
+![](_images/vul-tell_noColor.png)
 
 我们可以用下面的 `color Text` 动作来搞颜色
 
@@ -43,7 +41,7 @@ import Image from '@theme/IdealImage';
 
 > https://kether.tabooproject.org/list.html#Color_Text
 
-<Image img={require('_images/vul-color.png')} alt="" />
+![](_images/vul-color.png)
 
 这里要用 `" "` 把要打印的信息包裹起来
 
@@ -57,13 +55,13 @@ import Image from '@theme/IdealImage';
 
 ## 语句的连用
 
-<Image img={require('_images/vul-tell_color.png')} alt="" />
+![](_images/vul-tell_color.png)
 
 我们同时使用了 tell 和 color 两个语句，打印了带颜色的信息给玩家看
 
 ## 语句的返回值
 
-<Image img={require('_images/vul-color.png')} alt="" />
+![](_images/vul-color.png)
 
 在使用 `/vul evel` 时，语句的返回值会在 `< > Result:` 显示
 
@@ -73,9 +71,9 @@ import Image from '@theme/IdealImage';
 
 **番外：**那么如果我们把 `tell` 的返回值打印呢
 
-<Image img={require('_images/vul-tell_tell.png')} alt="" />
+![](_images/vul-tell_tell.png)
 
-<Image img={require('_images/痴呆.jpg')} alt="" />
+![](_images/痴呆.jpg)
 
 ## \{action\}，\{token\}和Literal
 
@@ -85,7 +83,7 @@ import Image from '@theme/IdealImage';
 
 比如 `Tell` 动作的：
 
-<Image img={require('_images/web-tell.png')} alt="" />
+![](_images/web-tell.png)
 
 用我浅显的理解：
 
@@ -96,7 +94,7 @@ import Image from '@theme/IdealImage';
 
 那么问题来了，为什么在 [Tell](#输出文本tell) 那里可以接一句话(此处写了个1)？
 
-<Image img={require('_images/vul-tell.png')} alt="" />
+![](_images/vul-tell.png)
 
 因为在这个示例中，kether找不到名为 `1` 的动作，所以用了 `Literal` 动作将他转为字符串
 
@@ -112,7 +110,7 @@ import Image from '@theme/IdealImage';
 
 翻译一个papi变量(如图)
 
-<Image img={require('_images/vul-papi.png')} alt="" />
+![](_images/vul-papi.png)
 
 ```kether
 papi {action} | placeholder {action}
@@ -122,7 +120,7 @@ papi {action} | placeholder {action}
 
 ## inline和join
 
-<Image img={require('_images/vul-tell_papiNoInline.png')} alt="" />
+![](_images/vul-tell_papiNoInline.png)
 
 假如你用的那个插件不会给你自动翻译动作中的papi，阁下又当如何应对？
 
@@ -142,7 +140,7 @@ inline "阿巴阿巴{{你要用的kether}}qwq"
 /vul eval tell inline "我叫{{papi %player_name%}}，我今年{{papi %player_level%}}级了"
 ```
 
-<Image img={require('_images/vul-tell_papiWithInline.png')} alt="" />
+![](_images/vul-tell_papiWithInline.png)
 
 > https://kether.tabooproject.org/list.html#Join
 
@@ -162,7 +160,7 @@ join [ 动作1 动作2 动作3 更多 ]
 /vul eval tell join [ "我叫" papi %player_name% "，我今年" papi %player_level% "级了" ]
 ```
 
-<Image img={require('_images/vul-tell_papiWithJoin.png')} alt="" />
+![](_images/vul-tell_papiWithJoin.png)
 
 ## 玩家名称
 
@@ -192,4 +190,4 @@ player [(display|list) ] name
 /vul eval tell inline "我叫{{player name}}！我叫{{sender}}！！我真的叫{{papi %player_name%}}！！！"
 ```
 
-<Image img={require('_images/vul-tell_name.png')} alt="" />
+![](_images/vul-tell_name.png)

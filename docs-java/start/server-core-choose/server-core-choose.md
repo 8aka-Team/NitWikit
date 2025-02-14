@@ -4,8 +4,6 @@ slug: /server-core-choose
 sidebar_position: 2
 ---
 
-import Image from '@theme/IdealImage';
-
 # 核心选择
 
 :::danger
@@ -98,4 +96,4 @@ Mod 服最开始就必须选好核心，也就是 Forge 还是 Fabric 的问题�
 
 [下载](https://script.8aka.org/select-server)
 
-<Image img={require('_images/那些服务端有后门吗.png')} alt="" />
+![](_images/那些服务端有后门吗.png)
