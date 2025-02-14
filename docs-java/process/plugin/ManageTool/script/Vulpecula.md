@@ -3,29 +3,31 @@ title: Vulpecula
 sidebar_position: 2
 ---
 
+import Image from '@theme/IdealImage';
+
 # Vulpecula
 
-## ![介绍](_images/Vulpecula/1.png)
+## <Image img={require('_images/Vulpecula/1.png')} alt="介绍" />
 
-![](_images/Vulpecula/2.png)
+<Image img={require('_images/Vulpecula/2.png')} alt="" />
 
-![](_images/Vulpecula/3.png)
+<Image img={require('_images/Vulpecula/3.png')} alt="" />
 
-![](_images/Vulpecula/4.png)
+<Image img={require('_images/Vulpecula/4.png')} alt="" />
 
-![](_images/Vulpecula/5.png)
+<Image img={require('_images/Vulpecula/5.png')} alt="" />
 
-![](_images/Vulpecula/6.png)
+<Image img={require('_images/Vulpecula/6.png')} alt="" />
 
 ## 链接
 
-[![](_images/Vulpecula/7.png)](https://www.yuque.com/lanscarlos/vulpecula-doc)
+[<Image img={require('_images/Vulpecula/7.png')} alt="" />](https://www.yuque.com/lanscarlos/vulpecula-doc)
 
 <!--markdownlint-disable line-length-->
 
-[![](_images/Vulpecula/8.png)](https://qm.qq.com/cgi-bin/qm/qr?k=vVP1cAuLlLbqjXGXkfTFH0RSma6wEVgO&jump_from=webapi&authKey=ZUgddursAqJI8tRm4MnKtr2cEUrDc0ZEasB5motBJv/igZ19T48pS/XDXStXWT53)
+[<Image img={require('_images/Vulpecula/8.png')} alt="" />](https://qm.qq.com/cgi-bin/qm/qr?k=vVP1cAuLlLbqjXGXkfTFH0RSma6wEVgO&jump_from=webapi&authKey=ZUgddursAqJI8tRm4MnKtr2cEUrDc0ZEasB5motBJv/igZ19T48pS/XDXStXWT53)
 
-[![](_images/Vulpecula/9.png)](https://afdian.net/a/lanscarlos)
+[<Image img={require('_images/Vulpecula/9.png')} alt="" />](https://afdian.net/a/lanscarlos)
 
 :::info
 

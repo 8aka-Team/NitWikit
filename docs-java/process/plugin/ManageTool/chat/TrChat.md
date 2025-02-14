@@ -3,9 +3,11 @@ title: TrChat
 sidebar_position: 1
 ---
 
+import Image from '@theme/IdealImage';
+
 # TrChat
 
-![](./_images/TrChat/1.png)
+<Image img={require('./_images/TrChat/1.png')} alt="" />
 
 ## 功能
 

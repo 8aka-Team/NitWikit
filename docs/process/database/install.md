@@ -4,6 +4,8 @@ slug: /database/install
 sidebar_position: 1
 ---
 
+import Image from '@theme/IdealImage';
+
 ## 数据库安装
 
 ### 直接安装
@@ -35,17 +37,17 @@ sidebar_position: 1
 <details>
   <summary>从官网下载和安装</summary>
 
-![](_images/1.png)
+<Image img={require('_images/1.png')} alt="" />
 
-![](_images/2.png)
+<Image img={require('_images/2.png')} alt="" />
 
-![](_images/3.png)
+<Image img={require('_images/3.png')} alt="" />
 
-![](_images/4.png)
+<Image img={require('_images/4.png')} alt="" />
 
-![](_images/5.png)
+<Image img={require('_images/5.png')} alt="" />
 
-![](_images/6.png)
+<Image img={require('_images/6.png')} alt="" />
 
 </details>
 
@@ -54,9 +56,9 @@ sidebar_position: 1
 
 MySQL5 版本太低了，很多插件需要更高版本的，装 MySQL8 就够用了
 
-![](_images/7.png)
+<Image img={require('_images/7.png')} alt="" />
 
-![](_images/8.png)
+<Image img={require('_images/8.png')} alt="" />
 
 </details>
 
@@ -65,7 +67,7 @@ MySQL5 版本太低了，很多插件需要更高版本的，装 MySQL8 就够�
 
 安装好后在首页启动 MySQL
 
-![](_images/9.png)
+<Image img={require('_images/9.png')} alt="" />
 
 更改 root 账户的密码
 
@@ -79,9 +81,9 @@ MySQL5 版本太低了，很多插件需要更高版本的，装 MySQL8 就够�
 
 :::
 
-![](_images/10.png)
+<Image img={require('_images/10.png')} alt="" />
 
-![](_images/11.png)
+<Image img={require('_images/11.png')} alt="" />
 
 然后你就可以建数据库了，建好之后把你填这里的信息填到插件的配置文件里
 
@@ -92,41 +94,41 @@ MySQL5 版本太低了，很多插件需要更高版本的，装 MySQL8 就够�
 <details>
   <summary>从官网下载和安装</summary>
 
-![](_images/12.png)
+<Image img={require('_images/12.png')} alt="" />
 
-![](_images/13.png)
+<Image img={require('_images/13.png')} alt="" />
 
-![](_images/14.png)
+<Image img={require('_images/14.png')} alt="" />
 
-![](_images/15.png)
+<Image img={require('_images/15.png')} alt="" />
 
-![](_images/16.png)
+<Image img={require('_images/16.png')} alt="" />
 
-![](_images/17.png)
+<Image img={require('_images/17.png')} alt="" />
 
-![](_images/18.png)
+<Image img={require('_images/18.png')} alt="" />
 
-![](_images/19.png)
+<Image img={require('_images/19.png')} alt="" />
 
 宝塔面板是必须要绑定账号的
 
 按照提示去做
 
-![](_images/20.png)
+<Image img={require('_images/20.png')} alt="" />
 
 全 x 掉，一个都不需要装
 
-![](_images/21.png)
+<Image img={require('_images/21.png')} alt="" />
 
 </details>
 
 <details>
   <summary>安装MySQL</summary>
 
-![](_images/22.png)
+<Image img={require('_images/22.png')} alt="" />
 
-![](_images/23.png)
+<Image img={require('_images/23.png')} alt="" />
 
-![](_images/24.png)
+<Image img={require('_images/24.png')} alt="" />
 
 </details>

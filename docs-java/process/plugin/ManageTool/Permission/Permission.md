@@ -4,11 +4,13 @@ slug: /permission
 sidebar_position: 1
 ---
 
+import Image from '@theme/IdealImage';
+
 # LuckPerms
 
-![](_images/1.png)
+<Image img={require('_images/1.png')} alt="" />
 
-## ![介绍](_images/2.png)
+## <Image img={require('_images/2.png')} alt="介绍" />
 
 当前最先进，现代，支持广泛，用户数量最多的权限插件。
 
@@ -39,7 +41,7 @@ sidebar_position: 1
 
 其他权限组插件导入数据到 Luckperms？[点击这里](https://snowcutieowo.github.io/LuckPerms/how-to.migrate-from-other-plugins.html)
 
-## ![链接](_images/3.png)
+## <Image img={require('_images/3.png')} alt="链接" />
 
 :::info
 

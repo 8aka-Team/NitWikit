@@ -3,6 +3,8 @@ title: 插件缩写
 sidebar_position: 4
 ---
 
+import Image from '@theme/IdealImage';
+
 # 插件缩写
 
 ***请不要随便使用不知名插件的缩写！***
@@ -13,7 +15,7 @@ sidebar_position: 4
 
 `mythicmobs` == `mm`
 
-![](./_images/mm.png)
+<Image img={require('./_images/mm.png')} alt="" />
 
 ## 目录
 

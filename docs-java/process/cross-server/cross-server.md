@@ -4,6 +4,8 @@ slug: /cross-server
 sidebar_position: 4
 ---
 
+import Image from '@theme/IdealImage';
+
 # 跨服端
 
 简单的来说就是将多个服务器连成一个整体(比如你经常看到的某些生存一区，生存二区)，玩家可以自由选择到哪个服务器，而不用退出重连，
@@ -18,7 +20,7 @@ sidebar_position: 4
 
 现在你想建设一个群组服把这三个服务器连接起来，那么，你的服务器结构就会是这样
 
-![](_images/灵魂画师教开群组服.png)
+<Image img={require('_images/灵魂画师教开群组服.png')} alt="" />
 
 :::info
 

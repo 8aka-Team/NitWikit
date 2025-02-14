@@ -3,6 +3,8 @@ title: 开启服务端
 sidebar_position: 4
 ---
 
+import Image from '@theme/IdealImage';
+
 # 开启服务端
 
 你已经做好了准备工作，开始启动你的服务器了
@@ -20,7 +22,7 @@ sidebar_position: 4
 
 就像你的文件资源管理器
 
-![](_images/文件资源管理器.jpg)
+<Image img={require('_images/文件资源管理器.jpg')} alt="" />
 
 (估计有人不知道文件资源管理器是什么，所以放张图)
 
@@ -34,17 +36,17 @@ sidebar_position: 4
 
 现在你把下载好的服务端核心放到一个空文件夹里
 
-![](_images/1.png)
+<Image img={require('_images/1.png')} alt="" />
 
 点击地址栏，输入 cmd 然后回车，就会在这个路径下打开 cmd
 
-![](_images/2.png)
+<Image img={require('_images/2.png')} alt="" />
 
 或者用别的办法打开 cmd，然后用 cd 命令切换路径
 
 [怎么用 cd 命令切换到另一个目录](https://cn.bing.com/search?q=%E6%80%8E%E4%B9%88%E7%94%A8cd%E5%91%BD%E4%BB%A4%E5%88%87%E6%8D%A2%E5%88%B0%E5%8F%A6%E4%B8%80%E4%B8%AA%E7%9B%AE%E5%BD%95)
 
-![](_images/3.png)
+<Image img={require('_images/3.png')} alt="" />
 
 </details>
 
@@ -54,7 +56,7 @@ sidebar_position: 4
 
 现在你把下载好的服务端核心放到一个空文件夹里
 
-![](_images/1.png)
+<Image img={require('_images/1.png')} alt="" />
 
 在这个文件夹里创建一个 txt 文件，重命名为 bat 后缀的文件 如 `start.bat`
 
@@ -116,7 +118,7 @@ Downloading mojang_x.x.x.jar
 
 记得让小地球变绿
 
-![](_images/常见问题/小地球.png)
+<Image img={require('_images/常见问题/小地球.png')} alt="" />
 
 :::
 
@@ -167,13 +169,13 @@ java -Xms2G -Xmx2G -jar server.jar --nogui
 
 像这样:
 
-![](_images/4.png)
+<Image img={require('_images/4.png')} alt="" />
 
 启动后报错，此时我们可以查看文件后缀名([不懂如何打开请点这里](https://cn.bing.com/search?q=%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%E6%96%87%E4%BB%B6%E5%90%8E%E7%BC%80%E5%90%8D))
 
 然后你就会看到这样的惊奇一幕
 
-![](_images/5.png)
+<Image img={require('_images/5.png')} alt="" />
 
 此时，你只需要把 `xxx.jar.jar` 改成 `xxx.jar` 就可以正常启动了
 

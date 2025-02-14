@@ -3,6 +3,8 @@ sidebar_position: 5
 title: 案例
 ---
 
+import Image from '@theme/IdealImage';
+
 # 案例
 
 一些比较有价值的案例。
@@ -17,7 +19,7 @@ title: 案例
 
 2D的和占四格的头颅，可以使用皮肤
 
-![](_images/head.png)
+<Image img={require('_images/head.png')} alt="" />
 
 https://www.spigotmc.org/resources/.99121/
 

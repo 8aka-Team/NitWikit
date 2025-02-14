@@ -3,6 +3,8 @@ title: HolographicDisplays
 sidebar_position: 3
 ---
 
+import Image from '@theme/IdealImage';
+
 # HolographicDisplays
 
 :::info
@@ -19,6 +21,6 @@ sidebar_position: 3
 
 ## 停更
 
-![](_images/hd已经归档.png)
+<Image img={require('_images/hd已经归档.png')} alt="" />
 
 目前项目已经归档，这意味着此仓库将不会再有新的代码提交

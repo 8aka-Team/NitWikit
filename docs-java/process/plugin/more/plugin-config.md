@@ -3,6 +3,8 @@ title: 汉化插件
 sidebar_position: 2
 ---
 
+import Image from '@theme/IdealImage';
+
 # 配置插件
 
 插件的配置文件一般在 `/plugins/插件名字/` 文件夹中，常见的配置文件一般是 `config.yml` 。
@@ -23,7 +25,7 @@ import TabItem from '@theme/TabItem';
 <Tabs queryString="plugin-language">
 <TabItem value="spigotmc" label="SpigotMC">
 
-![](_images/查看语言-spigotmc.png)
+<Image img={require('_images/查看语言-spigotmc.png')} alt="" />
 
 </TabItem>
 
@@ -31,7 +33,7 @@ import TabItem from '@theme/TabItem';
 
 比如 https://www.spigotmc.org/resources/simpleclans.71242 我们可以看到，语言那里给了个 [链接](https://crowdin.com/project/simpleclans)：
 
-![](_images/查看语言-crowdin.png)
+<Image img={require('_images/查看语言-crowdin.png')} alt="" />
 
 看到有 Chinese Simplified、 chinese、 zh_cn、 zh_CN 之类的字眼就行。
 
@@ -41,11 +43,11 @@ import TabItem from '@theme/TabItem';
 
 插件文件夹中有类似 Language、 lang、 locale 之类的文件夹(或其他东西？)：
 
-![](_images/查看语言-1.png)
+<Image img={require('_images/查看语言-1.png')} alt="" />
 
 请寻找 zhcn、 zh-cn、 zh-CN、 chinese 等字眼：
 
-![](_images/查看语言-2.png)
+<Image img={require('_images/查看语言-2.png')} alt="" />
 
 然后一般要去插件配置文件(多数为 config.yml) 把语言改成这里的文件名 (此处为 zh_cn)。
 
@@ -57,7 +59,7 @@ import TabItem from '@theme/TabItem';
 
 如果我们在插件文件夹找不到语言文件夹，可以直接用解压缩软件打开 jar 包：
 
-![](_images/查看语言-拆开jar.png)
+<Image img={require('_images/查看语言-拆开jar.png')} alt="" />
 
 还有可能写在插件文档里，在项目 README 里，甚至在配置文件的注释里。
 

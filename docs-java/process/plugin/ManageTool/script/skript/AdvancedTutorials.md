@@ -3,6 +3,8 @@ title: 高级教程
 sidebar_position: 3
 ---
 
+import Image from '@theme/IdealImage';
+
 <!-- @format -->
 
 # 高级教程
@@ -93,13 +95,13 @@ on TPARequestEvent:
 
 我们需要找到 bot 事件到底是哪个，查询[Leaves 的 Javadoc](https://repo.leavesmc.org/javadoc/snapshots/org/leavesmc/leaves/leaves-api/1.20.6-R0.1-SNAPSHOT)：
 
-![搜索事件](_images/SearchEvent.png)
+<Image img={require('_images/SearchEvent.png')} alt="搜索事件" />
 
 这里查询找到了`org.leavesmc.leaves.event.bot.BotEvent`事件。
 
 看命名就知道应该会有更详细的**子类**来**继承**它，点进去看看，可以看到：
 
-![查找子类](_images/QuerySubclasses.png)
+<Image img={require('_images/QuerySubclasses.png')} alt="查找子类" />
 
 通过看类名可以知道，`BotJoinEvent`就是我们要的事件。
 
@@ -107,7 +109,7 @@ on TPARequestEvent:
 
 接下来让我们看看这个类有哪些**方法**。
 
-![查找方法](_images/SearchMethods.png)
+<Image img={require('_images/SearchMethods.png')} alt="查找方法" />
 
 可以看到，最主要的是一个`getBot()`方法，在让我们看看这个方法会返回什么。
 

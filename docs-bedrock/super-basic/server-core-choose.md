@@ -3,6 +3,8 @@ title: 服务器核心选择
 sidebar_position: 1
 ---
 
+import Image from '@theme/IdealImage';
+
 # 服务器核心选择
 
 import Tabs from '@theme/Tabs';
@@ -15,7 +17,7 @@ import TabItem from '@theme/TabItem';
 至本篇文档开始，**`BDS`** 一致指 **`Bedrock Dedicated Server`**，而不是指 **`Beidou Navigation Satellite System`**(北斗卫星导航系统)
 :::
 
-![BDS 运行时的样子](_images/bedrock-core-running.png)
+<Image img={require('_images/bedrock-core-running.png')} alt="BDS 运行时的样子" />
 
 此服务器核心允许 _Minecraft 腐竹_ 在家里使用安装有 **Windows** 或 **Linux** 的设备或使用 **云服务托管**(云服务器)来搭建属于自己的 BDS 服务器。
 这是坐落于 **Minecraft 官网** 的服务端(与 Java 的 Vanilla 服务端在一个页面)。作为官方服务端，它有着极其完善的 Minecraft 特性和流畅的游戏体验，几乎和单人一模一样，说是生存服首当之选也不为过。
@@ -49,7 +51,7 @@ import TabItem from '@theme/TabItem';
 至本篇文档开始，**`NK`** 一致指 **`Nukkit`**，但考虑到全称不长，因此二者都会出现在本文档中
 :::
 
-![Nukkit 运行时的样子](_images/nukkit-core-running.png)
+<Image img={require('_images/nukkit-core-running.png')} alt="Nukkit 运行时的样子" />
 
 它的名字，很像 Java 版服务端的 Bukkit。没错，它就是 _意图_ 创作出来类似 Bukkit 的基岩版服务端，编写语言正是 **Java**。
 
@@ -77,14 +79,14 @@ import TabItem from '@theme/TabItem';
 
 :::danger [此核心短时间内不再可用]
 
-![PNX 短时间内不再更新](_images/powernukkitx-core-rip.png)
+<Image img={require('_images/powernukkitx-core-rip.png')} alt="PNX 短时间内不再更新" />
 :::
 
 :::warning
 至本篇文档开始，**`PNX`** 一致指 **`PowerNukkitX`**
 :::
 
-![PNX 运行时的样子](_images/powernukkitx-core-running.png)
+<Image img={require('_images/powernukkitx-core-running.png')} alt="PNX 运行时的样子" />
 
 **优势**：
 
@@ -111,7 +113,7 @@ import TabItem from '@theme/TabItem';
 至本篇文档开始，**`PMMP`** 一致指 **`PocketMine-MP`**
 :::
 
-![PNX 运行时的样子](_images/pocketminemp-core-running.png)
+<Image img={require('_images/pocketminemp-core-running.png')} alt="PNX 运行时的样子" />
 
 **优势**：
 

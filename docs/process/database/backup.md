@@ -4,6 +4,8 @@ slug: /database/backup
 sidebar_position: 4
 ---
 
+import Image from '@theme/IdealImage';
+
 ## 手动备份
 
 ### 使用命令行备份
@@ -50,15 +52,15 @@ mysql -u root -p mydb < mydb_backup.sql
 
 展开你想要备份的数据库，点击备份，再点击新建备份
 
-![](_images/35.png)
+<Image img={require('_images/35.png')} alt="" />
 
 然后点击备份即可开始备份
 
-![](_images/36.png)
+<Image img={require('_images/36.png')} alt="" />
 
 中间的命令行提示这一条的时候备份即已完成
 
-![](_images/37.png)
+<Image img={require('_images/37.png')} alt="" />
 
 **那我可以指定把数据库备份放在那里吗？**
 
@@ -66,21 +68,21 @@ mysql -u root -p mydb < mydb_backup.sql
 
 右键你的连接，点击编辑连接
 
-![](_images/38.png)
+<Image img={require('_images/38.png')} alt="" />
 
 点击数据库，修改这里的设置位置即可让 Navicat 将你的数据库备份到你想要到的地方了
 
-![](_images/39.png)
+<Image img={require('_images/39.png')} alt="" />
 
 **如何使用备份？**
 
 右键你想要使用的备份，然后点击还原备份
 
-![](_images/40.png)
+<Image img={require('_images/40.png')} alt="" />
 
 然后在弹出的界面中点击还原，当命令行出现这句话的时候，数据库就还原成功了
 
-![](_images/41.png)
+<Image img={require('_images/41.png')} alt="" />
 
 **对于数据量非常大的数据库，备份起来很慢，还容易出错，怎么办？**
 
@@ -90,7 +92,7 @@ mysql -u root -p mydb < mydb_backup.sql
 
 我们右键想要转储为 SQL 文件的数据库，点击转储 SQL 文件，点击结构和数据
 
-![](_images/42.png)
+<Image img={require('_images/42.png')} alt="" />
 
 之后我们选择一下 SQL 文件的转出位置
 
@@ -98,11 +100,11 @@ mysql -u root -p mydb < mydb_backup.sql
 
 之后当我们需要使用备份的时候，我们再次右键那个数据库，点击运行 SQL 文件
 
-![](_images/44.png)
+<Image img={require('_images/44.png')} alt="" />
 
 然后找到你之前转储的后缀为 `.sql` 的文件，选中并确定后点击开始。当命令行出现这句话的时候，数据库就还原成功了
 
-![](_images/45.png)
+<Image img={require('_images/45.png')} alt="" />
 
 ### 使用 HeidiSQL 备份
 
@@ -120,21 +122,21 @@ TODO
 
 ### 使用 Navicat 自动备份
 
-![](_images/31.png)
+<Image img={require('_images/31.png')} alt="" />
 
 点击自动运行，然后点击新建批处理作业
 
-![](_images/32.png)
+<Image img={require('_images/32.png')} alt="" />
 
 之后分别点击: 备份 - 需要备份的数据库名字 - backup 数据库名
 
 即可添加备份任务
 
-![](_images/33.png)
+<Image img={require('_images/33.png')} alt="" />
 
 完成这些步骤后点击保存，设置完任务名称后点击设置计划任务
 
-![](_images/34.png)
+<Image img={require('_images/34.png')} alt="" />
 
 点击触发器，新建触发器，然后自行设置备份任务时间
 

@@ -2,9 +2,11 @@
 sidebar_position: 4
 ---
 
+import Image from '@theme/IdealImage';
+
 # Adyeshach
 
-![](_images/Adyeshach/Adyeshach-1.png)
+<Image img={require('_images/Adyeshach/Adyeshach-1.png')} alt="" />
 
 <a href="https://github.com/TabooLib/adyeshach">
   <img src="https://img.shields.io/github/forks/taboolib/adyeshach" class="stylish-image" alt="Forks" />

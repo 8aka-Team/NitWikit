@@ -3,6 +3,8 @@ title: PM1E 争议问题
 sidebar_position: 1
 ---
 
+import Image from '@theme/IdealImage';
+
 :::warning
 Nukkit PetteriM1 Edition是一个独立开发的开源项目，由PetteriM1及其团队负责维护和更新
 
@@ -18,7 +20,7 @@ NitWiki仅提供关于Nukkit PetteriM1 Edition的信息和教程，但不对该�
 
 还有：NukkitPetteriM1Edition不知道啥时候开始老老实实把源代码推回来了：
 
-![?](./zhengyi.png)
+<Image img={require('./zhengyi.png')} alt="?" />
 :::
 
 大致事件如下：

@@ -3,6 +3,8 @@ title: 如何抵御网络攻击
 sidebar_position: 6
 ---
 
+import Image from '@theme/IdealImage';
+
 # 如何抵御网络攻击
 
 随着你的 Minecraft 服务器人数和宣传越来越多，你的服务器越有可能收到其他“友商”或者某些不怀好意的玩家攻击。
@@ -427,7 +429,7 @@ Cloudflare Spectrum 目前是没中国节点的
 因为在开服圈子的任何一处这种方法都是一种十分自私、对同行极不负责任的行为。
 你的行为可能会导致相应的内网穿透运营商突然出现大量额外支出，并影响大量使用同一节点的人正常使用服务(如果节点被打死了，那么攻击者就是在攻击你的过程中误伤了大量其他无辜用户)。不要因为你图省事的想法牵连无辜的陌生人。
 
-<!--![](_images/angryopenfrp.jpg)  -->
+<!--<Image img={require('_images/angryopenfrp.jpg')} alt="" />  -->
 
 :::
 

@@ -3,6 +3,8 @@ title: Math
 sidebar_position: 3
 ---
 
+import Image from '@theme/IdealImage';
+
 # Math
 
 :::info
@@ -32,7 +34,7 @@ sidebar_position: 3
 
 **如：**
 
-![](_images/Math/1.png)
+<Image img={require('_images/Math/1.png')} alt="" />
 
 发现输出的结果有三位小数，你可以在 `plugins\PlaceholderAPI\config.yml` 中找到
 
@@ -54,7 +56,7 @@ sidebar_position: 3
 
 **如：**
 
-![](_images/Math/2.png)
+<Image img={require('_images/Math/2.png')} alt="" />
 
 ### 运算符
 
@@ -65,7 +67,7 @@ sidebar_position: 3
 
 支持括号 比如 (1+2)x2=6 为
 
-![](_images/Math/3.png)
+<Image img={require('_images/Math/3.png')} alt="" />
 
 ### 支持变量
 
@@ -73,6 +75,6 @@ sidebar_position: 3
 
 比如 [Server扩展](https://wiki.placeholderapi.com/users/placeholder-list/#server)的 `%server_online%` 显示当前服务器在线玩家数
 
-![](_images/Math/4.png)
+<Image img={require('_images/Math/4.png')} alt="" />
 
 我本地测试服务器里就我自己一个人，所以 1+1=2

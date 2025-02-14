@@ -3,6 +3,8 @@ title: 启动服务器
 sidebar_position: 3
 ---
 
+import Image from '@theme/IdealImage';
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -55,7 +57,7 @@ OpenJDK 64-Bit Server VM Zulu21.32+17-CA (build 21.0.2+13-LTS， mixed mode， s
 
 不熟悉 wget 时，先使用 Windows 前往[zulu下载](https://www.azul.com/downloads/?package=jdk#zulu)，下载再使用 SFTP 软件上传到服务器 `/opt` 目录下。
 
-![](_images/Linux开服/开服/1.png)
+<Image img={require('_images/Linux开服/开服/1.png')} alt="" />
 
 #### wegt 下载
 
@@ -63,17 +65,17 @@ OpenJDK 64-Bit Server VM Zulu21.32+17-CA (build 21.0.2+13-LTS， mixed mode， s
 
 `wget https://cdn.azul.com/zulu/bin/zulu21.34.19-ca-jdk21.0.3-linux_x64.tar.gz`
 
-![](_images/Linux开服/开服/2.png)
+<Image img={require('_images/Linux开服/开服/2.png')} alt="" />
 
 ### 压缩包解压
 
 解压压缩包：
 
-![](_images/Linux开服/开服/3.png)
+<Image img={require('_images/Linux开服/开服/3.png')} alt="" />
 
 将目录重命名为 jdk21 ：
 
-![](_images/Linux开服/开服/4.png)
+<Image img={require('_images/Linux开服/开服/4.png')} alt="" />
 
 这样就算是安装好了(PS：这里的操作仅适用于开服使用，若需要其他需要jdk的操作请使用包管理器安装openjdk)
 
@@ -131,7 +133,7 @@ TODO - 完善和排版
 
 在/opt目录中使用mkdir创建一个目录用于开服
 
-![](_images/Linux开服/开服/5.png)
+<Image img={require('_images/Linux开服/开服/5.png')} alt="" />
 
 将核心放入服务器内，并编写简单的开服脚本
 
@@ -141,12 +143,12 @@ TODO - 完善和排版
 chmod +x example.sh
 ```
 
-![](_images/Linux开服/开服/6.png)
+<Image img={require('_images/Linux开服/开服/6.png')} alt="" />
 
 输入./start.sh或者输入bash start.sh即可启动
 
-![](_images/Linux开服/开服/7.png)
+<Image img={require('_images/Linux开服/开服/7.png')} alt="" />
 
 使用vim修改eula为true就可以开服了
 
-![](_images/Linux开服/开服/8.png)
+<Image img={require('_images/Linux开服/开服/8.png')} alt="" />

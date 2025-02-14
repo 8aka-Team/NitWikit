@@ -3,6 +3,8 @@ title: 小妙招
 sidebar_position: 5
 ---
 
+import Image from '@theme/IdealImage';
+
 # 小妙招
 
 ## 网页版可视化编辑器
@@ -11,7 +13,7 @@ sidebar_position: 5
 lp editor
 ```
 
-![](_images/editor.png)
+<Image img={require('_images/editor.png')} alt="" />
 
 ## 日志
 
@@ -27,7 +29,7 @@ lp verbose <on|record|off|upload> [filter]
 
 你还不知道翻文档的情况，也不用跟个傻逼一样问群友这个
 
-![](./_images/日志-1.png)
+<Image img={require('./_images/日志-1.png')} alt="" />
 
 打开 Luckperms 的详细日志：
 
@@ -37,7 +39,7 @@ lp verbose <on|record|off|upload> [filter]
 
 再次破坏方块时，你会看到：
 
-![](./_images/日志-2.png)
+<Image img={require('./_images/日志-2.png')} alt="" />
 
 ### 解释
 
@@ -48,7 +50,7 @@ lp verbose <on|record|off|upload> [filter]
 
 ### on
 
-![](_images/on.png)
+<Image img={require('_images/on.png')} alt="" />
 
 ### 过滤器
 
@@ -62,9 +64,9 @@ lp verbose on !Luck & !anticheat
 
 ### paste
 
-![](_images/paste-1.png)
+<Image img={require('_images/paste-1.png')} alt="" />
 
-![](_images/paste-2.png)
+<Image img={require('_images/paste-2.png')} alt="" />
 
 ## 执行命令
 
@@ -80,4 +82,4 @@ lp verbose on !Luck & !anticheat
 
 截图中的 me 可以替换为在线玩家的玩家名。
 
-![](_images/command.png)
+<Image img={require('_images/command.png')} alt="" />

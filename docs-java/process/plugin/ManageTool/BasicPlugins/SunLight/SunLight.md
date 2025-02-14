@@ -3,9 +3,11 @@ title: SunLight
 sidebar_position: 3
 ---
 
+import Image from '@theme/IdealImage';
+
 # SunLight
 
-![](_images/1.png)
+<Image img={require('_images/1.png')} alt="" />
 
 <a href="https://discord.gg/EwNFGsnGaW">
   <img src="_images/2.png" class="stylish-image" alt="" />
@@ -19,7 +21,7 @@ sidebar_position: 3
 
 ## 特点
 
-![](_images/5.png)
+<Image img={require('_images/5.png')} alt="" />
 
 - **模块化。** 插件的任何部分都可以轻松完全禁用！包括任何插件命令！
 - **轻盈而现代。** 漂亮的消息设计，简单直观的GUI，没有过载（hello CMI），也不是那么基本（hello Essentials）。
