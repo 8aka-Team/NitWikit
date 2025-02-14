@@ -3,6 +3,8 @@ title: 连接服务器
 sidebar_position: 2
 ---
 
+import Image from '@theme/IdealImage';
+
 # 连接服务器
 
 Linux 系统上有一个工具被业界广泛使用，它就是 `ssh`。它虽然不能远程控制桌面，但是可以远程登录服务器的命令行，并让服务器执行一些命令。由于 `ssh` 非常常用，现在很多Linux发行版都已经默认集成了这个命令。
@@ -70,7 +72,7 @@ import TabItem from '@theme/TabItem';
 <Tabs>
   <TabItem value="Powershell" label="Powershell" default>
 
-![](_images/Linux开服/连接服务器/1.png)
+<Image img={require('./_images/Linux开服/连接服务器/1.png')} alt="" />
 
 Windows 系统自带的 Powershell
 
@@ -93,7 +95,7 @@ hostname 为服务器的域名或者 IP
   </TabItem>
   <TabItem value="windterm" label="WindTerm">
 
-![WindTerm](_images/Linux开服/连接服务器/WindTerm.png)
+<Image img={require('./_images/Linux开服/连接服务器/WindTerm.png')} alt="WindTerm" />
 
 一个开源的 SSH/Telnet/Serial/Shell/Sftp 客户端工具
 
@@ -102,7 +104,7 @@ https://github.com/kingToolbox/WindTerm
   </TabItem>
   <TabItem value="finelshell" label="FinelShell">
 
-![finalshell终端](_images/Linux开服/连接服务器/2.png)
+<Image img={require('./_images/Linux开服/连接服务器/2.png')} alt="finalshell终端" />
 
 FinalShell是一体化的的服务器，网络管理软件，不仅是ssh客户端，还是功能强大的开发，运维工具，充分满足开发，运维需求.
 
@@ -120,7 +122,7 @@ FinalShell是一体化的的服务器，网络管理软件，不仅是ssh客户�
 
 安装好之后，打开软件就是命令行，随后直接使用 ssh 命令即可连接。
 
-![termux终端](_images/Linux开服/连接服务器/termux_screenshot.jpg)
+<Image img={require('./_images/Linux开服/连接服务器/termux_screenshot.jpg')} alt="termux终端" />
 
   </TabItem>
 
@@ -132,7 +134,7 @@ macOS 内置 ssh 命令，我们可以用终端来执行它。要打开macos上�
 
 - 按下command+空格或键盘上的搜索键唤起 spotlight ，输入“终端”，然后它就会显示在下面。
 
-![macos终端](_images/Linux开服/连接服务器/macOS_terminal.png)
+<Image img={require('./_images/Linux开服/连接服务器/macOS_terminal.png')} alt="macos终端" />
 
 打开终端后，使用上文中提到的ssh命令即可连接到服务器。
   </TabItem>

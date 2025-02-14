@@ -3,6 +3,8 @@ title: 怎么让大佬帮我性能分析
 sidebar_position: 7
 ---
 
+import Image from '@theme/IdealImage';
+
 # 怎么让大佬帮我性能分析
 
 <!--markdownlint-disable ol-prefix-->
@@ -17,7 +19,7 @@ sidebar_position: 7
 /spark profiler start
 ```
 
-![](_images/怎么让大佬帮我/spark_start.png)
+<Image img={require('./_images/怎么让大佬帮我/spark_start.png')} alt="" />
 
 在你服务器卡顿的时候开启， **一段时间后** 结束它
 
@@ -33,4 +35,4 @@ sidebar_position: 7
 
 注:链接位置在下图中红框标记的部分
 
-![](_images/怎么让大佬帮我/spark_stop.png)
+<Image img={require('./_images/怎么让大佬帮我/spark_stop.png')} alt="" />

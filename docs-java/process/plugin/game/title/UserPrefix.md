@@ -3,11 +3,13 @@ title: UserPrefix
 sidebar_position: 2
 ---
 
+import Image from '@theme/IdealImage';
+
 <!--markdownlint-disable line-length-->
 
 # UserPrefix
 
-![](./_images/UserPrefix/1.png)
+<Image img={require('./_images/UserPrefix/1.png')} alt="" />
 
 <a href="https://www.codefactor.io/repository/github/carmjos/userprefix">
   <img src="https://www.codefactor.io/repository/github/carmjos/userprefix/badge?s=b76fec1f64726b5f19989aace6adb5f85fdab840" class="stylish-image" alt="CodeFactor" />
@@ -34,7 +36,7 @@ sidebar_position: 2
 
 ## 照片
 
-![](./_images/UserPrefix/2.png)
+<Image img={require('./_images/UserPrefix/2.png')} alt="" />
 
 ## 依赖
 
@@ -96,7 +98,7 @@ sidebar_position: 2
 ## 支持与捐赠
 
 本项目由 [YourCraft(你的世界)](https://www.ycraft.cn) 团队提供长期支持与维护。
-![TeamLogo](./_images/UserPrefix/3.png)
+<Image img={require('./_images/UserPrefix/3.png')} alt="TeamLogo" />
 
 若您觉得本插件做的不错，您可以捐赠支持我！感谢您成为开源项目的支持者！
 

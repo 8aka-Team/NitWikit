@@ -3,12 +3,14 @@ title: 相亲墙
 sidebar_position: 101
 ---
 
+import Image from '@theme/IdealImage';
+
 # 驿站忆行
 
 <details>
   <summary>点击展开</summary>
 
-![](_images/postyizhan.png)
+<Image img={require('./_images/postyizhan.png')} alt="" />
 
 NitWikit 项目的建立者，维护者，写下这段话时文档提交次数和提交行数最多的人，群吉祥物
 

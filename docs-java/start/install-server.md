@@ -3,6 +3,8 @@ title: 安装 Mod 服务端
 sidebar_position: 3
 ---
 
+import Image from '@theme/IdealImage';
+
 # 安装服务端
 
 :::tip
@@ -19,15 +21,15 @@ sidebar_position: 3
 
 首先，来到 [Forge 官方网站](https://files.minecraftforge.net/net/minecraftforge/forge/)或国内下载镜像 [MCSL](https://sync.mcsl.com.cn/core/Forge)
 
-![](_images/install/1.png)
+<Image img={require('./_images/install/1.png')} alt="" />
 
 在左边的 `Minecraft Version` 找到你需要的版本，然后点击。
 
-![](_images/install/2.png)
+<Image img={require('./_images/install/2.png')} alt="" />
 
 请选择 `Installer` ，左边右边都无所谓，打开后，你会来到一个广告窗口，点击最上面的 `SKIP`(没有出现就等一会)
 
-![](_images/install/3.png)
+<Image img={require('./_images/install/3.png')} alt="" />
 
 然后你就成功下载了 `Forge Installer`，由于 MC 的 eula 限制，我们需要去单独下载一个 `Minecraft server` 本体
 
@@ -41,7 +43,7 @@ sidebar_position: 3
 
 比如 1.20.4 服务器应该是 `minecraft_server.1.20.4.jar` ，现在你的目录应该长这样
 
-![](_images/install/4.png)
+<Image img={require('./_images/install/4.png')} alt="" />
 
 ### 执行安装
 

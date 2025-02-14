@@ -3,6 +3,8 @@ sidebar_position: 2
 sidebar_label: 领地 - Dominion
 ---
 
+import Image from '@theme/IdealImage';
+
 # Dominion
 
 :::info
@@ -41,4 +43,4 @@ sidebar_label: 领地 - Dominion
 
 ## 作者的整活儿
 
-![](_images/Dominion-08.png)
+<Image img={require('./_images/Dominion-08.png')} alt="" />

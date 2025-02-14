@@ -3,6 +3,8 @@ title: 常见问题
 sidebar_position: 2
 ---
 
+import Image from '@theme/IdealImage';
+
 # 常见问题
 
 ## 什么是变量？
@@ -17,7 +19,7 @@ sidebar_position: 2
 
 ## 变量怎么不显示
 
-![](_images/Q&A/变量不显示-1.png)
+<Image img={require('./_images/Q&A/变量不显示-1.png')} alt="" />
 
 通常有以下几种情况：
 
@@ -38,7 +40,7 @@ sidebar_position: 2
 
 然后你就可以看到变量了。
 
-![](_images/Q&A/变量不显示-2.png)
+<Image img={require('./_images/Q&A/变量不显示-2.png')} alt="" />
 
 如果下载失败，看 [变量下载失败？](#变量下载失败)
 
@@ -94,7 +96,7 @@ boolean:
 
 ## 变量下载失败？
 
-![](_images/Q&A/变量下载失败.png)
+<Image img={require('./_images/Q&A/变量下载失败.png')} alt="" />
 
 看起来你连不上 ecloud
 

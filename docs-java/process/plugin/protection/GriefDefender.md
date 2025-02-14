@@ -3,6 +3,8 @@ sidebar_position: 3
 sidebar_label: 领地 - GriefDefender
 ---
 
+import Image from '@theme/IdealImage';
+
 # GriefDefender
 
 :::info
@@ -19,6 +21,6 @@ sidebar_label: 领地 - GriefDefender
 
 ## 开源?
 
-![](_images/GriefDefender-github.png)
+<Image img={require('./_images/GriefDefender-github.png')} alt="" />
 
 它开源的代码只到2021年，往隔壁 Residence 旁边一站简直是卧龙凤雏

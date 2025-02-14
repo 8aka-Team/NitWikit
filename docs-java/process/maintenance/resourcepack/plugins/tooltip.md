@@ -3,6 +3,8 @@ sidebar_position: 4
 title: Tooltip
 ---
 
+import Image from '@theme/IdealImage';
+
 # Tooltips
 
 :::info
@@ -17,4 +19,4 @@ title: Tooltip
 
 一个提示/对话制作插件,可以实现非常酷的功能,相较于其他插件较为简单
 
-![](_images/52470cba6836ab471f19c8e788c513765de2d02c.png)
+<Image img={require('./_images/52470cba6836ab471f19c8e788c513765de2d02c.png')} alt="" />

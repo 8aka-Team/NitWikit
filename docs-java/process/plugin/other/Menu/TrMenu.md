@@ -3,6 +3,8 @@ title: TrMenu
 sidebar_position: 4
 ---
 
+import Image from '@theme/IdealImage';
+
 # TrMenu
 
 ![](https://gitee.com/postyizhan/images-hosting/releases/download/gif/animation.gif)
@@ -95,7 +97,7 @@ Notice：维护这个分支完全是个人兴趣。
 
 社区文档，或许比上方的文档更容易理解
 
-![](_images/TrMenu/trm一定要看wiki呐.jpg)
+<Image img={require('./_images/TrMenu/trm一定要看wiki呐.jpg')} alt="" />
 
 ## vscode 插件
 
@@ -139,7 +141,7 @@ kether 语法提示
 
 所以你可以直接写 true 让他显示这个子图标
 
-![](_images/为难.jpg)
+<Image img={require('./_images/为难.jpg')} alt="" />
 
 #### 子图标写动作
 
@@ -175,7 +177,7 @@ kether 语法提示
         papi join [ '%checkitem_remove_mat:' meta get mat ',amt:' meta get amt '%' ]
 ```
 
-![](_images/子图标写动作.png)
+<Image img={require('./_images/子图标写动作.png')} alt="" />
 
 ### 玩家信息
 

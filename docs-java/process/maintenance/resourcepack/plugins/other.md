@@ -3,6 +3,8 @@ sidebar_position: 6
 title: 其他
 ---
 
+import Image from '@theme/IdealImage';
+
 # 其他
 
 ## 生命指示
@@ -23,7 +25,7 @@ import TabItem from '@theme/TabItem';
 
 一个指示自身生命值和盔甲值的插件，支持版本为 1.21
 
-![](_images/d0a7f51a86d1a313f1b41f27e021421adc93eec9.png)
+<Image img={require('./_images/d0a7f51a86d1a313f1b41f27e021421adc93eec9.png')} alt="" />
 
 </TabItem>
 <TabItem value="health" label="BetterHealthBar(付费)">
@@ -55,7 +57,7 @@ import TabItem from '@theme/TabItem';
 
 一个生命指示插件,支持版本为 1.20 - 1.20.6
 
-![](_images/4f4a015981222b37bfa3b2324113d919a33b090f.png)
+<Image img={require('./_images/4f4a015981222b37bfa3b2324113d919a33b090f.png')} alt="" />
 
 </TabItem>
 </Tabs>
@@ -74,9 +76,9 @@ import TabItem from '@theme/TabItem';
 
 一个超级棒的小地图插件，支持版本为 1.21
 
-![](_images/videoframe_931.png)
+<Image img={require('./_images/videoframe_931.png')} alt="" />
 
-![](_images/videoframe_1994.png)
+<Image img={require('./_images/videoframe_1994.png')} alt="" />
 
 ## 生存增强
 

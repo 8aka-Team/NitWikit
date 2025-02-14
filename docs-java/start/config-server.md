@@ -3,6 +3,8 @@ title: 配置服务端
 sidebar_position: 5
 ---
 
+import Image from '@theme/IdealImage';
+
 # 配置服务端
 
 开启后，你需要进行一些简单配置，比如修改服务器端口，正版验证等
@@ -22,7 +24,7 @@ sidebar_position: 5
 
 正版验证默认被开启，不关闭正版验证的话盗版玩家是不能加入游戏的。如果你没有用正版启动游戏，那么加入服务器会出现：
 
-![](_images/无效会话.png)
+<Image img={require('./_images/无效会话.png')} alt="" />
 
 在 **server.properties** 中找到此项
 

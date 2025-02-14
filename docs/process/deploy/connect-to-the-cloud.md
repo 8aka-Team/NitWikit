@@ -3,6 +3,8 @@ title: 连接到云
 sidebar_position: 4
 ---
 
+import Image from '@theme/IdealImage';
+
 # 连接到云
 
 当你买好服务器后，你应该如何连接到服务器并部署你的服务端
@@ -20,7 +22,7 @@ sidebar_position: 4
 
 按下 `win键` + `R键`
 
-![](_images/连接服务器/1.png)
+<Image img={require('./_images/连接服务器/1.png')} alt="" />
 
 在弹出的窗口中输入 `mstsc`
 
@@ -36,9 +38,9 @@ sidebar_position: 4
 
 或者，你也可以 `Ctrl c` + `Ctrl v` 来传文件
 
-![](_images/连接服务器/2.png)
+<Image img={require('./_images/连接服务器/2.png')} alt="" />
 
-![](_images/连接服务器/3.png)
+<Image img={require('./_images/连接服务器/3.png')} alt="" />
 
 ### MacOS 和手机
 

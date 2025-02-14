@@ -3,13 +3,15 @@ title: 环境变量
 sidebar_position: 2
 ---
 
+import Image from '@theme/IdealImage';
+
 # 环境变量
 
 环境变量用于记住程序路径，方便在命令行界面的任意目录启动程序。
 
 例如：
 
-![](./_images/environment-1.png)
+<Image img={require('./_images/environment-1.png')} alt="" />
 
 在此处，`java` 等同于 `"C:\Program Files\Zulu\zulu-21\bin\java.exe"`
 
@@ -17,7 +19,7 @@ sidebar_position: 2
 
 如果不是使用安装包安装，即没有配置环境变量，你应该会遇到这个情况：
 
-![](./_images/environment-no.png)
+<Image img={require('./_images/environment-no.png')} alt="" />
 
 ## 编辑环境变量
 
@@ -31,11 +33,11 @@ import TabItem from '@theme/TabItem';
 
 右键点击 “**此电脑**”，点击 “**设置**”。
 
-![](./_images/environment-11-1.png)
+<Image img={require('./_images/environment-11-1.png')} alt="" />
 
 在 “**系统**” 点击 “**高级系统设置**”，在弹出的窗口中点击 “**环境变量**”。
 
-![](./_images/environment-11-2.png)
+<Image img={require('./_images/environment-11-2.png')} alt="" />
 
 </TabItem>
 <TabItem value="10" label="Windows 10">
@@ -59,7 +61,7 @@ TODO
 
 先鼠标左键选中 “**Path**”，接着点击 “**编辑**”，会弹出一个名为 “**编辑环境变量**” 的界面。
 
-![](./_images/environment-2.png)
+<Image img={require('./_images/environment-2.png')} alt="" />
 
 ## 新增环境变量
 
@@ -73,7 +75,7 @@ TODO
 
 点击 “**新建**”，在 2 处输入你的 Java 路径，接着回车，可以看到像 3 一样写入了。
 
-![](./_images/environment-new-1.png)
+<Image img={require('./_images/environment-new-1.png')} alt="" />
 
 接着 **重新打开** 一个终端。
 
@@ -85,7 +87,7 @@ TODO
 
 重新打印 Java 版本。
 
-![](./_images/environment-new-2.png)
+<Image img={require('./_images/environment-new-2.png')} alt="" />
 
 ## 优先级
 
@@ -97,7 +99,7 @@ TODO
 
 是的，你要关闭这两个界面才行。
 
-![](./_images/environment-3.png)
+<Image img={require('./_images/environment-3.png')} alt="" />
 
 接着 **重新打开** 一个终端。
 
@@ -109,7 +111,7 @@ TODO
 
 重新打印 Java 版本。
 
-![](./_images/environment-4.png)
+<Image img={require('./_images/environment-4.png')} alt="" />
 
 于是我们可以得到结论：
 

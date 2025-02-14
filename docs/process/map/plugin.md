@@ -3,6 +3,8 @@ title: 地图生成
 sidebar_position: 1
 ---
 
+import Image from '@theme/IdealImage';
+
 # 地图生成
 
 制作一个地图非常困难,如果对于地图细节要求不高或者要求超大范围地图,可以考虑使用地图生成插件或工具
@@ -15,9 +17,9 @@ Ouranos 是一个 Java 版的城市生成插件，可以用来无限的城市地
 
 [购买地址](https://www.spigotmc.org/resources/114772/),一些官方生成样例
 
-![](_images/54ef42d10ca2ce57484ef606117640460249e48e.png)
+<Image img={require('./_images/54ef42d10ca2ce57484ef606117640460249e48e.png')} alt="" />
 
-![](_images/825a21073ee817018bffff06e55d12da55b2a5b0.png)
+<Image img={require('./_images/825a21073ee817018bffff06e55d12da55b2a5b0.png')} alt="" />
 
 ### Arnis(免费)
 
@@ -55,9 +57,9 @@ DungeonMMO 是一个 Java 版的地下城生成插件，自带一些模版, 每�
 
 [购买地址](https://www.spigotmc.org/resources/76591/)
 
-![](_images/t.png)
+<Image img={require('./_images/t.png')} alt="" />
 
-![](_images/t2.png)
+<Image img={require('./_images/t2.png')} alt="" />
 
 ## 地形生成
 
@@ -65,25 +67,25 @@ DungeonMMO 是一个 Java 版的地下城生成插件，自带一些模版, 每�
 
 * Terra(免费) [下载地址](https://modrinth.com/plugin/terra)
 
-![](_images/356845062-1de0bbf4-7d26-4beb-b010-2f4d88efdba4.png)
+<Image img={require('./_images/356845062-1de0bbf4-7d26-4beb-b010-2f4d88efdba4.png')} alt="" />
 
-![](_images/356845134-18be416f-daf5-4ae9-8560-8412fda83dc6.png)
+<Image img={require('./_images/356845134-18be416f-daf5-4ae9-8560-8412fda83dc6.png')} alt="" />
 
 * Iris (付费) [购买地址](https://www.spigotmc.org/resources/84586/)
 
-![](_images/iris.png)
+<Image img={require('./_images/iris.png')} alt="" />
 
 * TerraformGenerator(付费/免费) [购买地址](https://www.spigotmc.org/resources/98309/)
 
-![](_images/erra.jpg)
+<Image img={require('./_images/erra.jpg')} alt="" />
 
-![](_images/terra2.png)
+<Image img={require('./_images/terra2.png')} alt="" />
 
 * Stratos(付费) [购买地址](https://www.spigotmc.org/resources/80313/)
 
-![](_images/st.png)
+<Image img={require('./_images/st.png')} alt="" />
 
-![](_images/st2.png)
+<Image img={require('./_images/st2.png')} alt="" />
 
 ### 结构生成
 
@@ -91,7 +93,7 @@ DungeonMMO 是一个 Java 版的地下城生成插件，自带一些模版, 每�
 
 (免费) [下载地址](https://www.spigotmc.org/resources/103241/),免费包提供 100 + 结构,官方所有包共有 500 多个结构
 
-![](_images/bs.jpg)
+<Image img={require('./_images/bs.jpg')} alt="" />
 
-![](_images/bs2.jpg)
+<Image img={require('./_images/bs2.jpg')} alt="" />
 
