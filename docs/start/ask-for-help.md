@@ -157,11 +157,11 @@ Wiki 就是让你解决常见问题的，不看这玩意儿就在那瞎问只会
 
 > https://log.8aka.org
 
-<Image img={require('./_images/屏幕截图%202025-02-07%20182759.png')} alt="" />
+<Image img={require('./_images/屏幕截图 2025-02-07 182759.png')} alt="" />
 
 服务器 log 文件在服务端根目录的 logs 文件夹，一般上传 latest.log (服务端最新的日志)即可
 
-<Image img={require('./_images/屏幕截图%202025-02-07%20182930.png')} alt="" />
+<Image img={require('./_images/屏幕截图 2025-02-07 182930.png')} alt="" />
 
 把这个链接复制粘贴发给大佬
 

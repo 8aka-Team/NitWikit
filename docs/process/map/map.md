@@ -124,7 +124,7 @@ import Image from '@theme/IdealImage';
 
 颜色相近有深浅关系的方块可以形成「层」的递进效果
 
-<Image img={require('./_images/Grettzzz-1.JPG')} alt="" />
+<Image img={require('./_images/Grettzzz-1.jpg')} alt="" />
 
 颜色相近纹路不同的方块可以在山体形成「糙」的细节效果
 
@@ -288,7 +288,7 @@ import Image from '@theme/IdealImage';
 
 > 中式玄幻，采样于 Grettzzz
 
-<Image img={require('./_images/Grettzzz-1.JPG')} alt="" />
+<Image img={require('./_images/Grettzzz-1.jpg')} alt="" />
 
 > 欧式，采样于 z_wuxin
 

@@ -22,13 +22,13 @@ import Image from '@theme/IdealImage';
 从此 [链接](https://github.com/PojavLauncherTeam/PojavLauncher_iOS/releases) 下载 Pojav 的 ipa 安装包
 
 在手机上的牛蛙助手中导入 ipa 文件
-<Image img={require('./_images/1.PNG')} alt="" />
+<Image img={require('./_images/1.png')} alt="" />
 
 点击签名进行自签(刚开始用自签会被封号，不会很严重修改密码就好了，自签只有一周的使用时间，过了时间要重新签名)
-<Image img={require('./_images/2.PNG')} alt="" />
+<Image img={require('./_images/2.png')} alt="" />
 
 点击进行安装
-<Image img={require('./_images/3.PNG')} alt="" />
+<Image img={require('./_images/3.png')} alt="" />
 
 ### 启动 PojavLauncher
 
@@ -42,7 +42,7 @@ import Image from '@theme/IdealImage';
 点击对应的配置描述文件信任它
 
 若牛蛙提示下图，就按它说的打开牛蛙的 VPN
-<Image img={require('./_images/4.PNG')} alt="" />
+<Image img={require('./_images/4.png')} alt="" />
 
 ## 方法二: 使用 TrollStore
 
@@ -122,11 +122,11 @@ import Image from '@theme/IdealImage';
 2.你使用的是 TrollStore 方案，那么就下载 `net.kdt.pojavlauncher-ios-trollstore.tipa`，~~别告诉我你用的是 TVOS~~。
 
 下载完 Pojav 安装包后，我们来到 TrollStore 里面。
-<Image img={require('./_images/troll-idid.PNG')} alt="" />
+<Image img={require('./_images/troll-idid.png')} alt="" />
 咱们要打开 ldid，以确保能正常安装没有签名的安装包。
 
 然后回到主界面，点击右上角加号，选择你刚刚下载的 tipa 文件，点击，然后就会安装，安装完之后差不多是这样的。
-<Image img={require('./_images/troll-ui.PNG')} alt="" />
+<Image img={require('./_images/troll-ui.png')} alt="" />
 
 ~~(你不用管 DolphiniOS 干什么的，这是用来玩老游戏的模拟器)~~
 
