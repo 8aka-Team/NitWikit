@@ -3,6 +3,8 @@ title: 不知道放在哪
 sidebar_position: 6
 ---
 
+import Image from '@theme/IdealImage';
+
 ## 命名空间
 
 建议阅读：https://www.yuque.com/sacredcraft/kether/namespace
@@ -31,7 +33,7 @@ inline是在一段文本中插入语句，实际上会创造一个新的 kether 
 
 同时，你也不能使用原插件提供的 kether 私有语句，不过你可以尝试 [导入语句](https://www.yuque.com/sacredcraft/kether/namespace#zVbkg)
 
-![](_images/inline.png)
+<Image img={require('./_images/inline.png')} alt="" />
 
 ## join
 

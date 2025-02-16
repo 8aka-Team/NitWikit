@@ -3,6 +3,8 @@ title: 数据库安装
 sidebar_position: 5
 ---
 
+import Image from '@theme/IdealImage';
+
 # 数据库安装
 
 本部分讲解在命令行中安装常见数据库的方式。本教程以 Ubuntu 24.04 系统为例
@@ -21,7 +23,7 @@ sidebar_position: 5
 dpkg -i mysql-apt-config_0.8.30-1_all.deb
 ```
 
-![](_images/Linux开服/数据库安装/1.png)
+<Image img={require('./_images/Linux开服/数据库安装/1.png')} alt="" />
 
 安装完成后使用以下指令更新软件包列表：
 
@@ -35,7 +37,7 @@ sudo apt update
 apt install mysql-community-server -y
 ```
 
-![](_images/Linux开服/数据库安装/2.png)
+<Image img={require('./_images/Linux开服/数据库安装/2.png')} alt="" />
 
 MySQL 默认会自带随机密码，所以等待安装完成后需输入以下指令查看初始密码：
 
@@ -43,7 +45,7 @@ MySQL 默认会自带随机密码，所以等待安装完成后需输入以下�
 mysqld --initialize –console
 ```
 
-![](_images/Linux开服/数据库安装/3.png)
+<Image img={require('./_images/Linux开服/数据库安装/3.png')} alt="" />
 
 红框部分就是初始密码，安装已经完毕，接下来启动并 将 MySQL设为开机自启动，分别输入
 
@@ -60,7 +62,7 @@ mysql -uroot -p
 
 按提示输入密码登录到 MySQL
 
-![](_images/Linux开服/数据库安装/4.png)
+<Image img={require('./_images/Linux开服/数据库安装/4.png')} alt="" />
 
 输入修改密码指令：
 
@@ -124,16 +126,16 @@ apt install redis -y
 
 安装完成后输入 `systemctl start redis-server`
 
-![](_images/Linux开服/数据库安装/5.png)
+<Image img={require('./_images/Linux开服/数据库安装/5.png')} alt="" />
 
 至此安装完成，输入 `redis-cli` 即可进入命令行管理
 
-![](_images/Linux开服/数据库安装/6.png)
+<Image img={require('./_images/Linux开服/数据库安装/6.png')} alt="" />
 
 :::tip
 
 使用 systemctl enable redis-server 使 Redis 开机自启
 
-![](_images/Linux开服/数据库安装/7.png)
+<Image img={require('./_images/Linux开服/数据库安装/7.png')} alt="" />
 
 :::

@@ -3,9 +3,11 @@ title: Citizens
 sidebar_position: 2
 ---
 
+import Image from '@theme/IdealImage';
+
 # Citizens
 
-![](_images/Citizens/Citizens-1.png)
+<Image img={require('./_images/Citizens/Citizens-1.png')} alt="" />
 
 <a href="https://github.com/CitizensDev/Citizens2">
   <img src="https://img.shields.io/github/forks/CitizensDev/Citizens2?style=flat" class="stylish-image" alt="Forks" />

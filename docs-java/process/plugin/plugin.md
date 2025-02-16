@@ -4,6 +4,8 @@ slug: /plugin
 sidebar_position: 1
 ---
 
+import Image from '@theme/IdealImage';
+
 # 插件
 
 本文档中提到的插件都有较多用户基础和完善的 Wiki，**具体插件请查看插件的 Wiki。**
@@ -41,7 +43,7 @@ sidebar_position: 1
 
 使用 `/plugins` 或者 `/pl` 列出插件列表。
 
-![](_images/插件列表.png)
+<Image img={require('./_images/插件列表.png')} alt="" />
 
 绿色为已加载(不是代表你日后使用不报错，只是这里加载上了)。
 

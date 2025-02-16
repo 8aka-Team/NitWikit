@@ -3,6 +3,8 @@ title: 什么是权限
 sidebar_position: 2
 ---
 
+import Image from '@theme/IdealImage';
+
 # 什么是权限
 
 举个栗子，你想要执行 Essentials 插件的tpa命令，那么你需要 `essentials.tpa` 这个权限。
@@ -13,7 +15,7 @@ sidebar_position: 2
 
 :::
 
-![](_images/ummm.jpg)
+<Image img={require('./_images/ummm.jpg')} alt="" />
 
 ## 权限节点
 

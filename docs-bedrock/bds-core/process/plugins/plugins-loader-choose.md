@@ -3,6 +3,8 @@ title: 插件加载器选择
 sidebar_position: 2
 ---
 
+import Image from '@theme/IdealImage';
+
 # BDS 社区开发者编写的插件加载器
 
 import Tabs from '@theme/Tabs';
@@ -140,7 +142,7 @@ import TabItem from '@theme/TabItem';
 只要社区的需求大且合理，他们就会添加对应的接口。在PDB方面，他们认为这是 **非行业化的**，他们不认为这是合适且合法的 MOD 的行为，并 **《希望》** 社区给出一定要 PDB 才能实现的功能。
 
 此后，著名插件加载器 LeviLamina 刚出生不久就胎死腹中了...
-![LeviLamina 在未来将会存档](./_images/levilamina-will-archived.png)
+<Image img={require('./_images/levilamina-will-archived.png')} alt="LeviLamina 在未来将会存档" />
 
 总之，在这场 PDB 事件风波不久后，很多基岩版腐竹都转移到 Java版服务端，以求后路。
 
@@ -154,7 +156,7 @@ LiteLoaderBDS 最初是基于 BedrockX 开发的，在 2.0 版本进行了完全
 一代骄子难道就此陨落了？
 
 不，LiteDev 在后续发布了此文
-![LeviLamina在来的路上](./_images/levilamina-is-coming.png)
+<Image img={require('./_images/levilamina-is-coming.png')} alt="LeviLamina在来的路上" />
 所以并不是 LiteDev 扔下史山跑路了(这是官方原话自嘲)，而是着手重构 LiteLoader，预计在未来发布 LiteLoaderBDSV3，即 LeviLamina。
 
 ### LiteXLoader 合并至 LiteLoader(2022年2月12日)

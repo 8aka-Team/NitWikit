@@ -68,6 +68,7 @@ const config = {
     plugins: [
         'docusaurus-plugin-image-zoom',
         'docusaurus-plugin-sass',
+        '@docusaurus/plugin-ideal-image',
         [
             "@gracefullight/docusaurus-plugin-microsoft-clarity",
             {projectId: "oyfswsvfpc"},

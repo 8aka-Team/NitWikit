@@ -3,6 +3,8 @@ title: 文本编辑器
 sidebar_position: 2
 ---
 
+import Image from '@theme/IdealImage';
+
 # 文本编辑器
 
 一个好用的文本编辑器是**相当**重要的，本文将介绍几个开服常用的文本编辑器。
@@ -35,11 +37,11 @@ sidebar_position: 2
 
 发现有人第一次用文本编辑器不知道编辑完后保存。
 
-![](_images/白点.png)
+<Image img={require('./_images/白点.png')} alt="" />
 
 VSCode 会在未保存的文件后标记一个白点，提示你这个文件编辑了但是没有保存(其他文本编辑器类似)。
 
-![](_images/vscode保存和自动保存.png)
+<Image img={require('./_images/vscode保存和自动保存.png')} alt="" />
 
 保存按钮(红色箭头)，也可以用快捷键来保存 Ctrl + S 。
 
@@ -60,7 +62,7 @@ VSCode 会在未保存的文件后标记一个白点，提示你这个文件编�
 <details>
   <summary>点击展开</summary>
 
-![Sublime Text](_images/sublime展示.png)
+<Image img={require('./_images/sublime展示.png')} alt="Sublime Text" />
 
 我不太喜欢的一点是保存文件时，对非激活的用户有一定概率弹出个窗口，提示你去付费支持(可以选择不支持)。但这依旧是一个非常优秀的文本编辑器。
 
@@ -103,7 +105,7 @@ GitHub: https://github.com/rizonesoft/Notepad3
 <details>
   <summary>点击展开</summary>
 
-![NPPesu](_images/Npp展示.png)
+<Image img={require('./_images/Npp展示.png')} alt="NPPesu" />
 
 可用， 相关功能也较为完善。
 
@@ -126,7 +128,7 @@ dizhi 08年奥运会 声称(仅声明，但还是挺过分的)不同意它的政
 <details>
   <summary>点击展开</summary>
 
-![Notepad--](_images/N减减展示.png)
+<Image img={require('./_images/N减减展示.png')} alt="Notepad--" />
 
 国内作者维护的 Notepad++ 的替代品。
 
@@ -140,7 +142,7 @@ dizhi 08年奥运会 声称(仅声明，但还是挺过分的)不同意它的政
 <details>
   <summary>点击展开</summary>
 
-![HbuilderX](_images/HbuilderX展示.png)
+<Image img={require('./_images/HbuilderX展示.png')} alt="HbuilderX" />
 
 官网链接：https://dcloud.io/hbuilderx.html
 

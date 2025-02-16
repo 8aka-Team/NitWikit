@@ -3,13 +3,15 @@ title: 软件
 sidebar_position: 1
 ---
 
+import Image from '@theme/IdealImage';
+
 # 软件
 
 收录一些资源包相关的软件。
 
 ## Blockbench
 
-![](_images/blockbench.png)
+<Image img={require('./_images/blockbench.png')} alt="" />
 
 > https://www.blockbench.net
 
@@ -17,7 +19,7 @@ sidebar_position: 1
 
 一个用来整服务器 title 的 blockbench 插件
 
-![](_images/title.png)
+<Image img={require('./_images/title.png')} alt="" />
 
 > https://www.blockbench.net/plugins/minecraft_title_generator
 
@@ -25,9 +27,9 @@ sidebar_position: 1
 
 发现一个整 tooltip 的妙妙工具
 
-![](_images/tooltip1.png)
+<Image img={require('./_images/tooltip1.png')} alt="" />
 
-![](_images/tooltip2.png)
+<Image img={require('./_images/tooltip2.png')} alt="" />
 
 > https://github.com/Godlander/tooltip
 

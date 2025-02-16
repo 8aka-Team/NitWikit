@@ -3,6 +3,8 @@ title: 路径相关
 sidebar_position: 3
 ---
 
+import Image from '@theme/IdealImage';
+
 # 路径相关
 
 - 绝对路径 - 是从盘符开始的路径.
@@ -41,7 +43,7 @@ sidebar_position: 3
 
 相对路径是从当前路径开始的路径。
 
-![](_images/path-1.png)
+<Image img={require('./_images/path-1.png')} alt="" />
 
 如图所示，将 “**zulu-21**” 放进服务端文件夹，接着在启动脚本写入：
 

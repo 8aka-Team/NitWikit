@@ -3,6 +3,8 @@ title: warp 地标
 sidebar_position: 6
 ---
 
+import Image from '@theme/IdealImage';
+
 # warp 地标
 
 跨世界定点传送
@@ -13,7 +15,7 @@ sidebar_position: 6
 /setwarp <地标名>
 ```
 
-![](_images/warp_1.png)
+<Image img={require('./_images/warp_1.png')} alt="" />
 
 ## 传送地标
 
@@ -21,7 +23,7 @@ sidebar_position: 6
 /warp <地标名>
 ```
 
-![](_images/warp_2.png)
+<Image img={require('./_images/warp_2.png')} alt="" />
 
 你需要给予玩家 `essentials.warp` 权限来允许使用 `warp` 命令
 
@@ -33,7 +35,7 @@ sidebar_position: 6
 /delwarp <地标名>
 ```
 
-![](_images/warp_3.png)
+<Image img={require('./_images/warp_3.png')} alt="" />
 
 ## 更多
 
