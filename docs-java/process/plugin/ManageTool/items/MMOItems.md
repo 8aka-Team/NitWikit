@@ -9,8 +9,6 @@ sidebar_position: 1
 
 `SpigotMC` https://www.spigotmc.org/resources/.39267/
 
-`Modrinth` https://modrinth.com/plugin/serverutils
-
 `GitLab` https://gitlab.com/phoenix-dvpmt/mmoitems
 
 `GitHub(汉化版本)` https://github.com/MagicMC-Dev/MMOItems-Zh
