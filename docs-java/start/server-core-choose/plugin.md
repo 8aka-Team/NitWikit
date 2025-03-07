@@ -98,7 +98,7 @@ import TabItem from '@theme/TabItem';
 
 **优势**：
 
-- 特性 - 为生电而生，拥有专门的生电向特性支持
+- 特性 - 为生电而生，拥有专门的生电向特性支持。还原了Paper破坏的原版特性，提供更好的生电体验
 - 兼容 - 支持 Paper 能使用的几乎所有插件
 - 支持 - 国人开发的核心
 
@@ -108,7 +108,7 @@ import TabItem from '@theme/TabItem';
 
 专为生电而生的核心。
 
-leaves 基本完全支持客户端生电 Mod，包括但不限于 Carpet，pca，投影，共享原理图，minihud，bbor，ommc，Xaero 小地图，Jade，appleskin。
+Leaves 基本完全支持客户端生电 Mod，包括但不限于 Carpet，pca，投影，共享原理图，minihud，bbor，ommc，Xaero 小地图，Jade，appleskin。
 
 [点我](https://docs.leavesmc.org/zh_Hans) 查看 Leaves 官方文档
 
