@@ -56,7 +56,7 @@ import TabItem from '@theme/TabItem';
 
 总的来说，Paper 核心适合那些追究 *极端的* 稳定的人
 
-[点我](https://docs.papermc.io/paper) 查看 Paper 官方文档
+[Paper官方文档](https://docs.papermc.io/paper)
 
 **下载**：
 
@@ -71,9 +71,9 @@ import TabItem from '@theme/TabItem';
 
 **优势**：
 
-- 性能 - Purpur 的性能相比于 Paper 提升大约 10-20%，略有提升
-- 稳定 - Purpur 兼容 Paper 的全部插件，只要 Paper 能跑，Purpur 就可以跑
-- 特性 - Purpur 还原了 Minecraft 的部分特性，用来开生存服务器更加适合(当然生电还是得 Leaves)
+- 性能 - Purpur的性能相比Paper提升约`10~20%`
+- 稳定 - Purpur兼容Paper的全部插件，只要Paper能跑，Purpur就可以跑
+- 特性 - Purpur还原了Minecraft的部分特性，用来开生存服务器更加适合(当然生电还是得 Leaves)
 - 兼容 - 很多插件会以此核心为标准之一进行兼容
 - 功能 - 配置文件中有一些基础插件的功能，合理使用可以减少插件使用量。
 
