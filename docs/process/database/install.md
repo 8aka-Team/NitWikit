@@ -130,3 +130,30 @@ MySQL5 版本太低了，很多插件需要更高版本的，装 MySQL8 就够�
 ![](_images/24.png)
 
 </details>
+
+#### 1Panel面板
+
+:::warning
+
+1Panel面板目前仅支持Linux系统，不支持Windows系统
+
+:::
+
+<details>
+  <summary>安装，配置面板</summary>
+
+![](_images/46.png)
+
+![](_images/47.png)
+
+![](_images/48.png)
+
+![](_images/49.png)
+</details>
+
+<details>
+  <summary>安装MySQL</summary>
+
+![](_images/50.png)
+
+</details>
