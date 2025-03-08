@@ -80,11 +80,11 @@ import TabItem from '@theme/TabItem';
 **劣势**：
 
 - 配置 - 配置文件比较繁杂
-- 支持 - 只有部分 mc 版本的构建
+- 支持 - 只支持部分游戏版本
 
-综上所述，目前 Purpur 是综合最优选择
+综上所述，目前Purpur是综合最优选择
 
-[点我](https://purpurmc.org/docs/purpur) 查看 Purpur 官方文档
+[Purpur官方文档](https://purpurmc.org/docs/purpur)
 
 **下载**：
 
@@ -99,16 +99,16 @@ import TabItem from '@theme/TabItem';
 **优势**：
 
 - 特性 - 为生电而生，拥有专门的生电向特性支持。还原了Paper破坏的原版特性，提供更好的生电体验
-- 兼容 - 支持 Paper 能使用的几乎所有插件
+- 兼容 - 支持Paper能使用的几乎所有插件
 - 支持 - 国人开发的核心
 
 **劣势**：
 
-- 优化 - 优化不如 Purpur 和 Leaf
+- 优化 - 优化不如Purpur和Leaf
 
 专为生电而生的核心。
 
-Leaves 基本完全支持客户端生电 Mod，包括但不限于 Carpet，pca，投影，共享原理图，minihud，bbor，ommc，Xaero 小地图，Jade，appleskin。
+Leaves基本完全支持客户端生电Mod，包括但不限于Carpet，PCA，投影，共享原理图，MiniHUD，BBOR，ommc，Xaero 小地图，Jade，appleskin。
 
 [点我](https://docs.leavesmc.org/zh_Hans) 查看 Leaves 官方文档
 
