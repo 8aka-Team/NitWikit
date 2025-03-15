@@ -1,7 +1,6 @@
 ---
 sidebar_position: 2
 title: 反作弊
-slug: /anticheat
 ---
 
 # 概览

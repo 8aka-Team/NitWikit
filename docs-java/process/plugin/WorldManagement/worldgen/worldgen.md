@@ -1,6 +1,5 @@
 ---
 title: 世界生成器
-slug: /worldgen
 sidebar_position: 8
 ---
 

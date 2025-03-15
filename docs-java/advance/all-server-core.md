@@ -1,6 +1,5 @@
 ---
 title: 服务端核心收录
-slug: /Advance/all-server-code
 sidebar_position: 12
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: NPC
-slug: /Plugins/OtherPlugin/NPC
 sidebar_position: 6
 ---
 

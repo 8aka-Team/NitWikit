@@ -1,6 +1,5 @@
 ---
 title: 部署到生产环境
-slug: /deploy
 sidebar_position: 1
 ---
 

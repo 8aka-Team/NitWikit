@@ -1,6 +1,5 @@
 ---
 title: Chunkbase
-slug: /Sundry/Advance/management/player-management/chunkbase
 sidebar_position: 2
 ---
 

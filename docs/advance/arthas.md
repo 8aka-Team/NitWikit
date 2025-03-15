@@ -1,6 +1,5 @@
 ---
 title: Arthas
-slug: /arthas
 sidebar_position: 7
 ---
 

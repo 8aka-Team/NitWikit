@@ -1,6 +1,5 @@
 ---
 title: 进服审核
-slug: /Sundry/Advance/management/player-management/audit
 sidebar_position: 8
 ---
 

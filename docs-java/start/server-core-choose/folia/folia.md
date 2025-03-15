@@ -1,6 +1,5 @@
 ---
 title: Folia
-slug: folia
 sidebar_position: 4
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: 任务插件
-slug: /task
 sidebar_position: 9
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: WaterdogePE 跨服
-slug: /waterdogepe-core
 sidebar_position: 5
 ---
 

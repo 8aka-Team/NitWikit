@@ -1,5 +1,4 @@
 ---
-slug: /Plugins/OtherPlugin/Via
 title: 跨版本
 sidebar_position: 4
 ---

@@ -1,7 +1,6 @@
 ---
 title: 进阶
 sidebar_position: 1
-slug: /Geyser/Upgrade
 ---
 
 # 插件

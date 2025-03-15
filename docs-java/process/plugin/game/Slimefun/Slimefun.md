@@ -1,6 +1,5 @@
 ---
 title: 粘液科技
-slug: /Slimefun
 sidebar_position: 1
 ---
 

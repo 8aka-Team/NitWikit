@@ -1,6 +1,5 @@
 ---
 title: 防熊插件
-slug: /AntiGrief
 sidebar_position: 3
 ---
 

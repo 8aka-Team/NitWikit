@@ -1,6 +1,5 @@
 ---
 title: 群机器人
-slug: /advance/bot
 sidebar_position: 6
 ---
 

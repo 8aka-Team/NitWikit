@@ -1,6 +1,5 @@
 ---
 title: BungeeCord
-slug: /bungeecord
 sidebar_position: 1
 ---
 

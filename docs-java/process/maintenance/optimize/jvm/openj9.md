@@ -1,7 +1,6 @@
 ---
 sidebar_position: 7
 title: OpenJ9
-slug: /optimize/jvm/openj9
 ---
 
 # OpenJ9

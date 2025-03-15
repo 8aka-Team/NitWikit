@@ -1,6 +1,5 @@
 ---
 title: 跨服端
-slug: /cross-server
 sidebar_position: 4
 ---
 

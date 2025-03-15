@@ -1,6 +1,5 @@
 ---
 title: 菜单
-slug: /Plugins/OtherPlugin/Menu
 sidebar_position: 2
 ---
 

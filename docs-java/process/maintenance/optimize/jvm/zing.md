@@ -1,7 +1,6 @@
 ---
 sidebar_position: 6
 title: Azul Zing
-slug: /optimize/jvm/zing
 ---
 
 # Azul Zing
