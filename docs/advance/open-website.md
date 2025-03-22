@@ -290,7 +290,7 @@ PHP 7.4、8.0或8.1（推荐），具有以下扩展：
 然后删除默认文件
 ![](_images/open-web-photo/removeindex.png)
 然
-后上传源文件[点击下载](https://b2.warungadiwarna.eu.org/d/nameless-deps-dist.zip?sign=Z0HmvvgVD7KlisI1l-IuLgzJDLDA7BorGbo52QDKX94=:0))
+后上传源文件[点击下载](https://b2.warungadiwarna.eu.org/d/nameless-deps-dist.zip?sign=Z0HmvvgVD7KlisI1l-IuLgzJDLDA7BorGbo52QDKX94=:0)
 ![](_images/open-web-photo/upload.png)
 
 然后解压
