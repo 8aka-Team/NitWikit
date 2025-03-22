@@ -41,11 +41,11 @@ import TabItem from '@theme/TabItem';
 
 | EasyBot | ![](https://img.shields.io/badge/状态-积极维护-green?style=for-the-badge) |
 | --- | --- |
-| 相关链接 | [文档站](https://wiki.bioc.fun/) |
-| 作者 | [MiuxuE](https://github.com/zzh4141) |
-| 支持 **Java 版** | Bukkit 及其分支 |
+| 相关链接 | [文档站](https://docs.inectar.cn/docs/easybot/intor) |
+| 作者 | [MiuxuE](https://github.com/zkhssb) |
+| 支持平台 | Java 版 基岩版 MCDR |
 | 介绍 | 基于 Blazor 开发的跨平台群服互通框架，使用 OneBot11 标准接入 QQ，配置较为复杂但实现效果较好 |
-| 下载 | [官网下载](https://wiki.bioc.fun/down.html) |
+| 下载 | [官网下载](https://docs.inectar.cn/download/easybot) |
 
 </TabItem>
 <TabItem value="Serein" label="Serein">
