@@ -1,7 +1,6 @@
 ---
 sidebar_position: 4
 title: 插件
-slug: /resourcepack/plugins
 ---
 
 # 插件

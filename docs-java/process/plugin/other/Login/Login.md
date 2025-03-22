@@ -1,6 +1,5 @@
 ---
 title: 登录
-slug: /Plugins/OtherPlugin/Login
 sidebar_position: 3
 ---
 

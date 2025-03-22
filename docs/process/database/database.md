@@ -1,6 +1,5 @@
 ---
 title: 数据库相关
-slug: /database
 sidebar_position: 3
 ---
 

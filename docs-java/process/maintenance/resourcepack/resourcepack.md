@@ -1,7 +1,6 @@
 ---
 sidebar_position: 3
 title: 资源包
-slug: /resourcepack
 ---
 
 # 资源包

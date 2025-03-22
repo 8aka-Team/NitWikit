@@ -1,6 +1,5 @@
 ---
 title: 服务器公告
-slug: /Sundry/Advance/management/player-management/announcement
 sidebar_position: 7
 ---
 

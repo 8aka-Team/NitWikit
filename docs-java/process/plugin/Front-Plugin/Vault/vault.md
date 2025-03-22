@@ -1,6 +1,5 @@
 ---
 title: Vault
-slug: Vault
 sidebar_position: 2
 ---
 

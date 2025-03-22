@@ -1,6 +1,5 @@
 ---
 title: 搭建
-slug: /build
 sidebar_position: 2
 ---
 

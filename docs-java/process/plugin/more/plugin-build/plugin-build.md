@@ -1,6 +1,5 @@
 ---
 title: 插件构建
-slug: /plugin-build
 sidebar_position: 6
 ---
 

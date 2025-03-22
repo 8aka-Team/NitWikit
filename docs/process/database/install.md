@@ -1,6 +1,5 @@
 ---
 title: 安装
-slug: /database/install
 sidebar_position: 1
 ---
 

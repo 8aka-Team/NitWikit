@@ -1,6 +1,5 @@
 ---
 title: YAML
-slug: /Sundry/YAML
 sidebar_position: 2
 ---
 

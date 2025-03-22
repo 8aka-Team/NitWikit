@@ -1,6 +1,5 @@
 ---
 title: IrisWorldGen
-slug: /IrisWorldGen
 sidebar_position: 7
 sidebar_label: IrisWorldGen
 ---

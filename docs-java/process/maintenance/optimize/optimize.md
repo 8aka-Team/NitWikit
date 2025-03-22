@@ -1,5 +1,4 @@
 ---
-slug: /optimize
 sidebar_position: 1
 ---
 

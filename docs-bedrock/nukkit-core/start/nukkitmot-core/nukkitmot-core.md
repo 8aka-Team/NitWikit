@@ -1,6 +1,5 @@
 ---
 title: Nukkit-MOT 核心
-slug: /nukkitmot-core
 sidebar_position: 5
 ---
 

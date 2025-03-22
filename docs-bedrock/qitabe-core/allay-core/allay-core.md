@@ -1,6 +1,5 @@
 ---
 title: Allay 核心
-slug: /allay-core
 sidebar_position: 5
 ---
 

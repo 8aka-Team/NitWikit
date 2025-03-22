@@ -1,7 +1,6 @@
 ---
 title: 文档贡献
 sidebar_position: 10
-slug: /contribution
 ---
 
 # 文档贡献

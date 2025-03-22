@@ -1,6 +1,5 @@
 ---
 title: Velocity
-slug: /velocity
 sidebar_position: 2
 ---
 

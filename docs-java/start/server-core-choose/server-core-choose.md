@@ -1,6 +1,5 @@
 ---
 title: 核心选择
-slug: /server-core-choose
 sidebar_position: 2
 ---
 

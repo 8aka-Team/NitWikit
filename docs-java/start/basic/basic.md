@@ -1,6 +1,5 @@
 ---
 title: 基础知识
-slug: /basic
 sidebar_position: 1
 ---
 

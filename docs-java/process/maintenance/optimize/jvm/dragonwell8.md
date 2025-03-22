@@ -1,7 +1,6 @@
 ---
 sidebar_position: 3
 title: Dragonwell 8
-slug: /optimize/jvm/dragonwell8
 ---
 
 

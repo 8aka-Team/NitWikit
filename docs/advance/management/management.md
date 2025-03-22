@@ -1,6 +1,5 @@
 ---
 title: 经营管理
-slug: /Sundry/Advance/management
 sidebar_position: 6
 ---
 

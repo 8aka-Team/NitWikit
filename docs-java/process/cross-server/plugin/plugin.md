@@ -1,6 +1,5 @@
 ---
 title: 插件
-slug: /cross-server/plugin
 sidebar_position: 4
 ---
 

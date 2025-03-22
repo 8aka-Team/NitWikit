@@ -1,6 +1,5 @@
 ---
 title: 更多页面
-slug: /more
 sidebar_position: 1
 ---
 

@@ -1,7 +1,6 @@
 ---
 sidebar_position: 2
 title: 通用优化参数
-slug: /optimize/jvm/common
 ---
 
 # 通用参数

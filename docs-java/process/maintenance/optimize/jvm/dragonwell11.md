@@ -1,7 +1,6 @@
 ---
 sidebar_position: 4
 title: Dragonwell 11
-slug: /optimize/jvm/dragonwell
 ---
 
 # Dragonwell 11

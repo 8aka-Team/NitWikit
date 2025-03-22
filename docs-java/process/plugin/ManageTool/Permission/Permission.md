@@ -1,6 +1,5 @@
 ---
 title: 权限插件
-slug: /permission
 sidebar_position: 1
 ---
 

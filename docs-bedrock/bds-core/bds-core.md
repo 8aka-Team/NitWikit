@@ -1,6 +1,5 @@
 ---
 title: BDS 核心
-slug: /bds-core
 sidebar_position: 3
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: PowerNukkitX 核心
-slug: /pnx-core
 sidebar_position: 5
 ---
 

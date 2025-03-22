@@ -1,6 +1,5 @@
 ---
 title: 跨服端命令
-slug: /command
 sidebar_position: 4
 ---
 

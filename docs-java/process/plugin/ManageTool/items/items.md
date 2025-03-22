@@ -1,6 +1,5 @@
 ---
 title: 物品库插件
-slug: /items
 sidebar_position: 8
 ---
 
