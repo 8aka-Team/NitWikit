@@ -239,7 +239,7 @@ cf-cname.xingpingcn.top 不需要开启小黄云
 
 然后按照上面的域名解析解析好之后你就可以访问你的域名，看到你的网站了
 
-在这里附上源码下载[点击下载](https://b2.mcdogserver.top/1.zip)
+在这里附上源码下载[点击下载](https://b2.warungadiwarna.eu.org/1.zip)
 
 如果你觉得这个源码不适合你，或者是你不想用别人的源码，你可以尝试去自学。这里就不附上自学的教程了
 
@@ -290,7 +290,7 @@ PHP 7.4、8.0或8.1（推荐），具有以下扩展：
 然后删除默认文件
 ![](_images/open-web-photo/removeindex.png)
 然
-后上传源文件[点击下载](https://b2.mcdogserver.top/nameless-deps-dist.zip)
+后上传源文件[点击下载](https://b2.warungadiwarna.eu.org/nameless-deps-dist.zip)
 ![](_images/open-web-photo/upload.png)
 
 然后解压
