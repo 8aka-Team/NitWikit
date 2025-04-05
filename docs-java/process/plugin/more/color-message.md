@@ -96,7 +96,7 @@ _除非他们自身引入了 Adventure 库(如PlaceholderAPI)。_
 
 用一个 TrMenu 菜单配置展示下：
 
-```yaml
+```yaml title="plugins/TrMenu/menus/example.yml"
 Icons:
   test:
     display:
