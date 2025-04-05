@@ -64,9 +64,7 @@ flowchart TD
 
 ## 更改 boolean
 
-在 `plugins\PlaceholderAPI\config.yml` 中找到
-
-```yaml
+```yaml title="plugins\PlaceholderAPI\config.yml"
 boolean:
   'true': 'yes'
   'false': 'no'
@@ -96,7 +94,7 @@ boolean:
 
 然后执行命令 `/papi reload`
 
-## 变量下载失败？
+## 变量下载失败？手动安装
 
 ![](_images/Q&A/变量下载失败.png)
 
