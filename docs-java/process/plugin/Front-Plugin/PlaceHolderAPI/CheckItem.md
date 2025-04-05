@@ -77,6 +77,8 @@ sidebar_position: 4
 
 ### 修饰符
 
+> https://snowcutieowo.github.io/PlaceholderAPI/user-guides.placeholder-list#checkitem
+
 可用的修饰符有：
 
 - namecontains      // 名字中包含

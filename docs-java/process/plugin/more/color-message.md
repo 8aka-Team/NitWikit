@@ -125,6 +125,22 @@ Icons:
 
 关于实际使用格式详见 [标准标签](https://docs.advntr.dev/minimessage/format.html#standard-tags)。
 
+## 行内复合文本
+
+TabooLib Components，当你使用 TabooLib 框架的插件时，可以使用此写法
+
+可以更方便的编写 json 文本信息，而不只是局限于颜色
+
+> https://plugins.ptms.ink/category/%E8%A1%8C%E5%86%85%E5%A4%8D%E5%90%88%E6%96%87%E6%9C%AC
+
+```text
+[||||||||||||||||||||](gradient=#f6d365,#fda085)
+```
+
+![](https://plugins.ptms.ink/img/Xnip2023-07-25_15-04-02.png)
+
+更多用法见上方链接
+
 ### 参考
 
 - https://zh.minecraft.wiki/w/%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%BB%A3%E7%A0%81
