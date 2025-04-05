@@ -29,7 +29,7 @@ InventoryRollbackPlus 插件可以备份玩家的背包。
 
 :::info
 
-`SpigotMC` ：https://www.spigotmc.org/resources/.85811/
+`SpigotMC` ：https://www.spigotmc.org/resources/.85811
 
 `GitHub` ：https://github.com/TechnicallyCoded/Inventory-Rollback-Plus
 
@@ -45,9 +45,7 @@ MCServerBackup 是由 [玄云海 OblivionOcean](https://github.com/OblivionOcean
 
 支持将一段时间内所有变动的文件(区块、玩家信息等)全部打包为 `zip` 或 `tar.gz` 格式的压缩包或文件夹。
 
-##### 用法
-
-```python
+```python title="使用方法"
 python main.py [相对/绝对目录] [时长] [类型]
 ```
 
