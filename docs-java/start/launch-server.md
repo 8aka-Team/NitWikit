@@ -62,7 +62,7 @@ sidebar_position: 4
 
 用你前面下的文本编辑器编辑这个文件，写入以下信息并保存，然后双击 `start.bat`
 
-```shell
+```shell title=start.bat
 java -Xms2G -Xmx2G -jar 核心名.jar --nogui
 ```
 
