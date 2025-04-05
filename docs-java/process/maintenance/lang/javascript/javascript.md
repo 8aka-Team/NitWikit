@@ -1,6 +1,5 @@
 ---
 title: JavaScript
-slug: /lang/javascript
 sidebar_position: 3
 ---
 

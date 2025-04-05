@@ -1,6 +1,5 @@
 ---
 title: 服务器维护
-slug: /maintenance
 sidebar_position: 2
 ---
 
@@ -14,11 +13,11 @@ sidebar_position: 2
 
 如果遇到熊孩子恶意毁坏，可以使用插件回溯功能单独回溯熊孩子的操作。
 
-即使在区块出现损坏的情况下，这些插件也能在一定程度上减少区块损坏所造成的影响。见 [防熊插件](https://nitwikit.8aka.org/Java/AntiGrief)。
+即使在区块出现损坏的情况下，这些插件也能在一定程度上减少区块损坏所造成的影响。见 [防熊插件](https://nitwikit.8aka.org/Java/process/plugin/ManageTool/AntiGrief)。
 
 ## 检查日志
 
-[日志](/docs/start/basic/basic.md)中包含了大量的玩家、插件、服务器行为。
+[日志](/docs/start/basic/what-is-log.md) 中包含了大量的玩家、插件、服务器行为。
 
 每次维护服务器时请务必查看服务器近期的日志。
 

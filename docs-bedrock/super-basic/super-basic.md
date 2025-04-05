@@ -1,6 +1,5 @@
 ---
 title: 超级基础知识
-slug: /super-basic
 sidebar_position: 2
 ---
 

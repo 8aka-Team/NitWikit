@@ -25,7 +25,7 @@ sidebar_position: 5
 
 ## 权限的设置
 
-我们有且只推荐 LuckPerms 作为权限插件，具体的使用方法请参考 [LuckPerms 使用方法](https://nitwikit.8aka.org/Java/permission)
+我们有且只推荐 LuckPerms 作为权限插件，具体的使用方法请参考 [LuckPerms 使用方法](https://da73f644.nitwikit-8gn.pages.dev/Java/process/plugin/ManageTool/Permission)
 
 以下举例了一些常见的权限组分类：
 

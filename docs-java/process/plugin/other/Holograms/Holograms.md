@@ -1,6 +1,5 @@
 ---
 title: 全息图/浮空字
-slug: /Plugins/OtherPlugin/Holograms
 sidebar_position: 1
 ---
 

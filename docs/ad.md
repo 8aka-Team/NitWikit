@@ -1,7 +1,6 @@
 ---
 sidebar_position: 12
 title: 广告
-slug: /ad
 ---
 
 # 广告

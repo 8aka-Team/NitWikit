@@ -1,6 +1,5 @@
 ---
 title: 地图建设
-slug: /map
 sidebar_position: 7
 ---
 

@@ -1,5 +1,4 @@
 ---
-slug: /optimize
 sidebar_position: 1
 ---
 
@@ -19,7 +18,7 @@ sidebar_position: 1
 
 仅仅需要你下载一个小小的 Java 安装程序，或者更改 JVM 参数(大白话来说就是开服参数)。
 
-参见 [JVM 优化](https://nitwikit.8aka.org/Java/optimize/jvm)
+参见 [JVM 优化](./jvm/jvm.md)
 
 ## 第二步 - 预生成
 

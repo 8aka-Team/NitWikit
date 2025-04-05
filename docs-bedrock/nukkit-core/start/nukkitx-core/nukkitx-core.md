@@ -1,6 +1,5 @@
 ---
 title: NukkitX 核心
-slug: /nukkitx-core
 sidebar_position: 5
 ---
 

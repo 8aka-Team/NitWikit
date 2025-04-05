@@ -1,6 +1,5 @@
 ---
 title: 建设阶段
-slug: /process
 sidebar_position: 5
 ---
 

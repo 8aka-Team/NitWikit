@@ -1,6 +1,5 @@
 ---
 title: 聊天插件
-slug: /chat
 sidebar_position: 6
 ---
 

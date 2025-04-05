@@ -1,6 +1,5 @@
 ---
 title: 游戏性插件
-slug: /game
 sidebar_position: 6
 ---
 

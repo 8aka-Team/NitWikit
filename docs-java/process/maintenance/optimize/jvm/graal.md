@@ -1,7 +1,6 @@
 ---
 sidebar_position: 5
 title: GraalVM EE
-slug: /optimize/jvm/graalvm
 ---
 
 # GraalVM

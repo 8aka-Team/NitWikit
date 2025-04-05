@@ -1,6 +1,5 @@
 ---
 title: Kether
-slug: /lang/kether
 sidebar_position: 2
 ---
 

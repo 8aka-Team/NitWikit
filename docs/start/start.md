@@ -1,6 +1,5 @@
 ---
 title: 开始阶段
-slug: /start
 sidebar_position: 4
 ---
 

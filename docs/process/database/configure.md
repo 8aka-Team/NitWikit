@@ -1,6 +1,5 @@
 ---
 title: 配置
-slug: /database/configure
 sidebar_position: 3
 ---
 

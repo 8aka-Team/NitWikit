@@ -1,7 +1,6 @@
 ---
 sidebar_position: 1
 title: JVM 优化
-slug: /optimize/jvm
 ---
 
 # JVM 优化

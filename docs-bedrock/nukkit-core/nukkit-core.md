@@ -1,6 +1,5 @@
 ---
 title: Nukkit 核心
-slug: /nukkit-core
 sidebar_position: 4
 ---
 

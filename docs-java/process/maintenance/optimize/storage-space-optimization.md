@@ -15,7 +15,7 @@ sidebar_position: 4
 
 ### 使用数据库
 
-合理使用数据库可以降低服务器硬盘占用。详见[数据库相关](https://nitwikit.8aka.org/database)
+合理使用数据库可以降低服务器硬盘占用。详见[数据库相关](/docs-java/process/database.md)
 
 ## 备份空间优化
 
@@ -100,7 +100,7 @@ Leaf/Luminol 等核心最新版已应用修复补丁,虽然性能会受到影响
 
 #### Slime
 
-请查看[Slime 区域格式](https://nitwikit.8aka.org/Java/advance/slime-world)
+请查看[Slime 区域格式](/docs-java/advance/slime-world.md)
 
 ## 其他
 

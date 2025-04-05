@@ -1,6 +1,5 @@
 ---
 title: 其他插件
-slug: /OtherPlugin
 sidebar_position: 7
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: 插件
-slug: /plugin
 sidebar_position: 1
 ---
 

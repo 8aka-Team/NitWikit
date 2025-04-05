@@ -1,6 +1,5 @@
 ---
 title: Java 相关
-slug: /lava/overview
 sidebar_position: 1
 ---
 

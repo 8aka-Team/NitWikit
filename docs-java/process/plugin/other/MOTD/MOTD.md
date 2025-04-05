@@ -1,6 +1,5 @@
 ---
 title: MOTD
-slug: /Plugins/OtherPlugin/MOTD
 sidebar_position: 5
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: 基础插件
-slug: /Essentials
 sidebar_position: 2
 ---
 

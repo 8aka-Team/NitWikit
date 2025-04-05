@@ -13,7 +13,7 @@ sidebar_position: 3
 
 使基岩版客户端进入 Java 版服务器的代理软件。
 
-[点此阅读](https://nitwikit.8aka.org/Java/Geyser) 关于 Geyser 的文档。
+[点此阅读](Geyser/geyser.md) 关于 Geyser 的文档。
 
 ## 基岩版客户端下载
 

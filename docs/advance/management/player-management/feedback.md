@@ -1,6 +1,5 @@
 ---
 title: 玩家反馈
-slug: /Sundry/Advance/management/player-management/feedback
 sidebar_position: 10
 ---
 
