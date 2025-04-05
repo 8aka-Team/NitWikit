@@ -13,7 +13,7 @@ sidebar_position: 2
 
 以 Bump 附属为例：
 
-```yaml
+```yaml title="plugins/Bump/config.yml"
 options:
   auto-update: false
 ```
@@ -34,7 +34,7 @@ options:
 
 下方配置供你参考
 
-```yaml
+```yaml title="plugins/GuizhanLibPlugin/config.yml"
 # Whether to enable auto update module (see updater.yml for details)
 # 是否开启自动更新模块(详见 updater.yml)
 auto-update: true
