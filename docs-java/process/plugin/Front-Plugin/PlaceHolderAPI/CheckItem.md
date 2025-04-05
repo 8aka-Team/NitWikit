@@ -139,7 +139,7 @@ sidebar_position: 4
 
 ## 启用give和remove
 
-```yaml
+```yaml title="plugins\PlaceholderAPI\config.yml"
 expansions:
   checkitem:
     give_enabled: false
