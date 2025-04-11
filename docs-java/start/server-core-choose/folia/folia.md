@@ -68,3 +68,14 @@ flowchart TD
 ```
 
 根据这张图表选好后去下载就可以了
+
+**下载镜像**：
+
+- [Folia](https://mcres.cn/downloads/folia.html)
+- [Molia](https://mcres.cn/downloads/molia.html)
+- [DeerFolia](https://mcres.cn/downloads/deerfolia.html)
+- [DirtyMolia](https://mcres.cn/downloads/dirtymolia.html)
+- [DirtyFolia](https://mcres.cn/downloads/dirtyfolia.html)
+- [Luminol](https://mcres.cn/downloads/luminol.html)
+- [LightingLuminol](https://mcres.cn/downloads/lightingluminol.html)
+- [Kaiiju](https://mcres.cn/downloads/kaiiju.html)
