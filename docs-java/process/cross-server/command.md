@@ -36,9 +36,9 @@ import TabItem from '@theme/TabItem';
 |---------------------------|--------------------------------|----------------------------------------------------------------------------------|
 | `/velocity`               | N/A                            | 包含许多子命令，用于管理跨服端。                                                 |
 | `/velocity plugins`       | `velocity.command.plugins`     | 可以使用此命令查看跨服端上当前运行的所有插件，包括名称、作者和版本。             |
-| `/velocity version`       | `velocity.command.info`        | （默认所有用户拥有），查看 Velocity 版本。                                       |
+| `/velocity info`       | `velocity.command.info`        | （默认所有用户拥有），查看 Velocity 版本。                                       |
 | `/velocity reload`        | `velocity.command.reload`      | 跨服端重载 `velocity.toml` 文件。                                                |
-| `/velocity dump`          | `velocity.command.plugins`     | 可以使用此命令获取跨服的匿名详细信息转储。                                       |
+| `/velocity dump`          | `velocity.command.dump`     | 可以使用此命令获取跨服的匿名详细信息转储。                                       |
 | `/velocity heap`          | `velocity.command.heap`        | **警告**：此命令生成的堆转储包含有关你的 Velocity 实例的详细信息，可能相当敏感。 |
 | `/server`                 | `velocity.command.server`      | （默认所有用户拥有），查看或传送到指定子服务器。                                 |
 | `/shutdown`               | 无(从控制台执行)               | 此命令将优雅地关闭 Velocity 跨服，所有玩家将从跨服端断开连接。                   |
