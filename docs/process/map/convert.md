@@ -83,6 +83,28 @@ Amulet 可用于高版本地图转低版本，但在地图转换后可能出现�
 
 :::
 
+## MCA Selector
+
+:::info
+
+`GitHub` https://github.com/Querz/mcaselector
+
+`文档` https://github.com/Querz/mcaselector/wiki
+
+:::
+
+一个简单直观的Minecraft Java版存档的编辑器，支持导出或删除选定区块和区域，并且支持不同版本不同存档地图之间的区块迁移。
+
+![](_images/mcaselector.png)
+
+:::tip
+
+MCA Selector支持多个存档的区块复制到一个存档时，让区块边界无断层，过渡自然。
+
+`教程` https://www.mcmod.cn/post/3136.html
+
+:::
+
 ## 将地图转移到基岩版
 
 :::warning
