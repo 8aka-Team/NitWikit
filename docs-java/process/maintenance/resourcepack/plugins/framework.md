@@ -77,9 +77,11 @@ https://itemsadder.devs.beer
 
 :::info
 
+`Modrinth(社区版)` https://modrinth.com/plugin/craftengine
+
 `Polymart` https://polymart.org/product/7624/craftengine
 
-`Modrinth` https://modrinth.com/plugin/craftengine
+`MineBBS` https://www.minebbs.com/resources/11281
 
 `文档(英文)` https://mo-mi.gitbook.io/xiaomomi-plugins/craftengine
 
