@@ -5,6 +5,14 @@ sidebar_position: 4
 
 # CheckItem
 
+:::info
+
+因高版本（1.20.4+）的 CheckItem 对 NBT 的检查存在问题，HelpChat Discord 上的 Blitz 及部分开发者对其进行了针对性修复，可从[这里](https://cdn.discordapp.com/attachments/573429521554866178/1377020689734701086/Expansion-CheckItem.jar?ex=683abdb4&is=68396c34&hm=833ab3aa7e997a35c1f85df41a18b28467e432d28884408bf6ecd5adb7b7f775&)（外网链接）直接下载。
+
+原文[见此](https://discord.com/channels/164280494874165248/573429521554866178/1377020690330423326)。
+
+:::
+
 ## 有关 CheckItem 的相关链接
 
 :::info
