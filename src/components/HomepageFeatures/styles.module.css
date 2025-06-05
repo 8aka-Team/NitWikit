@@ -1,11 +1,206 @@
+/**
+ * 特性展示组件样式 - 现代设计
+ * 包含深色模式的适配
+ */
+
 .features {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 2rem 0;
+  padding: 3rem 0;
+  width: 100%;
+  background-color: #f8f9fa;
+}
+
+.featuresInner {
+  max-width: 1200px;
+  margin: 0 auto;
   width: 100%;
 }
 
-.featureSvg {
-  height: 200px;
-  width: 200px;
+.featureCard {
+  background-color: #1a232b;
+  border-radius: 12px;
+  padding: 2rem;
+  height: 100%;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(54, 192, 133, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
 }
+
+.featureCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  border-color: rgba(54, 192, 133, 0.2);
+}
+
+.featureSvg {
+  height: 140px;
+  width: 140px;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.featureCard:hover .featureSvg {
+  transform: scale(1.05);
+}
+
+.featureTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #25a06e;
+}
+
+.featureDescription {
+  font-size: 1.1rem;
+  color: #4a5568;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+@media screen and (max-width: 996px) {
+  .features {
+    padding: 3rem 1.5rem;
+  }
+  
+  .gridContainer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .featureSvg {
+    height: 120px;
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .gridContainer {
+    grid-template-columns: 1fr;
+  }
+  
+  .sectionTitle {
+    font-size: 1.8rem;
+  }
+  
+  .sectionSubtitle {
+    font-size: 1rem;
+  }
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.sectionTitle {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #f7fafc;
+  font-weight: 700;
+}
+
+.sectionSubtitle {
+  font-size: 1.2rem;
+  color: #a0aec0;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.text--primary {
+  color: #36c085;
+}
+
+/* 深色模式适配 */
+html[data-theme='dark'] .features {
+  background-color: var(--bg-dark);
+}
+
+html[data-theme='dark'] .featureCard {
+  background-color: #1a232b;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(54, 192, 133, 0.1);
+}
+
+html[data-theme='dark'] .featureCard:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background-color: #1e2834;
+  border-color: rgba(54, 192, 133, 0.25);
+}
+
+html[data-theme='dark'] .featureTitle {
+  color: #36c085;
+}
+
+html[data-theme='dark'] .featureDescription {
+  color: #cbd5e0;
+}
+
+html[data-theme='dark'] .sectionTitle {
+  color: var(--text-primary);
+}
+
+html[data-theme='dark'] .sectionSubtitle {
+  color: var(--text-secondary);
+}
+
+/* 图标深色模式处理 */
+html[data-theme='dark'] .featureSvg {
+  filter: brightness(1.2);
+}
+
+/* 特效增强 - 简化效果以匹配截图 */
+.featureCard:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #25a06e, #36c085);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.featureCard:hover:before {
+  opacity: 1;
+}
+
+/* 亮色模式样式 */
+html[data-theme='light'] .features {
+  background-color: #f8f9fa;
+}
+
+html[data-theme='light'] .featureCard {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+html[data-theme='light'] .featureTitle {
+  color: #333;
+}
+
+html[data-theme='light'] .featureDescription {
+  color: #555;
+}
+
+html[data-theme='light'] .sectionTitle {
+  color: #333;
+}
+
+html[data-theme='light'] .sectionSubtitle {
+  color: #666;
+} 

@@ -7,7 +7,7 @@ sidebar_position: 1
 
 ## 选择插件
 
-很好，相信你已经在 [可能用到的网站](/docs-java/preparation/websites.md) 看到了很多链接，面对成千上万的插件我们应该如何进行选择呢？
+很好，相信你已经在 [可能用到的网站](/Java/preparation/websites) 看到了很多链接，面对成千上万的插件我们应该如何进行选择呢？
 
 我们在此以 spigotmc.org 为例(假设你已经注册成功)，讲解如何选择插件。
 

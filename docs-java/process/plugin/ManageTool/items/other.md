@@ -9,8 +9,8 @@ sidebar_position: 7
 
 推荐使用上方页面收录的物品库插件，而不是下方插件提供的物品库功能。
 
-- [ItemsAdder](../../../maintenance/resourcepack/plugins/ItemsAdder.md)
-- [Oraxen](../../../maintenance/resourcepack/plugins/Oraxen.md)
+- [ItemsAdder](../../../maintenance/resourcepack/plugins/framework.md)
+- [Oraxen](../../../maintenance/resourcepack/plugins/framework.md)
 - [MythicMobs](../../other/MythicMobs.md)
 - [CMI](../BasicPlugins/CMI/CMI.md)
 - [SunLight](../BasicPlugins/SunLight/SunLight.md)

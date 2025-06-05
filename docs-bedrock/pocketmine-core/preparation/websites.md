@@ -16,17 +16,15 @@ sidebar_position: 1
 <details>
   <summary>点击展开</summary>
 
-  <tr>
-    <td align="center">
-      <a href="https://www.minebbs.com/">
-        <img
-          src="https://www.minebbs.com/data/assets/logo/mb-logo-blue-1x.png"
-          width="100px;"
-          alt=""
-        /><br /><sub><b>MineBBS</b></sub>
-      </a>
-    </td>
-  </tr>
+  <div style={{textAlign: 'center'}}>
+    <a href="https://www.minebbs.com/">
+      <img
+        src="https://www.minebbs.com/data/assets/logo/mb-logo-blue-1x.png"
+        style={{width: '100px'}}
+        alt="MineBBS"
+      /><br /><b>MineBBS</b>
+    </a>
+  </div>
 
 插件板块：https://www.minebbs.com/resources/categories/pocketmine.39/
 
@@ -41,17 +39,15 @@ PocketMine-MP官方团队建设的PMMP技术论坛，支持下载PocketMine-MP�
 <details>
   <summary>点击展开</summary>
 
-  <tr>
-    <td align="center">
-      <a href="https://poggit.pmmp.io/">
-        <img
-          src="https://poggit.pmmp.io/res/poggit-icon.png"
-          width="100px;"
-          alt=""
-        /><br /><sub><b>poggit</b></sub>
-      </a>
-    </td>
-  </tr>
+  <div style={{textAlign: 'center'}}>
+    <a href="https://poggit.pmmp.io/">
+      <img
+        src="https://poggit.pmmp.io/res/poggit-icon.png"
+        style={{width: '100px'}}
+        alt="poggit"
+      /><br /><b>poggit</b>
+    </a>
+  </div>
 
 插件板块：https://www.minebbs.com/resources/categories/pocketmine.39/
 
@@ -66,17 +62,15 @@ PocketMine-MP官方团队建设的PMMP技术论坛，支持下载PocketMine-MP�
 <details>
   <summary>点击展开</summary>
 
-  <tr>
-    <td align="center">
-      <a href="https://github.com">
-        <img
-          src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Symbol.png"
-          width="100px;"
-          alt=""
-        /><br /><sub><b>GitHub</b></sub>
-      </a>
-    </td>
-  </tr>
+  <div style={{textAlign: 'center'}}>
+    <a href="https://github.com">
+      <img
+        src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Symbol.png"
+        style={{width: '100px'}}
+        alt="GitHub"
+      /><br /><b>GitHub</b>
+    </a>
+  </div>
 
 全球最大的社交编程及代码托管网站。
 

@@ -74,11 +74,10 @@ Dragonwell 分为  Standard Edition 和 Extended Edition，推荐下载 Extended
 
 GraalVM 分为 Community Edition(CE) 和 Enterprise Edition(EE)，除非你服务器大到会被 Oracle 找上门，不然请选择 Enterprise Edition
 
-推荐下载最新版,也就是 Java 23,Java 24 EA 添加了对 ZGC 的支持,同样推荐下载
+推荐下载最新版,也就是 Java 24
 
 - [下载 EE](https://www.graalvm.org/downloads/)
 - [下载 CE](https://github.com/graalvm/graalvm-ce-builds/releases/)
-- [下载 EA](https://github.com/graalvm/oracle-graalvm-ea-builds/releases)
 - [下载镜像](https://d.injdk.cn/download/graalvm)
 
 :::tip

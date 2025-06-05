@@ -29,7 +29,7 @@ sidebar_position: 9
 
 当然,有些连接超时等报错屏蔽了也无所谓
 
-可以使用 [Console Spam Fix Reborn](https://www.spigotmc.org/resources/console-spam-fix-reborn.121703/)
+可以使用 [Console Spam Fix Reborn](https://www.spigotmc.org/resources/.121703)
 
 ## 圈内破事
 
@@ -48,5 +48,7 @@ sidebar_position: 9
 > 只要我的插件有 GUI 界面，不管设计的多傻逼，功能少的有多可怜，那也有人夸好用！
 
 作者剽窃国外作者开源的插件，声称是自己的作品并公开售卖
+
+2025/3/30 米饭插件被发现存在后门：https://www.minebbs.com/threads/.35422
 
 详情请见：https://lezi.8aka.org/article/%E7%89%88%E4%B8%BB%E7%B1%B3%E9%A5%AD%E4%BC%A0

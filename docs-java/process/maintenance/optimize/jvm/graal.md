@@ -32,7 +32,7 @@ GraalVM 24 以上应该移除`-Dgraal.OptWriteMotion=true` 参数,同时将`-Dgr
 
 :::warning
 
-该参数最好用于 GraalVM 24 以上(目前是 EA),GraalVM 24 添加了对 ZGC 的 JVMCI 支持
+该参数最好用于 GraalVM 24 以上,GraalVM 24 添加了对 ZGC 的 JVMCI 支持
 
 :::
 

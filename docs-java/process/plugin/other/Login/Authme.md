@@ -35,7 +35,7 @@ sidebar_position: 2
 
 [AuthMeBungee](https://www.spigotmc.org/resources/.50219/)
 
-[AuthMeVelocity](../../../cross-server/plugin/velocity.md)
+[AuthMeVelocity](../../../../process/cross-server/plugin/cross-only.md#authmevelocity)
 
 ## 扩展
 

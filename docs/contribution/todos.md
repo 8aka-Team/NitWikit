@@ -25,11 +25,11 @@ sidebar_position: 100
 
 - [x] windows server 放行端口
 - [x] 申请域名
-- [ ] 搭建官网
+- [x] 搭建官网
 - [x] 服务端文件讲解
 - [x] 备份 背包备份InventoryRollbackPlus
 - [x] 开服器开服
-- [ ] 维护-二分法插件排除法
+- [x] 维护-二分法插件排除法
 - [x] 维护-插件命名推荐
 - [x] 搭建翼龙面板？mcsm？
 - [x] 资源包托管 gitee github gitlab 直链网盘
@@ -50,12 +50,12 @@ sidebar_position: 100
 ## 插件
 
 - [x] Skript简单教程
-- [ ] papi list 扩展：插件自己挂钩 自己下载扩展 不需要插件的扩展
+- [x] papi list 扩展：插件自己挂钩 自己下载扩展 不需要插件的扩展
 - [x] 全息图(浮空字)插件
 - [x] AskyBlock BentoBox(BskyBlock)
-- [ ] 替换ess方案 huskhomes + XConomy
+- [x] 替换ess方案 huskhomes + XConomy
 - [x] 资源包插件 ia oraxen介绍
-- [ ] 龙核/萌芽 介绍
+- [x] 龙核/萌芽 介绍
 - [ ] mv 多世界 禁用 地狱/末地门 不生成默认地狱和末地
 - [ ] p2 地皮案例 做建筑服
 - [x] 皮肤插件 SkinsRestorer
@@ -73,19 +73,19 @@ sidebar_position: 100
 
 ## 跨服端
 
-- [ ] 教程 怎么做登录服
+- [x] 教程 怎么做登录服
 - [x] 反压测 反假人
 - [x] 讲解via skin等装在跨服端有什么缺点
 - [x] bc的语义扩大
 
 ## 手机玩家支持
 
-- [x] ❌手机直装模板
+- [x] 手机直装模板
 - [x] 基岩版客户端下载
 
 ## 扩展阅读
 
-- [ ] 命名空间 命令 mod物品 材质包物品
+- [x] 命名空间 命令 mod物品 材质包物品
 - [x] MySQL 小皮 宝塔
 - [x] plugin.yml讲解
 - [X] §和&和RGB颜色 格式化代码
@@ -106,17 +106,17 @@ sidebar_position: 100
 ### 玩家管理
 
 - [ ] 服务器群
-- [ ] 白名单制度
-- [ ] 我的世界wiki
-- [ ] Chunkbase
-- [ ] 服务器规则
-- [ ] 公告
+- [x] 白名单制度
+- [x] 我的世界wiki
+- [x] Chunkbase
+- [x] 服务器规则
+- [x] 公告
 - [ ] 服务器文档
 - [ ] 玩家纠纷
 - [ ] 公会
-- [ ] 进服审核
+- [x] 进服审核
 - [ ] 玩家社区等级
-- [ ] 玩家反馈
+- [x] 玩家反馈
 
 ### 管理团队
 

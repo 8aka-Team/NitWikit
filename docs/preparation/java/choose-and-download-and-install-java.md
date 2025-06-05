@@ -8,34 +8,35 @@ sidebar_position: 1
 ## 选择版本
 
 :::warning
-部分服务端有在项目的 README 中标注最低版本和推荐版本，例如 [Beast](https://github.com/HomoMC/Beast)，最低版本为 Java 8，推荐版本为 Java 21
+部分服务端有在项目的 README 中标注最低版本和推荐版本，例如 [Beast](https://github.com/HomoMC/Beast)，最低版本为 Java
+8，推荐版本为 Java 21
 MOD 服务端
 :::
 
 ### 常见插件端(Paper 等)
 
-| Minecraft 版本   | 最低版本 | 推荐版本 |
-|-----------------|---------|---------|
-| 1.0 - 1.11.2    | Java 6  | Java 8  |
-| 1.12 - 1.16.4   | Java 8  | Java 11 |
-| 1.16.5          | Java 8  | Java 16 |
-| 1.17 - 1.17.1   | Java 16 | Java 17 |
-| 1.18 - 1.20.4   | Java 17 | Java 21 |
-| 1.20.5 - 1.21   | Java 21 | Java 21 |
+| Minecraft 版本  | 最低版本    | 推荐版本    |
+|---------------|---------|---------|
+| 1.0 - 1.11.2  | Java 6  | Java 8  |
+| 1.12 - 1.16.4 | Java 8  | Java 11 |
+| 1.16.5        | Java 8  | Java 16 |
+| 1.17 - 1.17.1 | Java 16 | Java 17 |
+| 1.18 - 1.20.4 | Java 17 | Java 21 |
+| 1.20.5 - 1.21 | Java 21 | Java 21 |
 
 ### 混合服务端(CatServer 等)
 
 #### CatServer
 
-| Minecraft 版本   | 最低版本 | 推荐版本 |
-|-----------------|---------|---------|
-| 1.12.2          | Java 8  | Java 8  |
-| 1.16.5          | Java 8  | Java 11 |
-| 1.18.2          | Java 17 | Java 17 |
+| Minecraft 版本 | 最低版本    | 推荐版本    |
+|--------------|---------|---------|
+| 1.12.2       | Java 8  | Java 8  |
+| 1.16.5       | Java 8  | Java 11 |
+| 1.18.2       | Java 17 | Java 17 |
 
 #### Mohist
 
-| Minecraft 版本   | 最低版本 | 推荐版本 |
+| Minecraft 版本    | 最低版本    | 推荐版本    |
 |-----------------|---------|---------|
 | 1.7.10          | Java 8  | Java 8  |
 | 1.16.5          | Java 11 | Java 11 |
@@ -43,7 +44,7 @@ MOD 服务端
 
 #### SpongeForge
 
-| Minecraft 版本   | 最低版本 | 推荐版本 |
+| Minecraft 版本    | 最低版本    | 推荐版本    |
 |-----------------|---------|---------|
 | 1.8 - 1.12.2    | Java 8  | Java 8  |
 | 1.16.5(吐槽:就你特殊) | Java 17 | Java 17 |
@@ -60,12 +61,13 @@ MOD 服务端
 
 <!--markdownlint-disable line-length-->
 
-| Java 版本 | 下载链接                                                                                                                                                                                   |
-|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Java 8  | [Dragonwell](https://dragonwell.oss-cn-shanghai.aliyuncs.com/8.19.20/Alibaba_Dragonwell_Extended_8.19.20_x64_windows.zip)                                                              |
-| Java 11 | [Dragonwell](https://dragonwell.oss-cn-shanghai.aliyuncs.com/11.0.23.20.9/Alibaba_Dragonwell_Extended_11.0.23.20.9_x64_windows.zip)                                                    |
-| Java 17 | [GraalVM](https://d.injdk.cn/d/download/graalvm/17.0.11/graalvm-jdk-17.0.11_windows-x64_bin.zip)  [Zulu](https://d.injdk.cn/d/download/zulu/17/zulu17.52.17-ca-jdk17.0.12-win_x64.zip) |
-| Java 21 | [GraalVM](https://d.injdk.cn/d/download/graalvm/21.0.3/graalvm-jdk-21.0.3_windows-x64_bin.zip)  [Zulu](https://d.injdk.cn/d/download/zulu/21/zulu21.36.17-ca-jdk21.0.4-win_x64.zip)    |
+| Java 版本 | 下载链接                                                                                                                                                                        |
+|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Java 8  | [Dragonwell](https://dragonwell.oss-cn-shanghai.aliyuncs.com/8.19.20/Alibaba_Dragonwell_Extended_8.19.20_x64_windows.zip)                                                   |
+| Java 11 | [Dragonwell](https://dragonwell.oss-cn-shanghai.aliyuncs.com/11.0.23.20.9/Alibaba_Dragonwell_Extended_11.0.23.20.9_x64_windows.zip)                                         |
+| Java 17 | [Zulu](https://d.injdk.cn/d/download/zulu/17/zulu17.52.17-ca-jdk17.0.12-win_x64.zip)                                                                                        |
+| Java 21 | [GraalVM](https://d.injdk.cn/d/download/graalvm/21/graalvm-jdk-21_windows-x64_bin.zip)  [Zulu](https://d.injdk.cn/d/download/zulu/21/zulu21.36.17-ca-jdk21.0.4-win_x64.zip) |
+| Java 24 | [GraalVM](https://d.injdk.cn/d/download/graalvm/24/graalvm-jdk-24_windows-x64_bin.zip) [Zulu](https://d.injdk.cn/d/download/zulu/24/zulu24.28.83-ca-jdk24.0.0-win_x64.zip)  |
 
 <!--markdownlint-enable line-length-->
 
@@ -138,7 +140,8 @@ java -version
 <summary>食用方式：</summary>
 
 1. 打开此链接下载 AJI: https://github.com/Lafcadia/AJI/releases/download/v0.0.2/main.exe
-2. 下好了，右键选择以管理员权限打开(如果不以管理员权限打开就无法绑定 Java 环境变量，虽然不给管理员权限程序也能正常运行，并安装 Java，但可能会在后续阶段出现问题)
+2. 下好了，右键选择以管理员权限打开(如果不以管理员权限打开就无法绑定 Java 环境变量，虽然不给管理员权限程序也能正常运行，并安装
+   Java，但可能会在后续阶段出现问题)
 3. ![示意图](https://github.com/user-attachments/assets/28035c47-d34b-4b38-b895-29f38366bef9)
 4. 选择合适的版本的 Java，点击 `Install Java`，下载。
 5. 不要关闭窗口，直到下方的提示栏从 `Installing...` 变为 `Complete.`

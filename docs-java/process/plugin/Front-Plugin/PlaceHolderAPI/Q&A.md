@@ -27,9 +27,11 @@ sidebar_position: 2
 
 这里讲解一下第二种情况：
 
-在上方图片中，可以看到点券一行是 `%vault_eco_balance%`
+在上方图片中，可以看到箭头所指一行是 `%vault_eco_balance%`
 
-你需要安装 [Vault](./../Vault/vault.md) 插件和 [经济插件](../XConomy.md)，接着使用
+你需要安装 [Vault](./../Vault/vault.md) 插件和 [经济插件](../XConomy.md)
+
+接着，确保你安装了 [PlaceHolderAPI](PlaceHolderAPI.md) 插件，执行下方命令
 
 ```bash
 /papi ecloud download Vault
@@ -40,7 +42,9 @@ sidebar_position: 2
 
 ![](_images/Q&A/变量不显示-2.png)
 
-如果下载失败，看 [变量下载失败？](#变量下载失败)
+如果下载失败，看 [手动安装](#手动安装)
+
+如果你想知道都有哪些扩展，提供了哪些变量，查看 [此处](https://snowcutieowo.github.io/PlaceholderAPI/user-guides.placeholder-list.html)
 
 ## 什么是内建变量？
 
@@ -60,9 +64,7 @@ flowchart TD
 
 ## 更改 boolean
 
-在 `plugins\PlaceholderAPI\config.yml` 中找到
-
-```yaml
+```yaml title="plugins\PlaceholderAPI\config.yml"
 boolean:
   'true': 'yes'
   'false': 'no'
@@ -92,7 +94,7 @@ boolean:
 
 然后执行命令 `/papi reload`
 
-## 变量下载失败？
+## 手动安装
 
 ![](_images/Q&A/变量下载失败.png)
 

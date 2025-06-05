@@ -21,7 +21,7 @@ sidebar_position: 2
 
 :::tip
 
-该工具适合超小版本跨度转换,比如 1.21 -> 1.21.1，并且不适合降级
+该工具适合超小版本跨度转换，比如 1.21 -> 1.21.1，并且不适合降级
 
 :::
 
@@ -53,9 +53,7 @@ java -Xms2G -Xmx2G -jar server.jar --nogui --forceUpgrade
 
 :::
 
-Chunker.app 是一个多功能的转换工具,支持基岩版和 Java 之间的转换,在转换大版本的时候也推荐使用
-
-他还有一个网页版本：https://web.chunker.app
+Chunker.app 是一个多功能的转换工具，支持基岩版和 Java 之间的转换，在转换大版本的时候也推荐使用
 
 目前不支持实体和玩家背包
 
@@ -71,7 +69,7 @@ Chunker.app 是一个多功能的转换工具,支持基岩版和 Java 之间的�
 
 :::
 
-一个非常高级的地图编辑工具,支持 Java 1.12+ 和基岩版 1.7+ 所有地图格式
+一个非常高级的地图编辑工具，支持 Java 1.12+ 和基岩版 1.7+ 所有地图格式
 
 :::tip
 
@@ -80,6 +78,28 @@ Amulet 可用于高版本地图转低版本，但在地图转换后可能出现�
 使用 [FastAsyncWorldEdit](https://nitwikit.8aka.org/Java/process/plugin/WorldManagement/FastAsyncWorldEdit)
 
 选择光源异常区域，先 //removelight 再 //fixlighting
+
+:::
+
+## MCA Selector
+
+:::info
+
+`GitHub` https://github.com/Querz/mcaselector
+
+`文档` https://github.com/Querz/mcaselector/wiki
+
+:::
+
+一个简单直观的 Minecraft Java 版存档的编辑器，支持导出或删除选定区块和区域，并且支持不同版本不同存档地图之间的区块迁移。
+
+![](_images/mcaselector.png)
+
+:::tip
+
+使用 MCA 选择器迁移区块到新存档时，通过以下方式让区块边界可以平滑过渡，避免方块断层。
+
+`教程` https://www.mcmod.cn/post/3136.html
 
 :::
 

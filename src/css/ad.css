@@ -1,19 +1,89 @@
-/* 广告链接样式 */
-.ad-item {
-    margin-left: 1rem !important;
+/* 广告容器样式 */
+.extern-container.mobile-extern {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+    padding: 0.5rem 0;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    text-align: center;
+}
+
+/* 广告链接样式 - 移动端样式（简洁） */
+.extern-item {
+    margin: 0 !important;
     font-weight: 500;
     display: inline-flex !important;
     align-items: center;
-    transition: opacity 0.2s;
+    justify-content: center;
+    transition: all 0.2s ease;
+    font-size: 0.9rem;
+    color: var(--primary);
+    white-space: nowrap;
+    padding: 0.35rem 0.8rem;
+    border-radius: 4px;
+    background-color: transparent;
+    border: none;
 }
 
-.ad-item:hover {
-    opacity: 0.8;
+.extern-item:hover {
+    opacity: 0.9;
     text-decoration: none !important;
+    background-color: transparent;
+    color: var(--primary-dark);
+    transform: translateY(-1px);
 }
 
-.ad-item::before {
-    content: "🔹";
-    margin-right: 0.3em;
-    opacity: 0.7;
+/* 移除小点 */
+.extern-item::before {
+    content: "";
+    margin-right: 0;
+}
+
+/* PC端样式（更丰富） */
+@media screen and (min-width: 996px) {
+    .extern-item {
+        border: 1px solid var(--primary);
+        background-color: rgba(37, 160, 110, 0.08);
+        padding: 0.35rem 0.5rem;
+        margin: 0 0.4rem !important;
+    }
+    
+    .extern-item:hover {
+        background-color: rgba(37, 160, 110, 0.15);
+        border-color: var(--primary-dark);
+    }
+    
+    .extern-item::before {
+        content: "🔹";
+        margin-right: 0.3em;
+        opacity: 0.7;
+        font-size: 0.85em;
+    }
+}
+
+/* 暗色模式 */
+html[data-theme='dark'] .extern-item {
+    background-color: transparent;
+    color: var(--primary);
+    border: none;
+}
+
+html[data-theme='dark'] .extern-item:hover {
+    background-color: transparent;
+    color: var(--primary-light);
+}
+
+/* 暗色模式 PC端 */
+@media screen and (min-width: 996px) {
+    html[data-theme='dark'] .extern-item {
+        background-color: rgba(54, 192, 133, 0.1);
+        border: 1px solid var(--primary);
+    }
+    
+    html[data-theme='dark'] .extern-item:hover {
+        background-color: rgba(54, 192, 133, 0.18);
+        border-color: var(--primary-light);
+    }
 }

@@ -44,9 +44,7 @@ RNG 是 **随机数生成器** 的简写。
 
 这是 Purpur 的配置方法：
 
-`purpur.yml`
-
-```yaml
+```yaml title="purpur.yml"
     settings:
       entity:
         shared-random: true
@@ -54,9 +52,7 @@ RNG 是 **随机数生成器** 的简写。
 
 这是 Leaves 的配置方法；
 
-`leaves.yml`
-
-```yaml
+```yaml title="leaves.yml"
 use-vanilla-random: false
 ```
 

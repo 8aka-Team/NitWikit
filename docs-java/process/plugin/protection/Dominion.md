@@ -7,15 +7,15 @@ sidebar_label: 领地 - Dominion
 
 :::info
 
-`SpigotMC` https://www.minebbs.com/resources/.7933/
+`SpigotMC` https://www.spigotmc.org/resources/dominion.119514
 
 `Hangar` https://hangar.papermc.io/zhangyuheng/Dominion
 
 `GitHub` https://github.com/ColdeZhang/Dominion
 
-`MineBBS` https://www.minebbs.com/resources/.7933/
+`MineBBS` https://www.minebbs.com/resources/.7933
 
-`文档` https://dominion.lunadeer.cn/
+`文档` https://dominion.lunadeer.cn
 
 :::
 

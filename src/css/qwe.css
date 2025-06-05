@@ -1,0 +1,1095 @@
+/* ======================================
+   1. TailwindCSS基础
+====================================== */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ======================================
+   2. 全局变量定义
+====================================== */
+:root {
+  /* 主色调 */
+  --primary: #25a06e;
+  --primary-dark: #39e69e;
+  --primary-light: #36c085;
+  
+  /* 文本颜色 */
+  --text-primary: #1a202c;
+  --text-secondary: #4a5568;
+  --text-light: #a0aec0;
+  
+  /* 背景颜色 */
+  --bg-light: #f8f9fa;
+  --bg-dark: #1a202c;
+  --bg-card: #ffffff;
+  
+  /* 边框颜色 */
+  --border-color: #edf2f7;
+  --border-color-dark: #2d3748;
+  
+  /* 阴影 */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  
+  /* Docusaurus变量 */
+  --ifm-color-primary: var(--primary);
+  --ifm-color-primary-dark: var(--primary-dark);
+  --ifm-color-primary-darker: #195f41;
+  --ifm-color-primary-darkest: #134931;
+  --ifm-color-primary-light: var(--primary-light);
+  --ifm-color-primary-lighter: #4fd197;
+  --ifm-color-primary-lightest: #7eddae;
+  
+  --ifm-code-font-size: 95%;
+  --ifm-font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  
+  /* 导航栏 */
+  --ifm-navbar-background-color: rgba(255, 255, 255, 0.98);
+  --ifm-navbar-height: 3.75rem;
+  --ifm-navbar-shadow: none;
+  --ifm-navbar-padding-vertical: 0.5rem;
+  --ifm-navbar-padding-horizontal: 1rem;
+  --ifm-navbar-item-padding-vertical: 0.5rem;
+  --ifm-navbar-item-padding-horizontal: 0.85rem;
+  
+  /* 侧边栏 */
+  --ifm-menu-color: var(--text-secondary);
+  --ifm-menu-color-active: var(--primary);
+  --ifm-menu-color-background-active: rgba(37, 160, 110, 0.08);
+  --ifm-menu-color-background-hover: rgba(37, 160, 110, 0.04);
+  
+  /* 其他 */
+  --ifm-toc-border-color: var(--border-color);
+  --ifm-heading-color: var(--text-primary);
+}
+
+/* 深色主题变量 */
+html[data-theme='dark'] {
+  --primary: #36c085;
+  --primary-dark: #42f8ac;
+  --primary-light: #4fd197;
+  
+  --text-primary: #f7fafc;
+  --text-secondary: #e2e8f0;
+  --text-light: #a0aec0;
+  
+  --bg-light: #444c56;
+  --bg-dark: #2D333B;
+  --bg-card: #22272E;
+  
+  --border-color: #444c56;
+  --border-color-dark: #545d68;
+  
+  --ifm-navbar-background-color: rgba(45, 51, 59, 0.98);
+  --ifm-background-color: var(--bg-dark);
+  --ifm-background-surface-color: var(--bg-card);
+  
+  --ifm-menu-color: var(--text-secondary);
+  --ifm-heading-color: var(--text-primary);
+  --ifm-color-primary: var(--primary);
+  --ifm-color-primary-dark: var(--primary-dark);
+}
+
+/* ======================================
+   3. 基础样式
+====================================== */
+body {
+  font-family: var(--ifm-font-family-base);
+  color: var(--text-primary);
+  line-height: 1.6;
+  background-color: var(--bg-light);
+  transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s ease;
+} 
+
+/* ======================================
+   4. 导航栏样式
+====================================== */
+.navbar {
+  box-shadow: 0 1px 0 0 var(--border-color) !important;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  height: var(--ifm-navbar-height);
+  padding: var(--ifm-navbar-padding-vertical) var(--ifm-navbar-padding-horizontal);
+  display: flex;
+  align-items: center;
+}
+
+.navbar__brand {
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.navbar__title {
+  font-size: 1.25rem;
+  letter-spacing: -0.01em;
+}
+
+.navbar__logo {
+  height: 1.75rem;
+  width: 1.75rem;
+  margin-right: 0.5rem;
+  transition: transform 0.3s ease;
+  -webkit-transition: transform 0.3s ease;
+}
+
+.navbar__brand:hover .navbar__logo {
+  transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+}
+
+.navbar__items {
+  align-items: center;
+  display: flex;
+  height: 100%;
+}
+
+/* 导航栏内部容器样式 */
+.navbar__inner {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+  min-height: 3rem;
+}
+
+/* 让导航栏子元素也保持居中 */
+.navbar-sidebar .navbar__inner {
+  flex-direction: column;
+  align-items: flex-start;
+  height: auto;
+}
+
+.navbar__item {
+  font-weight: 500;
+  padding: 0;
+  margin: 0 0.5rem;
+}
+
+.navbar__link {
+  display: flex;
+  align-items: center;
+  font-size: 0.9375rem;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.375rem;
+  color: var(--text-secondary);
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+}
+
+.navbar__link:hover {
+  background-color: rgba(37, 160, 110, 0.05);
+  color: var(--primary);
+}
+
+.navbar__link--active {
+  font-weight: 600;
+  color: var(--primary);
+  background-color: rgba(37, 160, 110, 0.08);
+}
+
+.navbar__toggle {
+  color: var(--text-secondary);
+  padding: 0.375rem;
+}
+
+/* 导航栏中的链接在移动端隐藏（通用解决方案） */
+@media (max-width: 996px) {
+  /* 仅隐藏主导航栏中的链接，不影响侧边栏中的链接 */
+  .navbar__items .navbar__item.navbar__link {
+    display: none;
+  }
+  
+  /* 确保在侧边栏中的同样链接仍然可见 */
+  .navbar-sidebar .navbar__item.navbar__link {
+    display: flex !important;
+  }
+}
+
+/* 搜索框 */
+.navbar__search {
+  margin-left: 0.5rem;
+}
+
+.navbar__search-input {
+  height: 2.25rem;
+  border-radius: 0.375rem;
+  background-color: rgba(226, 232, 240, 0.4);
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  padding: 0 0.75rem;
+  font-size: 0.875rem;
+  width: 10rem;
+}
+
+.navbar__search-input:focus {
+  background-color: rgba(226, 232, 240, 0.6);
+  border-color: var(--primary-light);
+  box-shadow: 0 0 0 2px rgba(37, 160, 110, 0.15);
+  -webkit-box-shadow: 0 0 0 2px rgba(37, 160, 110, 0.15);
+  width: 12rem;
+}
+
+html[data-theme='dark'] .navbar__search-input {
+  background-color: rgba(45, 55, 72, 0.6);
+}
+
+/* GitHub链接图标 */
+.header-github-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.375rem;
+  border-radius: 0.375rem;
+  transition: background-color 0.2s ease;
+  -webkit-transition: background-color 0.2s ease;
+}
+
+.header-github-link:hover {
+  background-color: rgba(37, 160, 110, 0.05);
+}
+
+.header-github-link:before {
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E") no-repeat;
+  content: '';
+  display: flex;
+  height: 22px;
+  width: 22px;
+  transition: transform 0.3s ease;
+  -webkit-transition: transform 0.3s ease;
+}
+
+html[data-theme='dark'] .header-github-link:before {
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23ffffff' d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E") no-repeat;
+}
+
+.header-github-link:hover:before {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+
+/* ======================================
+   5. 侧边栏样式
+====================================== */
+.theme-doc-sidebar-container {
+  border: none !important;
+  border-right: 1px solid var(--border-color) !important;
+  background-color: var(--bg-card);
+  transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s ease;
+  margin-right: 1rem;
+}
+
+.theme-doc-sidebar-menu {
+  padding-top: 0.5rem;
+  font-size: 0.9375rem;
+}
+
+.menu {
+  padding: 1.25rem 0.75rem 2rem 0.75rem;
+  background-color: transparent;
+}
+
+.menu__list {
+  margin-bottom: 0.75rem;
+  padding-left: 0.25rem;
+}
+
+.menu__list-item {
+  margin: 0.1rem 0;
+}
+
+.menu__link {
+  border-radius: 0.375rem;
+  font-size: 0.9375rem;
+  padding: 0.5rem 0.75rem;
+  transition: background-color 0.15s ease, color 0.15s ease;
+  -webkit-transition: background-color 0.15s ease, color 0.15s ease;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.menu__link:hover {
+  background-color: var(--ifm-menu-color-background-hover);
+  color: var(--primary);
+}
+
+.menu__link--active {
+  font-weight: 500;
+  background-color: var(--ifm-menu-color-background-active);
+  color: var(--primary);
+}
+
+.menu__list-item-collapsible {
+  border-radius: 0.375rem;
+  font-weight: 500;
+}
+
+.menu__list-item-collapsible:hover {
+  background-color: var(--ifm-menu-color-background-hover);
+}
+
+.menu__list-item-collapsible--active {
+  background-color: var(--ifm-menu-color-background-active);
+}
+
+.menu__caret {
+  padding: 0.25rem;
+}
+
+.menu__caret:before, 
+.menu__link--sublist-caret:after {
+  transition: transform 0.15s ease;
+  -webkit-transition: transform 0.15s ease;
+  opacity: 0.7;
+}
+
+/* 子菜单样式 */
+.menu__list .menu__list {
+  margin-top: 0.15rem;
+  margin-bottom: 0.25rem;
+  border-left: 1px solid var(--border-color);
+  margin-left: 0.75rem;
+  padding-left: 0.5rem;
+}
+
+html[data-theme='dark'] .menu__list .menu__list {
+  border-left-color: rgba(74, 85, 104, 0.4);
+}
+
+.menu__list .menu__list .menu__link {
+  padding: 0.35rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+}
+
+.menu__list .menu__list .menu__link--active {
+  color: var(--primary);
+  font-weight: 500;
+}
+
+/* 分类标题 */
+.menu__list-item-category-doc-label {
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  padding: 0 0.5rem;
+}
+
+/* 移动端侧边栏 */
+.navbar-sidebar {
+  background-color: var(--bg-card);
+}
+
+.navbar-sidebar__backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.navbar-sidebar__close {
+  padding: 0.5rem;
+  color: var(--primary);
+}
+
+.navbar-sidebar__item {
+  padding: 0.75rem 1rem;
+}
+
+.navbar-sidebar__brand {
+  border-bottom: 1px solid var(--border-color);
+  padding: 0.75rem 1rem;
+}
+
+/* ======================================
+   6. 主页特定样式
+====================================== */
+.heroTitle, 
+.heroSubtitle {
+  color: white !important;
+}
+
+.heroBanner {
+  background: linear-gradient(135deg, #25a06e, #1c7b54);
+  padding: 5rem 0;
+}
+
+.primaryButton {
+  background-color: white !important;
+  color: var(--primary) !important;
+  font-weight: 600 !important;
+  border: none !important;
+  padding: 0.8rem 2rem !important;
+  border-radius: 8px !important;
+  transition: all 0.3s ease !important;
+  -webkit-transition: all 0.3s ease !important;
+  box-shadow: var(--shadow-md) !important;
+  -webkit-box-shadow: var(--shadow-md) !important;
+}
+
+.primaryButton:hover {
+  transform: translateY(-2px) !important;
+  -webkit-transform: translateY(-2px) !important;
+  box-shadow: var(--shadow-lg) !important;
+  -webkit-box-shadow: var(--shadow-lg) !important;
+}
+
+.secondaryButton {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  color: white !important;
+  border: none !important;
+}
+
+.secondaryButton:hover {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.homepage .navbar {
+  background-color: transparent !important;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  box-shadow: none !important;
+}
+
+.homepage .navbar-sidebar {
+  background-color: var(--bg-card);
+}
+
+.homepage .main-wrapper {
+  padding: 0;
+}
+
+/* ======================================
+   7. 卡片样式
+====================================== */
+/* 文档导航卡片 */
+a.card.padding--lg.cardContainer_fWXF {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02), 0 1px 3px rgba(0, 0, 0, 0.03);
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02), 0 1px 3px rgba(0, 0, 0, 0.03);
+  border: 1px solid var(--border-color);
+  transition: all 0.25s cubic-bezier(0.25, 1, 0.5, 1);
+  -webkit-transition: all 0.25s cubic-bezier(0.25, 1, 0.5, 1);
+  padding: 1.5rem !important;
+  text-decoration: none !important;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-card);
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+a.card.padding--lg.cardContainer_fWXF:hover {
+  transform: translateY(-2px);
+  -webkit-transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05), 0 2px 4px rgba(0, 0, 0, 0.04);
+  -webkit-box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05), 0 2px 4px rgba(0, 0, 0, 0.04);
+  border-color: rgba(37, 160, 110, 0.3);
+}
+
+a.card.padding--lg.cardContainer_fWXF:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(to right, var(--primary), var(--primary-light));
+  opacity: 0;
+  transform: scaleX(0.6) translateY(3px);
+  -webkit-transform: scaleX(0.6) translateY(3px);
+  transition: all 0.25s cubic-bezier(0.25, 1, 0.5, 1);
+  -webkit-transition: all 0.25s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+a.card.padding--lg.cardContainer_fWXF:hover:after {
+  opacity: 1;
+  transform: scaleX(1) translateY(0);
+  -webkit-transform: scaleX(1) translateY(0);
+}
+
+a.card.padding--lg.cardContainer_fWXF h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--ifm-heading-color);
+  display: flex;
+  align-items: center;
+}
+
+a.card.padding--lg.cardContainer_fWXF img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+a.card.padding--lg.cardContainer_fWXF p {
+  margin-bottom: 0;
+  font-size: 0.925rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+a.card.padding--lg.cardContainer_fWXF footer {
+  margin-top: auto;
+  padding-top: 0.875rem;
+  font-size: 0.8125rem;
+  color: var(--primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 针对卡片布局的响应式调整 */
+.row .col--6 {
+  margin-bottom: 1.25rem;
+}
+
+/* 暗色模式适配 */
+html[data-theme='dark'] a.card.padding--lg.cardContainer_fWXF {
+  background-color: rgba(45, 55, 72, 0.8);
+  border-color: var(--border-color);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07), 0 1px 3px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07), 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+html[data-theme='dark'] a.card.padding--lg.cardContainer_fWXF:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.12);
+  border-color: rgba(54, 192, 133, 0.3);
+  background-color: rgba(45, 55, 72, 0.9);
+}
+
+/* ======================================
+   8. 布局与容器
+====================================== */
+.main-wrapper {
+  background-color: var(--ifm-background-color);
+  min-height: 100vh;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* 确保文档容器背景色通铺 */
+.container {
+  background-color: transparent;
+}
+
+@media screen and (min-width: 997px) {
+  .homepage .container {
+    max-width: 100%;
+    padding: 0;
+  }
+}
+
+/* 修复暗色模式下主内容区域 - 移除容器背景色 */
+html[data-theme='dark'] .main-wrapper,
+html[data-theme='dark'] article {
+  background-color: var(--ifm-background-color);
+}
+
+html[data-theme='dark'] .container {
+  background-color: transparent;
+}
+
+/* 文章内容区域通铺样式 */
+.markdown {
+  background-color: var(--ifm-background-color);
+  overflow: visible;
+}
+
+/* 文章页面背景 */
+.docs-wrapper {
+  background-color: var(--ifm-background-color);
+}
+
+/* 修复首页背景 */
+.homepage main {
+  background-color: var(--ifm-background-color);
+}
+
+/* ======================================
+   9. 链接样式
+====================================== */
+a.github-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--ifm-color-primary);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  -webkit-transition: color 0.2s ease;
+  position: relative;
+}
+
+a.github-link:hover {
+  color: var(--ifm-color-primary-dark);
+  text-decoration: none;
+}
+
+a.github-link::before {
+  content: '🔗';
+  margin-right: 4px;
+  font-size: 0.9em;
+}
+
+/* ======================================
+   10. 页脚样式
+====================================== */
+.footer {
+  background-color: var(--bg-card);
+  color: var(--text-secondary);
+  padding: 2rem 0;
+  border-top: 1px solid var(--border-color);
+}
+
+/* 确保页脚内的容器也使用正确的背景色 */
+.footer .container,
+.footer .container-fluid {
+  background-color: var(--bg-card);
+}
+
+.footer__links {
+  background-color: var(--bg-card);
+}
+
+.footer__bottom {
+  background-color: var(--bg-card);
+}
+
+.footer__link-item {
+  color: var(--text-secondary);
+  transition: color 0.2s ease;
+  -webkit-transition: color 0.2s ease;
+}
+
+.footer__link-item:hover {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.footer__title {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.footer__copyright {
+  color: var(--text-light);
+  font-size: 0.85rem;
+}
+
+/* 暗色模式页脚样式适配 */
+html[data-theme='dark'] .footer,
+html[data-theme='dark'] .footer .container,
+html[data-theme='dark'] .footer .container-fluid,
+html[data-theme='dark'] .footer__links,
+html[data-theme='dark'] .footer__bottom {
+  background-color: var(--bg-card);
+  border-top-color: var(--border-color);
+}
+
+/* ======================================
+   11. 折叠区域样式
+====================================== */
+details.details_lb9f,
+details.details_b_Ee {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  margin-bottom: 1.25rem;
+  box-shadow: none;
+  overflow: hidden;
+  background-color: var(--bg-card);
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+}
+
+details.details_lb9f:hover,
+details.details_b_Ee:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+}
+
+/* Summary 标题样式 */
+details summary {
+  padding: 0.75rem 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: var(--text-primary);
+  background-color: var(--bg-card);
+  border-bottom: none;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+}
+
+details[open] summary {
+  border-bottom-color: transparent;
+  color: var(--primary);
+}
+
+details summary:hover {
+  color: var(--primary);
+}
+
+details summary::before {
+  content: none;
+}
+
+details summary::after {
+  content: '▶';
+  font-size: 0.75em;
+  margin-left: auto;
+  color: var(--primary);
+  transition: transform 0.15s ease;
+  -webkit-transition: transform 0.15s ease;
+}
+
+details[open] summary::after {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+}
+
+/* 为details添加一个更具体的选择器来覆盖可能存在的其他样式 */
+details.details_lb9f summary::before,
+details.details_b_Ee summary::before,
+details summary::before,
+.theme-doc-toc details summary::before,
+.alert details summary::before {
+  content: none !important;
+  display: none !important;
+}
+
+/* 移除可能在左侧内边距或其他位置显示的图标 */
+details.details_lb9f summary,
+details.details_b_Ee summary {
+  padding-left: 1rem !important;
+}
+
+/* 折叠内容区域样式 */
+.collapsibleContent_i85q {
+  padding: 1rem;
+}
+
+/* 图片样式优化 */
+.collapsibleContent_i85q img {
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto 0.75rem;
+  max-width: 100%;
+  border: 1px solid var(--border-color);
+}
+
+/* 链接样式优化 */
+.collapsibleContent_i85q a {
+  color: var(--primary);
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+}
+
+.collapsibleContent_i85q a:hover {
+  text-decoration: underline;
+}
+
+/* 暗色模式适配 */
+html[data-theme='dark'] details.details_lb9f,
+html[data-theme='dark'] details.details_b_Ee {
+  background-color: var(--bg-card);
+  border-color: var(--border-color);
+  box-shadow: none;
+}
+
+/* ======================================
+   12. 特性卡片样式
+====================================== */
+/* 修复特性区域卡片和文字样式 */
+html[data-theme='dark'] .features_t9lD {
+  background-color: var(--bg-dark) !important;
+}
+
+/* 卡片本身 */
+html[data-theme='dark'] .featureCard_B6MD,
+html[data-theme='dark'] [class*="featureCard"] {
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--border-color);
+  border-bottom: 2px solid var(--primary);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+html[data-theme='dark'] .featureCard_B6MD:hover,
+html[data-theme='dark'] [class*="featureCard"]:hover {
+  transform: translateY(-4px);
+  -webkit-transform: translateY(-4px);
+  border-color: var(--primary);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* 标题使用主题色 */
+html[data-theme='dark'] .featureTitle_WnBL,
+html[data-theme='dark'] [class*="featureTitle"] {
+  color: var(--primary) !important;
+  font-weight: 600;
+}
+
+/* 图标移除阴影 */
+html[data-theme='dark'] .featureSvg_a16W,
+html[data-theme='dark'] [class*="featureSvg"] {
+  filter: none;
+}
+
+/* 确保文字主题色 */
+html[data-theme='dark'] .sectionTitle_KoEj,
+html[data-theme='dark'] [class*="sectionTitle"] {
+  color: var(--text-primary);
+}
+
+html[data-theme='dark'] span.text--primary {
+  color: var(--primary) !important;
+}
+
+/* 主页底部CTA区域暗色模式 */
+html[data-theme='dark'] .footerCta_iqgm,
+html[data-theme='dark'] [class*="footerCta"] {
+  background-color: var(--bg-card) !important;
+}
+
+html[data-theme='dark'] .footerCtaTitle_VTvf,
+html[data-theme='dark'] [class*="footerCtaTitle"] {
+  color: var(--text-primary);
+}
+
+html[data-theme='dark'] .footerCtaSubtitle_pLXE,
+html[data-theme='dark'] [class*="footerCtaSubtitle"] {
+  color: var(--text-secondary);
+}
+
+html[data-theme='dark'] .textHighlight_tecp,
+html[data-theme='dark'] [class*="textHighlight"] {
+  color: var(--primary) !important;
+}
+
+/* 特性卡片统一样式（亮色与暗色模式） */
+/* 卡片基础样式 - 亮色模式 */
+.featureCard_B6MD,
+[class*="featureCard"] {
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--border-color);
+  border-bottom: 2px solid var(--primary);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05) !important;
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05) !important;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  border-radius: 8px;
+}
+
+.featureCard_B6MD:hover,
+[class*="featureCard"]:hover {
+  transform: translateY(-4px);
+  -webkit-transform: translateY(-4px);
+  border-color: var(--primary);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* 标题样式 - 亮色模式 */
+.featureTitle_WnBL,
+[class*="featureTitle"] {
+  color: var(--primary) !important;
+  font-weight: 600;
+}
+
+/* ======================================
+   13. 响应式调整
+====================================== */
+/* 主页按钮在移动端的响应式调整 */
+@media screen and (max-width: 768px) {
+  .primaryButton,
+  .secondaryButton,
+  .button.button--primary.button--lg {
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+    width: auto;
+    min-width: 120px;
+    margin: 0.5rem;
+    padding: 0.75rem 1.5rem !important;
+    font-size: 1rem !important;
+  }
+  
+  /* 确保按钮容器在移动端正确显示 */
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1.5rem;
+    z-index: 10;
+    position: relative;
+  }
+  
+  /* 确保hero区域内容不被装饰元素遮挡 */
+  .heroBanner .container {
+    position: relative;
+    z-index: 5;
+  }
+  
+  /* 调整装饰元素，避免干扰按钮点击 */
+  .decorationDot {
+    z-index: 1;
+    opacity: 0.5;
+  }
+}
+
+/* ======================================
+   14. Alert样式
+====================================== */
+/* Alert 信息 样式 */
+.alert--info {
+  --ifm-alert-background-color: var(--bg-card);
+  --ifm-alert-border-color: var(--primary);
+  --ifm-alert-color: var(--text-primary);
+  border-left: 3px solid var(--primary);
+}
+
+html[data-theme='dark'] .alert--info {
+  --ifm-alert-background-color: var(--bg-card);
+  --ifm-alert-color: var(--text-primary);
+}
+
+/* Alert 警告 样式 */
+.alert--warning {
+  --ifm-alert-background-color: var(--bg-card);
+  --ifm-alert-border-color: #f0b429;
+  --ifm-alert-color: var(--text-primary);
+  border-left: 3px solid #f0b429;
+}
+
+html[data-theme='dark'] .alert--warning {
+  --ifm-alert-background-color: var(--bg-card);
+  --ifm-alert-color: var(--text-primary);
+}
+
+/* Alert 危险 样式 */
+.alert--danger {
+  --ifm-alert-background-color: var(--bg-card);
+  --ifm-alert-border-color: #ef4444;
+  --ifm-alert-color: var(--text-primary);
+  border-left: 3px solid #ef4444;
+}
+
+html[data-theme='dark'] .alert--danger {
+  --ifm-alert-background-color: var(--bg-card);
+  --ifm-alert-color: var(--text-primary);
+}
+
+/* Alert 成功 样式 */
+.alert--success {
+  --ifm-alert-background-color: var(--bg-card);
+  --ifm-alert-border-color: #10b981;
+  --ifm-alert-color: var(--text-primary);
+  border-left: 3px solid #10b981;
+}
+
+html[data-theme='dark'] .alert--success {
+  --ifm-alert-background-color: var(--bg-card);
+  --ifm-alert-color: var(--text-primary);
+}
+
+/* Alert 次要 样式 */
+.alert--secondary {
+  --ifm-alert-background-color: var(--bg-card);
+  --ifm-alert-border-color: #8b5cf6;
+  --ifm-alert-color: var(--text-primary);
+  border-left: 3px solid #8b5cf6;
+}
+
+html[data-theme='dark'] .alert--secondary {
+  --ifm-alert-background-color: var(--bg-card);
+  --ifm-alert-color: var(--text-primary);
+}
+
+/* ======================================
+   15. 滚动条样式
+====================================== */
+/* WebKit 浏览器 (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(160, 174, 192, 0.3);
+  border-radius: 100px;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(160, 174, 192, 0.5);
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* Firefox 浏览器 */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(160, 174, 192, 0.3) transparent;
+}
+
+/* 暗色模式滚动条 */
+html[data-theme='dark'] ::-webkit-scrollbar-thumb {
+  background: rgba(74, 85, 104, 0.4);
+}
+
+html[data-theme='dark'] ::-webkit-scrollbar-thumb:hover {
+  background: rgba(74, 85, 104, 0.6);
+}
+
+html[data-theme='dark'] * {
+  scrollbar-color: rgba(74, 85, 104, 0.4) transparent;
+}
+
+/* 为代码块和特定容器添加不同的滚动条样式 */
+pre::-webkit-scrollbar,
+.code-block::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+pre::-webkit-scrollbar-thumb,
+.code-block::-webkit-scrollbar-thumb {
+  background: rgba(37, 160, 110, 0.3);
+}
+
+pre::-webkit-scrollbar-thumb:hover,
+.code-block::-webkit-scrollbar-thumb:hover {
+  background: rgba(37, 160, 110, 0.5);
+}
+
+pre, .code-block {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(37, 160, 110, 0.3) transparent;
+}
+

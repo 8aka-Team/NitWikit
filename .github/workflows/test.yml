@@ -27,6 +27,17 @@ jobs:
       - name: "Install"
         run: "pnpm install"
 
+      # 压缩图片
+      - name: "图片压缩"
+        uses: calibreapp/image-actions@main
+        with:
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
+          jpegQuality: '80'
+          pngQuality: '80'
+          webpQuality: '80'
+          ignorePaths: 'node_modules/**'
+          compressOnly: true
+
       - name: "MarkdownLint Check"
         uses: DavidAnson/markdownlint-cli2-action@v17
         with:

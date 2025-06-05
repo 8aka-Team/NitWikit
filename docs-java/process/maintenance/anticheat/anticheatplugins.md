@@ -7,9 +7,11 @@ sidebar_position: 1
 
 :::tip[写在最前]
 
-混合端**不要**用下面所列的反作弊插件，建议使用 [次元反作弊](https://www.mcmod.cn/class/6578.html) 或 [猫反作弊](https://www.wxmwl.com/?p=95)
+混合端**不要**用下面所列的反作弊插件，建议使用 [次元反作弊](https://www.mcmod.cn/class/6578.html)，[SkAc反作弊](https://www.mcmod.cn/class/18057.html) 或 [猫反作弊](https://www.wxmwl.com/?p=95)
 
 次元反作弊的交流群：327175980
+
+SkAc反作弊的交流群：672827899
 
 :::
 
@@ -191,7 +193,7 @@ ISeeYou 是一个免费的录制插件,可以录制玩家的一举一动
 
 一款面向萌新的主流反作弊配置，对配置有任何问题骚扰 Talents 先生项目的 Issues 即可解决！
 
-GitHub：https://github.com/TalentsRC/Talents-AntiCheat-Config
+GitHub：https://github.com/8aka-Team/Talents-AntiCheat-Config
 
 ### ViaBackwards
 
@@ -201,7 +203,7 @@ GitHub：https://github.com/TalentsRC/Talents-AntiCheat-Config
 
 ## 笨蛋脚本
 
-[自动为你配置反作弊，下载!](https://script.8aka.org/config-anticheat)
+自动为你配置反作弊，[下载!](https://script.8aka.org/config-anticheat)
 
 ## 组合反作弊
 

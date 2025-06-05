@@ -1,0 +1,45 @@
+{
+  "name": "NitWikit",
+  "buildCommand": "npm run build",
+  "installCommand": "npm install",
+  "outputDirectory": "./build",
+  "nodeVersion": "22.11.0",
+  "headers": [
+    {
+      "source": "/*",
+      "headers": [
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "max-age=7200"
+        }
+      ]
+    },
+    {
+      "source": "/assets/*",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "max-age=31536000"
+        }
+      ]
+    }
+  ],
+  "caches": [
+    {
+      "source": "/sitemap.xml",
+      "cacheTtl": 0
+    },
+    {
+      "source": "/*.jpg",
+      "cacheTtl": 3600
+    },
+    {
+      "source": "/*.png",
+      "cacheTtl": 3600
+    }
+  ]
+}

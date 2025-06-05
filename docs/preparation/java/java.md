@@ -25,11 +25,11 @@ JDK (Java Development Kit) 又称 J2SDK (Java2 Software Development Kit)，是 J
 运行环境 (JRE)，一堆 Java 工具 tools.jar 和
 Java 标准类库 (rt.jar)
 
-总结: **开服最好选择 JDK**,这样不会因为一些插件/Mod 使用类似 ByteBuddy 等黑魔法导致报错,也可以轻松使用 Arthas 等分析工具
+总结: **开服最好选择 JDK**，这样不会因为一些插件/Mod 使用类似 ByteBuddy 等黑魔法导致报错，也可以轻松使用 Arthas 等分析工具
 
 并且像 Pufferfish 之类的端可以使用 JDK 中的 SIMD 进行优化
 
-毕竟,现在谁还缺几十 MB 的存储空间,~~真缺那就别开服了~~
+毕竟，现在谁还缺几十 MB 的存储空间，~~真缺那就别开服了~~
 
 对于初学者，只需要阅读 [选择、下载和安装 Java](./choose-and-download-and-install-java.md) 部分，其余为扩展知识。
 

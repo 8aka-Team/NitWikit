@@ -5,11 +5,11 @@ sidebar_position: 7
 
 # 白名单
 
-白名单是一种服务器管理工具,只允许在白名单上的玩家进入服务器
+白名单是一种服务器管理工具，只允许在白名单上的玩家进入服务器
 
 :::warning
 
-白名单最好与正版验证或其他第三方验证一起使用,不然很容易被绕过
+白名单最好与正版验证或其他第三方验证一起使用，不然很容易被绕过
 
 :::
 
@@ -45,7 +45,7 @@ allow-list=true
 </TabItem>
 <TabItem value="nukkit" label="NukkitX 服务器">
 
-包括 NukkitX,PowerNukkitX,NukkitX-MOT,PM1E
+包括 NukkitX，PowerNukkitX，NukkitX-MOT，PM1E
 
 在`server.properties`中打开`allow-list`
 
@@ -100,4 +100,4 @@ allow-list=on
 
 :::
 
-带有许多功能的白名单插件,支持Q群白名单,Geyser,跨服白名单等
+带有许多功能的白名单插件，支持Q群白名单，Geyser，跨服白名单等

@@ -41,7 +41,7 @@ online-mode=true
 
 :::danger
 
-**不要在服务器投入运营后去改正版验证状态!** 这会造成 UUID 混乱，玩家数据丢失，当然你可以转换 UUID 来解决这个问题 [查看解决方法](https://dodo939.love/2024/06/20/mc-online-conv-tool/)
+**不要在服务器投入运营后去改正版验证状态!** 这会造成 UUID 混乱，玩家数据丢失，当然你可以转换 UUID 来解决这个问题 [查看解决方法](https://klpbbs.com/thread-131458-1-1.html)
 
 如果需要更多的验证方式(如 **皮肤站**/**统一认证** 等)，请在服务器 **公测前** 确定，具体请参考[更多验证方式](/docs-java/advance/loginchoices.md)
 

@@ -68,7 +68,7 @@ sidebar_position: 2
 %multiverse_world_alias% - 显示世界别名
 ```
 
-[案例 | 中文世界名](../../WorldManagement/Multiverse.md#中文世界名)
+[案例 | 中文世界名](../../WorldManagement/Multiverse/Multiverse.md)
 
 ## PlayerPoints
 

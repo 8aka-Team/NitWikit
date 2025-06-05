@@ -81,13 +81,14 @@ Notice：维护这个分支完全是个人兴趣。
 
 - https://hhhhhy.gitbook.io/trmenu-v3
 
-新文档，推荐阅读，但可能需要挂梯子
+8aka 文档镜像，推荐阅读
 
-- https://mirror.8aka.org/https://hhhhhy.gitbook.io/trmenu-v3
+- https://taboo.8aka.org/TrMenu/
 
-新文档的笨蛋镜像，不挂梯也可访问
 
-- https://bukkit.wiki/plugins/plugins/trmenu
+新文档，推荐阅读，不挂梯也可访问
+
+- https://taboo.8aka.org/TrMenu
 
 阔大帅的文档，拥有上方新文档的全部内容且访问速度快
 

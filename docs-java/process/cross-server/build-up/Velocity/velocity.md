@@ -6,6 +6,8 @@ sidebar_position: 2
 
 # Velocity
 
+![](../_images/Velocity.png)
+
 [点此跳转到官方英文文档](https://docs.papermc.io/velocity)
 
 ## 关于 Velocity 的介绍

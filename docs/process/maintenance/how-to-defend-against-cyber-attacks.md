@@ -74,15 +74,21 @@ Minecraft 后端服务器一般是不会对 Ping 进行过滤和记录的，这�
 并通过扫描端口(扫端口，通过对某个 IP 上的所有端口进行检测来找出可以攻击的目标)，来找到你的服务器的远控地址，
 而不需要事先对你的服务器或你本人有任何了解。也就是说，如果你遭遇了这种攻击，不要一味地反思自己是否激怒过他人或和小人有了过节，而是要专注于防范你所遭受的攻击本身。
 
-### 网络层
+### 网络层(也称为 L3 )
 
 网络层攻击是 DDoS 攻击的一种形式，它针对于网络基础架构进行攻击。
 
-最常见的网络层攻击是IP地址欺骗，攻击者可以伪造IP地址并向目标服务器发送大量数据包，以消耗目标服务器的网络带宽和系统资源。
-
-Minecraft JAVA 服务端采用 TCP 作为通信协议，所以你可能会遭受到如 TCP Flood (TCP 洪水攻击) 等攻击方式。
+最常见的网络层攻击有 ICMP Flood、IP 碎片攻击、IP 欺骗（辅助手段），攻击者可以伪造 IP 地址并向目标服务器发送大量数据包，以消耗目标服务器的网络带宽和系统资源。
 
 防御这种类型的攻击唯一办法就是增大宽带，没有什么别的好办法。
+
+这里列出了一些可行的方法 [网络层与传输层攻击防御](#网络层与传输层攻击防御) 
+
+### 传输层(也称为 L4 )
+
+Minecraft JAVA 服务端采用 TCP 作为通信协议，所以你可能会遭受到如 TCP Flood (如 SYN Flood、ACK Flood) 等攻击方式。
+
+同上，这里列出了一些可行的方法 [网络层与传输层攻击防御](#网络层与传输层攻击防御) 
 
 ## 解决方案
 
@@ -243,7 +249,7 @@ NullCordX 是一个较好的选择。
 
 有雷池waf、1P等面板可供选择
 
-### 网络层攻击防御
+### 网络层与传输层攻击防御
 
 #### 将服务器托管到高防机房/购买高防 VPS
 
@@ -257,13 +263,13 @@ NullCordX 是一个较好的选择。
 
 #### 使用Minecraft代理
 
-例如 TCPShield,Cloudflare 和 MineKube
+例如 TCPShield，Cloudflare 和 MineKube
 
 包含专门针对于缓解 Minecraft 攻击的负载均衡代理，且能够有效隐藏服务器 IP 地址。
 
 缺点是似乎还没有任何一家这样的代理拥有国内服务器(延迟高)，且需要花费一点时间设置
 
-那些在 CF 上 A(或AAAA,CNAME)过去到源站(可能配上 SRV)就是**自欺欺人,完全没用**,CF 压根不会代理这些端口和协议的流量,开小黄云也一样
+那些在 CF 上 A(或AAAA，CNAME)过去到源站(可能配上 SRV)就是**自欺欺人，完全没用**，CF 压根不会代理这些端口和协议的流量，开小黄云也一样
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -271,33 +277,33 @@ import TabItem from '@theme/TabItem';
 <Tabs queryString="protect">
 <TabItem value="cf-tunnel" label="Cloudflare Tunnel">
 
-Cloudflare 的内网穿透 Tunnel,当高防也是疯了
+Cloudflare 的内网穿透 Tunnel，当高防也是疯了
 
 优点：
 
 - 免费，无需注册
-- 296 Tbps 高防,298 位置
+- 296 Tbps 高防，298 位置
 - 不限流
-- 支持 TCP,UDP,RDP,SSH,HTTP
-- SSH 提供 WebSSH,还可以通过 Access 管理
+- 支持 TCP，UDP，RDP，SSH，HTTP
+- SSH 提供 WebSSH，还可以通过 Access 管理
 - 自带内网穿透
 
 缺点：
 
 - 延迟较大(不可以优选)
-- 客户端需安装 mod 才能进入(仅限 TCP,UDP)
+- 客户端需安装 mod 才能进入(仅限 TCP，UDP)
 
 </TabItem>
 <TabItem value="cf-spectrum" label="Cloudflare Spectrum">
 
-Cloudflare 用于 TCP,UDP 协议的防御,可惜价格太贵了(1$/GB抢钱)
+Cloudflare 用于 TCP，UDP 协议的防御，可惜价格太贵了(1$/GB抢钱)
 
 优点:
 
-- 296 Tbps 高防,298 位置
-- 支持 TCP,UDP,RDP,SSH,HTTP
+- 296 Tbps 高防，298 位置
+- 支持 TCP，UDP，RDP，SSH，HTTP
 - 提供1个 AnyCast 独立 IPV4
-- SSH 提供 WebSSH,还可以通过 Access 管理
+- SSH 提供 WebSSH，还可以通过 Access 管理
 
 缺点：
 
@@ -306,14 +312,14 @@ Cloudflare 用于 TCP,UDP 协议的防御,可惜价格太贵了(1$/GB抢钱)
 
 价格多贵?
 
-Cloudflare Pro 25$/月(约合人民币178元,免费流量**5GB**),此后 1$/**GB**
+Cloudflare Pro 25$/月(约合人民币178元，免费流量**5GB**)，此后 1$/**GB**
 
-也就是说,1 TB 流量价格为 1044$,约合人民币7443元,还不算 CF Pro 订阅费用,真需要可以考虑 Papyrus
+也就是说，1 TB 流量价格为 1044$，约合人民币7443元，还不算 CF Pro 订阅费用，真需要可以考虑 Papyrus
 
 </TabItem>
 <TabItem value="minekube" label="MineKube">
 
-MineKube 的免费保护,这个组织还有另一个有名作品 Gate
+MineKube 的免费保护，这个组织还有另一个有名作品 Gate
 
 个人感觉比 Cloudflare Tunnel 强很多(比 Cloudflare Spectrum 体验都好)
 
@@ -323,7 +329,7 @@ MineKube 的免费保护,这个组织还有另一个有名作品 Gate
 - 自带高防
 - 不限流
 - 会提供一个免费域名和1个 AnyCast 独立 IPV4
-- 有 Dashboard,可以进行网络分流,管理,黑名单等操作
+- 有 Dashboard，可以进行网络分流，管理，黑名单等操作
 - 自带内网穿透
 
 缺点：
@@ -352,26 +358,26 @@ TCPShield 专业的 Minecraft 网络保护
 Asia Network(亚洲网络):
 
 - 提供新加坡和东京网络
-- 价格:0.01 $/GB(与其他流量分开计费,没有免费流量)(约合人民币7分)
+- 价格:0.01 $/GB(与其他流量分开计费，没有免费流量)(约合人民币7分)
 
-Geyser 支持需要 Premium 计划(100 $/月,堪比抢钱)
+Geyser 支持需要 Premium 计划(100 $/月，堪比抢钱)
 
 Pro 计划(25$ 每月)(约合人民币178元):
 
 - 5 TB 免费流量
-- IP 防火墙,可过滤流量
+- IP 防火墙，可过滤流量
 
 [官网](https://tcpshield.com/)
 
 </TabItem>
 <TabItem value="playit" label="Playit.gg(推荐)">
 
-性价比非常高,虽说~~正式用途是朋友联机~~
+性价比非常高，虽说~~正式用途是朋友联机~~
 
 优点:
 
 - 不限流量
-- 支持任意 TCP,UDP 代理
+- 支持任意 TCP，UDP 代理
 - 提供亚洲节点(一般来说会被分配到日本节点)
 - 提供免费域名
 - 自带内网穿透
@@ -390,9 +396,9 @@ Premium 价格:**3美元**/月(约合20人民币)(非常便宜!)
 </TabItem>
 <TabItem value="papyrus" label="Papyrus">
 
-没有免费套餐,但看在 Cloudflare Spectrum 的面子上还是写了
+没有免费套餐，但看在 Cloudflare Spectrum 的面子上还是写了
 
-VIP套餐(25 $ 每月,约合人民币177元):
+VIP套餐(25 $ 每月，约合人民币177元):
 
 - 支持 Geyser
 - L7 过滤
@@ -400,15 +406,15 @@ VIP套餐(25 $ 每月,约合人民币177元):
 流量状况:
 
 - 无限流量: 仅提供纽约，法兰克福节点
-- Cloudflare Spectrum 流量: 流量数未知,但不是无限
+- Cloudflare Spectrum 流量: 流量数未知，但不是无限
 
-Enterprise套餐(250 $ 每月,约合人民币1778元):
+Enterprise套餐(250 $ 每月，约合人民币1778元):
 
 - Cloudflare Spectrum 无限流量
 
 :::tip
 
-说句好笑的,Papyrus 官网上说他们有 330 节点,但实际上,Cloudflare 去掉中国节点后只有 298 个节点,算上中国节点后才 330 个
+说句好笑的，Papyrus 官网上说他们有 330 节点，但实际上，Cloudflare 去掉中国节点后只有 298 个节点，算上中国节点后才 330 个
 
 Cloudflare Spectrum 目前是没中国节点的
 
@@ -431,7 +437,7 @@ Cloudflare Spectrum 目前是没中国节点的
 
 :::
 
-有着闲心还不如用上一条的免费防御,虽然速度慢一点
+有着闲心还不如用上一条的免费防御，虽然速度慢一点
 
 #### 更换 IP
 

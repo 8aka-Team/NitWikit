@@ -23,10 +23,10 @@ sidebar_position: 3
 
 核心支持：
 <a href="">
-  <img src="https://img.shields.io/badge/BungeeCord-orange?&style=flat-square" class="stylish-image" alt="BungeeCord" />
+  <img src="https://img.shields.io/badge/BungeeCord-orange?&style=for-the-badge" class="stylish-image" alt="BungeeCord" />
 </a>
 <a href="">
-  <img src="https://img.shields.io/badge/Velocity-blue?&style=flat-square" class="stylish-image" alt="Velocity" />
+  <img src="https://img.shields.io/badge/Velocity-blue?&style=for-the-badge" class="stylish-image" alt="Velocity" />
 </a>
 
 > 从 Minecraft 1.19.1 开始，Mojang 实现了一个[新的聊天系统](https://zh.minecraft.wiki/w/Java%E7%89%881.19.1#%E5%B8%B8%E8%A7%84)，该系统使用每个玩家拥有的签名密钥。Velocity 尚不完全支持取消或修改这种类型的消息和命令，因此你可以安装 SignedVelocity 插件， 这将允许将消息或命令传输到你的服务器，在服务器上收到消息或命令后， 将应用在 Velocity 中计算的结果。 —— Velocity 官方文档
@@ -49,10 +49,10 @@ sidebar_position: 3
 
 核心支持：
 <a href="">
-  <img src="https://img.shields.io/badge/BungeeCord-orange?&style=flat-square" class="stylish-image" alt="BungeeCord" />
+  <img src="https://img.shields.io/badge/BungeeCord-orange?&style=for-the-badge" class="stylish-image" alt="BungeeCord" />
 </a>
 <a href="">
-  <img src="https://img.shields.io/badge/Velocity-blue?&style=flat-square" class="stylish-image" alt="Velocity" />
+  <img src="https://img.shields.io/badge/Velocity-blue?&style=for-the-badge" class="stylish-image" alt="Velocity" />
 </a>
 
 PAPIProxyBridge 是安装在后端和代理服务器上的库桥插件，它允许代理端插件使用 PlaceholderAPI 占位符设置文本格式

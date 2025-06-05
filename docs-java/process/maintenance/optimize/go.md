@@ -28,7 +28,7 @@ sidebar_position: 4
 
 你可以看看**笨蛋脚本的源代码**或**服务器核心的文档**
 
-Leaf 和 Gale 的优化配置项请前往: [Leaf 官方文档](https://docs.leafmc.one/zh/reference/config/),CatServer
+Leaf 和 Gale 的优化配置项请前往: [Leaf 官方文档](https://www.leafmc.one/zh/docs),CatServer
 可以看[这个帖子](https://bbs.mcmod.cn/thread-10697-1-1.html),Luminol 可以看[这篇帖子](https://www.lanxing.vip/1.html)
 
 :::

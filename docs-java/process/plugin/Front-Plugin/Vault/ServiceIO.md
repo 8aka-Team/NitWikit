@@ -58,19 +58,11 @@ ServiceIO 的一个关键特性是与现有 Vault 接口的无缝集成，允许
 
 :::info
 
-`Bukkit` https://dev.bukkit.org/projects/vault
+`Hangar` https://hangar.papermc.io/TheNextLvl/ServiceIO
 
-`SpigotMC` https://www.spigotmc.org/resources/.34315
+`MineBBS` https://www.minebbs.com/resources/.10012
 
-`MineBBS` https://www.minebbs.com/resources/.7869
-
-`GitHub` https://github.com/milkbowl/Vault
-
-`插件百科` https://github.com/milkbowl/Vault
-
-`VaultUnlocked(Vault 增强版)` https://github.com/TheNewEconomy/VaultUnlocked
-
-`ServiceIO(Vault 超级增强版,1.21+)` https://hangar.papermc.io/TheNextLvl/ServiceIO
+`GitHub` https://github.com/TheNextLvl-net/service-io
 
 :::
 

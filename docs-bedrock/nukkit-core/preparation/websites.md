@@ -16,17 +16,15 @@ sidebar_position: 1
 <details>
   <summary>点击展开</summary>
 
-  <tr>
-    <td align="center">
-      <a href="https://www.minebbs.com/">
-        <img
-          src="https://www.minebbs.com/data/assets/logo/mb-logo-blue-1x.png"
-          width="100px;"
-          alt=""
-        /><br /><sub><b>MineBBS</b></sub>
-      </a>
-    </td>
-  </tr>
+  <div style={{textAlign: 'center'}}>
+    <a href="https://www.minebbs.com/">
+      <img
+        src="https://www.minebbs.com/data/assets/logo/mb-logo-blue-1x.png"
+        style={{width: '100px'}}
+        alt="MineBBS"
+      /><br /><b>MineBBS</b>
+    </a>
+  </div>
 
 插件板块：https://www.minebbs.com/resources/categories/nukkit.40/
 
@@ -41,17 +39,15 @@ sidebar_position: 1
 <details>
   <summary>点击展开</summary>
 
-  <tr>
-    <td align="center">
-      <a href="https://bbs.nukkit-mot.com/">
-        <img
-          src="https://bbs.nukkit-mot.com/data/assets/logo/title-logo.png"
-          width="100px;"
-          alt=""
-        /><br /><sub><b>NukkitCNBBS</b></sub>
-      </a>
-    </td>
-  </tr>
+  <div style={{textAlign: 'center'}}>
+    <a href="https://bbs.nukkit-mot.com/">
+      <img
+        src="https://bbs.nukkit-mot.com/data/assets/logo/title-logo.png"
+        style={{width: '100px'}}
+        alt="NukkitCNBBS"
+      /><br /><b>NukkitCNBBS</b>
+    </a>
+  </div>
 
 插件板块：https://bbs.nukkit-mot.com/resources/categories/plugin.8/
 
@@ -64,17 +60,15 @@ NukkitX官方搭建的资源中心，支持下载Nukkit插件。
 <details>
   <summary>点击展开</summary>
 
-  <tr>
-    <td align="center">
-      <a href="https://cloudburstmc.org/resources/categories/nukkit-plugins.1/">
-        <img
-          src="https://cloudburstmc.org/styles/brivium/stylium/tellurium/xenforo/logo.png"
-          width="100px;"
-          alt=""
-        /><br /><sub><b>CloudburstMC</b></sub>
-      </a>
-    </td>
-  </tr>
+  <div style={{textAlign: 'center'}}>
+    <a href="https://cloudburstmc.org/resources/categories/nukkit-plugins.1/">
+      <img
+        src="https://cloudburstmc.org/styles/brivium/stylium/tellurium/xenforo/logo.png"
+        style={{width: '100px'}}
+        alt="CloudburstMC"
+      /><br /><b>CloudburstMC</b>
+    </a>
+  </div>
 
 插件板块：https://cloudburstmc.org/resources/categories/nukkit-plugins.1/
 
@@ -87,17 +81,15 @@ NukkitX官方搭建的资源中心，支持下载Nukkit插件。
 <details>
   <summary>点击展开</summary>
 
-  <tr>
-    <td align="center">
-      <a href="https://github.com">
-        <img
-          src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Symbol.png"
-          width="100px;"
-          alt=""
-        /><br /><sub><b>GitHub</b></sub>
-      </a>
-    </td>
-  </tr>
+  <div style={{textAlign: 'center'}}>
+    <a href="https://github.com">
+      <img
+        src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Symbol.png"
+        style={{width: '100px'}}
+        alt="GitHub"
+      /><br /><b>GitHub</b>
+    </a>
+  </div>
 
 全球最大的社交编程及代码托管网站。
 

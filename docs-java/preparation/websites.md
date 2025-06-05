@@ -13,17 +13,15 @@ sidebar_position: 3
 
 ## GitHub
 
-  <tr>
-    <td align="center">
-      <a href="https://github.com">
-        <img
-          src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Symbol.png"
-          width="200px;"
-          alt=""
-        /><br /><sub><b>GitHub</b></sub>
-      </a>
-    </td>
-  </tr>
+  <div style={{textAlign: 'center'}}>
+    <a href="https://github.com">
+      <img
+        src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Symbol.png"
+        style={{width: '200px'}}
+        alt="GitHub"
+      /><br /><b>GitHub</b>
+    </a>
+  </div>
 
 > https://github.com
 
@@ -71,17 +69,15 @@ GitHub界面是全英文，可以尝试安装油猴汉化插件：https://github
 
 ## Discord
 
-  <tr>
-    <td align="center">
-      <a href="https://discord.com">
-        <img
-          src="https://img.fastmirror.net/s/2025/01/24/67936fb558f81.png"
-          width="200px;"
-          alt=""
-        /><br /><sub><b>Discord</b></sub>
-      </a>
-    </td>
-  </tr>
+  <div style={{textAlign: 'center'}}>
+    <a href="https://discord.com">
+      <img
+        src="https://img.fastmirror.net/s/2025/01/24/67936fb558f81.png"
+        style={{width: '200px'}}
+        alt="Discord"
+      /><br /><b>Discord</b>
+    </a>
+  </div>
 
 > https://discord.com
 
@@ -97,17 +93,15 @@ import TabItem from '@theme/TabItem';
 <Tabs queryString="website">
   <TabItem value="spigotmc" label="SpigotMC">
 
-  <tr>
-    <td align="center">
-      <a href="https://www.spigotmc.org/">
-        <img
-          src="https://static.spigotmc.org/img/spigot.png"
-          width="200px;"
-          alt=""
-        /><br /><sub><b>SpigotMC</b></sub>
-      </a>
-    </td>
-  </tr>
+  <div style={{textAlign: 'center'}}>
+    <a href="https://www.spigotmc.org/">
+      <img
+        src="https://static.spigotmc.org/img/spigot.png"
+        style={{width: '200px'}}
+        alt="SpigotMC"
+      /><br /><b>SpigotMC</b>
+    </a>
+  </div>
 
 > https://www.spigotmc.org
 
@@ -130,17 +124,15 @@ SpigotMC 是目前 Minecraft 开服圈最大的插件网站，最大的问题是
 
   <TabItem value="bukkit" label="Bukkit">
 
-  <tr>
-    <td align="center">
-      <a href="https://dev.bukkit.org/">
-        <img
-          src="https://minecraft.fr/wp-content/uploads/2013/05/bukkit.jpg"
-          width="200px;"
-          alt=""
-        /><br /><sub><b>Bukkit</b></sub>
-      </a>
-    </td>
-  </tr>
+  <div style={{textAlign: 'center'}}>
+    <a href="https://dev.bukkit.org/">
+      <img
+        src="https://minecraft.fr/wp-content/uploads/2013/05/bukkit.jpg"
+        style={{width: '200px'}}
+        alt="Bukkit"
+      /><br /><b>Bukkit</b>
+    </a>
+  </div>
 
 > https://dev.bukkit.org/bukkit-plugins
 
@@ -152,17 +144,15 @@ SpigotMC 是目前 Minecraft 开服圈最大的插件网站，最大的问题是
 
   <TabItem value="hangar" label="Hangar">
 
-  <tr>
-    <td align="center">
-      <a href="https://hangar.papermc.io/">
-        <img
-          src="https://docs.papermc.io/assets/images/papermc-logomark-512-f125384f3367cd4d9291ca983fcb7334.png"
-          width="200px;"
-          alt=""
-        /><br /><sub><b>Hangar</b></sub>
-      </a>
-    </td>
-  </tr>
+  <div style={{textAlign: 'center'}}>
+    <a href="https://hangar.papermc.io/">
+      <img
+        src="https://docs.papermc.io/assets/images/papermc-logomark-512-f125384f3367cd4d9291ca983fcb7334.png"
+        style={{width: '200px'}}
+        alt="Hangar"
+      /><br /><b>Hangar</b>
+    </a>
+  </div>
 
 > https://hangar.papermc.io
 
@@ -174,17 +164,15 @@ PaperMC 的现代化的插件平台，目前正在 Beta 阶段，插件相对较
 
   <TabItem value="modrinth" label="Modrinth">
 
-  <tr>
-    <td align="center">
-      <a href="Modrinth">
-        <img
-          src="https://avatars.githubusercontent.com/u/67560307?s=280&v=4"
-          width="200px;"
-          alt=""
-        /><br /><sub><b>Modrinth</b></sub>
-      </a>
-    </td>
-  </tr>
+  <div style={{textAlign: 'center'}}>
+    <a href="https://modrinth.com">
+      <img
+        src="https://avatars.githubusercontent.com/u/67560307?s=280&v=4"
+        style={{width: '200px'}}
+        alt="Modrinth"
+      /><br /><b>Modrinth</b>
+    </a>
+  </div>
 
 > https://modrinth.com
 
@@ -198,17 +186,15 @@ PaperMC 的现代化的插件平台，目前正在 Beta 阶段，插件相对较
 
   <TabItem value="builtbybit" label="Builtbybit">
 
-  <tr>
-    <td align="center">
-      <a href="https://builtbybit.com/resources/categories/minecraft-plugins.1">
-        <img
-          src="https://raw.githubusercontent.com/swanis/builtbybit-java-api-wrapper/main/assets/icon-blue.png"
-          width="200px;"
-          alt=""
-        /><br /><sub><b>Builtbybit</b></sub>
-      </a>
-    </td>
-  </tr>
+  <div style={{textAlign: 'center'}}>
+    <a href="https://builtbybit.com/resources/categories/minecraft-plugins.1">
+      <img
+        src="https://raw.githubusercontent.com/swanis/builtbybit-java-api-wrapper/main/assets/icon-blue.png"
+        style={{width: '200px'}}
+        alt="Builtbybit"
+      /><br /><b>Builtbybit</b>
+    </a>
+  </div>
 
 > https://builtbybit.com/resources/categories/minecraft-plugins.1
 >
@@ -226,17 +212,15 @@ PaperMC 的现代化的插件平台，目前正在 Beta 阶段，插件相对较
 
   <TabItem value="polymart" label="Polymart">
 
-  <tr>
-    <td align="center">
-      <a href="https://polymart.org">
-        <img
-          src="https://img.fastmirror.net/s/2024/11/16/673815d815a3c.png"
-          width="200px;"
-          alt=""
-        /><br /><sub><b>Polymart</b></sub>
-      </a>
-    </td>
-  </tr>
+  <div style={{textAlign: 'center'}}>
+    <a href="https://polymart.org">
+      <img
+        src="https://img.fastmirror.net/s/2024/11/16/673815d815a3c.png"
+        style={{width: '200px'}}
+        alt="Polymart"
+      /><br /><b>Polymart</b>
+    </a>
+  </div>
 
 > https://polymart.org
 
@@ -250,17 +234,15 @@ PaperMC 的现代化的插件平台，目前正在 Beta 阶段，插件相对较
 <Tabs queryString="discuss">
   <TabItem value="minebbs" label="MineBBS">
 
-  <tr>
-    <td align="center">
-      <a href="https://www.minebbs.com/">
-        <img
-          src="https://www.minebbs.com/data/assets/logo/mb-logo-blue-1x.png"
-          width="200px;"
-          alt=""
-        /><br /><sub><b>MineBBS</b></sub>
-      </a>
-    </td>
-  </tr>
+  <div style={{textAlign: 'center'}}>
+    <a href="https://www.minebbs.com/">
+      <img
+        src="https://www.minebbs.com/data/assets/logo/mb-logo-blue-1x.png"
+        style={{width: '200px'}}
+        alt="MineBBS"
+      /><br /><b>MineBBS</b>
+    </a>
+  </div>
 
 > 插件板块：https://www.minebbs.com/forums/mcjeplugin
 
@@ -272,17 +254,15 @@ PaperMC 的现代化的插件平台，目前正在 Beta 阶段，插件相对较
 
   <TabItem value="mcbbs" label="MCBBS">
 
-  <tr>
-    <td align="center">
-      <a href="https://www.mcbbs.co">
-        <img
-          src="https://img.fastmirror.net/s/2024/11/15/67373333d67e6.png"
-          width="200px;"
-          alt=""
-        /><br /><sub><b>MCBBS</b></sub>
-      </a>
-    </td>
-  </tr>
+  <div style={{textAlign: 'center'}}>
+    <a href="https://www.mcbbs.co">
+      <img
+        src="https://img.fastmirror.net/s/2024/11/15/67373333d67e6.png"
+        style={{width: '200px'}}
+        alt="MCBBS"
+      /><br /><b>MCBBS</b>
+    </a>
+  </div>
 
 曾经最大的综合性我的世界中文论坛，已经关站
 
@@ -298,17 +278,15 @@ PaperMC 的现代化的插件平台，目前正在 Beta 阶段，插件相对较
 
   <TabItem value="pixelbbs" label="PixelBBS">
 
-  <tr>
-    <td align="center">
-      <a href="https://www.pixelbbs.cn">
-        <img
-          src="https://www.pixelbbs.cn/template/quater_2023_dji/src/Pixelbbs.gif"
-          width="200px;"
-          alt=""
-        /><br /><sub><b>PixelBBS</b></sub>
-      </a>
-    </td>
-  </tr>
+  <div style={{textAlign: 'center'}}>
+    <a href="https://www.pixelbbs.cn">
+      <img
+        src="https://www.pixelbbs.cn/template/quater_2023_dji/src/Pixelbbs.gif"
+        style={{width: '200px'}}
+        alt="PixelBBS"
+      /><br /><b>PixelBBS</b>
+    </a>
+  </div>
 
 像素论坛还在搞云黑
 
@@ -328,17 +306,15 @@ PaperMC 的现代化的插件平台，目前正在 Beta 阶段，插件相对较
 
   <TabItem value="mcmod" label="MCmod">
 
-  <tr>
-    <td align="center">
-      <a href="https://www.mcmod.cn">
-        <img
-          src="https://img.fastmirror.net/s/2024/10/01/66fbe12c6bb07.png"
-          width="200px;"
-          alt=""
-        /><br /><sub><b>MCmod</b></sub>
-      </a>
-    </td>
-  </tr>
+  <div style={{textAlign: 'center'}}>
+    <a href="https://www.mcmod.cn">
+      <img
+        src="https://img.fastmirror.net/s/2024/10/01/66fbe12c6bb07.png"
+        style={{width: '200px'}}
+        alt="MCmod"
+      /><br /><b>MCmod</b>
+    </a>
+  </div>
 
 > https://www.mcmod.cn
 
@@ -364,17 +340,15 @@ DecentHolograms 插件统计：
 
   <TabItem value="minecraft-tools" label="Minecraft 工具箱">
 
-  <tr>
-    <td align="center">
-      <a href="https://www.minebbs.com/">
-        <img
-          src="https://minecraft.tools/en/css/img/logo.png"
-          width="200px;"
-          alt=""
-        /><br /><sub><b>Minecraft tools</b></sub>
-      </a>
-    </td>
-  </tr>
+  <div style={{textAlign: 'center'}}>
+    <a href="https://minecraft.tools">
+      <img
+        src="https://minecraft.tools/en/css/img/logo.png"
+        style={{width: '200px'}}
+        alt="Minecraft tools"
+      /><br /><b>Minecraft tools</b>
+    </a>
+  </div>
 
 > https://minecraft.tools
 

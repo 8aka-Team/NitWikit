@@ -34,13 +34,13 @@ sidebar_position: 2
 
 ### 伤害显示
 
-启用：`/dh feature on healing_display`
+启用：`/dh feature on damage_display`
 
 ![](_images/DecentHolograms/DecentHolograms_5.png)
 
 ### 回血显示
 
-启用：`/dh feature on damage_display`
+启用：`/dh feature on healing_display`
 
 ![](_images/DecentHolograms/DecentHolograms_6.png)
 

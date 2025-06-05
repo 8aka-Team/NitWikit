@@ -23,7 +23,7 @@ Spark是一个Minecraft的性能分析器，支持广泛(如 Bukkit，BungeeCord
 
 `文档(英文)` https://spark.lucko.me/docs
 
-`文档(中文)` https://snowcutieowo.github.io/spark/README.html
+`文档(中文)` https://snowcutieowo.github.io/spark
 
 :::
 

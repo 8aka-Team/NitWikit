@@ -110,6 +110,13 @@ sidebar_position: 4
 | MythicArtifacts      | MythicCraft 团队 | mma  |
 | MangoQuests          | Cutiemango | mq   |
 
+两个同名同功能插件：
+
+| 全名                 | 作者             | 缩写 |
+| -------------------- | ---------------- | ---- |
+| MythicDungeons       | MythicCraft 团队 | md   |
+| MythicDungeons       | i998979          | md   |
+
 ### N
 
 | 全名                 | 作者 | 缩写 |

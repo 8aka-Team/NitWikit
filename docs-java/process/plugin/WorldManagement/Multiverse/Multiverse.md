@@ -21,6 +21,8 @@ sidebar_label: 多世界 - Multiverse
   <img src="https://cdn.jsdmirror.cn/npm/@intergrav/devins-badges@3/assets/cozy/supported/spigot_vector.svg" class="stylish-image" alt="Spigot" />
 </a>
 
+
+
 <a href="https://github.com/DecentSoftware-eu/DecentHolograms/releases">
   <img src="https://img.shields.io/github/v/release/Multiverse/Multiverse-Core" class="stylish-image" alt="Release" />
 </a>
@@ -46,6 +48,8 @@ sidebar_label: 多世界 - Multiverse
 ## 链接
 
 :::info
+
+`官网` https://mvplugins.org
 
 `Bukkit` https://dev.bukkit.org/projects/multiverse-core
 

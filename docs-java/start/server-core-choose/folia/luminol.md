@@ -5,6 +5,8 @@ sidebar_position: 1
 
 # Luminol
 
+![](../_images/Luminol.png)
+
 Luminol 是一个非常棒的 Folia 分支！
 
 ## 安装
@@ -14,6 +16,8 @@ Luminol 是一个非常棒的 Folia 分支！
 请选择 Luminol，我们后面会讲 LightLuminol，下载到本地后，替换原来的核心就可以了
 
 ## LightLuminol
+
+![](../_images/LightingLuminol.png)
 
 LightingLuminol 是 Luminol 的分支，旨在修复对 BukkitAPI 的破坏，最大程度保证 Bukkit 插件的兼容性。但是，虽然 LightLuminol 对于 Bukkit 插件兼容性较好，但是会有许多问题，包括不定时的NullPointerError，Thread 不安全，内存泄露，数据丢失（一天崩个几十次，挺正常的）
 

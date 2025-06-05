@@ -7,6 +7,12 @@ sidebar_position: 4
 
 你已经做好了准备工作，开始启动你的服务器了
 
+:::tip 
+
+新版本的 Forge 和 Neoforge 使用安装器安装后会自动生成启动脚本。 参阅 [新版 Forge 和 NeoForge 启动方法](#新版-forge-和-neoforge-启动)
+
+:::
+
 ## 笨蛋脚本
 
 下载此[脚本](https://script.8aka.org/generate-script)，回答几个问题就可以为你自动生成启动脚本!!
@@ -62,7 +68,7 @@ sidebar_position: 4
 
 用你前面下的文本编辑器编辑这个文件，写入以下信息并保存，然后双击 `start.bat`
 
-```shell
+```shell title="start.bat"
 java -Xms2G -Xmx2G -jar 核心名.jar --nogui
 ```
 
@@ -94,7 +100,7 @@ Done (6.554s)! For help， type "help"
 
 ## 更复杂的 bat
 
-请参考 [JVM 参数优化](/docs-java/process/maintenance/optimize/optimize.md#jvm-参数优化)
+请参考 [JVM 优化](../process/maintenance/optimize/jvm/jvm.md)
 
 ## 常见问题
 
@@ -107,6 +113,10 @@ Downloading mojang_x.x.x.jar
 ```
 
 请尝试使用科学上网。
+
+import GlobalContent from '@site/src/components/GlobalContent'
+
+<GlobalContent>
 
 ### 我不会在命令行界面 (CMD / 终端 / Powershell) 使用科学上网
 
@@ -141,6 +151,8 @@ export HTTPS_PROXY=http://127.0.0.1:7890
 注：输入之后仅对这个命令行窗口有效，`开启新的 / 关闭它` 之后要重新输入。
 
 > 大佬们，浏览器能用不是 cmd 能用，不然你猜我为什么写这个。
+
+</GlobalContent>
 
 ### 中文乱码
 
@@ -179,14 +191,54 @@ java -Xms2G -Xmx2G -jar server.jar --nogui
 
 ### Invalid initial heap size: -Xms
 
-不是哥们，内存大小设置长这样
+:::note 
+
+内存大小设置长这样
 
 ```shell
 -Xms1024M -Xmx2048M
 ```
 
-不是这样!!!!!!
+不是这样!
 
 ```shell
 -Xms 1024M -Xmx 2048M
+```
+:::
+
+### 新版 Forge 和 NeoForge 启动
+
+使用安装器安装后，你无法在根目录找到 `xxx.jar`，同时会生成一个bat脚本。里面大概是这样的
+
+```shell
+@echo off
+REM Forge requires a configured set of both JVM and program arguments.
+REM Add custom JVM arguments to the user_jvm_args.txt
+REM Add custom program arguments {such as nogui} to this file in the next line before the %* or
+REM  pass them to this script directly
+java @user_jvm_args.txt @libraries/net/minecraftforge/forge/1.18.2-40.1.60/win_args.txt %*
+pause
+```
+
+这是因为新版的 Forge 和 NeoForge 将服务器 jar 包放在 libraries 文件夹里面，并通过自带的启动脚本进行启动。
+前面 `REM` 开头的是注释，大概就是说
+
+> Forge需要一组配置好的JVM和程序参数。
+> 向user_JVM_args.txt添加自定义JVM参数
+> 在%*或之前的下一行将自定义程序参数（如nogui）添加到此文件中
+> 直接将它们传递给此脚本
+
+此时你会发现有一个 `user_JVM_args.txt` 在你的根目录下，打开他，将原来的
+
+```shell
+java -Xms2G -Xmx2G -jar server.jar --nogui
+```
+中 `java` 和 `-jar` 之间的内容填写到该文件中。
+
+如果你想使用 `nogui`，就像注释里面说的，在 `@libraries/net/minecraftforge/forge/1.18.2-40.1.60/win_args.txt` 和 `%*` 之间写入 `nogui`
+
+就像这样
+
+```shell
+java @user_jvm_args.txt @libraries/net/minecraftforge/forge/1.18.2-40.1.60/win_args.txt nogui %*
 ```

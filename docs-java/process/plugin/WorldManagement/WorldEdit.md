@@ -7,7 +7,7 @@ sidebar_label: 创世神 - WorldEdit
 
 :::info
 
-`Bukkit` https://dev.bukkit.org/projects/multiverse-core
+`Bukkit` https://dev.bukkit.org/projects/worldedit
 
 `Hangar` https://hangar.papermc.io/EngineHub/WorldEdit
 

@@ -1,10 +1,18 @@
 import {themes as prismThemes} from "prism-react-renderer";
 
+const IS_CHINA_SITE = process.env.CHINA === 'true';
+const ICP_LICENSE = process.env.ICP_LICENSE;
+
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
+
     future: {
-        experimental_faster: true,
+        v4: true,
+        experimental_faster: {
+            rspackBundler: true, // required flag
+            rspackPersistentCache: true, // new flag
+        },
     },
 
     customFields: {
@@ -12,6 +20,21 @@ const config = {
         titlePrefix: "主页",
         // 开始按钮文字
         start: "快速开始 🥵",
+        // 标题颜色
+        titleColor: "white",
+        // 自定义swizzle配置
+        swizzleConfig: {
+            enabled: true,
+            components: {
+                'theme/DocItem/Footer/LastUpdated': {
+                    override: 'src/plugins/theme/LastUpdate',
+                },
+            },
+        },
+        // ICP 备案号
+        ICP_LICENSE: ICP_LICENSE,
+        // 是否为中国站点
+        IS_CHINA_SITE: IS_CHINA_SITE,
     },
 
     markdown: {
@@ -22,7 +45,7 @@ const config = {
     tagline: '一群笨蛋编写的 Minecraft 开服教程',
     favicon: 'img/favicon.ico',
 
-    url: 'https://nitwikit.8aka.org',
+    url: IS_CHINA_SITE ? 'https://nitwikit.8aka.cn' : 'https://nitwikit.8aka.org',
 
     baseUrl: '/',
 
@@ -40,6 +63,7 @@ const config = {
     clientModules: [
         require.resolve('./src/clientModules/routeModules.js'),
         require.resolve('./src/clientModules/adsModules.js'),
+        require.resolve('./src/clientModules/githubIconModule.js'),
     ],
 
     presets: [
@@ -111,7 +135,20 @@ const config = {
                 id: 'docs-bedrock',
                 path: 'docs-bedrock',
                 routeBasePath: 'Bedrock',
-                editUrl: 'https://github.com/postyizhan/NitWikit/tree/main',
+                editUrl: 'https://github.com/8aka-Team/NitWikit/tree/main',
+                sidebarPath: require.resolve('./sidebars.js'),
+                editCurrentVersion: true,
+                showLastUpdateAuthor: true,
+                showLastUpdateTime: true,
+            },
+        ],
+        [
+            '@docusaurus/plugin-content-docs',
+            {
+                id: 'docs-about',
+                path: 'docs-about',
+                routeBasePath: 'about',
+                editUrl: 'https://github.com/8aka-Team/NitWikit/tree/main',
                 sidebarPath: require.resolve('./sidebars.js'),
                 editCurrentVersion: true,
                 showLastUpdateAuthor: true,
@@ -119,10 +156,21 @@ const config = {
             },
         ],
     ],
+    headTags: [
+        {
+            tagName: 'link',
+            attributes: {
+                rel: 'shortcut icon',
+                type: "image/x-icon",
+                href: '/favicon.ico',
+            },
+        }
+    ],
 
     themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
+            // Giscus 评论功能在 CHINA 环境变量设置时禁用
             giscus: {
                 repo: '8aka-Team/NitWikit',
                 repoId: 'R_kgDOLkVR-A',
@@ -133,7 +181,7 @@ const config = {
                 selector: '.markdown :not(em) > img',
                 background: {
                     light: 'rgb(255, 255, 255)',
-                    dark: 'rgb(50, 50, 50)',
+                    dark: 'rgb(36 36 36 / 80%)',
                 },
             },
             // 标题渲染范围
@@ -148,9 +196,7 @@ const config = {
             },
             image: 'img/docusaurus-social-card.jpg',
             metadata: [
-                {name: '开服教程', content: '一群笨蛋编写的 Minecraft 开服教程'},
-                {name: 'MC教程', content: '一群笨蛋编写的 Minecraft 开服教程'},
-                {name: 'baidu-site-verification', content: 'codeva-POvxxO9Mk4'},
+                {name: 'keywords', content: 'Minecraft, 开服教程, MC, 开服, 插件, 联机, 我的世界'},
             ],
             navbar: {
                 title: 'NitWikit',
@@ -179,6 +225,13 @@ const config = {
                         position: 'left',
                         label: 'Bedrock',
                         docsPluginId: 'docs-bedrock'
+                    },
+                    {
+                        type: 'docSidebar',
+                        sidebarId: 'tutorialSidebar',
+                        position: 'left',
+                        label: '关于我们',
+                        docsPluginId: 'docs-about'
                     },
                     // 搜索框
                     {
@@ -266,6 +319,30 @@ const config = {
             prism: {
                 theme: prismThemes.vsLight,
                 darkTheme: prismThemes.vsDark,
+                additionalLanguages: [
+                    'java', 'kotlin', 'groovy', 'scala',
+                    'bash', 'powershell',
+                    'python', 'ruby', 'php', 'go', 'rust',
+                    'c', 'cpp', 'csharp',
+                    'sql', 'json', 'yaml', 'toml',
+                    'css', 'scss', 'less',
+                    'javascript', 'typescript', 'jsx', 'tsx',
+                    'markup', 'markdown',
+                    'nginx', 'docker', 'diff'
+                ],
+                defaultLanguage: 'plaintext',
+                magicComments: [
+                    {
+                        className: 'theme-code-block-highlighted-line',
+                        line: 'highlight-next-line',
+                        block: {start: 'highlight-start', end: 'highlight-end'},
+                    },
+                    {
+                        className: 'code-block-error-line',
+                        line: 'error-next-line',
+                        block: {start: 'error-start', end: 'error-end'},
+                    },
+                ],
             },
             // 颜色随系统切换
             colorMode: {
@@ -287,12 +364,6 @@ const config = {
 
     themes: [
         '@docusaurus/theme-mermaid'
-    ],
-    scripts: [
-        {
-            src: '/autoload.js',
-            defer: true,
-        },
     ],
 };
 

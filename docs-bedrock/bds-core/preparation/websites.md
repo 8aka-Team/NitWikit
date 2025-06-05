@@ -16,17 +16,15 @@ sidebar_position: 1
 <details>
   <summary>点击展开</summary>
 
-  <tr>
-    <td align="center">
-      <a href="https://www.minebbs.com/">
-        <img
-          src="https://www.minebbs.com/data/assets/logo/mb-logo-blue-1x.png"
-          width="100px;"
-          alt=""
-        /><br /><sub><b>MineBBS</b></sub>
-      </a>
-    </td>
-  </tr>
+  <div style={{textAlign: 'center'}}>
+    <a href="https://www.minebbs.com/">
+      <img
+        src="https://www.minebbs.com/data/assets/logo/mb-logo-blue-1x.png"
+        style={{width: '100px'}}
+        alt="MineBBS"
+      /><br /><b>MineBBS</b>
+    </a>
+  </div>
 
 插件板块：https://www.minebbs.com/resources/categories/bdserver.38/
 
@@ -41,17 +39,15 @@ sidebar_position: 1
 <details>
   <summary>点击展开</summary>
 
-  <tr>
-    <td align="center">
-      <a href="https://bedrinth.com/">
-        <img
-          src="https://futrime.github.io/lip/images/logo.webp"
-          width="100px;"
-          alt=""
-        /><br /><sub><b>Bedrinth</b></sub>
-      </a>
-    </td>
-  </tr>
+  <div style={{textAlign: 'center'}}>
+    <a href="https://bedrinth.com/">
+      <img
+        src="https://futrime.github.io/lip/images/logo.webp"
+        style={{width: '100px'}}
+        alt="Bedrinth"
+      /><br /><b>Bedrinth</b>
+    </a>
+  </div>
 
 插件板块：https://bedrinth.com/
 
@@ -64,17 +60,15 @@ sidebar_position: 1
 <details>
   <summary>点击展开</summary>
 
-  <tr>
-    <td align="center">
-      <a href="https://github.com">
-        <img
-          src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Symbol.png"
-          width="100px;"
-          alt=""
-        /><br /><sub><b>GitHub</b></sub>
-      </a>
-    </td>
-  </tr>
+  <div style={{textAlign: 'center'}}>
+    <a href="https://github.com">
+      <img
+        src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Symbol.png"
+        style={{width: '100px'}}
+        alt="GitHub"
+      /><br /><b>GitHub</b>
+    </a>
+  </div>
 
 全球最大的社交编程及代码托管网站。
 

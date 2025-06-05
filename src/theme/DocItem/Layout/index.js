@@ -2,6 +2,7 @@ import React from 'react';
 import clsx from 'clsx';
 import {useWindowSize} from '@docusaurus/theme-common';
 import {useDoc} from '@docusaurus/plugin-content-docs/client';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext'; // 添加导入
 import DocItemPaginator from '@theme/DocItem/Paginator';
 import DocVersionBanner from '@theme/DocVersionBanner';
 import DocVersionBadge from '@theme/DocVersionBadge';
@@ -37,6 +38,8 @@ function useDocTOC() {
 export default function DocItemLayout({children}) {
   const docTOC = useDocTOC();
   const {metadata} = useDoc();
+  const {siteConfig} = useDocusaurusContext(); // 获取 siteConfig
+  const {IS_CHINA_SITE: isChinaSite} = siteConfig.customFields; // 获取 IS_CHINA_SITE
   const printArticle = () => {
     window.print();
   };
@@ -72,7 +75,7 @@ export default function DocItemLayout({children}) {
           </article>
           <DocItemPaginator />
         </div>
-        {!hideComment && <Comment />}
+        {!hideComment && !isChinaSite && <Comment />}
       </div>
       {docTOC.desktop && <div className="col col--3">{docTOC.desktop}</div>}
       <FloatButton.Group shape="circle" style={{right: 24}} className="article-float-buttons">

@@ -43,6 +43,8 @@ import TabItem from '@theme/TabItem';
 <Tabs queryString="server-core-choose">
 <TabItem value="paper" label="Paper">
 
+![](_images/papermc-wild.svg)
+
 **优势**：
 
 - 性能 - 性能还可以
@@ -56,7 +58,8 @@ import TabItem from '@theme/TabItem';
 
 总的来说，Paper 核心适合那些追究 *极端的* 稳定的人
 
-[点我](https://docs.papermc.io/paper) 查看 Paper 官方文档
+- 官方英文文档 [点我](https://docs.papermc.io/paper)
+- 笨蛋汉化文档 [点我](https://paper.8aka.org/paper)
 
 **下载**：
 
@@ -68,6 +71,8 @@ import TabItem from '@theme/TabItem';
 
 </TabItem>
 <TabItem value="purpur" label="Purpur">
+
+![](_images/purpur.png)
 
 **优势**：
 
@@ -84,7 +89,8 @@ import TabItem from '@theme/TabItem';
 
 综上所述，目前 Purpur 是综合最优选择
 
-[点我](https://purpurmc.org/docs/purpur) 查看 Purpur 官方文档
+- 官方英文文档 [点我](https://purpurmc.org/docs/purpur)
+- 笨蛋汉化文档 [点我](https://purpur.8aka.org/purpur)
 
 **下载**：
 
@@ -95,6 +101,8 @@ import TabItem from '@theme/TabItem';
 
 </TabItem>
 <TabItem value="leaves" label="Leaves">
+
+![](_images/leaves.svg)
 
 **优势**：
 
@@ -122,11 +130,14 @@ leaves 基本完全支持客户端生电 Mod，包括但不限于 Carpet，pca�
 </TabItem>
 <TabItem value="Leaf" label="Leaf">
 
+![](_images/leaf.png)
+
 **优势**：
 
 - 性能 - 比 purpur 好的多的性能（在实体方面甚至能达到 50% 以上的提升）
 - 支持 - 国人开发的核心
-  Paper = Purpur > Leaf /Leaves
+
+  对插件的兼容程度: Paper = Purpur > Leaf /Leaves
 
 **劣势**：
 
@@ -134,11 +145,11 @@ leaves 基本完全支持客户端生电 Mod，包括但不限于 Carpet，pca�
 
 总的来说，相比 Purpur 会有更好的优化，极少不兼容的插件可以及时找作者反馈，所以非常推荐此核心
 
-[点我](https://docs.leafmc.one/zh) 查看 Leaf 官方文档
+[点我](https://www.leafmc.one/zh/docs) 查看 Leaf 官方文档
 
 **下载**：
 
-- [官方](https://github.com/Winds-Studio/Leaf/releases)
+- [官方](https://www.leafmc.one/zh/download)
 - [McRes](https://mcres.cn/downloads/leaf.html)
 
 </TabItem>
@@ -197,6 +208,8 @@ leaves 基本完全支持客户端生电 Mod，包括但不限于 Carpet，pca�
 ### 1.12
 
 我们推荐 Beast
+
+![](_images/Beast.jpg)
 
 **优势**：
 

@@ -35,7 +35,7 @@ _(注意: ![image](https://github.com/user-attachments/assets/49472da4-9b50-4fa3
 
 比如下面这个 TrMenu 菜单例子：
 
-```yaml
+```yaml title="plugins/TrMenu/menus/example.yml"
 Icons:
   test:
     display:
@@ -77,10 +77,18 @@ _详情可以参阅 [Adventure 本机支持](https://docs.advntr.dev/platform/na
 
 平台原生支持 ≠ 使用此平台开发的模组/插件支持！！！
 
-举个例子，仔细观察上述列表，你会发现bukkit并没有支持 MiniMessage ，所以你会发现大部分基于 Bukkit 开发的插件没有 MiniMessage 这一功能(如 EssentialsX)，
-_除非他们自身引入了 Adventure 库(如PlaceholderAPI)。_
+举个例子，仔细观察上述列表，你会发现 bukkit 并没有支持 MiniMessage ，所以你会发现大部分基于 Bukkit 开发的插件没有 MiniMessage 这一功能(如 EssentialsX)，
+_除非他们自身引入了 Adventure 库(如 PlaceholderAPI)。_
 
 而基于 Paper 开发的大部分插件都引入了这一功能，所以不要发现一个新奇玩意就到处瞎套。
+
+:::
+
+:::tip
+
+有些插件只是需要 RGB 颜色，引入 Adventure 库可能会让插件变的非常臃肿，所以有相当部分的插件会使用其他库或自行实现
+
+然后在插件介绍页写 “支持 MiniMessage”，其实只是使用与 MiniMessage 一样的语法，代码层面并不是 Adventure 库。
 
 :::
 
@@ -96,7 +104,7 @@ _除非他们自身引入了 Adventure 库(如PlaceholderAPI)。_
 
 用一个 TrMenu 菜单配置展示下：
 
-```yaml
+```yaml title="plugins/TrMenu/menus/example.yml"
 Icons:
   test:
     display:
@@ -125,7 +133,23 @@ Icons:
 
 关于实际使用格式详见 [标准标签](https://docs.advntr.dev/minimessage/format.html#standard-tags)。
 
-### 参考
+## 行内复合文本
+
+TabooLib Components，当你使用 TabooLib 框架的插件时，可以使用此写法
+
+可以更方便的编写 json 文本信息，而不只是局限于颜色
+
+> https://plugins.ptms.ink/category/%E8%A1%8C%E5%86%85%E5%A4%8D%E5%90%88%E6%96%87%E6%9C%AC
+
+```text
+[||||||||||||||||||||](gradient=#f6d365,#fda085)
+```
+
+![](https://plugins.ptms.ink/img/Xnip2023-07-25_15-04-02.png)
+
+更多用法见上方链接
+
+## 参考
 
 - https://zh.minecraft.wiki/w/%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%BB%A3%E7%A0%81
 - https://docs.advntr.dev/minimessage/format.html

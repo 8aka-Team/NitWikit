@@ -58,4 +58,4 @@ sidebar_position: 7
 
 ## Arthas
 
-使用 Arthas 对报错进行分析,[文档](https://nitwikit.8aka.org/arthas),需要拥有较强的技术力
+使用 Arthas 对报错进行分析，[文档](https://nitwikit.8aka.org/arthas)，需要拥有较强的技术力

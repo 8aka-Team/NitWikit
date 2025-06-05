@@ -22,12 +22,12 @@ sidebar_label: 常见问题1
 所需插件：
 
 - Multiverse-Core
-- [PlaceHolderAPI](../Front-Plugin/PlaceHolderAPI/PlaceHolderAPI.md)
-- [聊天插件](../ManageTool/chat/chat.md)
-- [TAB和计分板插件](../other/TAB&Scoreboard/Tab&Scoreboard.md)
+- [PlaceHolderAPI](../../Front-Plugin/PlaceHolderAPI/PlaceHolderAPI.md)
+- [聊天插件](../../ManageTool/chat/chat.md)
+- [TAB和计分板插件](../../other/TAB&Scoreboard/Tab&Scoreboard.md)
 - 其他你想展示中文世界名的插件
 
-安装 [papi 的 Multiverse 扩展](../Front-Plugin/PlaceHolderAPI/CommonUsage.md#multiverse)
+安装 [papi 的 Multiverse 扩展](../../Front-Plugin/PlaceHolderAPI/CommonUsage.md#multiverse)
 
 ## 设置别名
 

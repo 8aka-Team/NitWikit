@@ -17,11 +17,15 @@ Mod 端的选择一般优先考虑玩法（即主要的玩法 Mod），再考虑
 
 ### NeoForge
 
+![](_images/NeoForge.png)
+
 关于 NeoForge 和 Forge 的关系，可以查看[这篇文章](https://www.bilibili.com/opus/827402209530478597)
 
 通常来说，1.21 以上**可以**使用 NeoForge
 
 ### Sinytra Connector
+
+![](_images/Sinytra_Connector.png)
 
 Sinytra Connector(中文名:信雅互联) 可以在 Forge 上运行 Fabric 模组
 
@@ -50,6 +54,8 @@ Kilt 可以在 Fabric 上运行 Forge 模组
 
 ### Quilt
 
+![](_images/Quilt.svg)
+
 建议直接用 Fabric
 
 ### Legacy Fabric
@@ -66,7 +72,7 @@ Legacy Fabric 的模组生态相较于 Forge 并不完善，不建议使用。
 
 其他整活版本:
 
-| 名称                   | 兼容版本         | 下载地址                                          |
+| 名称                   | 兼容版本         | 下载地址                                |
 |----------------------|--------------|-----------------------------------------------|
 | Babric               | Beta 1.7.3   | [McMOD](https://www.mcmod.cn/class/6367.html) |
 | Cursed Legacy Fabric | Beta 1.7.3   | [McMOD](https://www.mcmod.cn/class/3902.html) |

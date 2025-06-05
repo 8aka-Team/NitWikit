@@ -4,9 +4,14 @@ sidebar_position: 1
 ---
 
 ![AllayMClogo](https://www.minebbs.com/data/attachments/75/75565-950caff3b64670c4eee997d282381218.jpg)
-<center>Allay：下一代的MCBE服务端软件</center>
-<center>[Allay官网](https://docs.allaymc.org/)
-[Github仓库](https://github.com/AllayMC/Allay)</center>
+
+<div align="center">Allay：下一代的MCBE服务端软件</div>
+
+<div align="center">
+
+[Allay官网](https://docs.allaymc.org/) | [Github仓库](https://github.com/AllayMC/Allay)
+
+</div>
 
 ## 介绍
 

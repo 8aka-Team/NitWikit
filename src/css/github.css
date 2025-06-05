@@ -1,13 +1,88 @@
-.header-github-link::before {
-    content: "";
-    width: 24px;
-    height: 24px;
-    display: flex;
-    background-color: var(--ifm-navbar-link-color);
-    mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E");
-    transition: background-color var(--ifm-transition-fast) var(--ifm-transition-timing-default);
+/* GitHub图标基本样式 - 确保圆形 */
+.header-github-link,
+.github-icon-button {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0.4rem !important;
+    width: 2.2rem !important;
+    height: 2.2rem !important;
+    border-radius: 50% !important; /* 确保圆形 */
+    transition: background-color 0.2s !important;
+    color: var(--ifm-navbar-link-color) !important;
+    position: relative !important;
+    overflow: hidden !important;
+    /* 明确覆盖卡片样式 */
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
 }
 
-.header-github-link:hover::before {
-    background-color: var(--ifm-navbar-link-hover-color);
+/* 移除任何可能的伪元素 */
+.header-github-link:before,
+.header-github-link:after,
+.github-icon-button:before,
+.github-icon-button:after {
+    display: none !important;
+    content: none !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    background: none !important;
+}
+
+/* 确保不会继承卡片样式 */
+.header-github-link.card,
+.header-github-link[class*="card"],
+.github-icon-button.card,
+.github-icon-button[class*="card"] {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0.4rem !important;
+    background: transparent !important;
+}
+
+.header-github-link:hover,
+.github-icon-button:hover {
+    background-color: var(--ifm-color-emphasis-200) !important;
+    color: var(--ifm-navbar-link-color) !important;
+    transform: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.header-github-link svg,
+.github-icon-button svg {
+    width: 1.7rem !important;
+    height: 1.7rem !important;
+    fill: currentColor !important;
+}
+
+/* 深色模式下的特定样式 */
+html[data-theme='dark'] .header-github-link,
+html[data-theme='dark'] .github-icon-button {
+    color: var(--ifm-navbar-link-color) !important;
+}
+
+html[data-theme='dark'] .header-github-link:hover,
+html[data-theme='dark'] .github-icon-button:hover {
+    background-color: var(--ifm-color-emphasis-200) !important;
+}
+
+/* 移动设备上的GitHub图标样式 - 完全隐藏 */
+@media (max-width: 996px) {
+    .header-github-link,
+    .github-icon-button,
+    #github-button-container,
+    .navbar__items--right .header-github-link,
+    .navbar__items--right .github-icon-button {
+        display: none !important;
+        width: 0 !important;
+        height: 0 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+        position: absolute !important;
+        pointer-events: none !important;
+    }
 }

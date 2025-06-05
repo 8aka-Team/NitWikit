@@ -28,8 +28,6 @@ sidebar_label: 商店 - QuickShop
 
 `插件百科` https://mineplugin.org/QuickShop
 
-`QuickShop-Hikari插件百科` https://quickshop-community.github.io/QuickShop-Hikari-Documents/
-
 :::
 
 <!--markdownlint-disable line-length-->
@@ -59,7 +57,7 @@ sidebar_label: 商店 - QuickShop
 `GitHub` https://github.com/PotatoCraft-Studio/QuickShop-Reremake
 
 :::
-![](https://bstats.org/signatures/bukkit/QuickShop-Reremake.svg)
+[![](https://bstats.org/signatures/bukkit/QuickShop-Reremake.svg)](https://bstats.org/plugin/bukkit/QuickShop-Reremake/3320)
 
 停止维护
 
@@ -67,12 +65,16 @@ sidebar_label: 商店 - QuickShop
 
 :::info
 
+`SpigotMC` https://www.spigotmc.org/resources/.100125
+
 `Modrinth` https://modrinth.com/plugin/quickshop-hikari
 
-`SpigotMC` https://www.spigotmc.org/resources/.100125
+`MineBBS` https://www.minebbs.com/resources/.11340
 
 `GitHub` https://github.com/QuickShop-Community/QuickShop-Hikari
 
+`文档` https://quickshop-community.github.io/QuickShop-Hikari-Documents
+
 :::
 
-![](https://bstats.org/signatures/bukkit/QuickShop-Hikari.svg)
+[![](https://bstats.org/signatures/bukkit/QuickShop-Hikari.svg)](https://bstats.org/plugin/bukkit/QuickShop-Hikari/14281)

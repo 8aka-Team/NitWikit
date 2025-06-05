@@ -1,0 +1,206 @@
+/* 贡献者容器样式 */
+.contributor-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 18px;
+  margin: 24px 0;
+}
+
+/* 贡献者卡片样式 */
+.contributor-card {
+  display: flex;
+  padding: 16px;
+  background-color: var(--ifm-card-background-color);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: all 0.25s ease;
+  position: relative;
+  border-left: 3px solid var(--ifm-color-emphasis-300);
+}
+
+.contributor-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-left-color: var(--ifm-color-primary);
+}
+
+/* 前三名特殊样式 */
+.contributor-card:nth-child(1) {
+  border-left-color: #FFD700;
+}
+
+.contributor-card:nth-child(2) {
+  border-left-color: #C0C0C0;
+}
+
+.contributor-card:nth-child(3) {
+  border-left-color: #CD7F32;
+}
+
+/* 排名标识 */
+.contributor-rank {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: var(--ifm-color-emphasis-300);
+  color: var(--ifm-color-emphasis-900);
+}
+
+/* 前三名排名特殊样式 */
+.contributor-card:nth-child(1) .contributor-rank {
+  background-color: #FFD700;
+  color: #333;
+}
+
+.contributor-card:nth-child(2) .contributor-rank {
+  background-color: #C0C0C0;
+  color: #333;
+}
+
+.contributor-card:nth-child(3) .contributor-rank {
+  background-color: #CD7F32;
+  color: #333;
+}
+
+/* 头像容器样式 */
+.contributor-avatar-wrapper {
+  margin-right: 14px;
+  flex-shrink: 0;
+}
+
+/* 头像样式 */
+.contributor-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.contributor-card:hover .contributor-avatar {
+  transform: scale(1.05);
+}
+
+/* 贡献者信息容器 */
+.contributor-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+/* 贡献者名称 */
+.contributor-name {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.contributor-name a {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contributor-name a:hover {
+  color: var(--ifm-color-primary-darker);
+}
+
+/* 贡献统计 */
+.contributor-stats {
+  display: flex;
+  gap: 12px;
+  font-size: 14px;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.additions {
+  color: #28a745;
+  font-weight: 500;
+}
+
+.deletions {
+  color: #d73a49;
+  font-weight: 500;
+}
+
+/* 总贡献量样式 */
+.contributor-total {
+  font-size: 13px;
+  color: var(--ifm-color-emphasis-700);
+}
+
+/* 加载状态 */
+.contributor-loading {
+  padding: 18px;
+  text-align: center;
+  color: var(--ifm-color-primary);
+  background-color: var(--ifm-color-emphasis-100);
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+/* 错误状态 */
+.contributor-error {
+  padding: 18px;
+  text-align: center;
+  color: var(--ifm-color-danger);
+  background-color: var(--ifm-color-danger-contrast-background);
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+/* 无数据状态 */
+.contributor-empty {
+  padding: 18px;
+  text-align: center;
+  color: var(--ifm-color-emphasis-600);
+  background-color: var(--ifm-color-emphasis-100);
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+/* 响应式布局 */
+@media (max-width: 996px) {
+  .contributor-container {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .contributor-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .contributor-avatar {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+/* 黑暗模式适配 */
+[data-theme='dark'] .contributor-card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+[data-theme='dark'] .contributor-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+[data-theme='dark'] .contributor-rank {
+  background-color: var(--ifm-color-emphasis-400);
+  color: var(--ifm-color-emphasis-1000);
+} 

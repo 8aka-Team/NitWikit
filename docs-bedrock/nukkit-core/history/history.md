@@ -11,7 +11,8 @@ import TabItem from '@theme/TabItem';
 :::
 
 ![Nukkit logo](https://wiki.mcbe-dev.net/w/thumb.php?f=Nukkit.png&width=96)
-<center>Nukkit：核能驱动的Minecraft基岩版服务器软件。</center>
+
+<div align="center">Nukkit：核能驱动的Minecraft基岩版服务器软件。</div>
 
 ## 什么是 Nukkit
 
@@ -94,7 +95,7 @@ Nukkit拥有相当丰富的社区分支，例如PM1E、PowerNukkit和PowerNukkit
 | 介绍 | Nukkit PetteriM1 Edition 是一个基于 Java 开发的 Minecraft Bedrock Edition 服务器软件的定制版本，由 Nukkit 核心开发者 PetteriM1 制作，支持从 1.2 到 最新版版本 的多客户端，并内置生物 AI 和生成功能 |
 | 下载 | [Github Releases](https://github.com/PetteriM1/NukkitPetteriM1Edition/releases) |
 | 支持的 MC 版本 | 1.13.x-最新版(目前保持更新) |
-| **争议问题** | **2022年11月15日，PetteriM1删除了PM1E仓库下的所有代码，并表示接下来只会发布混淆过的jar文件供使用。此举引起了社区的强烈不满，据知情人士透露，这么做的原因是为了防止“别人抄袭他的代码”。而在闭源后，PM1ENK又被指控在接下来的更新中存在对PowerNukkitX的抄袭。在此期间，一位名为sora-kawaii的Github用户成功反混淆了PM1ENK并公布了源码，公开的代码显示了PM1ENK对开源项目的抄袭。2023年1月18日，PM1ENK发布了更新，此次更新被认为使用了业内最贵的付费混淆器ZKM以加强混淆效果，这一违背开源协议的行为立刻掀起了社区中抵制PM1ENK的浪潮，随后社区推出了基于PM1ENK最后一个开源版本开发的Nukkit-MOT核心。*（参考文章：刀哥《[为什么你不应该使用PM1ENK - 细说PM1ENK的罪状](https://www.minebbs.com/threads/pm1enk-pm1enk.16912/)》*）** |
+| **争议问题** | **2022年11月15日，PetteriM1删除了PM1E仓库下的所有代码，并表示接下来只会发布混淆过的jar文件供使用。此举引起了社区的强烈不满，据知情人士透露，这么做的原因是为了防止"别人抄袭他的代码"。而在闭源后，PM1ENK又被指控在接下来的更新中存在对PowerNukkitX的抄袭。在此期间，一位名为sora-kawaii的Github用户成功反混淆了PM1ENK并公布了源码，公开的代码显示了PM1ENK对开源项目的抄袭。2023年1月18日，PM1ENK发布了更新，此次更新被认为使用了业内最贵的付费混淆器ZKM以加强混淆效果，这一违背开源协议的行为立刻掀起了社区中抵制PM1ENK的浪潮，随后社区推出了基于PM1ENK最后一个开源版本开发的Nukkit-MOT核心。*（参考文章：刀哥《[为什么你不应该使用PM1ENK - 细说PM1ENK的罪状](https://www.minebbs.com/threads/pm1enk-pm1enk.16912/)》*）** |
 
 </TabItem>
 </Tabs>
