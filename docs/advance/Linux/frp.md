@@ -363,3 +363,17 @@ transport.proxyProtocolVersion = "v2"
 **frps的frps.ini或frps.toml不用动。**
 
 至于如何选择 v1 和 v2 ，你需要根据对应服务器对 proxy protocol 的支持情况进行选择。例如 Paper 服务端目前只支持 v2。
+
+在配置完 Frp后，记得将 Paper 配置文件中的协议支持打开：
+
+```yaml
+# config/paper-global.yaml
+proxies:
+  proxy-protocol: true   # 从 false 改为 true
+```
+
+这样配置会使你的服务器仅接受来自 Frp 的连接。
+
+如果你有特殊需求，需要同时支持直连和 Proxy Protocol 的话，请安装 [HAProxyDetector](https://github.com/andylizi/haproxy-detector) 插件来解决。
+
+对于较高的版本，请使用 [HaHaWTH 的 fork 版本](https://github.com/HaHaWTH/HAProxy-Detector)。

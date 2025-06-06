@@ -57,6 +57,8 @@
    `pnpm serve`
 6. 一键构建&测试
    `pnpm test`
+7. 转换图片
+   `python convert.py . --threads 10 --delete-backup --format avif  --report`
 
 # ⬆️ 提交贡献
 
