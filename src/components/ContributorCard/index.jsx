@@ -195,7 +195,21 @@ export default function ContributorCard({ repo = "8aka-Team/NitWikit" }) {
       try {
         setLoading(true);
         
-        // 首先获取基本贡献者数据
+        // 首先尝试从静态JSON文件加载
+        try {
+          const response = await fetch('/data/contributors.json');
+          if (response.ok) {
+            const staticData = await response.json();
+            console.log(`从静态JSON加载了 ${staticData.length} 位贡献者数据`);
+            setContributors(staticData);
+            setLoading(false);
+            return; // 成功加载静态数据，直接返回
+          }
+        } catch (staticError) {
+          console.warn('无法加载静态贡献者数据，将尝试从GitHub API获取:', staticError);
+        }
+        
+        // 静态数据加载失败，回退到直接请求GitHub API
         const contributorsData = await fetchContributors(repo);
         
         // 过滤掉机器人账户
@@ -211,16 +225,13 @@ export default function ContributorCard({ repo = "8aka-Team/NitWikit" }) {
         
         // 合并统计数据到贡献者数据
         const contributorsWithStats = filteredContributors.map(contributor => {
-          // 尝试获取详细的增删行数统计
           const stats = getContributorStats(statsData, contributor.login);
           
-          // 如果无法获取详细统计，使用contributions作为总贡献
-          // 我们可以根据contributions估算增删行数，或者直接使用contributions值
           return {
             ...contributor,
             additions: stats.additions || 0,
-            deletions: stats.deletions || 0, // 估算删除行数
-            total: contributor.contributions || 0 // 使用GitHub提供的贡献数
+            deletions: stats.deletions || 0,
+            total: contributor.contributions || 0
           };
         });
         

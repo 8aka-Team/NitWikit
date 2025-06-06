@@ -5,7 +5,8 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
-    "build": "set DOCUSAURUS_IGNORE_SSG_WARNINGS=true && docusaurus build",
+    "prebuild": "node scripts/fetchContributors.js",
+    "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
@@ -51,6 +52,7 @@
     "@docusaurus/types": "^3.5.2",
     "@tailwindcss/typography": "^0.5.13",
     "markdownlint-cli2": "^0.14.0",
+    "node-fetch": "2",
     "swc-loader": "^0.2.6"
   },
   "browserslist": {
