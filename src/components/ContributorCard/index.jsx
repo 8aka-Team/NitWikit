@@ -140,9 +140,12 @@ function formatNumber(num) {
  */
 export function ContributorCardItem({ contributor, rank }) {
   // 优先使用详细统计中的增删行数，如果没有则使用贡献数
-  const additions = contributor.additions || contributor.contributions || 0;
-  const deletions = contributor.deletions || Math.round(contributor.contributions * 0.3) || 0; // 估算删除行数
+  const additions = contributor.additions || 0;
+  const deletions = contributor.deletions || 0;
   const totalContribution = additions + deletions;
+  
+  // 判断是否有增删行数数据
+  const hasLineStats = additions > 0 || deletions > 0;
   
   return (
     <div className="contributor-card">
@@ -161,11 +164,17 @@ export function ContributorCardItem({ contributor, rank }) {
           </a>
         </div>
         <div className="contributor-stats">
-          <span className="additions">+{formatNumber(additions)}</span>
-          <span className="deletions">-{formatNumber(deletions)}</span>
+          {hasLineStats ? (
+            <>
+              <span className="additions">+{formatNumber(additions)}</span>
+              <span className="deletions">-{formatNumber(deletions)}</span>
+            </>
+          ) : (
+            <span className="no-stats">行数统计暂未显示</span>
+          )}
         </div>
         <div className="contributor-total">
-          总贡献: {formatNumber(contributor.contributions || totalContribution)} 次提交
+          总贡献: {formatNumber(contributor.contributions)} 次提交
         </div>
       </div>
     </div>
@@ -209,8 +218,8 @@ export default function ContributorCard({ repo = "8aka-Team/NitWikit" }) {
           // 我们可以根据contributions估算增删行数，或者直接使用contributions值
           return {
             ...contributor,
-            additions: stats.additions || contributor.contributions || 0,
-            deletions: stats.deletions || Math.round(contributor.contributions * 0.3) || 0, // 估算删除行数
+            additions: stats.additions || 0,
+            deletions: stats.deletions || 0, // 估算删除行数
             total: contributor.contributions || 0 // 使用GitHub提供的贡献数
           };
         });

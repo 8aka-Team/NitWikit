@@ -191,6 +191,16 @@
   margin: 20px 0;
 }
 
+/* 未能加载行数样式 */
+.no-stats {
+  font-size: 13px;
+  color: var(--ifm-color-emphasis-600);
+  font-style: italic;
+  background-color: var(--ifm-color-emphasis-100);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
 /* 响应式布局 */
 @media (max-width: 996px) {
   .contributor-container {
