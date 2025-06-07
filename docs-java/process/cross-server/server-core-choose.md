@@ -49,3 +49,4 @@ Waterfall 仍然会合并来自 BungeeCord 的更改。
 | [FlameCord](https://www.flamecord.com/)                                          | 终极反机器人解决方案，Anti-VPN和高性能BungeeCord分叉，适用于Minecraft服务器 | 6美元(永久15美元) |
 
 <!--markdownlint-enable line-length-->
+
