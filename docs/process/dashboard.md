@@ -23,11 +23,15 @@ MCSManager是一款免费，易用，现代化的游戏服务器管理面板，�
 
 首先，点击[此链接](https://awwa.cc/mcsm/win) 一键下载到本地后解压
 
-解压之后，你就可以看到`start.bat`，打开就可以启动(就是这么简单)
+解压之后，你就可以看到 `start.bat`，打开就可以启动(就是这么简单)
 
-关闭面板
+关闭面板只需分别进入两个终端执行 `Ctrl+C` 即可。
 
-只需分别进入两个终端执行 `Ctrl+C` 即可。
+若需要设置开机自启动，可采用这种方法：
+
+1. 在[微软官方网站](https://learn.microsoft.com/zh-cn/sysinternals/downloads/autologon)上下载 Autologon 程序并按照页面介绍配置好开机自动登录。
+2. 为上文所述的 `start.bat` 创建一个快捷方式，并将这个快捷方式移动至 `C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp`。
+3. 重新启动并验证效果（可选），然后在面板的实例设置中启用实例的自动启动功能。
 
 #### Linux
 
