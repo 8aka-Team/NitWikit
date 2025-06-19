@@ -27,7 +27,7 @@ sidebar_position: 1
 <details>
     <summary>安装搜索引擎后应该长啥样？</summary>
 
-![](_images/Spigot 搜索.png)
+![](_images/Spigot搜索.png)
 
 </details>
 
