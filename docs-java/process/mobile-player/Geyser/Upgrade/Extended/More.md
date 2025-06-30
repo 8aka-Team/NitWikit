@@ -5,7 +5,7 @@ sidebar_position: 4
 
 # 更多功能
 
-让基岩版玩家体验到跟多功能
+让基岩版玩家体验到更多功能
 
 ## GeyserUpdater
 
