@@ -27,9 +27,9 @@ sidebar_position: 6
 下面将以 HMCL 为例，分别说明如何在 Windows 版本的整合包中集成 JRE，同时也会介绍适用于其他启动器的通用方案。
 
 1. **下载适合 Windows 的 JRE：**
-   如果整合包对 JRE 没有特殊要求，你可以从 [Adoptium Temurin](https://adoptium.net/temurin/releases) 或 [Azul Zulu](https://www.azul.com/downloads/zulu/) 下载适合 `x64` 架构的压缩版（网站可能以“zip版”提供）JDK，因为这些 JDK 的体积较小，非常适合用于整合包使用。
+如果整合包对 JRE 没有特殊要求，你可以从 [Adoptium Temurin](https://adoptium.net/temurin/releases) 或 [Azul Zulu](https://www.azul.com/downloads/zulu/) 下载适合 `x64` 架构的压缩版（网站可能以“zip版”提供）JDK，因为这些 JDK 的体积较小，非常适合用于整合包使用。
 
-   如果你如果你的整合包对 JRE 要求严格（例如必须使用Oracle JDK），你也可以通过以下通用方式找到压缩版发行包：
+如果你如果你的整合包对 JRE 要求严格（例如必须使用Oracle JDK），你也可以通过以下通用方式找到压缩版发行包：
 
    * 打开该 JDK 厂商的官方网站；
    * 寻找与“Downloads”、“Releases”或“Archives”相关的页面；
@@ -37,11 +37,11 @@ sidebar_position: 6
    * 确认该版本为 **JDK 或 JRE**，并为你希望使用的 Java 版本（如 17、21）；
    * 下载后解压，即可将该文件夹整体打包进整合包中。
 
-   通常情况下，压缩版 JDK 的路径结构会包含一个 `bin/javaw.exe`，只要设置启动器指向这个路径即可使用。如果找不到压缩包，可查阅其文档或使用社区维护的镜像站点（例如 Adoptium、MCL Mirror 等）寻找适配版本。
+通常情况下，压缩版 JDK 的路径结构会包含一个 `bin/javaw.exe`，只要设置启动器指向这个路径即可使用。如果找不到压缩包，可查阅其文档或使用社区维护的镜像站点（例如 Adoptium、MCL Mirror 等）寻找适配版本。
 
 2. **解压至整合包目录，以 HMCL 为例，结构如下：**
 
-   ```
+   ```plain text
    MyModpack/
    ├── java/
    │   └── bin/
@@ -54,7 +54,7 @@ sidebar_position: 6
 
 以 HMCL 为例，前往 **版本管理** ，确保启用了 **启用版本特定游戏设置（不影响其他游戏版本）** ，**游戏Java** 选择 **指定Java版本** ，在此选项同一行的右侧输入框中填写以下内容：
 
-   ```
+   ```bash
    ./java/bin/javaw.exe
    ```
 
@@ -65,7 +65,7 @@ sidebar_position: 6
 :::
 
 4. **保存后运行游戏测试：**
-   游戏将不再依赖系统 Java，改为使用内置的 Java 运行。你可以在启动器的「设置」页面再次查看当前 Java 路径，确认它已指向你整合包中的 java/bin/javaw.exe。
+游戏将不再依赖系统 Java，改为使用内置的 Java 运行。你可以在启动器的「设置」页面再次查看当前 Java 路径，确认它已指向你整合包中的 java/bin/javaw.exe。
 
 5. **打包时建议附带启动器的配置文件** （例如 HMCL 的 `hmcl.json`，该文件在部分操作系统下是隐藏文件，默认情况下不调整文件管理器设置会看不到）以保留设置，便于玩家无需重复配置。
 
@@ -144,15 +144,15 @@ set JAVA_PATH=%~dp0jre\bin\javaw.exe
 
 #### 自行制作的整合包
 
-##### 群文件
+##### 群文件（自制整合包）
 
 **推荐**，通常建议优先通过群文件分享自行制作的整合包。
 
-##### 网盘下载
+##### 网盘下载（自制整合包）
 
 分享时，避免选择 **要求安装客户端才能下载** 的，或 **对免费用户严格限速** 的网盘。
 
-##### 服务器官网下载
+##### 服务器官网下载（自制整合包）
 
 搭建方式同[服务器官网下载](#服务器官网下载)
 
