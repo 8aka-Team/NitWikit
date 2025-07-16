@@ -34,7 +34,7 @@ api:
 
 ![](_images/img_6.png)
 
-## 配置
+## 插件配置文件
 
 ```yaml
 # Nameless插件配置

@@ -99,7 +99,7 @@ sidebar_position: 3
 
 在此列表中的插件加载前加载本插件。
 
-### `probides`
+### `provides`
 
 告诉服务器本插件会提供哪些库或功能。
 

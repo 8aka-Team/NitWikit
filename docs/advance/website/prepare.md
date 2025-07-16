@@ -15,9 +15,9 @@ import TabItem from '@theme/TabItem';
 <Tabs groupId="operating-systems">
 <TabItem value="ubuntu" label="Ubuntu/Debian">
 
-### Ubuntu/Debian系统准备
+## Ubuntu/Debian系统准备
 
-#### 安装必需软件包
+### 安装必需软件包
 ```bash
 # 安装PHP和扩展
 sudo apt install -y php8.1 php8.1-fpm php8.1-mysql php8.1-gd php8.1-mbstring php8.1-xml php8.1-curl php8.1-zip
@@ -35,9 +35,9 @@ sudo apt install -y nginx
 </TabItem>
 <TabItem value="centos" label="CentOS/Rocky Linux">
 
-### CentOS/Rocky Linux系统准备
+## CentOS/Rocky Linux系统准备
 
-#### 安装EPEL和Remi仓库
+### 安装EPEL和Remi仓库
 ```bash
 # EPEL仓库
 sudo dnf install -y epel-release
@@ -49,7 +49,7 @@ sudo dnf install -y https://rpms.remirepo.net/enterprise/remi-release-8.rpm
 sudo dnf install -y https://mirrors.tuna.tsinghua.edu.cn/remi/enterprise/remi-release-8.rpm
 ```
 
-#### 安装必需软件包
+#### 安装PHP和相关软件包
 ```bash
 # 启用PHP 8.1模块
 sudo dnf module enable php:remi-8.1 -y
@@ -66,7 +66,7 @@ sudo dnf install -y mysql-server
 sudo dnf install -y nginx
 ```
 
-#### 配置防火墙
+### 配置防火墙
 ```bash
 sudo firewall-cmd --permanent --add-service=http
 sudo firewall-cmd --permanent --add-service=https
@@ -76,9 +76,9 @@ sudo firewall-cmd --reload
 </TabItem>
 <TabItem value="windows" label="Windows">
 
-### Windows系统准备
+## Windows系统准备
 
-#### 使用XAMPP (推荐)
+### 使用XAMPP (推荐)
 
 1. **下载XAMPP**
    - 访问 https://www.apachefriends.org/
@@ -105,7 +105,7 @@ sudo firewall-cmd --reload
    extension=curl
    ```
 
-#### 手动安装
+### 手动安装
 
 1. **安装PHP**
    - 下载PHP 8.1 from https://windows.php.net/
@@ -123,15 +123,15 @@ sudo firewall-cmd --reload
 </TabItem>
 <TabItem value="shared" label="共享主机">
 
-### 共享主机准备
+## 共享主机准备
 
-#### 确认主机要求
+### 确认主机要求
 - PHP 7.4+ (推荐 8.1)
 - MySQL 5.7+ 或 MariaDB 10.2+
 - 至少 100MB 存储空间
 - 支持 .htaccess (Apache) 或 URL重写
 
-#### 检查PHP扩展
+### 检查PHP扩展
 创建 `phpinfo.php` 文件检查：
 ```php
 <?php phpinfo(); ?>

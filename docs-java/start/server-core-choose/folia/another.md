@@ -13,7 +13,7 @@ Lumina 是 LeavesMC 开发的一个 Folia 分支，旨在遵循原版生电特�
 
 :::tip
 
-目前 Lumina 处于早期开发阶段，暂时不完善，推荐去使用 Luminol
+目前 Lumina 处于早期开发阶段，暂时不完善，如果你需要生电特性，推荐使用 [Lophine](luminol.md#lophine)
 
 :::
 

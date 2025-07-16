@@ -125,7 +125,7 @@ sidebar_position: 6
 
 值得一提的是，如果命令中最后没有加 **accumulate** ，他会把权限时间重置到你给的数字而不是累加时间
 
-下表来自：[此处](https://snowcutieowo.github.io/LuckPerms/#/command-usage.permission?id=lp-usergroup-lt%e7%8e%a9%e5%ae%b6%e6%9d%83%e9%99%90%e7%bb%84gt-permission-settemp-lt%e6%9d%83%e9%99%90gt-lttruefalsegt-lt%e6%97%b6%e9%97%b4gt-%e6%96%bd%e5%8a%a0%e6%a8%a1%e5%bc%8f-%e4%b8%8a%e4%b8%8b%e6%96%87)
+下表来自：[此处](https://continue-project.netlify.app/LuckPerms/#/command-usage.permission?id=lp-usergroup-lt%e7%8e%a9%e5%ae%b6%e6%9d%83%e9%99%90%e7%bb%84gt-permission-settemp-lt%e6%9d%83%e9%99%90gt-lttruefalsegt-lt%e6%97%b6%e9%97%b4gt-%e6%96%bd%e5%8a%a0%e6%a8%a1%e5%bc%8f-%e4%b8%8a%e4%b8%8b%e6%96%87)
 
 | 模式关键词 | 描述                                         |
 | ---------- | -------------------------------------------- |

@@ -31,6 +31,28 @@ sidebar_position: 9
 
 可以使用 [Console Spam Fix Reborn](https://www.spigotmc.org/resources/.121703)
 
+## update 文件夹
+
+Paper 服务器有一个鲜为人知的功能，那就是 update 文件夹。以下是它的使用方法。
+
+1. 在 plugins 文件夹内创建一个名为 update 的文件夹。
+2. 逐个下载你想要更新的插件，并将它们放入 update 文件夹中。
+3. 重启服务器，不要删除或修改 update 文件夹之外的任何插件。
+
+通过这种方式，你可以在服务器运行时同时更新所有插件， 而无需关闭服务器或替换正在运行的服务器中的插件 JAR 文件。 你无需在更新 Paper 本身之前重启服务器。 这个功能允许你同时更新 Paper 和插件，而无需任何额外的停机时间。
+
+## Spigot Library Booster
+
+Spigot在1.17之后新增了一个名为LibraryLoader的玩意，可以让插件在运行时下载所需依赖，无需将其包括在插件本体中，这显然是一个好消息，但是对于国内用户来说就显得不那么友好，spigot默认没有提供对下载源的自定义功能，导致只能从maven中心源缓慢地下载依赖文件甚至超时，本工具就是针对这种情况进行解决。
+
+:::info
+
+`MineBBS` https://www.minebbs.com/resources/.7469
+
+:::
+
+如果你使用 Leaf 核心，可以直接 [这样做](/docs-java/process/maintenance/optimize/jvm/common.md#下载源加速)，不需要使用此工具。
+
 ## 圈内破事
 
 ### miao 系列插件

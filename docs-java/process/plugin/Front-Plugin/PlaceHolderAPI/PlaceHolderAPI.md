@@ -14,8 +14,8 @@ sidebar_position: 1
 
 ![](_images/PlaceHolderAPI/2.png)
 
-[![](_images/PlaceHolderAPI/3.png)](https://snowcutieowo.github.io/PlaceholderAPI)
-[![](_images/PlaceHolderAPI/4.png)](https://snowcutieowo.github.io/PlaceholderAPI/user-guides.placeholder-list.html)
+[![](_images/PlaceHolderAPI/3.png)](https://continue-project.netlify.app/PlaceholderAPI)
+[![](_images/PlaceHolderAPI/4.png)](https://continue-project.netlify.app/PlaceholderAPI/user-guides.placeholder-list.html)
 [![](_images/PlaceHolderAPI/5.png)](https://api.extendedclip.com/home)
 
 </div>
@@ -221,7 +221,7 @@ eCloud 命令
 
 `文档(英文)` https://wiki.placeholderapi.com
 
-`文档(中文)` https://snowcutieowo.github.io/PlaceholderAPI
+`文档(中文)` https://continue-project.netlify.app/PlaceholderAPI
 
 `插件百科` https://mineplugin.org/PlaceHolderAPI
 

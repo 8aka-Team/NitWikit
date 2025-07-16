@@ -2,83 +2,130 @@
 title: 搭建
 sidebar_position: 1
 ---
+
 # Transfer 跨服搭建
-## 准备
-- 至少两个1.20.5或更高版本的《我的世界》服务端
-- 确认要统一用正版验证还是离线模式
 
-## 开始！
+## 什么是 Transfer？
 
-1. 把你的两个服务端放在不同的目录，同意 eula 后启动你的两个服务端。
-2. 输入 `stop` 关停两个服务端
-3. 用文本编辑器打开你两个服务端的server.properties文件，找到`accepts-transfers=false`，将 false 改 true。
-4. 保存文件并重新启动两个服务端。
-5. 如果你要把服务器公开给玩家，**所有子服必须暴露在在公网环境下**。
+Transfer 是 Minecraft 1.20.5 版本引入的**原生跨服功能**，与传统代理端不同，它采用去中心化架构，服务器之间直接传送玩家。
 
-## 跨服指令测试与使用
+```mermaid
+graph TD
+    A[玩家客户端] --> B[服务器A]
+    A --> C[服务器B]
+    A --> D[服务器C]
+    B -.->|/transfer| C
+    C -.->|/transfer| D
+    D -.->|/transfer| B
+```
 
-进入两个服务端中的任何一个，使用`/transfer <地址> (端口) (玩家)`连接另一个服务器即可。
+## 版本要求
 
-## 安全性提升
+- **服务端**：Minecraft 1.20.5+ (Vanilla/Paper/Spigot/Purpur)
+- **客户端**：Minecraft Java Edition 1.20.5+
+- **不支持**：基岩版、1.20.5以下版本
 
-Transfer 方法**并不像 BungeeCord 与 Velocity** ，其下游服务端不会禁止外来玩家进入，也没有登录插件适配。
+## 核心配置
 
-这导致在离线模式的原版情况下，你要么麻烦玩家让玩家每跨服一次就过一遍验证，要么就得时时有人盯着服务器防止出事。
+### 启用 Transfer 功能
 
-下面我将介绍两种有效的提升安全性的方法。
+在**所有服务器**的 `server.properties` 中添加：
 
-### 正版验证
+```properties
+# 启用 Transfer 功能（关键配置）
+accepts-transfers=true
 
-众所周知，很多时候，正版验证都是很有用的验证手段。
+# 每个服务器使用不同端口
+server-port=25565
 
-但开了之后所有服务器都得开。
+# 所有服务器的验证模式必须一致
+online-mode=false
+```
 
-### OnlyTransfer插件
+### 网络配置要求
 
-[OnlyTransfer](https://bilibili.com/opus/1062419036109799429) 是个由国人写的安全类插件，旨在**解决原版 Transfer 的几大痛点**。
+:::warning 重要：网络访问要求
 
-~~（我更喜欢叫它Security Enhanced Transfer）~~
+Transfer 要求**所有服务器都能被客户端直接访问**：
 
-<details>
-<summary>点击查看该插件更多内容</summary>
-<p>
-  
-#### 插件版本要求及配置方法
+:::
 
-需要 Spigot/Paper 1.21.4
+## Transfer 的安全问题
 
-可能是 Spigot/Paper 没有提供 Transfer 有关的 API，使得这个插件使用 NMS 实现导致目前只有1.21.4版本。
+:::danger 重要安全警告
 
-从[这里](https://enanetdisk.pages.dev/?file=%2Fdisk%2FMinecraftPlugins%2FOnlyTransfer.jar)下载插件，扔进所有子服的插件文件夹。
+Transfer **没有内置的安全机制**，与传统代理端不同：
+- 玩家可以直接连接任何服务器，绕过登录验证
+- 缺乏统一的身份验证和权限管理
+- 在离线模式下存在身份冒充风险
 
-下面这是该插件的配置文件：
+:::
 
-```text
+### 解决方案
+
+#### 方案一：启用正版验证
+
+所有服务器设置 `online-mode=true`
+
+#### 方案二：OnlyTransfer 插件
+专门解决 Transfer 安全问题的插件：
+
+**主要功能：**
+- 阻止玩家直接连接非登录服
+- 基于令牌验证服务器间传送
+- 白名单控制允许的服务器
+
+**版本要求：** Spigot/Paper 1.21.4+
+
+**基础配置：**
+```yaml
 # 是否允许通过服务器列表直接进入服务器
 # 如果为 true，则该服务器被允许直接通过客户端进入，否则将仅允许 transfer
 # 如果不是主城或者登录服，不建议打开该选项，否则安全性降低
-allow-server-list: false
+allow-server-list: true
 
 # 跨服传送的令牌，两台服务器必须配置相同的令牌
 # 类似于 Velocity 的`forward.secret`
 # 但貌似只有被传送的对象服务器才会检查这个
-transfer-token: "114514191981"
+transfer-token: "your-secure-random-token"
 
 # 允许的服务器IP和端口
 # 不在该列表里的服务器不被允许跳转
 # 如果是公共服务器，请确保所有子服均暴露在公网下
+
 allowed-servers:
-  - "127.0.0.1:25565"
+  - "your-server-ip:25566"
+  - "your-server-ip:25567"
+
+# 游戏服：禁止直接进入
+allow-server-list: false
+transfer-token: "your-secure-random-token"  # 相同令牌
+allowed-servers:
+  - "your-server-ip:25565"  # 登录服
 ```
 
-#### 该插件与 Velocity 的 Transfer 支持兼容问题
+:::tip 安全令牌生成
+```bash
+# 生成32位随机令牌
+openssl rand -base64 32
+```
+:::
 
-经过测试，并不完全兼容：
+## 与 Velocity 混合使用
 
-单端在添加了 Velocity 为允许的服务器后，虽然 Velocity 没有密钥，但可以进入 Velocity 并来到 Velocity 下的子服。
+Velocity 支持接收 Transfer 传送，可以实现混合架构：
 
-但是，Velocity 下的子服安装了这个插件后，没法使用指令跳转到其他同样有这个插件的单端。而在两端均不使用这个插件的时候正常。
+```toml
+# velocity.toml
+accepts-transfers = true
+```
 
-这意味着一些边缘应用场景下这个插件会失效，该问题已有人反馈给作者。
-</p>
-</details>
+**混合架构示例：**
+```text
+独立服务器 --Transfer--> Velocity ---> 子服务器群组
+```
+
+:::warning 兼容性问题
+OnlyTransfer 插件与 Velocity 的 Transfer 支持存在部分兼容性问题，建议在测试环境中验证。
+:::
+

@@ -7,11 +7,11 @@ sidebar_position: 2
 
 这里只列出**部分**扩展的**部分**变量，这几个变量老是有人问
 
-如果你想了解全部变量，点击 [此处](https://snowcutieowo.github.io/PlaceholderAPI/user-guides.placeholder-list.html)
+如果你想了解全部变量，点击 [此处](https://continue-project.netlify.app/PlaceholderAPI/user-guides.placeholder-list.html)
 
 ## Player
 
-> https://snowcutieowo.github.io/PlaceholderAPI/user-guides.placeholder-list.html#player
+> https://continue-project.netlify.app/PlaceholderAPI/user-guides.placeholder-list.html#player
 
 ```text
 /papi ecloud download Player
@@ -27,7 +27,7 @@ sidebar_position: 2
 
 ## Server
 
-> https://snowcutieowo.github.io/PlaceholderAPI/user-guides.placeholder-list.html#server
+> https://continue-project.netlify.app/PlaceholderAPI/user-guides.placeholder-list.html#server
 
 ```text
 /papi ecloud download Server
@@ -46,7 +46,7 @@ sidebar_position: 2
 
 ## Vault
 
-> https://snowcutieowo.github.io/PlaceholderAPI/user-guides.placeholder-list.html#vault
+> https://continue-project.netlify.app/PlaceholderAPI/user-guides.placeholder-list.html#vault
 
 ```text
 /papi ecloud download Vault
@@ -58,7 +58,7 @@ sidebar_position: 2
 
 ## Multiverse
 
-> https://snowcutieowo.github.io/PlaceholderAPI/user-guides.placeholder-list.html#multiverse-core
+> https://continue-project.netlify.app/PlaceholderAPI/user-guides.placeholder-list.html#multiverse-core
 
 ```text
 /papi ecloud download multiverse
@@ -72,7 +72,7 @@ sidebar_position: 2
 
 ## PlayerPoints
 
-> https://snowcutieowo.github.io/PlaceholderAPI/user-guides.placeholder-list.html#playerpoints
+> https://continue-project.netlify.app/PlaceholderAPI/user-guides.placeholder-list.html#playerpoints
 
 ```text
 %playerpoints_points% - 点券数
@@ -84,7 +84,7 @@ PlayerPoints 在 3.0.0 以及更高版本会自动挂钩 papi，不再需要自�
 
 ## Statistic
 
-> https://snowcutieowo.github.io/PlaceholderAPI/user-guides.placeholder-list.html#statistic
+> https://continue-project.netlify.app/PlaceholderAPI/user-guides.placeholder-list.html#statistic
 
 ```text
 /papi ecloud download Statistic

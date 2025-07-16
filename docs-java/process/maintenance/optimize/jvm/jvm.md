@@ -49,7 +49,7 @@ flowchart TD
 
 Zing 与 LuckPerms 以及一些特殊插件会有一点不兼容
 
-OpenJ9 虽然内存占用很低，但是性能很差，并且与很多插件有不兼容 (比如 Spark)
+OpenJ9 虽然内存占用很低，但是性能很差，并且与很多插件有不兼容 (比如 Spark)。**特别注意：由于 Paper 服务端内置 Spark，因此不能在 Paper 服务端上使用 OpenJ9**
 
 GraalVM 在 22.3.0 修复了所有已知的 Minecraft 错误
 

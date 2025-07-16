@@ -48,9 +48,9 @@ Folia 这么好，但并不是每个服务器都可以体验的，你需要确�
 
 如果你不符合，去用 Leaf 吧，符合的话继续看下去！
 
-## 选择
+## 分支选择
 
-Folia 有许多分支，你可能不知道怎么选，有个简单的办法：
+Folia 有许多分支，每个分支都有不同的特点和适用场景。根据你的需求选择合适的分支：
 
 ```mermaid
 flowchart TD
@@ -58,24 +58,30 @@ flowchart TD
     A --> B[快速升到高版本]
     A --> C[性能,稳定性和功能]
     A --> D[插件兼容性]
+    A --> E[生电特性]
     B --> DeerFolia
-    C --> E[1.20.4+] --> Luminol
-    C --> F[1.20/2] --> Molia
-    C --> G[1.19.3/4] --> Kaiiju
-    D --> 1.20.4+ --> LightingLuminol
-    D --> 1.20/2 --> DirtyMolia
-    D --> 1.19.3/4 --> DirtyFolia
+    C --> F[1.21+] --> Luminol
+    C --> G[1.20/2] --> Molia
+    C --> H[1.19.3/4] --> Kaiiju
+    D --> I[1.21+] --> LightingLuminol
+    D --> J[1.20/2] --> DirtyMolia
+    D --> K[1.19.3/4] --> DirtyFolia
+    E --> L[1.21+] --> Lophine
 ```
 
-根据这张图表选好后去下载就可以了
+## 推荐分支
 
-**下载镜像**：
+根据上述流程图选择合适的分支后，你可以查看对应的详细文档：
+
+### 主要分支
+
+- **[Luminol](luminol.md)** - 性能、稳定性和功能的最佳平衡，包含 Lophine 生电分支 (1.21+)
+- **[其他分支](another.md)** - 包含 Molia、DeerFolia、Kaiiju 等
+
+### 快速下载
+
+如果你已经确定要使用的分支，可以直接从以下镜像下载：
 
 - [Folia](https://mcres.cn/downloads/folia.html)
-- [Molia](https://mcres.cn/downloads/molia.html)
-- [DeerFolia](https://mcres.cn/downloads/deerfolia.html)
-- [DirtyMolia](https://mcres.cn/downloads/dirtymolia.html)
-- [DirtyFolia](https://mcres.cn/downloads/dirtyfolia.html)
-- [Luminol](https://mcres.cn/downloads/luminol.html)
-- [LightingLuminol](https://mcres.cn/downloads/lightingluminol.html)
-- [Kaiiju](https://mcres.cn/downloads/kaiiju.html)
+- [Luminol & Lophine](https://mcres.cn/downloads/luminol.html)
+- [更多分支下载](another.md)

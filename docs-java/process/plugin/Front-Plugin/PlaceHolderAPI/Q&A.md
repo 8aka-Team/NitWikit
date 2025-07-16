@@ -44,7 +44,7 @@ sidebar_position: 2
 
 如果下载失败，看 [手动安装](#手动安装)
 
-如果你想知道都有哪些扩展，提供了哪些变量，查看 [此处](https://snowcutieowo.github.io/PlaceholderAPI/user-guides.placeholder-list.html)
+如果你想知道都有哪些扩展，提供了哪些变量，查看 [此处](https://continue-project.netlify.app/PlaceholderAPI/user-guides.placeholder-list.html)
 
 ## 什么是内建变量？
 

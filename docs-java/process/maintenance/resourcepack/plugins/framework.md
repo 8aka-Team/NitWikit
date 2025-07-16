@@ -61,7 +61,7 @@ https://itemsadder.devs.beer
 
 `文档 (英文)` https://docs.oraxen.com/
 
-`文档 (中文)` https://snowcutieowo.github.io/Oraxen/README.html
+`文档 (中文)` https://continue-project.netlify.app/Oraxen/README.html
 
 :::
 

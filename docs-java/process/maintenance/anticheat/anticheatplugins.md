@@ -220,5 +220,5 @@ GitHub: https://github.com/8aka-Team/Talents-AntiCheat-Config
 高版本组合参考：
 
 - Matrix + GrimAC
-- NoChestPlus + GrimAC
+- NoCheatPlus + GrimAC
 - Vulcan + Matrix

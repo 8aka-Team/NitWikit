@@ -85,7 +85,7 @@ sidebar_position: 4
 
 ### 修饰符
 
-> https://snowcutieowo.github.io/PlaceholderAPI/user-guides.placeholder-list#checkitem
+> https://continue-project.netlify.app/PlaceholderAPI/user-guides.placeholder-list#checkitem
 
 可用的修饰符有：
 

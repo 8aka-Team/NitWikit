@@ -37,7 +37,7 @@ sidebar_position: 1
 - BungeePerms
 - PowerfulPerms
 
-其他权限组插件导入数据到 Luckperms？[点击这里](https://snowcutieowo.github.io/LuckPerms/how-to.migrate-from-other-plugins.html)
+其他权限组插件导入数据到 Luckperms？[点击这里](https://continue-project.netlify.app/LuckPerms/how-to.migrate-from-other-plugins.html)
 
 ## ![链接](_images/3.png)
 
@@ -51,7 +51,7 @@ sidebar_position: 1
 
 `文档(英文)` https://luckperms.net/wiki/Home
 
-`文档(中文)` https://snowcutieowo.github.io/LuckPerms
+`文档(中文)` https://continue-project.netlify.app/LuckPerms
 
 `插件百科` https://mineplugin.org/LuckPerms
 
@@ -61,7 +61,7 @@ sidebar_position: 1
 
 下载 jar 文件放入 plugins 文件夹即可。
 
-[点击此处查看教程](https://snowcutieowo.github.io/LuckPerms/#/install-on-a-single-server)
+[点击此处查看教程](https://continue-project.netlify.app/LuckPerms/#/install-on-a-single-server)
 
 :::tip[注意]
 
@@ -73,4 +73,4 @@ sidebar_position: 1
 
 LuckPerms 可以使用 yml 文件存储数据，易于编辑，但我推荐使用 h2（默认）或者连接数据库使用。
 
-如果你想更改存储方式，可见：https://snowcutieowo.github.io/LuckPerms/storage.html
+如果你想更改存储方式，可见：https://continue-project.netlify.app/LuckPerms/storage.html

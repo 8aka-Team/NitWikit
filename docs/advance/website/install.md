@@ -75,7 +75,7 @@ composer create-project namelessmc/nameless /var/www/html/namelessmc
    - 数据库地址填写: `db`
    - 数据库用户名、密码、数据库名都填写: `nameless`
 
-#### 推荐Docker标签
+### 推荐Docker标签
 - `v2.2`: 最新稳定版 (PHP 8.3)
 - `v2.1`: 上一稳定版 (PHP 8.2)  
 - `dev`: 开发版 (仅用于开发)
@@ -147,8 +147,8 @@ sudo chmod -R 777 /var/www/html/namelessmc/uploads
 
 ![img.png](_images/img-2.png)
 
-2. **数据库配置**
-   ```
+1. **数据库配置**
+   ```text
    数据库类型：MySQL
    主机地址：localhost (或你的数据库主机)
    端口：3306
@@ -160,15 +160,15 @@ sudo chmod -R 777 /var/www/html/namelessmc/uploads
    
 ![img.png](_images/img-3.png)
 
-3. **站点配置**
-   ```
+1. **站点配置**
+   ```text
    站点名称：你的服务器名称
    站点URL：完整的域名地址
    友好URL：启用 (推荐)
    ```
 
-4. **管理员账户**
-   ```
+1. **管理员账户**
+   ```text
    用户名：admin (可自定义)
    邮箱：admin@yourdomain.com
    密码：强密码

@@ -40,7 +40,7 @@ WorldGuard 可以保护你的区域或世界，使他们免受破坏，或者调
 
 `文档(英文)` https://worldguard.enginehub.org/en/latest/index.html
 
-`文档(中文)` https://snowcutieowo.github.io/WorldGuard
+`文档(中文)` https://continue-project.netlify.app/WorldGuard
 
 `插件百科` https://mineplugin.org/Worldguard
 

@@ -68,6 +68,8 @@ java -Xlog:gc+init -XX:+UseTransparentHugePages -Xmx1g -version
 -DLeaf.library-download-repo=https://maven.aliyun.com/repository/public
 ```
 
+如果不是 Leaf 核心，你可以使用 [Spigot Library Booster](/docs-java/process/plugin/more/tittle-tattle.md#spigot-library-booster)
+
 ## 中文编码
 
 防止乱码

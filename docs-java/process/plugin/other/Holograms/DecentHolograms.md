@@ -85,7 +85,7 @@ sidebar_position: 2
 
 `文档(英文)` https://wiki.decentholograms.eu
 
-`文档(中文)` https://snowcutieowo.github.io/DecentHolograms
+`文档(中文)` https://continue-project.netlify.app/DecentHolograms
 
 :::
 
