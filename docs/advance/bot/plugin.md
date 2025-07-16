@@ -19,7 +19,7 @@ import TabItem from '@theme/TabItem';
 <Tabs queryString="jrqqbot">
 <TabItem value="MiraiMC" label="MiraiMC">
 
-| MiraiMC | ![](https://img.shields.io/badge/状态 - 积极维护-green?style=for-the-badge) |
+| MiraiMC | ![](https://img.shields.io/badge/状态-积极维护-green?style=for-the-badge) |
 | --- | --- |
 | 相关链接 | [Github 仓库](https://github.com/DreamVoid/MiraiMC) \| [文档站](https://docs.miraimc.dreamvoid.me/) |
 | 作者 | [DreamVoid](https://github.com/DreamVoid) |
@@ -32,7 +32,7 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 <TabItem value="SparkBridge" label="SparkBridge">
 
-| SparkBridge | ![](https://img.shields.io/badge/状态 - 积极维护-green?style=for-the-badge) |
+| SparkBridge | ![](https://img.shields.io/badge/状态-积极维护-green?style=for-the-badge) |
 | --- | --- |
 | 相关链接 | [Github 仓库](https://github.com/sparkbridge/sparkbridge2) \| [文档站](https://sparkbridge.cn/) |
 | 作者 | [sparkbridge](https://github.com/sparkbridge) |
@@ -43,7 +43,7 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 <TabItem value="McBot" label="McBot">
 
-| McBot | ![](https://img.shields.io/badge/状态 - 积极维护-green?style=for-the-badge) |
+| McBot | ![](https://img.shields.io/badge/状态-积极维护-green?style=for-the-badge) |
 | --- | --- |
 | 相关链接 | [Github 仓库](https://github.com/Nova-Committee/McBot) \| [Mcmod 文档](https://www.mcmod.cn/class/4903.html) |
 | 作者 | [Nova-Committee](https://github.com/Nova-Committee) |
@@ -54,7 +54,7 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 <TabItem value="PlumBot" label="PlumBot">
 
-| McBot | ![](https://img.shields.io/badge/状态 - 积极维护-green?style=for-the-badge) |
+| McBot | ![](https://img.shields.io/badge/状态-积极维护-green?style=for-the-badge) |
 | --- | --- |
 | 相关链接 | [Github 仓库](https://github.com/RegadPoleCN/PlumBot) \| [Modrinth 页面](https://modrinth.com/plugin/plumbot) |
 | 作者 | [RegadPoleCN](https://github.com/RegadPoleCN) |
@@ -65,7 +65,7 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 <TabItem value="AQQBot" label="AQQBot">
 
-| AQQBot | ![](https://img.shields.io/badge/状态 - 积极维护-green?style=for-the-badge) |
+| AQQBot | ![](https://img.shields.io/badge/状态-积极维护-green?style=for-the-badge) |
 | --- | --- |
 | 相关链接 | [Github 仓库](https://github.com/alazeprt/AQQBot) |
 | 作者 | [alazeprt](https://github.com/alazeprt) |
@@ -76,7 +76,7 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 <TabItem value="XinxinBot" label="XinxinBot">
 
-| XinxinBot | ![](https://img.shields.io/badge/状态 - 积极维护-green?style=for-the-badge) |
+| XinxinBot | ![](https://img.shields.io/badge/状态-积极维护-green?style=for-the-badge) |
 | --- | --- |
 | 相关链接 | [Github 仓库](https://github.com/Xinxin-ent/XinxinBotApi) \| [文档站](https://wiki.mcxin.cn/zh/%E6%96%B0%E9%91%AB%E6%8F%92%E4%BB%B6%E6%95%99%E7%A8%8B/XinxinBotApi) [官网](https://bbs.mcxin.cn/archives/216) |
 | 作者 | [Xinxin-ent](https://github.com/Xinxin-ent) |
