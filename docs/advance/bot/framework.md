@@ -13,7 +13,7 @@ import TabItem from '@theme/TabItem';
 <Tabs queryString="qqbot">
 <TabItem value="LLOneBot" label="LLOneBot">
 
-| LLOneBot | ![](https://img.shields.io/badge/状态 - 积极维护-green?style=for-the-badge) |
+| LLOneBot | ![](https://img.shields.io/badge/状态-积极维护-green?style=for-the-badge) |
 | --- | --- |
 | 相关链接 | [Github 仓库](https://github.com/LLOneBot/LLOneBot) \| [文档站](https://llonebot.github.io/zh-CN/) |
 | 作者 | [LLOneBot](https://github.com/LLOneBot) |
@@ -23,7 +23,7 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 <TabItem value="NapCatQQ" label="NapCatQQ">
 
-| NapCatQQ | ![](https://img.shields.io/badge/状态 - 积极维护-green?style=for-the-badge) |
+| NapCatQQ | ![](https://img.shields.io/badge/状态-积极维护-green?style=for-the-badge) |
 | --- | --- |
 | 相关链接 | [Github 仓库](https://github.com/NapNeko/NapCatQQ) \| [文档站](https://napneko.github.io/) |
 | 作者 | [NapNeko](https://github.com/NapNeko) |
@@ -33,7 +33,7 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 <TabItem value="Lagrange.OneBot" label="Lagrange.OneBot">
 
-| Lagrange.OneBot | ![](https://img.shields.io/badge/状态 - 积极维护-green?style=for-the-badge) |
+| Lagrange.OneBot | ![](https://img.shields.io/badge/状态-积极维护-green?style=for-the-badge) |
 | --- | --- |
 | 相关链接 | [Github 仓库](https://github.com/LagrangeDev/Lagrange.Core) \| [文档站](https://lagrangedev.github.io/Lagrange.Doc/Lagrange.OneBot/) |
 | 作者 | [LagrangeDev](https://github.com/LagrangeDev) |
@@ -43,7 +43,7 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 <TabItem value="Overflow" label="Overflow">
 
-| Overflow | ![](https://img.shields.io/badge/状态 - 积极维护-green?style=for-the-badge) |
+| Overflow | ![](https://img.shields.io/badge/状态-积极维护-green?style=for-the-badge) |
 | --- | --- |
 | 相关链接 | [Github 仓库](https://github.com/MrXiaoM/overflow) \| [文档站](https://mirai.mrxiaom.top/docs/UserManual) |
 | 作者 | [MrXiaoM](https://github.com/MrXiaoM) |
@@ -58,7 +58,7 @@ import TabItem from '@theme/TabItem';
 <Tabs queryString="qqbot">
 <TabItem value="Gensokyo" label="Gensokyo">
 
-| Gensokyo | ![](https://img.shields.io/badge/状态 - 积极维护-green?style=for-the-badge) |
+| Gensokyo | ![](https://img.shields.io/badge/状态-积极维护-green?style=for-the-badge) |
 | --- | --- |
 | 相关链接 | [Github 仓库](https://github.com/Hoshinonyaruko/Gensokyo) |
 | 作者 | [Hoshinonyaruko](https://github.com/Hoshinonyaruko) |
@@ -73,7 +73,7 @@ import TabItem from '@theme/TabItem';
 <Tabs queryString="qqbot">
 <TabItem value="Shamrock" label="Shamrock">
 
-| Shamrock | ![](https://img.shields.io/badge/状态 - 停止维护-red?style=for-the-badge) |
+| Shamrock | ![](https://img.shields.io/badge/状态-停止维护-red?style=for-the-badge) |
 | --- | --- |
 | 相关链接 | [Github 仓库](https://github.com/whitechi73/OpenShamrock) \| [文档站](https://whitechi73.github.io/OpenShamrock/) |
 | 作者 | [whitechi73](https://github.com/whitechi73) |
@@ -83,7 +83,7 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 <TabItem value="chronocat" label="chronocat">
 
-| chronocat | ![](https://img.shields.io/badge/状态 - 不再积极维护-yellow?style=for-the-badge) |
+| chronocat | ![](https://img.shields.io/badge/状态-不再积极维护-yellow?style=for-the-badge) |
 | --- | --- |
 | 相关链接 | [Github 仓库](https://github.com/chrononeko/chronocat) |
 | 作者 | [chrononeko](https://github.com/chrononeko) |
@@ -93,7 +93,7 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 <TabItem value="go-cqhttp" label="go-cqhttp">
 
-| go-cqhttp | ![](https://img.shields.io/badge/状态 - 停止维护-red?style=for-the-badge) \| [停更公告地址](https://github.com/Mrs4s/go-cqhttp/issues/2471) |
+| go-cqhttp | ![](https://img.shields.io/badge/状态-停止维护-red?style=for-the-badge) \| [停更公告地址](https://github.com/Mrs4s/go-cqhttp/issues/2471) |
 | --- | --- |
 | 相关链接 | [Github 仓库](https://github.com/Mrs4s/go-cqhttp) \| [文档站](https://docs.go-cqhttp.org/) |
 | 作者 | [Mrs4s](https://github.com/Mrs4s) |
@@ -103,7 +103,7 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 <TabItem value="Mirai" label="Mirai">
 
-| Mirai | ![](https://img.shields.io/badge/状态 - 不再积极维护-yellow?style=for-the-badge) |
+| Mirai | ![](https://img.shields.io/badge/状态-不再积极维护-yellow?style=for-the-badge) |
 | --- | --- |
 | 相关链接 | [Github 仓库](https://github.com/mamoe/mirai) \| [官方论坛](https://mirai.mamoe.net/) \| [用户手册](https://github.com/mamoe/mirai/blob/dev/docs/UserManual.md) |
 | 作者 | [mamoe](https://github.com/mamoe) |
