@@ -68,7 +68,7 @@ java -Xlog:gc+init -XX:+UseTransparentHugePages -Xmx1g -version
 -DLeaf.library-download-repo=https://maven.aliyun.com/repository/public
 ```
 
-如果你使用的是 Paper 1.20.6(及其分支) 之后的版本 ，可以使用以下系统属性配置 Maven 中心仓库镜像：
+如果你使用的是 Paper 1.21.6(及其分支) 之后的版本 ，可以使用以下系统属性配置 Maven 中心仓库镜像：
 
 ```shell
 -Dorg.bukkit.plugin.java.LibraryLoader.centralURL=https://maven.aliyun.com/repository/central
