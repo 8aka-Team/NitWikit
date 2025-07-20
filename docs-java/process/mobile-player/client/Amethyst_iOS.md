@@ -46,6 +46,8 @@ sidebar_position: 3
 
 12.从此 [链接](https://github.com/AngelAuraMC/Amethyst-iOS/actions) 下载 Amethyst 的 ipa 安装包。
 
+#### （需要使用github账号才能继续下载）
+
 ### 手机开启JIT
 
 13.打开“My Apps”选项卡，然后长按Amethyst。
