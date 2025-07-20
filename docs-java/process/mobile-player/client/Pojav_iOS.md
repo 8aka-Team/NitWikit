@@ -149,6 +149,8 @@ sidebar_position: 2
 ![](../_images/iTunes_2.png)
 7.点击右下角任务栏中的 AltServer 图标。然后前往“Install AltStore”，并选择你的 iOS 设备。
 ![](../_images/Alt_1.png)
+
+
 8.输入您的 Apple ID 电子邮件地址和密码。
 
 9.等待几秒钟，然后会出现一个 AltServer 通知，提示 AltStore 已成功安装到您的设备上。
