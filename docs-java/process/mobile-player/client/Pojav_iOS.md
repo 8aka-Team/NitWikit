@@ -137,7 +137,9 @@ sidebar_position: 2
 1.点击此 [链接](i4.cn)下载爱思助手电脑端并安装
 
 2.打开爱思助手，点击“工具箱->iTunes及驱动->安装iTunes”来安装iTunes
-
+![](../_images/i4_1.png)
+![](../_images/i4_2.png)
+![](../_images/i4_3.png)
 
 
 3.点击此 [链接](https://updates.cdn-apple.com/2020/windows/001-39935-20200911-1A70AA56-F448-11EA-8CC0-99D41950005E/iCloudSetup.exe)下载iCloud电脑端并安装
@@ -164,3 +166,5 @@ sidebar_position: 2
 11.在 iOS 设备上，前往“设置”->“通用”->“描述文件和设备管理”。点击“信任 [您的 Apple ID]”，然后再次点击“信任”进行确认。
 
 （要在 iOS 16 或更高版本上使用 AltStore，您需要前往“设置”->“隐私和安全”->“开发者模式”在设备上启用开发者模式。）
+
+后面即将补充macOS
