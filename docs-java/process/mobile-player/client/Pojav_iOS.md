@@ -142,4 +142,16 @@ sidebar_position: 2
 
 4.解压AltInstaller.zip并运行Setup.exe
 
-5.
+5.将 iOS 设备连接到电脑，并确保其已解锁。
+
+6.打开iTunes，然后在设备上启用“通过Wi-Fi与此iPhone同步”
+
+7.点击右下角任务栏中的 AltServer 图标。然后前往“Install AltStore”，并选择你的 iOS 设备。
+
+8.输入您的 Apple ID 电子邮件地址和密码。
+
+9.等待几秒钟，然后会出现一个 AltServer 通知，提示 AltStore 已成功安装到您的设备上。
+
+10.在 iOS 设备上，前往“设置”->“通用”->“描述文件和设备管理”。点击“信任 [您的 Apple ID]”，然后再次点击“信任”进行确认。
+
+（要在 iOS 16 或更高版本上使用 AltStore，您需要前往“设置”->“隐私和安全”->“开发者模式”在设备上启用开发者模式。）
