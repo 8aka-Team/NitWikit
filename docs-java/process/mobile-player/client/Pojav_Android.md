@@ -5,6 +5,14 @@ sidebar_position: 1
 
 # 在 Android 上安装 PojavLauncher
 
+:::warning
+
+ PojavLauncher已于2025年5月17日宣布停更
+
+ 建议使用Amethyst或者FCL替代PojavLauncher
+ 
+:::
+
 GitHub Action 下载
 
 **需要 GitHub 账户才能下载。**
