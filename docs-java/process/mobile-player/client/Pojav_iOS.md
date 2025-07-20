@@ -132,7 +132,7 @@ sidebar_position: 2
 
 ## 方法三：使用 AltStore
 
-**（针对Windows用户）**
+### （针对Windows用户）
 
 1.点击此 [链接](i4.cn)下载爱思助手电脑端并安装
 
@@ -163,22 +163,22 @@ sidebar_position: 2
 
 10.等待几秒钟，然后会出现一个 AltServer 通知，提示 AltStore 已成功安装到您的设备上。
 
-11.在 iOS 设备上，前往“设置”->“通用”->“描述文件和设备管理”。点击“信任 [您的 Apple ID]”，然后再次点击“信任”进行确认。
+11.在 iOS 设备上，前往“设置”->“通用”->“描述文件和设备管理”。点击“信任 您的 Apple ID”，然后再次点击“信任”进行确认。
 
 （要在 iOS 16 或更高版本上使用 AltStore，您需要前往“设置”->“隐私和安全”->“开发者模式”在设备上启用开发者模式。）
 
 12.从此 [链接](https://github.com/PojavLauncherTeam/PojavLauncher_iOS/releases) 下载 Pojav 的 ipa 安装包。
 
-**手机开启JIT**
+### 手机开启JIT
 
 13.打开“My Apps”选项卡，然后长按Pojav。
 
 14.按“Enable JIT”启动应用程序，几秒钟内您就会看到 AltStore 通知，提示 JIT 已启用。
 
-**电脑开启JIT**
+### 电脑开启JIT
 
 16.首先，确保PojavLauncher在设备前台运行。
 
-17.点击右下角任务栏中的 AltServer 图标。然后点击“Enable JIT”>[您的设备]，然后选择PojavLauncher
+17.点击右下角任务栏中的 AltServer 图标。然后点击“Enable JIT”>您的设备，然后选择PojavLauncher
 
 后面即将补充macOS
