@@ -142,7 +142,7 @@ sidebar_position: 2
 
 4.解压AltInstaller.zip并运行Setup.exe
 
-5.将 iOS 设备连接到电脑，并确保其已解锁。
+5.将你的设备连接到电脑，并确保其已解锁。
 
 6.打开iTunes，然后在设备上启用“通过Wi-Fi与此iPhone同步”
 
