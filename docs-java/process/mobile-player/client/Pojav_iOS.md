@@ -132,4 +132,14 @@ sidebar_position: 2
 
 ## 方法三：使用 AltStore
 
-后面即将补充
+**（针对Windows用户）**
+
+1.点击此 [链接](i4.cn)下载爱思助手电脑端并安装
+
+2.点击此 [链接](https://updates.cdn-apple.com/2020/windows/001-39935-20200911-1A70AA56-F448-11EA-8CC0-99D41950005E/iCloudSetup.exe)下载iCloud电脑端并安装
+
+3.点击此 [链接](https://cdn.altstore.io/file/altstore/altinstaller.zip)下载AltServer
+
+4.解压AltInstaller.zip并运行Setup.exe
+
+5.
