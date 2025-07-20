@@ -10,7 +10,7 @@ sidebar_position: 2
 
  建议使用Amethyst替代PojavLauncher
  
- 除方法三以外为Amethyst
+ 除方法三以外为Amethyst，其他都为PojavLauncher
  
 :::
 
