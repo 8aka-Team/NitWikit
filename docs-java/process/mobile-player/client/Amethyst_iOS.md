@@ -136,7 +136,7 @@ A12-A17/M1-M2处理器的iPhone，iPad等在iOS/iPadOS 14.0 beta 2 ~ 17.0 除16.
 
 15.从此 [链接](https://github.com/AngelAuraMC/Amethyst-iOS/actions) 下载 Amethyst 的 tipa 安装包。
 
-#### （需要使用github账号才能继续下载）
+#### （tipa 安装包需要使用github账号才能继续下载）
 
 #### 以下方法支持iOS/iPadOS 16.7 RC、17.0 beta 5~17.0
 
@@ -165,6 +165,6 @@ A12-A17/M1-M2处理器的iPhone，iPad等在iOS/iPadOS 14.0 beta 2 ~ 17.0 除16.
 
 10.从此 [链接](https://github.com/AngelAuraMC/Amethyst-iOS/actions) 下载 Amethyst 的 tipa 安装包。
 
-#### （需要使用github账号才能继续下载）
+#### （在GitHub Actions需要使用github账号才能继续下载）
 
 剩下方法之后再说
