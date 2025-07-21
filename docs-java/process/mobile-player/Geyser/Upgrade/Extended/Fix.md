@@ -157,7 +157,7 @@ Broadcaster 通过模拟 Xbox Live 客户端，将你的 Geyser/基岩版服务�
    - 从 [GitHub Releases](https://github.com/MCXboxBroadcast/Broadcaster/releases) 下载 `MCXboxBroadcastExtension.jar`
 
 2. **安装扩展**
-   ```
+   ```bash
    服务器根目录/
    ├── plugins/
    │   └── Geyser-Spigot/
@@ -170,7 +170,7 @@ Broadcaster 通过模拟 Xbox Live 客户端，将你的 Geyser/基岩版服务�
 
 4. **查看认证信息**
    - 服务器启动后，控制台会显示认证码：
-   ```
+   ```bash
    To sign in, use a web browser to open the page https://www.microsoft.com/link and enter the code XXXXXXXX to authenticate.
    ```
 
