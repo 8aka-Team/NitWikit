@@ -87,11 +87,9 @@ EssentialsX/CMI/HuskHomes -> HuskHomes(Fabric 版)
 
 Banner 现在已经不属于 Mohist,同时已经改名为 Taiyitist
 
-:::
-
 ## NeoForge
 | 名称 | 介绍 | 推荐与否 | 下载镜像 |
 | --- | --- | --- | --- |
 | [Arclight - NeoForge](https://github.com/IzzelAliz/Arclight) | 用Mixin实现的Bukkit API 和Neoforge实现的混合端 | - | - |
-| [Youer](https://github.com/MohistMC/Youer/) | 结合了 NeoForge 模组支持和 Paper API 兼容性，能无缝支持 Bukkit/Spigot/Paper 生态系统的插件，并且针对模组环境进行了性能和稳定性优化。其技术栈包含 NeoForge、Bukkit、CraftBukkit、Spigot、Paper、PurPur、Arclight Remapping 等组件，部分组件集成已完成，部分仍在进行中。 | - | - |
+| [Youer](https://github.com/MohistMC/Youer/) | 结合了 NeoForge 模组支持和 Paper API 兼容性，能无缝支持 Bukkit/Spigot/Paper 生态系统的插件，并且针对模组环境进行了性能和稳定性优化。其技术栈包含 NeoForge、Bukkit、CraftBukkit、Spigot、Paper、PurPur、Arclight Remapping 等组件，部分组件集成已完成，部分仍在进行中 | - | - |
 | [Magma - Neo](https://github.com/magmafoundation/Magma-Neo) | 用Patch实现的Neoforge和Spigot API的混合端 | - | - |
