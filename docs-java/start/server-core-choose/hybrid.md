@@ -87,6 +87,8 @@ EssentialsX/CMI/HuskHomes -> HuskHomes(Fabric 版)
 
 Banner 现在已经不属于 Mohist,同时已经改名为 Taiyitist
 
+:::
+
 ## NeoForge
 | 名称 | 介绍 | 推荐与否 | 下载镜像 |
 | --- | --- | --- | --- |
