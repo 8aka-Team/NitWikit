@@ -26,6 +26,7 @@ import SponsorCard from '@site/src/components/SponsorCard';
     { name: '哓迅', amount: 30, qq: '2720819243' },
     { name: '未雨屏', amount: 110, qq: '207622954' },
     { name: 'awa', amount: 10,qq: 'default' },
-    { name: 'Pepper', amount: 10,qq: '2747789919' }
+    { name: 'Pepper', amount: 10,qq: '2747789919' },
+    { name: 'PuddingKC', amount: 30, qq: '3116078709' }
   ]}
 />
