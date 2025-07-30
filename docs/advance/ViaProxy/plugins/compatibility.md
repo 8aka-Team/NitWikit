@@ -28,29 +28,27 @@ ViaProxyBeta2Release 实现了 [Beta2Release](https://github.com/DirtPowered/Bet
 
 ### 安装配置
 
+```toml
+# plugins/ViaProxyBeta2Release/config.toml
 
+# 消息设置
+skip-title-messages = false      # 是否跳过标题和动作栏消息
 
-   ```toml
-   # plugins/ViaProxyBeta2Release/config.toml
+# 渲染设置
+render-distance = 4              # 渲染距离 (4-15)
 
-   # 消息设置
-   skip-title-messages = false      # 是否跳过标题和动作栏消息
+# 认证设置
+online-mode = false              # 是否启用正版验证
 
-   # 渲染设置
-   render-distance = 4              # 渲染距离 (4-15)
+# 版本检查
+strict-version-check = false     # 是否严格检查 Beta 1.7.3 版本
 
-   # 认证设置
-   online-mode = false              # 是否启用正版验证
+# 本地化设置
+locale = "en_US"                 # 客户端翻译语言 (en_US, de_DE 等)
 
-   # 版本检查
-   strict-version-check = false     # 是否严格检查 Beta 1.7.3 版本
-
-   # 本地化设置
-   locale = "en_US"                 # 客户端翻译语言 (en_US, de_DE 等)
-
-   # 世界生成
-   world-seed = "-1849830396072973239"  # Beta 1.7.3 世界生成种子
-   ```
+# 世界生成
+world-seed = "-1849830396072973239"  # Beta 1.7.3 世界生成种子
+```
 
 
 ## BungeeViaProxy {#bungeeviaproxy}
@@ -85,7 +83,7 @@ BungeeViaProxy 通过确保正确的主机名转发和避免重复服务器错�
 
 ### 网络架构
 
-```
+```text
 客户端 -> BungeeCord -> ViaProxy -> 后端服务器
 ```
 
@@ -110,7 +108,7 @@ BungeeViaProxy 通过确保正确的主机名转发和避免重复服务器错�
    - 防止 BungeeCord 将不同主机名但相同 IP 的服务器视为相同
    - 使用未解析的 `InetSocketAddress` 对象确保唯一识别
 
-### 安装配置
+### BungeeViaProxy 安装配置
 
 1. **下载安装**
    ```bash
@@ -179,13 +177,13 @@ wildcard-domain-handling: PUBLIC
 
 #### 后端服务器配置
 
-**server.properties**
+- server.properties
 ```properties
 server-port=3001
 online-mode=false
 ```
 
-**spigot.yml**
+- spigot.yml
 ```yaml
 settings:
   bungeecord: true
@@ -204,7 +202,7 @@ settings:
 
 ViaProxy 的 `wildcard-domain-handling` 功能允许单个实例处理多个后端服务器的连接，使用特定的地址格式：
 
-```
+```text
 address.<后端IP>.port.<后端端口>.version.<版本>.f2.viaproxy.<ViaProxy IP>.nip.io:<ViaProxy端口>
 ```
 
@@ -228,8 +226,6 @@ ViaBedrock 目前处于早期开发阶段，**不适合正式使用**。许多�
 
 :::
 
-
-
 ### 可选客户端模组
 
 - **[ViaBedrockUtility](https://github.com/Oryxel/ViaBedrockUtility)** - 自定义玩家皮肤和实体渲染支持
@@ -247,9 +243,10 @@ ViaBedrock 目前处于早期开发阶段，**不适合正式使用**。许多�
 
 ViaSnapshot 支持 Minecraft 快照版本的协议转换，目前支持 15w31a 和 15w31b。
 
-**支持版本**
-   - 15w31a
-   - 15w31b
+支持版本：
+
+- 15w31a
+- 15w31b
 
 ## ViaProxyEaglerCraft {#viaproxyeaglercraft}
 
@@ -264,33 +261,32 @@ ViaSnapshot 支持 Minecraft 快照版本的协议转换，目前支持 15w31a �
 ViaProxyEaglerCraft 为 ViaProxy 添加 EagleCraft 支持，允许 EagleCraft 客户端通过 WebSocket 连接到 Java 版服务器。
 
 
-### 安装配置
+### EaglerCraft 安装配置
 
-**配置文件**
+#### 配置文件
 
-   ```yaml
-   # plugins/ViaProxyEaglerCraft/config.yml
+```yaml
+# plugins/ViaProxyEaglerCraft/config.yml
 
-   # 使用正版皮肤
-   premium-skins: false
+# 使用正版皮肤
+premium-skins: false
 
-   # 同步 Eagler 皮肤
-   eagler-skins: true
+# 同步 Eagler 皮肤
+eagler-skins: true
 
-   # 启用 Eagler 语音聊天
-   eagler-voice: true
+# 启用 Eagler 语音聊天
+eagler-voice: true
 
-   # Eaglercraft 服务器模式
-   # 0 - 默认 (非 Eaglercraft)
-   # 1 - 强制非安全连接 (ws)
-   # 2 - 强制安全连接 (wss)
-   eagler-server-mode: 0
-   ```
+# Eaglercraft 服务器模式
+# 0 - 默认 (非 Eaglercraft)
+# 1 - 强制非安全连接 (ws)
+# 2 - 强制安全连接 (wss)
+eagler-server-mode: 0
+```
 
-3. **重启 ViaProxy**
+1. **重启 ViaProxy**
 
 ### 使用方法
-
 
 **1.5.2 支持配置**
    如果需要支持 EagleCraft 1.5.2：

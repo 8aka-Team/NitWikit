@@ -11,7 +11,7 @@ sidebar_position: 3
 
 ViaProxy 使用 YAML 格式的配置文件，主要包含以下几个部分：
 
-```
+```text
 viaproxy/
 ├── viaproxy.yml          # 主配置文件
 ├── ViaLoader/            # 协议转换配置
