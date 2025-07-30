@@ -91,6 +91,17 @@ Multiverse-Core [4.3.1](https://www.spigotmc.org/resources/multiverse-core.390/u
 - [Multiverse-Patches](https://www.spigotmc.org/resources/.96390)
 - [Multiverse-Core Fix](https://www.spigotmc.org/resources/.70218)
 
+## 禁止生成默认世界
+
+要这么做的原因无非是因为一个服务器可能被作为大厅服务器，或者小游戏服务器无须其它世界。
+
+- 主世界
+  各类服务端均无法禁用。~~禁用了还玩什么？~~
+- 下界
+  在原版的配置文件 `server.properties` 中，将 `allow-nether` 设置为 `false`。
+- 末地
+  打开 Bukkit 配置文件 `bukkit.yml`，将 `settings` 中的 `allow-end` 设置为 `false`。
+
 ## Bstats
 
 [![](https://bstats.org/signatures/bukkit/Multiverse-Core.svg)](https://bstats.org/plugin/bukkit/Multiverse-Core/7765)
