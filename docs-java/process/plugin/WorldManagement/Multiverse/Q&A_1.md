@@ -27,7 +27,8 @@ sidebar_label: 常见问题 1
 - [TAB 和计分板插件](../../other/TAB&Scoreboard/Tab&Scoreboard.md)
 - 其他你想展示中文世界名的插件
 
-安装 [papi 的 Multiverse 扩展](../../Front-Plugin/PlaceHolderAPI/CommonUsage.md#multiverse)
+- v4：安装 [papi 的 Multiverse 扩展](../../Front-Plugin/PlaceHolderAPI/CommonUsage.md#multiverse)
+- v5：无需安装，插件自动挂钩 papi
 
 ## 设置别名
 
@@ -79,7 +80,10 @@ worlds:
 
 ## 使用别名
 
-将变量 `%multiverse_world_alias%` 写到你想展示世界别名的插件配置里
+将变量写到你想展示世界别名的插件配置里
+
+- `%multiverse_world_alias%` - v4 写法
+- `%multiverse-core_alias%` - v5 写法
 
 当然，这个插件要支持使用 papi 变量
 

@@ -86,12 +86,12 @@ ViaLimbo 为 ViaProxy 提供 Limbo 服务器功能，可以在连接失败时显
 - **等待界面** - 连接失败时显示等待界面
 - **版本兼容** - 支持更多 Minecraft 版本加入
 
-### 安装要求
+### ViaProxyLimbo 安装要求
 
 - 需要 Limbo 版本 0.7.12-ALPHA 或更高版本
 - 需要先安装 [Limbo 服务器](https://github.com/LOOHP/Limbo/)
 
-### 安装配置
+### ViaProxyLimbo 安装配置
 
 1. **安装 Limbo 服务器**
    ```bash
@@ -131,6 +131,6 @@ ayunViaProxyLegacyIcon 为旧版服务器添加服务器图标支持，当后端
 #### 客户端版本
 - Release (1.7.2+) - 支持服务器图标的所有版本
 
-### 安装配置
+### ViaProxyServerIcon 安装配置
 
 在根目录中放置 `server-icon.png` 文件：

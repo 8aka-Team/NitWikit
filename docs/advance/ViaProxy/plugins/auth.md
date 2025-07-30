@@ -109,7 +109,7 @@ target-port: 25565
 
 ViaProxyOpenAuthMod 实现了 OpenAuthMod 协议，允许客户端通过 OpenAuthMod 模组连接正版服务器。
 
-### 安装配置
+### OpenAuthMod 安装配置
 
 1. **下载插件**
    ```bash
@@ -124,13 +124,13 @@ ViaProxyOpenAuthMod 实现了 OpenAuthMod 协议，允许客户端通过 OpenAut
    - 重启 ViaProxy 以加载插件
    - 认证模式将自动添加 `OPENAUTHMOD` 选项
 
-### 使用方法
+### OpenAuthMod 使用方法
 
-#### GUI 模式
+#### OpenAuthMod GUI 模式
 1. 在 ViaProxy 界面中选择认证模式为 "OPENAUTHMOD"
 2. 连接到目标服务器
 
-#### CLI 模式
+#### OpenAuthMod CLI 模式
 ```bash
 java -jar ViaProxy.jar cli \
   --auth-method OPENAUTHMOD \
@@ -138,11 +138,10 @@ java -jar ViaProxy.jar cli \
   --target-port 25565
 ```
 
-#### 配置文件模式
+#### OpenAuthMod 配置文件模式
 ```yaml
 # viaproxy.yml
 auth-method: "OPENAUTHMOD"
 target-address: "mc.hypixel.net"
 target-port: 25565
 ```
-
