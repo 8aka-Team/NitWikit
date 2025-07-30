@@ -29,9 +29,9 @@ Spark 是一个 Minecraft 的性能分析器，支持广泛 (如 Bukkit，Bungee
 
 ### 使用方法
 
-插件服和 1.13 以上的 mod 服请下载插件版本并将 Spark.jar 文件插件放到服务端的 plugins 文件夹中。
+插件服请下载插件版本并将 Spark.jar 文件插件放到服务端的 plugins 文件夹中；1.13 以上的 mod 服请下载模组版本并将 Spark.jar 文件插件放到服务端的 mods 文件夹中。
 
-1.12.2 和以下混合服优先使用 mod 版本，放入 mods 文件夹。
+1.12.2 及以下版本的混合服优先使用 mod 版本，放入 mods 文件夹。
 
 对于 Purpur Fork 服务器或 Paper 1.21 #100 之后的构建，默认自带 Spark，无需单独下载。
 
