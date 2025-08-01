@@ -17,7 +17,7 @@ sidebar_position: 2
 
 `SpigotMC` https://www.spigotmc.org/resources/.3742
 
-`MineBBS` https://www.minebbs.com/resources/cmi-mysql-sqlite.7380/
+`MineBBS` https://www.minebbs.com/resources/.7380/
 
 `文档(英文)` https://www.zrips.net/cmi
 
