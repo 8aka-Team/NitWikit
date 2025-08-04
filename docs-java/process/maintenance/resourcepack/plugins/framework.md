@@ -13,13 +13,13 @@ import TabItem from '@theme/TabItem';
 
 :::info
 
-`SpigotMC` https://www.spigotmc.org/resources/.73355/
+`SpigotMC` https://www.spigotmc.org/resources/73355
 
 `GitHub(主页)` https://github.com/ItemsAdder
 
 `GitHub(可以反馈 BUG)` https://github.com/PluginBugs/Issues-ItemsAdder
 
-`文档 (英文)` https://itemsadder.devs.beer/
+`文档 (英文)` https://itemsadder.devs.beer
 
 `文档 (中文)` https://itemsadder.devs.beer/v/chinese
 
@@ -55,13 +55,13 @@ https://itemsadder.devs.beer
 
 :::info
 
-`SpigotMC` https://www.spigotmc.org/resources/.72448
+`SpigotMC` https://www.spigotmc.org/resources/72448
 
 `GitHub` https://github.com/oraxen/oraxen
 
 `文档 (英文)` https://docs.oraxen.com/
 
-`文档 (中文)` https://continue-project.netlify.app/Oraxen/
+`文档 (中文)` https://continue-project.netlify.app/Oraxen
 
 :::
 
@@ -83,9 +83,9 @@ https://itemsadder.devs.beer
 
 `MineBBS` https://www.minebbs.com/resources/11281
 
-`文档 (英文)` https://xiao-momi.github.io/craft-engine-wiki/
+`文档 (英文)` https://xiao-momi.github.io/craft-engine-wiki
 
-`文档 (中文)` https://ce.gtemc.cn/zh-Hans/
+`文档 (中文)` https://ce.gtemc.cn/zh-Hans
 
 `GitHub` https://github.com/Xiao-MoMi/craft-engine
 
