@@ -83,9 +83,9 @@ https://itemsadder.devs.beer
 
 `MineBBS` https://www.minebbs.com/resources/11281
 
-`文档 (英文)` https://mo-mi.gitbook.io/xiaomomi-plugins/craftengine
+`文档 (英文)` https://xiao-momi.github.io/craft-engine-wiki/
 
-`文档 (中文)` https://momi.gtemc.cn/craftengine
+`文档 (中文)` https://ce.gtemc.cn/zh-Hans/
 
 `GitHub` https://github.com/Xiao-MoMi/craft-engine
 
@@ -163,18 +163,17 @@ protection:
         amount: 64
         length: 9
       random-path:
-        source: "obf"
+        source: obf
         depth: 32
         anti-unzip: true
       random-atlas:
-        amount: 5
+        images-per-canvas: 32
         use-double: true
       bypass-textures:
         - "@legacy_unicode"
-        - "@vanilla_font_textures"
-        - "@vanilla_item_textures"
-        - "@vanilla_block_textures"
-      bypass-models: []
+        - "@vanilla_textures"
+      bypass-models:
+        - "@vanilla_models"
       bypass-sounds: []
       bypass-equipments: []
 ```
