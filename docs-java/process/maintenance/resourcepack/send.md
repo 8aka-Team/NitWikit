@@ -40,7 +40,7 @@ https://itemsadder.devs.beer/v/chinese/plugin-usage/resourcepack-hosting
 
 ### CraftEngine
 
-https://mo-mi.gitbook.io/xiaomomi-plugins/craftengine/plugin-wiki/craftengine/resource-pack/host
+https://ce.gtemc.cn/zh-Hans/getting_start/set_up_host
 
 ## 托管网站
 
