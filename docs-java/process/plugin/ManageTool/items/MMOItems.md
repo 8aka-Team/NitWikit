@@ -15,7 +15,7 @@ sidebar_position: 1
 
 `文档(英文)` https://gitlab.com/phoenix-dvpmt/mmoitems/-/wikis/home
 
-`文档(中文)` https://gitlab.com/TranslatedByShark/Mythic-Manual-CN/-/wikis/home
+`文档(中文)` https://mmoitems.magicmc.top/
 
 :::
 
