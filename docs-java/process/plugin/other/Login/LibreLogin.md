@@ -9,7 +9,7 @@ sidebar_position: 5
 
 `SpigotMC` https://www.spigotmc.org/resources/.101040
 
-`Modrinth` https://www.spigotmc.org/resources/.101040
+`Modrinth` https://modrinth.com/plugin/libre-login
 
 `GitHub` https://github.com/kyngs/LibreLogin
 
