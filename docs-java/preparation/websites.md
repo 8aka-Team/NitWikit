@@ -373,7 +373,7 @@ MOTD 是玩家进入服务器之前最先看到的东西，决定了玩家对一
 > [Minecraft MOTD tool](https://minecraft.tools/en/motd.php)
 
   </TabItem>
-  <TabItem value="bstats" label="数据包生成器">
+  <TabItem value="misode" label="数据包生成器">
     <div style={{textAlign: 'center'}}>
       <a href="https://misode.github.io/">
         <svg width="32" height="28" viewBox="0 0 32 28" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="26" height="6" rx="3" fill="#7CB45C"></rect><rect x="8" width="18" height="6" rx="3" fill="#4BA041"></rect><rect y="11" width="32" height="6" rx="3" fill="#AAA8A8"></rect><rect x="11" y="11" width="21" height="6" rx="3" fill="#91908F"></rect><rect x="11" y="22" width="21" height="6" rx="3" fill="#70B5C3"></rect><rect x="17" y="22" width="15" height="6" rx="3" fill="#4D989B"></rect></svg>
