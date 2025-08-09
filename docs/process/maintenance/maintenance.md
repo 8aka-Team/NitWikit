@@ -16,6 +16,12 @@ sidebar_position: 2
 
 即使在区块出现损坏的情况下，这些插件也能在一定程度上减少区块损坏所造成的影响。见 [防熊插件](https://nitwikit.8aka.org/Java/AntiGrief)。
 
+## 网络防护
+
+服务器面临各种网络攻击威胁，包括 DDoS、假人攻击、爆破攻击等。了解攻击类型和防御方法对服务器安全至关重要。
+
+详见 [网络防护](network-protect/network-protect.md)。
+
 ## 检查日志
 
 [日志](/docs/start/basic/basic.md)中包含了大量的玩家、插件、服务器行为。
