@@ -73,6 +73,28 @@ sidebar_label: 多世界 - Multiverse
 
 开发组貌似想起来自己曾在 SpigotMC 发过此资源了
 
+## 禁止生成默认世界
+
+要这么做的原因无非是因为一个服务器可能被作为大厅服务器，或者小游戏服务器无须其它世界。
+
+- 主世界
+  各类服务端均无法禁用。~~禁用了还玩什么？~~
+- 下界
+  在原版的配置文件 `server.properties` 中，将 `allow-nether` 设置为 `false`。
+- 末地
+  打开 Bukkit 配置文件 `bukkit.yml`，将 `settings` 中的 `allow-end` 设置为 `false`。
+
+在 `/plugins/Multiverse-Core/config.yml` 中，有这样的配置：
+
+```yaml
+  world-name-format:
+    nether: '%overworld%_nether'
+    end: '%overworld%_the_end'
+```
+
+这里规定了默认的世界名称格式，只需要更改这里的配置，或者在禁用了默认世界后创建名称不符合这里格式的世界，这样就可以间接实现对地狱门和末地门
+的禁用，因为它们不再与主世界有关联，因此地狱门和末地门会失效（即使它们可以被激活）。
+
 ## Folia
 
 [Multiverse-Core_Zeta](https://github.com/RenYuan-MC/Multiverse-Core_Zeta) 是 Multiverse-Core 的一个 fork，支持 Folia
