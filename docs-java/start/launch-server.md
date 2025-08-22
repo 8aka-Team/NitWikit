@@ -74,7 +74,7 @@ java -Xms2G -Xmx2G -jar 核心名.jar --nogui
 
 ## 最初的开启
 
-双击启动脚本后，大概率会卡在你会看到 `Downloading mojang_x.x.x.jar`，请耐心等待
+双击启动脚本后，大概会卡在 `Downloading mojang_x.x.x.jar`，请耐心等待
 
 一旦下载完成，他会提示：
 
@@ -100,7 +100,73 @@ Done (6.554s)! For help, type "help"
 
 ## 更复杂的 bat
 
-请参考 [JVM 优化](../process/maintenance/optimize/jvm/jvm.md)
+### pause
+
+在脚本的最后加上 `pause`，让你可以看到 bat 的输出，避免黑窗口一闪而过的情况。
+
+```batch
+java -jar paper.jar
+pause
+```
+
+### 通配符
+
+使用通配符来匹配服务端核心，这样每次更新核心就不需要更改脚本内容或者重命名文件的名字了。
+
+```bash
+java -jar *.jar
+java -jar paper-*.jar
+java -jar leaf-*.jar
+```
+
+### 自动重启
+
+当服务器崩溃或关闭时，使用脚本实现自动重启：
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs queryString="system">
+<TabItem value="windows" label="Windows">
+
+```batch
+@echo off
+:start
+java -Xmx4G -Xms1G -jar server.jar nogui
+echo 服务器已关闭，5秒后重启...
+timeout /t 5
+goto start
+```
+
+</TabItem>
+<TabItem value="linux" label="Linux">
+
+```bash
+#!/bin/bash
+while true; do
+    java -Xmx4G -Xms1G -jar server.jar nogui
+    echo "服务器已关闭，5秒后重启..."
+    sleep 5
+done
+```
+
+</TabItem>
+</Tabs>
+
+### 模块化内容
+
+使用变量拆分脚本内容，不再堆在同一行，使得内容更清晰，也方便修改。
+
+示例脚本：
+```batch
+@echo off
+set JAVA_OPTS=-Xmx4G -Xms1G -XX:+UseG1GC
+set SERVER_JAR=paper-*.jar
+set ADDITIONAL_ARGS=nogui
+
+java %JAVA_OPTS% -jar %SERVER_JAR% %ADDITIONAL_ARGS%
+pause
+```
 
 ## 常见问题
 

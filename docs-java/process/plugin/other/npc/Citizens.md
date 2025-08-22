@@ -57,7 +57,7 @@ sidebar_position: 2
 
 `Bukkit(旧)` https://dev.bukkit.org/projects/citizens
 
-`SpigotMC` https://www.spigotmc.org/resources/citizens.13811/
+`SpigotMC` https://www.spigotmc.org/resources/citizens.13811
 
 `MineBBS` https://www.minebbs.com/resources/.7512
 

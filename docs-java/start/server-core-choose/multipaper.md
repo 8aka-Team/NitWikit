@@ -1,13 +1,11 @@
 ---
 title: MultiPaper
-sidebar_position: 2
+sidebar_position: 5
 ---
 
 # MultiPaper
 
-准确来说，MultiPaper 并不是 Folia 大家庭的一员，甚至有些奇怪
-
-但从根本上来讲，MultiPaper 与 Folia 的目标是相同的：充分利用硬件，承载更多玩家
+MultiPaper 与 Folia 的目标是相同的：充分利用硬件，承载更多玩家
 
 于是就放在这了
 
