@@ -58,7 +58,7 @@ sidebar_position: 4
 
 :::danger
 
-配置直接在公网使用 3389 端口连接服务器远程桌面**会导致严重的安全性问题**，详见 [如何抵御网络攻击](../maintenance/how-to-defend-against-cyber-attacks.md)。
+配置直接在公网使用 3389 端口连接服务器远程桌面**会导致严重的安全性问题**，详见 [如何抵御网络攻击](../maintenance/network-protect/network-protect.md)。
 
 :::
 

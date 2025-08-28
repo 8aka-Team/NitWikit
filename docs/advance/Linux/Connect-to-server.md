@@ -28,9 +28,9 @@ Linux 系统上有一个工具被业界广泛使用，它就是 `ssh`。它虽�
 
 :::danger
 
-配置直接在公网使用 22 端口连接服务器 ssh**会导致严重的安全性问题**，详见[如何抵御网络攻击](../../process/maintenance/how-to-defend-against-cyber-attacks.md)。
+配置直接在公网使用 22 端口连接服务器 ssh**会导致严重的安全性问题**，详见[如何抵御网络攻击](../../process/maintenance/network-protect/network-protect.md)。
 
-另外除非有明确需求，不要随意配置 UDP 协议端口映射，包括上文中提到的**不需要 UDP 协议**的 ssh，否则可能导致你的服务器被 DDoS！详见[如何抵御网络攻击](../../process/maintenance/how-to-defend-against-cyber-attacks.md)。
+另外除非有明确需求，不要随意配置 UDP 协议端口映射，包括上文中提到的**不需要 UDP 协议**的 ssh，否则可能导致你的服务器被 DDoS！详见[如何抵御网络攻击](../../process/maintenance/network-protect/network-protect.md)。
 
 :::
 
