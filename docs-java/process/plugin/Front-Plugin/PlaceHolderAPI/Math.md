@@ -7,7 +7,7 @@ sidebar_position: 3
 
 :::info
 
-`eCloud` https://api.extendedclip.com/expansions/math/
+`eCloud` https://api.extendedclip.com/expansions/math
 
 `Placeholder List` https://wiki.placeholderapi.com/users/placeholder-list/#math
 

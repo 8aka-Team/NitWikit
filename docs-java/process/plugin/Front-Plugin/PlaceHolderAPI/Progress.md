@@ -14,3 +14,10 @@ sidebar_position: 7
 `GitHub` https://github.com/aBooDyy/Progress-Expansion
 
 :::
+
+## 安装此扩展
+
+```text
+/papi ecloud download Progress
+/papi reload
+```

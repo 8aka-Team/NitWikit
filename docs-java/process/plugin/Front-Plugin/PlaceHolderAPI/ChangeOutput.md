@@ -7,10 +7,17 @@ sidebar_position: 9
 
 :::info
 
-`eCloud` https://api.extendedclip.com/expansions/changeoutput/
+`eCloud` https://api.extendedclip.com/expansions/changeoutput
 
 `Placeholder List` https://wiki.placeholderapi.com/users/placeholder-list/#changeoutput
 
 `GitHub` https://wiki.placeholderapi.com/users/placeholder-list/#changeoutput
 
 :::
+
+## 安装此扩展
+
+```text
+/papi ecloud download ChangeOutput
+/papi reload
+```

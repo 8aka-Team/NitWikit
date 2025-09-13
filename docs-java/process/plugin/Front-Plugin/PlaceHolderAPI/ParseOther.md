@@ -14,3 +14,10 @@ sidebar_position: 8
 `GitHub` https://github.com/PlaceholderAPI/ParseOther
 
 :::
+
+## 安装此扩展
+
+```text
+/papi ecloud download ParseOther
+/papi reload
+```

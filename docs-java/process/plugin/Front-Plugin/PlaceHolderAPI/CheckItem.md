@@ -13,11 +13,9 @@ sidebar_position: 4
 
 :::
 
-## 有关 CheckItem 的相关链接
-
 :::info
 
-`eCloud` https://api.extendedclip.com/expansions/checkitem/
+`eCloud` https://api.extendedclip.com/expansions/checkitem
 
 `Placeholder List` https://wiki.placeholderapi.com/users/placeholder-list/#checkitem
 
