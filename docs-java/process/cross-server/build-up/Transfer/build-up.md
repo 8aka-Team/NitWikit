@@ -126,6 +126,6 @@ accepts-transfers = true
 ```
 
 :::warning 兼容性问题
-OnlyTransfer 插件与 Velocity 的 Transfer 支持存在部分兼容性问题，建议在测试环境中验证。
+OnlyTransfer 插件与 Velocity 的 Transfer 支持适配不全, Velocity 仍可以接受来自安装了 OnlyTransfer 插件的服务器的传送，但无法验证服务器令牌。
 :::
 
