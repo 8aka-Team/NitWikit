@@ -59,9 +59,7 @@ Velocity 支持从别的服务器通过 Transfer 跳转至 Velocity，需要在v
 <img width="519" height="248" alt="图片" src="https://github.com/user-attachments/assets/524caaf0-746f-4543-8f68-d708edf9cf43" />
 
 <details>
-  <summary>一些杂谈</summary>
-
-### 事情经过
+  <summary>事情经过</summary>
 
 当时 OnlyTransfer 插件还在测试中，正在测试 Velocity 与 Transfer 混合架构的可行性，使用了 NeoForge 客户端发现了此问题。
 
