@@ -23,6 +23,12 @@ sidebar_label: 领地 - Residence
 
 最初由 bekvon 维护，后由 Zrips 团队接手维护，并将其变更为 开源付费 模式的插件
 
+:::warning
+
+为避免漏洞利用，建议不要使用 5.1.4.2 以下版本的Residence
+
+:::
+
 ## 免费下载
 
 你仍可以从 SpigotMC 或 Zrips 官网中找到 Residence 最新版本免费下载的链接
