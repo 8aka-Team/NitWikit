@@ -13,6 +13,8 @@ sidebar_position: 8
 
 `GitHub` https://github.com/PlaceholderAPI/ParseOther
 
+`Continue-Project` https://continue-project.netlify.app/PlaceholderAPI/user-guides.placeholder-list#parseother
+
 :::
 
 允许你以其他玩家的身份判断任何变量。

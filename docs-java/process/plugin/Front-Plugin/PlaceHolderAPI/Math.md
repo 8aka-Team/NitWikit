@@ -13,6 +13,8 @@ sidebar_position: 3
 
 `GitHub` https://github.com/Andre601/Math-Expansion
 
+`Continue-Project` https://continue-project.netlify.app/PlaceholderAPI/user-guides.placeholder-list#math
+
 :::
 
 ## 安装此扩展

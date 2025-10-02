@@ -13,6 +13,8 @@ sidebar_position: 9
 
 `GitHub` https://wiki.placeholderapi.com/users/placeholder-list/#changeoutput
 
+`Continue-Project` https://continue-project.netlify.app/PlaceholderAPI/user-guides.placeholder-list#changeoutput
+
 :::
 
 ## 安装此扩展

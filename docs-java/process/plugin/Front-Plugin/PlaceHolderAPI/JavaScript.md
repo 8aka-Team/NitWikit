@@ -13,4 +13,6 @@ sidebar_position: 5
 
 `GitHub` https://github.com/PlaceholderAPI-Expansions/Javascript-Expansion/
 
+`Continue-Project` https://continue-project.netlify.app/PlaceholderAPI/user-guides.placeholder-list#javascript
+
 :::

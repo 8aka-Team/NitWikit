@@ -13,6 +13,8 @@ sidebar_position: 9
 
 `GitHub` https://github.com/BlitzOffline/StringExpansion
 
+`Continue-Project` https://continue-project.netlify.app/PlaceholderAPI/user-guides.placeholder-list#string
+
 :::
 
 用于处理字符串的简单 PlaceholderAPI 扩展。

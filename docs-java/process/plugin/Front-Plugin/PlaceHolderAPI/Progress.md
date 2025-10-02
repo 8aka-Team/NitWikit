@@ -13,6 +13,8 @@ sidebar_position: 7
 
 `GitHub` https://github.com/aBooDyy/Progress-Expansion
 
+`Continue-Project` https://continue-project.netlify.app/PlaceholderAPI/user-guides.placeholder-list#progress
+
 :::
 
 ## 安装此扩展

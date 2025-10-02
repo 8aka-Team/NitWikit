@@ -21,6 +21,8 @@ sidebar_position: 4
 
 `GitHub` https://github.com/PlaceholderAPI/CheckItem-Expansion
 
+`Continue-Project` https://continue-project.netlify.app/PlaceholderAPI/user-guides.placeholder-list#checkitem
+
 :::
 
 ## 安装此扩展
