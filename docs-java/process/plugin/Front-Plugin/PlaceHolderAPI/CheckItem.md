@@ -130,6 +130,28 @@ sidebar_position: 4
 
 ![](./_images/CheckItem/getinfo_2.png)
 
+## 连续使用
+
+例如：
+
+```text title="检查玩家背包中钻石数量"
+%checkitem_amount_mat:diamond%
+```
+
+![](_images/CheckItem/连续使用-1.png)
+
+```text title="收取背包中所有钻石"
+%checkitem_remove_mat:diamond%
+```
+
+![](_images/CheckItem/连续使用-2.png)
+
+```text title="收取背包中所有钻石，但是变量返回值是收取的数量"
+%checkitem_amount_remove_mat:diamond%
+```
+
+![](_images/CheckItem/连续使用-3.png)
+
 ### 例子：收取 ia 物品
 
 收取指定 ia 物品的指定数量
