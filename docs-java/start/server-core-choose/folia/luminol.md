@@ -11,7 +11,7 @@ Luminol 是一个非常棒的 Folia 分支！
 
 ## 安装
 
-我们不推荐直接使用 Folia，因为这需要自己去构建，[Luminol](https://luminolmc.com) 是一个非常棒的选择，如果你需要 1.20.1/2，你可以使用 [Molia](https://github.com/Era4FunMC/Molia)
+我们不推荐直接使用 Folia，因为这需要自己去构建，[Luminol](https://luminolsuki.moe/) 是一个非常棒的选择，如果你需要 1.20.1/2，你可以使用 [Molia](https://github.com/Era4FunMC/Molia)
 
 请选择 Luminol，我们后面会讲 LightLuminol，下载到本地后，替换原来的核心就可以了
 
