@@ -51,10 +51,11 @@ AutoUpdatePlugins 支持从以下来源自动更新插件：
 
 `GitHub` https://github.com/NewAmazingPVP/AutoUpdatePlugins
 
-`SpigotMC` https://www.spigotmc.org/resources/autoupdateplugins.109683/
+`SpigotMC` https://www.spigotmc.org/resources/autoupdateplugins.109683
 
 :::
 
 ## Bstats
 
-[![](https://bstats.org/signatures/bukkit/AutoUpdatePlugins.svg)](https://bstats.org/plugin/bukkit/AutoUpdatePlugins/)
+
+[![](https://bstats.org/signatures/bukkit/AutoUpdatePlugins.svg)](https://bstats.org/plugin/bukkit/AutoUpdatePlugins)
