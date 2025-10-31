@@ -38,7 +38,7 @@ import TabItem from '@theme/TabItem';
 
 使用通配符来匹配服务端核心，这样每次更新核心就不需要更改脚本内容或者重命名文件的名字了。
 
-<Tabs queryString="pause">
+<Tabs queryString="wildcard">
   <TabItem value="windows" label="Windows">
 
     ```batch

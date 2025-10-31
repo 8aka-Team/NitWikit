@@ -54,7 +54,7 @@ java -jar --nogui
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-<Tabs queryString="system">
+<Tabs queryString="LibraryLoader">
   <TabItem value="windows" label="Windows">
 
 ```shell
