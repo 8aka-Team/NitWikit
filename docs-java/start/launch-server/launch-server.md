@@ -256,7 +256,7 @@ java -Xms2G -Xmx2G -jar server.jar --nogui
 
 ### Invalid initial heap size: -Xms
 
-:::note 
+:::note
 
 内存大小设置长这样
 
