@@ -51,6 +51,9 @@ java -jar --nogui
 
 或者设置环境变量（优先级更高）：
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 <Tabs queryString="system">
   <TabItem value="windows" label="Windows">
 
