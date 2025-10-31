@@ -9,7 +9,7 @@ sidebar_position: 4
 
 :::tip
 
-新版本的 Forge 和 Neoforge 使用安装器安装后会自动生成启动脚本。参阅 [新版 Forge 和 NeoForge 启动方法](#新版-forge-和-neoforge-启动)
+新版本的 Forge 和 Neoforge 使用安装器安装后会自动生成启动脚本。
 
 :::
 

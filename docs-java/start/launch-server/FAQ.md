@@ -6,7 +6,7 @@ sidebar_position: 7
 # 常见问题
 
 
-### Downloading mojang_x.x.x.jar
+## Downloading mojang_x.x.x.jar
 
 如果你的服务器卡在：
 
@@ -20,7 +20,7 @@ import GlobalContent from '@site/src/components/GlobalContent'
 
 <GlobalContent>
 
-### 我不会在命令行界面 (CMD / 终端 / Powershell) 使用科学上网
+## 我不会在命令行界面 (CMD / 终端 / Powershell) 使用科学上网
 
 :::tip
 
@@ -56,7 +56,7 @@ export HTTPS_PROXY=http://127.0.0.1:7890
 
 </GlobalContent>
 
-### 中文乱码
+## 中文乱码
 
 如果你用的是 Windows，你需要在启动脚本**最前面**加上`chcp 65001`
 
@@ -91,7 +91,7 @@ java -Xms2G -Xmx2G -jar server.jar --nogui
 
 此时，你只需要把 `xxx.jar.jar` 改成 `xxx.jar` 就可以正常启动了
 
-### Invalid initial heap size: -Xms
+## Invalid initial heap size: -Xms
 
 :::note
 
@@ -108,7 +108,7 @@ java -Xms2G -Xmx2G -jar server.jar --nogui
 ```
 :::
 
-### 新版 Forge 和 NeoForge 启动
+## 新版 Forge / NeoForge 启动
 
 使用安装器安装后，你无法在根目录找到 `xxx.jar`，同时会生成一个 bat 脚本。里面大概是这样的
 

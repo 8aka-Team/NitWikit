@@ -102,7 +102,7 @@ java -Xlog:gc+init -XX:+UseTransparentHugePages -Xmx1g -version
 (仅适合 Paper 和 Paper Fork)
 
 ```shell
--Dpaper.disableWorldSymlinkValidation=true 
+-Dpaper.disableWorldSymlinkValidation=true
 ```
 
 在加载世界时禁用文件夹遍历和符号链接验证。显著提高大型世界的加载速度
