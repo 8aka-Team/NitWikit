@@ -75,7 +75,7 @@ chcp 65001
 java -Xms2G -Xmx2G -jar server.jar --nogui
 ```
 
-### Java 启动找不到 ***.jar
+## Java 启动找不到 ***.jar
 
 有些时候写好启动脚本启动后，报错`Error: Unable to access jarfile xxx.jar`，但是相同目录下明明有`xxx.jar`
 
