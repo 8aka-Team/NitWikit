@@ -140,6 +140,7 @@ TabooLib Components，当你使用 TabooLib 框架的插件时，可以使用此
 可以更方便的编写 json 文本信息，而不只是局限于颜色
 
 > [https://plugins.ptms.ink/category/行内复合文本](https://plugins.ptms.ink/category/%E8%A1%8C%E5%86%85%E5%A4%8D%E5%90%88%E6%96%87%E6%9C%AC)
+> https://taboo.8aka.org/components/
 
 ```text
 [||||||||||||||||||||](gradient=#f6d365,#fda085)
@@ -148,6 +149,20 @@ TabooLib Components，当你使用 TabooLib 框架的插件时，可以使用此
 ![](https://plugins.ptms.ink/img/Xnip2023-07-25_15-04-02.png)
 
 更多用法见上方链接
+
+## MineDown
+
+MineDown 为 Minecraft 引入了 Markdown 风格的文本格式化语法，让用户能够轻松编写样式丰富的文本组件。它兼容 Paper 和 Velocity 等原生使用 Kyori Adventure 库的现代服务端，同时也支持传统 Spigot 与 BungeeCord 的聊天 API。
+
+### 语法示例
+
+```text
+[||||||||||||||||||||](color=#f6d365-#fda085) 
+```
+
+更多语法可以参考下面的链接
+
+> https://wiki.phoenix616.dev/library/minedown/syntax
 
 ## 参考
 
