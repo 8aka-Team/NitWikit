@@ -57,7 +57,7 @@ Icons:
 
 MiniMessage 旨在用简单字符串表示聊天组件，便于用户学习和开发人员扩展。
 
-MiniMessage 的实质是一个叫 Adventure 的库，这是它的 [文档](https://docs.advntr.dev/getting-started.html)。
+MiniMessage 的实质是一个叫 Adventure 的库，这是它的 [文档](https://docs.papermc.io/adventure/getting-started/)。
 
 ### 支持列表
 
@@ -71,7 +71,7 @@ MiniMessage 的实质是一个叫 Adventure 的库，这是它的 [文档](https
 | Minestom | Build 7494725                      | 内容有点杂，详见[minestom wiki](https://wiki.minestom.net/feature/adventure) |
 | Fabric   | `adventure-platform-fabric` 5.3.0* | 虽然不是一个东西 (?)，但是体验是一样的                                                 |
 
-_详情可以参阅 [Adventure 本机支持](https://docs.advntr.dev/platform/native.html)_
+_详情可以参阅 [Adventure 原生支持](https://docs.papermc.io/adventure/platform/native/)_
 
 :::note
 
@@ -131,7 +131,7 @@ Icons:
 
 此外，这里有一个[测试网站](https://webui.advntr.dev/)，他可以使得你无需启动 Minecraft 便可以预览实际效果。
 
-关于实际使用格式详见 [标准标签](https://docs.advntr.dev/minimessage/format.html#standard-tags)。
+关于实际使用格式详见 [标准标签](https://docs.papermc.io/adventure/minimessage/format/#standard-tags)。
 
 ## 行内复合文本
 
@@ -139,7 +139,7 @@ TabooLib Components，当你使用 TabooLib 框架的插件时，可以使用此
 
 可以更方便的编写 json 文本信息，而不只是局限于颜色
 
-> https://plugins.ptms.ink/category/%E8%A1%8C%E5%86%85%E5%A4%8D%E5%90%88%E6%96%87%E6%9C%AC
+> [https://plugins.ptms.ink/category/行内复合文本](https://plugins.ptms.ink/category/%E8%A1%8C%E5%86%85%E5%A4%8D%E5%90%88%E6%96%87%E6%9C%AC)
 
 ```text
 [||||||||||||||||||||](gradient=#f6d365,#fda085)
@@ -151,6 +151,6 @@ TabooLib Components，当你使用 TabooLib 框架的插件时，可以使用此
 
 ## 参考
 
-- https://zh.minecraft.wiki/w/%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%BB%A3%E7%A0%81
-- https://docs.advntr.dev/minimessage/format.html
-- https://docs.advntr.dev/platform/native.html
+- [https://zh.minecraft.wiki/w/格式化代码](https://zh.minecraft.wiki/w/%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%BB%A3%E7%A0%81)
+- https://docs.papermc.io/adventure/minimessage/format
+- https://docs.papermc.io/adventure/platform/native
